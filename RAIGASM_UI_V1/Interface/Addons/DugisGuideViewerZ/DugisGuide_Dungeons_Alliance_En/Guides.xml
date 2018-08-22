@@ -1,0 +1,86 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="15_16_Ragefire_Chasm.lua"/>
+	<Script file="15_17_The_Deadmines.lua"/>
+	<Script file="15_21_Wailing_Caverns.lua"/>
+	<Script file="16_21_Shadowfang_Keep.lua"/>
+	<Script file="20_25_The_Stockade.lua"/>
+	<Script file="20_28_Blackfathom_Deeps.lua"/>
+	<Script file="24_29_Gnomeregan.lua"/>
+	<Script file="26_31_Scarlet_Halls.lua"/>
+	<Script file="28_34_Scarlet_Monestary.lua"/>
+	<Script file="30_34_Maraudon_Purple.lua"/>	
+	<Script file="30_35_Razorfen_Kraul.lua"/>	
+	<Script file="32_36_Maraudon_Orange.lua"/>
+	<Script file="34_39_Maraudon_Pristine.lua"/>
+	<Script file="35_39_Uldaman.lua"/>			
+	<Script file="36_41_Dire_Maul_East.lua"/>
+	<Script file="38_44_Scholomance.lua"/>
+	<Script file="39_44_Dire_Maul_West.lua"/>
+	<Script file="40_46_Razorfen_Downs.lua"/>
+	<Script file="42_47_Dire_Maul_North.lua"/>
+	<Script file="42_47_Stratholme_Main_Gate.lua"/>
+	<Script file="44_49_ZulFarrak.lua"/>
+	<Script file="46_51_Stratholme_Service_Gate.lua"/>
+	<Script file="47_52_Blackrock_Depths_Detention.lua"/>
+	<Script file="50_54_Sunken_Temple.lua"/>
+	<Script file="51_58_Blackrock_Depths_Upper.lua"/>
+	<Script file="55_59_Lower_Blackrock_Spire.lua"/>
+	
+	<Script file="59_62_Hellfire_Ramparts.lua"/>
+	<Script file="59_63_The_Blood_Furnace.lua"/>
+	<Script file="62_65_Slave_Pens.lua"/>
+	<Script file="63_65_The_Underbog.lua"/>
+	<Script file="64_66_Mana-Tombs.lua"/>
+	<Script file="64_67_Auchenai_Crypts.lua"/>
+	<Script file="65_69_Sethekk_Halls.lua"/>
+	<Script file="66_68_Old_Hillsbrad_Foothills.lua"/>
+	<Script file="66_70_Shattered_Halls.lua"/>
+	<Script file="66_70_The_Black_Morass.lua"/>
+	<Script file="67_70_The_Mechanar.lua"/>
+	<Script file="67_70_The_Arcatraz.lua"/>
+	<Script file="67_70_The_Botanica.lua"/>
+	<Script file="67_70_The_Steamvault.lua"/>
+	<Script file="68_70_Shadow_Labyrinth.lua"/>
+	<Script file="68_70_Magister_Terrace.lua"/>
+	
+	<Script file="68_71_Utgarde_Keep.lua"/>
+	<Script file="68_71_The_Nexus.lua"/>
+	<Script file="72_74_Azjol-Nerub.lua"/>
+	<Script file="72_74_Drak'Tharon_Keep.lua"/>
+	<Script file="73_76_AhnKahet_The_Old_Kingdom.lua"/>
+	<Script file="74_78_Gundrak.lua"/>
+	<Script file="75_77_The_Violet_Hold.lua"/>
+	<Script file="76_78_Halls_of_Stone.lua"/>
+	<Script file="77_80_Halls_of_Lightning.lua"/>
+	<Script file="77_80_The_Oculus.lua"/>
+	<Script file="78_80_The_Culling_Of_Stratholme.lua"/>
+	<Script file="78_80_Utgarde_Pinnacle.lua"/>
+	
+	<Script file="80_82_Blackrock_Caverns.lua"/>
+	<Script file="80_82_Throne_of_the_Tides.lua"/>
+	<Script file="82_84_The_Stonecore.lua"/>
+	<Script file="82_84_The_Vortex_Pinnacle.lua"/>
+	<Script file="85_Grim_Batol.lua"/>
+	<Script file="85_Halls_Of_Origination.lua"/>
+	<Script file="85_Lost_City_of_the_Tol'vir.lua"/>
+	
+	<Script file="85_87_Temple_Jade_Serpent.lua"/>
+	<Script file="85_87_Stormstout_Brewery.lua"/>
+	<Script file="87_89_Mogushan_Palace.lua"/>
+	<Script file="87_89_ShadoPan_Monastery.lua"/>
+	<Script file="90_Gate_Setting_Sun.lua"/>
+	<Script file="90_Siege_Niuzao_Temple.lua"/>
+	<Script file="90_Scarlet_Monestary.lua"/>
+	<Script file="90_Scarlet_Halls.lua"/>
+	<Script file="90_Scholomance.lua"/>	
+	
+	<Script file="90_92_Bloodmaul_Slag_Mines.lua"/>
+	<Script file="93_95_Iron_Docks.lua"/>
+	<Script file="95_97_Auchindoun.lua"/>
+	<Script file="97_99_Skyreach.lua"/>
+	<Script file="100_Grimrail_Depot.lua"/>
+	<Script file="100_Shadowmoon_Burial_Grounds.lua"/>
+	<Script file="100_The_Everbloom.lua"/>
+	<Script file="100_Upper_Blackrock_Spire.lua"/>
+
+</Ui>

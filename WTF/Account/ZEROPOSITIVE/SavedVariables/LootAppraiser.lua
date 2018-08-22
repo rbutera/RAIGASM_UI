@@ -1,5 +1,15 @@
 
 LootAppraiserDB = {
+	["profileKeys"] = {
+		["Raigasm - Draenor"] = "Default",
+		["Yasuka - Outland"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Ryugasm - Draenor"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+		["Raimondo - Draenor"] = "Default",
+	},
 	["global"] = {
 		["sessions"] = {
 			{
@@ -67,26 +77,16 @@ LootAppraiserDB = {
 			[159514] = {
 				[864] = 1,
 			},
-			[152577] = {
-				[863] = 1,
+			[160143] = {
+				[1010] = 1,
 			},
 			[152510] = {
 				[864] = 1,
 			},
-			[160143] = {
-				[1010] = 1,
+			[152577] = {
+				[863] = 1,
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Raigasm - Draenor"] = "Default",
-		["Yasuka - Outland"] = "Default",
-		["Raimondo - Draenor"] = "Default",
-		["Ryugasm - Draenor"] = "Default",
-		["Ryugasm - Outland"] = "Default",
-		["Raigasm - Outland"] = "Default",
-		["Badmanting - Draenor"] = "Default",
-		["Norfweezy - Draenor"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

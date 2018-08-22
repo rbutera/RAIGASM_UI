@@ -1,0 +1,11 @@
+## Interface: 60100
+## Title: BigDickClub
+## Notes: An addon to track critical strike records and play funny sounds!
+## Version: 0.0.2
+## SavedVariables: BigDickClubDB
+
+embeds.xml
+
+Locales\Locales.xml
+
+Libs\AddonCore.lua

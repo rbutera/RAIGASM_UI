@@ -1,0 +1,24 @@
+tag 46b5751503044da85a7d49f3aed1b7f6b69b1574 1.0.16
+Author:	Kyle Buller <bullerk@gmail.com>
+Date:	Sat Jul 28 17:38:05 2018 -0500
+
+Tagging as 1.0.16
+
+commit f5ecfc236b67bd778f1b27a0130074005c866853
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Sat Jul 28 17:29:39 2018 -0500
+
+    Switch to the actual Bastion voice
+
+commit 16a57bce36fb1b6fd2c957a763009c6aaeff9537
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Sat Jul 28 15:46:48 2018 -0500
+
+    Add Wrecking Ball
+
+commit 348c4b4655174b0accd3d9e6d1060070b5fc2bf4
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Sat Jul 28 15:37:50 2018 -0500
+
+    Separate id and name
+

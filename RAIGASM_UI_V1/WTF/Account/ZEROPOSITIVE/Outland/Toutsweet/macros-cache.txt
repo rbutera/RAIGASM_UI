@@ -1,0 +1,52 @@
+VER 3 0100000000000008 "Chain Heal" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Chain Heal
+END
+VER 3 0100000000000001 "deeps" "INV_MISC_QUESTIONMARK"
+/cast ascendance
+/cast elemental mastery
+END
+VER 3 0100000000000009 "Dispell" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Purify Spirit
+END
+VER 3 010000000000000D "Earthgrab" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Earthgrab Totem
+END
+VER 3 0100000000000002 "fury" "INV_MISC_QUESTIONMARK"
+#showtooltip elemental mastery
+/cast blood fury
+/cast elemental mastery
+/cast Feral Spirit
+/use 13
+/use 14
+END
+VER 3 0100000000000006 "Healing Surge" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Healing Surge
+END
+VER 3 0100000000000005 "Healing Wave" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] healing wave
+END
+VER 3 010000000000000B "hex" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] Hex
+END
+VER 3 0100000000000003 "mill" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Milling
+/stopmacro [mod]
+/use Starflower
+END
+VER 3 010000000000000C "Rainfall" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Rainfall
+END
+VER 3 0100000000000007 "riptide" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Riptide
+END
+VER 3 0100000000000004 "spiti" "INV_MISC_QUESTIONMARK"
+#showtooltip Feral Spirit
+/cast Blood Fury
+/cast Feral Spirit
+/use 12
+/use 13
+END
+VER 3 010000000000000A "totem" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Liquid Magma Totem
+END

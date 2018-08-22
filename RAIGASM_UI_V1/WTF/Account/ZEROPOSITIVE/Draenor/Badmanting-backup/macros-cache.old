@@ -1,0 +1,46 @@
+VER 3 0100000000000006 "APT" "INV_MISC_QUESTIONMARK"
+#showtooltip Ancestral Protection Totem
+/cast [@cursor] Ancestral Protection Totem
+END
+VER 3 010000000000000A "CH" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover,help] Chain Heal; [help] Chain Heal; Chain Heal
+END
+VER 3 0100000000000004 "GotQ" "INV_MISC_QUESTIONMARK"
+#showtooltip Gift of the Queen
+/cast [@cursor] Gift of the Queen
+END
+VER 3 0100000000000003 "healing rain" "INV_MISC_QUESTIONMARK"
+#showtooltip Healing Rain
+/cast [@cursor] Healing Rain
+END
+VER 3 0100000000000009 "HS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover,help] Healing Surge; [help] Healing Surge; Healing Surge
+END
+VER 3 0100000000000008 "HW" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover,help] Healing Wave; [help] Healing Wave; Healing Wave
+END
+VER 3 0100000000000002 "lstotem" "INV_MISC_QUESTIONMARK"
+#showtooltip Capacitor Totem
+/cast [@cursor] Capacitor Totem
+END
+VER 3 0100000000000001 "R" "INV_MISC_QUESTIONMARK"
+#showtooltip Rockbiter
+/startattack
+/cast Rockbiter
+END
+VER 3 010000000000000B "riptide" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover,help] Riptide; [help] Riptide; Riptide
+END
+VER 3 0100000000000007 "Shear" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/stopcasting
+/cast [@focus,exists][@target] Wind Shear
+END
+VER 3 0100000000000005 "SL" "INV_MISC_QUESTIONMARK"
+#showtooltip Spirit Link Totem
+/cast [@cursor] Spirit Link Totem
+END

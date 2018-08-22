@@ -1,0 +1,39 @@
+VER 3 0100000000000006 "/RA " "INV_MISC_QUESTIONMARK"
+/RA MAYDEN NO MORE CD'S NOW PLS
+END
+VER 3 0100000000000008 "Battle Cry" "INV_MISC_QUESTIONMARK"
+/cast Battle Cry
+/cast Avatar
+/use 13
+/use 14
+END
+VER 3 0100000000000003 "bt" "INV_MISC_QUESTIONMARK"
+/startattack
+/cast bloodthirst
+END
+VER 3 0100000000000007 "Leap" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] heroic Leap
+END
+VER 3 0100000000000005 "ls" "INV_MISC_QUESTIONMARK"
+/cast last stand
+/use 13
+/use 14
+END
+VER 3 0100000000000002 "nuke" "INV_MISC_QUESTIONMARK"
+#showtooltip  bloodbath
+/cast blood fury
+/cast bloodbath
+/use 13
+/use 14
+END
+VER 3 0100000000000009 "Ravager" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Ravager
+END
+VER 3 0100000000000001 "rb" "INV_MISC_QUESTIONMARK"
+#showtooltip  raging blow
+/cast blood fury
+/cast raging blow
+END
+VER 3 0100000000000004 "vigi" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] Vigilance
+END

@@ -1,0 +1,9 @@
+## Interface: 80000
+## Author: cqwrteur
+## Title: LookingForGroup Premade Groups Filter
+## Version: r22
+## Dependencies: LookingForGroup_Options
+## X-LFG-OPT: 1
+## LoadOnDemand: 1
+
+Core.lua

@@ -1,0 +1,34 @@
+
+Broker_AFKDB = {
+	["profileKeys"] = {
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
+	},
+	["profiles"] = {
+		["Raimondo - Draenor"] = {
+			["loaded"] = true,
+			["afkwinpos"] = {
+				["y"] = 300,
+				["x"] = 0,
+			},
+			["aliases"] = {
+				["RAIMONDO"] = true,
+			},
+		},
+		["Ryugasm - Draenor"] = {
+			["minimap"] = {
+				["minimapPos"] = 359.259837700446,
+			},
+			["idlealert"] = "Sound\\Doodad\\BellTollTribal.ogg",
+			["loaded"] = true,
+			["afkwinpos"] = {
+				["y"] = 300,
+				["x"] = 0,
+			},
+			["afkalert"] = "Sound\\Doodad\\BellTollTribal.ogg",
+			["aliases"] = {
+				["RYUGASM"] = true,
+			},
+		},
+	},
+}

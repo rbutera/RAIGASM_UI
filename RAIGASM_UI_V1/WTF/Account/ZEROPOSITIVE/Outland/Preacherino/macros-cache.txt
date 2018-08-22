@@ -1,0 +1,33 @@
+VER 3 0100000000000006 "#edge" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] blooddrinker
+END
+VER 3 0100000000000001 "garg" "INV_MISC_QUESTIONMARK"
+/cast Summon Gargoyle
+/use 13
+/use 14
+/cast Blood fury
+END
+VER 3 0100000000000007 "Hook" "INV_MISC_QUESTIONMARK"
+#showtooltip Hook
+/cast [target=mouseover,exists] Hook; Hook
+END
+VER 3 0100000000000005 "mind freeze" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] Mind Freeze
+END
+VER 3 0100000000000003 "pillar" "INV_MISC_QUESTIONMARK"
+#showtooltip pillar of frost
+/use 13
+/use 14
+/cast pillar of frost
+END
+VER 3 0100000000000004 "tap" "INV_MISC_QUESTIONMARK"
+#showtooltip death coil
+/cast blood tap
+/cast death coil
+END
+VER 3 0100000000000002 "vamp" "INV_MISC_QUESTIONMARK"
+#showtooltip dancing rune weapon
+/use 13
+/use 14
+/cast dancing rune weapon
+END

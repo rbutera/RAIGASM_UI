@@ -3,22 +3,22 @@ DataStoreDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Raigasm - Draenor",
 		["Yasuka - Outland"] = "Yasuka - Outland",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
-		["Ryugasm - Outland"] = "Ryugasm - Outland",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 		["Raigasm - Outland"] = "Raigasm - Outland",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Ryugasm - Outland"] = "Ryugasm - Outland",
 	},
 	["global"] = {
 		["Guilds"] = {
-			["Default.Draenor.Crematoria"] = {
+			["Default.Draenor.Lost Rowsdowers"] = {
 				["faction"] = "Horde",
 			},
 			["Default.Outland.BITCOIN"] = {
 				["faction"] = "Alliance",
 			},
-			["Default.Draenor.Lost Rowsdowers"] = {
+			["Default.Draenor.Crematoria"] = {
 				["faction"] = "Horde",
 			},
 			["Default.Outland.Eight"] = {
@@ -27,35 +27,35 @@ DataStoreDB = {
 		},
 		["Version"] = 1,
 		["Characters"] = {
-			["Default.Outland.Raigasm"] = {
-				["guildName"] = "BITCOIN",
-				["faction"] = "Alliance",
-			},
-			["Default.Draenor.Ryugasm"] = {
-				["guildName"] = "Lost Rowsdowers",
+			["Default.Draenor.Raigasm"] = {
 				["faction"] = "Horde",
+			},
+			["Default.Outland.Raigasm"] = {
+				["faction"] = "Alliance",
+				["guildName"] = "BITCOIN",
 			},
 			["Default.Outland.Yasuka"] = {
-				["guildName"] = "Eight",
 				["faction"] = "Horde",
+				["guildName"] = "Eight",
 			},
 			["Default.Draenor.Norfweezy"] = {
-				["guildName"] = "Lost Rowsdowers",
 				["faction"] = "Horde",
+				["guildName"] = "Lost Rowsdowers",
 			},
 			["Default.Outland.Ryugasm"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.Draenor.Badmanting"] = {
-				["faction"] = "Horde",
 				["guildName"] = "Lost Rowsdowers",
+				["faction"] = "Horde",
 			},
 			["Default.Draenor.Raimondo"] = {
+				["guildName"] = "Lost Rowsdowers",
+				["faction"] = "Horde",
+			},
+			["Default.Draenor.Ryugasm"] = {
 				["faction"] = "Horde",
 				["guildName"] = "Lost Rowsdowers",
-			},
-			["Default.Draenor.Raigasm"] = {
-				["faction"] = "Horde",
 			},
 		},
 		["ShortToLongRealmNames"] = {

@@ -1,0 +1,11 @@
+
+LookingForGroup_OptionsDB = {
+	["profileKeys"] = {
+		["Badmanting - Draenor"] = "Default",
+		["Ryugasm - Draenor"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

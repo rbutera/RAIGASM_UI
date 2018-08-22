@@ -1,0 +1,82 @@
+VER 3 0100000000000002 "ambush" "INV_MISC_QUESTIONMARK"
+#showtooltip Ambush
+/cast premeditation
+/cast Ambush
+END
+VER 3 010000000000000E "ar" "INV_MISC_QUESTIONMARK"
+#showtooltip Adrenaline Rush
+/cast Berserking
+/cast Adrenaline Rush
+END
+VER 3 0100000000000007 "assas" "INV_MISC_QUESTIONMARK"
+/cast Vendetta
+/cast Berserking
+/use 13
+/use 14
+END
+VER 3 0100000000000010 "Blades" "INV_MISC_QUESTIONMARK"
+/cast Shadow Blades
+/cast Berserking
+END
+VER 3 0100000000000012 "bLIND" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] blind
+END
+VER 3 010000000000000F "bomb" "INV_MISC_QUESTIONMARK"
+/cast smoke bomb
+/s Smoke Bomb Here
+END
+VER 3 0100000000000011 "cANNON" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Cannonball Barrage
+END
+VER 3 0100000000000001 "dance" "INV_MISC_QUESTIONMARK"
+/cast shadow dance
+/cast Blood Fury
+/cast Shadow Reflection
+/use 13
+/use 14
+END
+VER 3 0100000000000006 "deeps" "INV_MISC_QUESTIONMARK"
+/startattack
+/cast sabre slash
+/cancelaura hand of protection
+END
+VER 3 0100000000000003 "FoK" "INV_MISC_QUESTIONMARK"
+/startattack
+/cast fan of knives
+END
+VER 3 0100000000000008 "kick" "INV_MISC_QUESTIONMARK"
+/cast Kick
+/s next
+END
+VER 3 010000000000000D "ks" "INV_MISC_QUESTIONMARK"
+#showtooltip killing spree
+/cast blood fury
+/use 13
+/use 14
+/cast Killing Spree
+END
+VER 3 0100000000000009 "macro" "INV_MISC_QUESTIONMARK"
+/5 me - wez - afran - frub - mione - senses - brax - beef - me
+END
+VER 3 010000000000000B "mousevoer" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Marked For Death
+END
+VER 3 010000000000000C "reflection" "INV_MISC_QUESTIONMARK"
+#showttoltip shadow reflection
+/cast blood fury
+/use 13
+/use 14
+/cast Shadow Reflection
+END
+VER 3 0100000000000005 "rush" "INV_MISC_QUESTIONMARK"
+/cast Adrenaline Rush
+/use 13
+/use 14
+/cast shadow blades
+END
+VER 3 0100000000000004 "tricks" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] tricks of the trade
+END
+VER 3 010000000000000A "YELL" "INV_MISC_QUESTIONMARK"
+I'M ON A BOAT MOTHER FUCKERS
+END

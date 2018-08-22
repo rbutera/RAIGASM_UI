@@ -1,0 +1,2 @@
+
+KKonferSKCharDB = nil

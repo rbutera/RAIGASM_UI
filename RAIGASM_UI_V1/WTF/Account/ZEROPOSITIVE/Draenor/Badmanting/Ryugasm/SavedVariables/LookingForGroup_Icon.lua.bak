@@ -1,0 +1,10 @@
+
+LookingForGroup_IconCharacterDB = {
+	["profileKeys"] = {
+		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
+	},
+	["profiles"] = {
+		["Ryugasm - Draenor"] = {
+		},
+	},
+}

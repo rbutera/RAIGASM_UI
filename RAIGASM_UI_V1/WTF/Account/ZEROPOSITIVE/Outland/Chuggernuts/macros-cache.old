@@ -1,0 +1,36 @@
+VER 3 0100000000000002 "aoe taunt" "INV_MISC_QUESTIONMARK"
+/target Black Ox Statue
+/cast Prooke
+END
+VER 3 0100000000000008 "cocoon" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Life Cocoon
+END
+VER 3 010000000000000A "detox" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Detox
+END
+VER 3 0100000000000006 "env" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Enveloping Mist
+END
+VER 3 010000000000000B "focus stun" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] Spear Hand Strike
+END
+VER 3 0100000000000001 "keg" "INV_MISC_QUESTIONMARK"
+/cast Keg Smash
+/cast Jab
+END
+VER 3 0100000000000004 "renewing" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] renewing mist
+END
+VER 3 0100000000000009 "Shei" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Sheilun's Gift
+END
+VER 3 0100000000000007 "sooth" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Effuse
+END
+VER 3 0100000000000003 "stance" "INV_MISC_QUESTIONMARK"
+/cast Stance of the Spirited Crane
+/cast Stance of the Wise Serpent
+END
+VER 3 0100000000000005 "viv" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Vivify
+END

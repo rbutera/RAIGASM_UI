@@ -1,0 +1,74 @@
+VER 3 0100000000000016 "BR" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] power word: radiance
+END
+VER 3 0100000000000008 "BS" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] power word: shield
+END
+VER 3 0100000000000017 "BW" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] shadow mend
+END
+VER 3 010000000000000C "CA" "INV_MISC_QUESTIONMARK"
+#showtooltip power infusion
+/cast power infusion
+/use 13
+/use 14
+END
+VER 3 0100000000000019 "CbS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Light of T'uure
+END
+VER 3 010000000000000A "CS" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/stopcasting
+/stopcasting
+/cast Counter Shot
+/cast Scatter Shot
+/cast heart of the phoenix
+END
+VER 3 010000000000001D "DB" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Pain Suppression
+END
+VER 3 010000000000001C "FF" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Purify
+END
+VER 3 0100000000000013 "GT" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Prayer of Healing
+END
+VER 3 010000000000000F "HoTF" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] plea
+END
+VER 3 0100000000000018 "KC" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Flash Heal
+END
+VER 3 010000000000001B "KS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Heal
+END
+VER 3 0100000000000010 "MC" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Renew
+END
+VER 3 0100000000000011 "MD" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Prayer of Mending
+END
+VER 3 010000000000000D "Mount" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Holy Word: Serenity
+END
+VER 3 010000000000001A "MS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Guardian Spirit
+END
+VER 3 0100000000000004 "SS" "INV_MISC_QUESTIONMARK"
+#showtooltip Eternal Guardian
+/cast [@mouseover, dead] Eternal Guardian(Exotic Ability)
+END
+VER 3 0100000000000003 "SS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target@cursor] Holy Word: Sanctify
+END

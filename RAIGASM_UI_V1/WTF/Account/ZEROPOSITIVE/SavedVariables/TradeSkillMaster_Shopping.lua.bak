@@ -1,0 +1,76 @@
+
+TradeSkillMaster_ShoppingDB = {
+	["_currentProfile"] = {
+		["Raigasm - Draenor"] = "Default",
+		["Yasuka - Outland"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+		["Raimondo - Draenor"] = "Default",
+	},
+	["_version"] = 3,
+	["g@ @sniperVendorPrice"] = true,
+	["g@ @postBidPercent"] = 0.95,
+	["_scopeKeys"] = {
+		["char"] = {
+			"Yasuka - Outland", -- [1]
+			"Raigasm - Outland", -- [2]
+			"Ryugasm - Outland", -- [3]
+			"Raigasm - Draenor", -- [4]
+			"Raimondo - Draenor", -- [5]
+			"Badmanting - Draenor", -- [6]
+			"Norfweezy - Draenor", -- [7]
+		},
+		["factionrealm"] = {
+			"Horde - Outland", -- [1]
+			"Alliance - Outland", -- [2]
+			"Horde - Draenor", -- [3]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Outland", -- [1]
+			"Draenor", -- [2]
+		},
+	},
+	["g@ @helpPlatesShown"] = {
+		["auction"] = true,
+	},
+	["g@ @postUndercut"] = "1c",
+	["g@ @minDeSearchLvl"] = 1,
+	["g@ @maxDeSearchLvl"] = 735,
+	["g@ @sniperSound"] = "TSM_NO_SOUND",
+	["g@ @marketValueSource"] = "dbmarket",
+	["g@ @savedSearches"] = {
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1526751378,
+			["name"] = "potion prolonged",
+			["filter"] = "potion prolonged",
+		}, -- [1]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1525625609,
+			["name"] = "azshari",
+			["filter"] = "azshari",
+		}, -- [2]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1525625541,
+			["name"] = "seventh demon",
+			["filter"] = "seventh demon",
+		}, -- [3]
+		{
+			["searchMode"] = "normal",
+			["lastSearch"] = 1523216898,
+			["name"] = "Lightweave",
+			["filter"] = "Lightweave",
+		}, -- [4]
+	},
+	["_hash"] = 1861581,
+	["g@ @normalPostPrice"] = "150% dbmarket",
+	["g@ @maxDeSearchPercent"] = 1,
+	["g@ @sniperCustomPrice"] = "0c",
+}

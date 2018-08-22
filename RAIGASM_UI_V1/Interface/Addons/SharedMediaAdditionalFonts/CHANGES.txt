@@ -1,0 +1,8 @@
+------------------------------------------------------------------------
+r106 | AllInOneMighty | 2018-07-19 04:42:57 +0000 (Thu, 19 Jul 2018) | 1 line
+Changed paths:
+   M /trunk/SharedMediaAdditionalFonts.toc
+
+Removed loading of MyAdditionalFonts.lua
+------------------------------------------------------------------------
+

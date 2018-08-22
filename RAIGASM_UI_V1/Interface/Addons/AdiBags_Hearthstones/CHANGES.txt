@@ -1,0 +1,11 @@
+------------------------------------------------------------------------
+r32 | myrroddin | 2017-08-28 00:13:02 -0500 (Mon, 28 Aug 2017) | 2 lines
+Changed paths:
+   M /trunk/AdiBags_Hearthstones.lua
+   M /trunk/AdiBags_Hearthstones.toc
+   M /trunk/supported_items.md
+
+- Bump ToC for patch 7.3
+- Add Wormhole Generator: Argus
+------------------------------------------------------------------------
+

@@ -1,0 +1,212 @@
+
+ElvUI_BetterTalentFrameDB = {
+	["talents"] = {
+		["pve"] = {
+			[3] = {
+				{
+					{
+						["talentID"] = 22590,
+						["name"] = "Zeal",
+						["available"] = true,
+						["column"] = 1,
+						["selected"] = false,
+						["spellid"] = 269569,
+						["texture"] = 135961,
+					}, -- [1]
+					{
+						["talentID"] = 22557,
+						["name"] = "Righteous Verdict",
+						["available"] = true,
+						["column"] = 1,
+						["selected"] = false,
+						["spellid"] = 267610,
+						["texture"] = 461860,
+					}, -- [2]
+					{
+						["talentID"] = 22175,
+						["name"] = "Execution Sentence",
+						["available"] = true,
+						["column"] = 1,
+						["selected"] = false,
+						["spellid"] = 267798,
+						["texture"] = 613954,
+					}, -- [3]
+				}, -- [1]
+				{
+					{
+						["talentID"] = 22319,
+						["name"] = "Fires of Justice",
+						["available"] = true,
+						["column"] = 2,
+						["selected"] = false,
+						["spellid"] = 203316,
+						["texture"] = 135891,
+					}, -- [1]
+					{
+						["talentID"] = 22592,
+						["name"] = "Blade of Wrath",
+						["available"] = true,
+						["column"] = 2,
+						["selected"] = false,
+						["spellid"] = 231832,
+						["texture"] = 1360757,
+					}, -- [2]
+					{
+						["talentID"] = 22593,
+						["name"] = "Hammer of Wrath",
+						["available"] = true,
+						["column"] = 2,
+						["selected"] = false,
+						["spellid"] = 24275,
+						["texture"] = 613533,
+					}, -- [3]
+				}, -- [2]
+				{
+					{
+						["talentID"] = 22896,
+						["name"] = "Fist of Justice",
+						["available"] = true,
+						["column"] = 3,
+						["selected"] = false,
+						["spellid"] = 234299,
+						["texture"] = 135906,
+					}, -- [1]
+					{
+						["talentID"] = 22180,
+						["name"] = "Repentance",
+						["available"] = true,
+						["column"] = 3,
+						["selected"] = false,
+						["spellid"] = 20066,
+						["texture"] = 135942,
+					}, -- [2]
+					{
+						["talentID"] = 21811,
+						["name"] = "Blinding Light",
+						["available"] = true,
+						["column"] = 3,
+						["selected"] = false,
+						["spellid"] = 115750,
+						["texture"] = 571553,
+					}, -- [3]
+				}, -- [3]
+				{
+					{
+						["talentID"] = 22375,
+						["name"] = "Divine Judgment",
+						["available"] = true,
+						["column"] = 4,
+						["selected"] = false,
+						["spellid"] = 271580,
+						["texture"] = 236260,
+					}, -- [1]
+					{
+						["talentID"] = 22182,
+						["name"] = "Consecration",
+						["available"] = true,
+						["column"] = 4,
+						["selected"] = false,
+						["spellid"] = 205228,
+						["texture"] = 135926,
+					}, -- [2]
+					{
+						["talentID"] = 22183,
+						["name"] = "Wake of Ashes",
+						["available"] = true,
+						["column"] = 4,
+						["selected"] = false,
+						["spellid"] = 255937,
+						["texture"] = 1112939,
+					}, -- [3]
+				}, -- [4]
+				{
+					{
+						["talentID"] = 22595,
+						["name"] = "Unbreakable Spirit",
+						["available"] = true,
+						["column"] = 5,
+						["selected"] = false,
+						["spellid"] = 114154,
+						["texture"] = 135921,
+					}, -- [1]
+					{
+						["talentID"] = 22185,
+						["name"] = "Cavalier",
+						["available"] = true,
+						["column"] = 5,
+						["selected"] = false,
+						["spellid"] = 230332,
+						["texture"] = 1360759,
+					}, -- [2]
+					{
+						["talentID"] = 22186,
+						["name"] = "Eye for an Eye",
+						["available"] = true,
+						["column"] = 5,
+						["selected"] = false,
+						["spellid"] = 205191,
+						["texture"] = 135986,
+					}, -- [3]
+				}, -- [5]
+				{
+					{
+						["talentID"] = 23167,
+						["name"] = "Selfless Healer",
+						["available"] = true,
+						["column"] = 6,
+						["selected"] = false,
+						["spellid"] = 85804,
+						["texture"] = 236252,
+					}, -- [1]
+					{
+						["talentID"] = 22483,
+						["name"] = "Justicar's Vengeance",
+						["available"] = true,
+						["column"] = 6,
+						["selected"] = false,
+						["spellid"] = 215661,
+						["texture"] = 135957,
+					}, -- [2]
+					{
+						["talentID"] = 23086,
+						["name"] = "Word of Glory",
+						["available"] = true,
+						["column"] = 6,
+						["selected"] = false,
+						["spellid"] = 210191,
+						["texture"] = 133192,
+					}, -- [3]
+				}, -- [6]
+				{
+					{
+						["talentID"] = 22591,
+						["name"] = "Divine Purpose",
+						["available"] = true,
+						["column"] = 7,
+						["selected"] = false,
+						["spellid"] = 223817,
+						["texture"] = 135897,
+					}, -- [1]
+					{
+						["talentID"] = 22215,
+						["name"] = "Crusade",
+						["available"] = true,
+						["column"] = 7,
+						["selected"] = false,
+						["spellid"] = 231895,
+						["texture"] = 236262,
+					}, -- [2]
+					{
+						["talentID"] = 22634,
+						["name"] = "Inquisition",
+						["available"] = true,
+						["column"] = 7,
+						["selected"] = false,
+						["spellid"] = 84963,
+						["texture"] = 461858,
+					}, -- [3]
+				}, -- [7]
+			},
+		},
+	},
+}

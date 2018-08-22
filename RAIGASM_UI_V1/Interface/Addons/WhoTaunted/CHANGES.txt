@@ -1,0 +1,51 @@
+tag d9080e9d0339bc3a7e5c810bb4aff2dc44beb47e v1.4
+Author:	Davie3 <Davie3@users.noreply.github.com>
+Date:	Tue Jul 17 09:19:33 2018 -0700
+
+Tagging as v1.4 for patch BFA 8.0
+
+commit f65d280df87b9908002352531b1fcb7cc362fe33
+Author: Davie3 <Davie3@users.noreply.github.com>
+Date:   Fri Jul 13 21:52:21 2018 -0700
+
+    Updated PvPZoneIDs table to the new uiMapIDs.
+    Adjusted the CombatLog event function to pull data using the new CombatLogGetCurrentEventInfo function since the info is no longer pulled from the event payload.
+    Utilizing the new C_Map.GetBestMapForUnit function to detect PVP Zones.
+
+commit 45bb4f2778f96a49d2e43ec2d7950163ef3c85b8
+Author: David Griffin <Davie3@users.noreply.github.com>
+Date:   Sat Jul 7 15:01:04 2018 -0700
+
+    Changed XML schema.
+    
+    To-do:
+    Combat log event changes
+    World map changes
+
+commit 2aece6188ee1f338b9bfd396d27ef467bb17dbe3
+Author: David Griffin <Davie3@users.noreply.github.com>
+Date:   Sat Apr 28 13:06:08 2018 -0700
+
+    Toc bump for 8.0.
+    Version change to 1.4.
+    Added Git ignore for Libs folder while testing (the Curseforge packager auto generates it).
+
+commit fc082bbf6945f5a32b215c6eefad3fc139ee7d3c
+Author: David Griffin <Davie3@users.noreply.github.com>
+Date:   Wed Nov 1 08:29:10 2017 -0700
+
+    Removed Mocking Banner from the AOE list as it was removed in 7.0.3.
+
+commit a5e0f18c5c1d11c24f985c9239908980b70363fb
+Author: David Griffin <Davie3@users.noreply.github.com>
+Date:   Wed Aug 30 13:52:30 2017 -0700
+
+    Updated README.md for GitHub.
+    Updated the CurseForge package file to ignore README.md.
+
+commit 6571142af2c58921a952f10fe2efc78add7488f4
+Author: David Griffin <Davie3@users.noreply.github.com>
+Date:   Wed Aug 30 10:06:44 2017 -0700
+
+    Create README.md
+

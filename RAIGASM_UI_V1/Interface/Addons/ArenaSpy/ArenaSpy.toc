@@ -1,0 +1,13 @@
+## Interface: 60200
+## Title: ArenaSpy
+## Notes: Detects arena opponents
+## Version: v3.2
+## Author: Jordon
+## DefaultState: Enabled
+## SavedVariables: ArenaSpy_SavedPlayers
+## X-Curse-Packaged-Version: v3.2
+## X-Curse-Project-Name: ArenaSpy
+## X-Curse-Project-ID: arenaspy
+## X-Curse-Repository-ID: wow/arenaspy/mainline
+
+ArenaSpy.lua

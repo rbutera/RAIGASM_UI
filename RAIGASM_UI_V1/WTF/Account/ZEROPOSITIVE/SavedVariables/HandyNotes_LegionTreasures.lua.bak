@@ -1,0 +1,82 @@
+
+HandyNotes_LegionTreasuresDB = {
+	["profileKeys"] = {
+		["Xpreach - Tarren Mill"] = "Xpreach - Tarren Mill",
+		["Toutsweet - Tarren Mill"] = "Toutsweet - Tarren Mill",
+		["Dlory - Tarren Mill"] = "Dlory - Tarren Mill",
+		["Raigasm - Draenor"] = "Raigasm - Draenor",
+		["Yasuka - Outland"] = "Yasuka - Outland",
+		["Chatmademe - Kazzak"] = "Chatmademe - Kazzak",
+		["Preacho - Tarren Mill"] = "Preacho - Tarren Mill",
+		["Chuggernuts - Tarren Mill"] = "Chuggernuts - Tarren Mill",
+		["Preachez - Tarren Mill"] = "Preachez - Tarren Mill",
+		["Badmanting - Draenor"] = "Badmanting - Draenor",
+		["Préach - Tarren Mill"] = "Préach - Tarren Mill",
+		["Preech - Tarren Mill"] = "Preech - Tarren Mill",
+		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
+		["Mastarace - Kazzak"] = "Mastarace - Kazzak",
+		["Dlorange - Tarren Mill"] = "Dlorange - Tarren Mill",
+		["Sulivan - Tarren Mill"] = "Sulivan - Tarren Mill",
+		["Preachx - Tarren Mill"] = "Preachx - Tarren Mill",
+		["Swobuswagins - Tarren Mill"] = "Swobuswagins - Tarren Mill",
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Ryugasm - Outland"] = "Ryugasm - Outland",
+		["Meticulous - Tarren Mill"] = "Meticulous - Tarren Mill",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Preacherino - Tarren Mill"] = "Preacherino - Tarren Mill",
+		["Raigasm - Outland"] = "Raigasm - Outland",
+		["Preách - Tarren Mill"] = "Preách - Tarren Mill",
+	},
+	["profiles"] = {
+		["Xpreach - Tarren Mill"] = {
+		},
+		["Toutsweet - Tarren Mill"] = {
+		},
+		["Dlory - Tarren Mill"] = {
+		},
+		["Raigasm - Draenor"] = {
+		},
+		["Yasuka - Outland"] = {
+		},
+		["Chatmademe - Kazzak"] = {
+		},
+		["Preacho - Tarren Mill"] = {
+		},
+		["Chuggernuts - Tarren Mill"] = {
+		},
+		["Preachez - Tarren Mill"] = {
+		},
+		["Badmanting - Draenor"] = {
+		},
+		["Préach - Tarren Mill"] = {
+		},
+		["Preech - Tarren Mill"] = {
+		},
+		["Ryugasm - Draenor"] = {
+		},
+		["Mastarace - Kazzak"] = {
+		},
+		["Dlorange - Tarren Mill"] = {
+		},
+		["Sulivan - Tarren Mill"] = {
+		},
+		["Preachx - Tarren Mill"] = {
+		},
+		["Swobuswagins - Tarren Mill"] = {
+		},
+		["Raimondo - Draenor"] = {
+		},
+		["Ryugasm - Outland"] = {
+		},
+		["Meticulous - Tarren Mill"] = {
+		},
+		["Norfweezy - Draenor"] = {
+		},
+		["Preacherino - Tarren Mill"] = {
+		},
+		["Raigasm - Outland"] = {
+		},
+		["Preách - Tarren Mill"] = {
+		},
+	},
+}

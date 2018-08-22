@@ -1,0 +1,14 @@
+tag 25d2f89474e453e837e09a9b01f111684b4a3657 1.6.9
+Author:	BenFletcher <Ben.Fletcher.AZ@Gmail.com>
+Date:	Thu Jul 19 18:19:14 2018 -0700
+
+BfA prepatch Bugfixes
+
+commit a7fefa2a112fe3137b2b68782e79bfcfd6e3a350
+Author: BenFletcher <Ben.Fletcher.AZ@Gmail.com>
+Date:   Thu Jul 19 18:18:37 2018 -0700
+
+    Fix for nil concatenation error
+    
+    Artifact Power tokens were removed with the Battle For Azeroth prepatch. Calculating the total artifact power in your bags is no longer possible and was causing nil concatenation errors.
+

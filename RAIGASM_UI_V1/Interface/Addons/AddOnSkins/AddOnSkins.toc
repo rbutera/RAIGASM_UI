@@ -1,0 +1,8 @@
+## Interface: 80000
+## Title: |cff1784d1AddOnSkins|r
+## Version: 3.90
+## Author: Azilroka, Whiro
+## SavedVariables: AddOnSkinsDB, AddOnSkinsDS
+## OptionalDeps: ProjectAzilroka, ElvUI, BuyEmAll, DSM, Tukui
+
+Load_AddOnSkins.xml

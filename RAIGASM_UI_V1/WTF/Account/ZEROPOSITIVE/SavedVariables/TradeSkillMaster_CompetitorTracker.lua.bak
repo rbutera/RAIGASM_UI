@@ -1,0 +1,34 @@
+
+TradeSkillMaster_CompetitorTrackerDB = {
+	["profiles"] = {
+		["Default"] = {
+			["treeGroupStatus"] = {
+				["groups"] = {
+					["1"] = true,
+				},
+				["scrollvalue"] = 0,
+				["fullwidth"] = 801.000122070313,
+				["selected"] = 1,
+				["treesizable"] = true,
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Raimondo - Draenor"] = "Default",
+		["Ryugasm - Draenor"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+	},
+	["factionrealm"] = {
+		["Horde - Draenor"] = {
+			["loginTime"] = 1534749491,
+			["logoutTime"] = 1534751812,
+		},
+		["Alliance - Outland"] = {
+			["logoutTime"] = 1522514412,
+			["loginTime"] = 1522513206,
+		},
+	},
+}

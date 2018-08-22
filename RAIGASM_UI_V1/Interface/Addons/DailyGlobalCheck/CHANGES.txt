@@ -1,0 +1,11 @@
+lightweight tag 725eb6be427d8f380d61692d069f608e67f7ebe9 v1.5.3.3
+Author:	Saregon <n_rhygar@yahoo.it>
+Date:	Thu Jul 19 21:42:46 2018 +0200
+
+commit 725eb6be427d8f380d61692d069f608e67f7ebe9
+Author: Saregon <n_rhygar@yahoo.it>
+Date:   Thu Jul 19 21:42:46 2018 +0200
+
+    map features temporarily disabled due to 8.0 changes
+    I was not prepared
+

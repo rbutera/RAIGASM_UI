@@ -1,0 +1,833 @@
+
+TradeSkillMaster_CraftingDB = {
+	["f@Horde - Draenor@playerProfessions"] = {
+		["Raimondo"] = {
+			["Cooking"] = {
+				["isSecondary"] = true,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+			["Blacksmithing"] = {
+				["prompted"] = true,
+				["link"] = "|cffffd000|Htrade:Player-1403-06E091A7:2018:164|h[Blacksmithing]|h|r",
+				["isSecondary"] = false,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+			["First Aid"] = {
+				["isSecondary"] = true,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+			["Enchanting"] = {
+				["isSecondary"] = false,
+				["level"] = 11,
+				["maxLevel"] = 85,
+			},
+		},
+		["Badmanting"] = {
+			["Herbalism"] = {
+				["isSecondary"] = false,
+				["level"] = 800,
+				["maxLevel"] = 800,
+			},
+			["Mining"] = {
+				["isSecondary"] = false,
+				["level"] = 788,
+				["prompted"] = true,
+				["maxLevel"] = 800,
+			},
+			["First Aid"] = {
+				["isSecondary"] = true,
+				["level"] = 1,
+				["maxLevel"] = 800,
+			},
+			["Cooking"] = {
+				["isSecondary"] = true,
+				["level"] = 771,
+				["maxLevel"] = 800,
+			},
+		},
+	},
+	["g@ @helpPlatesShown"] = {
+		["gatheringFrame"] = true,
+		["groups"] = true,
+		["profession"] = true,
+	},
+	["g@ @ignoreCharacters"] = {
+	},
+	["f@Alliance - Outland@gathering"] = {
+		["extraMats"] = {
+		},
+		["availableMats"] = {
+		},
+		["shortItems"] = {
+		},
+		["gatheredMats"] = false,
+		["neededMats"] = {
+		},
+		["selectedSources"] = {
+		},
+		["professions"] = {
+		},
+		["selectedSourceStatus"] = {
+		},
+		["sessionOptions"] = {
+		},
+		["destroyingMats"] = {
+		},
+	},
+	["_hash"] = 15983053,
+	["f@Horde - Outland@buyAH"] = false,
+	["f@Horde - Draenor@crafts"] = {
+		[55208] = {
+			["mats"] = {
+				["i:36860"] = 1,
+				["i:35624"] = 1,
+				["i:35627"] = 1,
+				["i:41163"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Titansteel Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:37663",
+		},
+		[102167] = {
+			["mats"] = {
+				["i:72094"] = 2,
+				["i:72103"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Trillium Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:72095",
+		},
+		[2658] = {
+			["mats"] = {
+				["i:2775"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Silver Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2842",
+		},
+		[3304] = {
+			["mats"] = {
+				["i:2771"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Tin Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3576",
+		},
+		[74530] = {
+			["mats"] = {
+				["i:52185"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Elementium Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:52186",
+		},
+		[2659] = {
+			["mats"] = {
+				["i:3576"] = 1,
+				["i:2840"] = 1,
+			},
+			["numResult"] = 2,
+			["profession"] = "Mining",
+			["name"] = "Bronze Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2841",
+		},
+		[10097] = {
+			["mats"] = {
+				["i:3858"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Mithril Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3860",
+		},
+		[10098] = {
+			["mats"] = {
+				["i:7911"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Truesilver Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:6037",
+		},
+		[2660] = {
+			["mats"] = {
+				["i:2835"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["itemString"] = "i:2862",
+			["players"] = {
+				["Raimondo"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Rough Sharpening Stone",
+		},
+		[16153] = {
+			["mats"] = {
+				["i:10620"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Thorium Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:12359",
+		},
+		[55211] = {
+			["mats"] = {
+				["i:36910"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Titanium Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:41163",
+		},
+		[102165] = {
+			["mats"] = {
+				["i:72092"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Ghost Iron Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:72096",
+		},
+		[3308] = {
+			["mats"] = {
+				["i:2776"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Gold Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3577",
+		},
+		[35750] = {
+			["mats"] = {
+				["i:22452"] = 1,
+			},
+			["numResult"] = 10,
+			["profession"] = "Mining",
+			["name"] = "Mote of Earth",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:22573",
+		},
+		[2657] = {
+			["mats"] = {
+				["i:2770"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Copper Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:2840",
+		},
+		[49252] = {
+			["mats"] = {
+				["i:36909"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Cobalt Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:36916",
+		},
+		[29356] = {
+			["mats"] = {
+				["i:23424"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Fel Iron Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:23445",
+		},
+		[70524] = {
+			["mats"] = {
+				["i:12359"] = 1,
+				["i:156930"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Enchanted Thorium Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:12655",
+		},
+		[29358] = {
+			["mats"] = {
+				["i:23425"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Adamantite Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:23446",
+		},
+		[29359] = {
+			["mats"] = {
+				["i:23427"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Eternium Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:23447",
+		},
+		[29360] = {
+			["mats"] = {
+				["i:23447"] = 2,
+				["i:23445"] = 3,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Felsteel Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:23448",
+		},
+		[29361] = {
+			["mats"] = {
+				["i:23426"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Khorium Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:23449",
+		},
+		[3569] = {
+			["mats"] = {
+				["i:3575"] = 1,
+				["i:3857"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Steel Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3859",
+		},
+		[3115] = {
+			["mats"] = {
+				["i:2589"] = 1,
+				["i:2835"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["itemString"] = "i:3239",
+			["players"] = {
+				["Raimondo"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Rough Weightstone",
+		},
+		[3307] = {
+			["mats"] = {
+				["i:2772"] = 1,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Iron Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:3575",
+		},
+		[84038] = {
+			["mats"] = {
+				["i:53038"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Obsidium Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:54849",
+		},
+		[74529] = {
+			["mats"] = {
+				["i:52183"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Pyrium Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:51950",
+		},
+		[12260] = {
+			["mats"] = {
+				["i:2840"] = 4,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["itemString"] = "i:10421",
+			["players"] = {
+				["Raimondo"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Rough Copper Vest",
+		},
+		[74537] = {
+			["mats"] = {
+				["i:52186"] = 10,
+				["i:52327"] = 4,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Hardened Elementium Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:53039",
+		},
+		[49258] = {
+			["mats"] = {
+				["i:36912"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Saronite Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:36913",
+		},
+		[35751] = {
+			["mats"] = {
+				["i:21884"] = 1,
+			},
+			["numResult"] = 10,
+			["profession"] = "Mining",
+			["name"] = "Mote of Fire",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:22574",
+		},
+		[29686] = {
+			["mats"] = {
+				["i:23446"] = 10,
+			},
+			["numResult"] = 1,
+			["profession"] = "Mining",
+			["name"] = "Hardened Adamantite Bar",
+			["players"] = {
+				["Badmanting"] = true,
+			},
+			["queued"] = 0,
+			["itemString"] = "i:23573",
+		},
+		[2663] = {
+			["mats"] = {
+				["i:2840"] = 2,
+			},
+			["numResult"] = 1,
+			["profession"] = "Blacksmithing",
+			["itemString"] = "i:2853",
+			["players"] = {
+				["Raimondo"] = true,
+			},
+			["queued"] = 0,
+			["name"] = "Copper Bracers",
+		},
+	},
+	["f@Horde - Outland@inkTrade"] = false,
+	["f@Alliance - Outland@ignoreIntermediate"] = false,
+	["f@Horde - Draenor@ignoreDECheckBox"] = false,
+	["g@ @ignoreGuilds"] = {
+	},
+	["f@Alliance - Outland@playerProfessions"] = {
+		["Raigasm"] = {
+			["Herbalism"] = {
+				["isSecondary"] = false,
+				["level"] = 795,
+				["maxLevel"] = 800,
+			},
+			["Mining"] = {
+				["isSecondary"] = false,
+				["level"] = 788,
+				["maxLevel"] = 800,
+			},
+			["First Aid"] = {
+				["isSecondary"] = true,
+				["level"] = 1,
+				["maxLevel"] = 800,
+			},
+			["Cooking"] = {
+				["isSecondary"] = true,
+				["level"] = 786,
+				["maxLevel"] = 815,
+			},
+		},
+		["Ryugasm"] = {
+			["Alchemy"] = {
+				["isSecondary"] = false,
+				["level"] = 1,
+				["maxLevel"] = 75,
+			},
+			["Cooking"] = {
+				["isSecondary"] = true,
+				["level"] = 16,
+				["maxLevel"] = 90,
+			},
+			["First Aid"] = {
+				["isSecondary"] = true,
+				["level"] = 75,
+				["maxLevel"] = 75,
+			},
+			["Skinning"] = {
+				["isSecondary"] = false,
+				["level"] = 800,
+				["maxLevel"] = 800,
+			},
+		},
+	},
+	["g@ @showingDefaultFrame"] = false,
+	["f@Horde - Outland@disableCheckBox"] = false,
+	["f@Horde - Outland@evenStacks"] = false,
+	["g@ @defaultMatCostMethod"] = "min(dbmarket, crafting, vendorbuy, convert(dbmarket))",
+	["f@Alliance - Outland@crafts"] = {
+	},
+	["f@Horde - Outland@ignoreAlts"] = false,
+	["f@Horde - Draenor@inkTrade"] = false,
+	["f@Alliance - Outland@ignoreDECheckBox"] = false,
+	["f@Horde - Outland@professionScanCache"] = {
+	},
+	["_version"] = 7,
+	["f@Horde - Outland@ignoreIntermediate"] = false,
+	["f@Horde - Outland@playerProfessions"] = {
+	},
+	["g@ @queueSort"] = 1,
+	["f@Alliance - Outland@disableCheckBox"] = false,
+	["f@Horde - Draenor@ignoreAlts"] = false,
+	["_scopeKeys"] = {
+		["char"] = {
+			"Yasuka - Outland", -- [1]
+			"Raigasm - Outland", -- [2]
+			"Ryugasm - Outland", -- [3]
+			"Raigasm - Draenor", -- [4]
+			"Raimondo - Draenor", -- [5]
+			"Badmanting - Draenor", -- [6]
+			"Norfweezy - Draenor", -- [7]
+		},
+		["factionrealm"] = {
+			"Horde - Outland", -- [1]
+			"Alliance - Outland", -- [2]
+			"Horde - Draenor", -- [3]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Outland", -- [1]
+			"Draenor", -- [2]
+		},
+	},
+	["f@Horde - Outland@ignoreDECheckBox"] = false,
+	["f@Horde - Draenor@evenStacks"] = false,
+	["f@Alliance - Outland@evenStacks"] = false,
+	["f@Horde - Outland@mats"] = {
+	},
+	["f@Alliance - Outland@ignoreAlts"] = false,
+	["g@ @frameQueueOpen"] = false,
+	["f@Horde - Draenor@queueStatus"] = {
+		["collapsed"] = {
+		},
+	},
+	["f@Horde - Outland@gathering"] = {
+		["availableMats"] = {
+		},
+		["extraMats"] = {
+		},
+		["shortItems"] = {
+		},
+		["gatheredMats"] = false,
+		["neededMats"] = {
+		},
+		["destroyingMats"] = {
+		},
+		["professions"] = {
+		},
+		["selectedSourceStatus"] = {
+		},
+		["sessionOptions"] = {
+		},
+		["selectedSources"] = {
+		},
+	},
+	["f@Alliance - Outland@mats"] = {
+	},
+	["f@Horde - Outland@crafts"] = {
+	},
+	["_currentProfile"] = {
+		["Raigasm - Draenor"] = "Default",
+		["Yasuka - Outland"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+		["Raimondo - Draenor"] = "Default",
+	},
+	["f@Horde - Draenor@buyAH"] = false,
+	["g@ @ignoreCDCraftCost"] = true,
+	["f@Alliance - Outland@inkTrade"] = false,
+	["f@Alliance - Outland@professionScanCache"] = {
+	},
+	["f@Horde - Draenor@gathering"] = {
+		["extraMats"] = {
+		},
+		["availableMats"] = {
+		},
+		["shortItems"] = {
+		},
+		["gatheredMats"] = false,
+		["neededMats"] = {
+		},
+		["selectedSources"] = {
+		},
+		["professions"] = {
+		},
+		["selectedSourceStatus"] = {
+		},
+		["sessionOptions"] = {
+		},
+		["destroyingMats"] = {
+		},
+	},
+	["g@ @priceColumn"] = 1,
+	["g@ @defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)",
+	["f@Horde - Draenor@mats"] = {
+		["i:23447"] = {
+			["name"] = "Eternium Bar",
+		},
+		["i:2589"] = {
+			["name"] = "Linen Cloth",
+		},
+		["i:36912"] = {
+			["name"] = "Saronite Ore",
+		},
+		["i:35627"] = {
+			["name"] = "Eternal Shadow",
+		},
+		["i:2775"] = {
+			["name"] = "Silver Ore",
+		},
+		["i:12359"] = {
+			["name"] = "Thorium Bar",
+		},
+		["i:3575"] = {
+			["name"] = "Iron Bar",
+		},
+		["i:156930"] = {
+			["name"] = "Rich Illusion Dust",
+		},
+		["i:10620"] = {
+			["name"] = "Thorium Ore",
+		},
+		["i:23424"] = {
+			["name"] = "Fel Iron Ore",
+		},
+		["i:2770"] = {
+			["name"] = "Copper Ore",
+		},
+		["i:72092"] = {
+			["name"] = "Ghost Iron Ore",
+		},
+		["i:23426"] = {
+			["name"] = "Khorium Ore",
+		},
+		["i:7911"] = {
+			["name"] = "Truesilver Ore",
+		},
+		["i:72094"] = {
+			["name"] = "Black Trillium Ore",
+		},
+		["i:36910"] = {
+			["name"] = "Titanium Ore",
+		},
+		["i:35624"] = {
+			["name"] = "Eternal Earth",
+		},
+		["i:2835"] = {
+			["name"] = "Rough Stone",
+		},
+		["i:23446"] = {
+			["name"] = "Adamantite Bar",
+		},
+		["i:41163"] = {
+			["name"] = "Titanium Bar",
+		},
+		["i:22452"] = {
+			["name"] = "Primal Earth",
+		},
+		["i:2776"] = {
+			["name"] = "Gold Ore",
+		},
+		["i:23427"] = {
+			["name"] = "Eternium Ore",
+		},
+		["i:52183"] = {
+			["name"] = "Pyrite Ore",
+		},
+		["i:23425"] = {
+			["name"] = "Adamantite Ore",
+		},
+		["i:52327"] = {
+			["name"] = "Volatile Earth",
+		},
+		["i:3858"] = {
+			["name"] = "Mithril Ore",
+		},
+		["i:72103"] = {
+			["name"] = "White Trillium Ore",
+		},
+		["i:53038"] = {
+			["name"] = "Obsidium Ore",
+		},
+		["i:23445"] = {
+			["name"] = "Fel Iron Bar",
+		},
+		["i:2771"] = {
+			["name"] = "Tin Ore",
+		},
+		["i:3857"] = {
+			["name"] = "Coal",
+		},
+		["i:36860"] = {
+			["name"] = "Eternal Fire",
+		},
+		["i:52186"] = {
+			["name"] = "Elementium Bar",
+		},
+		["i:52185"] = {
+			["name"] = "Elementium Ore",
+		},
+		["i:2772"] = {
+			["name"] = "Iron Ore",
+		},
+		["i:3576"] = {
+			["name"] = "Tin Bar",
+		},
+		["i:2840"] = {
+			["name"] = "Copper Bar",
+		},
+		["i:21884"] = {
+			["name"] = "Primal Fire",
+		},
+		["i:36909"] = {
+			["name"] = "Cobalt Ore",
+		},
+	},
+	["f@Horde - Outland@queueStatus"] = {
+		["collapsed"] = {
+		},
+	},
+	["g@ @questSmartCrafting"] = true,
+	["f@Alliance - Outland@queueStatus"] = {
+		["collapsed"] = {
+		},
+	},
+	["f@Alliance - Outland@buyAH"] = false,
+	["f@Horde - Draenor@professionScanCache"] = {
+		["BadmantingMining"] = {
+			["hash"] = 1862411,
+			["scanTime"] = 1523370669,
+		},
+		["RaimondoBlacksmithing"] = {
+			["hash"] = 3707834,
+			["scanTime"] = 1522271258,
+		},
+	},
+	["f@Horde - Draenor@disableCheckBox"] = false,
+	["f@Horde - Draenor@ignoreIntermediate"] = false,
+	["g@ @profitPercent"] = 0,
+}

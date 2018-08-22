@@ -1,0 +1,52 @@
+VER 3 0100000000000023 " " "INV_Misc_QuestionMark"
+#showtooltip 
+/cast [modifier:alt] Seed of Corruption
+/cast Corruption
+END
+VER 3 010000000000001F " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [modifier:shift]Summon Imp(Summon); [modifier:ctrl]Summon Succubus(Summon); [button:2]Summon Voidwalker(Summon); Summon Felhunter(Summon)
+END
+VER 3 0100000000000020 " " "Ability_Druid_Starfall"
+/petfollow
+/petdefensive
+/petattack [harm]
+END
+VER 3 0100000000000024 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [modifier:alt] Curse of Exhaustion
+/cast [modifier:ctrl] Curse of the Elements
+/cast Curse of Weakness
+END
+VER 3 0100000000000021 " " "Ability_Creature_Cursed_03"
+/petfollow [pet:succubus]
+/cast [harm] Spell Lock
+/cast [help] Devour Magic
+/cast Seduction
+/cast Sacrifice
+/cast Intercept
+/petstay [noexists]
+/petdefensive [noexists]
+END
+VER 3 0100000000000022 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [modifier:alt] Howl of Terror
+/cast Fear
+END
+VER 3 0100000000000025 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [modifier:alt] Haunt
+/cast [nomodifier] Curse of Agony
+END
+VER 3 0100000000000026 " " "INV_Misc_QuestionMark"
+#showtooltip
+/cast [modifier:alt] Hellfire
+/cast [nomodifier] Rain of Fire
+END
+VER 3 0100000000000028 " " "INV_Misc_QuestionMark"
+END
+VER 3 0100000000000027 "GH" "Ability_Shaman_WaterShield"
+/invite ahenobarbus
+/promote ahenobarbus
+/script LeaveParty()
+END

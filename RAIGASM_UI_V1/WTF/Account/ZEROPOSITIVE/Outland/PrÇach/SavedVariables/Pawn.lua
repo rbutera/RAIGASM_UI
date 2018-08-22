@@ -1,0 +1,65 @@
+
+PawnOptions = {
+	["LastVersion"] = 2.0214,
+	["LastPlayerFullName"] = "Préach-Tarren Mill",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["Artifacts"] = {
+		[128910] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 58,
+					["Type"] = "Iron",
+				}, -- [1]
+				{
+					["ItemLevel"] = 58,
+					["Type"] = "Blood",
+				}, -- [2]
+				{
+					["ItemLevel"] = 68,
+					["Type"] = "Shadow",
+				}, -- [3]
+			},
+			["Name"] = "Strom'kar, the Warbreaker",
+		},
+		[128908] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 58,
+					["Type"] = "Fire",
+				}, -- [1]
+				{
+					["ItemLevel"] = 62,
+					["Type"] = "Wind",
+				}, -- [2]
+				{
+					["ItemLevel"] = 56,
+					["Type"] = "Iron",
+				}, -- [3]
+			},
+			["Name"] = "Warswords of the Valarjar",
+		},
+		[128289] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 56,
+					["Type"] = "Iron",
+				}, -- [1]
+				{
+					["ItemLevel"] = 58,
+					["Type"] = "Blood",
+				}, -- [2]
+				{
+					["ItemLevel"] = 61,
+					["Type"] = "Fire",
+				}, -- [3]
+			},
+			["Name"] = "Scale of the Earth-Warder",
+		},
+	},
+	["LastKeybindingsSet"] = 1,
+}
+PawnMrRobotScaleProviderOptions = {
+	["LastClass"] = "WARRIOR",
+	["LastAdded"] = 1,
+}

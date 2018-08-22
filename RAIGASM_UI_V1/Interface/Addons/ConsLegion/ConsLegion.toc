@@ -1,0 +1,21 @@
+## Interface: 80000
+## X-Min-Interface: 80000
+
+## Title: ConsLegion
+## Notes: Legion Leveling Addon
+## Author: Zyrrael
+## Version: 1.31
+## SavedVariables: ConsLegionSavedVar, ConsLegionSteps, CL_NewsEpics, CL_Temp_Import, CL_AddonUpdate
+Zones\Stormheim.lua
+Zones\Azsuna.lua
+Zones\Val'Sharah.lua
+Zones\Highmountain.lua
+Core.lua
+QuestHandler.lua
+OptionsPanel.lua
+NewsFeed.lua
+GlaiveFrame.lua
+QuestFrame.lua
+XpFrame.lua
+Settings.lua
+QuestParser.lua

@@ -1,0 +1,4 @@
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/">	
+	<Include file="misc\load_misc.xml"/>
+	<Include file="unitframes\load_units.xml"/>
+</Ui>

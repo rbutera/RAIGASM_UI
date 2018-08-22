@@ -2,24 +2,24 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
-	["STARTING_DISCOUNT"] = 30,
-	["LOG_DE_DATA_X"] = true,
+	["_200000"] = 1000,
+	["_10000"] = 200,
 	["_1000000"] = 2500,
 	["_5000000"] = 4999,
+	["STARTING_DISCOUNT"] = 30,
 	["_500"] = 5,
-	["_10000"] = 200,
-	["_200000"] = 1000,
+	["LOG_DE_DATA_X"] = true,
 }
 AUCTIONATOR_PRICING_HISTORY = {
-	["Enchant Ring - Word of Haste"] = {
-		["is"] = "128538:0:0:0:0",
-		["5111713"] = "989000:1",
-	},
 	["Flask of the Seventh Demon"] = {
 		["is"] = "127848:0:0:0:0",
 		["5140645"] = "2815000:1",
-		["5152589"] = "2559899:1",
 		["5140648"] = "3499996:1",
+		["5152589"] = "2559899:1",
+	},
+	["Enchant Ring - Word of Haste"] = {
+		["is"] = "128538:0:0:0:0",
+		["5111713"] = "989000:1",
 	},
 }
 AUCTIONATOR_SHOPPING_LISTS = {
@@ -122,16 +122,16 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3999999,
 			["cc"] = 7,
 			["id"] = "129286:0:0:0:0",
-			["sc"] = 9,
 			["H2459"] = 3999999,
+			["sc"] = 9,
 		},
 		["Darkmoon Deck: Dominion"] = {
 			["H2418"] = 1008367316,
 			["mr"] = 342420000,
 			["sc"] = 0,
 			["id"] = "128705:0:0:0:669",
-			["cc"] = 4,
 			["L2418"] = 342420000,
+			["cc"] = 4,
 		},
 		["Deviate Hatchling"] = {
 			["H2527"] = 59999998,
@@ -165,8 +165,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2532"] = 56498,
 			["sc"] = 5,
 			["id"] = "124437:0:0:0:0",
-			["mr"] = 56498,
 			["cc"] = 7,
+			["mr"] = 56498,
 		},
 		["Master Healing Potion"] = {
 			["mr"] = 15000,
@@ -179,8 +179,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 43399,
 			["cc"] = 7,
 			["id"] = "128304:0:0:0:0",
-			["sc"] = 9,
 			["H2459"] = 43399,
+			["sc"] = 9,
 		},
 		["Silvered Bronze Leggings"] = {
 			["mr"] = 17908865,
@@ -200,8 +200,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 169993,
 			["cc"] = 7,
 			["id"] = "124103:0:0:0:0",
-			["sc"] = 9,
 			["H2459"] = 169993,
+			["sc"] = 9,
 		},
 		["Darkmoon Tincture of Deflection"] = {
 			["H2418"] = 4999999,
@@ -214,8 +214,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2532"] = 160000,
 			["cc"] = 7,
 			["id"] = "124101:0:0:0:0",
-			["mr"] = 160000,
 			["sc"] = 9,
+			["mr"] = 160000,
 		},
 		["Darkmoon Deck: Immortality"] = {
 			["H2418"] = 999890000,
@@ -305,8 +305,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 2998300,
 			["cc"] = 7,
 			["id"] = "129284:0:0:0:0",
-			["sc"] = 9,
 			["H2459"] = 2998300,
+			["sc"] = 9,
 		},
 		["Silver-Lined Belt"] = {
 			["mr"] = 24048293,
@@ -319,8 +319,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 109991,
 			["sc"] = 9,
 			["id"] = "124102:0:0:0:0",
-			["cc"] = 7,
 			["H2459"] = 109991,
+			["cc"] = 7,
 		},
 		["Silvermoon Royal Cloak of the Eagle"] = {
 			["mr"] = 5453294,
@@ -424,8 +424,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 135500,
 			["sc"] = 8,
 			["id"] = "124109:0:0:0:0",
-			["cc"] = 7,
 			["H2459"] = 135500,
+			["cc"] = 7,
 		},
 		["Hesselian"] = {
 			["mr"] = 4680000,
@@ -473,8 +473,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 44600,
 			["sc"] = 8,
 			["id"] = "133607:0:0:0:0",
-			["cc"] = 7,
 			["H2459"] = 44600,
+			["cc"] = 7,
 		},
 		["Obliterum"] = {
 			["H2418"] = 21989898,
@@ -488,15 +488,15 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 60000000,
 			["sc"] = 0,
 			["id"] = "335:1",
-			["cc"] = 17,
 			["L2418"] = 60000000,
+			["cc"] = 17,
 		},
 		["Foxflower Flux"] = {
 			["mr"] = 184500,
 			["cc"] = 7,
 			["id"] = "124436:0:0:0:0",
-			["sc"] = 11,
 			["H2459"] = 184500,
+			["sc"] = 11,
 		},
 		["Silverleaf"] = {
 			["mr"] = 8294,
@@ -523,8 +523,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2469"] = 59000,
 			["sc"] = 8,
 			["id"] = "124118:0:0:0:0",
-			["mr"] = 59000,
 			["cc"] = 7,
+			["mr"] = 59000,
 		},
 		["Drums of the Mountain"] = {
 			["mr"] = 899494,
@@ -565,8 +565,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 15550000,
 			["sc"] = 9,
 			["id"] = "129285:0:0:0:0",
-			["cc"] = 7,
 			["H2459"] = 15550000,
+			["cc"] = 7,
 		},
 		["Silver-Linked Footguards"] = {
 			["mr"] = 39018624,
@@ -614,8 +614,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 498,
 			["sc"] = 11,
 			["id"] = "124438:0:0:0:0",
-			["cc"] = 7,
 			["H2532"] = 498,
+			["cc"] = 7,
 		},
 		["Darkmoon Tincture of Deftness"] = {
 			["H2418"] = 245455,
@@ -643,8 +643,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 258779999,
 			["sc"] = 0,
 			["id"] = "128710:0:0:0:669",
-			["cc"] = 4,
 			["L2418"] = 258779999,
+			["cc"] = 4,
 		},
 		["Darkmoon Magestaff"] = {
 			["H2418"] = 99990000,
@@ -695,12 +695,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "124660:0:0:0:0",
 			["cc"] = 0,
 		},
-		["Pristine Falcosaur Feather"] = {
-			["mr"] = 1084,
-			["sc"] = 11,
-			["id"] = "142335:0:0:0:0",
+		["Deviate Scale"] = {
+			["H2527"] = 5000,
+			["mr"] = 5000,
+			["sc"] = 6,
+			["id"] = "6470:0:0:0:0",
 			["cc"] = 7,
-			["H2532"] = 1084,
 		},
 		["Flask of the Countless Armies"] = {
 			["mr"] = 6880492,
@@ -720,8 +720,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2564"] = 221000,
 			["sc"] = 4,
 			["id"] = "129100:0:0:0:0",
-			["cc"] = 7,
 			["mr"] = 221000,
+			["cc"] = 7,
 		},
 		["Deviate Scale Cloak"] = {
 			["H2527"] = 51754141,
@@ -730,18 +730,18 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "6466:0:0:0:0",
 			["cc"] = 4,
 		},
-		["Flask of Falling Leaves"] = {
-			["mr"] = 637000,
+		["Greater Draenic Intellect Flask"] = {
+			["mr"] = 439998,
 			["cc"] = 0,
-			["id"] = "76086:0:0:0:0",
-			["H2513"] = 637000,
+			["id"] = "109155:0:0:0:0",
+			["H2513"] = 439998,
 			["sc"] = 3,
 		},
-		["Draenic Strength Flask"] = {
-			["mr"] = 368033,
+		["Flask of the Draconic Mind"] = {
+			["mr"] = 30365423,
 			["cc"] = 0,
-			["id"] = "109148:0:0:0:0",
-			["H2513"] = 368033,
+			["id"] = "58086:0:0:0:0",
+			["H2513"] = 30365423,
 			["sc"] = 3,
 		},
 		["Silver-Lined Cloak of Agility"] = {
@@ -751,26 +751,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 6395391,
 			["sc"] = 1,
 		},
-		["Astral Healing Potion"] = {
-			["mr"] = 8899999,
+		["Perfect Deviate Scale"] = {
+			["H2527"] = 9202,
+			["mr"] = 9202,
+			["sc"] = 6,
+			["id"] = "6471:0:0:0:0",
+			["cc"] = 7,
+		},
+		["Greater Draenic Agility Flask"] = {
+			["mr"] = 298999,
 			["cc"] = 0,
-			["id"] = "152615:0:0:0:0",
-			["H2495"] = 8899999,
-			["sc"] = 1,
+			["id"] = "109153:0:0:0:0",
+			["H2513"] = 298999,
+			["sc"] = 3,
 		},
-		["Darkmoon Ride Ticket"] = {
-			["H2418"] = 5655233,
-			["mr"] = 5655233,
-			["sc"] = 0,
-			["id"] = "81055:0:0:0:0",
-			["cc"] = 15,
-		},
-		["Recipe: Savory Deviate Delight"] = {
-			["H2527"] = 94400,
-			["mr"] = 94400,
+		["Recipe: Flask of Distilled Wisdom"] = {
+			["mr"] = 51608675,
 			["cc"] = 9,
-			["id"] = "6661:0:0:0:0",
-			["sc"] = 5,
+			["id"] = "13520:0:0:0:0",
+			["H2513"] = 51608675,
+			["sc"] = 6,
 		},
 		["Super Healing Potion"] = {
 			["mr"] = 22800,
@@ -786,12 +786,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "102351:0:0:0:0",
 			["sc"] = 8,
 		},
-		["Unbroken Tooth"] = {
-			["mr"] = 14600,
-			["sc"] = 11,
-			["id"] = "124439:0:0:0:0",
-			["cc"] = 7,
-			["H2532"] = 14600,
+		["Darkmoon Eye"] = {
+			["H2418"] = 229927500,
+			["mr"] = 229927500,
+			["sc"] = 0,
+			["id"] = "1063:1",
+			["cc"] = 17,
 		},
 		["Silver-Edged Axe of the Beast"] = {
 			["mr"] = 18342869,
@@ -800,26 +800,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 18342869,
 			["sc"] = 1,
 		},
-		["Flask of the Earth"] = {
-			["mr"] = 5604317,
-			["cc"] = 0,
-			["id"] = "76087:0:0:0:0",
-			["H2513"] = 5604317,
+		["Flask of the Frost Wyrm"] = {
+			["mr"] = 192000,
 			["sc"] = 3,
+			["id"] = "46376:0:0:0:0",
+			["H2513"] = 192000,
+			["cc"] = 0,
 		},
 		["Nightborne Delicacy Platter"] = {
 			["mr"] = 528892,
 			["cc"] = 0,
 			["id"] = "133572:0:0:0:0",
-			["sc"] = 5,
 			["H2519"] = 528892,
+			["sc"] = 5,
 		},
-		["Silver Tabby Cat"] = {
-			["mr"] = 5362499,
-			["sc"] = 0,
-			["id"] = "45:1",
-			["H2408"] = 5362499,
-			["cc"] = 17,
+		["Flask of the Winds"] = {
+			["mr"] = 32438159,
+			["sc"] = 3,
+			["id"] = "58087:0:0:0:0",
+			["H2513"] = 32438159,
+			["cc"] = 0,
 		},
 		["Lesser Healing Potion"] = {
 			["mr"] = 19800,
@@ -835,12 +835,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 51999,
 			["sc"] = 7,
 		},
-		["Greater Healing Potion"] = {
-			["mr"] = 19000,
+		["Bear Tartare"] = {
+			["mr"] = 499000,
 			["cc"] = 0,
-			["id"] = "1710:0:0:0:0",
-			["H2495"] = 19000,
-			["sc"] = 1,
+			["id"] = "133576:0:0:0:0",
+			["H2422"] = 499000,
+			["sc"] = 5,
 		},
 		["Flask of Pure Mojo"] = {
 			["mr"] = 999999,
@@ -863,13 +863,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 3507498,
 			["cc"] = 4,
 		},
-		["Darkmoon Tonk"] = {
-			["H2418"] = 499990000,
-			["mr"] = 133333333,
-			["sc"] = 0,
-			["id"] = "338:1",
-			["cc"] = 17,
-			["L2418"] = 133333333,
+		["Netherweave Cloth"] = {
+			["mr"] = 6100,
+			["sc"] = 5,
+			["id"] = "21877:0:0:0:0",
+			["H2532"] = 6100,
+			["cc"] = 7,
 		},
 		["Savory Deviate Delight"] = {
 			["H2527"] = 500000,
@@ -885,12 +884,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 277000,
 			["cc"] = 7,
 		},
-		["Darkmoon Rabbit"] = {
-			["H2418"] = 1100000000,
-			["mr"] = 1100000000,
-			["sc"] = 0,
-			["id"] = "848:1",
-			["cc"] = 17,
+		["Darkmoon Tincture of Defense"] = {
+			["H2418"] = 230000,
+			["mr"] = 230000,
+			["sc"] = 2,
+			["id"] = "124654:0:0:0:0",
+			["cc"] = 0,
 		},
 		["Silvered Bronze Gauntlets"] = {
 			["mr"] = 28157258,
@@ -906,33 +905,33 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 41400,
 			["cc"] = 0,
 		},
-		["Rowan's Rifle of Silver Bullets"] = {
-			["mr"] = 1950000,
-			["cc"] = 2,
-			["id"] = "50444:0:0:0:0",
-			["H2408"] = 1950000,
-			["sc"] = 3,
+		["Cloak of the Darkmoon Faire"] = {
+			["H2418"] = 50000000,
+			["mr"] = 50000000,
+			["sc"] = 1,
+			["id"] = "78340:0:0:0:0",
+			["cc"] = 4,
 		},
-		["Silvery Pigment"] = {
-			["mr"] = 198999,
-			["sc"] = 16,
-			["id"] = "39341:0:0:0:0",
-			["H2408"] = 198999,
-			["cc"] = 7,
+		["Darkmoon Card: Berserker!"] = {
+			["H2418"] = 176180932,
+			["mr"] = 176180932,
+			["sc"] = 0,
+			["id"] = "42989:0:0:0:0",
+			["cc"] = 4,
 		},
 		["Fjarnskaggl"] = {
 			["mr"] = 147500,
 			["sc"] = 9,
 			["id"] = "124104:0:0:0:0",
-			["cc"] = 7,
 			["H2459"] = 147500,
-		},
-		["Truesilver Ore Nugget"] = {
-			["mr"] = 67556,
-			["sc"] = 7,
-			["id"] = "108299:0:0:0:0",
-			["H2408"] = 67556,
 			["cc"] = 7,
+		},
+		["Truesilver Champion"] = {
+			["mr"] = 135000000,
+			["sc"] = 8,
+			["id"] = "7960:0:0:0:0",
+			["H2408"] = 135000000,
+			["cc"] = 2,
 		},
 		["Design: Truesilver Crab"] = {
 			["mr"] = 1262024,
@@ -966,8 +965,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 3797500,
 			["sc"] = 9,
 			["id"] = "129287:0:0:0:0",
-			["cc"] = 7,
 			["H2459"] = 3797500,
+			["cc"] = 7,
 		},
 		["Silverscale Minnow"] = {
 			["mr"] = 22990000,
@@ -1004,12 +1003,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 25334000,
 			["cc"] = 15,
 		},
-		["Silvered Bronze Breastplate"] = {
-			["mr"] = 19652667,
-			["sc"] = 3,
-			["id"] = "2869:0:0:0:0",
-			["H2408"] = 19652667,
-			["cc"] = 4,
+		["Darkmoon Dirk"] = {
+			["H2418"] = 99990000,
+			["mr"] = 99990000,
+			["sc"] = 15,
+			["id"] = "44217:0:0:0:0",
+			["cc"] = 2,
 		},
 		["Darkmoon Draught of Deflection"] = {
 			["H2418"] = 330000,
@@ -1025,12 +1024,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2495"] = 48996,
 			["sc"] = 1,
 		},
-		["Wildfowl Egg"] = {
-			["H2532"] = 6300,
-			["cc"] = 7,
-			["id"] = "124121:0:0:0:0",
-			["mr"] = 6300,
-			["sc"] = 8,
+		["Shining Silver Breastplate"] = {
+			["mr"] = 63704868,
+			["sc"] = 3,
+			["id"] = "2870:0:0:0:0",
+			["H2408"] = 63704868,
+			["cc"] = 4,
 		},
 		["Silver-Thread Robe"] = {
 			["mr"] = 6254958897,
@@ -1081,12 +1080,12 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 354943,
 			["cc"] = 0,
 		},
-		["Silver Bar"] = {
-			["mr"] = 399000,
-			["sc"] = 7,
-			["id"] = "2842:0:0:0:0",
-			["H2408"] = 399000,
-			["cc"] = 7,
+		["Flask of Endless Rage"] = {
+			["mr"] = 699998,
+			["cc"] = 0,
+			["id"] = "46377:0:0:0:0",
+			["H2513"] = 699998,
+			["sc"] = 3,
 		},
 		["Silvermoon Royal Cloak of the Prophet"] = {
 			["mr"] = 5453295,
@@ -1102,10 +1101,10 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "124650:0:0:0:0",
 			["cc"] = 0,
 		},
-		["Truesilver Breastplate"] = {
+		["Truesilver Gauntlets"] = {
 			["mr"] = 499990000,
 			["sc"] = 4,
-			["id"] = "7939:0:0:0:0",
+			["id"] = "7938:0:0:0:0",
 			["H2408"] = 499990000,
 			["cc"] = 4,
 		},
@@ -1116,19 +1115,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 218526,
 			["sc"] = 8,
 		},
-		["Truesilver Gauntlets"] = {
+		["Truesilver Breastplate"] = {
 			["mr"] = 499990000,
 			["sc"] = 4,
-			["id"] = "7938:0:0:0:0",
+			["id"] = "7939:0:0:0:0",
 			["H2408"] = 499990000,
 			["cc"] = 4,
 		},
-		["Flask of Endless Rage"] = {
-			["mr"] = 699998,
-			["cc"] = 0,
-			["id"] = "46377:0:0:0:0",
-			["H2513"] = 699998,
-			["sc"] = 3,
+		["Silver Bar"] = {
+			["mr"] = 399000,
+			["sc"] = 7,
+			["id"] = "2842:0:0:0:0",
+			["H2408"] = 399000,
+			["cc"] = 7,
 		},
 		["Stormray"] = {
 			["mr"] = 60000,
@@ -1151,19 +1150,19 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["id"] = "13510:0:0:0:0",
 			["cc"] = 0,
 		},
-		["Shining Silver Breastplate"] = {
-			["mr"] = 63704868,
-			["sc"] = 3,
-			["id"] = "2870:0:0:0:0",
-			["H2408"] = 63704868,
-			["cc"] = 4,
+		["Wildfowl Egg"] = {
+			["H2532"] = 6300,
+			["cc"] = 7,
+			["id"] = "124121:0:0:0:0",
+			["sc"] = 8,
+			["mr"] = 6300,
 		},
-		["Darkmoon Dirk"] = {
-			["H2418"] = 99990000,
-			["mr"] = 99990000,
-			["sc"] = 15,
-			["id"] = "44217:0:0:0:0",
-			["cc"] = 2,
+		["Silvered Bronze Breastplate"] = {
+			["mr"] = 19652667,
+			["sc"] = 3,
+			["id"] = "2869:0:0:0:0",
+			["H2408"] = 19652667,
+			["cc"] = 4,
 		},
 		["Flask of Titanic Strength"] = {
 			["mr"] = 19969969,
@@ -1172,26 +1171,26 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2513"] = 19969969,
 			["sc"] = 3,
 		},
-		["Truesilver Champion"] = {
-			["mr"] = 135000000,
-			["sc"] = 8,
-			["id"] = "7960:0:0:0:0",
-			["H2408"] = 135000000,
+		["Truesilver Ore Nugget"] = {
+			["mr"] = 67556,
+			["sc"] = 7,
+			["id"] = "108299:0:0:0:0",
+			["H2408"] = 67556,
+			["cc"] = 7,
+		},
+		["Silvery Pigment"] = {
+			["mr"] = 198999,
+			["sc"] = 16,
+			["id"] = "39341:0:0:0:0",
+			["H2408"] = 198999,
+			["cc"] = 7,
+		},
+		["Rowan's Rifle of Silver Bullets"] = {
+			["mr"] = 1950000,
 			["cc"] = 2,
-		},
-		["Darkmoon Card: Berserker!"] = {
-			["H2418"] = 176180932,
-			["mr"] = 176180932,
-			["sc"] = 0,
-			["id"] = "42989:0:0:0:0",
-			["cc"] = 4,
-		},
-		["Cloak of the Darkmoon Faire"] = {
-			["H2418"] = 50000000,
-			["mr"] = 50000000,
-			["sc"] = 1,
-			["id"] = "78340:0:0:0:0",
-			["cc"] = 4,
+			["id"] = "50444:0:0:0:0",
+			["H2408"] = 1950000,
+			["sc"] = 3,
 		},
 		["Silver Ore"] = {
 			["mr"] = 390000,
@@ -1200,41 +1199,42 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 390000,
 			["cc"] = 7,
 		},
-		["Darkmoon Tincture of Defense"] = {
-			["H2418"] = 230000,
-			["mr"] = 230000,
-			["sc"] = 2,
-			["id"] = "124654:0:0:0:0",
-			["cc"] = 0,
+		["Darkmoon Rabbit"] = {
+			["H2418"] = 1100000000,
+			["mr"] = 1100000000,
+			["sc"] = 0,
+			["id"] = "848:1",
+			["cc"] = 17,
 		},
 		["Azshari Salad"] = {
 			["mr"] = 1485000,
 			["cc"] = 0,
 			["id"] = "133571:0:0:0:0",
-			["sc"] = 5,
 			["H2431"] = 1485000,
-		},
-		["Netherweave Cloth"] = {
-			["mr"] = 6100,
 			["sc"] = 5,
-			["id"] = "21877:0:0:0:0",
-			["cc"] = 7,
-			["H2532"] = 6100,
+		},
+		["Darkmoon Tonk"] = {
+			["H2418"] = 499990000,
+			["mr"] = 133333333,
+			["sc"] = 0,
+			["id"] = "338:1",
+			["L2418"] = 133333333,
+			["cc"] = 17,
 		},
 		["Darkmoon Firewater"] = {
 			["H2418"] = 1500500,
 			["mr"] = 150000,
 			["sc"] = 1,
 			["id"] = "124671:0:0:0:0",
-			["cc"] = 0,
 			["L2418"] = 150000,
-		},
-		["Bear Tartare"] = {
-			["mr"] = 499000,
 			["cc"] = 0,
-			["id"] = "133576:0:0:0:0",
-			["H2422"] = 499000,
-			["sc"] = 5,
+		},
+		["Greater Healing Potion"] = {
+			["mr"] = 19000,
+			["cc"] = 0,
+			["id"] = "1710:0:0:0:0",
+			["H2495"] = 19000,
+			["sc"] = 1,
 		},
 		["Major Healing Potion"] = {
 			["mr"] = 21799,
@@ -1243,60 +1243,60 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2495"] = 21799,
 			["sc"] = 1,
 		},
-		["Flask of the Winds"] = {
-			["mr"] = 32438159,
-			["sc"] = 3,
-			["id"] = "58087:0:0:0:0",
-			["H2513"] = 32438159,
-			["cc"] = 0,
-		},
-		["Flask of the Frost Wyrm"] = {
-			["mr"] = 192000,
-			["sc"] = 3,
-			["id"] = "46376:0:0:0:0",
-			["H2513"] = 192000,
-			["cc"] = 0,
-		},
-		["Darkmoon Eye"] = {
-			["H2418"] = 229927500,
-			["mr"] = 229927500,
+		["Silver Tabby Cat"] = {
+			["mr"] = 5362499,
 			["sc"] = 0,
-			["id"] = "1063:1",
+			["id"] = "45:1",
+			["H2408"] = 5362499,
 			["cc"] = 17,
 		},
-		["Recipe: Flask of Distilled Wisdom"] = {
-			["mr"] = 51608675,
-			["cc"] = 9,
-			["id"] = "13520:0:0:0:0",
-			["H2513"] = 51608675,
-			["sc"] = 6,
-		},
-		["Greater Draenic Agility Flask"] = {
-			["mr"] = 298999,
+		["Flask of the Earth"] = {
+			["mr"] = 5604317,
 			["cc"] = 0,
-			["id"] = "109153:0:0:0:0",
-			["H2513"] = 298999,
+			["id"] = "76087:0:0:0:0",
+			["H2513"] = 5604317,
 			["sc"] = 3,
 		},
-		["Perfect Deviate Scale"] = {
-			["H2527"] = 9202,
-			["mr"] = 9202,
-			["sc"] = 6,
-			["id"] = "6471:0:0:0:0",
+		["Unbroken Tooth"] = {
+			["mr"] = 14600,
+			["sc"] = 11,
+			["id"] = "124439:0:0:0:0",
+			["H2532"] = 14600,
 			["cc"] = 7,
 		},
-		["Flask of the Draconic Mind"] = {
-			["mr"] = 30365423,
+		["Recipe: Savory Deviate Delight"] = {
+			["H2527"] = 94400,
+			["mr"] = 94400,
+			["cc"] = 9,
+			["id"] = "6661:0:0:0:0",
+			["sc"] = 5,
+		},
+		["Darkmoon Ride Ticket"] = {
+			["H2418"] = 5655233,
+			["mr"] = 5655233,
+			["sc"] = 0,
+			["id"] = "81055:0:0:0:0",
+			["cc"] = 15,
+		},
+		["Astral Healing Potion"] = {
+			["mr"] = 8899999,
 			["cc"] = 0,
-			["id"] = "58086:0:0:0:0",
-			["H2513"] = 30365423,
+			["id"] = "152615:0:0:0:0",
+			["H2495"] = 8899999,
+			["sc"] = 1,
+		},
+		["Draenic Strength Flask"] = {
+			["mr"] = 368033,
+			["cc"] = 0,
+			["id"] = "109148:0:0:0:0",
+			["H2513"] = 368033,
 			["sc"] = 3,
 		},
-		["Greater Draenic Intellect Flask"] = {
-			["mr"] = 439998,
+		["Flask of Falling Leaves"] = {
+			["mr"] = 637000,
 			["cc"] = 0,
-			["id"] = "109155:0:0:0:0",
-			["H2513"] = 439998,
+			["id"] = "76086:0:0:0:0",
+			["H2513"] = 637000,
 			["sc"] = 3,
 		},
 		["Darkmoon Deck: Hellfire"] = {
@@ -1304,8 +1304,8 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["mr"] = 149889999,
 			["sc"] = 0,
 			["id"] = "128709:0:0:0:596",
-			["cc"] = 4,
 			["L2418"] = 149889999,
+			["cc"] = 4,
 		},
 		["Draenic Stamina Flask"] = {
 			["mr"] = 149999,
@@ -1321,17 +1321,21 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["H2408"] = 3847496,
 			["cc"] = 4,
 		},
-		["Deviate Scale"] = {
-			["H2527"] = 5000,
-			["mr"] = 5000,
-			["sc"] = 6,
-			["id"] = "6470:0:0:0:0",
+		["Pristine Falcosaur Feather"] = {
+			["mr"] = 1084,
+			["sc"] = 11,
+			["id"] = "142335:0:0:0:0",
+			["H2532"] = 1084,
 			["cc"] = 7,
 		},
 	},
 	["Kazzak_Horde"] = {
 	},
 	["Zenedar_Horde"] = {
+	},
+	["Sylvanas_Horde"] = {
+	},
+	["Sylvanas_Alliance"] = {
 	},
 	["Draenor_Horde"] = {
 		["Enchant Ring - Word of Haste"] = {
@@ -1350,17 +1354,17 @@ AUCTIONATOR_PRICE_DATABASE = {
 		},
 		["Potion of Prolonged Power"] = {
 			["mr"] = 89400,
-			["cc"] = 0,
-			["id"] = "142117:0:0:0:0",
 			["sc"] = 1,
 			["H2742"] = 89400,
+			["id"] = "142117:0:0:0:0",
+			["cc"] = 0,
 		},
 		["Flask of the Seventh Demon"] = {
 			["mr"] = 2497499,
+			["cc"] = 0,
+			["id"] = "127848:0:0:0:0",
 			["sc"] = 3,
 			["H2742"] = 2497499,
-			["id"] = "127848:0:0:0:0",
-			["cc"] = 0,
 		},
 		["Saurifeather Mantle of the Fireflash"] = {
 			["mr"] = 2497500,
@@ -1405,10 +1409,6 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["cc"] = 8,
 		},
 	},
-	["Sylvanas_Alliance"] = {
-	},
-	["Sylvanas_Horde"] = {
-	},
 }
 AUCTIONATOR_LAST_SCAN_TIME = 1471335366
 AUCTIONATOR_TOONS = {
@@ -1416,10 +1416,9 @@ AUCTIONATOR_TOONS = {
 		["firstSeen"] = 1471339165,
 		["firstVersion"] = "4.0.9",
 	},
-	["Tefef"] = {
-		["firstSeen"] = 1472238614,
+	["Chuggernuts"] = {
+		["firstSeen"] = 1471337663,
 		["firstVersion"] = "4.0.9",
-		["guid"] = "Player-3657-08424C52",
 	},
 	["Preacho"] = {
 		["firstSeen"] = 1471339698,
@@ -1427,30 +1426,30 @@ AUCTIONATOR_TOONS = {
 	},
 	["Preach"] = {
 		["firstSeen"] = 1472382967,
+		["firstVersion"] = "4.0.9",
 		["guid"] = "Player-3687-05EBF0A3",
-		["firstVersion"] = "4.0.9",
 	},
-	["Norfweezy"] = {
-		["firstSeen"] = 1525984405,
+	["Raigasm"] = {
+		["firstSeen"] = 1521585519,
+		["guid"] = "Player-1403-06E321FB",
 		["firstVersion"] = "4.0.19",
-		["guid"] = "Player-1403-06E3261D",
-	},
-	["Préach"] = {
-		["firstSeen"] = 1471337530,
-		["firstVersion"] = "4.0.9",
 	},
 	["Toutsweet"] = {
 		["firstSeen"] = 1471337843,
+		["firstVersion"] = "4.0.9",
+	},
+	["Préach"] = {
+		["firstSeen"] = 1471337530,
 		["firstVersion"] = "4.0.9",
 	},
 	["Preacherino"] = {
 		["firstSeen"] = 1471336515,
 		["firstVersion"] = "4.0.9",
 	},
-	["Ryugasm"] = {
-		["firstSeen"] = 1521592148,
+	["Yasuka"] = {
+		["firstSeen"] = 1521585032,
+		["guid"] = "Player-1301-0193F1DF",
 		["firstVersion"] = "4.0.19",
-		["guid"] = "Player-1403-070CAB04",
 	},
 	["Sweetcleft"] = {
 		["firstSeen"] = 1473689766,
@@ -1468,14 +1467,14 @@ AUCTIONATOR_TOONS = {
 		["firstSeen"] = 1471337715,
 		["firstVersion"] = "4.0.9",
 	},
-	["Imacleft"] = {
-		["firstSeen"] = 1473678322,
-		["firstVersion"] = "4.0.11",
-		["guid"] = "Player-3687-078D7CD6",
+	["Ryugasm"] = {
+		["firstSeen"] = 1521592148,
+		["guid"] = "Player-1403-070CAB04",
+		["firstVersion"] = "4.0.19",
 	},
-	["Xpreach"] = {
-		["firstSeen"] = 1471337621,
-		["firstVersion"] = "4.0.9",
+	["Dlory"] = {
+		["firstSeen"] = 1513012877,
+		["firstVersion"] = "4.0.19",
 	},
 	["Preách"] = {
 		["firstSeen"] = 1471337048,
@@ -1483,38 +1482,38 @@ AUCTIONATOR_TOONS = {
 	},
 	["Raimondo"] = {
 		["firstSeen"] = 1522268468,
-		["guid"] = "Player-1403-06E091A7",
 		["firstVersion"] = "4.0.19",
+		["guid"] = "Player-1403-06E091A7",
 	},
 	["Badmanting"] = {
 		["firstSeen"] = 1523136526,
-		["firstVersion"] = "4.0.19",
 		["guid"] = "Player-1403-06E32685",
-	},
-	["Mastarace"] = {
-		["firstSeen"] = 1481797411,
-		["firstVersion"] = "4.0.16",
-	},
-	["Sulivan"] = {
-		["firstSeen"] = 1471338201,
-		["firstVersion"] = "4.0.9",
+		["firstVersion"] = "4.0.19",
 	},
 	["Meticulous"] = {
 		["firstSeen"] = 1471335265,
 		["firstVersion"] = "4.0.9",
 	},
+	["Sulivan"] = {
+		["firstSeen"] = 1471338201,
+		["firstVersion"] = "4.0.9",
+	},
+	["Mastarace"] = {
+		["firstSeen"] = 1481797411,
+		["firstVersion"] = "4.0.16",
+	},
 	["Chatmademe"] = {
 		["firstSeen"] = 1481797241,
 		["firstVersion"] = "4.0.16",
 	},
-	["Dlory"] = {
-		["firstSeen"] = 1513012877,
-		["firstVersion"] = "4.0.19",
+	["Xpreach"] = {
+		["firstSeen"] = 1471337621,
+		["firstVersion"] = "4.0.9",
 	},
-	["Yasuka"] = {
-		["firstSeen"] = 1521585032,
-		["firstVersion"] = "4.0.19",
-		["guid"] = "Player-1301-0193F1DF",
+	["Imacleft"] = {
+		["firstSeen"] = 1473678322,
+		["guid"] = "Player-3687-078D7CD6",
+		["firstVersion"] = "4.0.11",
 	},
 	["Bertybots"] = {
 		["firstSeen"] = 1473680711,
@@ -1522,195 +1521,196 @@ AUCTIONATOR_TOONS = {
 	},
 	["Dlorange"] = {
 		["firstSeen"] = 1513014076,
-		["firstVersion"] = "4.0.19",
 		["guid"] = "Player-1084-069C3C94",
-	},
-	["Raigasm"] = {
-		["firstSeen"] = 1521585519,
 		["firstVersion"] = "4.0.19",
-		["guid"] = "Player-1403-06E321FB",
 	},
-	["Chuggernuts"] = {
-		["firstSeen"] = 1471337663,
+	["Norfweezy"] = {
+		["firstSeen"] = 1525984405,
+		["guid"] = "Player-1403-06E3261D",
+		["firstVersion"] = "4.0.19",
+	},
+	["Tefef"] = {
+		["firstSeen"] = 1472238614,
+		["guid"] = "Player-3657-08424C52",
 		["firstVersion"] = "4.0.9",
 	},
 }
 AUCTIONATOR_STACKING_PREFS = {
 	["hesselian"] = {
-		["stacksize"] = 1,
 		["numstacks"] = 0,
+		["stacksize"] = 1,
 	},
 	["six of iron"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["seven of iron"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["two of visions"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["four of the moon"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["eight of war"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["two of iron"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["four of iron"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["eight of the moon"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["four of war"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["eight of visions"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["stout augment rune"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 5,
+		["numstacks"] = 0,
 	},
 	["feast of blood"] = {
-		["stacksize"] = 5,
 		["numstacks"] = 0,
+		["stacksize"] = 5,
 	},
 	["eight of iron"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["felblight"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 5,
+		["numstacks"] = 0,
 	},
 	["ace of visions"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["ace of the moon"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["arakkoa cipher"] = {
-		["stacksize"] = 1,
 		["numstacks"] = 0,
+		["stacksize"] = 1,
 	},
-	["two of war"] = {
+	["sorcerous earth"] = {
+		["stacksize"] = 10,
 		["numstacks"] = 0,
-		["stacksize"] = 1,
 	},
 	["six of war"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
-	["three of the moon"] = {
+	["draenic intellect potion"] = {
+		["stacksize"] = 10,
 		["numstacks"] = 0,
-		["stacksize"] = 1,
 	},
 	["felwort"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["five of war"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["sorcerous fire"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 20,
-	},
-	["flask of the seventh demon"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["five of the moon"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["five of iron"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["ace of war"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["elixir of the rapid mind"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["sorcerous air"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 10,
-	},
-	["hyper augment rune"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 5,
-	},
-	["sorcerous water"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 10,
-	},
-	["raw talbuk meat"] = {
-		["stacksize"] = 50,
-		["numstacks"] = 0,
-	},
-	["draenic agility potion"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 5,
-	},
-	["ace of iron"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["seven of war"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["seven of visions"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["six of the moon"] = {
-		["numstacks"] = 0,
-		["stacksize"] = 1,
-	},
-	["draenor clan orator cane"] = {
 		["stacksize"] = 1,
 		["numstacks"] = 0,
 	},
 	["temporal crystal"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 5,
+		["numstacks"] = 0,
 	},
-	["two of the moon"] = {
+	["sorcerous fire"] = {
+		["stacksize"] = 20,
+		["numstacks"] = 0,
+	},
+	["flask of the seventh demon"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["five of the moon"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["seven of visions"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["ace of war"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["elixir of the rapid mind"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["seven of war"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["hyper augment rune"] = {
+		["stacksize"] = 5,
+		["numstacks"] = 0,
+	},
+	["sorcerous water"] = {
+		["stacksize"] = 10,
+		["numstacks"] = 0,
+	},
+	["raw talbuk meat"] = {
+		["numstacks"] = 0,
+		["stacksize"] = 50,
+	},
+	["ace of iron"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["draenic agility potion"] = {
+		["stacksize"] = 5,
+		["numstacks"] = 0,
+	},
+	["sorcerous air"] = {
+		["stacksize"] = 10,
+		["numstacks"] = 0,
+	},
+	["five of iron"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["six of the moon"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["draenor clan orator cane"] = {
 		["numstacks"] = 0,
 		["stacksize"] = 1,
 	},
-	["draenic intellect potion"] = {
+	["five of war"] = {
+		["stacksize"] = 1,
 		["numstacks"] = 0,
-		["stacksize"] = 10,
+	},
+	["two of the moon"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
+	},
+	["three of the moon"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 	["draenic strength potion"] = {
-		["numstacks"] = 0,
 		["stacksize"] = 5,
-	},
-	["sorcerous earth"] = {
 		["numstacks"] = 0,
-		["stacksize"] = 10,
+	},
+	["two of war"] = {
+		["stacksize"] = 1,
+		["numstacks"] = 0,
 	},
 }
 AUCTIONATOR_SCAN_MINLEVEL = 2

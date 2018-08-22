@@ -1,0 +1,12 @@
+------------------------------------------------------------------------
+r228 | Tuhljin | 2018-08-17 04:42:13 +0000 (Fri, 17 Aug 2018) | 1 line
+Changed paths:
+   M /trunk/AchieveID.lua
+   M /trunk/Overachiever_Cache/Cache.lua
+   M /trunk/Overachiever_Trade/TradeSkills.lua
+   M /trunk/localization.lua
+   M /trunk/readme.txt
+
+- Trade module: "The Kul Tiran Menu" or "The Zandalari Menu" is now considered when determining if you need to cook a recipe.
+------------------------------------------------------------------------
+

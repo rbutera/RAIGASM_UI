@@ -1,0 +1,33 @@
+tag 651f41e9cdaf6f2c263b92c7846eda325711dbce 8.0.3
+Author:	subversion <svn@deadlybossmods.com>
+Date:	Wed Aug 15 23:24:35 2018 +0200
+
+Tagging as 8.0.3
+
+commit 53200dabfd7c42204604af26d92f2a8acb9e8dfd
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Aug 15 23:24:35 2018 +0200
+
+    increment version number to 8.0.3
+
+commit da6bbbde85681e4c477d6ed5966f9a2e41c48827
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Aug 15 23:09:36 2018 +0200
+
+    Omega via svn r17699:
+    remove return on DBM-LDB check. It wasn?\226?\128?\153t supposed to be an abort, just a warning.
+
+commit a0f04625c1a1a8089addcd006616003505696a26
+Author: subversion <svn@deadlybossmods.com>
+Date:   Wed Aug 15 20:54:28 2018 +0200
+
+    Omega via svn r17698:
+    More library nil checks. I don?\226?\128?\153t know why peoples libraries are missing but need to act as if they all are.
+
+commit 7839e5b8d50a5c96321b4dc9b831a31bc5ce4cff
+Author: subversion <svn@deadlybossmods.com>
+Date:   Tue Aug 14 21:54:26 2018 +0200
+
+    tandanu via svn r17697:
+    increment alpha version
+

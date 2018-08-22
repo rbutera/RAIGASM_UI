@@ -1,0 +1,12 @@
+## Interface: 70300
+## Title: |cff00ff00AdiBags - Battle Pet Items|r
+## Version: |cffFF4500v1.0.0|r
+## Notes Adds various Battle Pet items to AdiBags item filters.
+## Author: |cffDA70D6LownIgnitus|r aka Mihkael of Alexstrasza-US Alliance
+## X-Date: 16/11/2017
+## X-Website: https://www.facebook.com/groups/LownIgnitusAddOns/
+## X-Category: Bags & Inventory
+## Dependencies: AdiBags
+
+Localization.lua
+AdiBags_Battle_Pet_Items.lua

@@ -17,6 +17,17 @@ HHTD_SavedVariables = {
 			["settingsMigrated"] = false,
 		},
 	},
+	["profileKeys"] = {
+		["Raigasm - Draenor"] = "Raigasm - Draenor",
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Badmanting - Draenor"] = "Badmanting - Draenor",
+	},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
+	},
 	["namespaces"] = {
 		["Announcer"] = {
 		},
@@ -24,16 +35,5 @@ HHTD_SavedVariables = {
 		},
 		["NPH"] = {
 		},
-	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
-	},
-	["profileKeys"] = {
-		["Raigasm - Draenor"] = "Raigasm - Draenor",
-		["Raimondo - Draenor"] = "Raimondo - Draenor",
-		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
-		["Badmanting - Draenor"] = "Badmanting - Draenor",
 	},
 }

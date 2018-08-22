@@ -1,0 +1,13 @@
+## Interface: 80000
+## Title: |cFF74D06CRE|rPorter
+## Notes: Provide battleground map.
+## Version: 2.1.6
+## Author: AcidWeb
+## SavedVariables: REPorterSettings
+## X-Website: https://www.curseforge.com/wow/addons/reporter-battleground-map
+## X-Curse-Project-ID: 39399
+## X-WoWI-ID: 21089
+
+Embeds.xml
+Locale\Locale.xml
+REPorter.xml

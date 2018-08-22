@@ -3,12 +3,12 @@ AltoholicDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Raigasm - Draenor",
 		["Yasuka - Outland"] = "Yasuka - Outland",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
-		["Ryugasm - Outland"] = "Ryugasm - Outland",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 		["Raigasm - Outland"] = "Raigasm - Outland",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Ryugasm - Outland"] = "Ryugasm - Outland",
 	},
 	["global"] = {
 		["options"] = {

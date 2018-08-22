@@ -1,0 +1,62 @@
+Changes since tag Beta_4
+
+commit d328082e1f4df309989334cd2085b28cc96b736d
+Author: Michael P. Starkweather <mpstark@gmail.com>
+Date:   Sun Aug 12 14:06:18 2018 -0500
+
+    Fixed continous yaw (in LibCamera repo), lowered rotate speed step to 1
+
+commit 44ff0349aeb5e1aad5589bec32dd69fd1de51659
+Author: Michael P. Starkweather <mpstark@gmail.com>
+Date:   Sat Aug 11 14:56:57 2018 -0500
+
+    Nameplate zoom now working much better
+
+commit 44ff0349aeb5e1aad5589bec32dd69fd1de51659
+Author: Michael P. Starkweather <mpstark@gmail.com>
+Date:   Sat Aug 11 14:56:57 2018 -0500
+
+    Nameplate zoom now working much better
+
+commit 1b7681cb8ff8ff38edb989b226dc57cdb99d3e01
+Author: Michael P. Starkweather <mpstark@gmail.com>
+Date:   Sat Aug 11 10:30:07 2018 -0500
+
+    Latest attempt at nameplate zoom
+
+commit 61023a12d6f83488830c3643e566d1136c447727
+Author: Michael P. Starkweather <mpstark@gmail.com>
+Date:   Sat Aug 11 10:48:59 2018 -0500
+
+    Add quest progress event to the NPC Interaction events
+
+commit 1b7681cb8ff8ff38edb989b226dc57cdb99d3e01
+Author: Michael P. Starkweather <mpstark@gmail.com>
+Date:   Sat Aug 11 10:30:07 2018 -0500
+
+    Latest attempt at nameplate zoom
+
+commit ee99b006bb33b1dd9d9e354ed3843300a6e1bcb8
+Author: Michael P. Starkweather <mpstark@gmail.com>
+Date:   Sat Aug 11 10:30:07 2018 -0500
+
+    Latest attempt at nameplate zoom
+
+commit da635e5e59a3d8d6606ddcf39b62ed8fc5b5757b
+Author: Michael P. Starkweather <mpstark@gmail.com>
+Date:   Tue Aug 7 19:25:00 2018 -0500
+
+    Fix some shoulder weirdness; don't go to default settings when going to another situation
+
+commit c063a4b910f84ce03cc58c0551e8cbab2222e91f
+Author: Michael P. Starkweather <mpstark@gmail.com>
+Date:   Sun Aug 5 09:37:59 2018 -0500
+
+    Change pkgmeta to hopefully not package oldest libcamera
+
+commit be40dbbbd87d83d900e7907a3a4e3a7e9b3e3c46
+Author: Michael P. Starkweather <mpstark@gmail.com>
+Date:   Sun Aug 5 09:31:35 2018 -0500
+
+    Tweak readme
+

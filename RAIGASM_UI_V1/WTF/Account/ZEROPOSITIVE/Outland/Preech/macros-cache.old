@@ -1,0 +1,24 @@
+VER 3 0100000000000001 "BIGDICK" "INV_MISC_QUESTIONMARK"
+/cast Chaos Blades
+/cast Nemesis
+/use 13
+/use 14
+END
+VER 3 0100000000000006 "flame" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Sigil of Flame
+END
+VER 3 0100000000000002 "focus" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] Imprison
+END
+VER 3 0100000000000003 "interrupt" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] consume magic
+END
+VER 3 0100000000000007 "Leap" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Infernal Strike
+END
+VER 3 0100000000000005 "Silence" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Sigil of Silence
+END
+VER 3 0100000000000004 "stun" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Sigil of Misery
+END

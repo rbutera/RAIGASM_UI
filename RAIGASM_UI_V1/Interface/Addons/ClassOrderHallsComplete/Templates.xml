@@ -1,0 +1,571 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\..\FrameXML\UI.xsd">
+	<!-- Template -->
+	<Button name="COHCColumnHeaderButtonTemplate" virtual="true">
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentLeft" file="Interface\FriendsFrame\WhoFrame-ColumnTabs">
+					<Size>
+						<AbsDimension x="5" y="19"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPLEFT"/>
+					</Anchors>
+					<TexCoords left="0" right="0.078125" top="0" bottom="0.59375"/>
+				</Texture>
+				<Texture name="$parentRight" file="Interface\FriendsFrame\WhoFrame-ColumnTabs">
+					<Size>
+						<AbsDimension x="4" y="19"/>
+					</Size>
+					<Anchors>
+						<Anchor point="TOPRIGHT"/>
+					</Anchors>
+					<TexCoords left="0.90625" right="0.96875" top="0" bottom="0.59375"/>
+				</Texture>
+				<Texture name="$parentMiddle" file="Interface\FriendsFrame\WhoFrame-ColumnTabs">
+					<Size>
+						<AbsDimension x="10" y="19"/>
+					</Size>
+					<Anchors>
+						<Anchor point="LEFT" relativeTo="$parentLeft" relativePoint="RIGHT"/>
+						<Anchor point="RIGHT" relativeTo="$parentRight" relativePoint="LEFT"/>
+					</Anchors>
+					<TexCoords left="0.078125" right="0.90625" top="0" bottom="0.59375"/>
+				</Texture>
+			</Layer>
+		</Layers>
+		<ButtonText name="$parentText" justifyH="LEFT">
+			<Anchors>
+				<Anchor point="TOPLEFT" relativeTo="$parent" relativePoint="TOPLEFT">
+					<Offset>
+						<AbsDimension x="8" y="0"/>
+					</Offset>
+				</Anchor>
+				<Anchor point="BOTTOMRIGHT" relativeTo="$parent" relativePoint="BOTTOMRIGHT">
+					<Offset>
+						<AbsDimension x="-8" y="0"/>
+					</Offset>
+				</Anchor>
+			</Anchors>
+		</ButtonText>
+		<NormalFont style="GameFontNormal"/>
+	</Button>
+	<!-- Template -->
+	<Button name="COHCMonitorTabScrollFrameButtonTemplate" hidden="false" virtual="true">
+		<Size>
+			<AbsDimension x="790" y="50"/><!-- Width is all elements combined w/offsets -->
+		</Size>
+		<Layers>
+			<Layer level="BACKGROUND">
+				<Texture name="$parentBG">
+					<Anchors>
+						<Anchor point="TOPLEFT" x="0" y="-1"/>
+						<Anchor point="BOTTOMRIGHT" x="0" y="1"/>
+					</Anchors>
+					<Color r="0.588" g="0.588" b="0.588" a="0.05"/>
+				</Texture>
+			</Layer>
+		</Layers>
+		<!-- Frames -->
+		<Frames>
+			<!-- [Character] -->
+			<Button name="$parentCharacter">
+				<Size>
+					<AbsDimension x="150" y="16"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="8" y="-8"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<ButtonText name="$parentText" justifyH="LEFT" wordwrap="false" setAllPoints="true"/>
+				<NormalFont style="GameFontHighlight"/>
+			</Button>
+			<!-- [Currency] -->
+			<Frame name="$parentCurrency">
+				<Size>
+					<AbsDimension x="150" y="16"/>
+				</Size>
+				<Anchors>
+					<Anchor point="BOTTOMLEFT">
+						<Offset>
+							<AbsDimension x="8" y="8"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Frames>
+					<Button name="$parentOrderResources">
+						<Size>
+							<AbsDimension x="90" y="16"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT"/>
+						</Anchors>
+						<ButtonText name="$parentText" justifyH="LEFT" wordwrap="false" setAllPoints="true"/>
+						<NormalFont style="GameFontHighlight"/>
+					</Button>
+					<Button name="$parentSealOfBrokenFate">
+						<Size>
+							<AbsDimension x="44" y="16"/><!-- 60 - 16 -->
+						</Size>
+						<Anchors>
+							<Anchor point="RIGHT">
+								<Offset>
+									<AbsDimension x="-16" y="0"/><!-- 8 + 8 double indent to match OrderResources -->
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<ButtonText name="$parentText" justifyH="RIGHT" wordwrap="false" setAllPoints="true"/>
+						<NormalFont style="GameFontHighlight"/>
+					</Button>
+				</Frames>
+			</Frame>
+			<!-- [Monitor] -->
+			<Frame name="$parentMonitor">
+				<Size>
+					<AbsDimension x="316" y="50"/>
+				</Size>
+				<Anchors>
+					<Anchor point="TOPLEFT" relativeTo="$parentCharacter" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="0" y="8"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Frames>
+					<Button name="$parent1">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="TOPLEFT">
+								<Offset>
+									<AbsDimension x="8" y="-3"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent2">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent1" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent3">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent2" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent4">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent3" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent5">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent4" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent6">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent5" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent7">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent6" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent8">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent7" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent9">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent8" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent10">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent9" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent11">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent10" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+					<Button name="$parent12">
+						<Size>
+							<AbsDimension x="44" y="44"/>
+						</Size>
+						<Anchors>
+							<Anchor point="LEFT" relativeTo="$parent11" relativePoint="RIGHT">
+								<Offset>
+									<AbsDimension x="8" y="0"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="$parentTopRightText" inherits="NumberFontNormal" justifyH="RIGHT" justifyV="TOP" setAllPoints="true" text=""/>
+								<FontString name="$parentCenterText" inherits="NumberFontNormalLarge" justifyH="CENTER" setAllPoints="true" text=""/>
+								<Texture name="$parentIndicator">
+									<Size>
+										<AbsDimension x="20" y="20"/>
+									</Size>
+									<Anchors>
+										<Anchor point="BOTTOMRIGHT">
+											<Offset>
+												<AbsDimension x="4.5" y="-4.5"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+								</Texture>
+							</Layer>
+						</Layers>
+					</Button>
+				</Frames>
+			</Frame>
+		</Frames>
+		<!-- HighlightTexture -->
+		<HighlightTexture name="$parentHighlight" file="Interface\Addons\ClassOrderHallsComplete\HighlightBar-Yellow" alphaMode="ADD">
+			<TexCoords left="0" right="1.0" top="0" bottom="1.0"/>
+		</HighlightTexture>
+	</Button>
+	<!-- Template -->
+	<Button name="COHCCharactersTabScrollFrameButtonTemplate" hidden="false" virtual="true">
+		<Size>
+			<AbsDimension x="790" y="40"/><!-- Width is LESS THAN all elements combined w/offsets -->
+		</Size>
+		<!-- Frames -->
+		<Frames>
+			<!-- Item Icon Texture before [Name] -->
+			<Button name="$parent_IconTexture">
+				<Size>
+					<AbsDimension x="34" y="34"/>
+				</Size>
+				<Anchors>
+					<Anchor point="LEFT">
+						<Offset>
+							<AbsDimension x="10" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+			</Button>
+			<!-- [Name] -->
+			<Frame name="$parent_Name">
+				<Size>
+					<AbsDimension x="704" y="40"/><!-- 708 = ( 708 - 4 ) remove 4 here to give checkbox some room -->
+				</Size>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parent_IconTexture" relativePoint="RIGHT">
+						<Offset>
+							<AbsDimension x="4" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<FontString name="$parentText" inherits="GameFontHighlight" justifyH="LEFT" setAllPoints="true" text=""/>
+					</Layer>
+				</Layers>
+			</Frame>
+			<!-- [Check] -->
+			<CheckButton name="$parent_Check" inherits="UICheckButtonTemplate" checked="true">
+				<Size>
+					<AbsDimension x="34" y="34"/>
+				</Size>
+				<Anchors>
+					<Anchor point="LEFT" relativeTo="$parent_Name" relativePoint="RIGHT">
+						<Offset>
+							<AbsDimension x="0" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Scripts>
+					<OnEnter>
+						self:GetParent():LockHighlight();
+					</OnEnter>
+					<OnLeave>
+						self:GetParent():UnlockHighlight();
+					</OnLeave>
+				</Scripts>
+			</CheckButton>
+		</Frames>
+		<!-- HighlightTexture -->
+		<HighlightTexture name="$parentHighlight" file="Interface\HelpFrame\HelpFrameButton-Highlight" alphaMode="ADD">
+			<TexCoords left="0" right="1.0" top="0" bottom="0.578125"/>
+		</HighlightTexture>
+	</Button>
+</Ui>

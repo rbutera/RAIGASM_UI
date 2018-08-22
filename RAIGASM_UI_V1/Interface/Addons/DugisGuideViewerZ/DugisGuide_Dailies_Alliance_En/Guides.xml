@@ -1,0 +1,98 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+
+	<Script file="..\DugisGuide_Legion_En\World_Quests.lua"/>
+	<Script file="..\DugisGuide_Legion_En\110_Broken_Shore.lua"/>
+	<Script file="..\DugisGuide_Legion_En\110_Argus.lua"/>
+	
+	<Script file="100_Tanaan_Jungle.lua"/>
+	<Script file="Tanaan_Jungle_A.lua"/>	
+	<Script file="Garrison_A.lua"/>
+	<Script file="Harrison_Jones_A.lua"/>	
+	<Script file="Legendary_Pet_Daily_A.lua"/>	
+	
+	<Script file="F_Admiral_Taylor_A.lua"/>
+	<Script file="F_Ahm_A.lua"/>	
+	<Script file="F_Defender_Illona_A.lua"/>
+	<Script file="F_Delvar_Ironfist_A.lua"/>	
+	<Script file="F_Fiona_A.lua"/>
+	<Script file="F_Grillin_A.lua"/>
+	<Script file="F_Hulda_Shadowblade_A.lua"/>		
+	<Script file="F_Kimzee_Pinchwhistle_A.lua"/>
+	<Script file="F_Lantresor_the_Blade_A.lua"/>
+	<Script file="F_Leorajh_A.lua"/>
+	<Script file="F_Pleasure_Bot_A.lua"/>		
+	<Script file="F_Ziriak_A.lua"/>		
+
+	<Script file="August_Celestials_A.lua"/>
+	<Script file="Golden_Lotus_5_4_A.lua"/>	
+	<Script file="Isle_of_Thunder_S2-6_A.lua"/>		
+	<Script file="Operation_Shieldwall_A.lua"/>
+	<Script file="Order_Cloud_Serpent_A.lua"/>
+	<Script file="ShadoPan_A.lua"/>
+	<Script file="The_Anglers_A.lua"/>
+	<Script file="The_Klaxxi_A.lua"/>
+	<Script file="The_Tillers_Pre_A.lua"/>
+	<Script file="The_Tillers_A.lua"/>
+	<Script file="Timeless_Isle_A.lua"/>	
+	
+	<Script file="..\DugisGuide_Ach_Alliance_En\Battle_Pet_Dailies_Azeroth_A.lua"/>
+	<Script file="..\DugisGuide_Ach_Alliance_En\Battle_Pet_Dailies_Outland_A.lua"/>
+	<Script file="..\DugisGuide_Ach_Alliance_En\Battle_Pet_Dailies_Northrend_A.lua"/>
+	<Script file="..\DugisGuide_Ach_Alliance_En\Battle_Pet_Dailies_Cataclysm_A.lua"/>
+	<Script file="..\DugisGuide_Ach_Alliance_En\Battle_Pet_Dailies_Pandaria_A.lua"/>
+
+	<Script file="Baradins_Wardens_Penin_A.lua"/>
+	<Script file="Baradins_Wardens_Tol_A.lua"/>
+	<Script file="Ramkahen_A.lua"/>
+	<Script file="The_Earthern_Ring_A.lua"/>
+	<Script file="Therazane_A.lua"/>
+	<Script file="Wildhammer_Clan_A.lua"/>
+	
+	<Script file="Molten_Front_Druids.lua"/>
+	<Script file="Molten_Front_Wardens.lua"/>
+	
+	<Script file="Alliance_Vanguard.lua"/>
+	<Script file="Brunnhildar_Village_A.lua"/>	
+	<Script file="Argent_Crusade_A.lua"/>	
+	<Script file="Knights_of_the_Ebon_Blade.lua"/>
+	<Script file="Sons_of_Hodir.lua"/>
+	<Script file="The_Kaluak.lua"/>
+	<Script file="The_Wyrmrest_Accord.lua"/>
+	<Script file="Sholazar_Basin_Pre.lua"/>
+	<Script file="Sholazar_Basin_Frenzyheart.lua"/>
+	<Script file="Sholazar_Basin_Oracles.lua"/>
+	<Script file="Venture_Bay_A.lua"/>
+	
+	<Script file="Netherwing_Neutral_Rep.lua"/>
+	<Script file="Netherwing_Honor_Dailies.lua"/>
+	<Script file="Netherwing_Revered_Dailies.lua"/>
+	<Script file="Ogrila_A.lua"/>
+	<Script file="Sha'tari_Skyguard_A.lua"/>
+	<Script file="Sha'tari_Skyguard_Dailies_A.lua"/>	
+	
+	<Script file="Argent_Tournament_A.lua"/>	
+	<Script file="Argent_Tournament_Aspirant_A.lua"/>
+	<Script file="Argent_Tournament_Valiant_A.lua"/>
+	<Script file="Argent_Tournament_Champion_A.lua"/>
+	<Script file="Argent_Tournament_Champion_Silver_A.lua"/>
+	
+	<Script file="Stormwind_Vendor.lua"/>
+	<Script file="Ironforge_Vendor.lua"/>
+	<Script file="Darnassus_Vendor.lua"/>
+	<Script file="Exodar_Vendor.lua"/>
+	<Script file="Eastern_Kingdom_Vendor_Run.lua"/>
+	<Script file="Kalimdor_Vendor_Run.lua"/>
+	<Script file="Outland_Vendor_Run.lua"/>
+						
+	<Script file="Draenor_Fishing_A.lua"/>
+	<Script file="Darnassus_Cook_Fishing.lua"/>
+	<Script file="Ironforge_Cook_Fishing.lua"/>
+	<Script file="Stormwind_Cook_Fishing.lua"/>
+	<Script file="Stormwind_Jewelcrafting_A.lua"/>
+	<Script file="Shattrath_Cooking_A.lua"/>
+	<Script file="Shattrath_Fishing_A.lua"/>
+	<Script file="Dalaran_Cooking_A.lua"/>
+	<Script file="Dalaran_Fishing_A.lua"/>
+	<Script file="Dalaran_Jewelcrafting_A.lua"/>
+
+</Ui>

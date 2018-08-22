@@ -1,0 +1,73 @@
+VER 3 0100000000000010 "Bop" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Blessing of Protection
+END
+VER 3 0100000000000013 "CC Mark" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] Repentance
+END
+VER 3 0100000000000012 "Cleanse" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Cleanse
+END
+VER 3 0100000000000002 "deeps" "INV_MISC_QUESTIONMARK"
+/cast Avenging Wrath
+/use 13
+/use 14
+END
+VER 3 0100000000000003 "divine" "INV_MISC_QUESTIONMARK"
+/cast divine shield
+/cancelaura divine shield
+END
+VER 3 0100000000000011 "Faith" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Beacon of Faith
+END
+VER 3 010000000000000B "Faith" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Bestow Faith
+END
+VER 3 0100000000000007 "Flash" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Flash of Light
+END
+VER 3 010000000000000F "Freedom" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Blessing of Freedom
+END
+VER 3 0100000000000008 "Holy Light" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Holy Light
+END
+VER 3 0100000000000001 "hop" "INV_MISC_QUESTIONMARK"
+/cast Hand of Protection
+/cancelaura hand of protection
+END
+VER 3 010000000000000A "Light" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Beacon of Light
+END
+VER 3 010000000000000C "Martyr" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Light of the Martyr
+END
+VER 3 010000000000000E "Sac" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Blessing of Sacrifice
+END
+VER 3 0100000000000005 "seals" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Lay on Hands
+END
+VER 3 0100000000000004 "sera" "INV_MISC_QUESTIONMARK"
+/cast seraphim
+/use 13
+/use 14
+END
+VER 3 0100000000000009 "Shock" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Holy Shock
+END
+VER 3 010000000000000D "Tyrs" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [target=mouseover] Tyr's Deliverance
+END

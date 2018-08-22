@@ -97,8 +97,8 @@ OneRing_Config = {
 					["sliceToken"] = "ABues=taBAe",
 				}, -- [17]
 				{
-					["sliceToken"] = "ABue3=N7nYe",
 					["id"] = 126892,
+					["sliceToken"] = "ABue3=N7nYe",
 				}, -- [18]
 				{
 					"ring", -- [1]

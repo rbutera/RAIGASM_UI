@@ -1,0 +1,12 @@
+tag bd6b45936b513b9719fe05b84887cfac5f0bce41 v1.2.3
+Author:	Tim <tim@tim-ings.com>
+Date:	Mon Jul 30 01:01:59 2018 +0800
+
+Bug Fixes
+
+commit e847cfff76b9783669695246f187fea680a2fa99
+Author: Tim <tim@tim-ings.com>
+Date:   Mon Jul 30 01:01:33 2018 +0800
+
+    Updates TOC ver
+

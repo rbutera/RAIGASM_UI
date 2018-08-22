@@ -1,0 +1,26 @@
+tag 160d12b077f5f9872acd0ad88cc9c97f5cd46014 2.4.9
+Author:	Archarodim <archarodim@teaser.fr>
+Date:	Sun Aug 12 13:12:24 2018 +0200
+
+Tagging as 2.4.9
+
+commit f551cc56468f894c38153c5df0f5a4c35effb3df
+Author: Archarodim <archarodim@teaser.fr>
+Date:   Sun Aug 12 13:09:16 2018 +0200
+
+    Update changelog.md and its included external links (http -> https)
+
+commit 0562b2cc1b74715e61c92e053df06a937bb06405
+Author: Archarodim <archarodim@teaser.fr>
+Date:   Sun Aug 12 12:56:31 2018 +0200
+
+    Remove 'Wild Growth' from specialized healing spells since Feral Druids can use it.
+    
+    In the feral talents, level 45, you can choose Restoration Affinity, which includes Rejuv, Swiftmend, Wild Growth
+
+commit cdff1d788398b3a7879a6b57bddbb9fa8e2defa9
+Author: Archarodim <archarodim@teaser.fr>
+Date:   Fri Aug 10 03:22:57 2018 +0200
+
+    Vivify is no longer specific to Mistweaver Monks
+

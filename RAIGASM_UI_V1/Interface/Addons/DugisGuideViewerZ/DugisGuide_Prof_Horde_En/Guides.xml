@@ -1,0 +1,48 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Alchemy_WoD.lua"/>
+	<Script file="Blacksmithing_WoD.lua"/>
+	<Script file="Enchanting_WoD.lua"/>
+	<Script file="Engineering_WoD.lua"/>
+	<Script file="Inscription_WoD.lua"/>
+	<Script file="Jewelcrafting_WoD.lua"/>
+	<Script file="Leatherworking_WoD.lua"/>
+	<Script file="Tailoring_WoD.lua"/>
+	<Script file="Herb_WoD.lua"/>
+	<Script file="Mining_WoD.lua"/>
+	<Script file="Skinning_WoD.lua"/>
+	<Script file="Cooking_WoD.lua"/>
+	<Script file="Fishing_WoD.lua"/>
+	
+	<Script file="Alchemy.lua"/>
+	<Script file="Blacksmithing.lua"/>
+	<Script file="MoP_Blacksmithing_H.lua"/>
+	<Script file="Cooking.lua"/>
+	<Script file="Cooking_Fishing.lua"/>
+	<Script file="MoP_Cooking_H.lua"/>
+	<Script file="MoP_Cooking_Special_H.lua"/>
+	<Script file="Enchanting.lua"/>
+	<Script file="Engineering.lua"/>
+	<Script file="Fishing.lua"/>
+	<Script file="Herb_H.lua"/>
+	<Script file="Inscription.lua"/>
+	<Script file="Jewelcrafting.lua"/>
+	<Script file="Leatherworking.lua"/>
+	<Script file="Mining_H.lua"/>
+	<Script file="Mining_Smelting.lua"/>
+	<Script file="Skinning_H.lua"/>
+	<Script file="Tailoring.lua"/>
+			
+	<Script file="Alchemy_Farm_H.lua"/>
+	<Script file="Blacksmithing_Farm_H.lua"/>
+	<Script file="Cooking_Farm_H.lua"/>
+	<Script file="Enchanting_Farm_H.lua"/>
+	<Script file="Engineering_Farm_H.lua"/>
+	<Script file="Inscription_Farm_H.lua"/>
+	<Script file="Leatherworking_Farm_H.lua"/>
+	<Script file="Tailoring_Farm_H.lua"/>
+	
+	<Script file="Fish_Farm_H.lua"/>
+	<Script file="Herb_Farm_H.lua"/>
+	<Script file="Mine_Farm_H.lua"/>
+	<Script file="Tradeskill_Farming_H.lua"/>
+</Ui>

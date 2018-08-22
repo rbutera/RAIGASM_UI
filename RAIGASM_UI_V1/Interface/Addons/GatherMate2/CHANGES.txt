@@ -1,0 +1,54 @@
+tag 1c79f556ace8e6bd8b1dee5c2830f68a20f78610 1.43
+Author:	Hendrik Leppkes <h.leppkes@gmail.com>
+Date:	Sun Aug 12 14:07:19 2018 +0200
+
+Tag as 1.43
+
+commit 20acc5fc536eb558dd60ca8d78b878340a7198c3
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Sat Aug 11 09:59:35 2018 +0200
+
+    Re-implement active digsite tracking
+
+commit 27b9841222cca8440f0490664d9afaef61f2ec9d
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Sat Aug 11 09:38:13 2018 +0200
+
+    Add BfA Archaeology nodes
+
+commit deb6e3f4ca4d3fd65e298fd53e36350521408723
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Sat Aug 11 08:16:44 2018 +0200
+
+    Add artwork for BfA Fish Schools
+
+commit 5605b210c23a25409ae8aff72f7441f0675bdbdd
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Fri Aug 10 15:11:00 2018 +0200
+
+    Add artwork for BfA Herbs and Ores
+
+commit 3f97515ec45aed9a117daba95b0e1b518434d538
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Fri Aug 10 13:55:51 2018 +0200
+
+    Add separate esMX locale file
+
+commit 15a52674380fb298c885e7a400b9c35e4b25c388
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Fri Aug 10 13:53:23 2018 +0200
+
+    Add BfA Fishing Schools
+
+commit 6cac41dd4a413e5eea1b633a4744cb5b59c30af2
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Mon Jul 30 11:50:50 2018 +0200
+
+    Add an alternative mining spell since the localization can vary depending on skill
+
+commit f1846bd1bf951f9af26947b70e41c2a8a22bfccc
+Author: Hendrik Leppkes <h.leppkes@gmail.com>
+Date:   Sun Jul 22 00:57:18 2018 +0200
+
+    Remove WorldMapButton use
+

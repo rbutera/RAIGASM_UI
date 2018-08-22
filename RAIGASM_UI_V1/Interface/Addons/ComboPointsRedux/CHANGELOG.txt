@@ -1,0 +1,16 @@
+Version 5.0.1
+    - Remove Festering Wounds module, BfA API changes require a complete re-write of the module
+
+Version 5.0.0
+    - Updates for World of Warcraft API changes for the BFA 8.0 patch
+        - Updates to use Enum.PowerType rather than old Spell Power constants
+        - Update to use UNIT_POWER_UPDATE event over removed (?) UNIT_POWER event
+    
+Version 4.1.1
+    - Fix for WowAce #50, Holy Power module not always showing
+
+Version 4.1.0
+    - Remove default color for Soul Shard graphics, this resolves WowAce #39
+        * Some users experienced a bug where database defaults were still applied even after setting custom colors
+    - FIX Anticipation max points value (was 8, now 10)
+    - ADD Festering Wounds module, _warning_ limited testing

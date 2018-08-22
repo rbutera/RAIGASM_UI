@@ -1,0 +1,15 @@
+## Interface: 60200
+## Title: Big Wigs |cffff0000+|r|cffffffffBlackhand Assist|r
+## Author: Elvador
+## Dependencies: BigWigs
+## LoadOnDemand: 1
+## SavedVariables: BlackhandAssistDB
+## X-BigWigs-LoadOn-ZoneId: 988
+## X-BigWigs-LoadOn-Slash: /bwblackhand
+## X-Curse-Packaged-Version: v6.2.0-2
+## X-Curse-Project-Name: BigWigs_BlackhandAssist
+## X-Curse-Project-ID: bigwigs_blackhandassist
+## X-Curse-Repository-ID: wow/bigwigs_blackhandassist/mainline
+
+Locales.lua
+Core.lua

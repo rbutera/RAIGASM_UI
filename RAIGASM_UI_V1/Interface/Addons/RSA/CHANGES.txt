@@ -1,0 +1,14 @@
+------------------------------------------------------------------------
+r477 | raeli87 | 2018-08-13 21:34:28 +0000 (Mon, 13 Aug 2018) | 1 line
+Changed paths:
+   M /trunk/RSA_Options/Options.lua
+
+Whisper option is now available for Innervate again.
+------------------------------------------------------------------------
+r476 | raeli87 | 2018-08-13 07:58:15 +0000 (Mon, 13 Aug 2018) | 1 line
+Changed paths:
+   M /trunk/RSA/Localisation/Locale-zhTW.lua
+
+Update zhTW localisation.
+------------------------------------------------------------------------
+

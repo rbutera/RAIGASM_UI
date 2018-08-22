@@ -4,16 +4,16 @@ RSADB = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
+	["global"] = {
+		["version"] = 4,
+		["revision"] = "477",
+	},
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "SHAMAN",
 		["Raimondo - Draenor"] = "Raimondo - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
 		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-	},
-	["global"] = {
-		["version"] = 4,
-		["revision"] = "477",
 	},
 	["profiles"] = {
 		["Raimondo - Draenor"] = {
@@ -24,13 +24,13 @@ RSADB = {
 			["Fixed"] = true,
 		},
 		["Ryugasm - Draenor"] = {
-			["General"] = {
-				["Class"] = "MONK",
-			},
 			["Modules"] = {
 				["Monk"] = true,
 			},
 			["Fixed"] = true,
+			["General"] = {
+				["Class"] = "MONK",
+			},
 		},
 		["Norfweezy - Draenor"] = {
 			["Modules"] = {
@@ -38,15 +38,15 @@ RSADB = {
 			},
 			["Fixed"] = true,
 			["General"] = {
-				["Race"] = "BloodElf",
 				["Class"] = "DEMONHUNTER",
+				["Race"] = "BloodElf",
 			},
 		},
 		["Badmanting - Draenor"] = {
 			["Fixed"] = true,
 			["General"] = {
-				["Race"] = "Troll",
 				["Class"] = "SHAMAN",
+				["Race"] = "Troll",
 			},
 			["Shaman"] = {
 				["Spells"] = {

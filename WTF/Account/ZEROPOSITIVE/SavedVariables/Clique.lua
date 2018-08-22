@@ -4,10 +4,10 @@ CliqueDB3 = {
 	["char"] = {
 		["Raimondo - Draenor"] = {
 			["spec1_profileKey"] = "Raimondo - Draenor",
-			["spec3_profileKey"] = "Raimondo - Draenor",
-			["downclick"] = false,
 			["fastooc"] = false,
 			["spec2_profileKey"] = "Raimondo - Draenor",
+			["downclick"] = false,
+			["spec3_profileKey"] = "Raimondo - Draenor",
 			["specswap"] = false,
 		},
 		["Badmanting - Draenor"] = {
@@ -15,17 +15,17 @@ CliqueDB3 = {
 			["alerthidden"] = true,
 			["downclick"] = false,
 			["fastooc"] = false,
-			["specswap"] = false,
-			["spec2_profileKey"] = "Badmanting - Draenor",
 			["spec3_profileKey"] = "Badmanting - Draenor",
+			["spec2_profileKey"] = "Badmanting - Draenor",
+			["specswap"] = false,
 		},
 		["Ryugasm - Draenor"] = {
 			["spec1_profileKey"] = "Ryugasm - Draenor",
-			["fastooc"] = false,
 			["spec3_profileKey"] = "Ryugasm - Draenor",
 			["downclick"] = false,
-			["spec2_profileKey"] = "Ryugasm - Draenor",
+			["fastooc"] = false,
 			["specswap"] = false,
+			["spec2_profileKey"] = "Ryugasm - Draenor",
 		},
 	},
 	["profileKeys"] = {
@@ -39,10 +39,10 @@ CliqueDB3 = {
 		["Raigasm - Draenor"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -58,10 +58,10 @@ CliqueDB3 = {
 		["Raimondo - Draenor"] = {
 			["bindings"] = {
 				{
+					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
-					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -77,10 +77,10 @@ CliqueDB3 = {
 		["Ryugasm - Draenor"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -96,10 +96,10 @@ CliqueDB3 = {
 		["Norfweezy - Draenor"] = {
 			["bindings"] = {
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 					},
+					["type"] = "target",
 					["key"] = "BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [1]
@@ -124,11 +124,11 @@ CliqueDB3 = {
 					},
 				}, -- [1]
 				{
-					["type"] = "target",
 					["sets"] = {
 						["default"] = true,
 						["spec3"] = true,
 					},
+					["type"] = "target",
 					["key"] = "SHIFT-BUTTON1",
 					["unit"] = "mouseover",
 				}, -- [2]

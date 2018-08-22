@@ -1,0 +1,22 @@
+## Interface: 70300
+## Title: AdiBags - Hearthstones
+## Notes: Adds various hearthing items to AdiBags virtual groups
+## Notes-ruRU: Добавляют разные возвращающие предметы в виртуальные группы аддона.
+## Notes-deDE: Fügt mehrere Ruhestein ähnliche items zu Adibags Gruppen hinzu.
+## Notes-koKR: 여러 순간이동 아이템을 AdiBags 가상 그룹에 추가합니다
+## Notes-esMX: Añadir objetos de teletransporte a los grupos virtuales de AdiBags
+## Notes-esES: Añadir objetos de teletransporte a los grupos virtuales de AdiBags
+## Notes-ptBR: Adiciona um grupo ao AdiBags que contém vários itens como a Pedra de Regresso.
+## Notes-zhCN: 增加各种传送物品到AdiBags的虚拟类别
+## Notes-zhTW: 增加各種傳送物品到AdiBags的虛擬類別
+## Notes-frFR: Ajoute différents objets de type Pierre de foyer aux groupes virtuels d'AdiBags
+
+## Version: 7.3-release1
+## Author: Myrroddin of Llane-US (Knights of the Storm, Alliance)
+## X-Date: 2017-08-28T5:13:02Z
+## X-License: © 2016 - 2017 Paul "Myrroddin" Vandersypen, All Rights Reserved
+## X-Category: Bags & Inventory
+## Dependencies: AdiBags
+
+Localization.lua
+AdiBags_Hearthstones.lua

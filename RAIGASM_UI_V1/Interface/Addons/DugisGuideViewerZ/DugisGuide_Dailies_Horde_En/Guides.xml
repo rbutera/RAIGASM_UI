@@ -1,0 +1,94 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">	
+
+	<Script file="100_Tanaan_Jungle.lua"/>
+	<Script file="Tanaan_Jungle_H.lua"/>	
+	<Script file="Garrison_H.lua"/>
+	<Script file="Harrison_Jones_H.lua"/>
+	<Script file="Legendary_Pet_Daily_H.lua"/>	
+	
+	<Script file="F_Ahm_H.lua"/>
+	<Script file="F_Aeda_Brightdawn_H.lua"/>	
+	<Script file="F_Bruto_H.lua"/>	
+	<Script file="F_Dark_Ranger_Velonara_H.lua"/>
+	<Script file="F_Gronnstalker_Rokash_H.lua"/>	
+	<Script file="F_Kimzee_Pinchwhistle_H.lua"/>
+	<Script file="F_Leorajh_H.lua"/>
+	<Script file="F_Pleasure_Bot_H.lua"/>		
+	<Script file="F_Shadow_Hunter_Rala_H.lua"/>
+	<Script file="F_Vivianne_H.lua"/>
+	<Script file="F_Weaponsmith_NaShra_H.lua"/>
+	<Script file="F_Ziriak_H.lua"/>	
+	
+	<Script file="August_Celestials_H.lua"/>
+	<Script file="Dominance_Offensive_H.lua"/>
+	<Script file="Golden_Lotus_5_4_H.lua"/>		
+	<Script file="Isle_of_Thunder_S2-6_H.lua"/>		
+	<Script file="Order_Cloud_Serpent_H.lua"/>
+	<Script file="ShadoPan_H.lua"/>
+	<Script file="The_Anglers_H.lua"/>
+	<Script file="The_Klaxxi_H.lua"/>
+	<Script file="The_Tillers_Pre_H.lua"/>
+	<Script file="The_Tillers_H.lua"/>
+	<Script file="Timeless_Isle_H.lua"/>
+	
+	<Script file="..\DugisGuide_Ach_Horde_En\Battle_Pet_Dailies_Azeroth_H.lua"/>
+	<Script file="..\DugisGuide_Ach_Horde_En\Battle_Pet_Dailies_Outland_H.lua"/>
+	<Script file="..\DugisGuide_Ach_Horde_En\Battle_Pet_Dailies_Northrend_H.lua"/>
+	<Script file="..\DugisGuide_Ach_Horde_En\Battle_Pet_Dailies_Cataclysm_H.lua"/>
+	<Script file="..\DugisGuide_Ach_Horde_En\Battle_Pet_Dailies_Pandaria_H.lua"/>	
+
+	<Script file="Dragonmaw_Clan_H.lua"/>
+	<Script file="Hellscreams_Reach_Penin_H.lua"/>
+	<Script file="Hellscreams_Reach_Tol_H.lua"/>
+	<Script file="Ramkahen_H.lua"/>
+	<Script file="The_Earthern_Ring_H.lua"/>
+	<Script file="Therazane_H.lua"/>
+	
+	<Script file="Molten_Front_Druids.lua"/>
+	<Script file="Molten_Front_Wardens.lua"/>
+			
+	<Script file="Argent_Crusade_H.lua"/>
+	<Script file="Brunnhildar_Village_H.lua"/>	
+	<Script file="Horde_Expedition.lua"/>
+	<Script file="Knights_of_the_Ebon_Blade.lua"/>
+	<Script file="Sons_of_Hodir.lua"/>
+	<Script file="The_Kaluak.lua"/>
+	<Script file="The_Wyrmrest_Accord.lua"/>
+	<Script file="Sholazar_Basin_Pre.lua"/>	
+	<Script file="Sholazar_Basin_Frenzyheart.lua"/>
+	<Script file="Sholazar_Basin_Oracles.lua"/>
+	<Script file="Venture_Bay_H.lua"/>	
+	
+	<Script file="Netherwing_Neutral_Rep.lua"/>
+	<Script file="Netherwing_Honor_Dailies.lua"/>
+	<Script file="Netherwing_Revered_Dailies.lua"/>
+	<Script file="Ogrila_H.lua"/>
+	<Script file="Sha'tari_Skyguard_H.lua"/>
+	<Script file="Sha'tari_Skyguard_Dailies_H.lua"/>
+	
+	<Script file="Argent_Tournament_H.lua"/>
+	<Script file="Argent_Tournament_Aspirant_H.lua"/>	
+	<Script file="Argent_Tournament_Valiant_H.lua"/>
+	<Script file="Argent_Tournament_Champion_H.lua"/>
+	<Script file="Argent_Tournament_Champion_Sunreaver_H.lua"/>
+
+	<Script file="Orgrimmar_Vendor.lua"/>
+	<Script file="Undercity_Vendor.lua"/>
+	<Script file="Silvermoon_Vendor.lua"/>
+	<Script file="Thunder_Bluff_Vendor.lua"/>	
+	<Script file="Eastern_Kingdom_Vendor_Run.lua"/>
+	<Script file="Kalimdor_Vendor_Run.lua"/>
+	<Script file="Outland_Vendor_Run.lua"/>
+						
+	<Script file="Draenor_Fishing_H.lua"/> 
+	<Script file="Orgrimmar_Cook_Fishing.lua"/>
+	<Script file="Orgrimmar_Jewecrafting_H.lua"/>
+	<Script file="ThunderBluff_Cook_Fishing.lua"/>
+	<Script file="Undercity_Cook_Fishing.lua"/>
+	<Script file="Shattrath_Cooking_H.lua"/>
+	<Script file="Shattrath_Fishing_H.lua"/>
+	<Script file="Dalaran_Cooking_H.lua"/>
+	<Script file="Dalaran_Fishing_H.lua"/>
+	<Script file="Dalaran_Jewelcrafting_H.lua"/>
+	
+</Ui>

@@ -1,0 +1,88 @@
+
+KKonferSKOptions = nil
+KKonferSKDB = {
+	["profileKeys"] = {
+		["Redtuzk-Kazzak"] = "Redtuzk-Kazzak",
+	},
+	["factionrealm"] = {
+		["Horde-Kazzak"] = {
+			["dbversion"] = 14,
+			["configs"] = {
+				["13071487e1716a"] = {
+					["syncing"] = false,
+					["lastevent"] = 0,
+					["nlists"] = 0,
+					["nusers"] = 1,
+					["users"] = {
+						["0001"] = {
+							["flags"] = "",
+							["class"] = "03",
+							["name"] = "Redtuzk",
+							["role"] = 0,
+						},
+					},
+					["cfgtype"] = 1,
+					["nadmins"] = 1,
+					["tethered"] = false,
+					["owner"] = "0001",
+					["admins"] = {
+						["0001"] = {
+							["id"] = "0",
+						},
+					},
+					["lists"] = {
+					},
+					["history"] = {
+					},
+					["name"] = "Primordium",
+					["nitems"] = 0,
+					["cksum"] = 2761635795,
+					["items"] = {
+					},
+					["settings"] = {
+						["disenchant"] = true,
+						["tooltips"] = true,
+						["ann_cancel"] = true,
+						["use_decay"] = false,
+						["auto_bid"] = true,
+						["suicide_rolls"] = false,
+						["rank_prio"] = {
+						},
+						["hide_absent"] = false,
+						["disenchant_below"] = false,
+						["announce_where"] = 0,
+						["boe_to_ml"] = true,
+						["ann_roll_ties"] = true,
+						["def_rank"] = 999,
+						["silent_bid"] = false,
+						["ann_no_bids"] = true,
+						["offspec_rolls"] = true,
+						["ann_missing"] = true,
+						["final_list"] = "0",
+						["try_roll"] = false,
+						["roll_timeout"] = 10,
+						["chat_filter"] = true,
+						["roll_extend"] = 5,
+						["ann_winners_guild"] = true,
+						["ann_winners_raid"] = true,
+						["def_list"] = "0",
+						["use_ranks"] = false,
+						["bid_threshold"] = 0,
+						["denchers"] = {
+						},
+						["ann_bidchanges"] = true,
+						["history"] = true,
+						["auto_loot"] = true,
+						["ann_bid_usage"] = true,
+						["ann_roll_usage"] = true,
+						["ann_countdown"] = true,
+						["tethered"] = false,
+						["ann_bid_progress"] = true,
+					},
+				},
+			},
+			["defconfig"] = "13071487e1716a",
+			["nconfigs"] = 1,
+		},
+	},
+}

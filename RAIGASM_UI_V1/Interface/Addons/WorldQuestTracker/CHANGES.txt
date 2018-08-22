@@ -1,0 +1,7 @@
+changeset:   303:3210fd44fdb1
+tag:         v8.0.1.303
+user:        Tercio
+date:        Sun Aug 19 20:17:50 2018 -0300
+summary:     - Ticket #781: Fixed (can't compare gear).
+
+
