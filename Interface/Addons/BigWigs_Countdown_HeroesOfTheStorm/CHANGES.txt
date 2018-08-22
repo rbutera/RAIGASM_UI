@@ -1,0 +1,12 @@
+tag eef1bd421604e5f2ae4d840aee3eb4a466670f24 1.1.12
+Author:	Kyle Buller <bullerk@gmail.com>
+Date:	Fri Aug 10 21:06:23 2018 -0500
+
+Tagging as 1.1.12
+
+commit 5a5650a9572b7a61084a1193c5af93cef6bb7b27
+Author: Kyle Buller <bullerk@gmail.com>
+Date:   Fri Aug 10 21:00:03 2018 -0500
+
+    Add Whitemane
+

@@ -1,0 +1,8 @@
+## Interface: 62000
+## Title: AdiBags-TSMAuction - Filter for TSM Auctions
+## Notes: Adds TSM auction related filters to AdiBags.
+## Author: anakappa
+## Version: v1.0
+## Dependencies: AdiBags, TradeSkillMaster
+
+AdiBags_TSMAuctions.lua

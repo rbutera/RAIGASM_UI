@@ -1,0 +1,7 @@
+
+LCData = {
+	["broadcastChannel"] = 1,
+	["minRank"] = 2,
+	["allowPersonalVotes"] = false,
+	["disenchanter"] = "",
+}

@@ -1,0 +1,49 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">	
+
+	<Script file="Burning_of_Teldrassil_A.lua"/>
+
+	<Script file="Darkmoon_Faire_A.lua"/>
+	
+	<Script file="LunarFestival_Eastern_A.lua"/>
+	<Script file="LunarFestival_Kalimdor_A.lua"/>
+	<Script file="LunarFestival_Northrend_A.lua"/>
+	
+	<Script file="Love_Air_Chain_A.lua"/>
+	<Script file="Love_Air_Daily_A.lua"/>
+			
+	<Script file="Childrens_Week_Achievement_A.lua"/>
+	<Script file="Childrens_Week_Azeroth_A.lua"/>
+	<Script file="Childrens_Week_Northrend_F.lua"/>
+	<Script file="Childrens_Week_Northrend_O.lua"/>
+	<Script file="Childrens_Week_Outland_A.lua"/>
+	
+	<Script file="Midsummer_Festival_Azeroth_A.lua"/>
+	<Script file="Midsummer_Festival_Northrend_A.lua"/>
+	<Script file="Midsummer_Festival_Outland_A.lua"/>
+	<Script file="Midsummer_Festival_Pandaria_A.lua"/>	
+	<Script file="Midsummer_Festival_Draenor_A.lua"/>	
+	<Script file="Midsummer_Festival_BrokenIsle_A.lua"/>	
+	
+	<Script file="Brewfest_A.lua"/>	
+	<Script file="Brewfest_A_Eu.lua"/>	
+	
+	<Script file="Hallows_End_Quest_A.lua"/>	
+	<Script file="Hallows_End_Daily_A.lua"/>
+	<Script file="Hallows_End_Garrison_Daily_A.lua"/>
+	<Script file="Hallows_End_Eastern_Kingdom_A.lua"/>
+	<Script file="Hallows_End_Kalimdor_A.lua"/>
+	<Script file="Hallows_End_Northrend_A.lua"/>
+	<Script file="Hallows_End_Outland_A.lua"/>	
+	<Script file="Hallows_End_Cataclysm_A.lua"/>
+	<Script file="Hallows_End_Pandaria_A.lua"/>
+	
+	<Script file="Pilgrims_Bounty_A.lua"/>
+	
+	<Script file="Day_of_The_Dead_A.lua"/>
+
+	<Script file="WinterVeil_Quests_A.lua"/>
+	<Script file="WinterVeil_Daily_A.lua"/>
+	<Script file="WinterVeil_Achievement_A.lua"/>
+	<Script file="Ogrila_Chain_A.lua"/>
+
+</Ui>

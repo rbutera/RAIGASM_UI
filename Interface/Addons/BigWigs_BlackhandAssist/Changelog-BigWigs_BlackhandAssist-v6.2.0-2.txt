@@ -1,0 +1,12 @@
+tag v6.2.0-2
+b7534c4398330c9abf02b53d2b32ca8965275488
+elvador <>
+2015-09-09 14:14:44 +0200
+
+Tagging as v6.2.0-2
+
+
+--------------------
+
+elvador:
+	- Fix global leak

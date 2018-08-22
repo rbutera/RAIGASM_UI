@@ -1,0 +1,16 @@
+------------------------------------------------------------------------
+r557 | mysticalos | 2018-07-27 20:26:46 +0000 (Fri, 27 Jul 2018) | 1 line
+Changed paths:
+   M /trunk/ChangeLog.lua
+   M /trunk/WIM.lua
+   M /trunk/WIM.toc
+
+bump version
+------------------------------------------------------------------------
+r556 | mysticalos | 2018-07-27 20:11:58 +0000 (Fri, 27 Jul 2018) | 1 line
+Changed paths:
+   M /trunk/Modules/URLHandler.lua
+
+Fix link copying
+------------------------------------------------------------------------
+

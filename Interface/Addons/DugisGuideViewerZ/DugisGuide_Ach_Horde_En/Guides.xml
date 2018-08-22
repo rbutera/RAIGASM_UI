@@ -1,0 +1,128 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<Script file="Tiny_Terrors_Tanaan_H.lua"/>
+	<Script file="Big_Adventure_H.lua"/>
+	<Script file="Draenor_Safari.lua"/>
+	<Script file="Taming_Draenor.lua"/>
+	<Script file="Battle_Pets_H.lua"/>
+	<Script file="Battle_Pets_Eastern_Kingdom_H.lua"/>
+	<Script file="Battle_Pets_Kalimdor_H.lua"/>
+	<Script file="Battle_Pets_Outland_H.lua"/>
+	<Script file="Battle_Pets_Northrend_H.lua"/>
+	<Script file="Battle_Pets_Pandaria_H.lua"/>
+
+	<Script file="Awesome_H.lua"/>
+	<Script file="Master_Mounts_H.lua"/>
+	<Script file="Critter_Achievement_H.lua"/>
+	<Script file="Higher_Learning.lua"/>
+	<Script file="Well_Read_H.lua"/>
+	<Script file="Misc_Achievement_H.lua"/>
+	<Script file="Ring_of_Blood_H.lua"/>
+	<Script file="Companions_H.lua"/>
+	<Script file="Mounts_H.lua"/>
+	<Script file="Tabards_H.lua"/>
+	<Script file="Titles_H.lua"/>
+	<Script file="Upgrading_The_Mill_H.lua"/>
+	
+	<Script file="Frostfire_Fridge.lua"/>
+	<Script file="A_Bonus.lua"/>
+	<Script file="More_Talador.lua"/>
+	<Script file="Arak_Star.lua"/>
+	<Script file="Nagrand_Cherry.lua"/>
+	<Script file="A-VOID-ance.lua"/>
+	<Script file="Bobbing_for_Orcs.lua"/>
+	<Script file="Breaker_of_Chains.lua"/>
+	<Script file="Broke_Back_Precipice.lua"/>
+	<Script file="Demidos_of_Reality.lua"/>
+	<Script file="Hemet_Nesingwary_H.lua"/>
+	<Script file="Full_Caravan_H.lua"/>
+	<Script file="E'ko_Madness_H.lua"/>
+	<Script file="Little_PITA_H.lua"/>
+	<Script file="Dragonmaw_Tour_of_Duty.lua"/>
+	<Script file="Veteran_of_the_Molten_Fronts_H.lua"/>
+	
+	<Script file="Accomplished_Angler_H.lua"/>
+	<Script file="Draenor_Angler.lua"/>
+	<Script file="Draenor_Gourmet_H.lua"/>
+	<Script file="Hail_to_the_Chef_H.lua"/>		
+
+	<Script file="Field_Photographer_H.lua"/>
+	<Script file="Treasure_of_Frostfire.lua"/>
+	<Script file="Treasure_of_Gorgrond.lua"/>
+	<Script file="Treasure_of_Nagrand.lua"/>
+	<Script file="Treasure_of_Shadowmoon.lua"/>
+	<Script file="Treasure_of_Spires.lua"/>
+	<Script file="Treasure_of_Talador.lua"/>
+	<Script file="Draenor_Pathfinder_H.lua"/>	
+	<Script file="Ancient_Fight.lua"/>
+	<Script file="Gorgrond_Monster_Hunter_H.lua"/>
+	<Script file="Prove_Strength_H.lua"/>
+	<Script file="Song_of_Silence.lua"/>
+	<Script file="Shredder_Maniac.lua"/>
+	<Script file="Lorewalkers_H.lua"/>
+	<Script file="Lost_and_Found_H.lua"/>
+	<Script file="Bloody_Rare_H.lua"/>
+	<Script file="Frostbitten_H.lua"/>
+	<Script file="Glorious_H.lua"/>
+	<Script file="Killing_Time_H.lua"/>	
+	<Script file="Surveying_the_Damage_H.lua"/>
+	<Script file="Exploration_Eastern_Kingdom_H.lua"/>
+	<Script file="Exploration_Kalimdor_H.lua"/>
+	<Script file="Exploration_Outland_H.lua"/>
+	<Script file="Exploration_Northrend_H.lua"/>
+	<Script file="Exploration_Cataclysm_H.lua"/>
+	<Script file="Exploration_Pandaria_H.lua"/>
+	<Script file="Exploration_Draenor_H.lua"/>
+	
+	<Script file="Garrison_Campaign_H.lua"/>
+	<Script file="Garrison_Campaign_Tanaan_H.lua"/>	
+	<Script file="Everbloom_Wilds.lua"/>
+	<Script file="Securing_Draenor_H.lua"/>		
+	
+	<Script file="Arakkoa_Outcasts.lua"/>
+	<Script file="Frostwolf_Orcs.lua"/>
+	<Script file="Laughing_Skull_Orcs.lua"/>
+	<Script file="Order_Awakened_H.lua"/>	
+	<Script file="Steamwheedle_Preservation_Society.lua"/>
+	<Script file="The_Saberstalkers_H.lua"/>
+	<Script file="Voljins_Headhunters_H.lua"/>	
+	<Script file="Vol'jin_Spear.lua"/>
+
+	<Script file="Argent_Dawn_H.lua"/>
+	<Script file="Cenarion_Circle_H.lua"/>
+	<Script file="Timbermaw_Hold_H.lua"/>
+	<Script file="Venomhide_Ravasaur_H.lua"/>
+	
+	<Script file="Aldor_H.lua"/>
+	<Script file="Netherwing_Revered_Dailies.lua"/>	
+	<Script file="Cenarion_Expedition_H.lua"/>
+	<Script file="Mag'har_H.lua"/>
+	<Script file="Netherwing_Neutral_Rep.lua"/>
+	<Script file="Netherwing_Honor_Dailies.lua"/>
+	<Script file="Ogrila_H.lua"/>
+	<Script file="Scryer_H.lua"/>
+	<Script file="Sha'tari_Skyguard_H.lua"/>
+	<Script file="Sha'tari_Skyguard_Dailies_H.lua"/>
+	<Script file="Shattered_Sun_H.lua"/>
+	<Script file="Sporeggar_H.lua"/>
+	<Script file="The_Consortium_H.lua"/>
+		
+	<Script file="Argent_Crusade_H.lua"/>
+	<Script file="Knights_Ebon_Hold_H.lua"/>
+	<Script file="Kirin_Tor_H.lua"/>
+	<Script file="Oracle_Frenzyheart_H.lua"/>
+	<Script file="The_Kalu'ak_H.lua"/>
+	<Script file="Wyrmrest_Accord_H.lua"/>
+	<!-- 
+	<Script file="Champion_of_the_Frozen_Waste_H.lua"/>
+	<Script file="Glory_of_the_Hero_H.lua"/>
+	<Script file="Glory_of_the_Raider_10_H.lua"/>
+	<Script file="Glory_of_the_Raider_25_H.lua"/>
+	<Script file="Glory_of_the_Icecrown_Raider_25_H.lua"/>
+	<Script file="Glory_of_the_Icecrown_Raider_10_H.lua"/>
+	<Script file="Glory_of_the_Cataclysm_Hero_H.lua"/>
+	<Script file="Defender_of_a_Shattered_World_H.lua"/>	
+	<Script file="Glory_of_the_Cataclysm_Raider_H.lua"/>
+	<Script file="Glory_of_the_Firelands_Raider_H.lua"/>
+	<Script file="Glory_of_the_Dragon_Soul_Raider_H.lua"/>
+	 -->
+</Ui>

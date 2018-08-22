@@ -1,0 +1,15 @@
+
+TradeSkillMaster_PriceCheckerDB = {
+	["profileKeys"] = {
+		["Raigasm - Draenor"] = "Default",
+		["Yasuka - Outland"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+		["Raimondo - Draenor"] = "Default",
+	},
+	["global"] = {
+		["TriggerLength"] = 1,
+	},
+}

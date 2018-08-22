@@ -1,0 +1,72 @@
+VER 3 0100000000000010 "Abolish" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help] abolish poison; [help] abolish poison; abolish poison
+END
+VER 3 0100000000000014 "Boss Start" "INV_Misc_QuestionMark"
+/cast [target=focus] Skull Bash
+END
+VER 3 0100000000000008 "Charge" "INV_Misc_QuestionMark"
+/cast [target=focus] Feral Charge - Bear
+END
+VER 3 0100000000000011 "Decurse" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help] remove curse; [help] remove curse; remove curse
+END
+VER 3 010000000000000F "HT" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help] healing touch; [help] healing touch; healing touch
+END
+VER 3 0100000000000001 "Innervate" "INV_Misc_QuestionMark"
+/cast [target=player] innervate
+END
+VER 3 010000000000000A "Lifebloom" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help] Lifebloom; [help] Lifebloom; Lifebloom
+END
+VER 3 0100000000000015 "Moonfire" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover] Nature's Cure
+END
+VER 3 0100000000000003 "Moonfire" "INV_MISC_QUESTIONMARK"
+/cast [target=mouseover] Moonfire
+END
+VER 3 010000000000000B "Nourish" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover] regrowth
+END
+VER 3 010000000000000C "Rejuv" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help] rejuvenation; [help] rejuvenation; rejuvenation
+END
+VER 3 0100000000000016 "sb" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover] Cenarion Ward
+END
+VER 3 0100000000000006 "SickStarfallBro" "INV_Misc_QuestionMark"
+/cast [@cursor] Starfall
+END
+VER 3 0100000000000005 "star" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover] Ironbark
+END
+VER 3 0100000000000012 "Swiftmend" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help] swiftmend; [help] swiftmend; swiftmend
+END
+VER 3 0100000000000013 "Syl" "INV_Misc_QuestionMark"
+/g REcount - Damage Done for Overall Data
+/g 1 , Preach 100281 (8927, 45.6%)
+/g 2 . Zzero 7362 (9183, 36.7%)
+/g 3 - Ekron 4727 (2315. 9%)
+/g 4 - Blubzor 199 (210. 4%)
+/g 5 - Sylenced 2 (1. .00001%)
+END
+VER 3 010000000000000E "WG" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [target=mouseover,help] wild growth; [help] wild growth; wild growth
+END
+VER 3 010000000000000D "zerk" "INV_Misc_QuestionMark"
+/cast berserk
+/use 13
+/use 14
+END

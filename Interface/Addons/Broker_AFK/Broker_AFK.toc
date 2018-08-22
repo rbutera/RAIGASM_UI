@@ -1,0 +1,22 @@
+## Interface: 70100
+## Title: Broker_AFK
+## Notes: Simple display and management of Away / AFK / Busy / DND status via broker or minimap
+## Author: oscarucb
+## OptionalDeps: Ace3, LibDataBroker-1.1, LibDBIcon-1.0
+## Version: 2.8.6
+## X-Build: 87
+## X-ReleaseDate: 2016-11-15T23:51:27Z
+## X-Revision: $Revision: 87 $
+## SavedVariables: Broker_AFKDB
+## SavedVariablesPerCharacter: 
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+## X-Curse-Packaged-Version: 2.8.6
+## X-Curse-Project-Name: Broker_AFK
+## X-Curse-Project-ID: broker_afk
+## X-Curse-Repository-ID: wow/broker_afk/mainline
+
+embeds.xml
+
+locale.lua
+Broker_AFK.lua

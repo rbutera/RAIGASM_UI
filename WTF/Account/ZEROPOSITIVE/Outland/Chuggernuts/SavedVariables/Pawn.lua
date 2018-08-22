@@ -1,0 +1,65 @@
+
+PawnOptions = {
+	["LastVersion"] = 2.0214,
+	["LastPlayerFullName"] = "Chuggernuts-Tarren Mill",
+	["AutoSelectScales"] = true,
+	["UpgradeTracking"] = false,
+	["LastKeybindingsSet"] = 1,
+	["Artifacts"] = {
+		[128937] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 58,
+					["Type"] = "Frost",
+				}, -- [1]
+				{
+					["ItemLevel"] = 51,
+					["Type"] = "Life",
+				}, -- [2]
+				{
+					["ItemLevel"] = 55,
+					["Type"] = "Wind",
+				}, -- [3]
+			},
+			["Name"] = "Sheilun, Staff of the Mists",
+		},
+		[128938] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 53,
+					["Type"] = "Life",
+				}, -- [1]
+				{
+					["ItemLevel"] = 58,
+					["Type"] = "Wind",
+				}, -- [2]
+				{
+					["ItemLevel"] = 65,
+					["Type"] = "Iron",
+				}, -- [3]
+			},
+			["Name"] = "Fu Zan, the Wanderer's Companion",
+		},
+		[128940] = {
+			["Relics"] = {
+				{
+					["ItemLevel"] = 58,
+					["Type"] = "Wind",
+				}, -- [1]
+				{
+					["ItemLevel"] = 59,
+					["Type"] = "Iron",
+				}, -- [2]
+				{
+					["ItemLevel"] = 55,
+					["Type"] = "Wind",
+				}, -- [3]
+			},
+			["Name"] = "Fists of the Heavens",
+		},
+	},
+}
+PawnMrRobotScaleProviderOptions = {
+	["LastClass"] = "MONK",
+	["LastAdded"] = 1,
+}

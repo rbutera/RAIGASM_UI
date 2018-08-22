@@ -1,0 +1,14 @@
+## Interface: 70200
+## Title: |cFFFF7D0AStayUnsheathed|r 
+## Notes: We keep your sword out for everyone to see.
+## Author: Zordiak Darkspear-US
+## Version: 1.0.4
+## SavedVariables: StayUnsheathedDB
+
+#@no-lib-strip@
+embeds.xml
+#@end-no-lib-strip@
+
+StayUnsheathed.lua
+
+### (http://www.friendlydruid.com/2014/02/create-your-own-addons-pt-3-toc-file.html)

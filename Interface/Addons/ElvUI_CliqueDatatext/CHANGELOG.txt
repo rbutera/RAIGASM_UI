@@ -1,0 +1,33 @@
+v1.11
+- Fixed Version number in TOC
+
+v1.10
+- bumped TOC to version 8.x for the new update
+
+v1.09
+- Updated Interface version on request
+
+v1.08
+- Added localization for Spanish (esES & esMX), French, Italian, Portuguese, Russian, Korean, and Chinese (zhCH & zhTW)
+
+v1.06
+- Updated Interface version
+- Added localization for German
+
+v1.05
+- Corrected Interface version
+
+v1.04
+- Added option to enable/disable Class-color in datatext
+
+v1.03
+- Added German localization
+
+v1.02
+- Added localization support
+
+v1.01
+- Done some optimalisations on overall look and feel of the datatext
+
+v1.00
+- Initial addon > development

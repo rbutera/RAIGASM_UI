@@ -1,0 +1,6 @@
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/">
+	<script file="mITool.lua"/>
+	<script file="mMenu.lua"/>
+	<script file="mProf.lua"/>
+	<script file="mPush.lua"/>
+</Ui>

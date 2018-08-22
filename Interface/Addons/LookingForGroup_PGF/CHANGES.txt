@@ -1,0 +1,7 @@
+changeset:   21:f5f07cb699bf
+tag:         22.0
+user:        ejsvifq_mabmip
+date:        Sat Aug 04 13:03:01 2018 -0400
+summary:     lfg pgf remove encounterinfo
+
+

@@ -1,0 +1,231 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+
+	<Script file="..\DugisGuide_Ach_Legion\A_Glorious_Campaign.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Pathfinder_Part_One.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Pathfinder_Part_Two.lua"/>
+
+	<Script file="..\DugisGuide_Ach_Legion\Allied_Races_Highmountain_Tauren.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Allied_Races_Lightforged_Draenei.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Allied_Races_Nightborne.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Allied_Races_Voidelf.lua"/>
+
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Argus.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Azsuna.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Highmountain.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Stormheim.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Suramar.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Adventurer_of_Valsharah.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Commander_of_Argus.lua"/>
+
+	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Explorer.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Explore_Azsuna.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Explore_Highmountain.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Explore_Stormheim.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Explore_Suramar.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Explore_Valsharah.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Explore_Broken_Shore.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Going_Up.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Higher_Dimensional_Learning.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Underbelly_Tycoon.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\S.E.L.F.I.E_Camera_MKII.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\S.E.L.F.I.E_Camera_MKII_Filters.lua"/>
+
+	<Script file="..\DugisGuide_Ach_Legion\A_Cast_Above_the_Rest.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Bigger_Fish_to_Fry.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Fisherfriend_of_the_Isles.lua"/>
+
+	<Script file="..\DugisGuide_Ach_Legion\Broken_Isles_Diplomat.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Army_of_Light.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Argussian_Reach.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Conjurer_Margoss.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Court_of_Farondis.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Dreamweavers.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Highmountain_Tribe.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_The_Nightfallen.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_The_Wardens.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Rep_Valarjar.lua"/>
+
+	<Script file="..\DugisGuide_Ach_Legion\Loremaster_of_Legion.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Balance_of_Power.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Variety_is_the_Spice_of_Life.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Aint_No_Mountain.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Azuna_Matata.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Good_Suramaritan.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Harbinger.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hatchling_of_the_Talon.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Lock_Stock.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Thats_Valsharah_Folks.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Tehd_Marius_Excellent_Adventure.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Vrykul_Story_Bro.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\What_a_Ripoff.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Why_Cant_I_Hold.lua"/>
+
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Death_Knight_Blood.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Death_Knight_Frost.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Death_Knight_Unholy.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Demon_Hunter_Havoc.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Demon_Hunter_Vengeance.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Druid_Guardian.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Druid_Balance.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Druid_Feral.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Druid_Restoration.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Hunter_Beast_Mastery.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Hunter_Marksmanship.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Hunter_Survival.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Mage_Arcane.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Mage_Frost.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Mage_Fire.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Monk_Brewmaster.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Monk_Windwalker.lua"/>
+	<Script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Monk_Mistweaver.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Paladin_Protection.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Paladin_Retribution.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Paladin_Holy.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Priest_Discipline.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Priest_Shadow.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Priest_Holy.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Rogue_Assassination.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Rogue_Subtlety.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Rogue_Outlaw.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Shaman_Enhancement.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Shaman_Elemental.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Shaman_Restoration.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Warlock_Demonology.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Warlock_Affliction.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Warlock_Destruction.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Warrior_Protection.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Warrior_Arms.lua"/>
+	<script file="..\DugisGuide_Ach_Legion\Hidden_Potential_Warrior_Fury.lua"/>
+
+	<Script file="..\DugisGuide_Ach_Legion\Rocfeather_Skyhorn_Kite.lua"/>
+
+	<Script file="Do_as_the_Skumblade_Do.lua"/>
+	<Script file="Warlock_Green_Fire.lua"/>
+
+	<Script file="Tiny_Terrors_Tanaan_A.lua"/>
+	<Script file="Big_Adventure_A.lua"/>
+	<Script file="Draenor_Safari.lua"/>
+	<Script file="Taming_Draenor.lua"/>
+	<Script file="Battle_Pets_A.lua"/>
+	<Script file="Battle_Pets_Eastern_Kingdom_A.lua"/>
+	<Script file="Battle_Pets_Kalimdor_A.lua"/>
+	<Script file="Battle_Pets_Outland_A.lua"/>
+	<Script file="Battle_Pets_Northrend_A.lua"/>
+	<Script file="Battle_Pets_Pandaria_A.lua"/>
+
+	<Script file="Awesome_A.lua"/>
+	<Script file="Master_Mounts_A.lua"/>
+	<Script file="Critter_Achievement_A.lua"/>
+	<Script file="Higher_Learning.lua"/>
+	<Script file="Well_Read_A.lua"/>
+	<Script file="Misc_Achievement_A.lua"/>
+	<Script file="Ring_of_Blood_A.lua"/>
+	<Script file="Companions_A.lua"/>
+	<Script file="Mounts_A.lua"/>
+	<Script file="Tabards_A.lua"/>
+	<Script file="Titles_A.lua"/>
+	<Script file="Upgrading_The_Mill_A.lua"/>
+
+	<Script file="Shoot_For_The_Moon.lua"/>
+	<Script file="A_Bonus.lua"/>
+	<Script file="More_Talador.lua"/>
+	<Script file="Arak_Star.lua"/>
+	<Script file="Nagrand_Cherry.lua"/>
+	<Script file="A-VOID-ance.lua"/>
+	<Script file="Bobbing_for_Orcs.lua"/>
+	<Script file="Breaker_of_Chains.lua"/>
+	<Script file="Broke_Back_Precipice.lua"/>
+	<Script file="Demidos_of_Reality.lua"/>
+	<Script file="Hemet_Nesingwary_A.lua"/>
+	<Script file="Full_Caravan_A.lua"/>
+	<Script file="E'ko_Madness_A.lua"/>
+	<Script file="Little_PITA_A.lua"/>
+	<Script file="Wildhammer_Tour_of_Duty.lua"/>
+	<Script file="Veteran_of_the_Molten_Fronts_A.lua"/>
+
+	<Script file="Accomplished_Angler_A.lua"/>
+	<Script file="Draenor_Angler.lua"/>
+	<Script file="Draenor_Gourmet_A.lua"/>
+	<Script file="Hail_to_the_Chef_A.lua"/>
+
+	<Script file="Field_Photographer_A.lua"/>
+	<Script file="Treasure_of_Frostfire.lua"/>
+	<Script file="Treasure_of_Gorgrond.lua"/>
+	<Script file="Treasure_of_Nagrand.lua"/>
+	<Script file="Treasure_of_Shadowmoon.lua"/>
+	<Script file="Treasure_of_Spires.lua"/>
+	<Script file="Treasure_of_Talador.lua"/>
+	<Script file="Draenor_Pathfinder_A.lua"/>
+	<Script file="Ancient_Fight.lua"/>
+	<Script file="Gorgrond_Monster_Hunter_A.lua"/>
+	<Script file="Prove_Strength_A.lua"/>
+	<Script file="Song_of_Silence.lua"/>
+	<Script file="Shredder_Maniac.lua"/>
+	<Script file="Lorewalkers_A.lua"/>
+	<Script file="Lost_and_Found_A.lua"/>
+	<Script file="Bloody_Rare_A.lua"/>
+	<Script file="Frostbitten_A.lua"/>
+	<Script file="Glorious_A.lua"/>
+	<Script file="Killing_Time_A.lua"/>
+	<Script file="Surveying_the_Damage_A.lua"/>
+	<Script file="Exploration_Eastern_Kingdom_A.lua"/>
+	<Script file="Exploration_Kalimdor_A.lua"/>
+	<Script file="Exploration_Outland_A.lua"/>
+	<Script file="Exploration_Northrend_A.lua"/>
+	<Script file="Exploration_Cataclysm_A.lua"/>
+	<Script file="Exploration_Pandaria_A.lua"/>
+	<Script file="Exploration_Draenor_A.lua"/>
+
+	<Script file="Garrison_Campaign_A.lua"/>
+	<Script file="Garrison_Campaign_Tanaan_A.lua"/>
+	<Script file="Everbloom_Wilds.lua"/>
+	<Script file="Securing_Draenor_A.lua"/>
+
+	<Script file="Arakkoa_Outcasts.lua"/>
+	<Script file="Council_of_Exarchs.lua"/>
+	<Script file="Order_Awakened_A.lua"/>
+	<Script file="Hand_Prophet_A.lua"/>
+	<Script file="Sha'tari_Defense.lua"/>
+	<Script file="Steamwheedle_Preservation_Society.lua"/>
+	<Script file="The_Saberstalkers_A.lua"/>
+	<Script file="Wrynns_Vanguard.lua"/>
+
+	<Script file="Argent_Dawn_A.lua"/>
+	<Script file="Cenarion_Circle_A.lua"/>
+	<Script file="Timbermaw_Hold_A.lua"/>
+	<Script file="Wintersaber_A.lua"/>
+
+	<Script file="Aldor_A.lua"/>
+	<Script file="Cenarion_Expedition_A.lua"/>
+	<Script file="Kurenai_A.lua"/>
+	<Script file="Netherwing_Neutral_Rep.lua"/>
+	<Script file="Netherwing_Honor_Dailies.lua"/>
+	<Script file="Netherwing_Revered_Dailies.lua"/>
+	<Script file="Ogrila_A.lua"/>
+	<Script file="Scryer_A.lua"/>
+	<Script file="Sha'tari_Skyguard_A.lua"/>
+	<Script file="Sha'tari_Skyguard_Dailies_A.lua"/>
+	<Script file="Shattered_Sun_A.lua"/>
+	<Script file="Sporeggar_A.lua"/>
+	<Script file="The_Consortium_A.lua"/>
+
+	<Script file="Argent_Crusade_A.lua"/>
+	<Script file="Knights_Ebon_Hold_A.lua"/>
+	<Script file="Kirin_Tor_A.lua"/>
+	<Script file="Oracle_Frenzyheart_A.lua"/>
+	<Script file="The_Kalu'ak_A.lua"/>
+	<Script file="Wyrmrest_Accord_A.lua"/>
+	<!--
+	<Script file="Champion_of_the_Frozen_Waste_A.lua"/>
+	<Script file="Glory_of_the_Hero_A.lua"/>
+	<Script file="Glory_of_the_Raider_10_A.lua"/>
+	<Script file="Glory_of_the_Raider_25_A.lua"/>
+	<Script file="Glory_of_the_Icecrown_Raider_25_A.lua"/>
+	<Script file="Glory_of_the_Icecrown_Raider_10_A.lua"/>
+	<Script file="Glory_of_the_Cataclysm_Hero_A.lua"/>
+	<Script file="Defender_of_a_Shattered_World_A.lua"/>
+	<Script file="Glory_of_the_Cataclysm_Raider_A.lua"/>
+	<Script file="Glory_of_the_Firelands_Raider_A.lua"/>
+	<Script file="Glory_of_the_Dragon_Soul_Raider_A.lua"/>
+	 -->
+</Ui>

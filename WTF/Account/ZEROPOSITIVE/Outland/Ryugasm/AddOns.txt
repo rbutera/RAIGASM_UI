@@ -1,0 +1,12 @@
+OmniCC: disabled
+OmniCC_Config: disabled
+ConsLegion: disabled
+TradeSkillMaster_TDAutoVendoring: enabled
+TradeSkillMaster_PriceChecker: enabled
+TradeSkillMaster_PriceReply: enabled
+SexyMap: disabled
+TradeSkillMaster_CoolDowns: disabled
+TradeSkillMaster_CompetitorTracker: enabled
+AceTimer-3.0: enabled
+AceBucket-3.0: enabled
+TradeSkillMaster_Additions: disabled

@@ -1,0 +1,110 @@
+DONTCAST CHANGE LOG
+===================
+
+v1.4.4
+- fixed duplicate object name errors from dropdown menu library
+
+v1.4.3
+- updated for 8.0
+- once again (hopefully for reals this time!) fixed a bug where Touch of Karma could show for the debuffed recipient instead of the buffed Monk
+
+v1.4.2
+- added Grounding Totem to default list
+
+v1.4.1
+- added additional sounds options for aura begin/end
+- updated sounds to use SoundKitIDs instead of strings
+- updated interface version for 7.3
+
+v1.4
+- the addon now has two modes, based on Magical or Physical damage, each with their own set of defaults, the mode will switch automatically depending on the player's spec
+- configuration is now per-character instead of account-wide
+- text alignment of the aura name is now configurable via the options panel (defaults to left justified)
+- added Paralysis and Polymorph to default list
+
+v1.3.10
+- updated interface version for 7.2
+
+v1.3.9
+- fixed a regression introduced in v1.3.7 that prevented the addon from functioning for players who hadn't used a previous version or had cleared their WoW cache
+
+v1.3.8
+- added Nether Ward, Shield of Vengeance, Blessing of Spellwarding, Guardian of the Forgotten Queen, Netherwalk, Imprison, and Temporal Shield to default buff list
+
+v1.3.7
+- added Aspect of the Turtle to default buff list
+- adding a new aura to the default list will now enable that aura for players upgrading from a previous version of DontCast
+- adjusted cooldown text size
+- updated interface version for 7.1
+
+v1.3.6
+- updated interface version for 7.0
+- made cooldown text slightly smaller
+
+v1.3.5
+- updated interface version for 6.2
+
+v1.3.4
+- updated interface version for 6.1
+
+v1.3.3
+- use NoTaintUIDropDownMenu library (this resolves an issue where some players were unable to queue for battlegrounds due to taint errors)
+- fixed bug where opening the font dropdown wouldn't show the last selected entry
+
+v1.3.2
+- populate default auras using SpellID so non-US clients will use the localized aura names
+- use localized versions of Smoke Bomb and Touch of Karma in validity checks
+- reduced potential frame name conflicts with other addons
+- fixed bug where opening the sound select dropdowns wouldn't show the last selected entry
+
+v1.3.1
+- resolved bug where options UI didn't show correct threshold value if set via command line
+
+v1.3
+- integrated with addon options UI
+- added option to change font
+- added (optional) sounds on aura up/down
+- fixed a bug where `/dontcast center` would have no effect
+
+v1.2
+- addon is now resizable via `/dontcast show`
+
+v1.1.5
+- updated interface version for 6.0
+
+v1.1.4
+- use left or right click to move
+- use "center" instead of "reset" to center addon
+- changed non-error text color
+- fixed function scope to avoid conflict with other addons
+
+v1.1.3
+- added Dispersion to default buff list
+- corrected Smoke Bomb logic
+- fixed bug where Touch of Karma could still show on a debuffed recipient
+
+v1.1.2
+- threshold for changing color of countdown text is now customizable
+- display Smoke Bomb only when player not within the area of effect
+- fixed bug where Smoke Bomb would display an incorrect duration
+- only display Touch of Karma for the buffed Monk (not a debuffed recipient)
+
+v1.1.1
+- added Touch of Karma and Diffuse Magic to default buff list
+- cooldown text color in red when less than 1.5 seconds remaining
+
+v1.1
+- added text counting down time remaining
+- fixed bug preventing debuffs triggering warning
+
+v1.0.3
+- added commands for player to add and remove buffs/debuffs
+- added command to display current triggers
+- added command to reset to default triggers
+
+v1.0.2
+- fixed bug causing premature clearing of some warnings
+
+v1.0.1
+- warning triggers only when player's current target is an enemy
+- warning clears if player dies while warning is active

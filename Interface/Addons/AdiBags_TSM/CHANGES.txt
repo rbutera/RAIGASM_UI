@@ -1,0 +1,42 @@
+tag d091cedcf4862bed4ce374d9d9f60a4d6e88ea04 v0.2
+Author:	Antoine Pietri <antoine.pietri1@gmail.com>
+Date:	Thu Jul 26 21:10:11 2018 +0200
+
+version 0.2
+-----BEGIN PGP SIGNATURE-----
+
+iQFOBAABCAA4FiEEK3+ITqUhoMLTy00+5HbuHqx0YRkFAltaHJQaHGFudG9pbmUu
+cGlldHJpMUBnbWFpbC5jb20ACgkQ5HbuHqx0YRkDagf+O6koxEKQ78nleOTyohXD
+XMM+SbDhKl7dxvb37qFEPS7dfPUYc+/C3UMbozN9eVkX5ugI4jR/xi23i/00iftX
+/ImIFMBlIP0IxE5ZN2lymvZF9M1kuZrjDnWtG4bQJCZA7yUPN8zJSet/Igsef+aW
+8vqa8sDROqD8nqfL1hZzzN1lpZ28E3+pfqULs0V0r5vb9JVxrKoowouC4P2Uc915
+4Tlx/OdHcb5uEQhkniKy0QijWZG5VOMiC7K2Y/jWC1WsIDXt+Ck70LTkjY7VdwAK
+IImaWx6XHx6/0bYVJPZOFL/0dI3TWddDvsdsxekybvCFiON8UCei4+8NtDTh2XtI
+CA==
+=Bjnu
+-----END PGP SIGNATURE-----
+
+commit b00745eb791030d982376ed9f6794850ed83f9fe
+Author: Antoine Pietri <antoine.pietri1@gmail.com>
+Date:   Thu Jul 26 21:09:58 2018 +0200
+
+    version 0.2
+
+commit f5fbdab1482e8f978b9079841467b1b7f6af33da
+Author: Antoine Pietri <antoine.pietri1@gmail.com>
+Date:   Thu Jul 26 21:09:24 2018 +0200
+
+    filter: get the lowest whitelisted parent group
+
+commit 3b57c04114665490f1ffcdb2acff29c0e7a25ad8
+Author: Antoine Pietri <antoine.pietri1@gmail.com>
+Date:   Thu Jul 26 20:58:07 2018 +0200
+
+    settings: add indentation to subgroups
+
+commit efe3c88d379dd1664cc665ac26902cd34d209840
+Author: Antoine Pietri <antoine.pietri1@gmail.com>
+Date:   Thu Jul 26 20:57:47 2018 +0200
+
+    Use the new TSM_API functions
+

@@ -1,0 +1,45 @@
+VER 3 010000000000000B "Caltrops" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Caltrops
+END
+VER 3 0100000000000008 "counter" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] Counter Shot
+END
+VER 3 0100000000000005 "deeps" "INV_MISC_QUESTIONMARK"
+#showtooltip Aspect of the Eagle
+/cast Blood Fury
+/cast Aspect of the Eagle
+END
+VER 3 010000000000000A "explosive" "INV_MISC_QUESTIONMARK"
+/cast [@cursor] Explosive Trap
+END
+VER 3 0100000000000003 "focus" "INV_MISC_QUESTIONMARK"
+/focus
+END
+VER 3 0100000000000009 "FREEZE" "INV_MISC_QUESTIONMARK"
+/CAST [@cursor] Freezing Trap
+END
+VER 3 0100000000000007 "intim" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] intimidation
+END
+VER 3 0100000000000002 "MD" "INV_MISC_QUESTIONMARK"
+/cast [target=focus] misdirection
+END
+VER 3 0100000000000006 "nuke" "INV_MISC_QUESTIONMARK"
+/cast Bestial Wrath
+/cast Blood Fury
+/use 13
+/use 14
+END
+VER 3 0100000000000001 "nuke" "INV_MISC_QUESTIONMARK"
+#showtooltip Rapid Fire
+/cast Rapid Fire
+/cast Blood Fury
+/cast Bestial Wrath
+END
+VER 3 0100000000000004 "pet" "INV_MISC_QUESTIONMARK"
+/cast [target=pet] misdirection
+END
+VER 3 010000000000000C "Trueshot" "INV_MISC_QUESTIONMARK"
+/cast Trueshot
+/cast Blood Fury
+END

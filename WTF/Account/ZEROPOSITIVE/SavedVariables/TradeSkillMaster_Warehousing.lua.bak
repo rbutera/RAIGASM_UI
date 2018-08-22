@@ -1,0 +1,44 @@
+
+TradeSkillMaster_WarehousingDB = {
+	["_currentProfile"] = {
+		["Raigasm - Draenor"] = "Default",
+		["Yasuka - Outland"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+		["Raimondo - Draenor"] = "Default",
+	},
+	["_hash"] = 185553,
+	["f@Horde - Draenor@BagState"] = {
+	},
+	["g@ @ShowLogData"] = false,
+	["_scopeKeys"] = {
+		["char"] = {
+			"Yasuka - Outland", -- [1]
+			"Raigasm - Outland", -- [2]
+			"Ryugasm - Outland", -- [3]
+			"Raigasm - Draenor", -- [4]
+			"Raimondo - Draenor", -- [5]
+			"Badmanting - Draenor", -- [6]
+			"Norfweezy - Draenor", -- [7]
+		},
+		["factionrealm"] = {
+			"Horde - Outland", -- [1]
+			"Alliance - Outland", -- [2]
+			"Horde - Draenor", -- [3]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Outland", -- [1]
+			"Draenor", -- [2]
+		},
+	},
+	["f@Horde - Outland@BagState"] = {
+	},
+	["_version"] = 1,
+	["f@Alliance - Outland@BagState"] = {
+	},
+}

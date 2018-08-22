@@ -1,0 +1,11 @@
+
+LoggerHeadDB = {
+	["profileKeys"] = {
+		["Redtawsk - Kazzak"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["version"] = 3,
+		},
+	},
+}

@@ -1,0 +1,6 @@
+VER 3 0100000000000001 "taunt" "INV_MISC_QUESTIONMARK"
+#showtooltip Provoke
+/target Black Ox Statue
+/cast Provoke
+/targetlasttarget
+END

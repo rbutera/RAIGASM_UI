@@ -1,0 +1,8 @@
+## Interface: 80000
+## Title: Masque: |cffffffffFlatSquares|r
+## Version: 1.0.8
+## Author: ccfreak
+## Notes: FlatSquares skin for Masque.
+## Dependencies: Masque
+
+FlatSquares.lua

@@ -1,0 +1,6 @@
+v1.01
+- Fine tuning and push release to BFA beta
+
+v1.00
+- Init development
+

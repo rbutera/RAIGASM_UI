@@ -1,0 +1,16 @@
+lightweight tag 6e2c76a1528d464e5a6159d97f94f4f843d78041 BFA-1.7
+Author:	TheBackstabi <thebackstabi@gmail.com>
+Date:	Sun Aug 19 13:42:37 2018 -0400
+
+commit 6e2c76a1528d464e5a6159d97f94f4f843d78041
+Author: TheBackstabi <thebackstabi@gmail.com>
+Date:   Sun Aug 19 13:42:37 2018 -0400
+
+    Update .toc version
+
+commit 2aecafa68c4341287bb37dec2f21d1d687de2dd2
+Author: TheBackstabi <thebackstabi@gmail.com>
+Date:   Sun Aug 19 13:41:45 2018 -0400
+
+    Fixed channel number bug. Added WQ filters for Professions, Pet Battles, and Tortollan Seekers
+

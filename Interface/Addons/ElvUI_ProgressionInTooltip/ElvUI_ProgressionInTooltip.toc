@@ -1,0 +1,15 @@
+## Version: 1.14
+## Interface: 50400
+## Title: |cff1784d1ElvUI|r Progression in Tooltip
+## Author: moresunders
+## Notes: Adds an additional line to the tooltip showing the unit's raid progression when you hold Shift
+## RequiredDeps: ElvUI
+
+static.lua
+core.lua
+
+
+ 
+ 
+## X-Tukui-ProjectID: 198
+## X-Tukui-ProjectFolders: ElvUI_ProgressionInTooltip

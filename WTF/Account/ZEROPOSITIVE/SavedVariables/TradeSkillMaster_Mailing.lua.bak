@@ -1,0 +1,71 @@
+
+TradeSkillMaster_MailingDB = {
+	["f@Horde - Draenor@deMailTarget"] = "",
+	["c@Raigasm - Outland@goldKeepAmount"] = 1000000,
+	["g@ @helpPlatesShown"] = {
+		["inbox"] = true,
+	},
+	["_hash"] = 3711258,
+	["c@Norfweezy - Draenor@goldKeepAmount"] = 1000000,
+	["g@ @deleteEmptyNPCMail"] = false,
+	["c@Yasuka - Outland@goldMailTarget"] = "",
+	["c@Ryugasm - Outland@goldMailTarget"] = "",
+	["c@Badmanting - Draenor@goldMailTarget"] = "",
+	["g@ @deMaxQuality"] = 2,
+	["_version"] = 1,
+	["c@Badmanting - Draenor@goldKeepAmount"] = 1000000,
+	["c@Ryugasm - Outland@goldKeepAmount"] = 1000000,
+	["g@ @showReloadBtn"] = true,
+	["c@Raimondo - Draenor@goldMailTarget"] = "",
+	["_scopeKeys"] = {
+		["char"] = {
+			"Yasuka - Outland", -- [1]
+			"Raigasm - Outland", -- [2]
+			"Ryugasm - Outland", -- [3]
+			"Raigasm - Draenor", -- [4]
+			"Raimondo - Draenor", -- [5]
+			"Badmanting - Draenor", -- [6]
+			"Norfweezy - Draenor", -- [7]
+		},
+		["factionrealm"] = {
+			"Horde - Outland", -- [1]
+			"Alliance - Outland", -- [2]
+			"Horde - Draenor", -- [3]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Outland", -- [1]
+			"Draenor", -- [2]
+		},
+	},
+	["c@Raigasm - Outland@goldMailTarget"] = "",
+	["g@ @inboxMessages"] = true,
+	["g@ @defaultMailTab"] = true,
+	["g@ @autoCheck"] = true,
+	["g@ @resendDelay"] = 1,
+	["c@Norfweezy - Draenor@goldMailTarget"] = "",
+	["c@Raigasm - Draenor@goldMailTarget"] = "",
+	["f@Alliance - Outland@deMailTarget"] = "",
+	["g@ @sendDelay"] = 0.5,
+	["g@ @defaultPage"] = 1,
+	["g@ @sendItemsIndividually"] = false,
+	["g@ @openMailSound"] = "TSM_NO_SOUND",
+	["c@Raimondo - Draenor@goldKeepAmount"] = 1000000,
+	["g@ @sendMessages"] = true,
+	["f@Horde - Outland@deMailTarget"] = "",
+	["_currentProfile"] = {
+		["Raigasm - Draenor"] = "Default",
+		["Yasuka - Outland"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+		["Raimondo - Draenor"] = "Default",
+	},
+	["g@ @keepMailSpace"] = 0,
+	["c@Raigasm - Draenor@goldKeepAmount"] = 1000000,
+	["c@Yasuka - Outland@goldKeepAmount"] = 1000000,
+	["g@ @displayMoneyCollected"] = true,
+}

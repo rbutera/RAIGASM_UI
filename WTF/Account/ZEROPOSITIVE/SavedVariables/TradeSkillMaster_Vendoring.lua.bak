@@ -1,0 +1,52 @@
+
+TradeSkillMaster_VendoringDB = {
+	["g@ @qsDestroyValue"] = "destroy",
+	["_scopeKeys"] = {
+		["char"] = {
+			"Yasuka - Outland", -- [1]
+			"Raigasm - Outland", -- [2]
+			"Ryugasm - Outland", -- [3]
+			"Raigasm - Draenor", -- [4]
+			"Raimondo - Draenor", -- [5]
+			"Badmanting - Draenor", -- [6]
+			"Norfweezy - Draenor", -- [7]
+		},
+		["factionrealm"] = {
+			"Horde - Outland", -- [1]
+			"Alliance - Outland", -- [2]
+			"Horde - Draenor", -- [3]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Outland", -- [1]
+			"Draenor", -- [2]
+		},
+	},
+	["g@ @helpPlatesShown"] = {
+	},
+	["_hash"] = 7791016,
+	["g@ @qsHideGrouped"] = true,
+	["_currentProfile"] = {
+		["Raigasm - Draenor"] = "Default",
+		["Yasuka - Outland"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+		["Raimondo - Draenor"] = "Default",
+	},
+	["g@ @qsHideSoulbound"] = true,
+	["g@ @defaultPage"] = 1,
+	["g@ @qsBatchSize"] = 12,
+	["g@ @displayMoneyCollected"] = false,
+	["g@ @qsMarketValue"] = "dbmarket",
+	["g@ @autoSellTrash"] = false,
+	["g@ @defaultMerchantTab"] = false,
+	["g@ @qsMaxDestroyValue"] = "100g",
+	["g@ @qsMaxMarketValue"] = "100g",
+	["_version"] = 1,
+	["g@ @ignore"] = {
+	},
+}

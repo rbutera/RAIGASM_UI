@@ -1,0 +1,53 @@
+
+DraenorTreasuresDB = {
+	["char"] = {
+		["Meticulous - Tarren Mill"] = {
+			["33648"] = true,
+			["34727"] = true,
+		},
+		["Préach - Tarren Mill"] = {
+			["950000"] = true,
+		},
+	},
+	["profileKeys"] = {
+		["Imacleft - Sylvanas"] = "Default",
+		["Chuggernuts - Tarren Mill"] = "Default",
+		["Sweetcleft - Kazzak"] = "Default",
+		["Testsubjec - Dentarg"] = "Default",
+		["Preachx - Tarren Mill"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Tefef - Zenedar"] = "Default",
+		["Preách - Tarren Mill"] = "Default",
+		["Hordepali - Lightbringer"] = "Default",
+		["Dlory - Tarren Mill"] = "Default",
+		["Preach - Dentarg"] = "Default",
+		["Preach - Sylvanas"] = "Default",
+		["Yasuka - Outland"] = "Default",
+		["Chatmademe - Kazzak"] = "Default",
+		["Xpreach - Tarren Mill"] = "Default",
+		["Preacho - Tarren Mill"] = "Default",
+		["Préach - Tarren Mill"] = "Default",
+		["Preachez - Tarren Mill"] = "Default",
+		["Mastarace - Kazzak"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Preacherino - Tarren Mill"] = "Default",
+		["Preech - Tarren Mill"] = "Default",
+		["Ryugasm - Draenor"] = "Default",
+		["Evilpreach - Sylvanas"] = "Default",
+		["Raimondo - Draenor"] = "Default",
+		["Sulivan - Tarren Mill"] = "Default",
+		["Raigasm - Draenor"] = "Default",
+		["Swobuswagins - Tarren Mill"] = "Default",
+		["Bertybots - Kazzak"] = "Default",
+		["Fergfr - Sylvanas"] = "Default",
+		["Meticulous - Tarren Mill"] = "Default",
+		["Dlorange - Tarren Mill"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Toutsweet - Tarren Mill"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

@@ -1,0 +1,11 @@
+## Interface: 80000
+## Title: |cff1784d1ElvUI |cFF6FFF10mMediaTag
+## Author: Blinkii
+## Version: 0.64
+## Notes: ElvUI Edit of Blinkii@Eu-Arygos
+## RequiredDeps: ElvUI
+## DefaultState: Enabled
+
+locales\load_locales.xml
+media\load_media.xml
+modules\load_modules.xml

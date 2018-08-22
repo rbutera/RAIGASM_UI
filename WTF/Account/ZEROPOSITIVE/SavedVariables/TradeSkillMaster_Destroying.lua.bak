@@ -1,0 +1,52 @@
+
+TradeSkillMaster_DestroyingDB = {
+	["g@ @timeFormat"] = "ago",
+	["g@ @ignore"] = {
+	},
+	["g@ @deAboveVendor"] = false,
+	["_scopeKeys"] = {
+		["char"] = {
+			"Yasuka - Outland", -- [1]
+			"Raigasm - Outland", -- [2]
+			"Ryugasm - Outland", -- [3]
+			"Raigasm - Draenor", -- [4]
+			"Raimondo - Draenor", -- [5]
+			"Badmanting - Draenor", -- [6]
+			"Norfweezy - Draenor", -- [7]
+		},
+		["factionrealm"] = {
+			"Horde - Outland", -- [1]
+			"Alliance - Outland", -- [2]
+			"Horde - Draenor", -- [3]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Outland", -- [1]
+			"Draenor", -- [2]
+		},
+	},
+	["g@ @autoShow"] = true,
+	["g@ @autoStack"] = true,
+	["_currentProfile"] = {
+		["Raigasm - Draenor"] = "Default",
+		["Yasuka - Outland"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+		["Raimondo - Draenor"] = "Default",
+	},
+	["_version"] = 1,
+	["g@ @history"] = {
+	},
+	["g@ @helpPlatesShown"] = {
+		["destroyingFrame"] = true,
+	},
+	["g@ @includeSoulbound"] = false,
+	["_hash"] = 14107345,
+	["g@ @deMaxQuality"] = 3,
+	["g@ @deAbovePrice"] = "0c",
+	["g@ @logDays"] = 14,
+}

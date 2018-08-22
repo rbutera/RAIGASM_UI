@@ -1,0 +1,36 @@
+VER 3 0100000000000006 "60Talent" "INV_Misc_QuestionMark"
+#showtooltip
+/use Rainfall
+END
+VER 3 0100000000000005 "Fhex" "136071"
+#showtooltip Hex
+/cast [target=focus] Hex
+END
+VER 3 0100000000000009 "hex" "136071"
+/cast Hex
+/i hex
+/p hexing %t
+END
+VER 3 0100000000000004 "kick" "132219"
+#showtooltip Wind Shear
+/cast [target=focus] Wind Shear
+END
+VER 3 0100000000000007 "Lungefall" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [talent:2/1] Rainfall; [talent:2/2] Feral Lunge; [talent:2/3] Wind Rush Totem
+END
+VER 3 0100000000000008 "Lust" "INV_Misc_QuestionMark"
+#showtooltip Heroism
+/use [@mouseover,help,nodead][help,nodead][@player] Heroism
+END
+VER 3 0100000000000003 "Res" "INV_MISC_QUESTIONMARK"
+#showtooltip Ancestral Spirit
+/stopmacro [nodead][notarget][combat]
+/run if IsSpellInRange("Ancestral Spirit") == 1 and UnitIsDead("target") then SendChatMessage("[RESURRECTION] Ancestral Spirit cast on %t", "PARTY") end
+END
+VER 3 0100000000000001 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1SR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0100000000000002 "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Rai[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END

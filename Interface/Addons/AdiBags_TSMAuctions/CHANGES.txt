@@ -1,0 +1,18 @@
+lightweight tag 44724b0c75db350e7bb0cbf2ebf45da21a56345c 1.1
+Author:	zmsl <oxygenproc@gmail.com>
+Date:	Mon Jul 30 20:25:20 2018 -0400
+
+commit 44724b0c75db350e7bb0cbf2ebf45da21a56345c
+Author: zmsl <oxygenproc@gmail.com>
+Date:   Mon Jul 30 20:25:20 2018 -0400
+
+    Removed BoP handling
+    
+    Addon will no longer handle BoP items in AH filtering logic
+
+commit dd729306eec143f49688c52d8efc21cca09f4ad2
+Author: zmsl <oxygenproc@gmail.com>
+Date:   Mon Jul 30 16:58:19 2018 -0400
+
+    Updated toc
+

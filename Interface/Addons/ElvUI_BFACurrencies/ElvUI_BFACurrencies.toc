@@ -1,0 +1,12 @@
+## Interface: 80000
+## Title: |cff1784d1ElvUI|r |cffded181Battle for Azaroth Currencies|r
+## Author: Alexstraszaa
+## URLs: ...
+## Notes: A lightweight datatext-plugin for Elvui that shows you all the relavant currencies for Battle for Azaroth.
+## Version: 1.00
+## RequiredDeps: ElvUI
+## DefaultState: Enabled
+## LoadOnDemand: 0
+
+locales.lua
+datatext.lua

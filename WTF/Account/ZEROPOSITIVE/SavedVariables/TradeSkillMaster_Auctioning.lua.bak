@@ -1,0 +1,66 @@
+
+TradeSkillMaster_AuctioningDB = {
+	["g@ @confirmCompleteSound"] = "TSM_NO_SOUND",
+	["g@ @scanCompleteSound"] = "TSM_NO_SOUND",
+	["g@ @disableInvalidMsg"] = false,
+	["f@Horde - Outland@whitelist"] = {
+	},
+	["g@ @helpPlatesShown"] = {
+		["selection"] = true,
+	},
+	["f@Alliance - Outland@whitelist"] = {
+	},
+	["_hash"] = 5870975,
+	["_currentProfile"] = {
+		["Raigasm - Draenor"] = "Default",
+		["Yasuka - Outland"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Badmanting - Draenor"] = "Default",
+		["Raimondo - Draenor"] = "Default",
+	},
+	["g@ @roundNormalPrice"] = false,
+	["f@Alliance - Outland@player"] = {
+		["Raigasm"] = true,
+		["Ryugasm"] = true,
+	},
+	["g@ @priceColumn"] = 1,
+	["f@Horde - Draenor@player"] = {
+		["Raimondo"] = true,
+		["Norfweezy"] = true,
+		["Badmanting"] = true,
+		["Raigasm"] = true,
+	},
+	["g@ @matchWhitelist"] = true,
+	["g@ @cancelWithBid"] = false,
+	["f@Horde - Outland@player"] = {
+		["Yasuka"] = true,
+	},
+	["f@Horde - Draenor@whitelist"] = {
+	},
+	["_version"] = 1,
+	["_scopeKeys"] = {
+		["char"] = {
+			"Yasuka - Outland", -- [1]
+			"Raigasm - Outland", -- [2]
+			"Ryugasm - Outland", -- [3]
+			"Raigasm - Draenor", -- [4]
+			"Raimondo - Draenor", -- [5]
+			"Badmanting - Draenor", -- [6]
+			"Norfweezy - Draenor", -- [7]
+		},
+		["factionrealm"] = {
+			"Horde - Outland", -- [1]
+			"Alliance - Outland", -- [2]
+			"Horde - Draenor", -- [3]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Outland", -- [1]
+			"Draenor", -- [2]
+		},
+	},
+}

@@ -1,0 +1,15 @@
+VER 3 0100000000000002 "clone" "INV_MISC_QUESTIONMARK"
+/cast clone magic
+END
+VER 3 0100000000000004 "demon soul" "INV_MISC_QUESTIONMARK"
+/cast dark soul
+/use 13
+/use 14
+END
+VER 3 0100000000000001 "hellfire" "INV_MISC_QUESTIONMARK"
+/cast hellfire
+/cancelaura hellfire
+END
+VER 3 0100000000000003 "optic" "INV_MISC_QUESTIONMARK"
+/cast optic blast
+END

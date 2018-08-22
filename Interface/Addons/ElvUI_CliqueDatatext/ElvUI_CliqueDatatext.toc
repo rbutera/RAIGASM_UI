@@ -1,0 +1,13 @@
+## Interface: 80000
+## Title: |cff1784d1ElvUI|r |cffded181Clique Datatext|r
+## Author: Alexstraszaa
+## URL: http://www.curseforge.com/projects/99205/
+## Notes: A small datatext for ElvUI that allows 1-click access to the GUI and bind interface
+## Version: 1.11
+## RequiredDeps: ElvUI
+## DefaultState: Enabled
+## LoadOnDemand: 0
+
+locales\load_locales.xml
+CliqueDatatext.lua
+

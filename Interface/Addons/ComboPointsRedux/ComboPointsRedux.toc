@@ -1,0 +1,43 @@
+## Interface: 80000
+## Title: ComboPointsRedux
+## Notes: Numerical and graphical display of Combo Points and similar buffs/debuffs. Also tracks Holy Power and Soul Shards.
+## Author: Starinnia
+## X-Category: Combat
+## X-Credits: Funkydude (inspiration for the mod)
+## Version: 5.0.1
+## SavedVariables: CPRDB2
+## OptionalDeps: Ace3, LibSharedMedia-3.0
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: true
+
+
+#@no-lib-strip@
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\BugGrabber\load.xml
+Libs\AceAddon-3.0\AceAddon-3.0.xml
+Libs\AceEvent-3.0\AceEvent-3.0.xml
+Libs\AceDB-3.0\AceDB-3.0.xml
+Libs\AceConsole-3.0\AceConsole-3.0.xml
+Libs\AceLocale-3.0\AceLocale-3.0.xml
+Libs\AceGUI-3.0\AceGUI-3.0.xml
+Libs\AceConfig-3.0\AceConfig-3.0.xml
+Libs\LibSharedMedia-3.0\lib.xml
+Libs\LibDualSpec-1.0\LibDualSpec-1.0.lua
+#@end-no-lib-strip@
+
+Locales\enUS.lua
+Locales\koKR.lua
+Locales\zhCN.lua
+Locales\deDE.lua
+Locales\esES.lua
+Locales\esMX.lua
+Locales\zhTW.lua
+Locales\ruRU.lua
+Locales\frFR.lua
+Locales\ptBR.lua
+Locales\itIT.lua
+
+Core.lua
+modules.xml
+

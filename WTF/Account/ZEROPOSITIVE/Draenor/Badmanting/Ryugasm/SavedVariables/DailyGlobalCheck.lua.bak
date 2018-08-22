@@ -1,0 +1,3 @@
+
+DailyGlobalCheck_PluginData = {
+}

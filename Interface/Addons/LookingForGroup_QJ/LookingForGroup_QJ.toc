@@ -1,0 +1,10 @@
+## Interface: 80000
+## Author: cqwrteur
+## Title: LookingForGroup Quick Join
+## Version: @project-version@
+## Dependencies: LookingForGroup_Options
+## LoadOnDemand: 1
+## X-LFG-OPT: 1
+
+checkbox.lua
+Core.lua

@@ -1,0 +1,32 @@
+Changes since tag 3.90
+
+commit dd7e22e15ac93b1c7fbd89968dd9dafed23aa81e
+Author: Michael James <darktemplar9900@yahoo.com>
+Date:   Sun Aug 19 22:30:34 2018 -0500
+
+    AddOnManager / Archeology
+
+commit 142d4a8d6ee8599bad98c6295b9e37a053ef6af4
+Author: Michael James <darktemplar9900@yahoo.com>
+Date:   Sat Aug 18 10:27:01 2018 -0500
+
+    Parchment Remover
+
+commit c38776f3d5606e84cd11424a44fc3acc50b828ee
+Author: Michael James <darktemplar9900@yahoo.com>
+Date:   Sat Aug 18 08:11:48 2018 -0500
+
+    Right Chat Fix
+
+commit 224e92458302fd63a772807c89830a3581667b05
+Author: Michael James <darktemplar9900@yahoo.com>
+Date:   Sat Aug 18 07:11:47 2018 -0500
+
+    ExtraQuestButton
+
+commit d7359c448512daca97a61a85a102fbe5d8099f05
+Author: Michael James <darktemplar9900@yahoo.com>
+Date:   Sat Aug 18 06:17:27 2018 -0500
+
+    ElvUI: Support Hide Right Chat
+

@@ -1,0 +1,10 @@
+lightweight tag 5f43e0281d9f523d0ff26618007e7f00ecacd79d v1.10.4
+Author:	Dave Hendler <sollaires@gmail.com>
+Date:	Wed Jul 25 12:10:51 2018 -0700
+
+commit 5f43e0281d9f523d0ff26618007e7f00ecacd79d
+Author: Dave Hendler <sollaires@gmail.com>
+Date:   Wed Jul 25 12:10:51 2018 -0700
+
+    Release 1.10.4 with removal of artifact/crucible output
+

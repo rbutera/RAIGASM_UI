@@ -1,0 +1,7 @@
+## Interface: 80000
+## Author: cqwrteur
+## Title: LookingForGroup Event
+## Version: r1374
+## Dependencies: LookingForGroup
+
+Core.lua

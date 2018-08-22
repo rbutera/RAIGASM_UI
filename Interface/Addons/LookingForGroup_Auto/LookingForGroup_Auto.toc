@@ -1,0 +1,7 @@
+## Interface: 80000
+## Author: cqwrteur
+## Title: LookingForGroup Auto
+## Version: r1374
+## LoadOnDemand: 1
+
+Core.lua

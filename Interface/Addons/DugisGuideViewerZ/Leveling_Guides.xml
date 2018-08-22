@@ -1,0 +1,190 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+
+	<Script file="DugisGuide_Trial_Alliance_En\01_05_Dun Morogh_Gnome.lua"/>
+	<Script file="DugisGuide_Trial_Alliance_En\01_05_Dun_Morogh_Dwarf.lua"/>
+	<Script file="DugisGuide_Trial_Alliance_En\05_10_Dun_Morogh_Dwarf_Gnome.lua"/>
+	<Script file="DugisGuide_Trial_Alliance_En\01_10_Elwynn_Forest_Human.lua"/>
+	<Script file="DugisGuide_Trial_Alliance_En\01_10_Teldrassil_Night_Elf.lua"/>
+	<Script file="DugisGuide_Trial_Alliance_En\01_12_Azuremyst_Isle_Draenei.lua"/>
+	<Script file="DugisGuide_Cata_Alliance_En\01_12_Gilneas_Worgen.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\55_58_The_Scarlet_Enclave.lua"/>
+	
+	<Script file="DugisGuide_Trial_Horde_En\01_05_Durotar_Orc.lua"/>
+	<Script file="DugisGuide_Trial_Horde_En\01_05_Durotar_Troll.lua"/>
+	<Script file="DugisGuide_Trial_Horde_En\01_10_Tirisfal_Glades_Undead.lua"/>
+	<Script file="DugisGuide_Trial_Horde_En\01_10_Mulgore_Tauren.lua"/>
+	<Script file="DugisGuide_Trial_Horde_En\05_10_Durotar_Orc_Troll.lua"/>
+	<Script file="DugisGuide_Trial_Horde_En\01_12_Eversong_Blood_Elf.lua"/>	
+	<Script file="DugisGuide_Cata_Horde_En\01_05_Kezan_Goblin.lua"/>
+	<Script file="DugisGuide_Cata_Horde_En\05_12_Lost_Isle_Goblin.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\55_58_The_Scarlet_Enclave.lua"/>
+
+	<Script file="DugisGuide_MoP_Neutral_En\01_12_The_Wandering_Isle_Pandaren.lua"/>
+
+	<Script file="DugisGuide_Trial_Alliance_En\10_15_Westfall.lua"/>
+	<Script file="DugisGuide_Trial_Alliance_En\15_20_Redridge_ Mountains.lua"/>
+	<Script file="DugisGuide_Trial_Alliance_En\10_20_Loch_Modan.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\20_25_Duskwood.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\20_25_Wetlands.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\25_27_Arathi_Highlands.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\25_30_Northern_Stranglethorn.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\30_35_Cape_of_Stranglethorn.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\30_35_The_Hinterlands.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\35_40_Western_Plaguelands.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\40_45_Eastern_Plaguelands.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\45_48_Badlands.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\48_50_Searing_Gorge.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\50_52_Burning_Steppes.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\52_54_Swamp_of_Sorrows.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\54_58_Blasted_Lands.lua"/>
+	
+	<Script file="DugisGuide_Trial_Horde_En\10_20_Silverpine_Forest.lua"/>
+	<Script file="DugisGuide_Trial_Horde_En\10_20_Ghostlands.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\20_25_Hillsbrad_Foothills.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\25_27_Arathi_Highlands.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\25_30_Northern_Stranglethorn.lua"/>	
+	<Script file="DugisGuide_Leveling_Horde_En\30_35_Cape_of_Stranglethorn.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\30_35_The_Hinterlands.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\35_40_Western_Plaguelands.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\40_45_Eastern_Plaguelands.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\45_48_Badlands.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\48_50_Searing_Gorge.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\50_52_Burning_Steppes.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\52_54_Swamp_of_Sorrows.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\54_58_Blasted_Lands.lua"/>
+
+	<Script file="DugisGuide_Trial_Alliance_En\12_20_Bloodmyst_Isle.lua"/>
+	<Script file="DugisGuide_Trial_Alliance_En\10_20_Darkshore.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\20_25_Ashenvale.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\25_30_Stonetalon_Mountain.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\30_35_Desolace.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\30_35_Southern_Barrens.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\35_40_Dustwallow_Marsh.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\35_40_Feralas.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\40_45_Thousand_Needles.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\45_50_Felwood.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\45_50_Tanaris.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\50_52_Un'Goro_Crater.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\50_52_Winterspring.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\54_56_Silithus.lua"/>
+	
+	<Script file="DugisGuide_Trial_Horde_En\10_20_North_Barrens.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\10_20_Azshara.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\20_25_Ashenvale.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\25_30_Stonetalon_Mountains.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\30_35_Desolace.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\30_35_Southern_Barrens.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\35_40_Dustwallow_Marsh.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\35_40_Feralas.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\40_45_Thousand_Needles.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\45_50_Felwood.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\45_50_Tanaris.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\50_52_Un'goro_Crater.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\50_52_Winterspring.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\54_56_Silithus.lua"/>
+	
+	<Script file="DugisGuide_Leveling_Alliance_En\58_62_Hellfire_Peninsula.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\61_64_Zangarmarsh.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\62_65_Terokkar_Forest.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\64_67_Nagrand.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\65_68_Blades_Edge_Mountains.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\67_70_Netherstorm.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\67_70_Shadowmoon_Valley.lua"/>
+	
+	<Script file="DugisGuide_Leveling_Horde_En\58_62_Hellfire_Peninsula.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\61_64_Zangarmarsh.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\62_65_Terokkar_Forest.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\64_67_Nagrand.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\65_68_Blades_Edge_Mountains.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\67_70_Netherstorm.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\67_70_Shadowmoon_Valley.lua"/>
+	
+	<Script file="DugisGuide_Leveling_Alliance_En\68_72_Borean_Tundra.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\68_72_Howling_Fjord.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\71_74_Dragonblight.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\73_75_Grizzly_Hills.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\74_77_ZulDrak.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\76_78_Sholazar_Basin.lua"/>
+	<Script file="DugisGuide_Leveling_Alliance_En\77_80_Storm_Peaks.lua"/>
+	<Script file="DugisGuide_Loremaster_Alliance_En\77_80_Icecrown.lua"/>
+	
+	<Script file="DugisGuide_Leveling_Horde_En\68_72_Borean_Tundra.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\68_72_Howling_Fjord.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\71_74_Dragonblight.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\73_75_Grizzly_Hills.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\74_77_ZulDrak.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\76_78_Sholazar_Basin.lua"/>
+	<Script file="DugisGuide_Leveling_Horde_En\77_80_Storm_Peaks.lua"/>
+	<Script file="DugisGuide_Loremaster_Horde_En\77_80_Icecrown.lua"/>	
+
+	<Script file="DugisGuide_Cata_Alliance_En\80_82_Mount_Hyjal.lua"/>
+	<Script file="DugisGuide_Cata_Alliance_En\80_82_Vashj'ir.lua"/>
+	<Script file="DugisGuide_Cata_Alliance_En\82_83_Deepholm.lua"/>
+	<Script file="DugisGuide_Cata_Alliance_En\83_84_Uldum.lua"/>
+	<Script file="DugisGuide_Cata_Alliance_En\84_85_Twilight_Highlands.lua"/>
+	
+	<Script file="DugisGuide_Cata_Horde_En\80_82_Mount_Hyjal.lua"/>
+	<Script file="DugisGuide_Cata_Horde_En\80_82_Vashj'ir.lua"/>
+	<Script file="DugisGuide_Cata_Horde_En\82_83_Deepholm.lua"/>
+	<Script file="DugisGuide_Cata_Horde_En\83_84_Uldum.lua"/>
+	<Script file="DugisGuide_Cata_Horde_En\84_85_Twilight_Highlands.lua"/>	
+	
+	<Script file="DugisGuide_MoP_Alliance_En\85_86_Jade_Forest.lua"/>
+	<Script file="DugisGuide_MoP_Alliance_En\86_87_Valley_Four_Winds.lua"/>
+	<Script file="DugisGuide_MoP_Alliance_En\86_87_Krasarang_Wilds.lua"/>
+	<Script file="DugisGuide_MoP_Alliance_En\87_88_Kun-Lai_Summit_West.lua"/>
+	<Script file="DugisGuide_MoP_Alliance_En\87_88_Kun-Lai_Summit_East.lua"/>
+	<Script file="DugisGuide_MoP_Alliance_En\87_Vale_Eternal_Blossom.lua"/>
+	<Script file="DugisGuide_MoP_Alliance_En\88_89_Townlong_Steppes.lua"/>	
+	<Script file="DugisGuide_MoP_Alliance_En\89_90_Dread_Wastes.lua"/>		
+	
+	<Script file="DugisGuide_MoP_Horde_En\85_86_Jade_Forest.lua"/>
+	<Script file="DugisGuide_MoP_Horde_En\86_87_Valley_Four_Winds.lua"/>
+	<Script file="DugisGuide_MoP_Horde_En\86_87_Krasarang_Wilds.lua"/>
+	<Script file="DugisGuide_MoP_Horde_En\87_88_Kun-Lai_Summit_West.lua"/>
+	<Script file="DugisGuide_MoP_Horde_En\87_88_Kun-Lai_Summit_East.lua"/>
+	<Script file="DugisGuide_MoP_Horde_En\87_Vale_Eternal_Blossom.lua"/>
+	<Script file="DugisGuide_MoP_Horde_En\88_89_Townlong_Steppes.lua"/>	
+	<Script file="DugisGuide_MoP_Horde_En\89_90_Dread_Wastes.lua"/>		
+	
+	<Script file="DugisGuide_WoD_Alliance_En\90_Tanaan_Jungle.lua"/>
+	<Script file="DugisGuide_WoD_Alliance_En\90_92_Shadowmoon_Valley.lua"/>
+	<Script file="DugisGuide_WoD_Alliance_En\92_94_Gorgrond.lua"/>
+	<Script file="DugisGuide_WoD_Alliance_En\94_Shadowmoon_Valley.lua"/>
+	<Script file="DugisGuide_WoD_Alliance_En\94_96_Talador.lua"/>
+	<Script file="DugisGuide_WoD_Alliance_En\96_98_Spires_of_Arak.lua"/>
+	<Script file="DugisGuide_WoD_Alliance_En\98_100_Nagrand.lua"/>		
+	
+	<Script file="DugisGuide_WoD_Horde_En\90_Tanaan_Jungle.lua"/>
+	<Script file="DugisGuide_WoD_Horde_En\90_92_Frostfire_Ridge.lua"/>
+	<Script file="DugisGuide_WoD_Horde_En\92_94_Gorgrond.lua"/>
+	<Script file="DugisGuide_WoD_Horde_En\94_Frostfire_Ridge.lua"/>
+	<Script file="DugisGuide_WoD_Horde_En\94_96_Talador.lua"/>
+	<Script file="DugisGuide_WoD_Horde_En\96_98_Spires_of_Arak.lua"/>
+	<Script file="DugisGuide_WoD_Horde_En\98_100_Nagrand.lua"/>	
+	
+	<Script file="DugisGuide_Legion_En\98_100_Mardum_Demon_Hunter.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Broken_Shore_H.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Broken_Shore_A.lua"/>
+	<Script file="DugisGuide_Legion_En\100_Demon_Hunter_Campaign.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Death_Knight_Campaign.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Druid_Campaign.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Hunter_Campaign.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Mage_Campaign.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Monk_Campaign.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Paladin_Campaign.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Priest_Campaign.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Rogue_Campaign.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Shaman_Campaign.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_Warlock_Campaign.lua"/>		
+	<Script file="DugisGuide_Legion_En\98_Warrior_Campaign.lua"/>	
+	
+	<Script file="DugisGuide_Legion_En\98_110_Azsuna.lua"/>
+	<Script file="DugisGuide_Legion_En\98_110_Highmountain.lua"/>	
+	<Script file="DugisGuide_Legion_En\98_110_Stormheim_A.lua"/>
+	<Script file="DugisGuide_Legion_En\98_110_Stormheim_H.lua"/>
+	<Script file="DugisGuide_Legion_En\98_110_Valsharah.lua"/>
+	<Script file="DugisGuide_Legion_En\102_110_Suramar.lua"/>	
+	<Script file="DugisGuide_Legion_En\110_Silithus_The_Wound.lua"/>	
+				
+</Ui>

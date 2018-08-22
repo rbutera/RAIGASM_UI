@@ -1,0 +1,11 @@
+Skada: disabled
+Kui_Nameplates: disabled
+Kui_Nameplates_Core: disabled
+Kui_Nameplates_Core_Config: disabled
+Kui_Media: disabled
+TradeSkillMaster_TotalsBroker: disabled
+TellMeWhen: disabled
+TellMeWhen_Options: disabled
+BugSack: disabled
+WorldQuestTracker: disabled
+DynamicCam: disabled

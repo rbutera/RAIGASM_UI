@@ -1,0 +1,78 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/">
+
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Alchemy.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Argus_Alchemy.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_BlackSmithing.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Argus_BlackSmithing.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Cooking.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Enchanting.lua"/>	
+	<Script file="..\DugisGuide_Prof_Legion\Argus_Enchanting.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Engineering.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Argus_Engineering.lua"/>
+	
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Fishing.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Herbalism.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Argus_Herbalism.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Inscription.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Jewelcrafting.lua"/>	
+	<Script file="..\DugisGuide_Prof_Legion\Argus_Jewelcrafting.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Leatherworking.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Argus_Leatherworking.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Skinning.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Argus_Skinning.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Mining.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Argus_Mining.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\1_100_Tailoring.lua"/>	
+	<Script file="..\DugisGuide_Prof_Legion\Argus_Tailoring.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Herb_Farm_Legion.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Skinning_Farm_Legion.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Mining_Farm_Legion.lua"/>
+	<Script file="..\DugisGuide_Prof_Legion\Mining_Seam.lua"/>
+
+	<Script file="Alchemy_WoD.lua"/>
+	<Script file="Blacksmithing_WoD.lua"/>
+	<Script file="Enchanting_WoD.lua"/>
+	<Script file="Engineering_WoD.lua"/>
+	<Script file="Inscription_WoD.lua"/>
+	<Script file="Jewelcrafting_WoD.lua"/>
+	<Script file="Leatherworking_WoD.lua"/>
+	<Script file="Tailoring_WoD.lua"/>
+	<Script file="Herb_WoD.lua"/>
+	<Script file="Mining_WoD.lua"/>
+	<Script file="Skinning_WoD.lua"/>
+	<Script file="Cooking_WoD.lua"/>
+	<Script file="Fishing_WoD.lua"/>
+	
+	<Script file="Alchemy.lua"/>
+	<Script file="Blacksmithing.lua"/>
+	<Script file="MoP_Blacksmithing_A.lua"/>
+	<Script file="Cooking.lua"/>
+	<Script file="Cooking_Fishing.lua"/>
+	<Script file="MoP_Cooking_A.lua"/>
+	<Script file="MoP_Cooking_Special_A.lua"/>
+	<Script file="Enchanting.lua"/>
+	<Script file="Engineering.lua"/>
+	<Script file="Fishing.lua"/>
+	<Script file="Herb_A.lua"/>
+	<Script file="Inscription.lua"/>
+	<Script file="Jewelcrafting.lua"/>
+	<Script file="Leatherworking.lua"/>
+	<Script file="Mining_A.lua"/>
+	<Script file="Mining_Smelting.lua"/>
+	<Script file="Skinning_A.lua"/>
+	<Script file="Tailoring.lua"/>
+	
+	<Script file="Alchemy_Farm_A.lua"/>
+	<Script file="Blacksmithing_Farm_A.lua"/>
+	<Script file="Cooking_Farm_A.lua"/>
+	<Script file="Enchanting_Farm_A.lua"/>
+	<Script file="Engineering_Farm_A.lua"/>
+	<Script file="Inscription_Farm_A.lua"/>
+	<Script file="Leatherworking_Farm_A.lua"/>
+	<Script file="Tailoring_Farm_A.lua"/>
+
+	<Script file="Fish_Farm_A.lua"/>
+	<Script file="Herb_Farm_A.lua"/>
+	<Script file="Mine_Farm_A.lua"/>
+	<Script file="Tradeskill_Farming_A.lua"/>
+</Ui>

@@ -1,0 +1,10 @@
+## Interface: 80000
+## Author: cqwrteur
+## Title: LookingForGroup Raider.IO
+## Version: r109
+## Dependencies: LookingForGroup_Options, RaiderIO
+## X-LFG-OPT: 1
+## LoadOnDemand: 1
+
+locale\locale.xml
+Core.lua
