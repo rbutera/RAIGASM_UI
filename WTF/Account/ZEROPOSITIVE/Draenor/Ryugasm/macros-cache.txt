@@ -4,6 +4,29 @@ VER 3 0100000000000003 "BK" "INV_MISC_QUESTIONMARK"
 /stopcasting [channeling:Crackling Jade Lightning]
 /cast Blackout Kick
 END
+VER 3 0100000000000004 "CB" "INV_MISC_QUESTIONMARK"
+#showtooltip Chi Burst
+/stopmacro [channeling:Fists of Fury]
+/stopcasting [channeling:Crackling Jade Lightning]
+/cast Chi Burst
+END
+VER 3 0100000000000005 "RSK" "INV_MISC_QUESTIONMARK"
+#showtooltip Rising Sun Kick
+/stopmacro [channeling:Fists of Fury]
+/stopcasting [channeling:Crackling Jade Lightning]
+/cast Rising Sun Kick
+END
+VER 3 0100000000000006 "SCK" "INV_MISC_QUESTIONMARK"
+#showtooltip Spinning Crane Kick
+/stopmacro [channeling:Fists of Fury]
+/stopcasting [channeling:Crackling Jade Lightning]
+/cast Spinning Crane Kick
+END
+VER 3 0100000000000007 "T" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [nomodifier] Transcendence: Transfer
+/cast [modifier:shift] Transcendence
+END
 VER 3 0100000000000001 "taunt" "INV_MISC_QUESTIONMARK"
 #showtooltip Provoke
 /target Black Ox Statue

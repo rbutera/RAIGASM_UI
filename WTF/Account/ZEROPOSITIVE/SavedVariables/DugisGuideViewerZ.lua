@@ -52,17 +52,15 @@ DugisGuideViewerProfiles = {
 					["ModelViewer"] = {
 						["pos_x"] = false,
 					},
-					[1009] = {
-						["checked"] = true,
-					},
+					["showCollectedPets"] = true,
 					["QuestRecordTable"] = {
 						["framePositions"] = {
 							["ObjectiveTrackerFrame"] = {
 								["relativeTo"] = "UIParent",
 								["point"] = "TOPLEFT",
 								["relativePoint"] = "TOPLEFT",
-								["yOfs"] = -192,
-								["xOfs"] = 1868.72521972656,
+								["yOfs"] = -192.000061035156,
+								["xOfs"] = 1868.33361816406,
 							},
 							["GPSArrowScroll"] = {
 								["relativeTo"] = "DugisArrowFrame",
@@ -72,16 +70,16 @@ DugisGuideViewerProfiles = {
 								["xOfs"] = 0,
 							},
 							["DugisMainBorder"] = {
-								["yOfs"] = -103.333213806152,
+								["yOfs"] = -103.333221435547,
 								["xOfs"] = 61.0003776550293,
 								["point"] = "LEFT",
 								["relativePoint"] = "LEFT",
 							},
 							["DugisArrowFrame"] = {
-								["yOfs"] = 160.359115600586,
-								["xOfs"] = -180.651138305664,
-								["point"] = "BOTTOM",
-								["relativePoint"] = "BOTTOM",
+								["yOfs"] = -284.480377197266,
+								["xOfs"] = 341.225341796875,
+								["point"] = "CENTER",
+								["relativePoint"] = "CENTER",
 							},
 							["DugisGuideViewer_ModelViewer"] = {
 								["relativeTo"] = "UIParent",
@@ -91,8 +89,8 @@ DugisGuideViewerProfiles = {
 								["xOfs"] = 1670.33337402344,
 							},
 							["DugisOnOffButton"] = {
-								["yOfs"] = 150.820251464844,
-								["xOfs"] = 94.59423828125,
+								["yOfs"] = 150.820281982422,
+								["xOfs"] = 94.5942459106445,
 								["point"] = "BOTTOM",
 								["relativePoint"] = "BOTTOM",
 							},
@@ -101,7 +99,7 @@ DugisGuideViewerProfiles = {
 								["point"] = "TOPLEFT",
 								["relativePoint"] = "TOPLEFT",
 								["yOfs"] = -299.999938964844,
-								["xOfs"] = 1828.33325195313,
+								["xOfs"] = 1828.33337402344,
 							},
 							["DugisRecordFrame"] = {
 							},
@@ -109,8 +107,6 @@ DugisGuideViewerProfiles = {
 							},
 						},
 					},
-					["FirstTime"] = false,
-					["SettingsRevision"] = 10,
 					[110] = {
 						["options"] = {
 							"None", -- [1]
@@ -120,10 +116,14 @@ DugisGuideViewerProfiles = {
 							"Windwalker", -- [5]
 						},
 					},
+					["SettingsRevision"] = 10,
+					[1009] = {
+						["checked"] = true,
+					},
 					[44] = {
 						["checked"] = false,
 					},
-					["showCollectedPets"] = true,
+					["FirstTime"] = false,
 				},
 			},
 		},
@@ -155,11 +155,15 @@ DugisGuideViewerProfiles = {
 					["ModelViewer"] = {
 						["pos_x"] = false,
 					},
-					[6] = {
-						["checked"] = true,
-					},
-					[57] = {
-						["checked"] = true,
+					["showCollectedPets"] = true,
+					[110] = {
+						["options"] = {
+							"None", -- [1]
+							"Active Talent Specialization", -- [2]
+							"Elemental", -- [3]
+							"Enhancement", -- [4]
+							"Restoration", -- [5]
+						},
 					},
 					["QuestRecordTable"] = {
 						["framePositions"] = {
@@ -224,17 +228,13 @@ DugisGuideViewerProfiles = {
 							},
 						},
 					},
-					[110] = {
-						["options"] = {
-							"None", -- [1]
-							"Active Talent Specialization", -- [2]
-							"Elemental", -- [3]
-							"Enhancement", -- [4]
-							"Restoration", -- [5]
-						},
+					[57] = {
+						["checked"] = true,
 					},
 					["SettingsRevision"] = 10,
-					["showCollectedPets"] = true,
+					[6] = {
+						["checked"] = true,
+					},
 					[44] = {
 						["checked"] = false,
 					},
@@ -346,8 +346,8 @@ DugisGuideViewerProfiles = {
 								["relativeTo"] = "UIParent",
 								["point"] = "TOPLEFT",
 								["relativePoint"] = "TOPLEFT",
-								["yOfs"] = -192,
-								["xOfs"] = 1868.72521972656,
+								["yOfs"] = -192.000061035156,
+								["xOfs"] = 1868.33361816406,
 							},
 							["GPSArrowScroll"] = {
 								["relativeTo"] = "DugisArrowFrame",
@@ -366,8 +366,8 @@ DugisGuideViewerProfiles = {
 							["DugisArrowFrame"] = {
 								["point"] = "TOP",
 								["relativePoint"] = "TOP",
-								["yOfs"] = -90.9084014892578,
-								["xOfs"] = 66.6185913085938,
+								["yOfs"] = -91.0000076293945,
+								["xOfs"] = 67,
 							},
 							["DugisGuideViewer_ModelViewer"] = {
 							},
@@ -386,8 +386,8 @@ DugisGuideViewerProfiles = {
 								["relativeTo"] = "Minimap",
 								["point"] = "RIGHT",
 								["relativePoint"] = "LEFT",
-								["yOfs"] = 35.0000038146973,
-								["xOfs"] = 13.0000009536743,
+								["yOfs"] = 34.9999961853027,
+								["xOfs"] = 12.9999980926514,
 							},
 						},
 					},
@@ -837,6 +837,9 @@ CollectedWorldMapTrackingPoints_v2 = {
 		},
 		["MaelstromShaman:0"] = {
 			"12:1301322578:112318::F", -- [1]
+		},
+		["ThunderBluff:0"] = {
+			"1:1929746700:142666::M", -- [1]
 		},
 		["Dalaran70:10"] = {
 			"12:1933462261:106655::M", -- [1]

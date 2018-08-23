@@ -161,10 +161,8 @@ END
 VER 3 000000000000000B "TSM" "133785"
 /tsm
 END
-VER 3 0000000000000033 "TSMMacro" "Achievement_Faction_GoldenLotus"
-/click TSMCancelAuctionBtn
+VER 3 0000000000000035 "TSMMacro" "Achievement_Faction_GoldenLotus"
 /click TSMShoppingBuyoutBtn
-/click TSMSniperBtn
 /click TSMAuctioningBtn
 /click TSMVendoringSellAllButton
 /click TSMCraftingBtn

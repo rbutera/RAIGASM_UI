@@ -5,6 +5,12 @@ REFlexSettings = {
 	["CurrentTab"] = 1,
 	["LDBMode"] = 2,
 	["Toasts"] = true,
+	["LDBSide"] = "A",
+	["ArenaStatsLimit"] = 3,
+	["ConfigVersion"] = 260,
+	["MiniMapButtonSettings"] = {
+		["hide"] = false,
+	},
 	["Filters"] = {
 		["Map"] = 1,
 		["Bracket"] = 1,
@@ -16,12 +22,6 @@ REFlexSettings = {
 		["Season"] = 0,
 		["DateMode"] = 1,
 	},
-	["ArenaStatsLimit"] = 3,
-	["MiniMapButtonSettings"] = {
-		["hide"] = false,
-	},
-	["ConfigVersion"] = 260,
-	["LDBSide"] = "A",
 }
 REFlexDatabase = {
 }

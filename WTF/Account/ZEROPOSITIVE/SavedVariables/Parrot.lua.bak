@@ -7,9 +7,40 @@ ParrotDB = {
 					["dbver"] = 5,
 				},
 				["Rai"] = {
+					["hideUnitNames"] = true,
+					["shortenAmount"] = true,
 					["throttles"] = {
 						["Skill damage"] = 1,
 						["Melee damage"] = 1,
+					},
+					["hideSkillNames"] = true,
+					["Outgoing"] = {
+						["Skill damage"] = {
+							["tag"] = "[Amount]",
+						},
+						["Skill DoTs"] = {
+							["tag"] = "[Amount]",
+						},
+					},
+					["hideFullOverheals"] = 3,
+					["modifier"] = {
+						["resist"] = {
+							["tag"] = " (-[Amount])",
+						},
+						["absorb"] = {
+							["tag"] = " (-[Amount])",
+						},
+						["crit"] = {
+							["tag"] = "[Text]!",
+						},
+						["block"] = {
+							["tag"] = " (-[Amount])",
+						},
+					},
+					["dbver"] = 5,
+					["sthrottles"] = {
+						[""] = {
+						},
 					},
 					["Notification"] = {
 						["Enemy debuff gains"] = {
@@ -27,9 +58,6 @@ ParrotDB = {
 						["Item buff gains"] = {
 							["disabled"] = true,
 						},
-						["Target buff stack gains"] = {
-							["disabled"] = true,
-						},
 						["Pet debuff fades"] = {
 							["disabled"] = true,
 						},
@@ -42,34 +70,37 @@ ParrotDB = {
 						["Debuff fades"] = {
 							["disabled"] = true,
 						},
-						["Loot items"] = {
-							["disabled"] = false,
-						},
 						["Pet buff fades"] = {
 							["disabled"] = true,
 						},
 						["Loot money"] = {
 							["disabled"] = false,
 						},
-						["Enemy debuff fades"] = {
-							["disabled"] = true,
-						},
-						["Skill cooldown finish"] = {
-							["tag"] = "[ready!]",
-						},
-						["Target buff gains"] = {
-							["disabled"] = true,
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Debuff gains"] = {
+						["Target buff stack gains"] = {
 							["disabled"] = true,
 						},
 						["Enemy buff gains"] = {
 							["disabled"] = true,
 						},
+						["Loot items"] = {
+							["disabled"] = false,
+						},
+						["Skill cooldown finish"] = {
+							["tag"] = "[ready!]",
+						},
+						["Buff fades"] = {
+							["disabled"] = true,
+						},
+						["Target buff gains"] = {
+							["disabled"] = true,
+						},
+						["Debuff gains"] = {
+							["disabled"] = true,
+						},
 						["Pet buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy debuff fades"] = {
 							["disabled"] = true,
 						},
 						["Buff stack gains"] = {
@@ -82,40 +113,9 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
-					["hideFullOverheals"] = 3,
-					["modifier"] = {
-						["absorb"] = {
-							["tag"] = " (-[Amount])",
-						},
-						["resist"] = {
-							["tag"] = " (-[Amount])",
-						},
-						["block"] = {
-							["tag"] = " (-[Amount])",
-						},
-						["crit"] = {
-							["tag"] = "[Text]!",
-						},
-					},
-					["dbver"] = 5,
 					["filters"] = {
 						["Power gain"] = 50,
 					},
-					["hideUnitNames"] = true,
-					["sthrottles"] = {
-						[""] = {
-						},
-					},
-					["shortenAmount"] = true,
-					["Outgoing"] = {
-						["Skill DoTs"] = {
-							["tag"] = "[Amount]",
-						},
-						["Skill damage"] = {
-							["tag"] = "[Amount]",
-						},
-					},
-					["hideSkillNames"] = true,
 				},
 			},
 		},
@@ -128,12 +128,12 @@ ParrotDB = {
 		["Display"] = {
 			["profiles"] = {
 				["Rai"] = {
-					["stickyFont"] = "Arial Narrow",
-					["stickyFontOutline"] = "NONE",
-					["font"] = "Arial Narrow",
-					["stickyFontSize"] = 18,
-					["fontOutline"] = "NONE",
 					["fontSize"] = 14,
+					["stickyFontOutline"] = "NONE",
+					["fontOutline"] = "NONE",
+					["stickyFont"] = "Arial Narrow",
+					["stickyFontSize"] = 18,
+					["font"] = "Arial Narrow",
 				},
 			},
 		},
@@ -233,9 +233,9 @@ ParrotDB = {
 		["Default"] = {
 		},
 		["Rai"] = {
-			["gameHealing"] = true,
-			["gamePetDamage"] = true,
 			["gameDamage"] = true,
+			["gamePetDamage"] = true,
+			["gameHealing"] = true,
 		},
 	},
 }

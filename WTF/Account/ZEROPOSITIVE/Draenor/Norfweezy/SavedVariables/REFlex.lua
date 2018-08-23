@@ -27,12 +27,6 @@ REFlexSettings = {
 REFlexDatabase = {
 	{
 		["Map"] = 529,
-		["Time"] = 1534105332,
-		["StatsNum"] = 2,
-		["isBrawl"] = false,
-		["PlayersNum"] = 30,
-		["Duration"] = 1072,
-		["Hidden"] = false,
 		["Players"] = {
 			{
 				"Warhyzra", -- [1]
@@ -605,8 +599,12 @@ REFlexDatabase = {
 				2, -- [17]
 			}, -- [30]
 		},
+		["StatsNum"] = 2,
 		["Version"] = 260,
-		["isArena"] = false,
+		["PlayersNum"] = 30,
+		["Duration"] = 1072,
+		["Season"] = 0,
+		["isBrawl"] = false,
 		["PlayersStats"] = {
 			{
 				{
@@ -849,14 +847,17 @@ REFlexDatabase = {
 				}, -- [2]
 			}, -- [30]
 		},
-		["isRated"] = false,
+		["isArena"] = false,
 		["PlayerSide"] = 0,
+		["isRated"] = false,
+		["Time"] = 1534105332,
 		["Winner"] = 1,
+		["Hidden"] = false,
 		["PlayerNum"] = 20,
-		["Season"] = 0,
 	}, -- [1]
 }
 REFlexHonorDatabase = {
 	[1533765600] = 10,
 	[1534024800] = 438,
+	[1534975200] = 1,
 }

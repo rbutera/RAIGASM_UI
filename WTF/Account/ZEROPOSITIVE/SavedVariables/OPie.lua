@@ -8,9 +8,12 @@ OneRing_Config = {
 	["ProfileStorage"] = {
 		["default"] = {
 			["Bindings"] = {
-				["CommonTrades"] = "SHIFT-#",
-				["General"] = "#",
-				["SpecMenu"] = "CTRL-#",
+				["RaidSymbols"] = false,
+				["General"] = "=",
+				["SpecMenu"] = "SHIFT-=",
+				["CommonTrades"] = false,
+				["OPieAutoQuest"] = "CTRL-=",
+				["OPieTracking"] = false,
 			},
 			["ShowCooldowns"] = true,
 		},

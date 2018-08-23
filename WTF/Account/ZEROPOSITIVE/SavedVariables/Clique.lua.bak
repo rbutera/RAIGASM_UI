@@ -4,11 +4,11 @@ CliqueDB3 = {
 	["char"] = {
 		["Raimondo - Draenor"] = {
 			["spec1_profileKey"] = "Raimondo - Draenor",
-			["spec3_profileKey"] = "Raimondo - Draenor",
-			["downclick"] = false,
 			["fastooc"] = false,
-			["spec2_profileKey"] = "Raimondo - Draenor",
 			["specswap"] = false,
+			["downclick"] = false,
+			["spec3_profileKey"] = "Raimondo - Draenor",
+			["spec2_profileKey"] = "Raimondo - Draenor",
 		},
 		["Badmanting - Draenor"] = {
 			["spec1_profileKey"] = "Badmanting - Draenor",
@@ -21,11 +21,11 @@ CliqueDB3 = {
 		},
 		["Ryugasm - Draenor"] = {
 			["spec1_profileKey"] = "Ryugasm - Draenor",
-			["fastooc"] = false,
-			["spec3_profileKey"] = "Ryugasm - Draenor",
-			["downclick"] = false,
 			["spec2_profileKey"] = "Ryugasm - Draenor",
+			["downclick"] = false,
+			["fastooc"] = false,
 			["specswap"] = false,
+			["spec3_profileKey"] = "Ryugasm - Draenor",
 		},
 	},
 	["profileKeys"] = {

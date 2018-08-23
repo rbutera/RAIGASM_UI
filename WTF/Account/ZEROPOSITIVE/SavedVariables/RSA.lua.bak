@@ -24,13 +24,13 @@ RSADB = {
 			["Fixed"] = true,
 		},
 		["Ryugasm - Draenor"] = {
-			["General"] = {
-				["Class"] = "MONK",
-			},
 			["Modules"] = {
 				["Monk"] = true,
 			},
 			["Fixed"] = true,
+			["General"] = {
+				["Class"] = "MONK",
+			},
 		},
 		["Norfweezy - Draenor"] = {
 			["Modules"] = {

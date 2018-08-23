@@ -44,7 +44,14 @@ H: 140
 Frame: DugisGuideViewer_TargetFrame
 FrameLevel: 2
 Anchor: CENTER
-X: 31
+X: 30
 Y: 35
 W: 25
 H: 25
+Frame: WIM3_msgFrame1
+FrameLevel: 2
+Anchor: TOPLEFT
+X: 339
+Y: -163
+W: 333
+H: 220

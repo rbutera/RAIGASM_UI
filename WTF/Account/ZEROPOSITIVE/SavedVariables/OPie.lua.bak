@@ -8,9 +8,12 @@ OneRing_Config = {
 	["ProfileStorage"] = {
 		["default"] = {
 			["Bindings"] = {
-				["CommonTrades"] = "SHIFT-#",
-				["General"] = "#",
-				["SpecMenu"] = "CTRL-#",
+				["RaidSymbols"] = false,
+				["General"] = "=",
+				["SpecMenu"] = "SHIFT-=",
+				["CommonTrades"] = false,
+				["OPieTracking"] = false,
+				["OPieAutoQuest"] = "CTRL-=",
 			},
 			["ShowCooldowns"] = true,
 		},
@@ -97,8 +100,8 @@ OneRing_Config = {
 					["sliceToken"] = "ABues=taBAe",
 				}, -- [17]
 				{
-					["sliceToken"] = "ABue3=N7nYe",
 					["id"] = 126892,
+					["sliceToken"] = "ABue3=N7nYe",
 				}, -- [18]
 				{
 					"ring", -- [1]

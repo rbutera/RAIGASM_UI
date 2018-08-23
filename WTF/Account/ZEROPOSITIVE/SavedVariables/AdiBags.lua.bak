@@ -24,15 +24,15 @@ AdiBagsDB = {
 		},
 		["Battle Pet Items"] = {
 		},
-		["WoD"] = {
-		},
 		["BfA"] = {
+		},
+		["WoD"] = {
 		},
 		["MoneyFrame"] = {
 		},
-		["ItemCategory"] = {
-		},
 		["TSMAuction"] = {
+		},
+		["ItemCategory"] = {
 		},
 		["Cata"] = {
 		},
@@ -40,13 +40,13 @@ AdiBagsDB = {
 		},
 		["MoP"] = {
 		},
-		["AdiBags_TooltipInfo"] = {
+		["Equipment"] = {
 		},
 		["Legion"] = {
 		},
 		["Wrath"] = {
 		},
-		["Equipment"] = {
+		["AdiBags_TooltipInfo"] = {
 		},
 		["ItemLevel"] = {
 		},

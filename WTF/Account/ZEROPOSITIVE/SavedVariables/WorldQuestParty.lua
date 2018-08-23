@@ -1,8 +1,7 @@
 
 FrameLoc = {
-	["y"] = 150,
-	["relativeTo"] = "WQPFrame",
+	["y"] = 274.999145507813,
+	["x"] = 274.16650390625,
 	["point"] = "BOTTOMLEFT",
 	["relativePoint"] = "BOTTOMLEFT",
-	["x"] = 150,
 }

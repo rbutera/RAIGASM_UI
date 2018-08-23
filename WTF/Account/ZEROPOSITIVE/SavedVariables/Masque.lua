@@ -48,7 +48,7 @@ MasqueDB = {
 				["WeakAuras_landslide_icon"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_cbt_healing"] = {
+				["WeakAuras_wellspring"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_hst_cd"] = {
@@ -75,7 +75,7 @@ MasqueDB = {
 				["WeakAuras_energizing_elixir"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_lightning_shield"] = {
+				["WeakAuras_tiger's_lust"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_ul"] = {
@@ -99,7 +99,7 @@ MasqueDB = {
 				["WeakAuras_wolves_up"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_est_"] = {
+				["WeakAuras_ascendance_-_restoration"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras"] = {
@@ -135,7 +135,7 @@ MasqueDB = {
 				["WeakAuras_gift_of_the_queen_cd"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_ancestral_guidance_cd"] = {
+				["WeakAuras_cbt_healing"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_lightning_shield_2"] = {
@@ -150,7 +150,7 @@ MasqueDB = {
 				["WeakAuras_touch_of_karma"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_totem_mastery"] = {
+				["WeakAuras_ancestral_guidance_cd"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_chi_burst"] = {
@@ -165,7 +165,7 @@ MasqueDB = {
 				["WeakAuras_fire_elemental"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_riptide_cd"] = {
+				["WeakAuras_touch_of_death"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_ascendance"] = {
@@ -174,7 +174,7 @@ MasqueDB = {
 				["WeakAuras_active_2"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_kj_-_erupting_"] = {
+				["WeakAuras_fist_of_the_white_tiger"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_est__duration"] = {
@@ -186,7 +186,7 @@ MasqueDB = {
 				["WeakAuras_rising_sun_kick"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_htt_cd"] = {
+				["WeakAuras_healing_rain"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_forceful_winds"] = {
@@ -195,10 +195,10 @@ MasqueDB = {
 				["WeakAuras_hit_combo"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_healing_rain"] = {
+				["WeakAuras_gift_of_the_queen"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_tiger's_lust"] = {
+				["WeakAuras_ancestral_guidance_buff"] = {
 					["Inherit"] = false,
 				},
 				["ElvUI_Buffs"] = {
@@ -225,10 +225,10 @@ MasqueDB = {
 				["ElvUI_Debuffs"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_earthen_spike"] = {
+				["ElvUI"] = {
 					["Inherit"] = false,
 				},
-				["ElvUI_Stance Bar"] = {
+				["WeakAuras_boulderfist_icon"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_fury_of_air"] = {
@@ -243,7 +243,7 @@ MasqueDB = {
 				["WeakAuras_stormstrike_up"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_boulderfist_icon"] = {
+				["WeakAuras_healing_rain_cd"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_stormstrike_cd"] = {
@@ -258,16 +258,16 @@ MasqueDB = {
 				["Hekili"] = {
 					["Inherit"] = false,
 				},
-				["ElvUI_ActionBars"] = {
+				["WeakAuras_hot_hand_icon"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_touch_of_death"] = {
+				["WeakAuras_riptide_cd"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_spinning_crane_kick"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_ascendance_resto_buff"] = {
+				["WeakAuras_totem_mastery"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_bloodlust"] = {
@@ -282,7 +282,7 @@ MasqueDB = {
 				["WeakAuras_touch_of_death_buff"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_hot_hand_icon"] = {
+				["WeakAuras_ascendance_resto_buff"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_fallen_avatar_-_tainted_essence_announce"] = {
@@ -297,13 +297,13 @@ MasqueDB = {
 				["WeakAuras_storm,_earth,_and_fire_buff"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_gift_of_the_queen"] = {
+				["ElvUI_Stance Bar"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_combat_res_charges"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_ascendance_-_restoration"] = {
+				["ElvUI_ActionBars"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_slt_duration"] = {
@@ -312,13 +312,13 @@ MasqueDB = {
 				["WeakAuras_invoke_xuen,_the_white_tiger"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_fist_of_the_white_tiger"] = {
+				["WeakAuras_earthen_spike"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_enhascendancecd"] = {
+				["WeakAuras_totem_mastery_place"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_ancestral_guidance_buff"] = {
+				["WeakAuras_lightning_shield"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_ascendance_resto_cd"] = {
@@ -330,19 +330,19 @@ MasqueDB = {
 				["WeakAuras_spear_hand_strike"] = {
 					["Inherit"] = false,
 				},
-				["ElvUI"] = {
+				["WeakAuras_enhascendancecd"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_enhascendanceup"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_totem_mastery_place"] = {
+				["WeakAuras_kj_-_erupting_"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_healing_tide_totem"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_healing_rain_cd"] = {
+				["WeakAuras_est_"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_landslide_proc"] = {
@@ -351,7 +351,7 @@ MasqueDB = {
 				["WeakAuras_earthen_spike_up"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_wellspring"] = {
+				["WeakAuras_htt_cd"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_est_cd"] = {

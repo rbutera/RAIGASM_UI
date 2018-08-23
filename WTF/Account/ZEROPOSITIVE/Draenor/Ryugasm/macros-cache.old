@@ -1,6 +1,18 @@
+VER 3 0100000000000003 "BK" "INV_MISC_QUESTIONMARK"
+#showtooltip Blackout Kick
+/stopmacro [channeling:Fists of Fury]
+/stopcasting [channeling:Crackling Jade Lightning]
+/cast Blackout Kick
+END
 VER 3 0100000000000001 "taunt" "INV_MISC_QUESTIONMARK"
 #showtooltip Provoke
 /target Black Ox Statue
 /cast Provoke
 /targetlasttarget
+END
+VER 3 0100000000000002 "TP" "INV_MISC_QUESTIONMARK"
+#showtooltip Tiger Palm
+/stopmacro [channeling:Fists of Fury]
+/stopcasting [channeling:Crackling Jade Lightning]
+/cast Tiger Palm
 END

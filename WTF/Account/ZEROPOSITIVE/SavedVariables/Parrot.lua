@@ -13,7 +13,33 @@ ParrotDB = {
 						["Skill damage"] = 1,
 						["Melee damage"] = 1,
 					},
-					["hideSkillNames"] = true,
+					["filters"] = {
+						["Power gain"] = 50,
+					},
+					["Outgoing"] = {
+						["Skill damage"] = {
+							["tag"] = "[Amount]",
+						},
+						["Skill DoTs"] = {
+							["tag"] = "[Amount]",
+						},
+					},
+					["hideFullOverheals"] = 3,
+					["modifier"] = {
+						["resist"] = {
+							["tag"] = " (-[Amount])",
+						},
+						["absorb"] = {
+							["tag"] = " (-[Amount])",
+						},
+						["crit"] = {
+							["tag"] = "[Text]!",
+						},
+						["block"] = {
+							["tag"] = " (-[Amount])",
+						},
+					},
+					["dbver"] = 5,
 					["Notification"] = {
 						["Enemy debuff gains"] = {
 							["disabled"] = true,
@@ -51,22 +77,22 @@ ParrotDB = {
 						["Target buff stack gains"] = {
 							["disabled"] = true,
 						},
+						["Enemy buff gains"] = {
+							["disabled"] = true,
+						},
+						["Enemy buff fades"] = {
+							["disabled"] = true,
+						},
 						["Skill cooldown finish"] = {
 							["tag"] = "[ready!]",
 						},
-						["Enemy buff fades"] = {
+						["Buff fades"] = {
 							["disabled"] = true,
 						},
 						["Enemy debuff fades"] = {
 							["disabled"] = true,
 						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
 						["Pet buff gains"] = {
-							["disabled"] = true,
-						},
-						["Enemy buff gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff gains"] = {
@@ -85,37 +111,11 @@ ParrotDB = {
 							["disabled"] = true,
 						},
 					},
-					["hideFullOverheals"] = 3,
-					["modifier"] = {
-						["resist"] = {
-							["tag"] = " (-[Amount])",
-						},
-						["absorb"] = {
-							["tag"] = " (-[Amount])",
-						},
-						["crit"] = {
-							["tag"] = "[Text]!",
-						},
-						["block"] = {
-							["tag"] = " (-[Amount])",
-						},
-					},
-					["dbver"] = 5,
-					["Outgoing"] = {
-						["Skill damage"] = {
-							["tag"] = "[Amount]",
-						},
-						["Skill DoTs"] = {
-							["tag"] = "[Amount]",
-						},
-					},
 					["sthrottles"] = {
 						[""] = {
 						},
 					},
-					["filters"] = {
-						["Power gain"] = 50,
-					},
+					["hideSkillNames"] = true,
 				},
 			},
 		},
@@ -202,12 +202,12 @@ ParrotDB = {
 		["Display"] = {
 			["profiles"] = {
 				["Rai"] = {
-					["stickyFont"] = "Arial Narrow",
-					["stickyFontOutline"] = "NONE",
-					["stickyFontSize"] = 18,
 					["fontSize"] = 14,
+					["stickyFontOutline"] = "NONE",
 					["fontOutline"] = "NONE",
 					["font"] = "Arial Narrow",
+					["stickyFontSize"] = 18,
+					["stickyFont"] = "Arial Narrow",
 				},
 			},
 		},
@@ -233,9 +233,9 @@ ParrotDB = {
 		["Default"] = {
 		},
 		["Rai"] = {
-			["gameHealing"] = true,
-			["gamePetDamage"] = true,
 			["gameDamage"] = true,
+			["gamePetDamage"] = true,
+			["gameHealing"] = true,
 		},
 	},
 }

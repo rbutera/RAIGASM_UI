@@ -29,7 +29,7 @@ FishingBuddy_Info = {
 			}, -- [1]
 		},
 	},
-	["FishInfo2"] = 0,
+	["Version"] = 19500,
 	["KnownZones"] = {
 		[862] = "The Slough",
 	},
@@ -45,5 +45,5 @@ FishingBuddy_Info = {
 			["texture"] = 2057314,
 		},
 	},
-	["Version"] = 19500,
+	["FishInfo2"] = 0,
 }

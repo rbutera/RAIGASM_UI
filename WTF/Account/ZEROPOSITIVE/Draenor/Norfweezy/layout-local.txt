@@ -13,3 +13,10 @@ X: -63
 Y: -9
 W: 325
 H: 325
+Frame: WQPHeaderFrame
+FrameLevel: 2
+Anchor: BOTTOMLEFT
+X: 274
+Y: 275
+W: 250
+H: 30

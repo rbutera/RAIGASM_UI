@@ -1,16 +1,13 @@
 
 TradeSkillMaster_CompetitorTrackerDB = {
-	["profiles"] = {
-		["Default"] = {
-			["treeGroupStatus"] = {
-				["groups"] = {
-					["1"] = true,
-				},
-				["scrollvalue"] = 0,
-				["fullwidth"] = 801.000122070313,
-				["treesizable"] = true,
-				["selected"] = 1,
-			},
+	["factionrealm"] = {
+		["Horde - Draenor"] = {
+			["loginTime"] = 1535048091,
+			["logoutTime"] = 1535054405,
+		},
+		["Alliance - Outland"] = {
+			["logoutTime"] = 1522514412,
+			["loginTime"] = 1522513206,
 		},
 	},
 	["profileKeys"] = {
@@ -21,14 +18,17 @@ TradeSkillMaster_CompetitorTrackerDB = {
 		["Badmanting - Draenor"] = "Default",
 		["Norfweezy - Draenor"] = "Default",
 	},
-	["factionrealm"] = {
-		["Horde - Draenor"] = {
-			["loginTime"] = 1534944048,
-			["logoutTime"] = 1534944067,
-		},
-		["Alliance - Outland"] = {
-			["logoutTime"] = 1522514412,
-			["loginTime"] = 1522513206,
+	["profiles"] = {
+		["Default"] = {
+			["treeGroupStatus"] = {
+				["groups"] = {
+					["1"] = true,
+				},
+				["scrollvalue"] = 0,
+				["selected"] = 1,
+				["treesizable"] = true,
+				["fullwidth"] = 801.000122070313,
+			},
 		},
 	},
 }

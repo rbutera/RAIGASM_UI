@@ -30,8 +30,8 @@ HekiliDB = {
 				["spruceUpActionListNames_04162017"] = true,
 				["dontDisableGlobalCooldownYouFools_05232017"] = true,
 				["disableSpecterForPaladins_10102017"] = true,
-				["undoIncarnationNameChange_12042017"] = true,
 				["setDisplayTypes_04022017"] = true,
+				["undoIncarnationNameChange_12042017"] = true,
 				["changeGuardianAPLToSimC_2018012102"] = true,
 				["changeBrewmasterAPLToSimC_20180121"] = true,
 			},
@@ -109,6 +109,22 @@ HekiliDB = {
 								["criteria"] = "active_enemies > 1 & variable.furyCheck25",
 								["action"] = "crash_lightning",
 							}, -- [12]
+						},
+						["asc"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck25",
+								["action"] = "crash_lightning",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
+								["action"] = "rockbiter",
+							}, -- [2]
+							{
+								["action"] = "windstrike",
+								["enabled"] = true,
+							}, -- [3]
 						},
 						["default"] = {
 							{
@@ -191,22 +207,6 @@ HekiliDB = {
 								["list_name"] = "filler",
 							}, -- [15]
 						},
-						["asc"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck25",
-								["action"] = "crash_lightning",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
-								["action"] = "rockbiter",
-							}, -- [2]
-							{
-								["action"] = "windstrike",
-								["enabled"] = true,
-							}, -- [3]
-						},
 						["precombat"] = {
 							{
 								["enabled"] = true,
@@ -232,48 +232,6 @@ HekiliDB = {
 								["action"] = "lightning_shield",
 								["enabled"] = true,
 							}, -- [7]
-						},
-						["buffs"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck25",
-								["action"] = "crash_lightning",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
-								["action"] = "rockbiter",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "! ticking & maelstrom >= 20",
-								["action"] = "fury_of_air",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.flametongue.up",
-								["action"] = "flametongue",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.hailstorm.enabled & ! buff.frostbrand.up & variable.furyCheck25",
-								["action"] = "frostbrand",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.flametongue.remains < 4.8 + gcd",
-								["action"] = "flametongue",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.hailstorm.enabled & buff.frostbrand.remains < 4.8 + gcd & variable.furyCheck25",
-								["action"] = "frostbrand",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.resonance_totem.remains < 2",
-								["action"] = "totem_mastery",
-							}, -- [8]
 						},
 						["cds"] = {
 							{
@@ -319,6 +277,48 @@ HekiliDB = {
 								["action"] = "earth_elemental",
 								["enabled"] = true,
 							}, -- [9]
+						},
+						["buffs"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck25",
+								["action"] = "crash_lightning",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
+								["action"] = "rockbiter",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "! ticking & maelstrom >= 20",
+								["action"] = "fury_of_air",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.flametongue.up",
+								["action"] = "flametongue",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.hailstorm.enabled & ! buff.frostbrand.up & variable.furyCheck25",
+								["action"] = "frostbrand",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.flametongue.remains < 4.8 + gcd",
+								["action"] = "flametongue",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.hailstorm.enabled & buff.frostbrand.remains < 4.8 + gcd & variable.furyCheck25",
+								["action"] = "frostbrand",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.resonance_totem.remains < 2",
+								["action"] = "totem_mastery",
+							}, -- [8]
 						},
 						["filler"] = {
 							{
@@ -424,8 +424,8 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["moving"] = "1",
-								["criteria"] = "refreshable",
 								["action"] = "flame_shock",
+								["criteria"] = "refreshable",
 								["enabled"] = true,
 							}, -- [12]
 							{
@@ -520,14 +520,14 @@ HekiliDB = {
 							}, -- [17]
 							{
 								["moving"] = "1",
-								["criteria"] = "refreshable",
 								["action"] = "flame_shock",
+								["criteria"] = "refreshable",
 								["enabled"] = true,
 							}, -- [18]
 							{
 								["moving"] = "1",
-								["criteria"] = "movement.distance > 6",
 								["action"] = "flame_shock",
+								["criteria"] = "movement.distance > 6",
 								["enabled"] = true,
 							}, -- [19]
 							{
@@ -674,15 +674,42 @@ HekiliDB = {
 				},
 			},
 			["Class Option: shield_damage"] = 20,
-			["Class Option: maximum_wake_power"] = 1,
+			["Class Option: strict_finishers"] = false,
 			["Class Option: shield_threshold"] = 5,
-			["Class Option: ds_targets"] = "a",
+			["Locked"] = false,
 			["trinkets"] = {
 				["specter_of_betrayal"] = {
 					["disabled"] = true,
 				},
 			},
-			["Toggle State: use_defensives"] = true,
+			["specs"] = {
+				[70] = {
+					["enabled"] = true,
+					["maxRefresh"] = 10,
+					["package"] = "Retribution",
+					["throttleRefresh"] = false,
+					["nameplateRange"] = 8,
+					["potion"] = "prolonged_power",
+					["nameplates"] = true,
+					["aoe"] = 2,
+					["damageExpiration"] = 8,
+					["damageDots"] = true,
+					["damage"] = true,
+				},
+				[66] = {
+					["enabled"] = true,
+					["maxRefresh"] = 10,
+					["package"] = "Protection Paladin",
+					["throttleRefresh"] = false,
+					["nameplateRange"] = 8,
+					["potion"] = "prolonged_power",
+					["nameplates"] = true,
+					["aoe"] = 2,
+					["damageExpiration"] = 8,
+					["damageDots"] = true,
+					["damage"] = true,
+				},
+			},
 			["packs"] = {
 				["Protection Paladin"] = {
 					["source"] = "https://github.com/simulationcraft/simc/blob/bfa-dev/profiles/Tier21/T21_Paladin_Protection.simc",
@@ -825,21 +852,21 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up & talent.seraphim.enabled & active_enemies < 3",
 								["potion"] = "old_war",
 								["action"] = "potion",
+								["criteria"] = "buff.avenging_wrath.up & talent.seraphim.enabled & active_enemies < 3",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "buff.avenging_wrath.up & talent.seraphim.enabled & active_enemies >= 3",
 								["potion"] = "prolonged_power",
 								["action"] = "potion",
+								["criteria"] = "buff.avenging_wrath.up & talent.seraphim.enabled & active_enemies >= 3",
 							}, -- [15]
 							{
 								["enabled"] = true,
-								["criteria"] = "! talent.seraphim.enabled",
 								["potion"] = "unbending_potion",
 								["action"] = "potion",
+								["criteria"] = "! talent.seraphim.enabled",
 							}, -- [16]
 							{
 								["enabled"] = true,
@@ -1006,27 +1033,27 @@ HekiliDB = {
 						["opener"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.wake_of_ashes.enabled & talent.crusade.enabled & talent.execution_sentence.enabled & ! talent.hammer_of_wrath.enabled",
 								["action"] = "sequence",
 								["name"] = "wake_opener_ES_CS:shield_of_vengeance:blade_of_justice:judgment:crusade:templars_verdict:wake_of_ashes:templars_verdict:crusader_strike:execution_sentence",
+								["criteria"] = "talent.wake_of_ashes.enabled & talent.crusade.enabled & talent.execution_sentence.enabled & ! talent.hammer_of_wrath.enabled",
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.wake_of_ashes.enabled & talent.crusade.enabled & ! talent.execution_sentence.enabled & ! talent.hammer_of_wrath.enabled",
 								["action"] = "sequence",
 								["name"] = "wake_opener_CS:shield_of_vengeance:blade_of_justice:judgment:crusade:templars_verdict:wake_of_ashes:templars_verdict:crusader_strike:templars_verdict",
+								["criteria"] = "talent.wake_of_ashes.enabled & talent.crusade.enabled & ! talent.execution_sentence.enabled & ! talent.hammer_of_wrath.enabled",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.wake_of_ashes.enabled & talent.crusade.enabled & talent.execution_sentence.enabled & talent.hammer_of_wrath.enabled",
 								["action"] = "sequence",
 								["name"] = "wake_opener_ES_HoW:shield_of_vengeance:blade_of_justice:judgment:crusade:templars_verdict:wake_of_ashes:templars_verdict:hammer_of_wrath:execution_sentence",
+								["criteria"] = "talent.wake_of_ashes.enabled & talent.crusade.enabled & talent.execution_sentence.enabled & talent.hammer_of_wrath.enabled",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.wake_of_ashes.enabled & talent.crusade.enabled & ! talent.execution_sentence.enabled & talent.hammer_of_wrath.enabled",
 								["action"] = "sequence",
 								["name"] = "wake_opener_HoW:shield_of_vengeance:blade_of_justice:judgment:crusade:templars_verdict:wake_of_ashes:templars_verdict:hammer_of_wrath:templars_verdict",
+								["criteria"] = "talent.wake_of_ashes.enabled & talent.crusade.enabled & ! talent.execution_sentence.enabled & talent.hammer_of_wrath.enabled",
 							}, -- [4]
 						},
 						["default"] = {
@@ -1203,47 +1230,29 @@ HekiliDB = {
 				["spruceUpActionListNames_04162017"] = true,
 				["dontDisableGlobalCooldownYouFools_05232017"] = true,
 				["disableSpecterForPaladins_10102017"] = true,
-				["setDisplayTypes_04022017"] = true,
 				["undoIncarnationNameChange_12042017"] = true,
+				["setDisplayTypes_04022017"] = true,
 				["changeGuardianAPLToSimC_2018012102"] = true,
 				["changeBrewmasterAPLToSimC_20180121"] = true,
 			},
 			["Class Option: use_latency"] = true,
-			["Class Option: strict_finishers"] = false,
-			["specs"] = {
-				[70] = {
-					["enabled"] = true,
-					["maxRefresh"] = 10,
-					["package"] = "Retribution",
-					["throttleRefresh"] = false,
-					["nameplateRange"] = 8,
-					["potion"] = "prolonged_power",
-					["nameplates"] = true,
-					["aoe"] = 2,
-					["damageExpiration"] = 8,
-					["damageDots"] = true,
-					["damage"] = true,
-				},
-				[66] = {
-					["enabled"] = true,
-					["maxRefresh"] = 10,
-					["package"] = "Protection Paladin",
-					["throttleRefresh"] = false,
-					["nameplateRange"] = 8,
-					["potion"] = "prolonged_power",
-					["nameplates"] = true,
-					["aoe"] = 2,
-					["damageExpiration"] = 8,
-					["damageDots"] = true,
-					["damage"] = true,
-				},
-			},
-			["Locked"] = false,
+			["Class Option: maximum_wake_power"] = 1,
+			["Class Option: ds_targets"] = "a",
+			["Toggle State: use_defensives"] = true,
 		},
 		["Ryugasm - Draenor"] = {
-			["runOnce"] = {
-				["reviseDisplayModes_20180709"] = true,
-				["enableAllOfTheThings_20180820"] = true,
+			["toggles"] = {
+				["potions"] = {
+					["value"] = true,
+				},
+				["defensives"] = {
+					["value"] = true,
+					["separate"] = true,
+				},
+				["interrupts"] = {
+					["value"] = true,
+					["separate"] = true,
+				},
 			},
 			["specs"] = {
 				[269] = {
@@ -1278,10 +1287,10 @@ HekiliDB = {
 				["Defensives"] = {
 					["rel"] = "CENTER",
 					["x"] = -80.3335800170899,
+					["y"] = 14.9992036819458,
 					["glow"] = {
 						["enabled"] = true,
 					},
-					["y"] = 14.9992036819458,
 				},
 				["Primary"] = {
 					["glow"] = {
@@ -1291,55 +1300,55 @@ HekiliDB = {
 						["enabled"] = false,
 					},
 					["flash"] = {
+						["enabled"] = true,
 						["color"] = {
 							0.972549019607843, -- [1]
 							1, -- [2]
 							0.992156862745098, -- [3]
 						},
-						["enabled"] = true,
 					},
 					["rel"] = "CENTER",
 					["x"] = -25.6725425720215,
-					["y"] = -215.5,
-					["numIcons"] = 3,
-					["visibility"] = {
-						["advanced"] = true,
-						["pve"] = {
-							["always"] = 0,
-						},
-					},
 					["queue"] = {
 						["height"] = 24,
 					},
+					["numIcons"] = 3,
+					["visibility"] = {
+						["pve"] = {
+							["always"] = 0,
+						},
+						["advanced"] = true,
+					},
+					["y"] = -215.5,
 				},
 				["AOE"] = {
 					["rel"] = "CENTER",
 					["x"] = -25.6718101501465,
+					["flash"] = {
+						["enabled"] = true,
+					},
 					["glow"] = {
 						["shine"] = false,
-					},
-					["queue"] = {
-						["height"] = 24,
 					},
 					["y"] = -107.499992370605,
 					["numIcons"] = 3,
 					["visibility"] = {
-						["advanced"] = true,
 						["pve"] = {
 							["always"] = 0,
 						},
+						["advanced"] = true,
 					},
-					["flash"] = {
-						["enabled"] = true,
+					["queue"] = {
+						["height"] = 24,
 					},
 				},
 				["Interrupts"] = {
 					["rel"] = "CENTER",
 					["x"] = -82.0001831054688,
+					["y"] = -51.666259765625,
 					["glow"] = {
 						["enabled"] = true,
 					},
-					["y"] = -51.666259765625,
 				},
 			},
 			["packs"] = {
@@ -1350,6 +1359,60 @@ HekiliDB = {
 					["spec"] = 269,
 					["desc"] = "This is the default Windwalker action pack for Battle for Azeroth.\n\nMinor adjustments were made from the SimulationCraft APL linked on the profile tab.\n\nChanged target_if conditionals to cycle_targets (target_if is not supported).\n\nChanged Call Action List entries for AOE and ST to Run Action List since they are mutually exclusive.\n\nAdded back-up recommendations for Tiger Palm when nothing else was recommended -- this will usually be quickly-revisited as it is probably a TP miss.",
 					["lists"] = {
+						["cd"] = {
+							{
+								["action"] = "invoke_xuen",
+								["enabled"] = true,
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["name"] = "lustrous_golden_plumage",
+								["action"] = "use_item",
+							}, -- [2]
+							{
+								["action"] = "blood_fury",
+								["enabled"] = true,
+							}, -- [3]
+							{
+								["action"] = "berserking",
+								["enabled"] = true,
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "chi.max - chi >= 1 & energy.time_to_max >= 0.5",
+								["action"] = "arcane_torrent",
+							}, -- [5]
+							{
+								["action"] = "lights_judgment",
+								["enabled"] = true,
+							}, -- [6]
+							{
+								["action"] = "fireblood",
+								["enabled"] = true,
+							}, -- [7]
+							{
+								["action"] = "ancestral_call",
+								["enabled"] = true,
+							}, -- [8]
+							{
+								["enabled"] = true,
+								["action"] = "touch_of_death",
+								["criteria"] = "equipped.hidden_masters_forbidden_touch & ! prev_gcd.1.touch_of_death",
+								["cycle_targets"] = 1,
+							}, -- [9]
+							{
+								["enabled"] = true,
+								["action"] = "touch_of_death",
+								["criteria"] = "( ( talent.serenity.enabled & cooldown.serenity.remains <= 1 ) & cooldown.fists_of_fury.remains <= 4 ) & cooldown.rising_sun_kick.remains < 7 & ! prev_gcd.1.touch_of_death",
+								["cycle_targets"] = 1,
+							}, -- [10]
+							{
+								["enabled"] = true,
+								["action"] = "touch_of_death",
+								["criteria"] = "( ( ! talent.serenity.enabled & cooldown.storm_earth_and_fire.remains <= 1 ) || chi >= 2 ) & cooldown.fists_of_fury.remains <= 4 & cooldown.rising_sun_kick.remains < 7 & ! prev_gcd.1.touch_of_death",
+								["cycle_targets"] = 1,
+							}, -- [11]
+						},
 						["default"] = {
 							{
 								["action"] = "auto_attack",
@@ -1425,60 +1488,6 @@ HekiliDB = {
 								["list_name"] = "st",
 							}, -- [13]
 						},
-						["cd"] = {
-							{
-								["action"] = "invoke_xuen",
-								["enabled"] = true,
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["name"] = "lustrous_golden_plumage",
-								["action"] = "use_item",
-							}, -- [2]
-							{
-								["action"] = "blood_fury",
-								["enabled"] = true,
-							}, -- [3]
-							{
-								["action"] = "berserking",
-								["enabled"] = true,
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "chi.max - chi >= 1 & energy.time_to_max >= 0.5",
-								["action"] = "arcane_torrent",
-							}, -- [5]
-							{
-								["action"] = "lights_judgment",
-								["enabled"] = true,
-							}, -- [6]
-							{
-								["action"] = "fireblood",
-								["enabled"] = true,
-							}, -- [7]
-							{
-								["action"] = "ancestral_call",
-								["enabled"] = true,
-							}, -- [8]
-							{
-								["enabled"] = true,
-								["action"] = "touch_of_death",
-								["criteria"] = "equipped.hidden_masters_forbidden_touch & ! prev_gcd.1.touch_of_death",
-								["cycle_targets"] = 1,
-							}, -- [9]
-							{
-								["enabled"] = true,
-								["action"] = "touch_of_death",
-								["criteria"] = "( ( talent.serenity.enabled & cooldown.serenity.remains <= 1 ) & cooldown.fists_of_fury.remains <= 4 ) & cooldown.rising_sun_kick.remains < 7 & ! prev_gcd.1.touch_of_death",
-								["cycle_targets"] = 1,
-							}, -- [10]
-							{
-								["enabled"] = true,
-								["action"] = "touch_of_death",
-								["criteria"] = "( ( ! talent.serenity.enabled & cooldown.storm_earth_and_fire.remains <= 1 ) || chi >= 2 ) & cooldown.fists_of_fury.remains <= 4 & cooldown.rising_sun_kick.remains < 7 & ! prev_gcd.1.touch_of_death",
-								["cycle_targets"] = 1,
-							}, -- [11]
-						},
 						["precombat"] = {
 							{
 								["enabled"] = true,
@@ -1505,81 +1514,124 @@ HekiliDB = {
 								["enabled"] = true,
 							}, -- [7]
 						},
-						["serenity"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.bloodlust.up & ! buff.serenity.up",
-								["action"] = "fist_of_the_white_tiger",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["action"] = "tiger_palm",
-								["criteria"] = "! prev_gcd.1.tiger_palm & ! prev_gcd.1.energizing_elixir & energy = energy.max & chi < 1 & ! buff.serenity.up",
-								["cycle_targets"] = 1,
-							}, -- [2]
+						["aoe"] = {
 							{
 								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "cd",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "! prev_gcd.1.tiger_palm & chi <= 1 & ( cooldown.rising_sun_kick.remains = 0 || ( talent.fist_of_the_white_tiger.enabled & cooldown.fist_of_the_white_tiger.remains = 0 ) || energy < 50 )",
+								["action"] = "energizing_elixir",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "chi.max - chi >= 1 & energy.time_to_max >= 0.5",
+								["action"] = "arcane_torrent",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.rushing_jade_wind.enabled & ! prev_gcd.1.rushing_jade_wind & buff.rushing_jade_wind.down",
-								["action"] = "rushing_jade_wind",
+								["criteria"] = "talent.serenity.enabled & ! equipped.drinking_horn_cover & cooldown.serenity.remains >= 5 & energy.time_to_max > 2",
+								["action"] = "fists_of_fury",
 							}, -- [4]
 							{
-								["action"] = "serenity",
 								["enabled"] = true,
+								["criteria"] = "talent.serenity.enabled & equipped.drinking_horn_cover & ( cooldown.serenity.remains >= 15 || cooldown.serenity.remains <= 4 ) & energy.time_to_max > 2",
+								["action"] = "fists_of_fury",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["action"] = "rising_sun_kick",
-								["cycle_targets"] = 1,
+								["criteria"] = "! talent.serenity.enabled & energy.time_to_max > 2",
+								["action"] = "fists_of_fury",
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "prev_gcd.1.rising_sun_kick & prev_gcd.2.serenity",
+								["criteria"] = "cooldown.rising_sun_kick.remains >= 3.5 & chi <= 5",
 								["action"] = "fists_of_fury",
 							}, -- [7]
 							{
+								["action"] = "whirling_dragon_punch",
 								["enabled"] = true,
-								["action"] = "rising_sun_kick",
-								["cycle_targets"] = 1,
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["action"] = "blackout_kick",
-								["criteria"] = "! prev_gcd.1.blackout_kick & cooldown.rising_sun_kick.remains >= 2 & cooldown.fists_of_fury.remains >= 2",
-								["cycle_targets"] = 1,
+								["criteria"] = "cooldown.whirling_dragon_punch.remains >= gcd & ! prev_gcd.1.rising_sun_kick & cooldown.fists_of_fury.remains > gcd",
+								["action"] = "rising_sun_kick",
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["action"] = "fists_of_fury",
-								["criteria"] = "( ( ! equipped.drinking_horn_cover || buff.bloodlust.up || buff.serenity.remains < 1 ) & ( cooldown.rising_sun_kick.remains > 1 || active_enemies > 1 ) )",
-								["interrupt"] = "1",
+								["criteria"] = "chi <= 3 & ( cooldown.rising_sun_kick.remains >= 5 || cooldown.whirling_dragon_punch.remains >= 5 ) & energy.time_to_max > 1",
+								["action"] = "chi_burst",
 							}, -- [10]
 							{
+								["action"] = "chi_burst",
 								["enabled"] = true,
-								["criteria"] = "active_enemies >= 3 & ! prev_gcd.1.spinning_crane_kick",
-								["action"] = "spinning_crane_kick",
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["action"] = "rising_sun_kick",
-								["criteria"] = "active_enemies >= 3",
-								["cycle_targets"] = 1,
+								["criteria"] = "( active_enemies >= 3 || ( buff.bok_proc.up & chi.max - chi >= 0 ) ) & ! prev_gcd.1.spinning_crane_kick & set_bonus.tier21_4pc",
+								["action"] = "spinning_crane_kick",
 							}, -- [12]
 							{
 								["enabled"] = true,
-								["criteria"] = "! prev_gcd.1.spinning_crane_kick",
+								["criteria"] = "active_enemies >= 3 & ! prev_gcd.1.spinning_crane_kick",
 								["action"] = "spinning_crane_kick",
 							}, -- [13]
 							{
 								["enabled"] = true,
 								["action"] = "blackout_kick",
-								["criteria"] = "! prev_gcd.1.blackout_kick",
+								["criteria"] = "! prev_gcd.1.blackout_kick & chi.max - chi >= 1 & set_bonus.tier21_4pc & ( ! set_bonus.tier19_2pc || talent.serenity.enabled )",
 								["cycle_targets"] = 1,
 							}, -- [14]
+							{
+								["enabled"] = true,
+								["action"] = "blackout_kick",
+								["criteria"] = "( chi > 1 || buff.bok_proc.up || ( talent.energizing_elixir.enabled & cooldown.energizing_elixir.remains < cooldown.fists_of_fury.remains ) ) & ( ( cooldown.rising_sun_kick.remains > 1 & ( ! talent.fist_of_the_white_tiger.enabled || cooldown.fist_of_the_white_tiger.remains > 1 ) || chi > 4 ) & ( cooldown.fists_of_fury.remains > 1 || chi > 2 ) || prev_gcd.1.tiger_palm ) & ! prev_gcd.1.blackout_kick",
+								["cycle_targets"] = 1,
+							}, -- [15]
+							{
+								["enabled"] = true,
+								["criteria"] = "equipped.the_emperors_capacitor & buff.the_emperors_capacitor.stack >= 19 & energy.time_to_max > 3",
+								["action"] = "crackling_jade_lightning",
+							}, -- [16]
+							{
+								["enabled"] = true,
+								["criteria"] = "equipped.the_emperors_capacitor & buff.the_emperors_capacitor.stack >= 14 & cooldown.serenity.remains < 13 & talent.serenity.enabled & energy.time_to_max > 3",
+								["action"] = "crackling_jade_lightning",
+							}, -- [17]
+							{
+								["enabled"] = true,
+								["action"] = "blackout_kick",
+								["criteria"] = "! prev_gcd.1.blackout_kick & chi.max - chi >= 1 & set_bonus.tier21_4pc & buff.bok_proc.up",
+								["cycle_targets"] = 1,
+							}, -- [18]
+							{
+								["enabled"] = true,
+								["action"] = "tiger_palm",
+								["criteria"] = "! prev_gcd.1.tiger_palm & ! prev_gcd.1.energizing_elixir & ( chi.max - chi >= 2 || energy.time_to_max < 3 )",
+								["cycle_targets"] = 1,
+							}, -- [19]
+							{
+								["enabled"] = true,
+								["action"] = "tiger_palm",
+								["criteria"] = "! prev_gcd.1.tiger_palm & ! prev_gcd.1.energizing_elixir & energy.time_to_max <= 1 & chi.max - chi >= 2",
+								["cycle_targets"] = 1,
+							}, -- [20]
+							{
+								["enabled"] = true,
+								["criteria"] = "chi <= 3 & ( cooldown.rising_sun_kick.remains >= 5 || cooldown.whirling_dragon_punch.remains >= 5 ) & energy.time_to_max > 1",
+								["action"] = "chi_wave",
+							}, -- [21]
+							{
+								["action"] = "chi_wave",
+								["enabled"] = true,
+							}, -- [22]
+							{
+								["enabled"] = true,
+								["criteria"] = "prev_gcd.1.tiger_palm & ! selection",
+								["action"] = "tiger_palm",
+							}, -- [23]
 						},
 						["sef"] = {
 							{
@@ -1714,124 +1766,81 @@ HekiliDB = {
 								["action"] = "tiger_palm",
 							}, -- [22]
 						},
-						["aoe"] = {
+						["serenity"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.bloodlust.up & ! buff.serenity.up",
+								["action"] = "fist_of_the_white_tiger",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["action"] = "tiger_palm",
+								["criteria"] = "! prev_gcd.1.tiger_palm & ! prev_gcd.1.energizing_elixir & energy = energy.max & chi < 1 & ! buff.serenity.up",
+								["cycle_targets"] = 1,
+							}, -- [2]
 							{
 								["enabled"] = true,
 								["action"] = "call_action_list",
 								["list_name"] = "cd",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "! prev_gcd.1.tiger_palm & chi <= 1 & ( cooldown.rising_sun_kick.remains = 0 || ( talent.fist_of_the_white_tiger.enabled & cooldown.fist_of_the_white_tiger.remains = 0 ) || energy < 50 )",
-								["action"] = "energizing_elixir",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "chi.max - chi >= 1 & energy.time_to_max >= 0.5",
-								["action"] = "arcane_torrent",
 							}, -- [3]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.serenity.enabled & ! equipped.drinking_horn_cover & cooldown.serenity.remains >= 5 & energy.time_to_max > 2",
-								["action"] = "fists_of_fury",
+								["criteria"] = "talent.rushing_jade_wind.enabled & ! prev_gcd.1.rushing_jade_wind & buff.rushing_jade_wind.down",
+								["action"] = "rushing_jade_wind",
 							}, -- [4]
 							{
+								["action"] = "serenity",
 								["enabled"] = true,
-								["criteria"] = "talent.serenity.enabled & equipped.drinking_horn_cover & ( cooldown.serenity.remains >= 15 || cooldown.serenity.remains <= 4 ) & energy.time_to_max > 2",
-								["action"] = "fists_of_fury",
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "! talent.serenity.enabled & energy.time_to_max > 2",
-								["action"] = "fists_of_fury",
+								["action"] = "rising_sun_kick",
+								["cycle_targets"] = 1,
 							}, -- [6]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.rising_sun_kick.remains >= 3.5 & chi <= 5",
+								["criteria"] = "prev_gcd.1.rising_sun_kick & prev_gcd.2.serenity",
 								["action"] = "fists_of_fury",
 							}, -- [7]
 							{
-								["action"] = "whirling_dragon_punch",
 								["enabled"] = true,
+								["action"] = "rising_sun_kick",
+								["cycle_targets"] = 1,
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "cooldown.whirling_dragon_punch.remains >= gcd & ! prev_gcd.1.rising_sun_kick & cooldown.fists_of_fury.remains > gcd",
-								["action"] = "rising_sun_kick",
+								["action"] = "blackout_kick",
+								["criteria"] = "! prev_gcd.1.blackout_kick & cooldown.rising_sun_kick.remains >= 2 & cooldown.fists_of_fury.remains >= 2",
+								["cycle_targets"] = 1,
 							}, -- [9]
 							{
 								["enabled"] = true,
-								["criteria"] = "chi <= 3 & ( cooldown.rising_sun_kick.remains >= 5 || cooldown.whirling_dragon_punch.remains >= 5 ) & energy.time_to_max > 1",
-								["action"] = "chi_burst",
+								["criteria"] = "( ( ! equipped.drinking_horn_cover || buff.bloodlust.up || buff.serenity.remains < 1 ) & ( cooldown.rising_sun_kick.remains > 1 || active_enemies > 1 ) )",
+								["action"] = "fists_of_fury",
+								["interrupt"] = "1",
 							}, -- [10]
-							{
-								["action"] = "chi_burst",
-								["enabled"] = true,
-							}, -- [11]
-							{
-								["enabled"] = true,
-								["criteria"] = "( active_enemies >= 3 || ( buff.bok_proc.up & chi.max - chi >= 0 ) ) & ! prev_gcd.1.spinning_crane_kick & set_bonus.tier21_4pc",
-								["action"] = "spinning_crane_kick",
-							}, -- [12]
 							{
 								["enabled"] = true,
 								["criteria"] = "active_enemies >= 3 & ! prev_gcd.1.spinning_crane_kick",
+								["action"] = "spinning_crane_kick",
+							}, -- [11]
+							{
+								["enabled"] = true,
+								["action"] = "rising_sun_kick",
+								["criteria"] = "active_enemies >= 3",
+								["cycle_targets"] = 1,
+							}, -- [12]
+							{
+								["enabled"] = true,
+								["criteria"] = "! prev_gcd.1.spinning_crane_kick",
 								["action"] = "spinning_crane_kick",
 							}, -- [13]
 							{
 								["enabled"] = true,
 								["action"] = "blackout_kick",
-								["criteria"] = "! prev_gcd.1.blackout_kick & chi.max - chi >= 1 & set_bonus.tier21_4pc & ( ! set_bonus.tier19_2pc || talent.serenity.enabled )",
+								["criteria"] = "! prev_gcd.1.blackout_kick",
 								["cycle_targets"] = 1,
 							}, -- [14]
-							{
-								["enabled"] = true,
-								["action"] = "blackout_kick",
-								["criteria"] = "( chi > 1 || buff.bok_proc.up || ( talent.energizing_elixir.enabled & cooldown.energizing_elixir.remains < cooldown.fists_of_fury.remains ) ) & ( ( cooldown.rising_sun_kick.remains > 1 & ( ! talent.fist_of_the_white_tiger.enabled || cooldown.fist_of_the_white_tiger.remains > 1 ) || chi > 4 ) & ( cooldown.fists_of_fury.remains > 1 || chi > 2 ) || prev_gcd.1.tiger_palm ) & ! prev_gcd.1.blackout_kick",
-								["cycle_targets"] = 1,
-							}, -- [15]
-							{
-								["enabled"] = true,
-								["criteria"] = "equipped.the_emperors_capacitor & buff.the_emperors_capacitor.stack >= 19 & energy.time_to_max > 3",
-								["action"] = "crackling_jade_lightning",
-							}, -- [16]
-							{
-								["enabled"] = true,
-								["criteria"] = "equipped.the_emperors_capacitor & buff.the_emperors_capacitor.stack >= 14 & cooldown.serenity.remains < 13 & talent.serenity.enabled & energy.time_to_max > 3",
-								["action"] = "crackling_jade_lightning",
-							}, -- [17]
-							{
-								["enabled"] = true,
-								["action"] = "blackout_kick",
-								["criteria"] = "! prev_gcd.1.blackout_kick & chi.max - chi >= 1 & set_bonus.tier21_4pc & buff.bok_proc.up",
-								["cycle_targets"] = 1,
-							}, -- [18]
-							{
-								["enabled"] = true,
-								["action"] = "tiger_palm",
-								["criteria"] = "! prev_gcd.1.tiger_palm & ! prev_gcd.1.energizing_elixir & ( chi.max - chi >= 2 || energy.time_to_max < 3 )",
-								["cycle_targets"] = 1,
-							}, -- [19]
-							{
-								["enabled"] = true,
-								["action"] = "tiger_palm",
-								["criteria"] = "! prev_gcd.1.tiger_palm & ! prev_gcd.1.energizing_elixir & energy.time_to_max <= 1 & chi.max - chi >= 2",
-								["cycle_targets"] = 1,
-							}, -- [20]
-							{
-								["enabled"] = true,
-								["criteria"] = "chi <= 3 & ( cooldown.rising_sun_kick.remains >= 5 || cooldown.whirling_dragon_punch.remains >= 5 ) & energy.time_to_max > 1",
-								["action"] = "chi_wave",
-							}, -- [21]
-							{
-								["action"] = "chi_wave",
-								["enabled"] = true,
-							}, -- [22]
-							{
-								["enabled"] = true,
-								["criteria"] = "prev_gcd.1.tiger_palm & ! selection",
-								["action"] = "tiger_palm",
-							}, -- [23]
 						},
 					},
 					["version"] = 20180820.1924,
@@ -1990,34 +1999,26 @@ HekiliDB = {
 					["profile"] = "# Executed before combat begins. Accepts non-harmful actions only.\nactions.precombat=flask\nactions.precombat+=/food\nactions.precombat+=/augmentation\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\nactions.precombat+=/snapshot_stats\nactions.precombat+=/potion\nactions.precombat+=/chi_burst\nactions.precombat+=/chi_wave\n\n# Executed every time the actor is available.\nactions=auto_attack\nactions+=/gift_of_the_ox\nactions+=/dampen_harm,if=incoming_damage_1500ms>health.max*0.4&buff.fortifying_brew.down\nactions+=/fortifying_brew,if=incoming_damage_1500ms>health.max*0.4&(buff.dampen_harm.down||buff.diffuse_magic.down)\nactions+=/use_item,name=archimondes_hatred_reborn\nactions+=/potion\nactions+=/blood_fury\nactions+=/berserking\nactions+=/lights_judgment\nactions+=/invoke_niuzao_the_black_ox,if=target.time_to_die>45\nactions+=/purifying_brew,if=stagger.heavy||(stagger.moderate&cooldown.brews.charges_fractional>=cooldown.brews.max_charges-0.5&buff.ironskin_brew.remains>=buff.ironskin_brew.duration*2.5)\n# About charge management, by default while tanking (always true on SimC) we lower it by 1 and up to 1.5 if we are tanking with less than half of Ironskin base duration up.\nactions+=/ironskin_brew,if=(buff.ironskin_brew.down&charges_fractional>1.75&incoming_damage_3s>health.max*0.1)&buff.blackout_combo.down&cooldown.brews.charges_fractional>=cooldown.brews.max_charges-1.0-(1+buff.ironskin_brew.remains<=buff.ironskin_brew.duration*0.5)&buff.ironskin_brew.remains<=buff.ironskin_brew.duration*2\nactions+=/black_ox_brew,if=incoming_damage_1500ms&stagger.heavy&cooldown.brews.charges_fractional<=0.75\nactions+=/black_ox_brew,if=cooldown.brews.charges<2&(energy+(energy.regen*cooldown.keg_smash.remains))<40&buff.blackout_combo.down&cooldown.keg_smash.up\nactions+=/arcane_torrent,if=energy<31\nactions+=/keg_smash,if=spell_targets>=3\nactions+=/tiger_palm,if=buff.blackout_combo.up\nactions+=/keg_smash\nactions+=/blackout_strike\nactions+=/breath_of_fire,if=buff.blackout_combo.down&(buff.bloodlust.down||(buff.bloodlust.up&dot.breath_of_fire_dot.refreshable))\nactions+=/rushing_jade_wind,if=buff.rushing_jade_wind.down\nactions+=/chi_burst\nactions+=/chi_wave\nactions+=/tiger_palm,if=!talent.blackout_combo.enabled&cooldown.keg_smash.remains>gcd&(energy+(energy.regen*(cooldown.keg_smash.remains+gcd)))>=55",
 				},
 			},
-			["iconStore"] = {
-				["minimapPos"] = 159.076034890522,
-			},
 			["notifications"] = {
 				["y"] = 21.6666259765625,
 				["x"] = 19.9998779296875,
 			},
-			["toggles"] = {
-				["potions"] = {
-					["value"] = true,
-				},
-				["defensives"] = {
-					["value"] = true,
-					["separate"] = true,
-				},
-				["interrupts"] = {
-					["value"] = true,
-					["separate"] = true,
-				},
+			["runOnce"] = {
+				["reviseDisplayModes_20180709"] = true,
+				["enableAllOfTheThings_20180820"] = true,
+			},
+			["iconStore"] = {
+				["minimapPos"] = 159.076034890522,
 			},
 		},
 		["Norfweezy - Draenor"] = {
 			["runOnce"] = {
 				["reviseDisplayModes_20180709"] = true,
+				["enableAllOfTheThings_20180820"] = true,
 			},
 			["specs"] = {
 				[581] = {
-					["enabled"] = false,
+					["enabled"] = true,
 					["maxRefresh"] = 10,
 					["throttleRefresh"] = false,
 					["package"] = "Vengeance",
@@ -2044,14 +2045,39 @@ HekiliDB = {
 				},
 			},
 			["displays"] = {
+				["Primary"] = {
+					["visibility"] = {
+						["advanced"] = true,
+						["pve"] = {
+							["always"] = 0,
+						},
+					},
+					["queue"] = {
+						["height"] = 25,
+					},
+				},
+				["AOE"] = {
+					["visibility"] = {
+						["pve"] = {
+							["always"] = 0,
+						},
+						["advanced"] = true,
+						["pvp"] = {
+							["always"] = 0,
+						},
+					},
+					["queue"] = {
+						["height"] = 25,
+					},
+				},
 				["Interrupts"] = {
 				},
 			},
 			["packs"] = {
 				["Havoc"] = {
-					["source"] = "https://github.com/simulationcraft/simc/blob/bfa-dev/profiles/Tier21/T21_Demon_Hunter_Havoc.simc",
+					["source"] = "https://github.com/simulationcraft/simc/blob/bfa-dev/profiles/PreRaids/PR_Demon_Hunter_Havoc.simc",
 					["builtIn"] = true,
-					["date"] = 20180719.1735,
+					["date"] = 20180820.2031,
 					["spec"] = 577,
 					["desc"] = "This is a package of action lists for Hekili.\n\nWarning:  The Demon Blades talent makes resource generation unpredictable, and therefore results in very conservative recommendations, like using Fel Rush for damage when there's nothing better to do.\n\nChanges:\n1.  Disabled Vengeful Retreat and Fel Rush when not used to activate Momentum.\n2.  Changed \"cooldown\" to \"action.eye_beam.cooldown\" where applicable.\n3.  In several places where SimC would check for raid events related to movement or adds, I added an additional condition to disable the check (since this addon does not predict add phases or movement).",
 					["lists"] = {
@@ -2063,12 +2089,12 @@ HekiliDB = {
 							}, -- [1]
 							{
 								["enabled"] = true,
-								["criteria"] = "( variable.waiting_for_momentum || talent.fel_mastery.enabled ) & ( charges = 2 || ( ( ! raid_event.movement.exists || raid_event.movement.in > 10 ) & ( ! raid_event.adds.exists || raid_event.adds.in > 10 ) ) )",
+								["criteria"] = "( variable.waiting_for_momentum || talent.fel_mastery.enabled ) & ( charges = 2 || ( raid_event.movement.in > 10 & raid_event.adds.in > 10 ) )",
 								["action"] = "fel_rush",
 							}, -- [2]
 							{
 								["enabled"] = true,
-								["criteria"] = "! variable.waiting_for_momentum & ( active_enemies > 1 || raid_event.adds.in > 30 )",
+								["criteria"] = "! variable.waiting_for_momentum & ( active_enemies > desired_targets || raid_event.adds.in > 30 )",
 								["action"] = "fel_barrage",
 							}, -- [3]
 							{
@@ -2097,7 +2123,7 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "! talent.blind_fury.enabled & ! variable.waiting_for_dark_slash & ( ! raid_event.adds.exists || raid_event.adds.in > action.eye_beam.cooldown )",
+								["criteria"] = "! talent.blind_fury.enabled & ! variable.waiting_for_dark_slash & raid_event.adds.in > action.eye_beam.cooldown",
 								["action"] = "eye_beam",
 							}, -- [9]
 							{
@@ -2112,7 +2138,7 @@ HekiliDB = {
 							}, -- [11]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.blind_fury.enabled & ( ! raid_event.adds.exists || raid_event.adds.in > action.eye_beam.cooldown )",
+								["criteria"] = "talent.blind_fury.enabled & raid_event.adds.in > action.eye_beam.cooldown",
 								["action"] = "eye_beam",
 							}, -- [12]
 							{
@@ -2121,103 +2147,97 @@ HekiliDB = {
 							}, -- [13]
 							{
 								["enabled"] = true,
-								["criteria"] = "! talent.momentum.enabled & ( ! raid_event.movement.exists || raid_event.movement.in > charges * 10 ) & talent.demon_blades.enabled",
+								["criteria"] = "! talent.momentum.enabled & raid_event.movement.in > charges * 10 & talent.demon_blades.enabled",
 								["action"] = "fel_rush",
 							}, -- [14]
 							{
 								["enabled"] = true,
-								["criteria"] = "target.distance > 15 || ! target.in_range",
+								["criteria"] = "movement.distance > 15 || buff.out_of_range.up",
 								["action"] = "felblade",
 							}, -- [15]
-							{
-								["enabled"] = false,
-								["criteria"] = "target.distance > 15 || ( ! target.in_range & ! talent.momentum.enabled )",
-								["action"] = "fel_rush",
-							}, -- [16]
-							{
-								["enabled"] = false,
-								["criteria"] = "target.distance > 15",
-								["action"] = "vengeful_retreat",
-							}, -- [17]
 							{
 								["enabled"] = true,
 								["criteria"] = "talent.demon_blades.enabled",
 								["action"] = "throw_glaive",
-							}, -- [18]
+							}, -- [16]
 						},
 						["default"] = {
 							{
-								["action"] = "auto_attack",
+								["action"] = "disrupt",
 								["enabled"] = true,
 							}, -- [1]
 							{
+								["action"] = "consume_magic",
 								["enabled"] = true,
-								["value"] = "talent.first_blood.enabled || set_bonus.tier20_4pc > 0 || spell_targets.blade_dance1 >= ( 3 - talent.trail_of_ruin.rank )",
-								["action"] = "variable",
-								["var_name"] = "blade_dance",
 							}, -- [2]
 							{
-								["enabled"] = true,
-								["value"] = "! ( ! talent.nemesis.enabled || cooldown.nemesis.ready || cooldown.nemesis.remains > target.time_to_die || cooldown.nemesis.remains > 60 )",
+								["value"] = "talent.first_blood.enabled || set_bonus.tier20_4pc || spell_targets.blade_dance1 >= ( 3 - talent.trail_of_ruin.enabled )",
+								["var_name"] = "blade_dance",
 								["action"] = "variable",
-								["var_name"] = "waiting_for_nemesis",
+								["enabled"] = true,
 							}, -- [3]
 							{
-								["enabled"] = true,
-								["value"] = "! talent.demonic.enabled & cooldown.metamorphosis.remains < 6 & fury.deficit > 30 & ( ! variable.waiting_for_nemesis || cooldown.nemesis.remains < 10 )",
+								["value"] = "! ( ! talent.nemesis.enabled || cooldown.nemesis.ready || cooldown.nemesis.remains > target.time_to_die || cooldown.nemesis.remains > 60 )",
+								["var_name"] = "waiting_for_nemesis",
 								["action"] = "variable",
-								["var_name"] = "pooling_for_meta",
+								["enabled"] = true,
 							}, -- [4]
 							{
-								["enabled"] = true,
-								["value"] = "variable.blade_dance & ( fury < 75 - talent.first_blood.rank * 20 )",
+								["value"] = "! talent.demonic.enabled & cooldown.metamorphosis.remains < 6 & fury.deficit > 30 & ( ! variable.waiting_for_nemesis || cooldown.nemesis.remains < 10 )",
+								["var_name"] = "pooling_for_meta",
 								["action"] = "variable",
-								["var_name"] = "pooling_for_blade_dance",
+								["enabled"] = true,
 							}, -- [5]
 							{
-								["enabled"] = true,
-								["value"] = "talent.dark_slash.enabled & ! variable.pooling_for_blade_dance & ! variable.pooling_for_meta & cooldown.dark_slash.up",
+								["value"] = "variable.blade_dance & ( fury < 75 - talent.first_blood.enabled * 20 )",
+								["var_name"] = "pooling_for_blade_dance",
 								["action"] = "variable",
-								["var_name"] = "waiting_for_dark_slash",
+								["enabled"] = true,
 							}, -- [6]
 							{
-								["enabled"] = true,
-								["value"] = "talent.momentum.enabled & ! buff.momentum.up",
+								["value"] = "talent.dark_slash.enabled & ! variable.pooling_for_blade_dance & ! variable.pooling_for_meta & cooldown.dark_slash.up",
+								["var_name"] = "waiting_for_dark_slash",
 								["action"] = "variable",
-								["var_name"] = "waiting_for_momentum",
+								["enabled"] = true,
 							}, -- [7]
 							{
-								["action"] = "disrupt",
+								["value"] = "talent.momentum.enabled & ! buff.momentum.up",
+								["var_name"] = "waiting_for_momentum",
+								["action"] = "variable",
 								["enabled"] = true,
 							}, -- [8]
 							{
+								["action"] = "disrupt",
+								["enabled"] = true,
+							}, -- [9]
+							{
 								["enabled"] = true,
 								["action"] = "call_action_list",
-								["criteria"] = "cooldown.global_cooldown.remains = 0",
+								["criteria"] = "gcd.remains = 0",
 								["list_name"] = "cooldown",
-							}, -- [9]
+							}, -- [10]
 							{
 								["enabled"] = true,
 								["criteria"] = "fury.deficit >= 35",
 								["action"] = "pick_up_fragment",
-							}, -- [10]
+							}, -- [11]
 							{
 								["enabled"] = true,
 								["action"] = "call_action_list",
 								["criteria"] = "talent.dark_slash.enabled & ( variable.waiting_for_dark_slash || debuff.dark_slash.up )",
 								["list_name"] = "dark_slash",
-							}, -- [11]
+							}, -- [12]
 							{
 								["enabled"] = true,
 								["action"] = "run_action_list",
 								["criteria"] = "talent.demonic.enabled",
 								["list_name"] = "demonic",
-							}, -- [12]
+							}, -- [13]
 							{
 								["enabled"] = true,
 								["action"] = "run_action_list",
 								["list_name"] = "normal",
-							}, -- [13]
+							}, -- [14]
 						},
 						["precombat"] = {
 							{
@@ -2241,10 +2261,64 @@ HekiliDB = {
 								["enabled"] = true,
 							}, -- [6]
 						},
+						["dark_slash"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "fury >= 80 & ( ! variable.blade_dance || ! cooldown.blade_dance.ready )",
+								["action"] = "dark_slash",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "debuff.dark_slash.up",
+								["action"] = "annihilation",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "debuff.dark_slash.up",
+								["action"] = "chaos_strike",
+							}, -- [3]
+						},
+						["cooldown"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! ( talent.demonic.enabled || variable.pooling_for_meta || variable.waiting_for_nemesis ) || target.time_to_die < 25",
+								["action"] = "metamorphosis",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.demonic.enabled & buff.metamorphosis.up",
+								["action"] = "metamorphosis",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "raid_event.adds.exists & debuff.nemesis.down & ( active_enemies > desired_targets || raid_event.adds.in > 60 )",
+								["action"] = "nemesis",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "! raid_event.adds.exists",
+								["action"] = "nemesis",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.metamorphosis.remains > 25 || target.time_to_die < 60",
+								["action"] = "potion",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["name"] = "galecallers_boon",
+								["action"] = "use_item",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["name"] = "lustrous_golden_plumage",
+								["action"] = "use_item",
+							}, -- [7]
+						},
 						["demonic"] = {
 							{
 								["enabled"] = true,
-								["criteria"] = "active_enemies > 1 || ( ! raid_event.adds.exists || raid_event.adds.in > 30 )",
+								["criteria"] = "active_enemies > desired_targets || raid_event.adds.in > 30",
 								["action"] = "fel_barrage",
 							}, -- [1]
 							{
@@ -2268,7 +2342,7 @@ HekiliDB = {
 							}, -- [5]
 							{
 								["enabled"] = true,
-								["criteria"] = "( ! talent.blind_fury.enabled || fury.deficit >= 70 ) & ( ! buff.metamorphosis.extended_by_demonic || ( set_bonus.tier21_4pc > 0 & buff.metamorphosis.remains > 16 ) )",
+								["criteria"] = "( ! talent.blind_fury.enabled || fury.deficit >= 70 ) & ( ! buff.metamorphosis.extended_by_demonic || ( set_bonus.tier21_4pc & buff.metamorphosis.remains > 16 ) )",
 								["action"] = "eye_beam",
 							}, -- [6]
 							{
@@ -2283,7 +2357,7 @@ HekiliDB = {
 							}, -- [8]
 							{
 								["enabled"] = true,
-								["criteria"] = "talent.demon_blades.enabled & ! cooldown.eye_beam.ready & ( charges = 2 || ( ( ! raid_event.movement.exists || raid_event.movement.in > 10 ) & ( ! raid_event.adds.exists || raid_event.adds.in > 10 ) ) )",
+								["criteria"] = "talent.demon_blades.enabled & ! cooldown.eye_beam.ready & ( charges = 2 || ( raid_event.movement.in > 10 & raid_event.adds.in > 10 ) )",
 								["action"] = "fel_rush",
 							}, -- [9]
 							{
@@ -2292,75 +2366,20 @@ HekiliDB = {
 							}, -- [10]
 							{
 								["enabled"] = true,
-								["criteria"] = "! target.in_range",
+								["criteria"] = "buff.out_of_range.up",
 								["action"] = "throw_glaive",
 							}, -- [11]
-							{
-								["enabled"] = false,
-								["criteria"] = "target.distance > 15 || ! target.in_range",
-								["action"] = "fel_rush",
-							}, -- [12]
-							{
-								["enabled"] = false,
-								["criteria"] = "target.distance > 15",
-								["action"] = "vengeful_retreat",
-							}, -- [13]
 							{
 								["enabled"] = true,
 								["criteria"] = "talent.demon_blades.enabled",
 								["action"] = "throw_glaive",
-							}, -- [14]
-						},
-						["cooldown"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! ( talent.demonic.enabled || variable.pooling_for_meta || variable.waiting_for_nemesis ) || target.time_to_die < 25",
-								["action"] = "metamorphosis",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.demonic.enabled & buff.metamorphosis.up",
-								["action"] = "metamorphosis",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "raid_event.adds.exists & debuff.nemesis.down & ( active_enemies > 1 || raid_event.adds.in > 60 )",
-								["action"] = "nemesis",
-								["target_if"] = "target.time_to_die",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "! raid_event.adds.exists",
-								["action"] = "nemesis",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.metamorphosis.remains > 25 || target.time_to_die < 60",
-								["action"] = "potion",
-							}, -- [5]
-						},
-						["dark_slash"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "fury >= 80 & ( ! variable.blade_dance || ! cooldown.blade_dance.ready )",
-								["action"] = "dark_slash",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "debuff.dark_slash.up",
-								["action"] = "annihilation",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "debuff.dark_slash.up",
-								["action"] = "chaos_strike",
-							}, -- [3]
+							}, -- [12]
 						},
 					},
-					["version"] = 20180719.1735,
-					["warnings"] = "",
+					["version"] = 20180820.2031,
+					["warnings"] = "WARNING:  The import for 'default' required some automated changes.\nLine 11: Unsupported action 'pick_up_fragment'.\n\nImported 6 action lists.\n",
+					["profile"] = "# Executed before combat begins. Accepts non-harmful actions only.\nactions.precombat=flask\nactions.precombat+=/augmentation\nactions.precombat+=/food\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\nactions.precombat+=/snapshot_stats\nactions.precombat+=/potion\nactions.precombat+=/metamorphosis\n\n# Executed every time the actor is available.\nactions=disrupt\nactions+=/consume_magic\nactions+=/variable,name=blade_dance,value=talent.first_blood.enabled||set_bonus.tier20_4pc||spell_targets.blade_dance1>=(3-talent.trail_of_ruin.enabled)\nactions+=/variable,name=waiting_for_nemesis,value=!(!talent.nemesis.enabled||cooldown.nemesis.ready||cooldown.nemesis.remains>target.time_to_die||cooldown.nemesis.remains>60)\nactions+=/variable,name=pooling_for_meta,value=!talent.demonic.enabled&cooldown.metamorphosis.remains<6&fury.deficit>30&(!variable.waiting_for_nemesis||cooldown.nemesis.remains<10)\nactions+=/variable,name=pooling_for_blade_dance,value=variable.blade_dance&(fury<75-talent.first_blood.enabled*20)\nactions+=/variable,name=waiting_for_dark_slash,value=talent.dark_slash.enabled&!variable.pooling_for_blade_dance&!variable.pooling_for_meta&cooldown.dark_slash.up\nactions+=/variable,name=waiting_for_momentum,value=talent.momentum.enabled&!buff.momentum.up\nactions+=/disrupt\nactions+=/call_action_list,name=cooldown,if=gcd.remains=0\nactions+=/pick_up_fragment,if=fury.deficit>=35\nactions+=/call_action_list,name=dark_slash,if=talent.dark_slash.enabled&(variable.waiting_for_dark_slash||debuff.dark_slash.up)\nactions+=/run_action_list,name=demonic,if=talent.demonic.enabled\nactions+=/run_action_list,name=normal\n\nactions.cooldown=metamorphosis,if=!(talent.demonic.enabled||variable.pooling_for_meta||variable.waiting_for_nemesis)||target.time_to_die<25\nactions.cooldown+=/metamorphosis,if=talent.demonic.enabled&buff.metamorphosis.up\nactions.cooldown+=/nemesis,if=raid_event.adds.exists&debuff.nemesis.down&(active_enemies>desired_targets||raid_event.adds.in>60)\nactions.cooldown+=/nemesis,if=!raid_event.adds.exists\nactions.cooldown+=/potion,if=buff.metamorphosis.remains>25||target.time_to_die<60\nactions.cooldown+=/use_item,name=galecallers_boon\nactions.cooldown+=/use_item,name=lustrous_golden_plumage\n\nactions.dark_slash=dark_slash,if=fury>=80&(!variable.blade_dance||!cooldown.blade_dance.ready)\nactions.dark_slash+=/annihilation,if=debuff.dark_slash.up\nactions.dark_slash+=/chaos_strike,if=debuff.dark_slash.up\n\nactions.demonic=fel_barrage,if=active_enemies>desired_targets||raid_event.adds.in>30\nactions.demonic+=/death_sweep,if=variable.blade_dance\nactions.demonic+=/blade_dance,if=variable.blade_dance&cooldown.eye_beam.remains>5&!cooldown.metamorphosis.ready\nactions.demonic+=/immolation_aura\nactions.demonic+=/felblade,if=fury<40||(buff.metamorphosis.down&fury.deficit>=40)\nactions.demonic+=/eye_beam,if=(!talent.blind_fury.enabled||fury.deficit>=70)&(!buff.metamorphosis.extended_by_demonic||(set_bonus.tier21_4pc&buff.metamorphosis.remains>16))\nactions.demonic+=/annihilation,if=(talent.blind_fury.enabled||fury.deficit<30||buff.metamorphosis.remains<5)&!variable.pooling_for_blade_dance\nactions.demonic+=/chaos_strike,if=(talent.blind_fury.enabled||fury.deficit<30)&!variable.pooling_for_meta&!variable.pooling_for_blade_dance\nactions.demonic+=/fel_rush,if=talent.demon_blades.enabled&!cooldown.eye_beam.ready&(charges=2||(raid_event.movement.in>10&raid_event.adds.in>10))\nactions.demonic+=/demons_bite\nactions.demonic+=/throw_glaive,if=buff.out_of_range.up\n# actions.demonic+=/fel_rush,if=movement.distance>15||buff.out_of_range.up\n# actions.demonic+=/vengeful_retreat,if=movement.distance>15\nactions.demonic+=/throw_glaive,if=talent.demon_blades.enabled\n\nactions.normal=vengeful_retreat,if=talent.momentum.enabled&buff.prepared.down\nactions.normal+=/fel_rush,if=(variable.waiting_for_momentum||talent.fel_mastery.enabled)&(charges=2||(raid_event.movement.in>10&raid_event.adds.in>10))\nactions.normal+=/fel_barrage,if=!variable.waiting_for_momentum&(active_enemies>desired_targets||raid_event.adds.in>30)\nactions.normal+=/immolation_aura\nactions.normal+=/eye_beam,if=active_enemies>1&(!raid_event.adds.exists||raid_event.adds.up)&!variable.waiting_for_momentum\nactions.normal+=/death_sweep,if=variable.blade_dance\nactions.normal+=/blade_dance,if=variable.blade_dance\nactions.normal+=/felblade,if=fury.deficit>=40\nactions.normal+=/eye_beam,if=!talent.blind_fury.enabled&!variable.waiting_for_dark_slash&raid_event.adds.in>action.eye_beam.cooldown\nactions.normal+=/annihilation,if=(talent.demon_blades.enabled||!variable.waiting_for_momentum||fury.deficit<30||buff.metamorphosis.remains<5)&!variable.pooling_for_blade_dance&!variable.waiting_for_dark_slash\nactions.normal+=/chaos_strike,if=(talent.demon_blades.enabled||!variable.waiting_for_momentum||fury.deficit<30)&!variable.pooling_for_meta&!variable.pooling_for_blade_dance&!variable.waiting_for_dark_slash\nactions.normal+=/eye_beam,if=talent.blind_fury.enabled&raid_event.adds.in>action.eye_beam.cooldown\nactions.normal+=/demons_bite\nactions.normal+=/fel_rush,if=!talent.momentum.enabled&raid_event.movement.in>charges*10&talent.demon_blades.enabled\nactions.normal+=/felblade,if=movement.distance>15||buff.out_of_range.up\n# actions.normal+=/fel_rush,if=movement.distance>15||(buff.out_of_range.up&!talent.momentum.enabled)\n# actions.normal+=/vengeful_retreat,if=movement.distance>15\nactions.normal+=/throw_glaive,if=talent.demon_blades.enabled",
 					["author"] = "Hekili",
-					["profile"] = "# Executed before combat begins. Accepts non-harmful actions only.\nactions.precombat=flask\nactions.precombat+=/augmentation\nactions.precombat+=/food\n# Snapshot raid buffed stats before combat begins and pre-potting is done.\nactions.precombat+=/snapshot_stats\nactions.precombat+=/potion\nactions.precombat+=/metamorphosis\n\n# Executed every time the actor is available.\nactions=auto_attack\nactions+=/variable,name=blade_dance,value=talent.first_blood.enabled||set_bonus.tier20_4pc||spell_targets.blade_dance1>=(3-talent.trail_of_ruin.enabled)\nactions+=/variable,name=waiting_for_nemesis,value=!(!talent.nemesis.enabled||cooldown.nemesis.ready||cooldown.nemesis.remains>target.time_to_die||cooldown.nemesis.remains>60)\nactions+=/variable,name=pooling_for_meta,value=!talent.demonic.enabled&cooldown.metamorphosis.remains<6&fury.deficit>30&(!variable.waiting_for_nemesis||cooldown.nemesis.remains<10)\nactions+=/variable,name=pooling_for_blade_dance,value=variable.blade_dance&(fury<75-talent.first_blood.enabled*20)\nactions+=/variable,name=waiting_for_dark_slash,value=talent.dark_slash.enabled&!variable.pooling_for_blade_dance&!variable.pooling_for_meta&cooldown.dark_slash.up\nactions+=/variable,name=waiting_for_momentum,value=talent.momentum.enabled&!buff.momentum.up\nactions+=/disrupt\nactions+=/call_action_list,name=cooldown,if=gcd.remains=0\nactions+=/pick_up_fragment,if=fury.deficit>=35\nactions+=/call_action_list,name=dark_slash,if=talent.dark_slash.enabled&(variable.waiting_for_dark_slash||debuff.dark_slash.up)\nactions+=/run_action_list,name=demonic,if=talent.demonic.enabled\nactions+=/run_action_list,name=normal\n\nactions.cooldown=metamorphosis,if=!(talent.demonic.enabled||variable.pooling_for_meta||variable.waiting_for_nemesis)||target.time_to_die<25\nactions.cooldown+=/metamorphosis,if=talent.demonic.enabled&buff.metamorphosis.up\nactions.cooldown+=/nemesis,target_if=min:target.time_to_die,if=raid_event.adds.exists&debuff.nemesis.down&(active_enemies>desired_targets||raid_event.adds.in>60)\nactions.cooldown+=/nemesis,if=!raid_event.adds.exists\nactions.cooldown+=/potion,if=buff.metamorphosis.remains>25||target.time_to_die<60\n\nactions.dark_slash=dark_slash,if=fury>=80&(!variable.blade_dance||!cooldown.blade_dance.ready)\nactions.dark_slash+=/annihilation,if=debuff.dark_slash.up\nactions.dark_slash+=/chaos_strike,if=debuff.dark_slash.up\n\nactions.demonic=fel_barrage,if=active_enemies>desired_targets||(!raid_event.adds.exists||raid_event.adds.in>30)\nactions.demonic+=/death_sweep,if=variable.blade_dance\nactions.demonic+=/blade_dance,if=variable.blade_dance&cooldown.eye_beam.remains>5&!cooldown.metamorphosis.ready\nactions.demonic+=/immolation_aura\nactions.demonic+=/felblade,if=fury<40||(buff.metamorphosis.down&fury.deficit>=40)\nactions.demonic+=/eye_beam,if=(!talent.blind_fury.enabled||fury.deficit>=70)&(!buff.metamorphosis.extended_by_demonic||(set_bonus.tier21_4pc&buff.metamorphosis.remains>16))\nactions.demonic+=/annihilation,if=(talent.blind_fury.enabled||fury.deficit<30||buff.metamorphosis.remains<5)&!variable.pooling_for_blade_dance\nactions.demonic+=/chaos_strike,if=(talent.blind_fury.enabled||fury.deficit<30)&!variable.pooling_for_meta&!variable.pooling_for_blade_dance\nactions.demonic+=/fel_rush,if=talent.demon_blades.enabled&!cooldown.eye_beam.ready&(charges=2||((!raid_event.movement.exists||raid_event.movement.in>10)&(!raid_event.adds.exists||raid_event.adds.in>10)))\nactions.demonic+=/demons_bite\nactions.demonic+=/throw_glaive,if=buff.out_of_range.up\nactions.demonic+=/fel_rush,if=movement.distance>15||buff.out_of_range.up\nactions.demonic+=/vengeful_retreat,if=movement.distance>15\nactions.demonic+=/throw_glaive,if=talent.demon_blades.enabled\n\nactions.normal=vengeful_retreat,if=talent.momentum.enabled&buff.prepared.down\nactions.normal+=/fel_rush,if=(variable.waiting_for_momentum||talent.fel_mastery.enabled)&(charges=2||((!raid_event.movement.exists||raid_event.movement.in>10)&(!raid_event.adds.exists||raid_event.adds.in>10)))\nactions.normal+=/fel_barrage,if=!variable.waiting_for_momentum&(active_enemies>desired_targets||raid_event.adds.in>30)\nactions.normal+=/immolation_aura\nactions.normal+=/eye_beam,if=active_enemies>1&(!raid_event.adds.exists||raid_event.adds.up)&!variable.waiting_for_momentum\nactions.normal+=/death_sweep,if=variable.blade_dance\nactions.normal+=/blade_dance,if=variable.blade_dance\nactions.normal+=/felblade,if=fury.deficit>=40\nactions.normal+=/eye_beam,if=!talent.blind_fury.enabled&!variable.waiting_for_dark_slash&(!raid_event.adds.exists||raid_event.adds.in>action.eye_beam.cooldown)\nactions.normal+=/annihilation,if=(talent.demon_blades.enabled||!variable.waiting_for_momentum||fury.deficit<30||buff.metamorphosis.remains<5)&!variable.pooling_for_blade_dance&!variable.waiting_for_dark_slash\nactions.normal+=/chaos_strike,if=(talent.demon_blades.enabled||!variable.waiting_for_momentum||fury.deficit<30)&!variable.pooling_for_meta&!variable.pooling_for_blade_dance&!variable.waiting_for_dark_slash\nactions.normal+=/eye_beam,if=talent.blind_fury.enabled&(!raid_event.adds.exists||raid_event.adds.in>action.eye_beam.cooldown)\nactions.normal+=/demons_bite\nactions.normal+=/fel_rush,if=!talent.momentum.enabled&(!raid_event.movement.exists||raid_event.movement.in>charges*10)&talent.demon_blades.enabled\nactions.normal+=/felblade,if=movement.distance>15||buff.out_of_range.up\nactions.normal+=/fel_rush,if=movement.distance>15||(buff.out_of_range.up&!talent.momentum.enabled)\nactions.normal+=/vengeful_retreat,if=movement.distance>15\nactions.normal+=/throw_glaive,if=talent.demon_blades.enabled",
 				},
 				["Vengeance"] = {
 					["source"] = "https://github.com/simulationcraft/simc/blob/bfa-dev/profiles/Tier21/T21_Demon_Hunter_Vengeance.simc",
@@ -2540,26 +2559,26 @@ HekiliDB = {
 		["Raigasm - Outland"] = {
 			["actionLists"] = {
 				{
-					["Name"] = "Usable Items",
 					["Specialization"] = 0,
+					["Default"] = true,
 					["Actions"] = {
 						{
 							["Enabled"] = true,
 							["Name"] = "Draught of Souls",
-							["Indicator"] = "none",
-							["Release"] = 201710,
 							["Resources"] = {
 							},
+							["Release"] = 201710,
+							["Indicator"] = "none",
 							["Ability"] = "draught_of_souls",
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
 						}, -- [1]
 						{
 							["Enabled"] = true,
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
+							["Indicator"] = "none",
+							["Ability"] = "faulty_countermeasure",
 							["Resources"] = {
 							},
-							["Ability"] = "faulty_countermeasure",
-							["Indicator"] = "none",
 							["Release"] = 201710,
 							["Name"] = "Faulty Countermeasure",
 						}, -- [2]
@@ -2568,18 +2587,18 @@ HekiliDB = {
 							["Name"] = "Fel-Oiled Infernal Machine",
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
 							["Ability"] = "feloiled_infernal_machine",
+							["Indicator"] = "none",
+							["Release"] = 201710,
 							["Resources"] = {
 							},
-							["Release"] = 201710,
-							["Indicator"] = "none",
 						}, -- [3]
 						{
 							["Enabled"] = true,
 							["Name"] = "Forgefiend's Fabricator",
+							["Indicator"] = "none",
+							["Ability"] = "forgefiends_fabricator",
 							["Resources"] = {
 							},
-							["Ability"] = "forgefiends_fabricator",
-							["Indicator"] = "none",
 							["Release"] = 201710,
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
 						}, -- [4]
@@ -2588,28 +2607,28 @@ HekiliDB = {
 							["Name"] = "Horn of Valor",
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
 							["Ability"] = "horn_of_valor",
+							["Indicator"] = "none",
+							["Release"] = 201710,
 							["Resources"] = {
 							},
-							["Release"] = 201710,
-							["Indicator"] = "none",
 						}, -- [5]
 						{
 							["Enabled"] = true,
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
+							["Indicator"] = "none",
+							["Ability"] = "kiljaedens_burning_wish",
 							["Resources"] = {
 							},
-							["Ability"] = "kiljaedens_burning_wish",
-							["Indicator"] = "none",
 							["Release"] = 201710,
 							["Name"] = "Kil'jaeden's Burning Wish",
 						}, -- [6]
 						{
 							["Enabled"] = true,
 							["Name"] = "Might of Krosus",
+							["Indicator"] = "none",
+							["Ability"] = "might_of_krosus",
 							["Resources"] = {
 							},
-							["Ability"] = "might_of_krosus",
-							["Indicator"] = "none",
 							["Release"] = 201710,
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
 						}, -- [7]
@@ -2618,48 +2637,48 @@ HekiliDB = {
 							["Name"] = "Ring of Collapsing Futures",
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
 							["Ability"] = "ring_of_collapsing_futures",
+							["Indicator"] = "none",
+							["Release"] = 201710,
 							["Resources"] = {
 							},
-							["Release"] = 201710,
-							["Indicator"] = "none",
 						}, -- [8]
 						{
 							["Enabled"] = true,
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
+							["Indicator"] = "none",
+							["Ability"] = "specter_of_betrayal",
 							["Resources"] = {
 							},
-							["Ability"] = "specter_of_betrayal",
-							["Indicator"] = "none",
 							["Release"] = 201710,
 							["Name"] = "Specter of Betrayal",
 						}, -- [9]
 						{
 							["Enabled"] = true,
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
-							["Indicator"] = "none",
-							["Ability"] = "tome_of_unraveling_sanity",
 							["Resources"] = {
 							},
+							["Ability"] = "tome_of_unraveling_sanity",
+							["Indicator"] = "none",
 							["Release"] = 201710,
 							["Name"] = "Tome of Unraveling Sanity",
 						}, -- [10]
 						{
 							["Enabled"] = true,
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
+							["Indicator"] = "none",
+							["Ability"] = "umbral_moonglaives",
 							["Resources"] = {
 							},
-							["Ability"] = "umbral_moonglaives",
-							["Indicator"] = "none",
 							["Release"] = 201710,
 							["Name"] = "Umbral Moonglaives",
 						}, -- [11]
 						{
 							["Enabled"] = true,
 							["Script"] = "! settings.disabled & \nactive_enemies >= settings.minimum & \n( settings.maximum == 0 || active_enemies <= settings.maximum )",
+							["Indicator"] = "none",
+							["Ability"] = "vial_of_ceaseless_toxins",
 							["Resources"] = {
 							},
-							["Ability"] = "vial_of_ceaseless_toxins",
-							["Indicator"] = "none",
 							["Release"] = 201710,
 							["Name"] = "Vial of Ceaseless Toxins",
 						}, -- [12]
@@ -2667,7 +2686,7 @@ HekiliDB = {
 					["Release"] = 20180208.181753,
 					["Script"] = "",
 					["Hidden"] = true,
-					["Default"] = true,
+					["Name"] = "Usable Items",
 				}, -- [1]
 				{
 					["Default"] = true,
@@ -3931,8 +3950,8 @@ HekiliDB = {
 					["Specialization"] = 262,
 				}, -- [11]
 				{
-					["Script"] = "",
 					["Default"] = true,
+					["Name"] = "SimC Elemental: single lr",
 					["Specialization"] = 262,
 					["Release"] = 20171125.213329,
 					["ReadyTime"] = "dot.flame_shock.remains-(debuff.flame_shock.duration*0.3)",
@@ -4189,11 +4208,11 @@ HekiliDB = {
 							["ModName"] = "",
 						}, -- [19]
 					},
-					["Name"] = "SimC Elemental: single lr",
+					["Script"] = "",
 				}, -- [12]
 				{
-					["Script"] = "",
 					["Default"] = true,
+					["Name"] = "SimC Elemental: single if",
 					["Specialization"] = 262,
 					["Release"] = 20171125.213329,
 					["ReadyTime"] = "dot.flame_shock.remains-(debuff.flame_shock.duration*0.3)",
@@ -4488,11 +4507,11 @@ HekiliDB = {
 							["ModName"] = "",
 						}, -- [22]
 					},
-					["Name"] = "SimC Elemental: single if",
+					["Script"] = "",
 				}, -- [13]
 				{
-					["Script"] = "",
 					["Specialization"] = 262,
+					["Name"] = "SimC Elemental: AOE",
 					["Default"] = true,
 					["Release"] = 20171125.213329,
 					["ReadyTime"] = "dot.flame_shock.remains-(debuff.flame_shock.duration*0.3)",
@@ -4653,11 +4672,11 @@ HekiliDB = {
 							["ModName"] = "",
 						}, -- [12]
 					},
-					["Name"] = "SimC Elemental: AOE",
+					["Script"] = "",
 				}, -- [14]
 				{
-					["Name"] = "SimC Elemental: single asc",
 					["Script"] = "",
+					["Specialization"] = 262,
 					["Default"] = true,
 					["Release"] = 20171217.14241,
 					["ReadyTime"] = "remains-buff.ascendance.duration",
@@ -4924,7 +4943,7 @@ HekiliDB = {
 							["ModName"] = "",
 						}, -- [20]
 					},
-					["Specialization"] = 262,
+					["Name"] = "SimC Elemental: single asc",
 				}, -- [15]
 			},
 			["Class Option: forecast_swings"] = true,
@@ -4963,44 +4982,44 @@ HekiliDB = {
 					["maxST"] = 1,
 					["targetAnchor"] = "BOTTOMRIGHT",
 					["primaryIconWidth"] = 50,
-					["yOffsetKBs"] = -2,
-					["xOffsetKBs"] = 1,
 					["font"] = "Arial Narrow",
+					["xOffsetKBs"] = 1,
+					["yOffsetKBs"] = -2,
 					["yOffsetDelay"] = 0,
 					["xOffsetDelay"] = 0,
 					["showTargets"] = true,
 					["kbAnchor"] = "TOPRIGHT",
+					["auraAnchor"] = "BOTTOMLEFT",
+					["delayFontSize"] = 12,
 					["delayFontStyle"] = "OUTLINE",
-					["queuedIconWidth"] = 50,
-					["iconZoom"] = 30,
 					["auraInfoType"] = "buff",
 					["primaryIconHeight"] = 50,
 					["queuedIconSize"] = 50,
 					["xOffsetCaptions"] = 0,
 					["captionFontSize"] = 12,
-					["combatPvE"] = true,
-					["Copy To"] = "Enhancement Single-Target",
-					["captionAnchor"] = "BOTTOM",
-					["delayFont"] = "PT Sans Narrow",
+					["indicatorAnchor"] = "RIGHT",
 					["Specialization"] = 263,
-					["showST"] = true,
+					["captionAnchor"] = "BOTTOM",
 					["queueDirection"] = "RIGHT",
+					["Copy To"] = "Enhancement Single-Target",
+					["iconBorder"] = true,
+					["delayFont"] = "PT Sans Narrow",
 					["numIcons"] = 5,
+					["yOffsetIndicators"] = 0,
+					["xOffsetIndicators"] = 0,
 					["spellFlashColor"] = {
 						["a"] = 1,
 						["r"] = 1,
 						["g"] = 1,
 						["b"] = 1,
 					},
-					["blizzGlowAll"] = false,
-					["yOffsetIndicators"] = 0,
 					["showCaptions"] = true,
-					["xOffsetAura"] = 0,
-					["auraType"] = "buff",
-					["alphaAlwaysPvE"] = 1,
+					["KeepAspectRatio"] = true,
+					["yOffsetAura"] = 0,
+					["blizzGlowAll"] = false,
 					["Default"] = true,
 					["maxAuto"] = 0,
-					["xOffsetIndicators"] = 0,
+					["alphaAlwaysPvE"] = 1,
 					["alphaShowPvE"] = 1,
 					["alphaCombatPvE"] = 1,
 					["Name"] = "Enhancement Primary",
@@ -5023,23 +5042,23 @@ HekiliDB = {
 					["kbFontStyle"] = "OUTLINE",
 					["queuedIndicators"] = true,
 					["queueAlignment"] = "c",
-					["showPvP"] = true,
+					["showKeybindings"] = true,
 					["targetFontStyle"] = "OUTLINE",
 					["Maximum Time"] = 30,
 					["queueStyle"] = "RIGHT",
 					["Script"] = "",
 					["alphaAlwaysPvP"] = 1,
+					["Talent Group"] = 0,
+					["primaryFontSize"] = 12,
+					["precombatAPL"] = 3,
+					["showPvP"] = true,
+					["maxAE"] = 0,
 					["iconBorderColor"] = {
 						["a"] = 1,
 						["r"] = 0,
 						["g"] = 0,
 						["b"] = 0,
 					},
-					["primaryFontSize"] = 12,
-					["precombatAPL"] = 3,
-					["showKeybindings"] = true,
-					["maxAE"] = 0,
-					["Talent Group"] = 0,
 					["targetPvE"] = true,
 					["showPvE"] = true,
 					["Release"] = 20180205.20122,
@@ -5065,16 +5084,16 @@ HekiliDB = {
 					["Enabled"] = true,
 					["simpleAOE"] = 3,
 					["LastConversion"] = 20180114.3,
-					["yOffsetAura"] = 0,
-					["KeepAspectRatio"] = true,
-					["iconBorder"] = true,
-					["indicatorAnchor"] = "RIGHT",
+					["auraType"] = "buff",
+					["xOffsetAura"] = 0,
+					["showST"] = true,
+					["combatPvE"] = true,
 					["yOffsetTargets"] = 0,
 					["showSwitchAuto"] = true,
 					["ZoomConverted"] = true,
-					["auraAnchor"] = "BOTTOMLEFT",
+					["iconZoom"] = 30,
 					["queuedFontSize"] = 12,
-					["delayFontSize"] = 12,
+					["queuedIconWidth"] = 50,
 					["queuedKBs"] = true,
 					["showSwitchAOE"] = true,
 					["auraUnit"] = "player",
@@ -5111,28 +5130,28 @@ HekiliDB = {
 					["maxST"] = 0,
 					["targetAnchor"] = "BOTTOMRIGHT",
 					["xOffsetTargets"] = 0,
-					["delayFontSize"] = 12,
-					["xOffsetKBs"] = 0,
+					["queuedIconWidth"] = 30,
+					["y"] = -165,
 					["x"] = -82,
 					["yOffsetDelay"] = 0,
 					["xOffsetDelay"] = 0,
 					["showTargets"] = true,
 					["kbAnchor"] = "TOPRIGHT",
 					["queuedKBs"] = true,
-					["queuedIconWidth"] = 30,
+					["delayFontSize"] = 12,
 					["showAuraInfo"] = false,
 					["xOffsetCaptions"] = 0,
 					["primaryIconHeight"] = 30,
 					["auraAnchor"] = "BOTTOMLEFT",
 					["showSwitchAuto"] = true,
-					["combatPvE"] = true,
 					["indicatorAnchor"] = "RIGHT",
+					["combatPvE"] = true,
 					["primaryIconSize"] = 40,
 					["captionAnchor"] = "BOTTOM",
-					["queueDirection"] = "RIGHT",
-					["Specialization"] = 263,
-					["showST"] = true,
 					["delayFont"] = "PT Sans Narrow",
+					["Specialization"] = 263,
+					["iconBorder"] = true,
+					["queueDirection"] = "RIGHT",
 					["numIcons"] = 4,
 					["captionFontSize"] = 12,
 					["auraInfoType"] = "buff",
@@ -5143,15 +5162,15 @@ HekiliDB = {
 						["r"] = 1,
 					},
 					["showCaptions"] = true,
-					["xOffsetAura"] = 0,
+					["KeepAspectRatio"] = true,
 					["defaultAPL"] = 2,
 					["iconSpacing"] = 5,
 					["Default"] = true,
 					["maxAuto"] = 0,
-					["alphaAlwaysPvE"] = 1,
+					["blizzGlowAll"] = false,
 					["alphaShowPvE"] = 1,
 					["alphaCombatPvE"] = 1,
-					["Name"] = "Enhancement AOE",
+					["minAuto"] = 3,
 					["visibilityType"] = "b",
 					["alwaysPvP"] = false,
 					["kbFont"] = "PT Sans Narrow",
@@ -5182,10 +5201,15 @@ HekiliDB = {
 					["precombatAPL"] = 3,
 					["Primary Caption Aura"] = "Stormbringer",
 					["maxAE"] = 0,
-					["Talent Group"] = 0,
+					["iconBorderColor"] = {
+						["a"] = 1,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
 					["targetPvE"] = true,
+					["showPvP"] = true,
 					["showKeybindings"] = true,
-					["Release"] = 20180205.20122,
 					["yOffsetIndicators"] = 0,
 					["showAE"] = false,
 					["quickVisStyle"] = "b",
@@ -5197,14 +5221,9 @@ HekiliDB = {
 					["xOffsetIndicators"] = 0,
 					["showPvE"] = true,
 					["combatPvP"] = true,
-					["showPvP"] = true,
 					["Primary Caption"] = "sratio",
-					["iconBorderColor"] = {
-						["a"] = 1,
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
+					["Release"] = 20180205.20122,
+					["Talent Group"] = 0,
 					["minST"] = 3,
 					["targetFontSize"] = 12,
 					["queueAnchorOffset"] = 5,
@@ -5213,10 +5232,10 @@ HekiliDB = {
 					["Enabled"] = true,
 					["simpleAOE"] = 3,
 					["LastConversion"] = 20180114.3,
-					["blizzGlowAll"] = false,
-					["minAuto"] = 3,
-					["KeepAspectRatio"] = true,
-					["iconBorder"] = true,
+					["alphaAlwaysPvE"] = 1,
+					["Name"] = "Enhancement AOE",
+					["xOffsetAura"] = 0,
+					["showST"] = true,
 					["alphaShowPvP"] = 1,
 					["iconZoom"] = 30,
 					["ZoomConverted"] = true,
@@ -5224,7 +5243,7 @@ HekiliDB = {
 					["queuedFontSize"] = 12,
 					["font"] = "Arial Narrow",
 					["primaryIconWidth"] = 50,
-					["y"] = -165,
+					["xOffsetKBs"] = 0,
 					["auraUnit"] = "player",
 				}, -- [2]
 				{
@@ -5268,10 +5287,10 @@ HekiliDB = {
 					["xOffsetDelay"] = 0,
 					["showTargets"] = true,
 					["kbAnchor"] = "TOPRIGHT",
-					["delayFontSize"] = 12,
 					["queuedIconWidth"] = 50,
+					["delayFontSize"] = 12,
+					["auraAnchor"] = "BOTTOMLEFT",
 					["delayFontStyle"] = "OUTLINE",
-					["alphaShowPvP"] = 1,
 					["primaryIconHeight"] = 50,
 					["primaryIconSize"] = 40,
 					["xOffsetKBs"] = 1,
@@ -5279,13 +5298,13 @@ HekiliDB = {
 					["indicatorAnchor"] = "RIGHT",
 					["targetAnchor"] = "BOTTOMRIGHT",
 					["captionAnchor"] = "BOTTOM",
-					["iconBorder"] = true,
-					["Specialization"] = 262,
 					["showST"] = true,
-					["delayFont"] = "PT Sans Narrow",
+					["Specialization"] = 262,
+					["iconBorder"] = true,
+					["queueDirection"] = "RIGHT",
 					["numIcons"] = 4,
 					["combatPvE"] = false,
-					["xOffsetAura"] = 0,
+					["KeepAspectRatio"] = true,
 					["spellFlashColor"] = {
 						["a"] = 1,
 						["r"] = 1,
@@ -5293,15 +5312,15 @@ HekiliDB = {
 						["b"] = 1,
 					},
 					["showCaptions"] = true,
-					["KeepAspectRatio"] = true,
+					["xOffsetAura"] = 0,
 					["defaultAPL"] = 10,
 					["Default"] = true,
 					["displayType"] = "a",
 					["maxAuto"] = 0,
-					["blizzGlowAll"] = false,
+					["alphaAlwaysPvE"] = 1,
 					["alphaShowPvE"] = 1,
 					["alphaCombatPvE"] = 1,
-					["Name"] = "Elemental Primary",
+					["minAuto"] = 0,
 					["delayAnchor"] = "TOPLEFT",
 					["alwaysPvP"] = true,
 					["visibilityType"] = "a",
@@ -5327,14 +5346,19 @@ HekiliDB = {
 					["queueStyle"] = "RIGHT",
 					["Script"] = "",
 					["alphaAlwaysPvP"] = 1,
-					["Primary Caption"] = "targets",
+					["showKeybindings"] = true,
 					["primaryFontSize"] = 12,
 					["precombatAPL"] = 11,
-					["showKeybindings"] = true,
-					["maxAE"] = 0,
-					["Talent Group"] = 0,
-					["targetPvE"] = false,
 					["Release"] = 20180205.20044,
+					["maxAE"] = 0,
+					["iconBorderColor"] = {
+						["a"] = 1,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
+					["targetPvE"] = false,
+					["Primary Caption"] = "targets",
 					["showPvP"] = true,
 					["showPvE"] = true,
 					["Primary Caption Aura"] = "",
@@ -5347,12 +5371,7 @@ HekiliDB = {
 					["kbFont"] = "PT Sans Narrow",
 					["showAE"] = true,
 					["combatPvP"] = false,
-					["iconBorderColor"] = {
-						["a"] = 1,
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
+					["Talent Group"] = 0,
 					["yOffsetAura"] = 0,
 					["yOffsetIndicators"] = 0,
 					["minST"] = 0,
@@ -5363,14 +5382,14 @@ HekiliDB = {
 					["Enabled"] = true,
 					["simpleAOE"] = 2,
 					["LastConversion"] = 20180114.3,
-					["alphaAlwaysPvE"] = 1,
-					["minAuto"] = 0,
-					["queueDirection"] = "RIGHT",
+					["blizzGlowAll"] = false,
+					["Name"] = "Elemental Primary",
+					["delayFont"] = "PT Sans Narrow",
 					["showAuto"] = true,
 					["targetPvP"] = false,
 					["xOffsetCaptions"] = 0,
 					["ZoomConverted"] = true,
-					["auraAnchor"] = "BOTTOMLEFT",
+					["alphaShowPvP"] = 1,
 					["queuedFontSize"] = 12,
 					["yOffsetKBs"] = -1,
 					["primaryIconWidth"] = 50,
@@ -5410,42 +5429,42 @@ HekiliDB = {
 					["showSwitchAuto"] = true,
 					["targetAnchor"] = "BOTTOMRIGHT",
 					["showAuto"] = false,
-					["queuedIconWidth"] = 50,
+					["delayFontSize"] = 12,
 					["xOffsetKBs"] = 0,
-					["font"] = "Arial Narrow",
+					["yOffsetKBs"] = 0,
 					["yOffsetDelay"] = 0,
 					["xOffsetDelay"] = 0,
 					["showTargets"] = true,
 					["kbAnchor"] = "TOPRIGHT",
 					["primaryIconWidth"] = 50,
-					["delayFontSize"] = 12,
-					["delayFontStyle"] = "OUTLINE",
-					["alphaShowPvP"] = 1,
-					["primaryIconHeight"] = 30,
+					["queuedIconWidth"] = 50,
 					["auraAnchor"] = "BOTTOMLEFT",
+					["delayFontStyle"] = "OUTLINE",
+					["primaryIconHeight"] = 30,
+					["iconZoom"] = 30,
 					["iconSpacing"] = 5,
-					["combatPvE"] = false,
 					["indicatorAnchor"] = "RIGHT",
+					["combatPvE"] = false,
 					["xOffsetCaptions"] = 0,
 					["captionAnchor"] = "BOTTOM",
-					["Copy To"] = "Elemental AOE",
 					["Specialization"] = 262,
-					["iconBorder"] = true,
-					["delayFont"] = "PT Sans Narrow",
+					["Copy To"] = "Elemental AOE",
+					["showST"] = true,
+					["queueDirection"] = "RIGHT",
 					["numIcons"] = 4,
 					["captionFontSize"] = 12,
-					["KeepAspectRatio"] = true,
+					["xOffsetAura"] = 0,
 					["yOffsetIndicators"] = 0,
 					["showCaptions"] = true,
-					["xOffsetAura"] = 0,
-					["yOffsetAura"] = 0,
+					["KeepAspectRatio"] = true,
+					["auraType"] = "buff",
 					["queueAlignment"] = "c",
 					["minAuto"] = 2,
 					["maxAuto"] = 0,
 					["xOffsetIndicators"] = 0,
 					["alphaShowPvE"] = 1,
 					["alphaCombatPvE"] = 1,
-					["Default"] = true,
+					["Name"] = "Elemental AOE",
 					["kbFont"] = "PT Sans Narrow",
 					["alwaysPvP"] = true,
 					["visibilityType"] = "b",
@@ -5479,12 +5498,17 @@ HekiliDB = {
 					},
 					["primaryFontSize"] = 12,
 					["precombatAPL"] = 11,
-					["showPvP"] = true,
+					["Primary Caption"] = "ratio",
 					["maxAE"] = 0,
-					["Talent Group"] = 0,
+					["iconBorderColor"] = {
+						["a"] = 1,
+						["r"] = 0,
+						["g"] = 0,
+						["b"] = 0,
+					},
 					["targetPvE"] = false,
+					["showPvP"] = true,
 					["Release"] = 20180205.20044,
-					["showKeybindings"] = true,
 					["alphaTargetPvP"] = 1,
 					["showAE"] = false,
 					["alphaAlwaysPvE"] = 1,
@@ -5496,13 +5520,8 @@ HekiliDB = {
 					["blizzGlowAll"] = false,
 					["showPvE"] = true,
 					["combatPvP"] = false,
-					["Primary Caption"] = "ratio",
-					["iconBorderColor"] = {
-						["a"] = 1,
-						["r"] = 0,
-						["g"] = 0,
-						["b"] = 0,
-					},
+					["showKeybindings"] = true,
+					["Talent Group"] = 0,
 					["spellFlash"] = false,
 					["minST"] = 2,
 					["targetFontSize"] = 12,
@@ -5512,18 +5531,18 @@ HekiliDB = {
 					["Enabled"] = true,
 					["simpleAOE"] = 3,
 					["LastConversion"] = 20180114.3,
-					["Name"] = "Elemental AOE",
-					["auraType"] = "buff",
+					["Default"] = true,
+					["yOffsetAura"] = 0,
 					["queuedIconSize"] = 40,
-					["queueDirection"] = "RIGHT",
-					["showST"] = true,
+					["delayFont"] = "PT Sans Narrow",
+					["iconBorder"] = true,
 					["showAuraInfo"] = false,
 					["ZoomConverted"] = true,
-					["iconZoom"] = 30,
+					["alphaShowPvP"] = 1,
 					["queuedFontSize"] = 12,
 					["maxST"] = 0,
 					["queuedKBs"] = true,
-					["yOffsetKBs"] = 0,
+					["font"] = "Arial Narrow",
 					["auraUnit"] = "player",
 				}, -- [4]
 			},
@@ -5542,23 +5561,23 @@ HekiliDB = {
 				["attachDefaultAPLs_04022017"] = true,
 				["spruceUpActionListNames_04162017"] = true,
 				["changeGuardianAPLToSimC_2018012102"] = true,
-				["undoIncarnationNameChange_12042017"] = true,
 				["setDisplayTypes_04022017"] = true,
+				["undoIncarnationNameChange_12042017"] = true,
 				["disableSpecterForPaladins_10102017"] = true,
 				["dontDisableGlobalCooldownYouFools_05232017"] = true,
 				["changeBrewmasterAPLToSimC_20180121"] = true,
 			},
 			["Class Option: t20_stack_threshold"] = 12,
-			["Notification X"] = 51.7984123229981,
+			["Class Option: optimistic_overload"] = false,
 			["Notification Y"] = 14.388427734375,
-			["Class Option: save_for_aoe"] = false,
-			["Toggle State: save_earthen_spike"] = false,
-			["Class Option: allow_dw_desync"] = true,
-			["Class Option: forecast_fury"] = true,
 			["clashes"] = {
 				["windstrike"] = 0.25,
 			},
-			["Class Option: optimistic_overload"] = false,
+			["Toggle State: save_earthen_spike"] = false,
+			["Class Option: allow_dw_desync"] = true,
+			["Class Option: forecast_fury"] = true,
+			["Class Option: save_for_aoe"] = false,
+			["Notification X"] = 51.7984123229981,
 		},
 		["Badmanting - Draenor"] = {
 			["runOnce"] = {
@@ -5576,8 +5595,8 @@ HekiliDB = {
 				["attachDefaultAPLs_04022017"] = true,
 				["spruceUpActionListNames_04162017"] = true,
 				["changeGuardianAPLToSimC_2018012102"] = true,
-				["setDisplayTypes_04022017"] = true,
 				["undoIncarnationNameChange_12042017"] = true,
+				["setDisplayTypes_04022017"] = true,
 				["disableSpecterForPaladins_10102017"] = true,
 				["dontDisableGlobalCooldownYouFools_05232017"] = true,
 				["changeBrewmasterAPLToSimC_20180121"] = true,
@@ -5729,6 +5748,160 @@ HekiliDB = {
 								["action"] = "rockbiter",
 							}, -- [1]
 						},
+						["asc"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck25",
+								["action"] = "crash_lightning",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
+								["action"] = "rockbiter",
+							}, -- [2]
+							{
+								["action"] = "windstrike",
+								["enabled"] = true,
+							}, -- [3]
+						},
+						["precombat"] = {
+							{
+								["enabled"] = true,
+							}, -- [1]
+							{
+								["enabled"] = true,
+							}, -- [2]
+							{
+								["enabled"] = true,
+							}, -- [3]
+							{
+								["enabled"] = true,
+							}, -- [4]
+							{
+								["action"] = "totem_mastery",
+								["enabled"] = true,
+							}, -- [5]
+							{
+								["action"] = "potion",
+								["enabled"] = true,
+							}, -- [6]
+							{
+								["action"] = "lightning_shield",
+								["enabled"] = true,
+							}, -- [7]
+						},
+						["filler"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "maelstrom < 70",
+								["action"] = "rockbiter",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.crashing_storm.enabled & variable.OCPool60",
+								["action"] = "crash_lightning",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "variable.OCPool80 & variable.furyCheck45",
+								["action"] = "lava_lash",
+							}, -- [3]
+							{
+								["action"] = "rockbiter",
+								["enabled"] = true,
+							}, -- [4]
+							{
+								["action"] = "flametongue",
+								["enabled"] = true,
+							}, -- [5]
+						},
+						["cds"] = {
+							{
+								["enabled"] = false,
+								["criteria"] = "target.health.pct < 25 || time > 0.500",
+								["action"] = "bloodlust",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "( talent.ascendance.enabled & buff.ascendance.up ) || ( talent.elemental_spirits.enabled & feral_spirit.remains > 5 ) || ( ! talent.ascendance.enabled & ! talent.elemental_spirits.enabled )",
+								["action"] = "berserking",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "( talent.ascendance.enabled & ( buff.ascendance.up || cooldown.ascendance.remains > 50 ) ) || ( ! talent.ascendance.enabled & ( feral_spirit.remains > 5 || cooldown.feral_spirit.remains > 50 ) )",
+								["action"] = "blood_fury",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "( talent.ascendance.enabled & ( buff.ascendance.up || cooldown.ascendance.remains > 50 ) ) || ( ! talent.ascendance.enabled & ( feral_spirit.remains > 5 || cooldown.feral_spirit.remains > 50 ) )",
+								["action"] = "fireblood",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "( talent.ascendance.enabled & ( buff.ascendance.up || cooldown.ascendance.remains > 50 ) ) || ( ! talent.ascendance.enabled & ( feral_spirit.remains > 5 || cooldown.feral_spirit.remains > 50 ) )",
+								["action"] = "ancestral_call",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.ascendance.up || ! talent.ascendance.enabled & feral_spirit.remains > 5 || target.time_to_die <= 60",
+								["action"] = "potion",
+							}, -- [6]
+							{
+								["action"] = "feral_spirit",
+								["enabled"] = true,
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "cooldown.strike.remains > 0",
+								["action"] = "ascendance",
+							}, -- [8]
+							{
+								["action"] = "earth_elemental",
+								["enabled"] = true,
+							}, -- [9]
+						},
+						["buffs"] = {
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck25",
+								["action"] = "crash_lightning",
+							}, -- [1]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
+								["action"] = "rockbiter",
+							}, -- [2]
+							{
+								["enabled"] = true,
+								["criteria"] = "! ticking & maelstrom >= 20",
+								["action"] = "fury_of_air",
+							}, -- [3]
+							{
+								["enabled"] = true,
+								["criteria"] = "! buff.flametongue.up",
+								["action"] = "flametongue",
+							}, -- [4]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.hailstorm.enabled & ! buff.frostbrand.up & variable.furyCheck25",
+								["action"] = "frostbrand",
+							}, -- [5]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.flametongue.remains < 4.8 + gcd",
+								["action"] = "flametongue",
+							}, -- [6]
+							{
+								["enabled"] = true,
+								["criteria"] = "talent.hailstorm.enabled & buff.frostbrand.remains < 4.8 + gcd & variable.furyCheck25",
+								["action"] = "frostbrand",
+							}, -- [7]
+							{
+								["enabled"] = true,
+								["criteria"] = "buff.resonance_totem.remains < 2",
+								["action"] = "totem_mastery",
+							}, -- [8]
+						},
 						["default"] = {
 							{
 								["action"] = "wind_shear",
@@ -5810,160 +5983,6 @@ HekiliDB = {
 								["list_name"] = "filler",
 							}, -- [15]
 						},
-						["precombat"] = {
-							{
-								["enabled"] = true,
-							}, -- [1]
-							{
-								["enabled"] = true,
-							}, -- [2]
-							{
-								["enabled"] = true,
-							}, -- [3]
-							{
-								["enabled"] = true,
-							}, -- [4]
-							{
-								["action"] = "totem_mastery",
-								["enabled"] = true,
-							}, -- [5]
-							{
-								["action"] = "potion",
-								["enabled"] = true,
-							}, -- [6]
-							{
-								["action"] = "lightning_shield",
-								["enabled"] = true,
-							}, -- [7]
-						},
-						["filler"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "maelstrom < 70",
-								["action"] = "rockbiter",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.crashing_storm.enabled & variable.OCPool60",
-								["action"] = "crash_lightning",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "variable.OCPool80 & variable.furyCheck45",
-								["action"] = "lava_lash",
-							}, -- [3]
-							{
-								["action"] = "rockbiter",
-								["enabled"] = true,
-							}, -- [4]
-							{
-								["action"] = "flametongue",
-								["enabled"] = true,
-							}, -- [5]
-						},
-						["buffs"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck25",
-								["action"] = "crash_lightning",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
-								["action"] = "rockbiter",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "! ticking & maelstrom >= 20",
-								["action"] = "fury_of_air",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.flametongue.up",
-								["action"] = "flametongue",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.hailstorm.enabled & ! buff.frostbrand.up & variable.furyCheck25",
-								["action"] = "frostbrand",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.flametongue.remains < 4.8 + gcd",
-								["action"] = "flametongue",
-							}, -- [6]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.hailstorm.enabled & buff.frostbrand.remains < 4.8 + gcd & variable.furyCheck25",
-								["action"] = "frostbrand",
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.resonance_totem.remains < 2",
-								["action"] = "totem_mastery",
-							}, -- [8]
-						},
-						["cds"] = {
-							{
-								["enabled"] = false,
-								["criteria"] = "target.health.pct < 25 || time > 0.500",
-								["action"] = "bloodlust",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "( talent.ascendance.enabled & buff.ascendance.up ) || ( talent.elemental_spirits.enabled & feral_spirit.remains > 5 ) || ( ! talent.ascendance.enabled & ! talent.elemental_spirits.enabled )",
-								["action"] = "berserking",
-							}, -- [2]
-							{
-								["enabled"] = true,
-								["criteria"] = "( talent.ascendance.enabled & ( buff.ascendance.up || cooldown.ascendance.remains > 50 ) ) || ( ! talent.ascendance.enabled & ( feral_spirit.remains > 5 || cooldown.feral_spirit.remains > 50 ) )",
-								["action"] = "blood_fury",
-							}, -- [3]
-							{
-								["enabled"] = true,
-								["criteria"] = "( talent.ascendance.enabled & ( buff.ascendance.up || cooldown.ascendance.remains > 50 ) ) || ( ! talent.ascendance.enabled & ( feral_spirit.remains > 5 || cooldown.feral_spirit.remains > 50 ) )",
-								["action"] = "fireblood",
-							}, -- [4]
-							{
-								["enabled"] = true,
-								["criteria"] = "( talent.ascendance.enabled & ( buff.ascendance.up || cooldown.ascendance.remains > 50 ) ) || ( ! talent.ascendance.enabled & ( feral_spirit.remains > 5 || cooldown.feral_spirit.remains > 50 ) )",
-								["action"] = "ancestral_call",
-							}, -- [5]
-							{
-								["enabled"] = true,
-								["criteria"] = "buff.ascendance.up || ! talent.ascendance.enabled & feral_spirit.remains > 5 || target.time_to_die <= 60",
-								["action"] = "potion",
-							}, -- [6]
-							{
-								["action"] = "feral_spirit",
-								["enabled"] = true,
-							}, -- [7]
-							{
-								["enabled"] = true,
-								["criteria"] = "cooldown.strike.remains > 0",
-								["action"] = "ascendance",
-							}, -- [8]
-							{
-								["action"] = "earth_elemental",
-								["enabled"] = true,
-							}, -- [9]
-						},
-						["asc"] = {
-							{
-								["enabled"] = true,
-								["criteria"] = "! buff.crash_lightning.up & active_enemies > 1 & variable.furyCheck25",
-								["action"] = "crash_lightning",
-							}, -- [1]
-							{
-								["enabled"] = true,
-								["criteria"] = "talent.landslide.enabled & ! buff.landslide.up & charges_fractional > 1.7",
-								["action"] = "rockbiter",
-							}, -- [2]
-							{
-								["action"] = "windstrike",
-								["enabled"] = true,
-							}, -- [3]
-						},
 					},
 					["version"] = 20180813.1824,
 					["warnings"] = "WARNING:  The import for 'core' required some automated changes.\nThe following auras were used in the action list but were not found in the addon database:\n - gathering_storms\n\nWARNING:  The import for 'default' required some automated changes.\nLine 8: Unsupported action 'auto_attack'.\n\nImported 8 action lists.\n",
@@ -6036,8 +6055,8 @@ HekiliDB = {
 							{
 								["moving"] = "1",
 								["enabled"] = true,
-								["criteria"] = "refreshable",
 								["action"] = "flame_shock",
+								["criteria"] = "refreshable",
 							}, -- [12]
 							{
 								["moving"] = "1",
@@ -6132,14 +6151,14 @@ HekiliDB = {
 							{
 								["moving"] = "1",
 								["enabled"] = true,
-								["criteria"] = "refreshable",
 								["action"] = "flame_shock",
+								["criteria"] = "refreshable",
 							}, -- [18]
 							{
 								["moving"] = "1",
 								["enabled"] = true,
-								["criteria"] = "movement.distance > 6",
 								["action"] = "flame_shock",
+								["criteria"] = "movement.distance > 6",
 							}, -- [19]
 							{
 								["moving"] = "1",
@@ -6240,17 +6259,17 @@ HekiliDB = {
 				},
 			},
 			["Toggle State: hold_t20_stacks"] = false,
-			["Class Option: save_for_aoe"] = false,
-			["Count Targets by Damage"] = true,
-			["Class Option: optimistic_overload"] = false,
-			["Nameplate Detection Range"] = 5,
 			["clashes"] = {
 				["windstrike"] = 0.25,
 			},
+			["Class Option: t20_stack_threshold"] = 12,
+			["Class Option: optimistic_overload"] = false,
+			["Nameplate Detection Range"] = 5,
+			["Class Option: save_for_aoe"] = false,
 			["Toggle State: save_earthen_spike"] = false,
 			["Class Option: allow_dw_desync"] = true,
 			["Class Option: forecast_fury"] = true,
-			["Class Option: t20_stack_threshold"] = 12,
+			["Count Targets by Damage"] = true,
 			["specs"] = {
 				[263] = {
 					["enabled"] = true,

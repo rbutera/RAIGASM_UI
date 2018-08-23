@@ -57,21 +57,21 @@ AdiBagsDB = {
 		},
 		["DataSource"] = {
 		},
-		["WoD"] = {
+		["BfA"] = {
 		},
 		["MoneyFrame"] = {
 		},
 		["ItemLevel"] = {
 		},
-		["ItemCategory"] = {
+		["TSMAuction"] = {
 		},
-		["Equipment"] = {
+		["AdiBags_TooltipInfo"] = {
 		},
 		["NewItem"] = {
 		},
 		["MoP"] = {
 		},
-		["AdiBags_TooltipInfo"] = {
+		["Equipment"] = {
 		},
 		["Legion"] = {
 		},
@@ -79,9 +79,9 @@ AdiBagsDB = {
 		},
 		["Cata"] = {
 		},
-		["TSMAuction"] = {
+		["ItemCategory"] = {
 		},
-		["BfA"] = {
+		["WoD"] = {
 		},
 		["Battle Pet Items"] = {
 		},

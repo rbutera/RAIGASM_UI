@@ -1,9 +1,9 @@
 Version: 1
 Frame: DugisArrowFrame
 FrameLevel: 1
-Anchor: BOTTOM
-X: -181
-Y: 160
+Anchor: CENTER
+X: 341
+Y: -284
 W: 80
 H: 60
 Frame: DugisOnOffButton
@@ -107,7 +107,7 @@ H: 420
 Frame: DugisGuideViewer_TargetFrame
 FrameLevel: 2
 Anchor: CENTER
-X: 31
+X: 30
 Y: 35
 W: 25
 H: 25

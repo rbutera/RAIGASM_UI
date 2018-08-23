@@ -15,8 +15,8 @@ FishingBuddy_Info = {
 			[152549] = 3,
 		},
 	},
-	["FishInfo2"] = 0,
 	["Version"] = 19500,
+	["FishInfo2"] = 0,
 	["KnownZones"] = {
 		[862] = "The Slough",
 	},

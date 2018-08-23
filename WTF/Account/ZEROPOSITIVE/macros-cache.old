@@ -11,7 +11,7 @@ VER 3 0000000000000016 "/yes" "1266177"
 END
 VER 3 000000000000002D "AAP_MACRO" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/use Void Disruptor
+/use Ranah's Watering Can
 END
 VER 3 0000000000000021 "Apologize" "237555"
 /apologize
