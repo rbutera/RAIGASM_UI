@@ -4,11 +4,11 @@ function Guide:Initialize()
 return [[
 
 N (aid:9101) |N|You need tier 3 Garrison to receive the quest. Upgrade your Garrison to tier 3.| |AID|9101|
-A Garrison Campaign: War Council |QID|38253| |N|Auto quest in {Lunarfall} after reaching tier 3 Garrison (39.27, 53.14)| |Z|579|
-T Garrison Campaign: War Council |QID|38253| |N|(npc:92219) in {Lunarfall} (31.96, 31.96)| |Z|579| |NPC|92219|
-A We Need a Shipwright |QID|38257| |N|(npc:92219) in {Lunarfall} (31.96, 31.96)| |Z|579| |NPC|92219|
+A Garrison Campaign: War Council |QID|38253| |N|Auto quest in {Lunarfall} after reaching tier 3 Garrison (39.27, 53.14)| |Z|582|
+T Garrison Campaign: War Council |QID|38253| |N|(npc:92219) in {Lunarfall} (31.96, 31.96)| |Z|582| |NPC|92219|
+A We Need a Shipwright |QID|38257| |N|(npc:92219) in {Lunarfall} (31.96, 31.96)| |Z|582| |NPC|92219|
 
-F Iron Docks |TID|38257| |N|Speak to (npc:81103) and request a flight to {Iron Docks} (48.04, 49.81)| |Z|579| |NPC|81103| |V|
+F Iron Docks |TID|38257| |N|Speak to (npc:81103) and request a flight to {Iron Docks} (48.04, 49.81)| |Z|582| |NPC|81103| |V|
 T We Need a Shipwright |QID|38257| |N|(npc:90180) in {Iron Docks} (52.57, 9.85)| |Z|543| |NPC|90180|
 A Derailment |QID|38254| |N|(npc:90180) in {Iron Docks} (52.57, 9.86)| |Z|543| |NPC|90180|
 N (item:122516) |QID|38254.2| |N|Collect (item:122516) from the ground in {Iron Docks} (51.43, 14.31)| |Z|543|
@@ -27,9 +27,9 @@ N (item:123867) |QID|38256.2| |N|Kill (npc:92191) and collect (item:123867) in {
 T Hook, Line, and... Sink Him! |QID|38256| |N|(npc:91242) in {Iron Docks} (50.61, 16.69)| |Z|543| |NPC|91242|
 A Nothing Remains |QID|38258| |N|(npc:91242) in {Iron Docks} (50.61, 16.69)| |Z|543| |NPC|91242|
 
-R Lunarfall |QID|38259| |N|Travel to {Lunarfall} (31.95, 31.97)| |Z|579| |NPC|92219|
-T Nothing Remains |QID|38258| |N|(npc:92219) in {Lunarfall} (31.95, 31.97)| |Z|579| |NPC|92219|
-A All Hands on Deck |QID|38259| |N|(npc:92219) in {Lunarfall} (31.95, 31.97)| |Z|579| |NPC|92219|
+R Lunarfall |QID|38259| |N|Travel to {Lunarfall} (31.95, 31.97)| |Z|582| |NPC|92219|
+T Nothing Remains |QID|38258| |N|(npc:92219) in {Lunarfall} (31.95, 31.97)| |Z|582| |NPC|92219|
+A All Hands on Deck |QID|38259| |N|(npc:92219) in {Lunarfall} (31.95, 31.97)| |Z|582| |NPC|92219|
 
 T All Hands on Deck |QID|38259| |N|(npc:91242) in {Lunarfall Shipyard} (27.58, 11.88)| |Z|539| |NPC|91242|
 A Let's Get To Work |QID|39082| |N|(npc:93822) in {Lunarfall Shipyard} (27.72, 11.44)| |Z|539| |NPC|93822|

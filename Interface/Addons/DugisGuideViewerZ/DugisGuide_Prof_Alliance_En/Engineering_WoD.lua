@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Prof_Alliance_En_Engineering_WoD")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Engineering 1-700", nil, "Alliance", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Engineering]], nil, 700) and UnitLevel([[player]])>=90|", function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Engineering 1-100", nil, "Alliance", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Engineering]], nil, 700) and UnitLevel([[player]])>=90|", function()
 return [[
 
 N Read First |N|This guide covers the the required quests and items need to level. <br/><br/>You must have a character level 90+ and Warlords of Draenor is required. <br/><br/>Leveling is available in Draenor from 1-700. <br/><br/>Tick this step.| |QID|36287|
@@ -44,7 +44,7 @@ N 625-700 (item:118008) |ENG| |N|Craft with; <br/><b>20 (item:111366)| |P|Engine
 N Guide Complete
 
 ]]
-end, {description = [[This guide covers how to level up the Engineering profession from 1-700]]})
+end, {description = [[This guide covers how to level up the Engineering profession from 1-100]]})
 	end
 	
 	function Guide:Unload()

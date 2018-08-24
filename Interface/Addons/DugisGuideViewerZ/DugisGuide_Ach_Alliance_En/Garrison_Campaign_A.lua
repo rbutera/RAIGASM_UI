@@ -5,20 +5,20 @@ return [[
 
 N Level 100 Required |N|You need to be at least level 100 before the quests will appear in your garrison| |PL|100| |AID|9491|
 N Accept Garrison Campaign Quest |N|Garrison Campaign quests appears weekly and there are 11 quest chains in total for you to complete to earn the achievement (aid:9491).<br/><br/>The order that you receive the quests is random each week and they are given by different NPCs or Objects in your Garrison.| |AID|9491|
-A Garrison Campaign: The Search for Owynn Graddock |QID|34284| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|579| |O| |AID|9491|
-A Garrison Campaign: Crows In The Field |QID|34409| |N|(npc:88112) (47.0,88.8) in {Lunarfall}| |NPC|88112| |Z|579| |O| |AID|9491|
-A Garrison Campaign: The Broken Precipice |QID|35985| |N|(npc:88892) (60.6,79.0) in {Lunarfall}| |NPC|88892| |Z|579| |O| |AID|9491|
-A Garrison Campaign: Darktide Roost |QID|35861| |N|(npc:81492) (38.0,37.6) (51.6,51.6) {Lunarfall}| |NPC|81492| |Z|579| |O| |AID|9491|
-A Garrison Campaign: The Exarch's Call |QID|36163| |N|(npc:82776) (33.8,33.8) in {Lunarfall}| |NPC|82776| |Z|579| |O| |AID|9491|
-A Garrison Campaign: The Fall of Shattrath |QID|35679| |N|(npc:83858) (37.6,36.8) (41.0,45.4) (47.8,56.0) (49.6,62.6) in {Lunarfall} He paths around your Garrison| |NPC|83858| |Z|579| |O| |AID|9491|
-A Garrison Campaign: Deep Recon |QID|35837| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|579| |O| |AID|9491|
-A Garrison Campaign: Seismic Matters |QID|34026| |N|(npc:77209) (32.0,31.4)| |NPC|77209| |Z|579| |O| |AID|9491|
-A Garrison Campaign: Awakening |QID|36134| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|579| |O| |AID|9491|
-A Garrison Campaign: The Ring of Blood |QID|36219| |N|Accept quest from Overly Gaudy Note found in {Lunarfall} (34.4,32.8)| |OBJ|234243| |Z|579| |O| |AID|9491|
-A Garrison Campaign: Every Rose Has Its Thorn |QID|36160| |N|(npc:77209) (32.0,31.4) in {Lunarfall}| |NPC|77209| |Z|579| |O| |AID|9491|
+A Garrison Campaign: The Search for Owynn Graddock |QID|34284| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|582| |O| |AID|9491|
+A Garrison Campaign: Crows In The Field |QID|34409| |N|(npc:88112) (47.0,88.8) in {Lunarfall}| |NPC|88112| |Z|582| |O| |AID|9491|
+A Garrison Campaign: The Broken Precipice |QID|35985| |N|(npc:88892) (60.6,79.0) in {Lunarfall}| |NPC|88892| |Z|582| |O| |AID|9491|
+A Garrison Campaign: Darktide Roost |QID|35861| |N|(npc:81492) (38.0,37.6) (51.6,51.6) {Lunarfall}| |NPC|81492| |Z|582| |O| |AID|9491|
+A Garrison Campaign: The Exarch's Call |QID|36163| |N|(npc:82776) (33.8,33.8) in {Lunarfall}| |NPC|82776| |Z|582| |O| |AID|9491|
+A Garrison Campaign: The Fall of Shattrath |QID|35679| |N|(npc:83858) (37.6,36.8) (41.0,45.4) (47.8,56.0) (49.6,62.6) in {Lunarfall} He paths around your Garrison| |NPC|83858| |Z|582| |O| |AID|9491|
+A Garrison Campaign: Deep Recon |QID|35837| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|582| |O| |AID|9491|
+A Garrison Campaign: Seismic Matters |QID|34026| |N|(npc:77209) (32.0,31.4)| |NPC|77209| |Z|582| |O| |AID|9491|
+A Garrison Campaign: Awakening |QID|36134| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|582| |O| |AID|9491|
+A Garrison Campaign: The Ring of Blood |QID|36219| |N|Accept quest from Overly Gaudy Note found in {Lunarfall} (34.4,32.8)| |OBJ|234243| |Z|582| |O| |AID|9491|
+A Garrison Campaign: Every Rose Has Its Thorn |QID|36160| |N|(npc:77209) (32.0,31.4) in {Lunarfall}| |NPC|77209| |Z|582| |O| |AID|9491|
 
 --Garrison Campaign: The Search for Owynn Graddock 
-R Stonefury Cliffs |QID|34284| |N|Speak to (npc:81103) (47.6,49.6) and fly to {Stonefury Cliffs}| |NPC|81103| |Z|579| |O| |AID|9491|
+R Stonefury Cliffs |QID|34284| |N|Speak to (npc:81103) (47.6,49.6) and fly to {Stonefury Cliffs}| |NPC|81103| |Z|582| |O| |AID|9491|
 T Garrison Campaign: The Search for Owynn Graddock |QID|34284| |N|(npc:78056) (48.8,14.6)| |NPC|78056| |Z|525| |O| |AID|9491|
 A Out of the Chains |QID|34281| |N|(npc:78056) (48.8,14.6)| |NPC|78056| |Z|525| |PRE|34284|
 K (npc:78174) |QID|34281.1| |N|Kill (npc:78174) (53.0,18.4) and loot (item:110116)| |NPC|78174| |L|110116| |Z|525| |PRE|34284|
@@ -72,8 +72,8 @@ T The Descent |QID|34338| |N|(npc:78187) (54.2,56.0)| |NPC|78187| |Z|543| |PRE|3
 T Heating Up |QID|34340| |N|(npc:74125) (54.2,56.0)| |NPC|74125| |Z|543| |PRE|34409|
 T Goren's Feast |QID|34339| |N|(npc:89179) (54.2,56.0)| |NPC|89179| |Z|543| |PRE|34409|
 A The Beating Heart |QID|34410| |N|(npc:78187) (54.2,56.0)| |NPC|78187| |Z|543| |PRE|34409|
-R Lunarfall |QID|34410| |N|Travel to {Lunarfall}(40.8,53.8)| |Z|579| |PRE|34409|
-T The Beating Heart |QID|34410| |N|(npc:88112) (47.0,88.8) in {Lunarfall}| |NPC|88112| |Z|579| |PRE|34409|
+R Lunarfall |QID|34410| |N|Travel to {Lunarfall}(40.8,53.8)| |Z|582| |PRE|34409|
+T The Beating Heart |QID|34410| |N|(npc:88112) (47.0,88.8) in {Lunarfall}| |NPC|88112| |Z|582| |PRE|34409|
 
 --Garrison Campaign: The Broken Precipice 
 T Garrison Campaign: The Broken Precipice |QID|35985| |N|(npc:83686) (39.6,24.6)| |NPC|83686| |Z|550| |O| |AID|9491|
@@ -94,8 +94,8 @@ A Brokyo Beatdown |QID|35973| |N|(npc:76508) (40.6, 13.0)| |NPC|76508| |Z|550| |
 K (npc:83655) |QID|35973| |N|Kill (npc:83655) (41.8,14.4) and collecyt (item:114121)| |NPC|83655| |Z|550| |PRE|35985|
 T Brokyo Beatdown |QID|35973| |N|(npc:76508) (40.6, 13.0)| |NPC|76508| |Z|550| |PRE|35985|
 A News for Nixxie |QID|37516| |N|(npc:76508) (40.6, 13.0)| |NPC|76508| |Z|550| |PRE|35985|
-R Lunarfall |QID|37516| |N|Travel to {Lunarfall} (60.6,79.0)| |Z|579| |PRE|35985|
-T News for Nixxie |QID|37516| |N|(npc:88892) in {Lunarfall} (60.6,79.0)| |NPC|88892| |Z|579| |PRE|35985|
+R Lunarfall |QID|37516| |N|Travel to {Lunarfall} (60.6,79.0)| |Z|582| |PRE|35985|
+T News for Nixxie |QID|37516| |N|(npc:88892) in {Lunarfall} (60.6,79.0)| |NPC|88892| |Z|582| |PRE|35985|
 
 -- Garrison Campaign: Darktide Roost
 R Darktide Roost |QID|35861| |N|Travel to {Darktide Roost} (59.2,82.2)| |Z|539| |O| |AID|9491|
@@ -169,16 +169,16 @@ N Find (npc:83534) |QID|35839.1| |N|Find (npc:83534) on a table (43.2,34.2)| |NP
 N Find (npc:83563) |QID|35839.3| |N|Find (npc:83563), look for it on the floor next to the center table in a hut (45.8,36.6)| |NPC|83563| |Z|550| |PRE|35837|
 K (npc:83049) |QID|35841| |N|Kill (npc:83049) (45.2,36.4)| |NPC|83049| |Z|550| |PRE|35837|
 C Intercepting the Orders |QID|35840| |N|Collect (item:113492), (item:113494), and (item:113493) dropped randomly from Mok'gol NPCs (43.4,35.2) (47.0,33.4) (42.6,41.4)| |Z|550| |PRE|35837|
-T Plans of War |QID|35839| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|579| |PRE|35837|
-T Intercepting the Orders |QID|35840| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|579| |PRE|35837|
-T Putting Down the Packleader |QID|35841| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|579| |PRE|35837|
+T Plans of War |QID|35839| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|582| |PRE|35837|
+T Intercepting the Orders |QID|35840| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|582| |PRE|35837|
+T Putting Down the Packleader |QID|35841| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|582| |PRE|35837|
 
 --Garrison Campaign: Seismic Matters
-T Garrison Campaign: Seismic Matters |QID|34026| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|579| |O| |AID|9491|
-A Groundbreaking Data |QID|34027| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|579| |PRE|34026|
-C Groundbreaking Data |QID|34027| |N|Use the (npc:77225) in your garrison (64.8,69.8)| |NPC|77225| |Z|579| |PRE|34026|
-T Groundbreaking Data |QID|34027| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|579| |PRE|34026|
-A These Look Familiar... |QID|34028| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|579| |PRE|34026|
+T Garrison Campaign: Seismic Matters |QID|34026| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|582| |O| |AID|9491|
+A Groundbreaking Data |QID|34027| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|582| |PRE|34026|
+C Groundbreaking Data |QID|34027| |N|Use the (npc:77225) in your garrison (64.8,69.8)| |NPC|77225| |Z|582| |PRE|34026|
+T Groundbreaking Data |QID|34027| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|582| |PRE|34026|
+A These Look Familiar... |QID|34028| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|582| |PRE|34026|
 
 R Gorgrond |QID|34028| |N|Travel to {Gorgrond} (69.6,26.0)| |Z|543| |PRE|34026|
 R Thaelin's Workshop |QID|34028| |N|Travel to {Thaelin's Workshop} (69.74, 23.73)| |Z|543| |PRE|34026| |O|
@@ -203,9 +203,9 @@ A And The Mole You Rode In On |QID|34033| |N|(npc:77161)| |NPC|77161| |Z|525| |P
 C And The Mole You Rode In On |QID|34033| |N|Bring (npc:77167) to (npc:77217) (86.4,48.8) and click on the Mole Machine| |NPC|77167,77217| |Z|525| |PRE|34026|
 
 R Lunarfall |TID|34033| |N|Use the Mole Machine to return back to {Lunarfall}| |Z|525| |PRE|34026|
-T And The Mole You Rode In On |QID|34033| |N|(npc:77167) (64.8,68.0)| |NPC|77167| |Z|579| |PRE|34026|
+T And The Mole You Rode In On |QID|34033| |N|(npc:77167) (64.8,68.0)| |NPC|77167| |Z|582| |PRE|34026|
 
---Garrison Campaign: Awakening |QID|36134| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|579| |O| |AID|9491|
+--Garrison Campaign: Awakening |QID|36134| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|582| |O| |AID|9491|
 R Gorgrond |QID|36134| |N|Travel to {Gorgrond} (41.0,43.0)| |Z|543| |O| |AID|9491|
 N Speak with (npc:84185) |QID|36134.1| |N|Speak with (npc:84185) (41.0,43.0)| |NPC|84185| |Z|543| |O| |AID|9491|
 K (npc:84153) |QID|36134.2| |N|Kill (npc:84153) (37.8,44.6)| |NPC|84153| |Z|543| |O| |AID|9491|
@@ -217,7 +217,7 @@ K (npc:85042) |QID|36341.2| |N|Kill (npc:85042) (69.0,03.4)| |NPC|85042| |Z|535|
 K (npc:85046) |QID|36341.3| |N|Kill (npc:85046) (69.6,05.8)| |NPC|85046| |Z|535| |PRE|36134|
 N Speak with (npc:84185) |QID|36341.4| |N|Meet with (npc:84185) (66.8,09.2)| |NPC|84185| |Z|535| |PRE|36134|
 N Follow (npc:84185) |QID|36341.5| |N|Follow (npc:84185) to Witness Grommash Hellscream's challenge (29.2,34.6)| |NPC|84185| |Z|535| |PRE|36134|
-T Primal Fury |QID|36341| |N|(npc:84268) (29.2,34.6) in {Lunarfall}| |NPC|84268| |Z|579| |PRE|36134|
+T Primal Fury |QID|36341| |N|(npc:84268) (29.2,34.6) in {Lunarfall}| |NPC|84268| |Z|582| |PRE|36134|
 
 --Garrison Campaign: The Ring of Blood
 T Garrison Campaign: The Ring of Blood |QID|36219| |N|(npc:84637) (63.0,36.0)| |NPC|84637| |Z|550| |O| |AID|9491|
@@ -233,19 +233,19 @@ N Speak with (npc:84637) |QID|36222.1| |N|Speak with (npc:84637) (56.8,13.0) to 
 C The Champion of Blood |QID|36222| |N|Kill (npc:84791) and (npc:84800) for the Blood Championship (56.15, 13.74)| |NPC|84791,84800| |Z|550| |PRE|36219|
 T The Champion of Blood |QID|36222| |N|(npc:84784) (56.8,13.0)| |NPC|84784| |Z|550| |PRE|36219|
 A Out of the Shadows |QID|36289| |N|(npc:84784) (56.8,13.0)| |NPC|84784| |Z|550| |PRE|36219|
-T Out of the Shadows |QID|36289| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|579| |PRE|36219|
+T Out of the Shadows |QID|36289| |N|(npc:81492) (38.0,37.6) in {Lunarfall}| |NPC|81492| |Z|582| |PRE|36219|
 
 --Garrison Campaign: Every Rose Has Its Thorn
-C Garrison Campaign: Every Rose Has Its Thorn |QID|36160| |N|Collect (item:114779) (57.9,57.5) in {Lunarfall}| |OBJ|233843| |Z|579| |O| |AID|9491|
-T Garrison Campaign: Every Rose Has Its Thorn |QID|36160| |N|(npc:77209) (32.0,31.4) in {Lunarfall}| |NPC|77209| |Z|579| |O| |AID|9491|
-A Where There Is Smoke... |QID|36161| |N|(npc:84684) (29.6,34.4) in {Lunarfall}| |NPC|84684| |Z|579| |PRE|36160|
-K (npc:84352) |QID|36161.1| |N|Kill (npc:84352) (57.8,51.8) in {Lunarfall}| |NPC|84352| |Z|579| |PRE|36160|
-K (npc:84354) |QID|36161.2| |N|Kill (npc:84354) (47.8,67.8) in {Lunarfall}| |NPC|84354| |Z|579| |PRE|36160|
-K (npc:84355) |QID|36161.3| |N|Kill (npc:84355) (58.4,80.6) in {Lunarfall}| |NPC|84355| |Z|579| |PRE|36160|
-T Where There Is Smoke... |QID|36161| |N|(npc:84684) (29.6,34.4) in {Lunarfall}| |NPC|84684| |Z|579| |PRE|36160|
-A A Stolen Heart |QID|36162| |N|(npc:84684) (29.6,34.4) in {Lunarfall}| |NPC|84684| |Z|579| |PRE|36160|
-K (npc:84356) |QID|36162| |N|Kill (npc:84356) (42.4,51.6) in {Lunarfall}| |NPC|84356| |Z|579| |PRE|36160|
-T A Stolen Heart |QID|36162| |N|(npc:84684) (29.6,34.4) in {Lunarfall}| |NPC|84684| |Z|579| |PRE|36160|
+C Garrison Campaign: Every Rose Has Its Thorn |QID|36160| |N|Collect (item:114779) (57.9,57.5) in {Lunarfall}| |OBJ|233843| |Z|582| |O| |AID|9491|
+T Garrison Campaign: Every Rose Has Its Thorn |QID|36160| |N|(npc:77209) (32.0,31.4) in {Lunarfall}| |NPC|77209| |Z|582| |O| |AID|9491|
+A Where There Is Smoke... |QID|36161| |N|(npc:84684) (29.6,34.4) in {Lunarfall}| |NPC|84684| |Z|582| |PRE|36160|
+K (npc:84352) |QID|36161.1| |N|Kill (npc:84352) (57.8,51.8) in {Lunarfall}| |NPC|84352| |Z|582| |PRE|36160|
+K (npc:84354) |QID|36161.2| |N|Kill (npc:84354) (47.8,67.8) in {Lunarfall}| |NPC|84354| |Z|582| |PRE|36160|
+K (npc:84355) |QID|36161.3| |N|Kill (npc:84355) (58.4,80.6) in {Lunarfall}| |NPC|84355| |Z|582| |PRE|36160|
+T Where There Is Smoke... |QID|36161| |N|(npc:84684) (29.6,34.4) in {Lunarfall}| |NPC|84684| |Z|582| |PRE|36160|
+A A Stolen Heart |QID|36162| |N|(npc:84684) (29.6,34.4) in {Lunarfall}| |NPC|84684| |Z|582| |PRE|36160|
+K (npc:84356) |QID|36162| |N|Kill (npc:84356) (42.4,51.6) in {Lunarfall}| |NPC|84356| |Z|582| |PRE|36160|
+T A Stolen Heart |QID|36162| |N|(npc:84684) (29.6,34.4) in {Lunarfall}| |NPC|84684| |Z|582| |PRE|36160|
 
 --Garrison Campaign: The Sargerei
 R Shadowmoon Valley |QID|35185| |N|Travel to {Shadowmoon Valley} (43.6,77.2)| |Z|539| |O| |AID|9491|
@@ -282,8 +282,8 @@ C Socrethar's Fury |QID|35195| |N|Confront (npc:82662), listen to the dialogue, 
 T Socrethar's Fury |QID|35195| |N|(npc:81530) (50.6,82.2)| |NPC|81530| |Z|539| |PRE|35185|
 A Forging Ahead |QID|35196| |N|(npc:81530) (50.6,82.2)| |NPC|81530| |Z|539| |PRE|35185|
 
-R Lunarfall |QID|35196| |N|Travel to your Garrison in {Lunarfall} (43.8,47.4)| |Z|579| |PRE|35185|
-T Forging Ahead |QID|35196| |N|(npc:83858) (37.6,36.8) (41.0,45.4) (47.8,56.0) (49.6,62.6) in {Lunarfall} He paths around your Garrison| |NPC|83858| |Z|579| |PRE|35185|
+R Lunarfall |QID|35196| |N|Travel to your Garrison in {Lunarfall} (43.8,47.4)| |Z|582| |PRE|35185|
+T Forging Ahead |QID|35196| |N|(npc:83858) (37.6,36.8) (41.0,45.4) (47.8,56.0) (49.6,62.6) in {Lunarfall} He paths around your Garrison| |NPC|83858| |Z|582| |PRE|35185|
 
 N Guide Complete
 

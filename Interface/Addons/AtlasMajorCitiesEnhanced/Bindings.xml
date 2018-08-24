@@ -1,5 +1,5 @@
-<!--
 <Bindings>
+<!--
 	<Binding name="AMC_ZONE" header="AMC_TITLE">
 		AtlasMajorCities_SetZone();
 	</Binding>
@@ -27,5 +27,5 @@
 	<Binding name="AMC_TOOLTIP2">
 		AtlasMajorCities_GetTooltip2();
 	</Binding>
-</Bindings>
 -->
+</Bindings>

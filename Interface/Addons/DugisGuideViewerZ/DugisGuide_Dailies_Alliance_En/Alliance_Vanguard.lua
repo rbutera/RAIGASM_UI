@@ -41,6 +41,7 @@ A I've Got a Flying Machine! |N|(npc:24399) (30.8, 28.6)| |QID|11390| |NPC|24399
 C I've Got a Flying Machine! |QID|11390| |N|Make sure you get in the right plane (there are two...one with weapons and one with a grappling hook). Then before you go off into the mining pit turn around and make sure the plane flys (some do not fly). Then fly into the pit, get close to the large bag and use the Grappling Hook to get the bag. You can only carry 1 bag at a time| |NPC|24439| |Z|117|
 T I've Got a Flying Machine! |N|(npc:24399) (30.8, 28.6)| |QID|11390| |NPC|24399| |Z|117|
 A Steel Gate Patrol |N|(npc:24399) (30.8, 28.6)| |QID|11391| |D| |NPC|24399| |Z|117|
+N (npc:24418) |QID|11391| |N|Mount the (npc:24418) (30.6, 24.6) at the {Steel Gate}| |NPC|24418| |V|
 C Steel Gate Patrol |N|Use the Flying machine to kill 8 Gargoyles at the dig site area (31.1, 26.4)| |QID|11391| |D| |NPC|24440| |Z|117|
 T Steel Gate Patrol |N|(npc:24399) (30.8, 28.6)| |QID|11391| |D| |NPC|24399| |Z|117|
 

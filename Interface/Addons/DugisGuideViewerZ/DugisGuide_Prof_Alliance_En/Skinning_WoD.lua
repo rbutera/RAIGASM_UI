@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Prof_Alliance_En_Skinning_WoD")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Skinning 1-700", nil, "Alliance", nil, "P", nil, function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Skinning 1-100", nil, "Alliance", nil, "P", nil, function()
 return [[
 
 N Read First |N|You must have a character level 90+ and Warlords of Draenor is required. <br/><br/>Leveling is available in Draenor from 1-700. <br/><br/>Tick this step.|
@@ -17,7 +17,7 @@ N (item:110609) |SK| |N|These are skinned from most beasts (46.5,57.2)(40.5,53.9
 N Guide Complete
 
 ]]
-end, {description = [[This guide covers how to level up the Skinning profession from 1-700]]})	
+end, {description = [[This guide covers how to level up the Skinning profession from 1-100]]})	
 	end
 	function Guide:Unload()
 	end

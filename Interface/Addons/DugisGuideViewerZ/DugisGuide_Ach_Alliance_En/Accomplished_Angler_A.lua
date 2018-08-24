@@ -185,7 +185,7 @@ N (item:41810)|FIS| |LOOP| |N|Fished in inland pools in {Howling Fjord}. (33.7, 
 
 N (aid:1561) |FIS| |LOOP| |N|Keep fishing anywhere until you have caught (aid:1561)!| |AID|1516| |AC|13|
 
-N (aid:130) |N|Switch to the (guide:"Warlords Fishing 1-700") guide and obtain Grand Master in fishing.| |AID|1516| |AC|1|
+N (aid:130) |N|Switch to the (guide:"Warlords Fishing 1-100") guide and obtain Grand Master in fishing.| |AID|1516| |AC|1|
 
 N (aid:306) |N|You will need to place 1st, 2nd, or 3rd in the {Booty Bay} fishing contest (Sundays).| |AID|1516| |AC|5|
 

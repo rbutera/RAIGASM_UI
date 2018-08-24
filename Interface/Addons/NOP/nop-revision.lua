@@ -1,4 +1,15 @@
 -- Revisions:
+--[[<p>09.14 24.08.2018</p>
+<p><ul>
+<li>Fix was incorrect place, moved into tooltip match by line number.</li>
+<li>Validated reason for misformated tooltip is definetely way how wow client load items into cache. Wrong patter detection happens only on 1st login when fresh wow client is started.</li>
+</ul><hr></p>
+]]
+--[[<p>09.12 23.08.2018</p>
+<p><ul>
+<li>Still having problem with misformated tooltips adding quick bandaid for "Requires Level 100" detection.</li>
+</ul><hr></p>
+]]
 --[[<p>09.10 14.08.2018</p>
 <p><ul>
 <li>Items with spells were erased after spec switch.</li>

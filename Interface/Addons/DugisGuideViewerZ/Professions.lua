@@ -5,84 +5,47 @@ local _
 
 local Professions = DGV:RegisterModule("Professions")
 
--- Arrays containing professions known by the character and their skill levels
-local CollectedSkillsInfo = {}
-
 local scanningInProgress = false
-local scanningSkillIndex = 1
 --Contains information if TradeSkillFrame was opened before scanning has begun
 local wasTradeSkillFrameOpened = false
 
-local scanningCounter = nil
-local scanningCounterTimer = nil
-local mainScanningTicker = nil
-local firstScan = true
-
-function DugisGuideViewer.StartScanning()
-    if firstScan then
-        --10 seconds delay when first scan after game load
-        --On the game load a lot of things are happening so let's avoid extra calculations.
-        scanningCounter = 10
-        firstScan = false
-    else
-        --2 seconds delay when skills have been updated while playing 
-        scanningCounter = 2
-    end
-    
-    if scanningCounterTimer then
-        scanningCounterTimer:Cancel()
-    end
-    
-    scanningCounterTimer = C_Timer.NewTicker(1, function()
-        if scanningCounter ~= nil then
-            scanningCounter = scanningCounter - 1
-            
-            if scanningCounter <= 0 then
-                scanningCounter = nil
-                scanningCounterTimer:Cancel()
-                scanningCounterTimer = nil
-                
-                if not DugisGuideViewer:isValidGuide(DugisGuideViewer.CurrentTitle) then
-                    return
-                end                
-                
-                if scanningInProgress then
-                    return
-                end
-                
-                if TradeSkillFrame and TradeSkillFrame:IsShown() then
-                    return
-                end
-            
-                scanningInProgress = true
-                Professions:StartScanningTicker()
-                scanningSkillIndex = 1
-                wasTradeSkillFrameOpened = TradeSkillFrame and TradeSkillFrame:IsShown()
-            end
-        end
-    end)
-    
-end
-
-local mainTradeSkillsKeys = {
-    171, -- Alchemy
-    164, -- Blacksmithing
-    333, -- Enchanting
-    202, -- Engineering
-    773, -- Inscription
-    755, -- Jewelcrafting
-    165, -- Leatherworking
-    197, -- Tailoring
-    182, -- Herbalism
-    186, -- Mining
-    393, -- Skinning
-    794, -- Archaeology
-    185, -- Cooking
-    356, -- Fishing
-    762, -- Riding
+local subCategory2Profession = {
+    --Last update on: 2018-08-15
+    --Alchemy 
+    [592] = 171, [433] = 171, [332] = 171, [596] = 171, [598] = 171, [600] = 171, [602] = 171, [604] = 171, 
+    --Blacksmithing
+    [542] = 164, [424] = 164, [426] = 164, [389] = 164, [553] = 164, [569] = 164, [577] = 164, [584] = 164, [590] = 164, 
+    --Enchanting
+    [399] = 333, [404] = 333, [647] = 333, [443] = 333, [348] = 333, [656] = 333, [661] = 333, [663] = 333, [665] = 333, [667] = 333, 
+    --Engineering
+    [709] = 202, [469] = 202, [347] = 202, [713] = 202, [715] = 202, [717] = 202, [719] = 202, [419] = 202, 
+    --Inscription
+    [403] = 773, [759] = 773, [450] = 773, [410] = 773, [763] = 773, [765] = 773, [767] = 773, [769] = 773, [415] = 773, 
+    --Jewelcrafting
+    [536] = 755, [805] = 755, [464] = 755, [373] = 755, [809] = 755, [811] = 755, [813] = 755, [815] = 755, [372] = 755, 
+    --Leatherworking
+    [468] = 165, [871] = 165, [460] = 165, [380] = 165, [876] = 165, [878] = 165, [880] = 165, [882] = 165, [379] = 165, 
+    --Tailoring
+    [432] = 197, [942] = 197, [430] = 197, [369] = 197, [950] = 197, [952] = 197, [954] = 197, [956] = 197, [362] = 197, 
+    --Herbalism
+    [1029] = 182, [456] = 182, [1036] = 182, [1038] = 182, [1040] = 182, [1042] = 182, [1044] = 182, 
+    --Mining
+    [1065] = 186, [425] = 186, [1070] = 186, [1072] = 186, [1074] = 186, [1076] = 186, [1078] = 186, 
+    --Skinning
+    [1046] = 393, [459] = 393, [1060] = 393,
+    --Cooking
+    [1118] = 185, [475] = 185, [342] = 185, [1113] = 185, [90] = 185, [75] = 185, [74] = 185, [73] = 185, [72] = 185
 }
 
+local function getMainCategory(id)
+    return subCategory2Profession[id] or id
+end
+
 function Professions:Initialize()
+    -- Arrays containing professions known by the character and their skill levels
+    if not DugisGuideUser.CollectedSkillsInfo then
+        DugisGuideUser.CollectedSkillsInfo = {}
+    end
 	
 	function DugisGuideViewer:ProfessionCompletedAtGuideIndex(guideindx)
 		local profID, proflvl, optionalprofID, optionalproflvl
@@ -97,186 +60,155 @@ function Professions:Initialize()
 			end
 		end
 	end
+    
+	function DGV:GetFirstPFromCurrentGuide()
+        local guidesize = DGV:GetLastGuideNumRows()
+        for i=1, guidesize do
+            local profID, proflvl = self:ReturnTag("P", i) 
+            if profID then
+                return profID
+            end
+        end
+	end
 
 	--Input: Profession profID
 	--Returns: Level of profession or nil if no profession by that profID
 	function DGV:GetProfessionLevel(profID)
-		if CollectedSkillsInfo[profID] then
-			return CollectedSkillsInfo[profID].level
+		if DugisGuideUser.CollectedSkillsInfo[profID] then
+			return DugisGuideUser.CollectedSkillsInfo[profID].level
 		end
 	end
 
 	--Input: Profession profID
 	--Returns: true or false if they have that profession
 	function DGV:HasProfession(profID)
-		if CollectedSkillsInfo[profID] then
-			return CollectedSkillsInfo[profID]
+		if DugisGuideUser.CollectedSkillsInfo[profID] then
+			return DugisGuideUser.CollectedSkillsInfo[profID]
 		end
 	end
 
 	function DGV:PrintAllCollectedProfessions()
-		LuaUtils:foreach(CollectedSkillsInfo, function(v, id) 
+		LuaUtils:foreach(DugisGuideUser.CollectedSkillsInfo, function(v, id) 
             print("Id:", id, v.name, "Level:", v.level, "/", v.max) 
         end)
 	end        
-        
-    function Professions:StartScanningTicker()   
-        if mainScanningTicker then
-            mainScanningTicker:Cancel()
-        end
-        mainScanningTicker = C_Timer.NewTicker(0.1, function()
-        if scanningInProgress then
-        
-            if scanningSkillIndex == 1 then
-                CollectedSkillsInfo = {}
+    
+    local function Scan()
+       LuaUtils:foreach({C_TradeSkillUI.GetCategories()}, function(categoryID, k)
+            local skillInfo = C_TradeSkillUI.GetCategoryInfo(categoryID)
+           
+            if skillInfo then
+                local info = {}
+                info.level = skillInfo.skillLineCurrentLevel
+                info.max = skillInfo.skillLineMaxLevel
+                info.name = skillInfo.name
+                
+                DugisGuideUser.CollectedSkillsInfo[categoryID] = info
             end
-        
-            if scanningSkillIndex <= #mainTradeSkillsKeys then
-                local key = mainTradeSkillsKeys[scanningSkillIndex]
-                C_TradeSkillUI.OpenTradeSkill(key)
-                
-                if not wasTradeSkillFrameOpened then
-                    if TradeSkillFrame then
-                        TradeSkillFrame:SetAlpha(0)
-                    end
-                end
-                
-                scanningSkillIndex = scanningSkillIndex + 1
-            else
-                --Scanning finished
-                scanningInProgress = false
-                scanningSkillIndex = 1
-                
-                if mainScanningTicker then
-                    mainScanningTicker:Cancel()
-                end
-                mainScanningTicker = nil
-                
-                if TradeSkillFrame then
-                    TradeSkillFrame:SetAlpha(1)
-                end
-                
-                C_TradeSkillUI.CloseTradeSkill()
-                scanningCounter = nil
-            end
-        end
         end)
+    
+        --Updating main skills
+        if DugisGuideViewer:isValidGuide(CurrentTitle) == true then
+            if DugisGuideViewer.gtype[CurrentTitle] ~= "L" or DugisGuideViewer.gtype[CurrentTitle] ~= "I" then 
+                LuaUtils:foreach({ GetProfessions()}, function(val)
+                    local name, _, skillLineCurrentLevel, skillLineMaxLevel, _, _, categoryID = GetProfessionInfo(val)
+                    DugisGuideUser.CollectedSkillsInfo[categoryID] = {level = skillLineCurrentLevel, max = skillLineMaxLevel, name = name}
+                end)
+            end
+        end
+        
+        --Updating quest completeness
+        local guidesize = DGV:GetLastGuideNumRows()
+        
+        for i=1, guidesize do
+            if DGV:ProfessionCompletedAtGuideIndex(i) and (DGV:GetQuestState(i) ~= "C") then 
+                DGV:SetChkToComplete(i) 
+                if i == DugisGuideUser.CurrentQuestIndex then DGV:MoveToNextQuest() end
+            end
+        end
     end
 
 	function Professions:Load()
+        --Preventing showing BagnonFrameinventory during professions scanning (prevented for about 2 seconds)
+        if BagnonFrameinventory and not BagnonFrameinventory.Show_org then
+            BagnonFrameinventory.Show_org = BagnonFrameinventory.Show
+            BagnonFrameinventory.Show = function()  
+                if scanningInProgress then
+                    return
+                end
+                
+                BagnonFrameinventory:Show_org()
+            end
+        end
+    
         function DGV:OnTradeSkillFrameHide()
             if scanningInProgress then
                 TradeSkillFrame:SetAlpha(0)
             end
         end
     
-		--Called from TRADE_SKILL_UPDATE event
 		function DGV:UpdateProfessions()
-            --Updating sub skills
-            LuaUtils:foreach({C_TradeSkillUI.GetCategories()}, function(categoryID, k)
-                local skillInfo = C_TradeSkillUI.GetCategoryInfo(categoryID)
-               
-                if skillInfo then
-                    local info = {}
-                    info.level = skillInfo.skillLineCurrentLevel
-                    info.max = skillInfo.skillLineMaxLevel
-                    info.name = skillInfo.name
-                    
-                    CollectedSkillsInfo[categoryID] = info
-                end
-            end)
+          local currentGuideProfessionId = DGV:GetFirstPFromCurrentGuide()
         
-            --Updating main skills
-			if DugisGuideViewer:isValidGuide(CurrentTitle) == true then
-				if DugisGuideViewer.gtype[CurrentTitle] ~= "L" or DugisGuideViewer.gtype[CurrentTitle] ~= "I" then 
-					LuaUtils:foreach({ GetProfessions()}, function(val)
-						local name, _, skillLineCurrentLevel, skillLineMaxLevel, _, _, categoryID = GetProfessionInfo(val)
-                        CollectedSkillsInfo[categoryID] = {level = skillLineCurrentLevel, max = skillLineMaxLevel, name = name}
-					end)
-				end
-			end
-            
-            --Updating quest completeness
-            local guidesize = DGV:GetLastGuideNumRows()
-            
-            for i=1, guidesize do
-                if self:ProfessionCompletedAtGuideIndex(i) and (DGV:GetQuestState(i) ~= "C") then 
-                    self:SetChkToComplete(i) 
-                    if i == DugisGuideUser.CurrentQuestIndex then self:MoveToNextQuest() end
+          if currentGuideProfessionId then
+            if C_TradeSkillUI.GetCategoryInfo(currentGuideProfessionId) then
+                Scan()
+            else
+        
+                scanningInProgress = true
+                wasTradeSkillFrameOpened = TradeSkillFrame and TradeSkillFrame:IsShown()
+                
+                local mainProfessionId = getMainCategory(currentGuideProfessionId)
+                if not TSMAPI then
+                    C_TradeSkillUI.OpenTradeSkill(mainProfessionId)
                 end
+                
+                if not wasTradeSkillFrameOpened then
+                    if TradeSkillFrame then
+                        TradeSkillFrame:SetAlpha(0)
+                    end
+                end
+            
+                LuaUtils:Delay(2, function()
+                    if not TSMAPI then
+                        C_TradeSkillUI.CloseTradeSkill()
+                    end
+                
+                    if TradeSkillFrame then
+                        TradeSkillFrame:SetAlpha(1)
+                    end
+                
+                    Scan()
+                    scanningInProgress = false
+                end)
             end
+          end
 		end
         
-        function DGV:OnSkillChanged()
+        function DGV:TriggerProfessionsUpdate()
             if DugisGuideViewer.UpdateProfessions then  
                 DugisGuideViewer:UpdateProfessions()
             end
-            
-            if not scanningInProgress then
-                DugisGuideViewer.StartScanning()
-            end
         end
         
+        hooksecurefunc("CloseTrainer",function()
+            DGV:TriggerProfessionsUpdate()
+        end)  
+        
+        hooksecurefunc("AbandonSkill",function()
+            DugisGuideUser.CollectedSkillsInfo = {}
+            LuaUtils:Delay(2, function() 
+                DGV:TriggerProfessionsUpdate()
+            end)
+        end)
+        
+        LuaUtils:Delay(5, function()
+            if DugisGuideViewer:isValidGuide(DugisGuideViewer.CurrentTitle) and LuaUtils:isTableEmpty(DugisGuideUser.CollectedSkillsInfo) then
+                DGV:TriggerProfessionsUpdate()
+            end  
+        end)
 	end
 	
 	function Professions:Unload()
 	end
 end
---[[
-function DGV:ScanTradeSkills()
-	local tradeItemCount, tradeItemName, tradeItemType, tradeItemLink, producedItemCount
-	local tradeItemTool, reagentCount, tradeItemRecipeLink
-	local reagentName, singleReagentCount, reagentItemLink, currentTradeSkillLevel, tradeSkillName
-	local i, j
-
-	playerName = UnitName("player")	
-
-	tradeItemCount = GetNumTradeSkills()
-	tradeSkillName, currentTradeSkillLevel, _ = GetTradeSkillLine()
-
-	for i = 1, tradeItemCount do
-		tradeItemName, tradeItemType, _, _ = GetTradeSkillInfo(i)
-		_, producedItemCount = GetTradeSkillNumMade(i)
-		
-		-- Scan recipe
-		if tradeItemType ~= "header" then
-			tradeItemLink = GetTradeSkillItemLink(i)
-			tradeItemTool = GetTradeSkillTools(i)
-			reagentCount = GetTradeSkillNumReagents(i)
-			tradeItemRecipeLink = GetTradeSkillRecipeLink(i)
-		end	
-		if (tradeItemType and tradeItemName) then
-			if tradeItemType ~= "header" then
-			DebugPrint("tradeItemName="..tradeItemName)
-				if tradeItemLink and (reagentCount ~= nil) and tradeItemRecipeLink then		
-						if (self:CheckReagents(i, reagentCount)) then
-							-- Add reagents
-							for j = 1, reagentCount do
-								reagentName, _, singleReagentCount, _ = GetTradeSkillReagentInfo(i, j)
-								reagentItemLink = GetTradeSkillReagentItemLink(i, j)							
-								DebugPrint("reagentName="..reagentName)
-							end
-						end
-				end
-			end
-		end
-	end
-
-end
-
-function DGV:CheckReagents(recipeID, reagentCount)
-	local singleReagentCount, reagentName, reagentItemLink, i
-	
-	for j = 1, reagentCount do
-		reagentName, _, singleReagentCount, _ = GetTradeSkillReagentInfo(recipeID, j)
-		reagentItemLink = GetTradeSkillReagentItemLink(recipeID, j)
-		if reagentName == nil  or singleReagentCount == nil or reagentItemLink == nil then
-			return false
-		end
-	end
-	return true
-end
-
---]]
-
-

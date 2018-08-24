@@ -25,11 +25,7 @@ LookingForGroup_Options:push("sf",{
 			order = get_order(),
 			set = function(_,val)
 				if val == "" then
-					if GetCurrentRegion() == 5 then
-						LookingForGroup.db.profile.spam_filter_maxlength = false
-					else
-						LookingForGroup.db.profile.spam_filter_maxlength = nil
-					end
+					LookingForGroup.db.profile.spam_filter_maxlength = false
 				else
 					LookingForGroup.db.profile.spam_filter_maxlength = tonumber(val)
 				end
@@ -442,7 +438,7 @@ LookingForGroup_Options:push("sf",{
 				}
 			}
 		},
-		levenshtein =
+--[[		levenshtein =
 		{
 			name = L["Levenshtein Distance"],
 			desc = L.levenshtein_desc,
@@ -513,7 +509,7 @@ LookingForGroup_Options:push("sf",{
 					step = 1,
 				}
 			}
-		},
+		},]]
 		advanced =
 		{
 			name = ADVANCED_LABEL,
@@ -702,11 +698,11 @@ LookingForGroup_Options.RegisterSimpleFilter("spam",function(groupid,profile,max
 	local id, activityID, name, comment, voiceChat, iLvl, honorLevel,
 		age, numBNetFriends, numCharFriends, numGuildMates,
 		isDelisted, leaderName, numMembers, autoaccept = C_LFGList.GetSearchResultInfo(groupid)
-	if maxlength < strlenutf8(name) then
+	if maxlength < LookingForGroup.length(name) then
 		return 4
-	elseif maxlength < strlenutf8(comment) then
+	elseif maxlength < LookingForGroup.length(comment) then
 		return 8
-	elseif maxlength < strlenutf8(voiceChat) then	
+	elseif maxlength < LookingForGroup.length(voiceChat) then	
 		return 16
 	end
 end,function(profile)
@@ -717,7 +713,6 @@ end,function(profile)
 		end
 	end
 end)
-
 
 
 local function issubstr(s,substr)
@@ -771,55 +766,6 @@ LookingForGroup_Options.RegisterSimpleFilter("find",function(resultID,profile)
 	return 8
 end)
 
-LookingForGroup_Options.RegisterSimpleFilter("find",function(resultID,profile,keywords)
-	local id, activityID, name, comment, voiceChat, iLvl, honorLevel,
-			age, numBNetFriends, numCharFriends, numGuildMates,
-			isDelisted, leaderName, numMembers = C_LFGList.GetSearchResultInfo(resultID)
-	name = name:lower()
-	comment = comment:lower()
-	voiceChat = voiceChat:lower()
-	for i=1,#keywords do
-		local k = keywords[i]
-		if issubstr(name,k) or issubstr(comment,k) or issubstr(voiceChat,k) then
-			return 0
-		end
-	end
-	return 1
-end,function(profile)
-	local a = profile.a
-	local keywords = a.keywords
-	if keywords and next(keywords) then
-		local category = a.category
-		if categry == 1 then
-			if 3 < #keywords then
-				return keywords
-			end
-		elseif 1 < #keywords then
-			return keywords
-		end
-	end
-end)
-
-LookingForGroup_Options.RegisterSimpleFilter("spam",function(groupid,profile,filters)
-	local id, activityID, name, comment, voiceChat = C_LFGList.GetSearchResultInfo(groupid)
-	name = name:gsub(" ",""):lower()
-	comment = comment:gsub(" ",""):lower()
-	voiceChat = voiceChat:gsub(" ",""):lower()
-	local string_find = string.find
-	for i=1,#filters do
-		local ele = filters[i]
-		if string_find(name,ele) then
-			return 4
-		elseif string_find(comment,ele) then
-			return 8
-		elseif string_find(voiceChat,ele) then
-			return 16
-		end
-	end
-end,function(profile)
-	return LookingForGroup.db.profile.spam_filter_keywords
-end)
-
 LookingForGroup_Options.RegisterSimpleFilter("spam",function(groupid)
 	local id, activityID, name, comment, voiceChat, iLvl, honorLevel,
 		age, numBNetFriends, numCharFriends, numGuildMates,
@@ -858,193 +804,6 @@ end,function(profile)
 		return 1
 	end
 end)]]
-
-local dynamic_programming_array = {}
-
-local function levenshtein_distance(s1,s2)
-	wipe(dynamic_programming_array)
-	local n1=s1:len()
-	local n2=s2:len()
-	if n1 == 0 or n2 == 0 then
-		return 0,max(n1,n2)
-	end
-	for i=1,n2*2 do
-		dynamic_programming_array[i] = 0
-	end
-	local band = bit.band
-	local sbyte = string.byte
-	for i=1,n1 do
-		local curr = band(i,1)*n2
-		local last = band(i+1,1)*n2
-		do
-			local p = i
-			local q = dynamic_programming_array[last+1]
-			if q < p then
-				p = q
-			end
-			p = p + 1
-			local m = 0
-			if sbyte(s1,i) ~= sbyte(s2,1) then
-				m = m + 1
-			end
-			if m < p then
-				dynamic_programming_array[curr+1] = m
-			else
-				dynamic_programming_array[curr+1] = p
-			end
-		end
-		for j=2,n2 do
-			local p = dynamic_programming_array[curr+j-1]
-			local q = dynamic_programming_array[last+j]
-			if q < p then
-				p = q
-			end
-			p = p + 1
-			local m = dynamic_programming_array[last+j-1]
-			if sbyte(s1,i) ~= sbyte(s2,j) then
-				m = m + 1
-			end
-			if m < p then
-				dynamic_programming_array[curr+j] = m
-			else
-				dynamic_programming_array[curr+j] = p
-			end
-		end
-	end
-	return dynamic_programming_array[(band(n1,1)+1)*n2],max(n1,n2)
-end
-
-LookingForGroup_Options.RegisterSimpleFilter("spam",function(groupid)
-	local id, activityID, name, comment, voiceChat, iLvl, honorLevel,
-		age, numBNetFriends, numCharFriends, numGuildMates,
-		isDelisted, leaderName, numMembers, autoaccept = C_LFGList.GetSearchResultInfo(groupid)
-	if iLvl == 0 then
-		return 0
-	end
-	local fullName, shortName, categoryID, groupID, itemLevel, lfgfilter, minLevel, maxPlayers, displayType, activityOrder = C_LFGList.GetActivityInfo(activityID)
-	if itemLevel <= iLvl then
-		return 0
-	end
-	return 8
-end,function(profile)
-	return not profile.spam_filter_ilvl
-end)
-
-LookingForGroup_Options.RegisterSimpleFilter("spam",function(groupid,profile,digits)
-	local id, activityID, name, comment, voiceChat, iLvl, honorLevel,
-		age, numBNetFriends, numCharFriends, numGuildMates,
-		isDelisted, leaderName, numMembers, autoaccept = C_LFGList.GetSearchResultInfo(groupid)
-	local t = 0
-	for number in string.gmatch(name, "%d+") do
-		t = t + 1
-	end
-	if digits < t then
-		return 4
-	end
-	t = 0
-	for number in string.gmatch(comment, "%d+") do
-		t = t + 1
-	end
-	if digits < t then
-		return 8
-	end
-end,function(profile)
-	return LookingForGroup.db.profile.spam_filter_digits
-end)
-
-local results_tb = {}
-local tb = {}
-local temp_keywords,hash_temp_keywords = {},{}
-
-LookingForGroup_Options.RegisterFilter("spam",function(groupsIDs,filter_tb,first)
-	local profile = LookingForGroup_Options.db.profile
-	if not profile.spam_filter_levenshtein then return end
-	local C_LFGList_GetSearchResultInfo = C_LFGList.GetSearchResultInfo
-	local bor = bit.bor
-	local table_concat = table.concat
-	local string_find = string.find
-	if first then
-		wipe(temp_keywords)
-		wipe(results_tb)
-		local string_match = string.match
-		local C_LFGList_GetActivityInfo = C_LFGList.GetActivityInfo
-		local n = #groupsIDs
-		for i=1,n do
-			local id, activityID, name, comment, voiceChat, iLvl, honorLevel,
-				age, numBNetFriends, numCharFriends, numGuildMates,
-				isDelisted, leaderName = C_LFGList_GetSearchResultInfo(groupsIDs[i])
-			local fullName, shortName, categoryID, groupID, itemLevel, filters, minLevel, maxPlayers, displayType, activityOrder = C_LFGList_GetActivityInfo(activityID)
-			if activityID ~= 458 then
-				if categoryID ~= 1 and categoryID ~= 6 then
-					if categoryID ~= 2 or 5 < name:len()+comment:len() then
-						results_tb[i] = {name,voiceChat,comment}
-					end
-				end
-			end
-			if results_tb[i] == nil then
-				results_tb[i] = 0
-			end
-		end
-		local factor = profile.spam_filter_levenshtein_factor or 0.1
-		local groups = profile.spam_filter_levenshtein_groups or 2
-		wipe(hash_temp_keywords)
-		for i=1,n do
-			local rst1 = results_tb[i]
-			if rst1 ~= 0 then
-				local name1,voicechat1,comment1 = rst1[1],rst1[2],rst1[3]
-				wipe(tb)
-				for j=i+1,n do
-					local rst2 = results_tb[j]
-					if rst2 ~= 0 then
-						local name2,voicechat2,comment2 = rst2[1],rst2[2],rst2[3]
-						local namedis,namemax = levenshtein_distance(name1,name2)
-						local commentdis,commentmax = levenshtein_distance(comment1,comment2)
-						local voicechatdis,voicechatmax = levenshtein_distance(voicechat1,voicechat2)
-						if (namedis+commentdis+voicechatdis)<factor*(namemax+commentmax+voicechatmax) then
-							tb[#tb+1] = rst2
-							results_tb[j] = 0
-						end
-					end
-				end
-				if groups < #tb  then
-					hash_temp_keywords[table_concat(rst1)] = true
-					for j=1,#tb do
-						local tbj= tb[j]
-						hash_temp_keywords[table_concat(tbj)] = true
-					end
-				end
-			end
-		end
-		for k,v in pairs(hash_temp_keywords) do
-			temp_keywords[#temp_keywords+1] = k
-		end
-		wipe(hash_temp_keywords)
-	end
-	for i=1,#groupsIDs do
-		local fti = filter_tb[i]
-		if fti < 4 then
-			local id, activityID, name, comment, voiceChat, iLvl, honorLevel,
-			age, numBNetFriends, numCharFriends, numGuildMates,
-			isDelisted, leaderName = C_LFGList_GetSearchResultInfo(groupsIDs[i])
-			local j=1
-			local n = #temp_keywords
-			wipe(results_tb)
-			results_tb[#results_tb+1]=name
-			results_tb[#results_tb+1]=voiceChat
-			results_tb[#results_tb+1]=comment
-			local ct = table_concat(results_tb)
-			while (j<=n) do
-				if issubstr(ct,temp_keywords[j]) then
-					break
-				end
-				j = j + 1
-			end
-			if j<=n then
-				filter_tb[i] = bor(fti,8)
-			end
-		end
-	end
-end)
 
 LookingForGroup_Options.RegisterSimpleFilterExpensive("spam",function(resultid,profile,sf_kw)
 	local id, activityID, name, comment, voiceChat, iLvl, honorLevel,

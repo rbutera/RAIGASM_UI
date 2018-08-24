@@ -38,7 +38,7 @@ N 350-375 Smelt (item:36909) |SM| |N|<b>40 (item:36909)| |P|Mining 375|
 
 N Train Grand Master Mining |N|(npc:5513) (59.2, 37.7)| |Z|84| |PM|Mining|450| |NPC|5513|
 
-N 400-525 |N|Smelting for leveling is very hit or miss, and requires a lot of rare ore to accomplish<br/><br/>Switch to the (guide:"Warlords Mining 1-700") guide and mine for the remainder levels. Guide Complete|
+N 400-525 |N|Smelting for leveling is very hit or miss, and requires a lot of rare ore to accomplish<br/><br/>Switch to the (guide:"Warlords Mining 1-100") guide and mine for the remainder levels. Guide Complete|
 
 ]]
 end, {description = [[This guide covers how to level the Mining and Smelting professions from 1-525.]]})

@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Prof_Alliance_En_Herb_WoD")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Herbalism 1-700", nil, "Alliance", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Herbalism]], nil, 700) and UnitLevel([[player]])>=90|", function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Herbalism 1-100", nil, "Alliance", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Herbalism]], nil, 700) and UnitLevel([[player]])>=90|", function()
 return [[
 
 N Read First |N|You must have a character level 90+ and Warlords of Draenor is required. <br/><br/>Leveling is available in Draenor from 1-700. <br/><br/>Tick this step.|
@@ -17,7 +17,7 @@ N 1-700 (map:525) |HE| |LOOP|  |N|(item:109124) (48.5,55.1)(46.7,45.2)(43.0,44.8
 N Guide Complete
 
 ]]
-end, {description = [[This guide covers how to level up the Herbalism profession from 1-700]]})	
+end, {description = [[This guide covers how to level up the Herbalism profession from 1-100]]})	
 	end
 	function Guide:Unload()
 	end

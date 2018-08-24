@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Prof_Alliance_En_First_Aid_WoD")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords First Aid 1-700", nil, "Alliance", nil, "P", nil, function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords First Aid 1-100", nil, "Alliance", nil, "P", nil, function()
 return [[
 
 N Read First |N|You must have a character level 90+ and Warlords of Draenor is required. <br/><br/>Leveling is available in Draenor from 1-700. <br/><br/>Tick this step.| |PL|90|
@@ -15,7 +15,7 @@ N 1-700 (item:109223) |FA| |N|If you start from level 1, you have to make 120 (i
 
 N Guide Complete |N|Switch to (guide:"Legion First Aid Questing (1-800)") for level 700 - 800|
 ]]
-end, {description = [[This guide covers how to level up the First Aid profession from 1-700]]})	
+end, {description = [[This guide covers how to level up the First Aid profession from 1-100]]})	
 	end
 	function Guide:Unload()
 	end

@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Loremaster_Alliance_En_54_56_Silithus")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Kalimdor|r ", "81(40-60)#81(40-60)#81(40-60)", "100(40-60)#100(40-60)#100(40-60)", "Alliance", nil, "L", nil, function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Kalimdor|r ", "81(40-60)#81(40-60)#81(40-60)", "17(40-60)#17(40-60)#17(40-60)", "Alliance", nil, "L", nil, function()
 return [[
 
 R Cenarion Hold |N|Travel to {Cenarion Hold} (54.95, 35.87) | |QID|8280|
@@ -123,7 +123,7 @@ T Wanted - Deathclasp, Terror of the Sands |QID|8283| |N|(npc:15182) (54.17, 34.
 R Blasted Lands |N|Take the portal here to {Blasted Lands} (53.56, 33.28)| |WR|
 T Nethergarde Needs You! |QID|28867| |N|(npc:5393) (60.09, 13.51) in {Cenarion Hold}| |Z|17| |NPC|5393|
 
-N Guide Complete |N|Tick to continue to (guide:"100(40-60)#100(40-60)#100(40-60)")|
+N Guide Complete |N|Tick to continue to (guide:"17(40-60)#17(40-60)#17(40-60)")|
 
 ]]
 end, {image = "silithus.tga", description = [[]]})	end

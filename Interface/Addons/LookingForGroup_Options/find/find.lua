@@ -213,7 +213,6 @@ LookingForGroup_Options:push("find",{
 				if v ~= -1 then
 					a.group = v
 				end
-				C_LFGList.ClearSearchTextFields()
 			end,
 			get = function() return LookingForGroup_Options.db.profile.a.group or -1 end,
 			width = "full",
@@ -285,6 +284,10 @@ LookingForGroup_Options:push("find",{
 			end,
 			set = function(_,v)
 				local a = LookingForGroup_Options.db.profile.a
+				local activity = a.activity
+				if activity and LFGListFrame.SearchPanel.SearchBox:GetText() == C_LFGList.GetActivityInfo(activity) then
+					C_LFGList.ClearSearchTextFields()
+				end
 				if v == 0 then
 					local category = a.category
 					local group = a.group
@@ -330,6 +333,7 @@ LookingForGroup_Options:push("find",{
 					type = "execute",
 					func = function()
 						wipe(LookingForGroup_Options.db.profile.a)
+						C_LFGList.ClearSearchTextFields()
 					end
 				},
 				opt =
@@ -538,89 +542,13 @@ LookingForGroup_Options:push("find",{
 					type = "group",
 					args =
 					{
-						add =
+						ft =
 						{
 							order = get_order(),
-							name = ADD,
+							name = FILTER,
 							type = "input",
-							set = function(_,val)
-								if val:len() == 0 then
-									return
-								end
-								local tb = LookingForGroup_Options.db.profile.a.keywords
-								if tb == nil then
-									tb = {}
-								end
-								tb[#tb+1] = val:lower()
-								table.sort(tb)
-								LookingForGroup_Options.db.profile.a.keywords = tb
-							end,
-							get = nop,
+							dialogControl = "LFG_SECURE_SEARCH_BOX_REFERENCE",
 							width = "full"
-						},
-
-						rmv = 
-						{
-							name = REMOVE,
-							type = "execute",
-							order = get_order(),
-							func = function()
-								local ft = LookingForGroup_Options.db.profile.a.keywords
-								if ft then
-									local tb = {}
-									for i = 1,#ft do
-										if not keywords_select_sup[i] then
-											tb[#tb+1] = ft[i]
-										end
-									end
-									LookingForGroup_Options.db.profile.a.keywords = tb
-									wipe(keywords_select_sup)
-								end
-							end
-						},
-						reset =
-						{
-							order = get_order(),
-							name = RESET,
-							type = "execute",
-							func = function()
-								wipe(keywords_select_sup)
-								LookingForGroup_Options.db.profile.a.keywords = nil
-							end
-						},
-						keywords =
-						{
-							order = get_order(),
-							name = L.Keywords,
-							type = "multiselect",
-							width = "full",
-							values = function()
-								local kwds = LookingForGroup_Options.db.profile.a.keywords
-								if kwds then
-									return kwds
-								else
-									wipe(keywords_select_sup)
-								end
-							end,
-							get = function(info,key)
-								return keywords_select_sup[key]
-							end,
-							set = function(info,key,val)
-								if val then
-									keywords_select_sup[key] = true
-								else
-									keywords_select_sup[key] = nil
-								end
-							end
-						},
-						cpft =
-						{
-							order = get_order(),
-							name = COPY_FILTER,
-							type = "execute",
-							func = function()
-								LookingForGroup_Options.paste(LookingForGroup_Options.db.profile.a,"keywords",nil,"find","f","keywords")
-							end
 						},
 					}
 				},

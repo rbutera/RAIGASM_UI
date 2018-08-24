@@ -5,7 +5,7 @@ TomTomEmulation.essential = true
 
 TomTomEmulation.frame = CreateFrame("FRAME", "DugisGuideViewerZ_TomTomEventsFrame");
 TomTomEmulation.frame:RegisterEvent("VARIABLES_LOADED");
-local HBD = LibStub("HereBeDragons-2.0", true)
+local HBD = LibStub("HereBeDragons-2.0-Dugis", true)
 
 TomTomEmulation.nameToMapId = {}
 
@@ -28,62 +28,50 @@ TomTomEmulation.Split = function(inputstr, sep)
     return t
 end
 
-
-local function AddWaypoint(self, x, y, desc, persistent, minimap, world, silent)
-    
+--z, y (0-1)
+local function AddWaypoint(self, mapId_, x, y, opts)
     if DGV:UserSetting(DGV_TOMTOMEMULATION) ~= true then
         return
     end
     
-	local c = GetCurrentMapContinent_dugi()
+	local mapId = mapId_ or WorldMapFrame:GetMapID()
     --todo: find replacement
-    local z = GetCurrentMapZone()
 
-    if not c or not z or c < 1 then
-        return {0, 0, x/100, y/100, title = desc}
+    if not mapId then
+        return {0, 0, x/100, y/100, title = opts.title}
     end
 
-    return self:AddZWaypoint(c, z, x, y, desc, persistent, minimap, world, nil, silent)
-    
+    return self:AddZWaypoint(mapId, x * 100, y * 100, opts)
 end
 
-
-local function AddZWaypoint(self, c, z, x, y, desc, persistent, minimap, world, callbacks, silent, crazy)
-
+--z, y (0-100)
+local function AddZWaypoint(self, mapId_, x, y, opts)
     if DGV:UserSetting(DGV_TOMTOMEMULATION) ~= true then
         return
     end
     
-    local mapId, floor = DGV.astrolabe:GetMapID(c, z)
+    local mapId = mapId_ or WorldMapFrame:GetMapID()
     
     if not mapId then
         return {0, 0, x/100, y/100, title = desc}
     end    
 
-    return self:AddMFWaypoint(mapId, floor, x/100, y/100, {
-        title = desc,
-        persistent = persistent,
-        minimap = minimap,
-        world = world,
-        callbacks = callbacks,
-        silent = silent,
-        crazy = crazy,
-    })
+    return self:AddMFWaypoint(mapId, x/100, y/100, opts)
 end
 
 
-local function SetCustomWaypoint(self, c, z, x, y, callback, minimap, world, silent)
+local function SetCustomWaypoint(self, mapId, x, y, opts)
     
     if DGV:UserSetting(DGV_TOMTOMEMULATION) ~= true then
         return
     end
     
-    return self:AddZWaypoint(c, z, x, y, nil, false, minimap, world, callback, silent)
+    return self:AddZWaypoint(mapId, x, y, opts)
     
 end
 
 
-local function SetCustomMFWaypoint(self, m, f, x, y, opts)
+local function SetCustomMFWaypoint(self, m, x, y, opts)
     
     if DGV:UserSetting(DGV_TOMTOMEMULATION) ~= true then
         return
@@ -92,12 +80,12 @@ local function SetCustomMFWaypoint(self, m, f, x, y, opts)
     opts = opts or {}
     opts.persistent = false
 
-    return self:AddMFWaypoint(m, f, x, y, opts)
+    return self:AddMFWaypoint(m, x, y, opts)
     
 end
 
 
-local function WaypointExists(x, y, m, f, desc)
+local function WaypointExists(x, y, m, desc)
 
     if DGV:UserSetting(DGV_TOMTOMEMULATION) ~= true then
         return
@@ -107,7 +95,7 @@ local function WaypointExists(x, y, m, f, desc)
     
         for _, waypoint in pairs(DugisArrowGlobal.waypoints) do
      
-            if waypoint.x/100 == tonumber(x) and  waypoint.y/100 == tonumber(y) and waypoint.map == tonumber(m) and waypoint.floor == tonumber(f) and waypoint.desc == desc then
+            if waypoint.x/100 == tonumber(x) and  waypoint.y/100 == tonumber(y) and waypoint.map == tonumber(m) and waypoint.desc == desc then
                 return true
             end
            
@@ -125,7 +113,7 @@ local function SetCrazyArrow(waypoint)
 
 end
 
-local function AddMFWaypoint(self, m, f, x, y, opts)
+local function AddMFWaypoint(self, m, x, y, opts)
        
     if DGV:UserSetting(DGV_TOMTOMEMULATION) ~= true then
         return
@@ -135,20 +123,27 @@ local function AddMFWaypoint(self, m, f, x, y, opts)
 
     opts.title = opts.title or "TomTom Waypoint"
 
-    local exists = WaypointExists(x, y, m, f, opts.title) 
+    local exists = WaypointExists(x, y, m, opts.title) 
 
     if not exists then
 
-        local zoneName = DGV:GetMapNameFromID(m)
-        local mapId = DugisGuideViewer:GetZoneIdByName(zoneName)
+        local zoneName
+        local mapId
+        
+        if tonumber(m) then
+            mapId = tonumber(m)
+        else
+            zoneName = DGV:GetMapNameFromID(m)
+            mapId = DugisGuideViewer:GetZoneIdByName(zoneName)
+        end
 
-        local waypoint = DGV:AddRouteWaypointWithNoTrigger(mapId, f or 0, x, y, opts.title)
+        local waypoint = DGV:AddRouteWaypointWithNoTrigger(mapId, x, y, opts.title)
         SetCrazyArrow(DugisArrowGlobal:getFirstWaypoint())
 
     end
     
     --TomTom addon returns this structure from the AddMFWaypoint function. Fix for: "#119 Make tomtom emulation work with WoW-Pro addon"
-    local uid = {m, f, x, y, title = opts.title}
+    local uid = {m, 0, x, y, title = opts.title}
 
     return uid
 end
@@ -235,7 +230,7 @@ local function HandlerWay(msg, editbox)
         if args[3] == nil then
             --/way 14.78 23.9
             if x ~= nil and y ~= nil then
-                local waypoint = DGV:AddRouteWaypointWithNoTrigger(map, fl or 0, x/100, y/100, "TomTom Waypoint")
+                local waypoint = DGV:AddRouteWaypointWithNoTrigger(map, x/100, y/100, "TomTom Waypoint")
                 SetCrazyArrow(DugisArrowGlobal:getFirstWaypoint())
             else
                 usage()
@@ -247,7 +242,7 @@ local function HandlerWay(msg, editbox)
 
             if x ~= nil and y ~= nil then
                 local description = table.concat(args, " ")
-                local waypoint = DGV:AddRouteWaypointWithNoTrigger(map, fl or 0, x/100, y/100, description)
+                local waypoint = DGV:AddRouteWaypointWithNoTrigger(map, x/100, y/100, description)
                 SetCrazyArrow(DugisArrowGlobal:getFirstWaypoint())
             else   
                 usage()
@@ -364,7 +359,7 @@ local function HandlerWayB(msg, editbox)
     end
     
     local map, fl, xCurr, yCurr = DGV:GetPlayerPosition()
-    local waypoint = DGV:AddRouteWaypointWithNoTrigger(map, fl or 0, xCurr, yCurr, "TomTom Waypoint")
+    local waypoint = DGV:AddRouteWaypointWithNoTrigger(map, xCurr, yCurr, "TomTom Waypoint")
     SetCrazyArrow(DugisArrowGlobal:getFirstWaypoint())
            
 end

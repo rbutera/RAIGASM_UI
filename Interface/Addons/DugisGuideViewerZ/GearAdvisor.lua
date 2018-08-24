@@ -17,6 +17,10 @@ DGV.CalculateScore_cache = {}
 GA.isDuringEquippingChain = false
 GA.makingForAllInProgress = false
 
+local WIN_CRITERIA_CURRENT = "Active Talent Specialization"
+local WIN_CRITERIA_INACTIVE_SPEC = "Inactive Talent Specialization"
+local WIN_CRITERIA_NONE = "None"
+
 local _
 local StatLogic = LibStub("LibStatLogic-1.2-Dugi")
 local TipHooker = LibStub("LibTipHooker-1.1")
@@ -88,6 +92,10 @@ local weightIdentifier2weightLabelMap = {
 
 function GA:Initialize()
 
+    local function AutoEquipEnabled()
+        return DGV:UserSetting(DGV_AUTOEQUIPSMARTSET) and not DGV:IsEquippedOneOfExcludedSets()
+    end
+
     --In case some gear was added/changed etc in gear set. Fired before PLAYER_EQUIPMENT_CHANGED
 	RegisterReaction("PLAYER_EQUIPMENT_CHANGED"):WithAction(function(_,_,slot)
         if GA.makingForAllInProgress then
@@ -97,12 +105,16 @@ function GA:Initialize()
         DGV.GetCurrentBestInSlot_cache = {}
         DGV.GetSpecDataTable_cache = {}
         
+        if DGV:UserSetting(DGV_GASMARTSETTARGET)==WIN_CRITERIA_NONE or not AutoEquipEnabled() then
+            return
+        end
+        
         if not GA.isDuringEquippingChain then
             GA.isDuringEquippingChain = true
-            GA.AutoEquipSmartSet()
-            GA.RefreshCheckIconOnSmartSet()          
+            if GA.AutoEquipSmartSet then GA.AutoEquipSmartSet() end
+            if GA.RefreshCheckIconOnSmartSet then GA.RefreshCheckIconOnSmartSet() end
         else
-            GA.EquipmentChangedContinueEquipAction(slot)
+            if GA.EquipmentChangedContinueEquipAction then GA.EquipmentChangedContinueEquipAction(slot) end
         end
 	end)
 
@@ -160,18 +172,24 @@ function GA:Initialize()
         local oldOnClickScript = Storyline_NPCFrameRewardsItem:GetScript("OnClick")
         Storyline_NPCFrameRewardsItem:SetScript("OnClick", function()
             oldOnClickScript(Storyline_NPCFrameRewardsItem)
-            GA.EvaluateRewards()
+            if GA.EvaluateRewards then
+                GA.EvaluateRewards()
+            end
         end)
 
         Storyline_NPCFrameRewards.Content:SetScript("OnShow", function()
-            GA.EvaluateRewards()
+            if GA.EvaluateRewards then
+                GA.EvaluateRewards()
+            end
         end)
     end
     
     --Immersion addon
     if ImmersionFrame then
         ImmersionFrame.TalkBox.Elements.Content.RewardsFrame:SetScript("OnShow", function()
-            GA.EvaluateRewards()
+            if GA.EvaluateRewards then
+                GA.EvaluateRewards()
+            end
         end)
     end
 
@@ -2672,7 +2690,10 @@ function GA:Initialize()
 
 	CalculateScore =  function(itemLink, spec, pvp, level, uniqueInventorySlot, tiebreaker, enforceArmorSpecSubclass, uncapped)
 		--uncapped = true
-		local cacheKey = not tiebreaker and strformat("%s%s%d%s%d%s%s%s", "CalculateScore", itemLink, spec, pvp and "true" or "false", level, tostring(uniqueInventorySlot), enforceArmorSpecSubclass and tostring(enforceArmorSpecSubclass) or "nil", uncapped and "0" or "1")
+
+        --equipped Needs to also be included as for some items the score is also based on the equipped state.
+        local equipped = ItemIsEquipped(itemLink)
+		local cacheKey = not tiebreaker and strformat("%d%s%s%d%s%d%s%s%s", "CalculateScore", equipped and 1 or 0, itemLink, spec, pvp and "true" or "false", level, tostring(uniqueInventorySlot), enforceArmorSpecSubclass and tostring(enforceArmorSpecSubclass) or "nil", uncapped and "0" or "1")
 		if cacheKey then
 			local cachedValue = DGV.CalculateScore_cache[cacheKey]
 			if cachedValue then
@@ -2710,7 +2731,8 @@ function GA:Initialize()
 
 	CalculateScoreForGearFinder = function(itemLink, spec, pvp, level, uniqueInventorySlot, tiebreaker, enforceArmorSpecSubclass, uncapped)
 		--uncapped = true
-		local cacheKey = not tiebreaker and strformat("%s%s%d%s%d%s%s%s", "CalculateScore", itemLink, spec, pvp and "true" or "false", level, tostring(uniqueInventorySlot), enforceArmorSpecSubclass and tostring(enforceArmorSpecSubclass) or "nil", uncapped and "0" or "1")
+        local equipped = ItemIsEquipped(itemLink)
+		local cacheKey = not tiebreaker and strformat("%d%s%s%d%s%d%s%s%s", "CalculateScore", equipped and 1 or 0, itemLink, spec, pvp and "true" or "false", level, tostring(uniqueInventorySlot), enforceArmorSpecSubclass and tostring(enforceArmorSpecSubclass) or "nil", uncapped and "0" or "1")
 		if cacheKey then
             if DugisCharacterCache.CalculateScore_cache_v11[cacheKey] then
                 return unpack(DugisCharacterCache.CalculateScore_cache_v11[cacheKey])
@@ -2969,9 +2991,7 @@ function GA:Initialize()
 		return false
 	end
 
-	local WIN_CRITERIA_CURRENT = "Active Talent Specialization"
-	local WIN_CRITERIA_INACTIVE_SPEC = "Inactive Talent Specialization"
-	local WIN_CRITERIA_NONE = "None"
+
 	local function SpecFromOption(option)
 		if option==WIN_CRITERIA_NONE then return end
 		local activeSpecName = select(2, GetSpecializationInfo(GetSpecialization()))
@@ -3334,7 +3354,7 @@ function GA:Initialize()
 			local sfo, option, pfo = SpecFromOption(DGV:UserSetting(DGV_GASMARTSETTARGET))
 			spec = spec or sfo
 			pvp = pvp or pfo
-			local cacheKey = strformat("%s%d%s%s%s%s", "GetSpecDataTable", spec, pvp and "true" or "false", tostring(preferredTable), tostring(enforceArmorSpecSubclass), uncapped and "true" or "false")
+			local cacheKey = strformat("%s%s%s%s%d%s%s%s%s", "GetSpecDataTable", pfo or "nil", option or "nil", sfo or "nil", spec, pvp and "true" or "false", tostring(preferredTable), tostring(enforceArmorSpecSubclass), uncapped and "true" or "false")
 			local cachedValue = DGV.GetSpecDataTable_cache[cacheKey]
 			if cachedValue then
                 if preferredTable then
@@ -3757,9 +3777,7 @@ function GA:Initialize()
 			end
 		end
 
-		local function AutoEquipEnabled()
-			return DGV:UserSetting(DGV_AUTOEQUIPSMARTSET) and not DGV:IsEquippedOneOfExcludedSets()
-		end
+
 
 		function GA.AutoEquipSmartSet(clearTempIgnore, button)
 			if not InCombatLockdown() then
@@ -3775,27 +3793,6 @@ function GA:Initialize()
 
 		local function NoEquipInProgress()
 			return not DugisEquipPromptFrame:IsShown() and (not equipExecutedReaction or equipExecutedReaction.invoked)
-		end
-
-		local lastBUFire
-		local function BagUpdatePredicate()
-			local currentOwnedItems = GA.GetAllOwnedItems()
-			
-			if LuaUtils:AreTablesEqual(lastOwnedItems_forBagUpdatePredicate, currentOwnedItems) then
-				--Nothing was changed
-				return
-			end
-			lastOwnedItems_forBagUpdatePredicate = currentOwnedItems
-		
-			local elapsed = GetTime()
-			if lastBUFire==elapsed then return end
-			lastBUFire = elapsed
-			
-			if lastIsStealthed ~= IsStealthed() then
-				return
-			end
-			
-			return AutoEquipEnabled() and NoEquipInProgress()
 		end
 
 		--levelUpReaction = RegisterReaction("PLAYER_LEVEL_UP", AutoEquipEnabled, GA.AutoEquipSmartSet, true)

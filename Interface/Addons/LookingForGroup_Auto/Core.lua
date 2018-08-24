@@ -37,7 +37,7 @@ local function is_queueing_lfg()
 	end
 end
 
-function LookingForGroup.accepted(name,search,create,secure,raid,quest_id,keyword)
+function LookingForGroup.accepted(name,search,create,secure,raid,quest_id,message)
 	local profile = LookingForGroup.db.profile
 	if not secure and profile.disable_auto then
 		return true
@@ -52,27 +52,12 @@ function LookingForGroup.accepted(name,search,create,secure,raid,quest_id,keywor
 	else
 		auto_start_a_group = profile.auto_start_a_group
 	end
-	local fiop = true
-	local lfg_ec_n
-	local check_kw = nop
-	if keyword then
-		keyword = keyword:lower()
-		lfg_ec_n = LFGListFrame.EntryCreation.Name
-		check_kw = function()
-			local ec = lfg_ec_n:GetText():lower()
-			if tonumber(keyword) then
-				local ecm = ec:match("%d+")
-				if ecm~=keyword then
-					return true
-				end
-			else
-				if ec:find(keyword) == nil then
-					return true
-				end
-			end
-		end
-		local function enter()
-			if not check_kw() then
+	local lfg_ec_n = LFGListFrame.EntryCreation.Name
+	lfg_ec_n:Hide()
+	if message then
+		lfg_ec_n:SetScript("OnTextChanged",InputBoxInstructions_OnTextChanged)
+		lfg_ec_n:SetScript("OnEnterPressed",function()
+			if lfg_ec_n:GetText():len() == 1 then
 				local popup_name,popup_frame = StaticPopup_Visible("LookingForGroup_HardwareAPIDialog")
 				if popup_frame then
 					if not dialog.OnAccept() then
@@ -80,41 +65,23 @@ function LookingForGroup.accepted(name,search,create,secure,raid,quest_id,keywor
 					end
 				end
 			end
-		end
-		lfg_ec_n:SetScript("OnTextChanged",InputBoxInstructions_OnTextChanged)
-		lfg_ec_n:SetScript("OnEnterPressed",enter)
-		lfg_ec_n:Hide()
+		end)
 	else
-		LFGListFrame.EntryCreation.Name:Hide()
+		lfg_ec_n=nil
 	end
-	
 	local current = coroutine.running()
 	local function resume()
 		coroutine.resume(current)
 	end
-
 	local function create_resume()
-		if check_kw() then return true end
+		if lfg_ec_n:GetText():len() ~= 1 then return true end
 		create()
 		coroutine.resume(current,true)
 	end
 	local function create_staticpopup_show(name)
-		if keyword and (secure == 0 or check_kw()) then
-			local ec = lfg_ec_n and lfg_ec_n:GetText() or nil
-			local ec_lower = ec and ec:sub(1,keyword:len()):lower() or nil
-			local kw_lower = keyword and keyword:lower() or nil
-			local cctf = C_LFGList.ClearCreationTextFields
-			if ec_lower and ec_lower:len() ~= 0 and kw_lower:sub(1,ec:len()) == ec_lower then
-				cctf = nil
-			end
-			if cctf then
-				cctf()
-			end
-			if name == keyword then
-				dialog.text=name
-			else
-				dialog.text=table.concat{name,"\n",keyword}
-			end
+		if message and lfg_ec_n:GetText():len()~=1 then
+			C_LFGList.ClearCreationTextFields()
+			dialog.text=table.concat{name,"\nl"}
 			dialog.OnHide = function(self)
 				lfg_ec_n:Hide()
 				local text = _G[self:GetName().."Text"];
@@ -134,7 +101,7 @@ function LookingForGroup.accepted(name,search,create,secure,raid,quest_id,keywor
 		if secure == 0 then
 			auto_start_a_group = nil
 		else
-			if (not secure and hardware) or check_kw() then
+			if (not secure and hardware) then
 				wipe(dialog)
 				dialog.button1=START_A_GROUP
 				dialog.button2=CANCEL
@@ -166,259 +133,266 @@ function LookingForGroup.accepted(name,search,create,secure,raid,quest_id,keywor
 		end
 	end
 	local GetSearchResultInfo = C_LFGList.GetSearchResultInfo
-	local count,results,iscache = search(fiop)
-	if count~=0 and not iscache then
-		if 300 < count then
-			profile.fiop = true
-		end
-		local temp = {}
-		local GetActivityInfo = C_LFGList.GetActivityInfo
-		local ReportSearchResult = C_LFGList.ReportSearchResult
-		local GetSearchResultMemberCounts = C_LFGList.GetSearchResultMemberCounts
-		local keyword_be_number = keyword and tonumber(keyword) or nil
-		UIErrorsFrame:UnregisterEvent("UI_INFO_MESSAGE") -- Don't show the "Thanks for the report" message
-		DEFAULT_CHAT_FRAME:UnregisterEvent("CHAT_MSG_SYSTEM")
-		local qname = fiop and name:lower() or nil 
+	local count,results,iscache = search()
+	if message then
+		local SendChatMessage = SendChatMessage
+		local applied
 		for i=1,#results do
 			local id, activityID, name, comment, voiceChat, iLvl, honorLevel, age, numBNetFriends, numCharFriends, numGuildMates, isDelisted, leaderName, numMembers, autoaccept, questID = GetSearchResultInfo(results[i])
-			local fullName, shortName, categoryID, groupID, itemLevel, lfgfilter, minLevel, maxPlayers, displayType, activityOrder = GetActivityInfo(activityID)
-			if (keyword == nil and quest_id and questID ~= quest_id) then
-				ReportSearchResult(id,"lfglistspam")
-			elseif not isDelisted and LookingForGroup.auto_ilvl(itemLevel)<=iLvl and (raid or numMembers < 5) then
-				local yes
-				if keyword == nil then
-					yes = true
-				elseif name then
-					local name_lower = name:lower()
-					if keyword_be_number then
-						for n,_ in string.gmatch(name,"%d+") do
-							if n==keyword then
-								yes = true
-								break
-							end
-						end
-					elseif name_lower:find(keyword) then
-						yes = true
-					end
-					if not yes and qname then
-						local n,x
-						if qname:len() < name_lower:len() then
-							n = qname
-							x = name_lower
-						else
-							n = name_lower
-							x = qname
-						end
-						local f,t = x:find(n)
-						if f and f + min(5,n:len()) <= t then
-							yes = true
-						end
-					end
-				end
-				if yes and (not raid or GetSearchResultMemberCounts(id).DEATHKNIGHT < 4) then
-					temp[#temp+1]=id
-				end
+			if LookingForGroup.length(name) == 1 and leaderName then
+				SendChatMessage(message,"WHISPER",nil,leaderName)
+				applied = true
 			end
 		end
-		DEFAULT_CHAT_FRAME:RegisterEvent("CHAT_MSG_SYSTEM")
-		UIErrorsFrame:RegisterEvent("UI_INFO_MESSAGE")
-		if #temp == 0 then
-			count = 0
-		end
-		results = temp
-	end
-	if count == 0 then
-		if auto_start_a_group == false or create == nil then
-			return true
-		end
-		if hardware or check_kw() then
-			wipe(dialog)
-			dialog.button1=START_A_GROUP
-			dialog.button2=CANCEL
-			dialog.timeOut=45
-			dialog.OnAccept=create_resume
-			create_staticpopup_show(name)
-			if coroutine.yield() then
-				return
+		if not applied then
+			if auto_start_a_group == false or create == nil then
+				return true
 			end
-		elseif auto_start_a_group == nil then
-			create()
-		end
-		return
-	end
-	if hardware and create then
-		table.sort(results,function(a,b)
-			return select(14,GetSearchResultInfo(a))<select(14,GetSearchResultInfo(b))
-		end)
---	sort is a bad idea since it is easily exploited by spammers
-	end
-	if is_queueing_lfg() then
-		return true
-	end
-	if hardware then
-		if iscache then
-			local _,tank,healer = GetLFGRoles()
-			C_LFGList.ClearApplicationTextFields()
-			C_LFGList.ApplyToGroup(results[#results],tank,healer,true)
-			results[#results] = nil
-		else
-			local function next_func()
-				coroutine.resume(current,1024)
-			end
-			while #results ~= 0 do
-				local id, activityID, name, comment, voiceChat, iLvl, honorLevel, age, numBNetFriends, numCharFriends, numGuildMates, isDelisted, leaderName, numMembers, autoaccept = GetSearchResultInfo(results[#results])
+			if hardware or lfg_ec_n:GetText():len()~=1 then
 				wipe(dialog)
-				if #results ~= 1 then
-					dialog.extraButton = #results
-					dialog.OnExtraButton = next_func
-				end
-				dialog.button1=SIGN_UP
-				dialog.OnAccept=resume
+				dialog.button1=START_A_GROUP
+				dialog.button2=CANCEL
 				dialog.timeOut=45
-				if create then
-					dialog.button2=START_A_GROUP
-					dialog.button3=CANCEL
-					dialog.OnCancel=create_resume
-					create_staticpopup_show(table.concat({name,numMembers,leaderName},"\n"))
-				else
-					dialog.button2=CANCEL
-					dialog.text=table.concat({name,numMembers,leaderName},"\n")
-					StaticPopup_Show("LookingForGroup_HardwareAPIDialog")
-				end
-				local yd = coroutine.yield()
-				if yd == nil then
-					break
-				elseif yd ~= 1024 then
+				dialog.OnAccept=create_resume
+				create_staticpopup_show(name)
+				if coroutine.yield() then
 					return
 				end
-				C_Timer.After(0.001,resume)
-				coroutine.yield()
-				results[#results] = nil
-			end
-			while #results~=0 do
-				local id, activityID, name, comment, voiceChat, iLvl, honorLevel, age, numBNetFriends, numCharFriends, numGuildMates, isDelisted, leaderName, numMembers, autoaccept = GetSearchResultInfo(results[#results])
-				if isDelisted then
-					results[#results] = nil
-				else
-					break
-				end
-			end
-			if #results~=0 then
-				local _,tank,healer = GetLFGRoles()
-				C_LFGList.ClearApplicationTextFields()
-				local rstid = results[#results]
-				C_LFGList.ApplyToGroup(rstid,tank,healer,true)
-				results[#results] = nil
-				LookingForGroup:RegisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED",function(event,applicationid,invited,applied)
-					if rstid == applicationid and invited=="invited" and applied == "applied" then
-						coroutine.resume(current,true)
-					end
-				end)
-				local tms = C_Timer.NewTimer(3,resume)
-				local yd = coroutine.yield()
-				tms:Cancel()
-				if yd == nil then
-					wipe(dialog)
-					dialog.text=CANCEL_SIGN_UP
-					dialog.button1=OKAY
-					dialog.OnAccept=resume
-					StaticPopup_Show("LookingForGroup_HardwareAPIDialog")
-					if lfg_ec_n then lfg_ec_n:Hide() end
-					yd = coroutine.yield()
-					LookingForGroup:UnregisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED")
-					if yd == nil then
-						C_LFGList.CancelApplication(rstid)
-						C_Timer.After(0.01,resume)
-						coroutine.yield()
-					else
-						StaticPopup_Hide("LookingForGroup_HardwareAPIDialog")
-					end
-				end
-				LookingForGroup:UnregisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED")
-				if yd then
-					LookingForGroup:RegisterEvent("GROUP_JOINED",function()
-						coroutine.resume(current,true)
-					end)
-					LookingForGroup:RegisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED",function(event,applicationid,invited,applied)
-						if rstid == applicationid and (invited == "timeout" or invited == "declined_delisted" or invited == "declined_full" or invited == "invitedeclined") then
-							coroutine.resume(current)
-						end
-					end)
-					local yd = coroutine.yield()
-					LookingForGroup:UnregisterEvent("GROUP_JOINED")
-					LookingForGroup:UnregisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED")
-					if yd or auto_start_a_group == false then
-						return
-					end
-				end
 			elseif auto_start_a_group == nil then
-				create(lfg_ec_n)
+				create()
+			end
+			return
+		end	
+		UIParent:UnregisterEvent("PARTY_INVITE_REQUEST")
+		LookingForGroup:RegisterEvent("PARTY_INVITE_REQUEST",function()
+			coroutine.resume(current,true)		
+		end)
+		local timer = C_Timer.NewTimer(5, resume)
+		local yd = coroutine.yield()
+		LookingForGroup:UnregisterEvent("PARTY_INVITE_REQUEST")
+		UIParent:RegisterEvent("PARTY_INVITE_REQUEST")
+		timer:Cancel()
+		if yd then
+			AcceptGroup()
+			LookingForGroup:RegisterEvent("GROUP_JOINED",function()
+				coroutine.resume(current,true)
+			end)
+			local timer = C_Timer.NewTimer(5, resume)
+			local yd = coroutine.yield()
+			LookingForGroup:UnregisterEvent("GROUP_JOINED")
+			timer:Cancel()
+			if yd then
 				return
 			end
 		end
 	else
-		local _,tank,healer = GetLFGRoles()
-		local ApplyToGroup = C_LFGList.ApplyToGroup
-		C_LFGList.ClearApplicationTextFields()
-		if create then
-			for i=#results,max(#results-5,1),-1 do
-				ApplyToGroup(results[i],tank,healer,true)
-				results[i]=nil
+		if count~=0 and not iscache then
+			local temp = {}
+			local GetSearchResultMemberCounts = C_LFGList.GetSearchResultMemberCounts
+			for i=1,#results do
+				local id, activityID, name, comment, voiceChat, iLvl, honorLevel, age, numBNetFriends, numCharFriends, numGuildMates, isDelisted, leaderName, numMembers, autoaccept, questID = GetSearchResultInfo(results[i])
+				if not isDelisted and LookingForGroup.auto_ilvl(itemLevel)<=iLvl and (raid or numMembers < 5) and autoaccept and (not raid or GetSearchResultMemberCounts(id).DEATHKNIGHT < 6) then
+					temp[#temp+1]=id
+				end
+			end
+			if #temp == 0 then
+				count = 0
+			end
+			results = temp
+		end
+		if count == 0 then
+			if auto_start_a_group == false or create == nil then
+				return true
+			end
+			if hardware or lfg_ec_n:GetText():len()==1 then
+				wipe(dialog)
+				dialog.button1=START_A_GROUP
+				dialog.button2=CANCEL
+				dialog.timeOut=45
+				dialog.OnAccept=create_resume
+				create_staticpopup_show(name)
+				if coroutine.yield() then
+					return
+				end
+			elseif auto_start_a_group == nil then
+				create()
+			end
+			return
+		end
+		if hardware and create then
+			table.sort(results,function(a,b)
+				return select(14,GetSearchResultInfo(a))<select(14,GetSearchResultInfo(b))
+			end)
+	--	sort is a bad idea since it is easily exploited by spammers
+		end
+		if is_queueing_lfg() then
+			return true
+		end
+		if hardware then
+			if iscache then
+				local _,tank,healer = GetLFGRoles()
+				C_LFGList.ClearApplicationTextFields()
+				C_LFGList.ApplyToGroup(results[#results],tank,healer,true)
+				results[#results] = nil
+			else
+				local function next_func()
+					coroutine.resume(current,1024)
+				end
+				while #results ~= 0 do
+					local id, activityID, name, comment, voiceChat, iLvl, honorLevel, age, numBNetFriends, numCharFriends, numGuildMates, isDelisted, leaderName, numMembers, autoaccept = GetSearchResultInfo(results[#results])
+					wipe(dialog)
+					if #results ~= 1 then
+						dialog.extraButton = #results
+						dialog.OnExtraButton = next_func
+					end
+					dialog.button1=SIGN_UP
+					dialog.OnAccept=resume
+					dialog.timeOut=45
+					if create then
+						dialog.button2=START_A_GROUP
+						dialog.button3=CANCEL
+						dialog.OnCancel=create_resume
+						create_staticpopup_show(table.concat({name,numMembers,leaderName},"\n"))
+					else
+						dialog.button2=CANCEL
+						dialog.text=table.concat({name,numMembers,leaderName},"\n")
+						StaticPopup_Show("LookingForGroup_HardwareAPIDialog")
+					end
+					local yd = coroutine.yield()
+					if yd == nil then
+						break
+					elseif yd ~= 1024 then
+						return
+					end
+					C_Timer.After(0.001,resume)
+					coroutine.yield()
+					results[#results] = nil
+				end
+				while #results~=0 do
+					local id, activityID, name, comment, voiceChat, iLvl, honorLevel, age, numBNetFriends, numCharFriends, numGuildMates, isDelisted, leaderName, numMembers, autoaccept = GetSearchResultInfo(results[#results])
+					if isDelisted then
+						results[#results] = nil
+					else
+						break
+					end
+				end
+				if #results~=0 then
+					local _,tank,healer = GetLFGRoles()
+					C_LFGList.ClearApplicationTextFields()
+					local rstid = results[#results]
+					C_LFGList.ApplyToGroup(rstid,tank,healer,true)
+					results[#results] = nil
+					LookingForGroup:RegisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED",function(event,applicationid,invited,applied)
+						if rstid == applicationid and invited=="invited" and applied == "applied" then
+							coroutine.resume(current,true)
+						end
+					end)
+					local tms = C_Timer.NewTimer(3,resume)
+					local yd = coroutine.yield()
+					tms:Cancel()
+					if yd == nil then
+						wipe(dialog)
+						dialog.text=CANCEL_SIGN_UP
+						dialog.button1=OKAY
+						dialog.OnAccept=resume
+						StaticPopup_Show("LookingForGroup_HardwareAPIDialog")
+						if lfg_ec_n then lfg_ec_n:Hide() end
+						yd = coroutine.yield()
+						LookingForGroup:UnregisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED")
+						if yd == nil then
+							C_LFGList.CancelApplication(rstid)
+							C_Timer.After(0.01,resume)
+							coroutine.yield()
+						else
+							StaticPopup_Hide("LookingForGroup_HardwareAPIDialog")
+						end
+					end
+					LookingForGroup:UnregisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED")
+					if yd then
+						LookingForGroup:RegisterEvent("GROUP_JOINED",function()
+							coroutine.resume(current,true)
+						end)
+						LookingForGroup:RegisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED",function(event,applicationid,invited,applied)
+							if rstid == applicationid and (invited == "timeout" or invited == "declined_delisted" or invited == "declined_full" or invited == "invitedeclined") then
+								coroutine.resume(current)
+							end
+						end)
+						local yd = coroutine.yield()
+						LookingForGroup:UnregisterEvent("GROUP_JOINED")
+						LookingForGroup:UnregisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED")
+						if yd or auto_start_a_group == false then
+							return
+						end
+					end
+				elseif auto_start_a_group == nil then
+					create(lfg_ec_n)
+					return
+				end
 			end
 		else
-			C_LFGList.ApplyToGroup(results[#results],tank,healer,true)
-			results[#results]=nil
-		end
-		if not profile.auto_auto_accept then
-			LookingForGroup:RegisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED",function(event,applicationid,invited,applied)
-				if invited=="invited" and applied == "applied" then
-					C_LFGList.AcceptInvite(applicationid)
-					coroutine.resume(current,true)
+			local _,tank,healer = GetLFGRoles()
+			local ApplyToGroup = C_LFGList.ApplyToGroup
+			C_LFGList.ClearApplicationTextFields()
+			if create then
+				for i=#results,max(#results-5,1),-1 do
+					ApplyToGroup(results[i],tank,healer,true)
+					results[i]=nil
 				end
+			else
+				C_LFGList.ApplyToGroup(results[#results],tank,healer,true)
+				results[#results]=nil
+			end
+			if not profile.auto_auto_accept then
+				LookingForGroup:RegisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED",function(event,applicationid,invited,applied)
+					if invited=="invited" and applied == "applied" then
+						C_LFGList.AcceptInvite(applicationid)
+						coroutine.resume(current,true)
+					end
+				end)
+				local timer = C_Timer.NewTimer(3, resume)
+				local yd = coroutine.yield()
+				timer:Cancel()
+				LookingForGroup:UnregisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED")
+				if yd then
+					return
+				end
+				local CancelApplication = C_LFGList.CancelApplication
+				local temp = C_LFGList.GetApplications()
+				for i=1,#temp do
+					CancelApplication(temp[i])
+				end
+			end
+			LookingForGroup:RegisterEvent("GROUP_JOINED",function()
+				coroutine.resume(current,true)
 			end)
-			local timer = C_Timer.NewTimer(3, resume)
+			local timer = C_Timer.NewTimer(5, resume)
 			local yd = coroutine.yield()
+			LookingForGroup:UnregisterEvent("GROUP_JOINED")
 			timer:Cancel()
-			LookingForGroup:UnregisterEvent("LFG_LIST_APPLICATION_STATUS_UPDATED")
-			if yd then
+			if yd or auto_start_a_group == false then
 				return
 			end
-			local CancelApplication = C_LFGList.CancelApplication
-			local temp = C_LFGList.GetApplications()
-			for i=1,#temp do
-				CancelApplication(temp[i])
+			local C_LFGList_GetApplicationInfo = C_LFGList.GetApplicationInfo
+			local C_LFGList_CancelApplication = C_LFGList.CancelApplication
+			local applications = C_LFGList.GetApplications()
+			local invited,applied
+			for i = 1,#applications do
+				local groupID, status = C_LFGList_GetApplicationInfo(applications[i])
+				if status == "applied" then
+					C_LFGList_CancelApplication(groupID)
+					applied = true
+				elseif status == "invited" or status == "inviteaccepted" then
+					invited = true
+				end
 			end
-		end
-		LookingForGroup:RegisterEvent("GROUP_JOINED",function()
-			coroutine.resume(current,true)
-		end)
-		local timer = C_Timer.NewTimer(5, resume)
-		local yd = coroutine.yield()
-		LookingForGroup:UnregisterEvent("GROUP_JOINED")
-		timer:Cancel()
-		if yd or auto_start_a_group == false then
-			return
-		end
-		local C_LFGList_GetApplicationInfo = C_LFGList.GetApplicationInfo
-		local C_LFGList_CancelApplication = C_LFGList.CancelApplication
-		local applications = C_LFGList.GetApplications()
-		local invited,applied
-		for i = 1,#applications do
-			local groupID, status = C_LFGList_GetApplicationInfo(applications[i])
-			if status == "applied" then
-				C_LFGList_CancelApplication(groupID)
-				applied = true
-			elseif status == "invited" or status == "inviteaccepted" then
-				invited = true
-			end
-		end
-		if invited then
-			return
-		end
-		if lfg_ec_n == nil and applied then
-			local timer = C_Timer.NewTimer(0.3, resume)
-			if coroutine.yield() then
+			if invited then
 				return
+			end
+			if lfg_ec_n == nil and applied then
+				local timer = C_Timer.NewTimer(0.3, resume)
+				if coroutine.yield() then
+					return
+				end
 			end
 		end
 	end
@@ -463,9 +437,10 @@ function LookingForGroup.autoloop(name,search,create,secure,raid,quest_id,keywor
 	end
 	if keyword then
 		LookingForGroup:RegisterEvent("LFG_LIST_APPLICANT_LIST_UPDATED",event_func)
+		LookingForGroup:RegisterEvent("CHAT_MSG_WHISPER",event_func)
 	end
 	while true do
-		local k,gpl = coroutine.yield()
+		local k,gpl,arg3,arg4,arg5,arg6 = coroutine.yield()
 		if is_queueing_lfg() then
 			StaticPopup_Hide("LookingForGroup_HardwareAPIDialog")
 			wipe(dialog)
@@ -570,7 +545,7 @@ function LookingForGroup.autoloop(name,search,create,secure,raid,quest_id,keywor
 				end
 			end
 		elseif k == "LFG_LIST_APPLICANT_LIST_UPDATED" or k == "LFG_LIST_ACTIVE_ENTRY_UPDATE" then
-			if LFGListUtil_IsEntryEmpowered() then
+			if UnitIsGroupLeader("player") then
 				if raid then
 					ConvertToRaid()
 				end
@@ -596,6 +571,10 @@ function LookingForGroup.autoloop(name,search,create,secure,raid,quest_id,keywor
 						end
 					end
 				end
+			end
+		elseif k == "CHAT_MSG_WHISPER" then
+			if gpl == keyword and (raid or GetNumGroupMembers(LE_PARTY_CATEGORY_HOME) + C_LFGList.GetNumInvitedApplicantMembers() + C_LFGList.GetNumPendingApplicantMembers() < 5) then
+				InviteUnit(arg3)
 			end
 		elseif k == 11 then
 			if not IsInInstance() then

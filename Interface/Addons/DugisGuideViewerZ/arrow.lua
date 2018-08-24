@@ -10,8 +10,8 @@ if DugisGuideViewer.carboniteloaded then
 	CarboniteVersion = GetAddOnMetadata("Carbonite", "Version"):match("^([%d.]+)");
 end
 
-local HBD = LibStub("HereBeDragons-2.0")
-local pins = LibStub("HereBeDragons-Pins-2.0")
+local HBD = LibStub("HereBeDragons-2.0-Dugis")
+local pins = LibStub("HereBeDragons-Pins-2.0-Dugis")
 
 local DugisArrow, L = DGV:RegisterModule("DugisArrow"), DugisLocals
 DugisArrowGlobal = DugisArrow 
@@ -557,6 +557,23 @@ function DugisArrow:Initialize()
 		
 		minipoint.arrow:Hide()
 		minipoint.icon:Show()
+        
+        if not minipoint.GetName_org then
+            minipoint.GetName_org = minipoint.GetName
+            minipoint.GetName = function()
+            
+                local stack = debugstack()
+                local isCalledByMinimapButtonFrameAddon = (string.find(stack, "MinimapButtonFrame") ~= nil)
+                
+                --To prevent MinimapButtonFrame addon anchoring waypoints
+                if isCalledByMinimapButtonFrameAddon then
+                    return "ActionBar"
+                else
+                    return minipoint:GetName_org()
+                end
+                
+            end
+        end
 
 		return minipoint
 	end
@@ -739,7 +756,7 @@ function DugisArrow:Initialize()
 		end)
 	end
 	
-	local function AddWaypoint(mapID, mapFloor, x, y, desc)
+	local function AddWaypoint(mapID, x, y, desc)
 		if DGV.currentAutoroutine and DGV.currentAutoroutine.key=="RecalculateRoutes" then
 			local point = DGV.GetCreateTable()
 			point.desc = desc
@@ -767,7 +784,7 @@ function DugisArrow:Initialize()
 	end
 	
 	function DGV:AddRouteWaypoint(mapID, mapFloor, x, y, desc, cue)
-		local point = AddWaypoint(mapID, mapFloor, (x or 0)*100, (y or 0)*100, desc)
+		local point = AddWaypoint(mapID, (x or 0)*100, (y or 0)*100, desc)
 		point.isRouteWaypoint = true
 		point.cue = cue
 		return point
@@ -785,12 +802,12 @@ function DugisArrow:Initialize()
 	end
 	
 	function DGV:AddCorpseWaypointChecked(mapID, mapFloor, x, y, desc)
-		local point = AddWaypoint(mapID, mapFloor, x*100, y*100, desc)
+		local point = AddWaypoint(mapID, x*100, y*100, desc)
 		point.isCorpseWaypoint = true
 		return point
 	end
 	
-	function DGV:AddRouteWaypointWithNoTrigger(mapID, mapFloor, x, y, desc)
+	function DGV:AddRouteWaypointWithNoTrigger(mapID, x, y, desc)
 		local point = DGV:AddRouteWaypoint(mapID, mapFloor, x, y, desc)
 		point.noTrigger = true
 		return point
@@ -1031,8 +1048,6 @@ function DugisArrow:Initialize()
 			if posX and posX > 0 then
 				DGV:AddCustomWaypoint(posX, posY, desc, m, f, questId)
 				if DugisGuideViewer:IsModuleLoaded("Target") then DoOutOfCombat(DugisGuideViewer.Modules.Target.Frame.Hide, DugisGuideViewer.Modules.Target.Frame) end
-				--DGV:AddRouteWaypointWithNoTrigger(m, f, posX, posY, desc)
-				--DoOutOfCombat(SetUseItemByQID, questId)
 			end
 		end
 	end
@@ -1106,7 +1121,6 @@ function DugisArrow:Initialize()
 			local floors = 0
 			
 			DugisArrow.pos_x, DugisArrow.pos_y = x, y
-			DugisArrow.map = C_Map.GetBestMapForUnit("player")
 		end
 
 		local isInInstance = IsInInstance()
@@ -1699,7 +1713,7 @@ function DugisArrow:Initialize()
 	local function SetWaypointMembersPostCalculation(mapID, mapFloor, x, y, desc, point, guideIndex, isWTag, questId)
 		if not point then
 			--DGV:DebugFormat("DugisArrow:AddWaypoint No route found")
-			point = AddWaypoint(mapID, mapFloor, x, y, desc)
+			point = AddWaypoint(mapID, x, y, desc)
 		end
 		point.isRouteWaypoint = nil
 		point.isRouteDestination = true
@@ -1741,7 +1755,7 @@ function DugisArrow:Initialize()
 
         local disabledTaxiSystem = not DGV:UserSetting(DGV_USETAXISYSTEM) or isWTag
 		if disabledTaxiSystem or (DugisArrow:getNumWaypoints()>0 and not forceCalculation) then
-			local point = AddWaypoint(mapID, mapFloor, x, y, desc)
+			local point = AddWaypoint(mapID, x, y, desc)
 			SetWaypointMembers(point, guideIndex, isWTag, questId)
 			return true
 		else
@@ -2249,15 +2263,6 @@ function DugisArrow:Initialize()
 		wayframe.progress:Show()
         wayframe.noRouteButton.button:Hide()
 	end
-	
-    local function HideInvisibleGPSWaypoints()
-        --Hidding GPS waypoints that should not be visible
-        LuaUtils:foreach(DugisArrowGlobal.waypoints, function(waypoint)
-            if not (waypoint.worldmap.icon:IsShown() and waypoint.worldmap:GetTop() and waypoint.worldmap:GetLeft()) then
-                waypoint.GPSArrowPoint:Hide()
-            end
-        end)
-    end
 
 	local function HideInvisibleGPSWaypoints()
 		--Hidding GPS waypoints that should not be visible
@@ -2271,23 +2276,20 @@ function DugisArrow:Initialize()
 	function DugisGuideViewer:OnMapChangeUpdateGPSArrow( )
 		if DugisArrow.waypoints  then
 			local oldContinentId, continentId = GetCurrentMapContinent_dugi()
-			local c, z, m, f = oldContinentId, nil, DGV:GetCurrentMapID()
 			for index, waypoint in pairs(DugisArrow.waypoints) do
 				local w, h = GPSArrow.map_overlay:GetWidth(), -GPSArrow.map_overlay:GetHeight()
-				local x, y = DGV:TranslateWorldMapPosition(waypoint.map, _, waypoint.x/100, waypoint.y/100,  DGV:GetCurrentMapID())
+				local x, y = DGV:TranslateWorldMapPosition(waypoint.map, _, waypoint.x/100, waypoint.y/100,  DGV:GetDisplayedOrPlayerMapId())
 				if x and y and w and h then
 					SetGPSArrowPointPos(waypoint, x * w,  y * h)
 					
 					if x > 1 or x < 0 or y > 1 or y < 0 then
 						waypoint.GPSArrowPoint:Hide()
-						waypoint.minimap:Hide()
-						waypoint.worldmap:Hide()
 					else
 						waypoint.GPSArrowPoint:Show()
-						waypoint.minimap:Show()
-						waypoint.worldmap:Show()
 					end
-				end
+                else
+                    waypoint.GPSArrowPoint:Hide()
+                end
 			end
 			
 			HideInvisibleGPSWaypoints()
@@ -2499,15 +2501,15 @@ function DugisArrow:Initialize()
 		hooksecurefunc(StaticPopupDialogs["TOMTOM_REMOVE_ALL_CONFIRM"], "OnAccept", hook_RemoveAllWaypoints)
 	end
 	
-	function DGV:UNIT_SPELLCAST_SUCCEEDED(event, unit, spellName, spellRank, lineIdCounter, spellId)
+	function DGV:UNIT_SPELLCAST_SUCCEEDED(event, unit, cast, spellID)
         if unit == "player" then
-            DugisGuideViewer:OnCastingSpell(spellId)
+            DugisGuideViewer:OnCastingSpell(spellID)
         end
     
 		if unit=="player" and DugisArrow.waypoints then
-			--DGV:DebugFormat("UNIT_SPELLCAST_SUCCEEDED", "spellName", spellName, "spellId", spellId)
+			--DGV:DebugFormat("UNIT_SPELLCAST_SUCCEEDED", "spellID", spellID)
 			for _, waypoint in pairs(DugisArrow.waypoints) do
-				if spellId and (waypoint.spellRequirement==spellId or waypoint.spellID==spellId) then
+				if spellID and (waypoint.spellRequirement==spellID or waypoint.spellID==spellID) then
 					DugisArrow:SetNextWaypoint(waypoint)
 					break
 				end
@@ -2667,13 +2669,13 @@ function DugisArrow:Initialize()
 						last and last.x, 
 						last and last.y)
 					if not point then
-						point = AddWaypoint(mapID, mapFloor, x, y, desc)
+						point = AddWaypoint(mapID, x, y, desc)
 					else
 						point.isRouteWaypoint = nil
 						point.isRouteDestination = true
 					end
 				else
-					point = AddWaypoint(mapID, mapFloor, x, y, desc)
+					point = AddWaypoint(mapID, x, y, desc)
 				end
 				last = location
 				point.guideIndex = guideIndex
@@ -2760,7 +2762,11 @@ function DugisArrow:Initialize()
 			:Or(RegisterReaction("ZONE_CHANGED_INDOORS"))
 			:Or(RegisterReaction("MINIMAP_UPDATE_ZOOM"))			
 			:WithPredicate(NotFlyingPredicate)
-			:WithAction(RecalculateRoutes)
+			:WithAction(function()
+                LuaUtils:Delay(5, function()
+                    RecalculateRoutes()
+                end)
+            end)
 			:DisposeOn(RegisterMemberFunctionReaction("DugisGuideViewer.Modules.DugisArrow", "Unload"))
 			
 		local function TaxiLandingPredicate()
@@ -2815,7 +2821,8 @@ function DugisArrow:Initialize()
 		end
         
         --WorldMapFrame
-        if WorldMapFrame and WorldMapFrame:IsShown() then
+        --[[ todo: find replacement
+		if WorldMapFrame and WorldMapFrame:IsShown() then
             local numPOIs = GetNumMapLandmarks();
             for i=1, numPOIs do
                 local _, name, _, _, x, y = C_WorldMap.GetMapLandmarkInfo(i)
@@ -2833,7 +2840,7 @@ function DugisArrow:Initialize()
                     end
                 end
             end               
-        end
+        end]]
 	end
 	
 	--[[  todo: find replacement
@@ -2876,14 +2883,10 @@ end
 
 function DugisArrow.DetectTeleportUsage()
 	LuaUtils:Delay(2, function()
-	--[[
-		if not (GetCurrentMapZone() == 0 and GetCurrentMapDungeonLevel() == 0) then
-			if DugisLastPosition.z ~= GetCurrentMapZone() or DugisLastPosition.f ~= GetCurrentMapDungeonLevel() then
-				--Teleport or portal used
-				OnTeleportUsed()
-				DugisLastPosition.z, DugisLastPosition.f = GetCurrentMapZone(),  GetCurrentMapDungeonLevel()
-			end
-		end
-		]]
+        if DugisLastPosition.mapId ~= nil and DugisLastPosition.mapId ~= C_Map.GetBestMapForUnit("player") then
+            --Teleport or portal used
+            OnTeleportUsed()
+        end
+        DugisLastPosition.mapId = C_Map.GetBestMapForUnit("player")
 	end)
 end

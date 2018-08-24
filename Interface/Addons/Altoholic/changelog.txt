@@ -16,6 +16,11 @@ How to support Altoholic's development :
 - Make a gift from my amazon's wish list : http://amzn.eu/7xWdnbZ
 
 
+8.0.007 (22/08/2018)
+
+- Account Summary : Removed a test that prevented the herbalism & skinning tooltip from showing the proper per expansion information.
+
+
 8.0.006 (15/08/2018)
 
 - Restored the emissaries panel.

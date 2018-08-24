@@ -3,7 +3,6 @@ CurrentTitle = "Class Campaign (98-110)"
 CurrentZone = nil
 DugisGuideUser = {
 	["PetBattleOn"] = false,
-	["NoQuestLogUpdateTrigger"] = true,
 	["userCustomWeights_v3"] = {
 		["HUNTER"] = {
 			{
@@ -773,10 +772,295 @@ DugisGuideUser = {
 	["showLeftMenuForCurrentGuide"] = true,
 	["CurrentQuestIndex"] = 123,
 	["CharacterGUID"] = "Player-1403-06E3261D",
+	["WaypointGuideIndex"] = 123,
+	["macrosData"] = {
+		["warrior"] = {
+		},
+		["demonhunter"] = {
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro31",
+				["data"] = {
+					["macroCode"] = "code31",
+					["macroDescription"] = "description31",
+				},
+			}, -- [1]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro32",
+				["data"] = {
+					["macroCode"] = "code32",
+					["macroDescription"] = "description32",
+				},
+			}, -- [2]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro33",
+				["data"] = {
+					["macroCode"] = "code33",
+					["macroDescription"] = "description33",
+				},
+			}, -- [3]
+		},
+		["general"] = {
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro1",
+				["data"] = {
+					["macroCode"] = "code1",
+					["macroDescription"] = "description1",
+				},
+			}, -- [1]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro2",
+				["data"] = {
+					["macroCode"] = "code2",
+					["macroDescription"] = "description2",
+				},
+			}, -- [2]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro3",
+				["data"] = {
+					["macroCode"] = "code3",
+					["macroDescription"] = "description3",
+				},
+			}, -- [3]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro4",
+				["data"] = {
+					["macroCode"] = "code4",
+					["macroDescription"] = "description4",
+				},
+			}, -- [4]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro5",
+				["data"] = {
+					["macroCode"] = "code5",
+					["macroDescription"] = "description5",
+				},
+			}, -- [5]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro6",
+				["data"] = {
+					["macroCode"] = "code6",
+					["macroDescription"] = "description6",
+				},
+			}, -- [6]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro7",
+				["data"] = {
+					["macroCode"] = "code7",
+					["macroDescription"] = "description7",
+				},
+			}, -- [7]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro1",
+				["data"] = {
+					["macroCode"] = "code1",
+					["macroDescription"] = "description1",
+				},
+			}, -- [8]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro2",
+				["data"] = {
+					["macroCode"] = "code2",
+					["macroDescription"] = "description2",
+				},
+			}, -- [9]
+		},
+		["monk"] = {
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro11",
+				["data"] = {
+					["macroCode"] = "code11",
+					["macroDescription"] = "description11",
+				},
+			}, -- [1]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro12",
+				["data"] = {
+					["macroCode"] = "code12",
+					["macroDescription"] = "description12",
+				},
+			}, -- [2]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro13",
+				["data"] = {
+					["macroCode"] = "code13",
+					["macroDescription"] = "description13",
+				},
+			}, -- [3]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro14",
+				["data"] = {
+					["macroCode"] = "code14",
+					["macroDescription"] = "description13",
+				},
+			}, -- [4]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro15",
+				["data"] = {
+					["macroCode"] = "code15",
+					["macroDescription"] = "description13",
+				},
+			}, -- [5]
+		},
+		["rogue"] = {
+		},
+		["mage"] = {
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro61",
+				["data"] = {
+					["macroCode"] = "code61",
+					["macroDescription"] = "description61",
+				},
+			}, -- [1]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro62",
+				["data"] = {
+					["macroCode"] = "code62",
+					["macroDescription"] = "description62",
+				},
+			}, -- [2]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro63",
+				["data"] = {
+					["macroCode"] = "code63",
+					["macroDescription"] = "description63",
+				},
+			}, -- [3]
+		},
+		["druid"] = {
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro41",
+				["data"] = {
+					["macroCode"] = "code41",
+					["macroDescription"] = "description41",
+				},
+			}, -- [1]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro42",
+				["data"] = {
+					["macroCode"] = "code42",
+					["macroDescription"] = "description42",
+				},
+			}, -- [2]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro43",
+				["data"] = {
+					["macroCode"] = "code43",
+					["macroDescription"] = "description43",
+				},
+			}, -- [3]
+		},
+		["deathknight"] = {
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro21",
+				["data"] = {
+					["macroCode"] = "code21",
+					["macroDescription"] = "description21",
+				},
+			}, -- [1]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro22",
+				["data"] = {
+					["macroCode"] = "code22",
+					["macroDescription"] = "description22",
+				},
+			}, -- [2]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro23",
+				["data"] = {
+					["macroCode"] = "code23",
+					["macroDescription"] = "description23",
+				},
+			}, -- [3]
+		},
+		["warlock"] = {
+		},
+		["priest"] = {
+		},
+		["hunter"] = {
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro51",
+				["data"] = {
+					["macroCode"] = "code51",
+					["macroDescription"] = "description51",
+				},
+			}, -- [1]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro52",
+				["data"] = {
+					["macroCode"] = "code52",
+					["macroDescription"] = "description52",
+				},
+			}, -- [2]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro53",
+				["data"] = {
+					["macroCode"] = "code53",
+					["macroDescription"] = "description53",
+				},
+			}, -- [3]
+		},
+		["shaman"] = {
+		},
+		["paladin"] = {
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro81",
+				["data"] = {
+					["macroCode"] = "code81",
+					["macroDescription"] = "description81",
+				},
+			}, -- [1]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro82",
+				["data"] = {
+					["macroCode"] = "code82",
+					["macroDescription"] = "description82",
+				},
+			}, -- [2]
+			{
+				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
+				["name"] = "macro83",
+				["data"] = {
+					["macroCode"] = "code83",
+					["macroDescription"] = "description83",
+				},
+			}, -- [3]
+		},
+	},
 	["PreviewPointy"] = 57.61,
 	["turnedinquests"] = {
 	},
-	["NextQuestIndex"] = 132,
+	["NoQuestLogUpdateTrigger"] = true,
 	["RecentGuides"] = {
 		["Categories"] = {
 			"Others", -- [1]
@@ -795,12 +1079,6 @@ DugisGuideUser = {
 			},
 		},
 	},
-	["excludedTrackingPoints"] = {
-	},
-	["removedQuests"] = {
-		[41069] = true,
-	},
-	["PlayerLevel"] = 103,
 	["QuestState"] = {
 		["Class Campaign (98-110):234"] = "U",
 		["Class Campaign (98-110):57"] = "C",
@@ -1069,9 +1347,9 @@ DugisGuideUser = {
 		["Class Campaign (98-110):606"] = "U",
 		["Class Campaign (98-110):476"] = "U",
 		["1028(98-100):148"] = "X",
-		["Class Campaign (98-110):73"] = "C",
-		["Class Campaign (98-110):2"] = "C",
 		["1028(98-100):142"] = "X",
+		["Class Campaign (98-110):2"] = "C",
+		["Class Campaign (98-110):73"] = "C",
 		["Class Campaign (98-110):620"] = "U",
 		["1028(98-100):159"] = "X",
 		["Class Campaign (98-110):209"] = "C",
@@ -1087,10 +1365,10 @@ DugisGuideUser = {
 		["1028(98-100):9"] = "C",
 		["1028(98-100):5"] = "C",
 		["Class Campaign (98-110):553"] = "U",
-		["Class Campaign (98-110):131"] = "C",
+		["1028(98-100):50"] = "C",
 		["1028(98-100):172"] = "X",
 		["Class Campaign (98-110):417"] = "U",
-		["1028(98-100):50"] = "C",
+		["Class Campaign (98-110):131"] = "C",
 		["Class Campaign (98-110):452"] = "C",
 		["Class Campaign (98-110):318"] = "U",
 		["Class Campaign (98-110):173"] = "U",
@@ -1150,7 +1428,7 @@ DugisGuideUser = {
 		["Class Campaign (98-110):237"] = "U",
 		["Class Campaign (98-110):589"] = "U",
 		["Class Campaign (98-110):200"] = "U",
-		["Class Campaign (98-110):592"] = "U",
+		["Class Campaign (98-110):368"] = "U",
 		["1028(98-100):76"] = "C",
 		["Class Campaign (98-110):521"] = "U",
 		["Class Campaign (98-110):51"] = "C",
@@ -1166,9 +1444,9 @@ DugisGuideUser = {
 		["Class Campaign (98-110):467"] = "C",
 		["Class Campaign (98-110):105"] = "C",
 		["Class Campaign (98-110):246"] = "U",
-		["Class Campaign (98-110):279"] = "U",
-		["Class Campaign (98-110):54"] = "C",
 		["Class Campaign (98-110):533"] = "U",
+		["Class Campaign (98-110):54"] = "C",
+		["Class Campaign (98-110):279"] = "U",
 		["Class Campaign (98-110):524"] = "U",
 		["1028(98-100):65"] = "X",
 		["Class Campaign (98-110):364"] = "U",
@@ -1177,7 +1455,7 @@ DugisGuideUser = {
 		["1028(98-100):141"] = "X",
 		["Class Campaign (98-110):260"] = "U",
 		["Class Campaign (98-110):232"] = "U",
-		["1028(98-100):38"] = "C",
+		["Class Campaign (98-110):574"] = "C",
 		["Class Campaign (98-110):488"] = "U",
 		["1028(98-100):44"] = "C",
 		["1028(98-100):29"] = "C",
@@ -1220,7 +1498,7 @@ DugisGuideUser = {
 		["Class Campaign (98-110):491"] = "U",
 		["Class Campaign (98-110):412"] = "U",
 		["Class Campaign (98-110):224"] = "U",
-		["Class Campaign (98-110):591"] = "U",
+		["Class Campaign (98-110):310"] = "U",
 		["Class Campaign (98-110):321"] = "U",
 		["Class Campaign (98-110):459"] = "U",
 		["1028(98-100):87"] = "C",
@@ -1236,7 +1514,7 @@ DugisGuideUser = {
 		["Class Campaign (98-110):186"] = "U",
 		["Class Campaign (98-110):451"] = "C",
 		["Class Campaign (98-110):639"] = "U",
-		["Class Campaign (98-110):631"] = "C",
+		["1028(98-100):131"] = "X",
 		["1028(98-100):135"] = "X",
 		["Class Campaign (98-110):194"] = "U",
 		["1028(98-100):48"] = "C",
@@ -1249,21 +1527,21 @@ DugisGuideUser = {
 		["Class Campaign (98-110):78"] = "C",
 		["Class Campaign (98-110):424"] = "C",
 		["Class Campaign (98-110):403"] = "U",
-		["Class Campaign (98-110):58"] = "C",
+		["1028(98-100):46"] = "C",
 		["Class Campaign (98-110):544"] = "U",
 		["1028(98-100):173"] = "X",
 		["Class Campaign (98-110):48"] = "C",
 		["Class Campaign (98-110):87"] = "C",
-		["Class Campaign (98-110):29"] = "U",
-		["Class Campaign (98-110):427"] = "U",
-		["1028(98-100):97"] = "C",
 		["Class Campaign (98-110):272"] = "U",
-		["Class Campaign (98-110):247"] = "U",
-		["Class Campaign (98-110):43"] = "C",
 		["1028(98-100):167"] = "X",
+		["1028(98-100):97"] = "C",
+		["Class Campaign (98-110):29"] = "U",
+		["Class Campaign (98-110):549"] = "U",
+		["Class Campaign (98-110):43"] = "C",
+		["Class Campaign (98-110):427"] = "U",
 		["Class Campaign (98-110):208"] = "C",
 		["Class Campaign (98-110):317"] = "U",
-		["Class Campaign (98-110):549"] = "U",
+		["Class Campaign (98-110):247"] = "U",
 		["1028(98-100):140"] = "X",
 		["1028(98-100):132"] = "X",
 		["Class Campaign (98-110):197"] = "U",
@@ -1273,26 +1551,26 @@ DugisGuideUser = {
 		["Class Campaign (98-110):358"] = "U",
 		["Class Campaign (98-110):384"] = "C",
 		["Class Campaign (98-110):615"] = "U",
-		["Class Campaign (98-110):565"] = "U",
+		["Class Campaign (98-110):627"] = "C",
 		["Class Campaign (98-110):122"] = "U",
 		["Class Campaign (98-110):44"] = "C",
 		["Class Campaign (98-110):440"] = "U",
 		["Class Campaign (98-110):509"] = "U",
 		["Class Campaign (98-110):504"] = "U",
 		["Class Campaign (98-110):405"] = "U",
-		["1028(98-100):136"] = "X",
+		["Class Campaign (98-110):501"] = "U",
 		["Class Campaign (98-110):570"] = "U",
-		["1028(98-100):139"] = "X",
-		["Class Campaign (98-110):71"] = "C",
+		["Class Campaign (98-110):441"] = "U",
+		["Class Campaign (98-110):67"] = "C",
 		["Class Campaign (98-110):282"] = "U",
 		["1028(98-100):72"] = "C",
-		["Class Campaign (98-110):501"] = "U",
-		["Class Campaign (98-110):67"] = "C",
+		["1028(98-100):136"] = "X",
+		["Class Campaign (98-110):126"] = "U",
 		["Class Campaign (98-110):437"] = "U",
-		["Class Campaign (98-110):557"] = "U",
 		["Class Campaign (98-110):599"] = "U",
+		["Class Campaign (98-110):557"] = "U",
 		["Class Campaign (98-110):205"] = "U",
-		["Class Campaign (98-110):280"] = "U",
+		["Class Campaign (98-110):511"] = "U",
 		["Class Campaign (98-110):81"] = "C",
 		["Class Campaign (98-110):506"] = "U",
 		["Class Campaign (98-110):100"] = "C",
@@ -1301,10 +1579,10 @@ DugisGuideUser = {
 		["1028(98-100):118"] = "X",
 		["1028(98-100):152"] = "X",
 		["Class Campaign (98-110):535"] = "U",
-		["1028(98-100):27"] = "C",
+		["Class Campaign (98-110):79"] = "C",
 		["Class Campaign (98-110):458"] = "U",
 		["Class Campaign (98-110):115"] = "C",
-		["1028(98-100):151"] = "X",
+		["Class Campaign (98-110):168"] = "C",
 		["Class Campaign (98-110):370"] = "U",
 		["Class Campaign (98-110):169"] = "U",
 		["Class Campaign (98-110):603"] = "U",
@@ -1313,19 +1591,19 @@ DugisGuideUser = {
 		["Class Campaign (98-110):248"] = "U",
 		["Class Campaign (98-110):393"] = "U",
 		["Class Campaign (98-110):103"] = "C",
-		["Class Campaign (98-110):422"] = "C",
+		["Class Campaign (98-110):382"] = "C",
 		["1028(98-100):158"] = "X",
 		["Class Campaign (98-110):110"] = "C",
 		["1028(98-100):54"] = "C",
-		["Class Campaign (98-110):525"] = "U",
-		["1028(98-100):84"] = "C",
-		["Class Campaign (98-110):269"] = "U",
-		["Class Campaign (98-110):382"] = "C",
 		["1028(98-100):145"] = "X",
 		["1028(98-100):7"] = "C",
+		["Class Campaign (98-110):269"] = "U",
+		["Class Campaign (98-110):422"] = "C",
+		["Class Campaign (98-110):481"] = "U",
+		["Class Campaign (98-110):83"] = "C",
 		["1028(98-100):36"] = "C",
-		["1028(98-100):96"] = "C",
-		["Class Campaign (98-110):444"] = "U",
+		["Class Campaign (98-110):568"] = "U",
+		["Class Campaign (98-110):91"] = "C",
 		["Class Campaign (98-110):167"] = "U",
 		["1028(98-100):43"] = "C",
 		["Class Campaign (98-110):401"] = "U",
@@ -1340,38 +1618,38 @@ DugisGuideUser = {
 		["1028(98-100):37"] = "C",
 		["Class Campaign (98-110):38"] = "U",
 		["Class Campaign (98-110):396"] = "U",
-		["Class Campaign (98-110):97"] = "C",
+		["1028(98-100):14"] = "C",
 		["1028(98-100):39"] = "C",
 		["1028(98-100):53"] = "C",
 		["1028(98-100):89"] = "C",
 		["Class Campaign (98-110):291"] = "U",
 		["1028(98-100):161"] = "X",
 		["Class Campaign (98-110):288"] = "U",
-		["Class Campaign (98-110):239"] = "U",
-		["Class Campaign (98-110):66"] = "C",
 		["Class Campaign (98-110):274"] = "U",
-		["Class Campaign (98-110):614"] = "U",
+		["Class Campaign (98-110):66"] = "C",
+		["Class Campaign (98-110):239"] = "U",
+		["Class Campaign (98-110):300"] = "U",
 		["Class Campaign (98-110):276"] = "U",
 		["Class Campaign (98-110):490"] = "U",
 		["1028(98-100):10"] = "C",
 		["Class Campaign (98-110):448"] = "C",
-		["Class Campaign (98-110):189"] = "U",
 		["Class Campaign (98-110):569"] = "U",
+		["Class Campaign (98-110):189"] = "U",
 		["1028(98-100):99"] = "C",
 		["Class Campaign (98-110):608"] = "U",
 		["1028(98-100):175"] = "X",
-		["1028(98-100):81"] = "C",
 		["Class Campaign (98-110):16"] = "C",
+		["1028(98-100):81"] = "C",
 		["Class Campaign (98-110):371"] = "U",
 		["Class Campaign (98-110):379"] = "C",
 		["1028(98-100):52"] = "C",
-		["Class Campaign (98-110):387"] = "U",
 		["Class Campaign (98-110):11"] = "C",
+		["Class Campaign (98-110):387"] = "U",
 		["1028(98-100):157"] = "X",
 		["1028(98-100):51"] = "C",
-		["Class Campaign (98-110):113"] = "C",
+		["Class Campaign (98-110):33"] = "U",
 		["Class Campaign (98-110):416"] = "U",
-		["1028(98-100):17"] = "C",
+		["1028(98-100):113"] = "X",
 		["Class Campaign (98-110):363"] = "U",
 		["Class Campaign (98-110):342"] = "U",
 		["Class Campaign (98-110):230"] = "U",
@@ -1388,8 +1666,8 @@ DugisGuideUser = {
 		["Class Campaign (98-110):339"] = "U",
 		["Class Campaign (98-110):351"] = "U",
 		["1028(98-100):121"] = "X",
-		["Class Campaign (98-110):431"] = "U",
 		["1028(98-100):127"] = "X",
+		["Class Campaign (98-110):431"] = "U",
 		["Class Campaign (98-110):332"] = "U",
 		["Class Campaign (98-110):420"] = "C",
 		["Class Campaign (98-110):178"] = "U",
@@ -1397,17 +1675,17 @@ DugisGuideUser = {
 		["Class Campaign (98-110):65"] = "C",
 		["Class Campaign (98-110):425"] = "U",
 		["Class Campaign (98-110):241"] = "U",
-		["Class Campaign (98-110):254"] = "U",
+		["1028(98-100):25"] = "C",
 		["Class Campaign (98-110):623"] = "U",
-		["Class Campaign (98-110):315"] = "U",
+		["Class Campaign (98-110):369"] = "U",
 		["Class Campaign (98-110):227"] = "U",
 		["Class Campaign (98-110):510"] = "U",
-		["Class Campaign (98-110):413"] = "U",
-		["Class Campaign (98-110):369"] = "U",
 		["Class Campaign (98-110):580"] = "U",
+		["Class Campaign (98-110):315"] = "U",
+		["Class Campaign (98-110):413"] = "U",
 		["Class Campaign (98-110):233"] = "U",
 		["Class Campaign (98-110):128"] = "U",
-		["Class Campaign (98-110):438"] = "U",
+		["Class Campaign (98-110):143"] = "U",
 		["1028(98-100):82"] = "C",
 		["Class Campaign (98-110):340"] = "U",
 		["Class Campaign (98-110):353"] = "U",
@@ -1419,54 +1697,54 @@ DugisGuideUser = {
 		["Class Campaign (98-110):61"] = "C",
 		["Class Campaign (98-110):362"] = "U",
 		["Class Campaign (98-110):347"] = "U",
-		["1028(98-100):125"] = "X",
-		["Class Campaign (98-110):240"] = "U",
-		["Class Campaign (98-110):41"] = "C",
-		["Class Campaign (98-110):245"] = "U",
-		["Class Campaign (98-110):252"] = "U",
-		["Class Campaign (98-110):515"] = "U",
-		["Class Campaign (98-110):482"] = "U",
 		["Class Campaign (98-110):485"] = "U",
+		["Class Campaign (98-110):240"] = "U",
+		["Class Campaign (98-110):367"] = "U",
 		["Class Campaign (98-110):500"] = "U",
-		["Class Campaign (98-110):630"] = "C",
 		["Class Campaign (98-110):136"] = "U",
-		["Class Campaign (98-110):380"] = "C",
+		["Class Campaign (98-110):515"] = "U",
+		["Class Campaign (98-110):637"] = "U",
 		["Class Campaign (98-110):53"] = "C",
+		["Class Campaign (98-110):245"] = "U",
+		["Class Campaign (98-110):630"] = "C",
+		["Class Campaign (98-110):252"] = "U",
+		["Class Campaign (98-110):380"] = "C",
+		["1028(98-100):125"] = "X",
 		["Class Campaign (98-110):12"] = "C",
 		["Class Campaign (98-110):130"] = "U",
 		["Class Campaign (98-110):341"] = "U",
 		["Class Campaign (98-110):31"] = "U",
 		["Class Campaign (98-110):556"] = "U",
-		["Class Campaign (98-110):176"] = "C",
+		["Class Campaign (98-110):567"] = "U",
 		["1028(98-100):168"] = "X",
 		["Class Campaign (98-110):140"] = "U",
 		["Class Campaign (98-110):222"] = "U",
 		["Class Campaign (98-110):512"] = "U",
 		["Class Campaign (98-110):299"] = "U",
-		["Class Campaign (98-110):62"] = "C",
+		["1028(98-100):162"] = "X",
+		["Class Campaign (98-110):176"] = "C",
 		["Class Campaign (98-110):560"] = "U",
-		["Class Campaign (98-110):567"] = "U",
 		["1028(98-100):18"] = "C",
 		["Class Campaign (98-110):513"] = "U",
 		["Class Campaign (98-110):199"] = "U",
 		["Class Campaign (98-110):251"] = "U",
-		["1028(98-100):162"] = "X",
+		["Class Campaign (98-110):62"] = "C",
 		["1028(98-100):95"] = "C",
 		["Class Campaign (98-110):102"] = "C",
 		["Class Campaign (98-110):619"] = "U",
 		["Class Campaign (98-110):617"] = "U",
-		["Class Campaign (98-110):637"] = "U",
+		["Class Campaign (98-110):482"] = "U",
 		["1028(98-100):110"] = "X",
 		["1028(98-100):117"] = "X",
 		["Class Campaign (98-110):350"] = "U",
-		["Class Campaign (98-110):367"] = "U",
+		["Class Campaign (98-110):41"] = "C",
 		["Class Campaign (98-110):349"] = "U",
 		["Class Campaign (98-110):399"] = "U",
 		["Class Campaign (98-110):243"] = "U",
 		["1028(98-100):57"] = "X",
 		["Class Campaign (98-110):609"] = "U",
-		["1028(98-100):25"] = "C",
-		["Class Campaign (98-110):143"] = "U",
+		["Class Campaign (98-110):254"] = "U",
+		["Class Campaign (98-110):438"] = "U",
 		["Class Campaign (98-110):638"] = "U",
 		["Class Campaign (98-110):348"] = "U",
 		["1028(98-100):55"] = "X",
@@ -1482,44 +1760,44 @@ DugisGuideUser = {
 		["1028(98-100):126"] = "X",
 		["Class Campaign (98-110):60"] = "C",
 		["Class Campaign (98-110):377"] = "C",
-		["1028(98-100):113"] = "X",
+		["1028(98-100):17"] = "C",
 		["Class Campaign (98-110):361"] = "U",
 		["1028(98-100):155"] = "X",
-		["Class Campaign (98-110):33"] = "U",
+		["Class Campaign (98-110):113"] = "C",
 		["Class Campaign (98-110):5"] = "C",
 		["Class Campaign (98-110):554"] = "U",
 		["Class Campaign (98-110):385"] = "C",
 		["Class Campaign (98-110):201"] = "U",
-		["Class Campaign (98-110):300"] = "U",
+		["Class Campaign (98-110):614"] = "U",
 		["Class Campaign (98-110):313"] = "U",
 		["1028(98-100):92"] = "C",
-		["1028(98-100):14"] = "C",
+		["Class Campaign (98-110):97"] = "C",
 		["Class Campaign (98-110):13"] = "C",
 		["Class Campaign (98-110):271"] = "U",
 		["Class Campaign (98-110):594"] = "U",
-		["Class Campaign (98-110):292"] = "U",
+		["1028(98-100):19"] = "C",
 		["Class Campaign (98-110):389"] = "U",
 		["Class Campaign (98-110):331"] = "U",
-		["1028(98-100):19"] = "C",
+		["Class Campaign (98-110):292"] = "U",
 		["Class Campaign (98-110):404"] = "U",
-		["Class Campaign (98-110):91"] = "C",
-		["Class Campaign (98-110):568"] = "U",
-		["Class Campaign (98-110):83"] = "C",
+		["Class Campaign (98-110):444"] = "U",
+		["1028(98-100):96"] = "C",
+		["1028(98-100):84"] = "C",
 		["Class Campaign (98-110):583"] = "U",
-		["Class Campaign (98-110):481"] = "U",
+		["Class Campaign (98-110):525"] = "U",
 		["Class Campaign (98-110):179"] = "C",
 		["Class Campaign (98-110):217"] = "U",
 		["Class Campaign (98-110):354"] = "U",
 		["Class Campaign (98-110):408"] = "U",
-		["Class Campaign (98-110):168"] = "C",
-		["Class Campaign (98-110):79"] = "C",
-		["Class Campaign (98-110):511"] = "U",
-		["Class Campaign (98-110):126"] = "U",
-		["Class Campaign (98-110):441"] = "U",
+		["1028(98-100):151"] = "X",
+		["1028(98-100):27"] = "C",
+		["Class Campaign (98-110):280"] = "U",
+		["Class Campaign (98-110):71"] = "C",
+		["1028(98-100):139"] = "X",
 		["Class Campaign (98-110):530"] = "U",
 		["Class Campaign (98-110):514"] = "U",
 		["1028(98-100):32"] = "C",
-		["Class Campaign (98-110):627"] = "C",
+		["Class Campaign (98-110):565"] = "U",
 		["Class Campaign (98-110):344"] = "U",
 		["Class Campaign (98-110):294"] = "U",
 		["Class Campaign (98-110):4"] = "C",
@@ -1528,7 +1806,7 @@ DugisGuideUser = {
 		["1028(98-100):66"] = "C",
 		["Class Campaign (98-110):322"] = "U",
 		["Class Campaign (98-110):308"] = "U",
-		["1028(98-100):46"] = "C",
+		["Class Campaign (98-110):58"] = "C",
 		["Class Campaign (98-110):9"] = "C",
 		["1028(98-100):4"] = "C",
 		["Class Campaign (98-110):63"] = "C",
@@ -1538,13 +1816,13 @@ DugisGuideUser = {
 		["Class Campaign (98-110):298"] = "U",
 		["Class Campaign (98-110):464"] = "C",
 		["Class Campaign (98-110):148"] = "U",
-		["1028(98-100):131"] = "X",
+		["Class Campaign (98-110):631"] = "C",
 		["1028(98-100):144"] = "X",
 		["Class Campaign (98-110):518"] = "U",
 		["Class Campaign (98-110):433"] = "U",
 		["1028(98-100):2"] = "C",
 		["1028(98-100):79"] = "C",
-		["Class Campaign (98-110):310"] = "U",
+		["Class Campaign (98-110):591"] = "U",
 		["Class Campaign (98-110):470"] = "C",
 		["Class Campaign (98-110):324"] = "U",
 		["Class Campaign (98-110):616"] = "U",
@@ -1565,7 +1843,7 @@ DugisGuideUser = {
 		["Class Campaign (98-110):10"] = "C",
 		["Class Campaign (98-110):116"] = "C",
 		["Class Campaign (98-110):343"] = "U",
-		["Class Campaign (98-110):574"] = "C",
+		["1028(98-100):38"] = "C",
 		["1028(98-100):106"] = "C",
 		["1028(98-100):88"] = "C",
 		["1028(98-100):63"] = "C",
@@ -1578,7 +1856,7 @@ DugisGuideUser = {
 		["Class Campaign (98-110):411"] = "U",
 		["Class Campaign (98-110):275"] = "U",
 		["Class Campaign (98-110):555"] = "U",
-		["Class Campaign (98-110):368"] = "U",
+		["Class Campaign (98-110):592"] = "U",
 		["Class Campaign (98-110):301"] = "U",
 		["Class Campaign (98-110):235"] = "U",
 		["Class Campaign (98-110):327"] = "U",
@@ -1619,304 +1897,28 @@ DugisGuideUser = {
 		["Class Campaign (98-110):242"] = "U",
 		["1028(98-100):67"] = "C",
 	},
+	["NextQuestIndex"] = 132,
+	["removedQuests"] = {
+		[41069] = true,
+	},
+	["PlayerLevel"] = 103,
 	["PreviewPointx"] = 58.67,
 	["ModelDataOn"] = false,
 	["subCategoriesExpanded"] = {
 	},
+	["alreadySuggestedGuides"] = {
+	},
 	["toskip"] = {
 	},
 	["FinalizeWaypoint"] = true,
-	["WaypointGuideIndex"] = 123,
-	["alreadySuggestedGuides"] = {
+	["CollectedSkillsInfo"] = {
 	},
-	["macrosData"] = {
-		["warrior"] = {
-		},
-		["demonhunter"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code31",
-					["macroDescription"] = "description31",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro31",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code32",
-					["macroDescription"] = "description32",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro32",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code33",
-					["macroDescription"] = "description33",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro33",
-			}, -- [3]
-		},
-		["general"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code1",
-					["macroDescription"] = "description1",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro1",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code2",
-					["macroDescription"] = "description2",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro2",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code3",
-					["macroDescription"] = "description3",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro3",
-			}, -- [3]
-			{
-				["data"] = {
-					["macroCode"] = "code4",
-					["macroDescription"] = "description4",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro4",
-			}, -- [4]
-			{
-				["data"] = {
-					["macroCode"] = "code5",
-					["macroDescription"] = "description5",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro5",
-			}, -- [5]
-			{
-				["data"] = {
-					["macroCode"] = "code6",
-					["macroDescription"] = "description6",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro6",
-			}, -- [6]
-			{
-				["data"] = {
-					["macroCode"] = "code7",
-					["macroDescription"] = "description7",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro7",
-			}, -- [7]
-			{
-				["data"] = {
-					["macroCode"] = "code1",
-					["macroDescription"] = "description1",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro1",
-			}, -- [8]
-			{
-				["data"] = {
-					["macroCode"] = "code2",
-					["macroDescription"] = "description2",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro2",
-			}, -- [9]
-		},
-		["monk"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code11",
-					["macroDescription"] = "description11",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro11",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code12",
-					["macroDescription"] = "description12",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro12",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code13",
-					["macroDescription"] = "description13",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro13",
-			}, -- [3]
-			{
-				["data"] = {
-					["macroCode"] = "code14",
-					["macroDescription"] = "description13",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro14",
-			}, -- [4]
-			{
-				["data"] = {
-					["macroCode"] = "code15",
-					["macroDescription"] = "description13",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro15",
-			}, -- [5]
-		},
-		["rogue"] = {
-		},
-		["mage"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code61",
-					["macroDescription"] = "description61",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro61",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code62",
-					["macroDescription"] = "description62",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro62",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code63",
-					["macroDescription"] = "description63",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro63",
-			}, -- [3]
-		},
-		["druid"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code41",
-					["macroDescription"] = "description41",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro41",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code42",
-					["macroDescription"] = "description42",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro42",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code43",
-					["macroDescription"] = "description43",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro43",
-			}, -- [3]
-		},
-		["deathknight"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code21",
-					["macroDescription"] = "description21",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro21",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code22",
-					["macroDescription"] = "description22",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro22",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code23",
-					["macroDescription"] = "description23",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro23",
-			}, -- [3]
-		},
-		["warlock"] = {
-		},
-		["priest"] = {
-		},
-		["hunter"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code51",
-					["macroDescription"] = "description51",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro51",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code52",
-					["macroDescription"] = "description52",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro52",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code53",
-					["macroDescription"] = "description53",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro53",
-			}, -- [3]
-		},
-		["shaman"] = {
-		},
-		["paladin"] = {
-			{
-				["data"] = {
-					["macroCode"] = "code81",
-					["macroDescription"] = "description81",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro81",
-			}, -- [1]
-			{
-				["data"] = {
-					["macroCode"] = "code82",
-					["macroDescription"] = "description82",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro82",
-			}, -- [2]
-			{
-				["data"] = {
-					["macroCode"] = "code83",
-					["macroDescription"] = "description83",
-				},
-				["icon"] = "Interface/ICONS/INV_Misc_QuestionMark",
-				["name"] = "macro83",
-			}, -- [3]
-		},
+	["excludedTrackingPoints"] = {
 	},
 	["shownObjectives"] = {
 		[41069] = true,
 	},
-	["LFGWorldLocation"] = "627:nil:1890803526",
+	["LFGWorldLocation"] = "619:nil:1989977324",
 }
 DugisGuideViewerDB = nil
 DugisArrowDb = {
@@ -1947,4 +1949,5 @@ DugisCharacterCache = {
 	},
 }
 DugisLastPosition = {
+	["mapId"] = 619,
 }

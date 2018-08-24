@@ -33,7 +33,7 @@ N Vindicator's Cache |QID|33574| |N|Under water (51.1,79.1) Reward: (item:113375
 N Waterlogged Chest |QID|33566| |N|(39.2,83.8) Reward: (item:113372)| |OBJ|224754| |Z|539|
 N Scaly Rylak Egg |QID|33565| |N|Swim to island (65.94,84.42)(67.1,84.3)Climb path to cave <br/><br/>Reward: (item:44722)| |OBJ|224753| |Z|539|
 N Cargo of the Raven Queen |QID|33885| |N|(84.5,44.7) Reward: (cur:824)| |OBJ|226865| |Z|539|
-N Spark's Stolen Supplies |QID|35289| |N|Alliance Garrison, behind fishing shack (51.8,1.1) Under water, inside cave <br/><br/>Reward: (cur:824)| |OBJ|232090| |Z|579|
+N Spark's Stolen Supplies |QID|35289| |N|Alliance Garrison, behind fishing shack (51.8,1.1) Under water, inside cave <br/><br/>Reward: (cur:824)| |OBJ|232090| |Z|582|
 N Astrologer's Box |QID|33867| |N|2nd story of tower (49.3,37.5) Reward: (item:109739)| |OBJ|226831| |Z|539|
 N Uzko's Knickknacks |QID|33540| |N|Inside structure, on shelf (35.9,40.9) Reward: (item:113546)| |OBJ|232587| |Z|539|
 N Rovo's Dagger |QID|33573| |N|Inside structure, on shelf (36.7,44.5) Reward: (item:113378)| |OBJ|232586| |Z|539|
@@ -48,10 +48,10 @@ N Swamplighter Hive |N|Kill all the swamplighter's on the tree directly to the l
 N Mikkal's Chest |QID|35603| |N|On top of hill, near painter (58.9,22.0) <br/><br/>Reward: (item:113215)| |OBJ|232624| |Z|539|
 N Strange Spore |QID|35600| |N|This is on top of a big mushroom <br/><br/>In Elodar at the top of the stair case (63.28,24.30) <br/><br/>follow path to the very top and jump down to the right (59.81,18.63)<br/><br/>climb up to the top staying to the left (59.33,17.69), hugging the left side of the mountain <br/><br/>Jumps down a few ledges until you are level with the mushroom (56.22,18.30) <br/><br/> JUMP! (55.8,19.9) <br/><br/>Reward: (item:118104)| |OBJ|232621| |Z|539|
 N Armored Elekk Tusk |QID|33569| |N|(41.5,27.9) Reward: (item:108902)| |OBJ|226854| |Z|539|
-N Pippers' Buried Supplies |QID|35384| |N|Follow (npc:82177) to find all the supplies (46.5,75.0) Reward: (cur:824)| |OBJ|232252| |Z|579| |NPC|82177|
-N Pippers' Buried Supplies |QID|35381| |N|Follow (npc:82177) to find all the supplies (49.6,76.8) Reward: (cur:824)| |OBJ|232252| |Z|579|
-N Pippers' Buried Supplies |QID|35382| |N|Follow (npc:82177) to find all the supplies (62.4,71.3) Reward: (cur:824)| |OBJ|232250| |Z|579|
-N Pippers' Buried Supplies |QID|35383| |N|Follow (npc:82177) to find all the supplies (49.6,76.8) Reward: (cur:824)| |OBJ|232252| |Z|579|
+N Pippers' Buried Supplies |QID|35384| |N|Follow (npc:82177) to find all the supplies (46.5,75.0) Reward: (cur:824)| |OBJ|232252| |Z|582| |NPC|82177|
+N Pippers' Buried Supplies |QID|35381| |N|Follow (npc:82177) to find all the supplies (49.6,76.8) Reward: (cur:824)| |OBJ|232252| |Z|582|
+N Pippers' Buried Supplies |QID|35382| |N|Follow (npc:82177) to find all the supplies (62.4,71.3) Reward: (cur:824)| |OBJ|232250| |Z|582|
+N Pippers' Buried Supplies |QID|35383| |N|Follow (npc:82177) to find all the supplies (49.6,76.8) Reward: (cur:824)| |OBJ|232252| |Z|582|
 
 N Guide Complete
 ]]

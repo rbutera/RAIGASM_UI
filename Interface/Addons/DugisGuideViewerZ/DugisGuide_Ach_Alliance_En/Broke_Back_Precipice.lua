@@ -5,7 +5,7 @@ return [[
 
 N Note |N|Defeat the powerful foes within Broken Precipice for (aid:9571). This requirement requires that you be on your Garrison Daily (qid:36694). Tick this step.|
 
-A Assault on the Broken Precipice |QID|36694| |N|Being on this Garrison Daily Quest is required.| |AID|9571| |D| |Z|579|
+A Assault on the Broken Precipice |QID|36694| |N|Being on this Garrison Daily Quest is required.| |AID|9571| |D| |Z|582|
 
 R Nagrand |N|Travel to {Nagrand} (37.2, 18.1)| |Z|550| |AID|9571|
 K (npc:87788) |N|Slay (npc:87788) (36.0,23.6)| |Z|550| |AID|9571| |AC|1| --Durg Spinecrusher

@@ -10,45 +10,23 @@ local mplus_tabel =
 	type = "group",
 	args =
 	{
-		mini = 
+		enable = 
 		{
-			name = MINIMUM,
-			order = 1,
-			type = "input",
+			name = ENABLE,
+			type = "toggle",
 			set = function(_,val)
-				if val == "" then
-					LookingForGroup_Options.db.profile.minimum_mplus_level = nil
-				else
-					LookingForGroup_Options.db.profile.minimum_mplus_level = tonumber(val)
-				end
+				LookingForGroup_Options.db.profile.mplus = val or nil
 			end,
 			get = function()
-				local m = LookingForGroup_Options.db.profile.minimum_mplus_level
-				if m then
-					return tostring(m)
-				end
+				return LookingForGroup_Options.db.profile.mplus
 			end,
-			pattern = "^[0-9]*$"
 		},
-		maxi =
+		filter =
 		{
-			name = MAXIMUM,
-			order = 2,
+			name = FILTER,
 			type = "input",
-			pattern = "^[0-9]*$",
-			set = function(_,val)
-				if val == "" then
-					LookingForGroup_Options.db.profile.maximum_mplus_level = nil
-				else
-					LookingForGroup_Options.db.profile.maximum_mplus_level = tonumber(val)
-				end
-			end,
-			get = function()
-				local m = LookingForGroup_Options.db.profile.maximum_mplus_level
-				if m then
-					return tostring(m)
-				end
-			end
+			dialogControl = "LFG_SECURE_SEARCH_BOX_REFERENCE",
+			width = "full"
 		}
 	}
 }
@@ -64,18 +42,10 @@ end)
 LookingForGroup_Options.RegisterSimpleFilter("find",function(resultID,profile)
 	local id, activityID, name, comment = C_LFGList.GetSearchResultInfo(resultID)
 	local fullName, shortName, categoryID, groupID, itemLevel, filters, minLevel, maxPlayers, displayType, activityOrder = C_LFGList.GetActivityInfo(activityID)
-	if shortName ~= label_name then
+	if shortName ~= label_name or 5 < LookingForGroup.length(name) then
 		return 1
 	end
-	local minimum,maximum = profile.minimum_mplus_level,profile.maximum_mplus_level
-	for k,_ in gmatch(name, "[0-9]+") do
-		local t = tonumber(k)
-		if (not minimum or minimum<=t) and (not maximum or t<=maximum) then
-			return 0
-		end
-	end
-	return 1
 end,function(profile)
 	local a = profile.a
-	return a.category == 2 and (profile.minimum_mplus_level or profile.maximum_mplus_level)
+	return a.category == 2 and profile.mplus
 end)

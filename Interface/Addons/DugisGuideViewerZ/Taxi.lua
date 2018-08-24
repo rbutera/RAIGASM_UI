@@ -155,20 +155,21 @@ function Taxi:Initialize()
 		return GetAngle(xTrans, yTrans, x1, y1, xDest, yDest)
 	end
 	
-	local function GetSmallestAngle(m1, _, x1, y1, mData, _, pointData, m2, _, x2, y2)
+	local function GetSmallestAngle(player_m1, _, player_x1, player_y1, mData, _, pointData, m2, _, x2, y2)
 		local shortestX, shortestY, shortestDist, shortestData
 		if type(pointData)=="number" then
 			local selectedX,selectedY = DGV:UnpackXY(pointData)
-			return selectedX, selectedY, CoordsToAngle(m1, nil, x1, y1, mData, nil, selectedX, selectedY, m2, nil, x2, y2)
+			return selectedX, selectedY, CoordsToAngle(player_m1, nil, player_x1, player_y1, mData, nil, selectedX, selectedY, m2, nil, x2, y2)
 		end
 		local data = GetCreateTable(strsplit("|", pointData))
 		for i=1,#(data) do
 			local firstCoords = strmatch(data[i], "([^%-]*)%-?")
 			local selectedX,selectedY = DGV:UnpackXY(firstCoords)
-			local angle = CoordsToAngle(m1, nil, x1, y1, mData, nil, selectedX, selectedY, m2, nil, x2, y2)
-			if angle and (not shortestDist or angle < shortestDist) then
+            local dist = DGV:ComputeDistance(player_m1, _, player_x1, player_y1, m2, _, selectedX, selectedY)
+
+			if dist and (not shortestDist or dist < shortestDist) then
 				shortestX,shortestY,shortestData = selectedX,selectedY,data[i]
-				shortestDist = angle
+				shortestDist = dist
 			end
 		end
 		tPool(data)
@@ -2095,7 +2096,7 @@ end
 			route.xSouce, route.ySource,
 			L["Use"].." "..portDesc, route.spell)
 		elseif AreOldMapsTheSame(route.mSource, route.mPort) then
-			DGV:AddRouteWaypointWithNoTrigger(route.mSource, route.fSource,
+			DGV:AddRouteWaypointWithNoTrigger(route.mSource,
 				route.xSouce, route.ySource,
 				L["Use"].." "..portDesc)
 			DGV:AddRouteWaypoint(route.mPort, route.fPort,
@@ -2238,7 +2239,7 @@ end
 		route.head.builder:AddWaypoint(route.head, boatDesc)
 		
 		if route.mSource==route.mPort then
-			DGV:AddRouteWaypointWithNoTrigger(route.mSource, route.fSource,
+			DGV:AddRouteWaypointWithNoTrigger(route.mSource,
 				route.xSouce, route.ySource,
 				L["Use"].." "..locVehicle)
 			DGV:AddRouteWaypoint(route.mPort, route.fPort,
@@ -2385,6 +2386,14 @@ end
 		[7] = 462,
 		[8] = 462,
 		[9] = 462,
+        
+		[1165] = "1163:1164:1166:1167",
+		[862] = "1165:1173:1174:1177:1176",
+		[942] = "1179:1180:1183:1182",
+		[864] = "1009",
+		[895] = "1161:1171:1172",
+		[539] = 582,
+		[525] = 590,		
 	}
 		
 	local function CheckBoundsOfTranslation(m1, f1, x1, y1, m2, f2)

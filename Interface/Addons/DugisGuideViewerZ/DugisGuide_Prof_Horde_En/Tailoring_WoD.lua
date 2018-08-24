@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Prof_Horde_En_Tailoring_WoD")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Tailoring 1-700", nil, "Horde", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Tailoring]], nil, 700) and UnitLevel([[player]])>=90|", function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Tailoring 1-100", nil, "Horde", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Tailoring]], nil, 700) and UnitLevel([[player]])>=90|", function()
 return [[
 
 N Read First |N|This guide covers the the required quests and items need to level. <br/><br/>You must have a character level 90+ and Warlords of Draenor is required. <br/><br/>Leveling is available in Draenor from 1-700. <br/><br/>Tick this step.| |QID|36419|
@@ -46,7 +46,7 @@ N 600-700 (spell:168836) |TA| |N|Craft with; <br/><b>10 (item:111556) <br/><b>10
 
 N Guide Complete
 ]]
-end, {description = [[This guide covers how to level up the Tailoring profession from 1-700]]})	
+end, {description = [[This guide covers how to level up the Tailoring profession from 1-100]]})	
 	end
 	function Guide:Unload()
 	end

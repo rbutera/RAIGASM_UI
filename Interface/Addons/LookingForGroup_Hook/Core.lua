@@ -25,7 +25,7 @@ function Hook:OnEnable()
 		QuickJoinToastButton:Hide()
 	end
 	self:RawHook("LFGListUtil_SetSearchEntryTooltip",true)
---	self:SecureHook("QuestObjectiveSetupBlockButton_FindGroup")
+	self:SecureHook("QuestObjectiveSetupBlockButton_FindGroup")
 end
 
 function Hook:LFGListUtil_FindQuestGroup(questID,...)

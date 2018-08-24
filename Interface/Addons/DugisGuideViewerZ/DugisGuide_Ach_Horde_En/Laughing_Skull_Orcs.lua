@@ -13,7 +13,7 @@ K (npc:85127) and (npc:85124) |N|Kill (npc:85127) and (npc:85124) (48.9,28.9) in
 
 K (map:620) NPC's |N|Kill (npc:86263), (npc:86264), (npc:86262), and (npc:86267) (64.2,35.0) in {Everbloom Wilds}| |NPC|86263,86264,86262,86267| |Z|543| --Venomous Ravager, Everbloom Wasp, Lumbering Ancient, Brine Lasher
 
-N (fac:1708) Quartermaster |N|(npc:86698) (51.6,60.6)(58.4,27.6) in your Garrison. Trading Post level 2 required.| |NPC|86698| |Z|585|
+N (fac:1708) Quartermaster |N|(npc:86698) (51.6,60.6)(58.4,27.6) in your Garrison. Trading Post level 2 required.| |NPC|86698| |Z|590|
 
 N Guide Complete
 ]]

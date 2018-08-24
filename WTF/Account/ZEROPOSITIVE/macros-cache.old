@@ -143,14 +143,14 @@ END
 VER 3 0000000000000030 "SKULL" "136224"
 /script SetRaidTarget("target", 8);
 END
+VER 3 0000000000000023 "Surrender" "136184"
+/surrender
+/fear
+END
 VER 3 000000000000002F "surrender" "2203912"
 /surrender
 /beg
 /s 101 101
-END
-VER 3 0000000000000023 "Surrender" "136184"
-/surrender
-/fear
 END
 VER 3 0000000000000011 "tOME" "INV_Misc_QuestionMark"
 #showtooltip Arcane Tome
@@ -161,10 +161,8 @@ END
 VER 3 000000000000000B "TSM" "133785"
 /tsm
 END
-VER 3 0000000000000033 "TSMMacro" "Achievement_Faction_GoldenLotus"
-/click TSMCancelAuctionBtn
+VER 3 0000000000000035 "TSMMacro" "Achievement_Faction_GoldenLotus"
 /click TSMShoppingBuyoutBtn
-/click TSMSniperBtn
 /click TSMAuctioningBtn
 /click TSMVendoringSellAllButton
 /click TSMCraftingBtn

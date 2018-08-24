@@ -3,8 +3,8 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r ", "539(94-100)#539(94-100)#539(94-100)", "535(94-100)#535(94-100)#535(94-100)", "Alliance", nil, "L", nil, function()
 return [[
 
-R Lunarfall |QID|33359| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|579| 
-A Meet Us at Starfall Outpost |QID|33359| |N|(npc:80645), in {Lunarfall} (43.25, 45.07)| |Z|579| |NPC|80645|
+R Lunarfall |QID|33359| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|582| 
+A Meet Us at Starfall Outpost |QID|33359| |N|(npc:80645), in {Lunarfall} (43.25, 45.07)| |Z|582| |NPC|80645|
 
 R Starfall Outpost |QID|33062| |N|Travel to the {Starfall Outpost} (29.21, 25.70)| 
 T Meet Us at Starfall Outpost |QID|33359| |N|(npc:77184) at the {Starfall Outpost} (29.21, 25.70)| |NPC|77184| |O|

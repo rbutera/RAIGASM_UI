@@ -119,7 +119,7 @@ local function Tradeskill_OnEnter(frame, skillName, showRecipeStats)
 	tt:AddLine(format("%s%s/%s", GetSkillRankColor(curRank), curRank, maxRank),1,1,1)
 	
 	if showRecipeStats then	-- for primary skills + cooking & first aid
-		if DataStore:GetProfessionSpellID(skillName) ~= 2366 and skillName ~= GetSpellInfo(8613) then		-- no display for herbalism & skinning
+		-- if DataStore:GetProfessionSpellID(skillName) ~= 2366 and skillName ~= GetSpellInfo(8613) then		-- no display for herbalism & skinning
 			tt:AddLine(" ")
 			
 			if not profession then
@@ -152,7 +152,7 @@ local function Tradeskill_OnEnter(frame, skillName, showRecipeStats)
 					colors.white, yellow, colors.yellow, L["COLOR_YELLOW"],
 					colors.white, orange, colors.recipeOrange, L["COLOR_ORANGE"]))
 			end
-		end
+		-- end
 	end
 
 	local suggestion = addon:GetSuggestion(skillName, curRank)

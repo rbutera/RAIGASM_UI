@@ -26,15 +26,15 @@ C The Den of Skog |QID|34765| |N|Kill (npc:79903) in {Frostwall} (48.49, 70.14)|
 T The Den of Skog |QID|34765| |N|(npc:78466) in {Frostwall} (48.74, 64.93)| |NPC|78466|
 A Establish Your Garrison |QID|34378| |N|(npc:78466) in {Frostwall} (48.74, 64.93)| |NPC|78466|
 C Establish Your Garrison |QID|34378| |N|Watch the construction of your garrison by using the Master Surveyor in {Frostwall} (46.93, 66.38)|
-f Frostwall |QID|34824| |N|Grab the flight path for {Frostwall} from (npc:79407) (45.66, 50.75)| |Z|585| |NPC|79407|
-T Establish Your Garrison |QID|34378| |N|(npc:78466) in {Frostwall} (52.35, 53.36)| |Z|585| |NPC|78466|
-A What We Got |QID|34824| |N|(npc:78466) in {Frostwall} (52.35, 53.36)| |Z|585| |NPC|78466|
-A What We Need |QID|34822| |N|(npc:78466) in {Frostwall} (52.35, 53.36)| |Z|585| |NPC|78466|
-A The Ogron Live? |QID|34823| |N|(npc:78487) in {Frostwall} (51.38, 51.38)| |Z|585| |NPC|78487|
-N Talk to Skaggit |QID|34824.1| |N|Speak to (npc:80225) to release the peons in {Frostwall} (41.10, 50.58)| |Z|585| |NPC|80225|
-N Talk to Senior Peon II |QID|34824.3| |N|Speak to (npc:86775) in {Frostwall} (49.29, 16.46)| |Z|585| |NPC|86775|
-N Investigate your Garrison Cache |QID|34824.2| |N|Investigate your Garrison Cache in {Frostwall} (54.95, 52.78)| |Z|585|
-T What We Got |QID|34824| |N|(npc:78466) in {Frostwall} (52.41, 53.24)| |Z|585| |NPC|78466|
+f Frostwall |QID|34824| |N|Grab the flight path for {Frostwall} from (npc:79407) (45.66, 50.75)| |Z|590| |NPC|79407|
+T Establish Your Garrison |QID|34378| |N|(npc:78466) in {Frostwall} (52.35, 53.36)| |Z|590| |NPC|78466|
+A What We Got |QID|34824| |N|(npc:78466) in {Frostwall} (52.35, 53.36)| |Z|590| |NPC|78466|
+A What We Need |QID|34822| |N|(npc:78466) in {Frostwall} (52.35, 53.36)| |Z|590| |NPC|78466|
+A The Ogron Live? |QID|34823| |N|(npc:78487) in {Frostwall} (51.38, 51.38)| |Z|590| |NPC|78487|
+N Talk to Skaggit |QID|34824.1| |N|Speak to (npc:80225) to release the peons in {Frostwall} (41.10, 50.58)| |Z|590| |NPC|80225|
+N Talk to Senior Peon II |QID|34824.3| |N|Speak to (npc:86775) in {Frostwall} (49.29, 16.46)| |Z|590| |NPC|86775|
+N Investigate your Garrison Cache |QID|34824.2| |N|Investigate your Garrison Cache in {Frostwall} (54.95, 52.78)| |Z|590|
+T What We Got |QID|34824| |N|(npc:78466) in {Frostwall} (52.41, 53.24)| |Z|590| |NPC|78466|
 
 R The Burning Glacier |QID|34822| |N|Travel to {The Burning Glacier} (42.12, 64.31)|
 C What We Need |QID|34822| |N|Collect 10 (item:111907) from (npc:80174) or from the crates in {The Burning Glacier} (42.12, 64.31)| |NPC|80174|
@@ -42,29 +42,29 @@ C What We Need |QID|34822| |N|Collect 10 (item:111907) from (npc:80174) or from 
 R Raider's Hideout |QID|34823| |N|Travel to {Raider's Hideout} (40.19, 59.40)|
 C The Ogron Live? |QID|34823| |N|Kill (npc:80167) in {Raider's Hideout} (40.19, 59.40) (41.84, 59.12)| |NPC|80167|
 
-T What We Need |QID|34822| |N|(npc:78466) in {Frostwall} (52.50, 53.29)| |Z|585| |NPC|78466|
-T The Ogron Live? |QID|34823| |N|(npc:78487) in {Frostwall} (51.27, 51.40)| |Z|585| |NPC|78487|
-A Build Your Barracks |QID|34461| |N|(npc:78466) in {Frostwall} (52.46, 53.29)| |Z|585| |NPC|78466|
-N Gazlowe's missing blueprints |QID|34461.1| |N|Find Gazlowe's missing blueprints in {Frostwall} (59.79, 49.96)| |Z|585|
-N Learn Garrison Blueprints |QID|34461.2| |N|Use (item:111956) to learn the blueprint| |Z|585| |U|111956|
-N Use the Architect's Table |QID|34461.3| |N|Use the Architect's Table to begin constructing your barracks in {Frostwall} (52.17, 53.45)| |Z|585|
-N Follow Gazlowe |QID|34461.4| |N|Follow (npc:78466) to the Construction Site in {Frostwall} (52.27, 53.27)| |Z|585| |NPC|78466|
-N Finalize your plot |QID|34461.5| |N|Click the book floating in the air to finalize your plot in {Frostwall} (57.71, 48.07)| |Z|585|
-T Build Your Barracks |QID|34461| |N|(npc:78466) in {Frostwall} (57.46, 48.25)| |Z|585| |NPC|78466|
-A We Need An Army |QID|34861| |N|(npc:78466) in {Frostwall} (57.46, 48.25)| |Z|585| |NPC|78466|
-T We Need An Army |QID|34861| |N|(npc:79740) (53.89, 54.90) in {Frostwall}| |Z|585| |NPC|79740|
-A Winds of Change |QID|34462| |N|(npc:79740) (53.89, 54.90) in {Frostwall}| |Z|585| |NPC|79740|
+T What We Need |QID|34822| |N|(npc:78466) in {Frostwall} (52.50, 53.29)| |Z|590| |NPC|78466|
+T The Ogron Live? |QID|34823| |N|(npc:78487) in {Frostwall} (51.27, 51.40)| |Z|590| |NPC|78487|
+A Build Your Barracks |QID|34461| |N|(npc:78466) in {Frostwall} (52.46, 53.29)| |Z|590| |NPC|78466|
+N Gazlowe's missing blueprints |QID|34461.1| |N|Find Gazlowe's missing blueprints in {Frostwall} (59.79, 49.96)| |Z|590|
+N Learn Garrison Blueprints |QID|34461.2| |N|Use (item:111956) to learn the blueprint| |Z|590| |U|111956|
+N Use the Architect's Table |QID|34461.3| |N|Use the Architect's Table to begin constructing your barracks in {Frostwall} (52.17, 53.45)| |Z|590|
+N Follow Gazlowe |QID|34461.4| |N|Follow (npc:78466) to the Construction Site in {Frostwall} (52.27, 53.27)| |Z|590| |NPC|78466|
+N Finalize your plot |QID|34461.5| |N|Click the book floating in the air to finalize your plot in {Frostwall} (57.71, 48.07)| |Z|590|
+T Build Your Barracks |QID|34461| |N|(npc:78466) in {Frostwall} (57.46, 48.25)| |Z|590| |NPC|78466|
+A We Need An Army |QID|34861| |N|(npc:78466) in {Frostwall} (57.46, 48.25)| |Z|590| |NPC|78466|
+T We Need An Army |QID|34861| |N|(npc:79740) (53.89, 54.90) in {Frostwall}| |Z|590| |NPC|79740|
+A Winds of Change |QID|34462| |N|(npc:79740) (53.89, 54.90) in {Frostwall}| |Z|590| |NPC|79740|
 
 R Shivering Trench |QID|34462| |N|Travel to {Shivering Trench} (56.18, 62.37)|
 C Winds of Change |QID|34462| |N|Rescue (npc:80577) in {Shivering Trench} (56.18, 62.37) (57.29, 62.89)| |NPC|80577|
 
-T Winds of Change |QID|34462| |N|(npc:79740) (53.88, 54.74) in {Frostwall}| |Z|585| |NPC|79740|
-A Mission Probable |QID|34775| |N|(npc:79740) (53.88, 54.74) in {Frostwall}| |Z|585| |NPC|79740|
-C Mission Probable |QID|34775| |N|Use the Command Table to send (npc:80577) on a mission (53.70, 54.18)| |Z|585| |NPC|80577|
-T Mission Probable |QID|34775| |N|(npc:79740) (53.81, 54.59) in {Frostwall}| |Z|585| |NPC|79740|
-A Den of Wolves |QID|34379| |N|(npc:76411) in {Frostwall} (49.66, 49.51)| |Z|585| |NPC|76411|
+T Winds of Change |QID|34462| |N|(npc:79740) (53.88, 54.74) in {Frostwall}| |Z|590| |NPC|79740|
+A Mission Probable |QID|34775| |N|(npc:79740) (53.88, 54.74) in {Frostwall}| |Z|590| |NPC|79740|
+C Mission Probable |QID|34775| |N|Use the Command Table to send (npc:80577) on a mission (53.70, 54.18)| |Z|590| |NPC|80577|
+T Mission Probable |QID|34775| |N|(npc:79740) (53.81, 54.59) in {Frostwall}| |Z|590| |NPC|79740|
+A Den of Wolves |QID|34379| |N|(npc:76411) in {Frostwall} (49.66, 49.51)| |Z|590| |NPC|76411|
 
-C Den of Wolves |QID|34379| |N|Ride the (npc:78320) to Wor'gol from {Frostwall} (46.85, 49.77)| |Z|585| |NPC|78320|
+C Den of Wolves |QID|34379| |N|Ride the (npc:78320) to Wor'gol from {Frostwall} (46.85, 49.77)| |Z|590| |NPC|78320|
 
 f Wor'gol |QID|34380| |N|Grab the flight path for {Wor'gol} from (npc:76782) (21.58, 56.13)| |NPC|76782|
 A Honor Has Its Rewards |QID|33816| |N|(npc:80456) in {Wor'gol} (21.05, 57.91)| |NPC|80456|
@@ -292,10 +292,10 @@ A Return to the Pack |QID|33493| |N|(npc:72940) in {Grom'gar} (62.20, 72.00)| |N
 C Karg Unchained |QID|33785| |N|Kill any 25 Thunderlord orcs in {Grom'gar} (61.05, 71.42)| |NPC|72328, 74067, 75790, 78815|
 T Karg Unchained |QID|33785| |N|(npc:73097) in {Grom'gar} (61.04, 71.61)| |NPC|73097|
 
-R Frostwall |QID|36567| |N|Travel to Frostwall (52.99, 51.44)| |U|110560| |Z|585|
+R Frostwall |QID|36567| |N|Travel to Frostwall (52.99, 51.44)| |U|110560| |Z|590|
 
-A Ashran Appearance |QID|36706| |N|(npc:78466) in {Frostwall} (52.49, 53.35)| |Z|585| |NPC|78466|
-F Warspear |QID|36707| |N|Speak to (npc:79407) and fly to {Warspear} in {Ashran} (45.86, 50.73)| |Z|585| |V|
+A Ashran Appearance |QID|36706| |N|(npc:78466) in {Frostwall} (52.49, 53.35)| |Z|590| |NPC|78466|
+F Warspear |QID|36707| |N|Speak to (npc:79407) and fly to {Warspear} in {Ashran} (45.86, 50.73)| |Z|590| |V|
 T Ashran Appearance |QID|36706| |N|(npc:86315) in {Warspear} (45.50, 34.56)| |Z|624| |NPC|86315| |PRE|36706|
 A Warspear Welcome |QID|36707| |N|(npc:86315) in {Warspear} (45.50, 34.56)| |Z|624| |NPC|86315| |PRE|36706|
 T Warspear Welcome |QID|36707| |N|(npc:86312) in {Warspear} (44.16, 45.49)| |Z|624| |NPC|86312| |PRE|36706|
@@ -308,22 +308,22 @@ A Burning Beauty |QID|36709| |N|(npc:86312) in {Warspear} (44.25, 45.30)| |Z|624
 T Burning Beauty |QID|36709| |N|(npc:81765) in {Warspear} (62.02, 23.11)| |Z|624| |NPC|81765| |PRE|36706|
 A The Dark Lady's Gift |QID|35243| |N|(npc:81765) in {Warspear} (62.02, 23.11)| |Z|624| |NPC|81765| |E| |PRE|36706|
 
-A We Be Needin' Supplies |QID|34736| |N|(npc:78487) in {Frostwall} (51.45, 51.51)| |Z|585| |NPC|78487|
+A We Be Needin' Supplies |QID|34736| |N|(npc:78487) in {Frostwall} (51.45, 51.51)| |Z|590| |NPC|78487|
 
-T Return to the Pack |QID|33493| |N|(npc:74163) in {Frostwall} (50.16, 37.97)| |Z|585| |NPC|74163|
-T To the Garrison |QID|32796| |N|(npc:74163) in {Frostwall} (50.03, 38.06)| |Z|585| |NPC|74163|
-A Bigger is Better |QID|36567| |N|(npc:78466) in {Frostwall} (52.55, 53.06)| |Z|585| |NPC|78466|
-C Bigger is Better |QID|36567| |N|Use the Architect Table to select your Town Hall and upgrade your garrison to Tier 2 in {Frostwall} (52.49, 53.35)| |Z|585|
-T Bigger is Better |QID|36567| |N|(npc:78466) in {Frostwall} (42.15, 55.44)| |Z|585| |NPC|78466|
-A Thunderlord Invasion! |QID|37291| |N|(npc:81739) in {Frostwall} (43.78, 47.71)| |Z|585| |NPC|81739|
-N Talk to Sergeant Grimjaw |QID|37291.1| |N|Talk to (npc:81739) to start the invasion event in {Frostwall} (43.78, 47.71)| |Z|585| |NPC|81739|
-N Repel the Invasion |QID|37291.2| |N|Repel the Invasion. Follow the instruction and help kill the invaders as best as you can (53.78, 24.63)| |Z|585|
-T Thunderlord Invasion! |QID|37291| |N|(npc:81739) in {Frostwall} (43.78, 47.71)| |Z|585| |NPC|81739|
-A The Iron Wolf |QID|33010| |N|(npc:74163) in {Frostwall} (50.27, 37.75)| |Z|585| |NPC|74163|
-A Things Are Not Goren Our Way |QID|35154| |N|(npc:81688) in {Frostwall} (61.98, 73.73)| |Z|585| |NPC|81688| |O|
-K Stonetooth |QID|35154.1| |N|Kill (npc:81396) in {Frostwall Mine} (58.33, 84.15)| |Z|585| |NPC|81396| |O|
-K Frostwall Goren |QID|35154.2| |N|Kill 8 (npc:81362) in {Frostwall Mine} (64.80, 44.62)| |Z|585| |NPC|81362| |O|
-T Things Are Not Goren Our Way |QID|35154| |N|(npc:81688) in {Frostwall} (62.12, 73.92)| |Z|585| |NPC|81688| |O|
+T Return to the Pack |QID|33493| |N|(npc:74163) in {Frostwall} (50.16, 37.97)| |Z|590| |NPC|74163|
+T To the Garrison |QID|32796| |N|(npc:74163) in {Frostwall} (50.03, 38.06)| |Z|590| |NPC|74163|
+A Bigger is Better |QID|36567| |N|(npc:78466) in {Frostwall} (52.55, 53.06)| |Z|590| |NPC|78466|
+C Bigger is Better |QID|36567| |N|Use the Architect Table to select your Town Hall and upgrade your garrison to Tier 2 in {Frostwall} (52.49, 53.35)| |Z|590|
+T Bigger is Better |QID|36567| |N|(npc:78466) in {Frostwall} (42.15, 55.44)| |Z|590| |NPC|78466|
+A Thunderlord Invasion! |QID|37291| |N|(npc:81739) in {Frostwall} (43.78, 47.71)| |Z|590| |NPC|81739|
+N Talk to Sergeant Grimjaw |QID|37291.1| |N|Talk to (npc:81739) to start the invasion event in {Frostwall} (43.78, 47.71)| |Z|590| |NPC|81739|
+N Repel the Invasion |QID|37291.2| |N|Repel the Invasion. Follow the instruction and help kill the invaders as best as you can (53.78, 24.63)| |Z|590|
+T Thunderlord Invasion! |QID|37291| |N|(npc:81739) in {Frostwall} (43.78, 47.71)| |Z|590| |NPC|81739|
+A The Iron Wolf |QID|33010| |N|(npc:74163) in {Frostwall} (50.27, 37.75)| |Z|590| |NPC|74163|
+A Things Are Not Goren Our Way |QID|35154| |N|(npc:81688) in {Frostwall} (61.98, 73.73)| |Z|590| |NPC|81688| |O|
+K Stonetooth |QID|35154.1| |N|Kill (npc:81396) in {Frostwall Mine} (58.33, 84.15)| |Z|590| |NPC|81396| |O|
+K Frostwall Goren |QID|35154.2| |N|Kill 8 (npc:81362) in {Frostwall Mine} (64.80, 44.62)| |Z|590| |NPC|81362| |O|
+T Things Are Not Goren Our Way |QID|35154| |N|(npc:81688) in {Frostwall} (62.12, 73.92)| |Z|590| |NPC|81688| |O|
 
 R The Cracking Plains |QID|33918| |N|Travel to {The Cracking Plains} (54.27, 43.32)|
 A Wanted: Grondo's Bounty |QID|33918| |N|Start killing (npc:76848) and you will recieve the quest (54.27, 43.32)| |NPC|76848|
@@ -371,8 +371,8 @@ C Smeltcraft |QID|33838| |N|Use (item:108736) to collect 20 (item:108492) in {Me
 T Smeltcraft |QID|33838| |N|(npc:74977) in {Gate of the Breakers} (65.04, 39.49)| |NPC|74977|
 T Blood Oath of Na'Shra |QID|34729| |N|(npc:74977) will now become a follower (64.7,39.8)| |E| |NPC|74977|
 
-R Frostwall |QID|33010| |N|Travel to {Frostwall} (45.75, 43.00)| |Z|585| 
-T Wanted: Grondo's Bounty |QID|33918| |N|(npc:78487) in {Frostwall} (45.75, 43.00)| |Z|585| |NPC|78487|
+R Frostwall |QID|33010| |N|Travel to {Frostwall} (45.75, 43.00)| |Z|590| 
+T Wanted: Grondo's Bounty |QID|33918| |N|(npc:78487) in {Frostwall} (45.75, 43.00)| |Z|590| |NPC|78487|
 
 R Shivering Trench |QID|34960| |N|Travel to {Shivering Trench} (54.20, 67.50)|
 A The Land Provides |QID|34960| |N|Icevine in {Shivering Trench} (54.20, 67.50)|
@@ -409,14 +409,16 @@ C Bonus Objective: Grimfrost Hill |QID|33145| |N|Kill 8 Grimfrost ogres and resc
 T A Proper Parting |QID|33125| |N|(npc:72976) in {Grimfrost Hill} (66.06, 49.08)| |NPC|72976|
 T Gut Guttra |QID|33132| |N|(npc:72976) in {Grimfrost Hill} (66.06, 49.08)| |NPC|72976|
 
-R Frostwall |QID|35154| |N|Travel to {Frostwall} (45.75, 43.00)| |Z|585| 
-T The Land Provides |QID|34960| |N|(npc:78466) in {Frostwall} (42.03, 55.07)| |Z|585| |NPC|78466|
-A Things Are Not Goren Our Way |QID|35154| |N|(npc:81688) in {Frostwall} (61.95, 73.13)| |Z|585| |NPC|81688|
-C Things Are Not Goren Our Way |QID|35154.1| |N|Kill (npc:81396) and 8 (npc:81362) in {Frostwall Mine} (62.82, 78.12)| |Z|585|
-T Things Are Not Goren Our Way |QID|35154| |N|(npc:81688) in {Frostwall} (62.46, 73.86)| |Z|585| |NPC|81688|
-A My Very Own Fortress |QID|36614| |N|(npc:78466) in {Frostwall} (52.55, 53.06)| |Z|585| |NPC|78466|
-C My Very Own Fortress |QID|36614| |N|Use the Architect Table to select your Town Hall and upgrade your garrison to Tier 3 in {Frostwall} (52.49, 53.35)| |Z|585|
-T My Very Own Fortress |QID|36614| |N|(npc:78466) in {Frostwall} (52.55, 53.06)| |Z|585| |NPC|78466|
+R Frostwall |QID|35154| |N|Travel to {Frostwall} (45.75, 43.00)| |Z|590| 
+T The Land Provides |QID|34960| |N|(npc:78466) in {Frostwall} (42.03, 55.07)| |Z|590| |NPC|78466|
+A Things Are Not Goren Our Way |QID|35154| |N|(npc:81688) in {Frostwall} (61.95, 73.13)| |Z|590| |NPC|81688|
+C Things Are Not Goren Our Way |QID|35154.1| |N|Kill (npc:81396) and 8 (npc:81362) in {Frostwall Mine} (62.82, 78.12)| |Z|590|
+T Things Are Not Goren Our Way |QID|35154| |N|(npc:81688) in {Frostwall} (62.46, 73.86)| |Z|590| |NPC|81688|
+
+N Level 100 Required |N|You need to be at least level 100 to continue| |PL|100|
+A My Very Own Fortress |QID|36614| |N|(npc:78466) in {Frostwall} (52.55, 53.06)| |Z|590| |NPC|78466|
+C My Very Own Fortress |QID|36614| |N|Use the Architect Table to select your Town Hall and upgrade your garrison to Tier 3 in {Frostwall} (52.49, 53.35)| |Z|590|
+T My Very Own Fortress |QID|36614| |N|(npc:78466) in {Frostwall} (52.55, 53.06)| |Z|590| |NPC|78466|
 
 N Guide Complete |N|Continue to (guide:"543(92-100)#543(92-100)#543(92-100)")|
 

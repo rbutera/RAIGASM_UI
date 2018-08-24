@@ -3,9 +3,9 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r ", "543(92-100)#543(92-100)#543(92-100)", "539(94-100)#539(94-100)#539(94-100)", "Alliance", nil, "L", nil, function()
 return [[
 
-A Ashran Appearance |QID|36624| |N|(npc:79953) in {Town Hall} (31.29, 32.65)| |Z|579| |NPC|79953|
+A Ashran Appearance |QID|36624| |N|(npc:79953) in {Town Hall} (31.29, 32.65)| |Z|582| |NPC|79953|
 
-F Stormshield |QID|36626| |N|Speak to (npc:81103) and fly to {Stormshield} in {Ashran} (48.04, 49.79)| |Z|579| |NPC|81103| |V|
+F Stormshield |QID|36626| |N|Speak to (npc:81103) and fly to {Stormshield} in {Ashran} (48.04, 49.79)| |Z|582| |NPC|81103| |V|
 T Ashran Appearance |QID|36624| |N|(npc:86065) in {Stormshield} (32.01, 49.90)| |Z|622| |NPC|86065|
 A Host Howell |QID|36626| |N|(npc:86065) in {Stormshield} (32.01, 49.90)| |Z|622| |NPC|86065|
 T Host Howell |QID|36626| |N|(npc:86069) in {Hero's Rest Inn} (35.52, 75.74)| |Z|622| |NPC|86069|
@@ -20,8 +20,8 @@ A Delvar Ironfist |QID|36633| |N|(npc:86084) will now become a follower (45.26, 
 
 A The Secrets of Gorgrond |QID|36632| |N|(npc:86088) (42, 94)| |Z|543| |O|
 A The Secrets of Gorgrond |QID|33533| |N|(npc:73395) (46.2, 38.6) in {Embaari Village}| |Z|539| |O|
-R Lunarfall |QID|35556| |N|Travel to {Lunarfall} (42.36, 44.96)| |Z|579| |OID|34867, 33533|
-A The Secrets of Gorgrond |QID|35556| |N|Command Board in {Lunarfall} (42.36, 44.96)| |Z|579| |OID|36632, 33533|
+R Lunarfall |QID|35556| |N|Travel to {Lunarfall} (42.36, 44.96)| |Z|582| |OID|34867, 33533|
+A The Secrets of Gorgrond |QID|35556| |N|Command Board in {Lunarfall} (42.36, 44.96)| |Z|582| |OID|36632, 33533|
 
 R Wildwood Wash |QID|35033| |N|Speak to (npc:81103) and fly to {Wildwood Wash} in {Gorgrond} (64.00, 57.21)| |NPC|81103| |V|
 T The Secrets of Gorgrond |QID|35556| |N|(npc:80978) in {Wildwood Wash} (64.00, 57.21)| |NPC|80978| |O| |OID|34867, 33533|

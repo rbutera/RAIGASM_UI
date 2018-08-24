@@ -103,6 +103,11 @@ function AAP_RepaintGroups()
 end
 function AAP_Plus()
 	AAP_CompletedQs = GetQuestsCompleted()
+	if (AAP_ActiveZone and AAP1 and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_QuestList[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
+	else
+		return
+	end
+	AAP_ActiveStuff = AAP_QuestList[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]
 	if (UnitLevel("player") == 120) then
 		for AAP_index,AAP_value in pairs(AAP_BonusObj) do
 			if (not AAP_CompletedQs[AAP_index]) then
@@ -118,16 +123,16 @@ function AAP_Plus()
 		end
 	end
 	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
+		if (AAP_ActiveStuff) then
 			if (AAP_CompletedQs[47440] == true) then
 				AAP1[AAP_Realm][AAP_Name]["LoaPick"] = 1
 			elseif (AAP_CompletedQs[47439]) then
 				AAP1[AAP_Realm][AAP_Name]["LoaPick"] = 2
 			end
 			local LoaSkip = 0
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickedLoa"] and AAP1[AAP_Realm][AAP_Name]["LoaPick"] > 0) then
+			if (AAP_ActiveStuff["PickedLoa"] and AAP1[AAP_Realm][AAP_Name]["LoaPick"] > 0) then
 				local nrloa = AAP1[AAP_Realm][AAP_Name]["LoaPick"]
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickedLoa"] ~= nrloa) then
+				if (AAP_ActiveStuff["PickedLoa"] ~= nrloa) then
 					LoaSkip = 1
 				end
 			end
@@ -135,13 +140,13 @@ function AAP_Plus()
 				AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 				AAP_Reset = 0
 				AAP_Plus()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickUp"]) then
+			elseif (AAP_ActiveStuff["PickUp"]) then
 				AAP_Pickup()
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickUp2"]) then
+				if (AAP_ActiveStuff["PickUp2"]) then
 					AAP_Pickup2()
 				end
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ZoneDone"]) then
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ZoneDone"] == 1233211) then
+			elseif (AAP_ActiveStuff["ZoneDone"]) then
+				if (AAP_ActiveStuff["ZoneDone"] == 1233211) then
 					AAP_ActiveZonePick = 0
 					AAP1[AAP_Realm][AAP_Name]["Zone862D"] = 1
 					if (AAP_Reset == 0) then
@@ -150,7 +155,7 @@ function AAP_Plus()
 						AAP_Plus()
 					end
 				end
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ZoneDone"] == 12523211) then
+				if (AAP_ActiveStuff["ZoneDone"] == 12523211) then
 					AAP_ActiveZonePick = 0
 					AAP1[AAP_Realm][AAP_Name]["Zone862Camp"] = 1
 					if (AAP_Reset == 0) then
@@ -159,7 +164,7 @@ function AAP_Plus()
 						AAP_Plus()
 					end
 				end
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ZoneDone"] == 4232161) then
+				if (AAP_ActiveStuff["ZoneDone"] == 4232161) then
 					AAP_ActiveZonePick = 0
 					AAP1[AAP_Realm][AAP_Name]["Zone895D"] = 1
 					if (AAP_Reset == 0) then
@@ -168,37 +173,37 @@ function AAP_Plus()
 						AAP_Plus()
 					end
 				end
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QaskPopup"]) then
+			elseif (AAP_ActiveStuff["QaskPopup"]) then
 				AAP_QAskPopWanted()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"]) then
+			elseif (AAP_ActiveStuff["Qpart"]) then
 				AAP_QuestPartStep()
-				if (AAP_Quests and AAP_ActiveZone and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart2"]) then
+				if (AAP_ActiveZone and AAP_ActiveStuff and AAP_ActiveStuff["Qpart2"]) then
 					AAP_QuestPartStep2()
 				end
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QpartPart"]) then
+			elseif (AAP_ActiveStuff["QpartPart"]) then
 				AAP_QuestPartPartStep()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Done"]) then
+			elseif (AAP_ActiveStuff["Done"]) then
 				AAP_Done()
-				if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Done2"]) then
+				if (AAP_ActiveStuff["Done2"]) then
 					AAP_Done2()
 				end
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DropQuest"]) then
+			elseif (AAP_ActiveStuff["DropQuest"]) then
 				AAP_DropQuest()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CRange"]) then
+			elseif (AAP_ActiveStuff["CRange"]) then
 				AAP_CRange()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AskQuestLine"]) then
+			elseif (AAP_ActiveStuff["AskQuestLine"]) then
 				AAP_AskQline()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["FlightPath"]) then
+			elseif (AAP_ActiveStuff["FlightPath"]) then
 				AAP_GetFP()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseFlightPath"]) then
+			elseif (AAP_ActiveStuff["UseFlightPath"]) then
 				AAP_UseFP()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ZonePick"]) then
+			elseif (AAP_ActiveStuff["ZonePick"]) then
 				AAP_ZonePick()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SetHS"]) then
+			elseif (AAP_ActiveStuff["SetHS"]) then
 				AAP_SetHS()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseDalaHS"]) then
+			elseif (AAP_ActiveStuff["UseDalaHS"]) then
 				AAP_UseDalaHS()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseHS"]) then
+			elseif (AAP_ActiveStuff["UseHS"]) then
 				AAP_UseHS()
 			end
 		end
@@ -207,12 +212,12 @@ function AAP_Plus()
 	AAP_IsInGroup()
 end
 function AAP_UseFP()
-	if ((AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialifSkip"]) and ((not AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialifSkip"]]) or (AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialifSkip"]] == 1))) then
+	if ((AAP_ActiveStuff["SpecialifSkip"]) and ((not AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["SpecialifSkip"]]) or (AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["SpecialifSkip"]] == 1))) then
 		QNumberLocal = 0
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		AAP_Reset = 0
 		AAP_Plus()
-	elseif (AAP_CompletedQs[AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseFlightPath"]] == true) then
+	elseif (AAP_CompletedQs[AAP_ActiveStuff["UseFlightPath"]] == true) then
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
 		AAP_Reset = 0
@@ -225,17 +230,17 @@ function AAP_UseFP()
 end
 function AAP_AskQline()
 	if (AAP1[AAP_Realm][AAP_Name]["Settings"]["ChooseQuests"] == 1) then
-		local SugGroupNr = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["NrQuests"]
+		local SugGroupNr = AAP_ActiveStuff["NrQuests"]
 		AAP.QuestList.SugQuestFrame2FS1:SetText(AAP_Locals["Optional"])
 		AAP.QuestList.SugQuestFrame2FS2:SetText(ObjectiveTrackerBlocksFrame.QuestHeader.Text:GetText()..": "..SugGroupNr)
-		if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SkipzNr"]) then
-			AAP.QuestList.SugQuestFrame2.TextureAFrame.arrow:SetTexture(AAP_Skip[AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SkipzNr"]])
+		if (AAP_ActiveStuff["SkipzNr"]) then
+			AAP.QuestList.SugQuestFrame2.TextureAFrame.arrow:SetTexture(AAP_Skip[AAP_ActiveStuff["SkipzNr"]])
 		else
 			AAP.QuestList.SugQuestFrame2.TextureAFrame.arrow:SetTexture("")
 		end
 		AAP.QuestList.SugQuestFrame2:Show()
 	else
-		AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AskQuestLine"]] = 1
+		AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["AskQuestLine"]] = 1
 		AAP.QuestList.SugQuestFrame2:Hide()
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
@@ -245,7 +250,7 @@ function AAP_AskQline()
 end
 function AAP_QAskPopQline(AAP_answer)
 	if (AAP_answer == "yes") then
-		AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AskQuestLine"]] = 1
+		AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["AskQuestLine"]] = 1
 		AAP.QuestList.SugQuestFrame2:Hide()
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
@@ -253,8 +258,8 @@ function AAP_QAskPopQline(AAP_answer)
 		AAP_Plus()
 	else
 		AAP.QuestList.SugQuestFrame2:Hide()
-		AAP_RemoveQWatch(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AskQuestLine"])
-		AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AskQuestLine"]] = 0
+		AAP_RemoveQWatch(AAP_ActiveStuff["AskQuestLine"])
+		AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["AskQuestLine"]] = 0
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
 		AAP_Reset = 0
@@ -262,20 +267,20 @@ function AAP_QAskPopQline(AAP_answer)
 	end
 end
 function AAP_QAskPopWanted()
-	local Qid = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QaskPopup"]
+	local Qid = AAP_ActiveStuff["QaskPopup"]
 	if (AAP_CompletedQs[Qid] == true) then
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP_Plus()
 		AAP.QuestList.SugQuestFrame:Hide()
-	elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] == 0) then
+	elseif (AAP_ActiveStuff["QuestLineSkip"] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] == 0) then
 		QNumberLocal = 0
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		AAP_Reset = 0
 		AAP_Plus()
 	else
-		local SugGroupNr = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Group"]
+		local SugGroupNr = AAP_ActiveStuff["Group"]
 		AAP.QuestList.SugQuestFrameFS1:SetText(AAP_Locals["Optional"])
 		AAP.QuestList.SugQuestFrameFS2:SetText(AAP_Locals["Suggested Players"]..": "..SugGroupNr)
 		AAP.QuestList.SugQuestFrame:Show()
@@ -283,17 +288,17 @@ function AAP_QAskPopWanted()
 end
 function AAP_QAskPopWantedAsk(AAP_answer)
 	if (AAP_answer == "yes") then
-		AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QaskPopup"]] = 1
+		AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["QaskPopup"]] = 1
 		AAP.QuestList.SugQuestFrame:Hide()
-		AAP_AddToQWatch(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QaskPopup"])
+		AAP_AddToQWatch(AAP_ActiveStuff["QaskPopup"])
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
 		AAP_Reset = 0
 		AAP_Plus()
 	else
 		AAP.QuestList.SugQuestFrame:Hide()
-		AAP_RemoveQWatch(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QaskPopup"])
-		AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QaskPopup"]] = 0
+		AAP_RemoveQWatch(AAP_ActiveStuff["QaskPopup"])
+		AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["QaskPopup"]] = 0
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
 		AAP_Reset = 0
@@ -307,7 +312,7 @@ function AAP_SkipBonusObjective(AAP_NrClicked)
 	AAP_Plus()
 end
 function AAP_DropQuest()
-	local zdrop = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DropQuest"]
+	local zdrop = AAP_ActiveStuff["DropQuest"]
 	if (AAP_CompletedQs[zdrop] == true) then
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
@@ -325,7 +330,7 @@ function AAP_DropQuest()
 	end
 end
 function AAP_SetHS()
-	if (AAP_CompletedQs[AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SetHS"]] == true) then
+	if (AAP_CompletedQs[AAP_ActiveStuff["SetHS"]] == true) then
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
 		AAP_Reset = 0
@@ -337,7 +342,7 @@ function AAP_SetHS()
 	end
 end
 function AAP_UseHS()
-	if (AAP_CompletedQs[AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseHS"]] == true) then
+	if (AAP_CompletedQs[AAP_ActiveStuff["UseHS"]] == true) then
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
 		AAP_Reset = 0
@@ -349,7 +354,7 @@ function AAP_UseHS()
 	end
 end
 function AAP_UseDalaHS()
-	if (AAP_CompletedQs[AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseDalaHS"]] == true) then
+	if (AAP_CompletedQs[AAP_ActiveStuff["UseDalaHS"]] == true) then
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		QNumberLocal = 0
 		AAP_Reset = 0
@@ -373,7 +378,7 @@ function AAP_Pickup()
 	local aap_t11 = 0
 	local aap_t12 = 0
 	local Zdedaap = 0
-	for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickUp"]) do
+	for AAP_index,AAP_value in pairs(AAP_ActiveStuff["PickUp"]) do
 		aap_t11 = aap_t11 + 1
 		if (AAP_CompletedQs[AAP_value] == true) then
 			aap_t12 = aap_t12 + 1
@@ -386,7 +391,7 @@ function AAP_Pickup()
 	else
 		local aap_t1 = 0
 		local aap_t2 = 0
-		for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickUp"]) do
+		for AAP_index,AAP_value in pairs(AAP_ActiveStuff["PickUp"]) do
 			aap_t1 = aap_t1 + 1
 			if (AAP_ActiveQuests[AAP_value]) then
 				aap_t2 = aap_t2 + 1
@@ -401,25 +406,25 @@ function AAP_Pickup()
 			AAP_Plus()
 			Zdedaap = 1
 		else
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"]) then
+			if (AAP_ActiveStuff["ETA"]) then
 				if (AAP_AfkTable and AAP_AfkTable[AAP_ActiveZone] and AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
 				else
 					if (not AAP_AfkTable[AAP_ActiveZone]) then
 						AAP_AfkTable[AAP_ActiveZone] = {}
 					end
 					AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] = 1
-					AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"])
+					AAP_AFK_Timer(AAP_ActiveStuff["ETA"])
 				end
 			end
 		end
 	end
-	if (AAP_ActiveZone and AAP_Quests and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["LoaPick"] and AAP1[AAP_Realm][AAP_Name]["LoaPick"] > 0) then
+	if (AAP_ActiveZone and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff and AAP_ActiveStuff["LoaPick"] and AAP1[AAP_Realm][AAP_Name]["LoaPick"] > 0) then
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 			QNumberLocal = 0
 			Zdedaap = 1
 			AAP_Reset = 0
 			AAP_Plus()
-	elseif (AAP_ActiveZone and AAP_Quests and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["LoaPick"]) then
+	elseif (AAP_ActiveZone and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff and AAP_ActiveStuff["LoaPick"]) then
 		if (AAP_ActiveQuests[47440]) then
 			AAP1[AAP_Realm][AAP_Name]["LoaPick"] = 1
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
@@ -435,13 +440,13 @@ function AAP_Pickup()
 			AAP_Reset = 0
 			AAP_Plus()
 		end
-	elseif (AAP_ActiveZone and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"] and Zdedaap == 0 and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] == 0) then
+	elseif (AAP_ActiveZone and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff["QuestLineSkip"] and Zdedaap == 0 and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] == 0) then
 		QNumberLocal = 0
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		AAP_Reset = 0
 		AAP_Plus()
-	elseif (AAP_ActiveZone and AAP_Quests and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"] and Zdedaap == 0) then
-		if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] == 0) then
+	elseif (AAP_ActiveZone and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff["GroupTask"] and Zdedaap == 0) then
+		if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] == 0) then
 			QNumberLocal = 0
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 			AAP_Reset = 0
@@ -457,7 +462,7 @@ function AAP_Pickup2()
 	local aap_t11 = 0
 	local aap_t12 = 0
 	local Zdedaap = 0
-	for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickUp2"]) do
+	for AAP_index,AAP_value in pairs(AAP_ActiveStuff["PickUp2"]) do
 		aap_t11 = aap_t11 + 1
 		if (AAP_CompletedQs[AAP_value] == true) then
 			aap_t12 = aap_t12 + 1
@@ -470,7 +475,7 @@ function AAP_Pickup2()
 	else
 		local aap_t1 = 0
 		local aap_t2 = 0
-		for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickUp2"]) do
+		for AAP_index,AAP_value in pairs(AAP_ActiveStuff["PickUp2"]) do
 			aap_t1 = aap_t1 + 1
 			if (AAP_ActiveQuests[AAP_value]) then
 				aap_t2 = aap_t2 + 1
@@ -485,25 +490,25 @@ function AAP_Pickup2()
 			AAP_Plus()
 			Zdedaap = 1
 		else
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"]) then
+			if (AAP_ActiveStuff["ETA"]) then
 				if (AAP_AfkTable and AAP_AfkTable[AAP_ActiveZone] and AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
 				else
 					if (not AAP_AfkTable[AAP_ActiveZone]) then
 						AAP_AfkTable[AAP_ActiveZone] = {}
 					end
 					AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] = 1
-					AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"])
+					AAP_AFK_Timer(AAP_ActiveStuff["ETA"])
 				end
 			end
 		end
 	end
-	if (AAP_ActiveZone and AAP_Quests and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["LoaPick"] and AAP1[AAP_Realm][AAP_Name]["LoaPick"] > 0) then
+	if (AAP_ActiveZone and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff and AAP_ActiveStuff["LoaPick"] and AAP1[AAP_Realm][AAP_Name]["LoaPick"] > 0) then
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 			QNumberLocal = 0
 			Zdedaap = 1
 			AAP_Reset = 0
 			AAP_Plus()
-	elseif (AAP_ActiveZone and AAP_Quests and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["LoaPick"]) then
+	elseif (AAP_ActiveZone and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff and AAP_ActiveStuff["LoaPick"]) then
 		if (AAP_ActiveQuests[47440]) then
 			AAP1[AAP_Realm][AAP_Name]["LoaPick"] = 1
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
@@ -519,13 +524,13 @@ function AAP_Pickup2()
 			AAP_Reset = 0
 			AAP_Plus()
 		end
-	elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"] and Zdedaap == 0 and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] == 0) then
+	elseif (AAP_ActiveStuff["QuestLineSkip"] and Zdedaap == 0 and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] == 0) then
 		QNumberLocal = 0
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		AAP_Reset = 0
 		AAP_Plus()
-	elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"] and Zdedaap == 0) then
-		if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] == 0) then
+	elseif (AAP_ActiveStuff["GroupTask"] and Zdedaap == 0) then
+		if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] == 0) then
 			QNumberLocal = 0
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 			AAP_Reset = 0
@@ -538,10 +543,10 @@ function AAP_Pickup2()
 	end
 end
 function AAP_QuestPartPartStep()
-	if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QpartPart"]) then
+	if (AAP_ActiveStuff["QpartPart"]) then
 		local aap_t11 = 0
 		local aap_t12 = 0
-		for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QpartPart"]) do
+		for AAP_index,AAP_value in pairs(AAP_ActiveStuff["QpartPart"]) do
 			aap_t11 = aap_t11 + 1
 			if (AAP_CompletedQs[AAP_index] == true) then
 				aap_t12 = aap_t12 + 1
@@ -554,12 +559,12 @@ function AAP_QuestPartPartStep()
 			AAP_Reset = 0
 			Zdedaap = 1
 			AAP_Plus()
-		elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QpartPart"]) then
-			for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QpartPart"]) do
+		elseif (AAP_ActiveStuff and AAP_ActiveStuff["QpartPart"]) then
+			for AAP_index,AAP_value in pairs(AAP_ActiveStuff["QpartPart"]) do
 				for AAP_index2,AAP_value2 in pairs(AAP_value) do
 					if (AAP_ActiveQuests[AAP_index] and AAP_ActiveQuests[AAP_index]["Obj"] and AAP_ActiveQuests[AAP_index]["Obj"][tonumber(AAP_index2)] and AAP_ActiveQuests[AAP_index]["Obj"][tonumber(AAP_index2)]["text"]) then
-						if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["TrigText"]) then
-							if (string.find(AAP_ActiveQuests[AAP_index]["Obj"][tonumber(AAP_index2)]["text"], AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["TrigText"])) then
+						if (AAP_ActiveStuff and AAP_ActiveStuff["TrigText"]) then
+							if (string.find(AAP_ActiveQuests[AAP_index]["Obj"][tonumber(AAP_index2)]["text"], AAP_ActiveStuff["TrigText"])) then
 								AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 								QNumberLocal = 0
 								AAP_Reset = 0
@@ -571,13 +576,13 @@ function AAP_QuestPartPartStep()
 				end
 			end
 		end
-		if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"] and Zdedaap == 0 and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] == 0) then
+		if (AAP_ActiveStuff["QuestLineSkip"] and Zdedaap == 0 and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] == 0) then
 			QNumberLocal = 0
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 			AAP_Reset = 0
 			AAP_Plus()
-		elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"] and Zdedaap == 0) then
-			if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] == 0) then
+		elseif (AAP_ActiveStuff["GroupTask"] and Zdedaap == 0) then
+			if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] == 0) then
 				QNumberLocal = 0
 				AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 				AAP_Reset = 0
@@ -594,13 +599,13 @@ end
 function AAP_QuestPartStep()
 	local aap_t11 = 0
 	local aap_t12 = 0
-	if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraActionB"]) then
+	if (AAP_ActiveStuff["ExtraActionB"]) then
 		local isFound, macroSlot = AAP_MacroFinder()
 		if isFound and macroSlot then
 			AAP_MacroUpdater(macroSlot, 123123123)
 		end
 	end
-	for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"]) do
+	for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Qpart"]) do
 		aap_t11 = aap_t11 + 1
 		if (AAP_CompletedQs[AAP_index] == true) then
 			aap_t12 = aap_t12 + 1
@@ -614,8 +619,8 @@ function AAP_QuestPartStep()
 	else
 		local aap_t1 = 0
 		local aap_t2 = 0
-		for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"]) do
-			for AAP_index2,AAP_value2 in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"][AAP_index]) do
+		for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Qpart"]) do
+			for AAP_index2,AAP_value2 in pairs(AAP_ActiveStuff["Qpart"][AAP_index]) do
 				aap_t1 = aap_t1 + 1
 				if (AAP_CompletedQs[AAP_index]) then
 					aap_t2 = aap_t2 + 1
@@ -633,23 +638,23 @@ function AAP_QuestPartStep()
 			AAP_Reset = 0
 			AAP_Plus()
 		else
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"]) then
+			if (AAP_ActiveStuff["ETA"]) then
 				if (AAP_AfkTable and AAP_AfkTable[AAP_ActiveZone] and AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
 				else
 					if (not AAP_AfkTable[AAP_ActiveZone]) then
 						AAP_AfkTable[AAP_ActiveZone] = {}
 					end
 					AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] = 1
-					AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"])
+					AAP_AFK_Timer(AAP_ActiveStuff["ETA"])
 				end
 			end
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] == 0) then
+			if (AAP_ActiveStuff["QuestLineSkip"] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] == 0) then
 					QNumberLocal = 0
 					AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 					AAP_Reset = 0
 					AAP_Plus()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]) then
-				if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] == 0) then
+			elseif (AAP_ActiveStuff["GroupTask"]) then
+				if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] == 0) then
 					QNumberLocal = 0
 					AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 					AAP_Reset = 0
@@ -659,14 +664,14 @@ function AAP_QuestPartStep()
 		end
 	end
 	if (AAP_GossipOpen == 1) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Qpart"]) then
 			local AAPDenied = 0
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DenyNPC"]) then
+			if (AAP_ActiveStuff["DenyNPC"]) then
 				if (UnitGUID("target") and UnitName("target")) then
 					local guid, name = UnitGUID("target"), UnitName("target")
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 					if (npc_id and name) then
-						if (tonumber(npc_id) == AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DenyNPC"]) then
+						if (tonumber(npc_id) == AAP_ActiveStuff["DenyNPC"]) then
 							AAPDenied = 1
 						end
 					end
@@ -675,8 +680,8 @@ function AAP_QuestPartStep()
 			if (AAPDenied == 1) then
 				CloseGossip()
 				print("AAP: Not Yet!")
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] and not IsControlKeyDown()) then
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 99 and UnitGUID("target") and UnitName("target")) then
+			elseif (AAP_ActiveStuff["Gossip"] and not IsControlKeyDown()) then
+				if (AAP_ActiveStuff["Gossip"] == 99 and UnitGUID("target") and UnitName("target")) then
 					local guid, name = UnitGUID("target"), UnitName("target")
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 					if (npc_id == 133538) then
@@ -686,7 +691,7 @@ function AAP_QuestPartStep()
 						AAP_Reset = 0
 						AAP_Plus()
 					end
-				elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 999 and UnitGUID("target") and UnitName("target")) then
+				elseif (AAP_ActiveStuff["Gossip"] == 999 and UnitGUID("target") and UnitName("target")) then
 					local guid, name = UnitGUID("target"), UnitName("target")
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 					if (npc_id == 137645) then
@@ -696,7 +701,7 @@ function AAP_QuestPartStep()
 						AAP_Reset = 0
 						AAP_Plus()
 					end
-				elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 101 and UnitGUID("target") and UnitName("target")) then
+				elseif (AAP_ActiveStuff["Gossip"] == 101 and UnitGUID("target") and UnitName("target")) then
 					local guid, name = UnitGUID("target"), UnitName("target")
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 					if (npc_id == 139633) then
@@ -706,12 +711,12 @@ function AAP_QuestPartStep()
 						AAP_Reset = 0
 						AAP_Plus()
 					end
-				elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 98) then
-					AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GossipETA"])
+				elseif (AAP_ActiveStuff["Gossip"] == 98) then
+					AAP_AFK_Timer(AAP_ActiveStuff["GossipETA"])
 					SelectGossipOption(1)
 				else
 					AAP_GossipOpen = 0
-					SelectGossipOption(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"])
+					SelectGossipOption(AAP_ActiveStuff["Gossip"])
 				end
 			end
 		end
@@ -724,7 +729,7 @@ end
 function AAP_QuestPartStep2()
 	local aap_t11 = 0
 	local aap_t12 = 0
-	for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart2"]) do
+	for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Qpart2"]) do
 		aap_t11 = aap_t11 + 1
 		if (AAP_CompletedQs[AAP_index] == true) then
 			aap_t12 = aap_t12 + 1
@@ -738,8 +743,8 @@ function AAP_QuestPartStep2()
 	else
 		local aap_t1 = 0
 		local aap_t2 = 0
-		for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart2"]) do
-			for AAP_index2,AAP_value2 in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart2"][AAP_index]) do
+		for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Qpart2"]) do
+			for AAP_index2,AAP_value2 in pairs(AAP_ActiveStuff["Qpart2"][AAP_index]) do
 				aap_t1 = aap_t1 + 1
 				if (AAP_CompletedQs[AAP_index]) then
 					aap_t2 = aap_t2 + 1
@@ -757,23 +762,23 @@ function AAP_QuestPartStep2()
 			AAP_Reset = 0
 			AAP_Plus()
 		else
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"]) then
+			if (AAP_ActiveStuff["ETA"]) then
 				if (AAP_AfkTable and AAP_AfkTable[AAP_ActiveZone] and AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
 				else
 					if (not AAP_AfkTable[AAP_ActiveZone]) then
 						AAP_AfkTable[AAP_ActiveZone] = {}
 					end
 					AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] = 1
-					AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"])
+					AAP_AFK_Timer(AAP_ActiveStuff["ETA"])
 				end
 			end
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] == 0) then
+			if (AAP_ActiveStuff["QuestLineSkip"] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] == 0) then
 					QNumberLocal = 0
 					AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 					AAP_Reset = 0
 					AAP_Plus()
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]) then
-				if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] == 0) then
+			elseif (AAP_ActiveStuff["GroupTask"]) then
+				if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] == 0) then
 					QNumberLocal = 0
 					AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 					AAP_Reset = 0
@@ -783,14 +788,14 @@ function AAP_QuestPartStep2()
 		end
 	end
 	if (AAP_GossipOpen == 1) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart2"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Qpart2"]) then
 			local AAPDenied = 0
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DenyNPC"]) then
+			if (AAP_ActiveStuff["DenyNPC"]) then
 				if (UnitGUID("target") and UnitName("target")) then
 					local guid, name = UnitGUID("target"), UnitName("target")
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 					if (npc_id and name) then
-						if (tonumber(npc_id) == AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DenyNPC"]) then
+						if (tonumber(npc_id) == AAP_ActiveStuff["DenyNPC"]) then
 							AAPDenied = 1
 						end
 					end
@@ -799,14 +804,14 @@ function AAP_QuestPartStep2()
 			if (AAPDenied == 1) then
 				CloseGossip()
 				print("AAP: Not Yet!")
-			elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] and not IsControlKeyDown()) then
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 99) then
+			elseif (AAP_ActiveStuff["Gossip"] and not IsControlKeyDown()) then
+				if (AAP_ActiveStuff["Gossip"] == 99) then
 					AAP_GossipOpen = 0
 					SelectGossipOption(1)
 					AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 					AAP_Reset = 0
 					AAP_Plus()
-				elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 999 and UnitGUID("target") and UnitName("target")) then
+				elseif (AAP_ActiveStuff["Gossip"] == 999 and UnitGUID("target") and UnitName("target")) then
 					local guid, name = UnitGUID("target"), UnitName("target")
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 					if (npc_id == 137645) then
@@ -816,12 +821,12 @@ function AAP_QuestPartStep2()
 						AAP_Reset = 0
 						AAP_Plus()
 					end
-				elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 98) then
-					AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GossipETA"])
+				elseif (AAP_ActiveStuff["Gossip"] == 98) then
+					AAP_AFK_Timer(AAP_ActiveStuff["GossipETA"])
 					SelectGossipOption(1)
 				else
 					AAP_GossipOpen = 0
-					SelectGossipOption(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"])
+					SelectGossipOption(AAP_ActiveStuff["Gossip"])
 				end
 			end
 		end
@@ -833,7 +838,7 @@ function AAP_QuestPartStep2()
 end
 function AAP_ZonePick()
 	AAP_CompletedQs = GetQuestsCompleted()
-	if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ZonePick"] == "Horde") then
+	if (AAP_ActiveStuff["ZonePick"] == "Horde") then
 		AAP_ActiveZonePick = 0
 		local H1 = {
 			[47513] = 47513,
@@ -870,7 +875,7 @@ function AAP_ZonePick()
 				AAP_ChangeZone()
 			end
 		end
-	elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ZonePick"] == "Alliance") then
+	elseif (AAP_ActiveStuff["ZonePick"] == "Alliance") then
 		AAP_ActiveZonePick = 0
 		local A1 = {
 			--- Dustvar
@@ -901,7 +906,7 @@ end
 function AAP_Done()
 	local aap_t1 = 0
 	local aap_t2 = 0
-	for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Done"]) do
+	for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Done"]) do
 		aap_t1 = aap_t1 + 1
 		if (AAP_CompletedQs[AAP_value] == true) then
 			aap_t2 = aap_t2 + 1
@@ -912,19 +917,19 @@ function AAP_Done()
 		AAP_Reset = 0
 		AAP_Plus()
 	else
-		if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"]) then
+		if (AAP_ActiveStuff["ETA"]) then
 			if (AAP_AfkTable and AAP_AfkTable[AAP_ActiveZone] and AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
 			else
 				if (not AAP_AfkTable[AAP_ActiveZone]) then
 					AAP_AfkTable[AAP_ActiveZone] = {}
 				end
 				AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] = 1
-				AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"])
+				AAP_AFK_Timer(AAP_ActiveStuff["ETA"])
 			end
 		end
 	end
-	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]) then
-		if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] == 0) then
+	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff and AAP_ActiveStuff["GroupTask"]) then
+		if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] == 0) then
 			QNumberLocal = 0
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 			AAP_Reset = 0
@@ -932,8 +937,8 @@ function AAP_Done()
 		end
 	end
 	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["VehicleExit"]) then
+		if (AAP_ActiveStuff) then
+			if (AAP_ActiveStuff["VehicleExit"]) then
 				VehicleExit()
 			end
 		end
@@ -946,7 +951,7 @@ end
 function AAP_Done2()
 	local aap_t1 = 0
 	local aap_t2 = 0
-	for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Done2"]) do
+	for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Done2"]) do
 		aap_t1 = aap_t1 + 1
 		if (AAP_CompletedQs[AAP_value] == true) then
 			aap_t2 = aap_t2 + 1
@@ -957,24 +962,24 @@ function AAP_Done2()
 		AAP_Reset = 0
 		AAP_Plus()
 	else
-		if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"]) then
+		if (AAP_ActiveStuff["ETA"]) then
 			if (AAP_AfkTable and AAP_AfkTable[AAP_ActiveZone] and AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
 			else
 				if (not AAP_AfkTable[AAP_ActiveZone]) then
 					AAP_AfkTable[AAP_ActiveZone] = {}
 				end
 				AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] = 1
-				AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"])
+				AAP_AFK_Timer(AAP_ActiveStuff["ETA"])
 			end
 		end
 	end
-	if (AAP_ActiveZone and AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] == 0) then
+	if (AAP_ActiveZone and AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff["QuestLineSkip"] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] == 0) then
 		QNumberLocal = 0
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		AAP_Reset = 0
 		AAP_Plus()
-	elseif (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]) then
-		if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] == 0) then
+	elseif (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff["GroupTask"]) then
+		if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] == 0) then
 			QNumberLocal = 0
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 			AAP_Reset = 0
@@ -982,8 +987,8 @@ function AAP_Done2()
 		end
 	end
 	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["VehicleExit"]) then
+		if (AAP_ActiveStuff) then
+			if (AAP_ActiveStuff["VehicleExit"]) then
 				VehicleExit()
 			end
 		end
@@ -994,38 +999,38 @@ function AAP_Done2()
 	end
 end
 function AAP_CRange(AAP_TrigCR)
-	if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CRange"]) then
-		if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CancelBuff"]) then
+	if (AAP_ActiveStuff and AAP_ActiveStuff["CRange"]) then
+		if (AAP_ActiveStuff["CancelBuff"]) then
 			local i = 1
 			local buff = UnitBuff("player", i);
 			while buff do
 				local name, rank, icon, count, debuffType, duration, expirationTime, unitCaster, isStealable, spellId = UnitBuff("player", i)
-				if (spellId == AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CancelBuff"]) then
+				if (spellId == AAP_ActiveStuff["CancelBuff"]) then
 					CancelUnitBuff("player", i)
 				end
 				i = i + 1
 				buff = UnitBuff("player", i);
 			end
 		end
-		if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"]) then
+		if (AAP_ActiveStuff["ETA"]) then
 			if (AAP_AfkTable and AAP_AfkTable[AAP_ActiveZone] and AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
 			else
 				if (not AAP_AfkTable[AAP_ActiveZone]) then
 					AAP_AfkTable[AAP_ActiveZone] = {}
 				end
 				AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] = 1
-				AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"])
+				AAP_AFK_Timer(AAP_ActiveStuff["ETA"])
 			end
 		end
 	end
 	local dderpzzaap = 0
-	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QuestLineSkip"]] == 0) then
+	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff["QuestLineSkip"] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] and AAP1[AAP_Realm][AAP_Name]["QlineSkip"][AAP_ActiveStuff["QuestLineSkip"]] == 0) then
 		QNumberLocal = 0
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		AAP_Reset = 0
 		AAP_Plus()
-	elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]) then
-		if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] == 0) then
+	elseif (AAP_ActiveStuff["GroupTask"]) then
+		if (AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] == 0) then
 			QNumberLocal = 0
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 			AAP_Reset = 0
@@ -1033,7 +1038,7 @@ function AAP_CRange(AAP_TrigCR)
 			dderpzzaap = 1
 		end
 	end
-	if (AAP_CompletedQs[AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CRange"]] == true and dderpzzaap == 0) then
+	if (AAP_CompletedQs[AAP_ActiveStuff["CRange"]] == true and dderpzzaap == 0) then
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		AAP_Plus()
 	elseif (AAP_TrigCR == "Trigged" and dderpzzaap == 0) then
@@ -1047,8 +1052,6 @@ function AAP_CRange(AAP_TrigCR)
 		AAP_UPDQListV = AAP_UPDQListV2
 	end
 end
-
-
 function AAP_TestCranges()
 	if (AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
 		local testad = true
@@ -1056,12 +1059,12 @@ function AAP_TestCranges()
 		local AntiLooper = 0
 		while testad do
 			plusnr = plusnr + 1
-			if (AAP_Quests[plusnr] and (not AAP_Quests[plusnr]["CRange"])) then
-				if (AAP_Quests[plusnr]["Qpart"]) then
+			if (AAP_QuestList and AAP_QuestList[AAP_ActiveZone][plusnr] and (not AAP_QuestList[AAP_ActiveZone][plusnr]["CRange"])) then
+				if (AAP_QuestList[AAP_ActiveZone][plusnr]["Qpart"]) then
 					local aap_t1 = 0
 					local aap_t2 = 0
-					for AAP_index,AAP_value in pairs(AAP_Quests[plusnr]["Qpart"]) do
-						for AAP_index2,AAP_value2 in pairs(AAP_Quests[plusnr]["Qpart"][AAP_index]) do
+					for AAP_index,AAP_value in pairs(AAP_QuestList[AAP_ActiveZone][plusnr]["Qpart"]) do
+						for AAP_index2,AAP_value2 in pairs(AAP_QuestList[AAP_ActiveZone][plusnr]["Qpart"][AAP_index]) do
 							aap_t1 = aap_t1 + 1
 							if (AAP_CompletedQs[AAP_index]) then
 								aap_t2 = aap_t2 + 1
@@ -1077,10 +1080,10 @@ function AAP_TestCranges()
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 						AAP_Reset = 0
 					end
-				elseif (AAP_Quests[plusnr]["PickUp"]) then
+				elseif (AAP_QuestList[AAP_ActiveZone][plusnr]["PickUp"]) then
 					local aap_t1 = 0
 					local aap_t2 = 0
-					for AAP_index,AAP_value in pairs(AAP_Quests[plusnr]["PickUp"]) do
+					for AAP_index,AAP_value in pairs(AAP_QuestList[AAP_ActiveZone][plusnr]["PickUp"]) do
 						aap_t1 = aap_t1 + 1
 						if (AAP_ActiveQuests[AAP_value]) then
 							aap_t2 = aap_t2 + 1
@@ -1107,10 +1110,8 @@ function AAP_TestCranges()
 
 	end
 end
-
-
 function AAP_GetFP(AAP_TrigFP)
-	if (AAP_CompletedQs[AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["FlightPath"]] == true) then
+	if (AAP_CompletedQs[AAP_ActiveStuff["FlightPath"]] == true) then
 		AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 		AAP_Plus()
 	elseif (AAP_TrigFP == "Trigger") then
@@ -1126,10 +1127,10 @@ function AAP_GetFP(AAP_TrigFP)
 	end
 end
 function AAP_SetButton(AAP_T_FS, AAP_T_ars)
-	if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Button"] and AAP_T_FS and AAP_T_ars) then
+	if (AAP_ActiveStuff and AAP_ActiveStuff["Button"] and AAP_T_FS and AAP_T_ars) then
 		if (not InCombatLockdown()) then
-			for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Button"]) do
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseHS"]) then
+			for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Button"]) do
+				if (AAP_ActiveStuff["UseHS"]) then
 					local CL_Items, clt2, clt3, clt4, clt5, clt6, clt7, clt8, clt9, CL_ItemTex = GetItemInfo(AAP_value)
 					AAP.QuestList2["BF"..tonumber(AAP_NamedBookedFS[AAP_index])]["AAP_Buttonptex"]:SetTexture(CL_ItemTex)
 					AAP.QuestList2["BF"..tonumber(AAP_NamedBookedFS[AAP_index])]["AAP_Buttonntex"]:SetTexture(CL_ItemTex)
@@ -1145,7 +1146,7 @@ function AAP_SetButton(AAP_T_FS, AAP_T_ars)
 						AAP.QuestList2["BF"..tonumber(AAP_NamedBookedFS[AAP_index])]:SetPoint("BOTTOMLEFT", AAP.QuestList21, "BOTTOMLEFT",0,-((AAP_T_ars * 38)+AAP_T_ars))
 						local isFound, macroSlot = AAP_MacroFinder()
 						if isFound and macroSlot then
-							if (AAP_ActiveZone and AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialDubbleMacro"]) then
+							if (AAP_ActiveZone and AAP_ActiveStuff and AAP_ActiveStuff["SpecialDubbleMacro"]) then
 								if (not AAP_DubbleMacro[1]) then
 									AAP_DubbleMacro[1] = CL_Items
 								elseif (AAP_DubbleMacro and AAP_DubbleMacro[1] and not AAP_DubbleMacro[2]) then
@@ -1157,7 +1158,7 @@ function AAP_SetButton(AAP_T_FS, AAP_T_ars)
 							end
 							AAP_MacroUpdater(macroSlot, CL_Items)
 						end
-				elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseDalaHS"]) then
+				elseif (AAP_ActiveStuff["UseDalaHS"]) then
 					local bag, slot = AAP_FindQitemFunc(65274)
 					local eqidsd = GetInventoryItemID("player", 15)
 					local sta11, sta12 = GetItemCooldown(65274)
@@ -1175,7 +1176,7 @@ function AAP_SetButton(AAP_T_FS, AAP_T_ars)
 						AAP.QuestList2["BF"..tonumber(AAP_NamedBookedFS[AAP_index])]["AAP_Button"]:SetAttribute("type","macro");
 						local isFound, macroSlot = AAP_MacroFinder()
 						if isFound and macroSlot then
-							if (AAP_ActiveZone and AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialDubbleMacro"]) then
+							if (AAP_ActiveZone and AAP_ActiveStuff and AAP_ActiveStuff["SpecialDubbleMacro"]) then
 								if (not AAP_DubbleMacro[1]) then
 									AAP_DubbleMacro[1] = CL_Items
 								elseif (AAP_DubbleMacro and AAP_DubbleMacro[1] and not AAP_DubbleMacro[2]) then
@@ -1209,7 +1210,7 @@ function AAP_SetButton(AAP_T_FS, AAP_T_ars)
 						AAP.QuestList2["BF"..tonumber(AAP_NamedBookedFS[AAP_index])]:SetPoint("BOTTOMLEFT", AAP.QuestList21, "BOTTOMLEFT",0,-((AAP_T_ars * 38)+AAP_T_ars))
 						local isFound, macroSlot = AAP_MacroFinder()
 						if isFound and macroSlot then
-							if (AAP_ActiveZone and AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialDubbleMacro"]) then
+							if (AAP_ActiveZone and AAP_ActiveStuff and AAP_ActiveStuff["SpecialDubbleMacro"]) then
 								if (not AAP_DubbleMacro[1]) then
 									AAP_DubbleMacro[1] = CL_Items
 								elseif (AAP_DubbleMacro and AAP_DubbleMacro[1] and not AAP_DubbleMacro[2]) then
@@ -1239,7 +1240,7 @@ function AAP_SetButton(AAP_T_FS, AAP_T_ars)
 						AAP.QuestList2["BF"..AAP_T_FS]:SetPoint("BOTTOMLEFT", AAP.QuestList21, "BOTTOMLEFT",0,-((AAP_T_ars * 38)+AAP_T_ars))
 						local isFound, macroSlot = AAP_MacroFinder()
 						if isFound and macroSlot then
-							if (AAP_ActiveZone and AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialDubbleMacro"]) then
+							if (AAP_ActiveZone and AAP_ActiveStuff and AAP_ActiveStuff["SpecialDubbleMacro"]) then
 								if (not AAP_DubbleMacro[1]) then
 									AAP_DubbleMacro[1] = CL_Items
 								elseif (AAP_DubbleMacro and AAP_DubbleMacro[1] and not AAP_DubbleMacro[2]) then
@@ -1371,19 +1372,15 @@ function AAP_TestHordeCampaign()
 		end
 		if ((AAP1[AAP_Realm][AAP_Name]["AAP_DoWarCampaign"] == 1)) then
 			if ((AAP_TTTT == 862) or (AAP_TTTT == 863) or (AAP_TTTT == 864)) then
-				AAP_Quests = AAP_Zone8624["862-4"]
 				AAP_ActiveZone = "862-4"
 			elseif (AAP_TTTT == 895) or (AAP_TTTT == 896) or (AAP_TTTT == 942) then
 				AAP_ActiveZone = AAP_TTTT
-				AAP_Quests = AAP_QuestList[AAP_ActiveZone]
 			else
 				AAP_ActiveZone = AAP_TTTT
-				AAP_Quests = AAP_QuestList[AAP_ActiveZone]
 			end
 		end
 	end
 end
-
 function AAP_TestAllyCampaign()
 	local AAP_TTTT = C_Map.GetBestMapForUnit("player")
 	if (AAP_TTTT == 1161) then
@@ -1412,55 +1409,47 @@ function AAP_TestAllyCampaign()
 	if ((AAP_testads == 1 or AAP_CompletedQs[53332]) and AAP_CountAlly() == 0 and (AAP_TTTT == 895)) then
 		AAP_TTTS = 1
 		if ((AAP_ActiveQuests[51308] or AAP_CompletedQs[51308]) and (not AAP_CompletedQs[51968])) then
-			AAP_Quests = AAP_Ally8954["A895-4-1"]
 			AAP_ActiveZone = "A895-4-1"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
 				AAP_UPDQListV = AAP_UPDQListV2
 			end
 		elseif ((AAP_ActiveQuests[51283] or AAP_CompletedQs[51283]) and (not AAP_CompletedQs[51969])) then
-			AAP_Quests = AAP_Ally8954["A895-4-2"]
 			AAP_ActiveZone = "A895-4-2"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
 				AAP_UPDQListV = AAP_UPDQListV2
 			end
 		elseif ((AAP_ActiveQuests[51088] or AAP_CompletedQs[51088]) and (not AAP_CompletedQs[51967])) then
-			AAP_Quests = AAP_Ally8954["A895-4-3"]
 			AAP_ActiveZone = "A895-4-3"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
 				AAP_UPDQListV = AAP_UPDQListV2
 			end
 		else
-			AAP_Quests = AAP_Ally8954["A895-4"]
 			AAP_ActiveZone = "A895-4"
 		end
 	end
 	if (AAP_TTTS == 0 and (AAP_ActiveQuests[53052] or AAP_CompletedQs[53052]) and (AAP_TTTT == 895) and AAP_CountAlly() == 1) then
 		if ((AAP_ActiveQuests[51308] or AAP_CompletedQs[51308]) and (not AAP_CompletedQs[51968])) then
-			AAP_Quests = AAP_Ally8954["A895-4-1"]
 			AAP_ActiveZone = "A895-4-1"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
 				AAP_UPDQListV = AAP_UPDQListV2
 			end
 		elseif ((AAP_ActiveQuests[51283] or AAP_CompletedQs[51283]) and (not AAP_CompletedQs[51969])) then
-			AAP_Quests = AAP_Ally8954["A895-4-2"]
 			AAP_ActiveZone = "A895-4-2"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
 				AAP_UPDQListV = AAP_UPDQListV2
 			end
 		elseif ((AAP_ActiveQuests[51088] or AAP_CompletedQs[51088]) and (not AAP_CompletedQs[51967])) then
-			AAP_Quests = AAP_Ally8954["A895-4-3"]
 			AAP_ActiveZone = "A895-4-3"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
 				AAP_UPDQListV = AAP_UPDQListV2
 			end
 		else
-			AAP_Quests = AAP_Ally8954["A895-4-4"]
 			AAP_ActiveZone = "A895-4-4"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
@@ -1470,28 +1459,24 @@ function AAP_TestAllyCampaign()
 	end
 	if ((AAP_ActiveQuests[53055] or AAP_CompletedQs[53055]) and (AAP_TTTT == 895) and (AAP_CountAlly() == 2) and (UnitLevel("player") > 117)) then
 		if ((AAP_ActiveQuests[51308] or AAP_CompletedQs[51308]) and (not AAP_CompletedQs[51968])) then
-			AAP_Quests = AAP_Ally8954["A895-4-1"]
 			AAP_ActiveZone = "A895-4-1"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
 				AAP_UPDQListV = AAP_UPDQListV2
 			end
 		elseif ((AAP_ActiveQuests[51283] or AAP_CompletedQs[51283]) and (not AAP_CompletedQs[51969])) then
-			AAP_Quests = AAP_Ally8954["A895-4-2"]
 			AAP_ActiveZone = "A895-4-2"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
 				AAP_UPDQListV = AAP_UPDQListV2
 			end
 		elseif ((AAP_ActiveQuests[51088] or AAP_CompletedQs[51088]) and (not AAP_CompletedQs[51967])) then
-			AAP_Quests = AAP_Ally8954["A895-4-3"]
 			AAP_ActiveZone = "A895-4-3"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
 				AAP_UPDQListV = AAP_UPDQListV2
 			end
 		else
-			AAP_Quests = AAP_Ally8954["A895-4-5"]
 			AAP_ActiveZone = "A895-4-5"
 			if (AAP_Reset == 0) then
 				AAP_Reset = 1
@@ -1513,7 +1498,6 @@ function AAP_TestAllyCampaign()
 		AAP_testads2 = 1
 	end
 	if ((AAP_Getthru == 1 or AAP_CompletedQs[51715] or AAP_testads2 == 1) and (AAP_TTTT == 895) and not AAP_CompletedQs[53074]) then
-		AAP_Quests = AAP_Ally8954["A895-4-10"]
 		AAP_ActiveZone = "A895-4-10"
 		if (AAP_Reset == 0) then
 			AAP_Reset = 1
@@ -1521,134 +1505,12 @@ function AAP_TestAllyCampaign()
 		end
 	end
 end
-
-
-
-
-
 function AAP_SetQPTT()
 	if (QNumberLocal ~= AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
 		AAP_ArrowActive = 1
-		AAP_ArrowActive_X = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["TT"]["x"]
-		AAP_ArrowActive_Y = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["TT"]["y"]
+		AAP_ArrowActive_X = AAP_ActiveStuff["TT"]["x"]
+		AAP_ArrowActive_Y = AAP_ActiveStuff["TT"]["y"]
 		QNumberLocal = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]
-	end
-end
-function AAP_ZoneChangeTest()
-	AAP_ActiveZoneTest = C_Map.GetBestMapForUnit("player")
-	AAP_CompletedQs = GetQuestsCompleted()
-	local factionz = UnitFactionGroup("player")
-	if (AAP_ActiveZoneTest == 85) then
-		AAP_ActiveZoneTest = 86
-	end
-	if (AAP_ActiveZoneTest == 1161) then
-		AAP_ActiveZoneTest = 895
-	end
-	if (AAP_ActiveZoneTest == 1171) then
-		AAP_ActiveZoneTest = 895
-	end
-	if (AAP_ActiveZoneTest == 1172) then
-		AAP_ActiveZoneTest = 895
-	end
-	if (AAP_ActiveZoneTest == 1165) then
-		AAP_ActiveZoneTest = 862
-	end
-	if (AAP_ActiveZoneTest == 1164) then
-		AAP_ActiveZoneTest = 862
-	end
-	if (AAP_ActiveZoneTest == 1163) then
-		AAP_ActiveZoneTest = 862
-	end
-	if (AAP_ActiveZoneTest == 1173) then
-		AAP_ActiveZoneTest = 862
-	end
-	if (AAP_ActiveZoneTest == 1174) then
-		AAP_ActiveZoneTest = 862
-	end
-	if (AAP_ActiveZoneTest == 1176) then
-		AAP_ActiveZoneTest = 862
-	end
-	if (AAP_ActiveZoneTest == 1177) then
-		AAP_ActiveZoneTest = 862
-	end
-	if (AAP_ActiveZoneTest == 1167) then
-		AAP_ActiveZoneTest = 862
-	end
-	if (AAP_ActiveZoneTest == 1166) then
-		AAP_ActiveZoneTest = 862
-	end
-	if (AAP_ActiveZoneTest == 1169) then
-		AAP_ActiveZoneTest = 876
-	end
-	if (AAP_ActiveZoneTest == 1179) then
-		AAP_ActiveZoneTest = 942
-	end
-	if (AAP_ActiveZoneTest == 1180) then
-		AAP_ActiveZoneTest = 942
-	end
-	if (AAP_ActiveZoneTest == 1181) then
-		AAP_ActiveZoneTest = 942
-	end
-	if (AAP_ActiveZoneTest == 1182) then
-		AAP_ActiveZoneTest = 942
-	end
-
-	if (AAP_ActiveZoneTest) then
-		if (factionz == "Alliance") then
-			AAP_ActiveZoneTest = "A"..AAP_ActiveZoneTest
-			if (AAP_ActiveZoneTest == "A862") then
-			elseif (AAP_ActiveZoneTest == "A942") then
-			elseif (AAP_ActiveZoneTest == "A896") then
-			elseif ((AAP_ActiveQuests[47961] or AAP_CompletedQs[47961] == true) and not AAP_CompletedQs[48622]) then
-				AAP_ActiveZoneTest = "A895-1"
-			elseif ((AAP_ActiveQuests[47962] or AAP_CompletedQs[47962] == true) and not AAP_CompletedQs[51490]) then
-				AAP_ActiveZoneTest = "A895-2"
-			elseif ((AAP_ActiveZoneTest == "A895") and (AAP1[AAP_Realm][AAP_Name]["Zone895D"] == 0) and (AAP_ActiveQuests[47960] or AAP_CompletedQs[47960] == true)) then
-				AAP_ActiveZoneTest = "A895-3"
-			elseif ((AAP_ActiveZoneTest == "A895") and (AAP1[AAP_Realm][AAP_Name]["Zone895D"] == 1) and (AAP_ActiveZonePick == 3)) then
-				AAP_ActiveZoneTest = "A895"
-			elseif ((AAP_ActiveZonePick > 0) and (AAP_ActiveZoneTest == "A895")) then
-				AAP_ActiveZoneTest = "A895-"..AAP_ActiveZonePick
-			elseif ((AAP_ActiveZoneTest == "A895") and (AAP1[AAP_Realm][AAP_Name]["Zone895D"] == 1)) then
-				AAP_ActiveZoneTest = "A895"
-			else
-				if (AllySteps[AAP_ActiveZoneTest]) then
-				else
-					AAP_ActiveZoneTest = 1233123991
-				end
-			end
-		else
-		-- Horde
-			if (AAP_ActiveZoneTest == 1009) then
-				AAP_ActiveZoneTest = 864
-			end
-			if (AAP1[AAP_Realm][AAP_Name]["AAP_DoWarCampaign"] == 1 and (not AAP1[AAP_Realm][AAP_Name]["Zone862Camp"])) then
-				AAP_TestHordeCampaign()
-			elseif ((AAP_ActiveZoneTest == 86) and ((AAP_ActiveQuests[47439]) or (AAP_ActiveQuests[50963]) or (AAP_ActiveQuests[50617]) or (AAP_ActiveQuests[50808]))) then
-				AAP_ActiveZoneTest = "86-1"
-			elseif ((AAP_ActiveZoneTest == 627) and ((AAP_ActiveQuests[47439]) or (AAP_ActiveQuests[50963]) or (AAP_ActiveQuests[50617]) or (AAP_ActiveQuests[50808]))) then
-				AAP_ActiveZoneTest = "627-1"
-			elseif (AAP_ActiveZoneTest == 864) then
-			elseif (AAP_ActiveZoneTest == 863) then
-			elseif ((AAP_ActiveZonePick == 1) or (AAP_ActiveZonePick == 2)) and (AAP_ActiveZoneTest == 862) then
-				AAP_ActiveZoneTest = "862-"..AAP_ActiveZonePick
-			elseif ((AAP_ActiveZoneTest == 862) and (AAP1[AAP_Realm][AAP_Name]["Zone862D"] == 0) and (AAP_ActiveQuests[47514] or AAP_CompletedQs[47514] == true)) then
-				AAP_ActiveZoneTest = "862-3"
-			elseif ((AAP_ActiveZoneTest == 86) and ((AAP_ActiveQuests[53372]) or AAP_CompletedQs[53372])) then
-				AAP_ActiveZoneTest = "86-2"
-			elseif (AAP_ActiveZoneTest == 862 and AAP1[AAP_Realm][AAP_Name]["Zone862D"] == 1) then
-				AAP_ActiveZoneTest = 862
-				AAP_TestHordeCampaign()
-			elseif (AAP_QuestList[AAP_ActiveZoneTest]) then
-				AAP_TestHordeCampaign()
-			else
-				AAP_ActiveZoneTest = 1233123991
-			end
-		end
-	end
-	if (AAP_ActiveZoneTestOld ~= AAP_ActiveZoneTest) then
-		AAP_ActiveZoneTestOld = AAP_ActiveZoneTest
-		AAP_ChangeZone()
 	end
 end
 function AAP_ChangeZone()
@@ -1723,40 +1585,27 @@ function AAP_ChangeZone()
 			if (AAP_Test_Var == 1) then
 				AAP1[AAP_Realm][AAP_Name]["Settings"]["AutoAccept"] = 1
 				AAP1[AAP_Realm][AAP_Name]["Settings"]["AutoHandIn"] = 0
-				AAP_Quests = AAPHSteps[AAP_ActiveZone]
-				print(AAP_ActiveZone)
 			elseif (AAP_ActiveZone == "A862") then
-				AAP_Quests = AllySteps["A862"]
 			elseif (AAP_ActiveZone == "A942") then
-				AAP_Quests = AAP_Ally942["A942"]
 			elseif (AAP_ActiveZone == "A896") then
-				AAP_Quests = AAP_Ally896["A896"]
 			elseif ((AAP_ActiveQuests[47961] or AAP_CompletedQs[47961] == true) and not AAP_CompletedQs[48622]) then
 				AAP_ActiveZone = "A895-1"
-				AAP_Quests = AllySteps["A895-1"]
 			elseif ((AAP_ActiveQuests[47962] or AAP_CompletedQs[47962] == true) and not AAP_CompletedQs[51490]) then
 				AAP_ActiveZone = "A895-2"
-				AAP_Quests = AllySteps["A895-2"]
 			elseif ((AAP_ActiveZone == "A895") and (AAP1[AAP_Realm][AAP_Name]["Zone895D"] == 0) and (AAP_ActiveQuests[47960] or AAP_CompletedQs[47960] == true)) then
 				AAP_ActiveZone = "A895-3"
-				AAP_Quests = AAP_Ally895["A895-3"]
 			elseif ((AAP_ActiveZone == "A895") and (AAP1[AAP_Realm][AAP_Name]["Zone895D"] == 1) and (AAP_ActiveZonePick == 3)) then
-				AAP_Quests = AllySteps["A895"]
 				AAP_ActiveZone = "A895"
 				--AAP_TestAllyCampaign()
 			elseif ((AAP_ActiveZonePick > 0) and (AAP_ActiveZone == "A895")) then
 				AAP_ActiveZone = "A895-"..AAP_ActiveZonePick
-				AAP_Quests = AllySteps[AAP_ActiveZone]
 			elseif ((AAP_ActiveZone == "A895") and (AAP1[AAP_Realm][AAP_Name]["Zone895D"] == 1)) then
-				AAP_Quests = AllySteps["A895"]
 				AAP_ActiveZone = "A895"
 				--AAP_TestAllyCampaign()
 			else
-				if (AllySteps[AAP_ActiveZone]) then
-					AAP_Quests = AllySteps[AAP_ActiveZone]
+				if (AAP_QuestList[AAP_ActiveZone]) then
 				else
 					AAP_ActiveZone = 1233123991
-					AAP_Quests = AAP_QuestList[1233123991]
 				end
 				--AAP_TestAllyCampaign()
 
@@ -1770,33 +1619,23 @@ function AAP_ChangeZone()
 				AAP_TestHordeCampaign()
 			elseif ((AAP_ActiveZone == 86) and ((AAP_ActiveQuests[47439]) or (AAP_ActiveQuests[50963]) or (AAP_ActiveQuests[50617]) or (AAP_ActiveQuests[50808]))) then
 				AAP_ActiveZone = "86-1"
-				AAP_Quests = AAP_QuestList["86-1"]
 			elseif ((AAP_ActiveZone == 627) and ((AAP_ActiveQuests[47439]) or (AAP_ActiveQuests[50963]) or (AAP_ActiveQuests[50617]) or (AAP_ActiveQuests[50808]))) then
 				AAP_ActiveZone = "627-1"
-				AAP_Quests = AAP_QuestList["627-1"]
 			elseif (AAP_ActiveZone == 864) then
-				AAP_Quests = AAP_Zone864[864]
 			elseif (AAP_ActiveZone == 863) then
-				AAP_Quests = AAP_Zone863[863]
 			elseif ((AAP_ActiveZonePick == 1) or (AAP_ActiveZonePick == 2)) and (AAP_ActiveZone == 862) then
 				AAP_ActiveZone = "862-"..AAP_ActiveZonePick
-				AAP_Quests = AAP_QuestList[AAP_ActiveZone]
 			elseif ((AAP_ActiveZone == 862) and (AAP1[AAP_Realm][AAP_Name]["Zone862D"] == 0) and (AAP_ActiveQuests[47514] or AAP_CompletedQs[47514] == true)) then
-				AAP_Quests = AAP_Zone862["862-3"]
 				AAP_ActiveZone = "862-3"
 			elseif ((AAP_ActiveZone == 86) and ((AAP_ActiveQuests[53372]) or AAP_CompletedQs[53372])) then
 				AAP_ActiveZone = "86-2"
-				AAP_Quests = AAP_QuestList["86-2"]
 			elseif (AAP_ActiveZone == 862 and AAP1[AAP_Realm][AAP_Name]["Zone862D"] == 1) then
 				AAP_ActiveZone = 862
-				AAP_Quests = AAP_QuestList[862]
 				AAP_TestHordeCampaign()
 			elseif (AAP_QuestList[AAP_ActiveZone]) then
-				AAP_Quests = AAP_QuestList[AAP_ActiveZone]
 				AAP_TestHordeCampaign()
 			else
 				AAP_ActiveZone = 1233123991
-				AAP_Quests = AAP_QuestList[1233123991]
 			end
 --print(AAP_ActiveZone)
 		end
@@ -1867,27 +1706,27 @@ AAP_ParserEventFrame:RegisterEvent ("BAG_UPDATE")
 
 AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 	if (event=="MERCHANT_SHOW" and AAP_DisableAddon == 0) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["BuyMerchant"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["BuyMerchant"]) then
 			AAP_ArrowEventAFkTimer2412:Play()
 		end
 	end
 	if (event=="UNIT_AURA" and AAP_DisableAddon == 0) then
 		local arg1, arg2, arg3, arg4, arg5 = ...;
 		if(arg1 == "player") then
-			if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"]) then
+			if (AAP_ActiveStuff and AAP_ActiveStuff["ExtraLine"]) then
 				for i=1,40 do
 					local name, _, _, _, _, _, _, _, _, spellzid = UnitBuff("player",i)
-					if (spellzid and (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"] == 2) and (spellzid == 272122)) then
+					if (spellzid and (AAP_ActiveStuff["ExtraLine"] == 2) and (spellzid == 272122)) then
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 						QNumberLocal = 0
 						AAP_Reset = 0
 						AAP_Plus()
-					elseif (spellzid and (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"] == 9) and (spellzid == 272119)) then
+					elseif (spellzid and (AAP_ActiveStuff["ExtraLine"] == 9) and (spellzid == 272119)) then
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 						QNumberLocal = 0
 						AAP_Reset = 0
 						AAP_Plus()
-					elseif (spellzid and (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"] == 24) and (spellzid == 273779)) then
+					elseif (spellzid and (AAP_ActiveStuff["ExtraLine"] == 24) and (spellzid == 273779)) then
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 						QNumberLocal = 0
 						AAP_Reset = 0
@@ -1917,7 +1756,7 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 	end
 	if (event=="ADVENTURE_MAP_CLOSE" and AAP_DisableAddon == 0) then
 		if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-			if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CheckMission"]) then
+			if (AAP_ActiveStuff and AAP_ActiveStuff["CheckMission"]) then
 				AAP_MissionProgress()
 			end
 		end
@@ -1949,11 +1788,11 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 		end
 	end
 	if (event=="ZONE_CHANGED" and AAP_DisableAddon == 0) then
-		AAP_ZoneChangeTest()
+		AAP_ChangeZone()
 		AAP_UPDQListV = AAP_UPDQListV2
 	end
 	if (event=="ZONE_CHANGED_NEW_AREA" and AAP_DisableAddon == 0) then
-		AAP_ZoneChangeTest()
+		AAP_ChangeZone()
 		AAP_UPDQListV = AAP_UPDQListV2
 	end
 	if (event=="QUEST_ACCEPTED" and AAP_DisableAddon == 0) then
@@ -1964,7 +1803,7 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 			AAP_Plus()
 		end
 		AAP_Plus()
-		AAP_ZoneChangeTest()
+		AAP_ChangeZone()
 		if (UnitInParty("player") and (AAP1[AAP_Realm][AAP_Name]["Settings"]["AutoShareQ"] == 1) and (not AAP_BlockShared[arg2])) then
 			local i = 0
 			while (GetQuestLogTitle(i+1) ~= nil) do
@@ -2003,8 +1842,8 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 		local arg1, arg2, arg3, arg4, arg5 = ...;
 		if (arg1) then
 			if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-				if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"] == arg1 and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] == 1) then
-					AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GroupTask"]] = 0
+				if (AAP_ActiveStuff and AAP_ActiveStuff["GroupTask"] and AAP_ActiveStuff["GroupTask"] == arg1 and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] and AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] == 1) then
+					AAP1[AAP_Realm][AAP_Name]["WantedQuestList"][AAP_ActiveStuff["GroupTask"]] = 0
 					AAP_Reset = 0
 					AAP_Plus()
 				end
@@ -2018,12 +1857,12 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 	if (event=="GOSSIP_SHOW" and AAP_DisableAddon == 0) then
 		if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
 			local AAPDenied = 0
-			if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DenyNPC"]) then
+			if (AAP_ActiveStuff and AAP_ActiveStuff["DenyNPC"]) then
 				if (UnitGUID("target") and UnitName("target")) then
 					local guid, name = UnitGUID("target"), UnitName("target")
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 					if (npc_id and name) then
-						if (tonumber(npc_id) == AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DenyNPC"]) then
+						if (tonumber(npc_id) == AAP_ActiveStuff["DenyNPC"]) then
 							AAPDenied = 1
 						end
 					end
@@ -2032,9 +1871,9 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 			if (AAPDenied == 1) then
 				CloseGossip()
 				print("AAP: Not Yet!")
-			elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"]) then
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] and not IsControlKeyDown()) then
-					if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 47581) then
+			elseif (AAP_ActiveStuff and AAP_ActiveStuff["Qpart"]) then
+				if (AAP_ActiveStuff["Gossip"] and not IsControlKeyDown()) then
+					if (AAP_ActiveStuff["Gossip"] == 47581) then
 						if (AAP_SpecialGossipO == 1) then
 							SelectGossipOption(3)
 							AAP_SpecialGossipO = AAP_SpecialGossipO + 1
@@ -2051,7 +1890,7 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 							SelectGossipOption(2)
 							AAP_SpecialGossipO = AAP_SpecialGossipO + 1
 						end
-					elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 99) then
+					elseif (AAP_ActiveStuff["Gossip"] == 99) then
 						local guid = UnitGUID("target")
 						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 						if (npc_id and tonumber(npc_id) == 133538) then
@@ -2060,7 +1899,7 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 							AAP_Reset = 0
 							AAP_Plus()
 						end
-					elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 999 and UnitGUID("target") and UnitName("target")) then
+					elseif (AAP_ActiveStuff["Gossip"] == 999 and UnitGUID("target") and UnitName("target")) then
 						local guid, name = UnitGUID("target"), UnitName("target")
 						local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 						if (tonumber(npc_id) == 137645) then
@@ -2070,14 +1909,14 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 							AAP_Reset = 0
 							AAP_Plus()
 						end
-					elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 98) then
-					elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 101) then
+					elseif (AAP_ActiveStuff["Gossip"] == 98) then
+					elseif (AAP_ActiveStuff["Gossip"] == 101) then
 						SelectGossipOption(1)
 						QNumberLocal = 0
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 						AAP_Reset = 0
 						AAP_Plus()
-					elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] == 102) then
+					elseif (AAP_ActiveStuff["Gossip"] == 102) then
 						SelectGossipOption(1)
 						QNumberLocal = 0
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
@@ -2085,28 +1924,28 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 						AAP_Plus()
 					else
 						AAP_GossipOpen = 0
-						SelectGossipOption(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"])
+						SelectGossipOption(AAP_ActiveStuff["Gossip"])
 					end
 				end
-			elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QpartPart"]) then
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] and not IsControlKeyDown()) then
-					SelectGossipOption(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"])
+			elseif (AAP_ActiveStuff and AAP_ActiveStuff["QpartPart"]) then
+				if (AAP_ActiveStuff["Gossip"] and not IsControlKeyDown()) then
+					SelectGossipOption(AAP_ActiveStuff["Gossip"])
 				end
-			elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CRange"]) then
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"] and not IsControlKeyDown()) then
-					SelectGossipOption(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Gossip"])
-				elseif (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GossipP"] and not IsControlKeyDown()) then
-					SelectGossipOption(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GossipP"])
+			elseif (AAP_ActiveStuff and AAP_ActiveStuff["CRange"]) then
+				if (AAP_ActiveStuff["Gossip"] and not IsControlKeyDown()) then
+					SelectGossipOption(AAP_ActiveStuff["Gossip"])
+				elseif (AAP_ActiveStuff["GossipP"] and not IsControlKeyDown()) then
+					SelectGossipOption(AAP_ActiveStuff["GossipP"])
 					AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 					AAP_Reset = 0
 					AAP_Plus()
 					AAP_SpecialQ = 0
 				end
-			elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Special"] and not IsControlKeyDown()) then
+			elseif (AAP_ActiveStuff and AAP_ActiveStuff["Special"] and not IsControlKeyDown()) then
 					AAP_GossipOpen = 0
 					SelectGossipOption(1)
 					AAP_SpecialQ = AAP_SpecialQ + 1
-					if (AAP_SpecialQ == AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Special"]) then
+					if (AAP_SpecialQ == AAP_ActiveStuff["Special"]) then
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 						AAP_Reset = 0
 						AAP_Plus()
@@ -2119,7 +1958,7 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 	end
 	if (event=="BAG_UPDATE" and AAP_DisableAddon == 0) then
 		if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-			if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SearchBags"]) then
+			if (AAP_ActiveStuff and AAP_ActiveStuff["SearchBags"]) then
 				AAP_UPDQListV = AAP_UPDQListV2
 			end
 		end
@@ -2128,23 +1967,23 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 		local arg1, arg2, arg3, arg4, arg5 = ...;
 		if (arg2) then
 			if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-				if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"]) then
-					if (133848 == arg2 and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"] == 12) then
+				if (AAP_ActiveStuff and AAP_ActiveStuff["ExtraLine"]) then
+					if (133848 == arg2 and AAP_ActiveStuff["ExtraLine"] == 12) then
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 						AAP_Reset = 0
 						AAP_Plus()
 					end
-					if (1500932 == arg2 and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"] == 13) then
+					if (1500932 == arg2 and AAP_ActiveStuff["ExtraLine"] == 13) then
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 						AAP_Reset = 0
 						AAP_Plus()
 					end
-					if (454060 == arg2 and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"] == 14) then
+					if (454060 == arg2 and AAP_ActiveStuff["ExtraLine"] == 14) then
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 						AAP_Reset = 0
 						AAP_Plus()
 					end
-					if (134382 == arg2 and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"] == 16) then
+					if (134382 == arg2 and AAP_ActiveStuff["ExtraLine"] == 16) then
 						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 						AAP_Reset = 0
 						AAP_Plus()
@@ -2152,7 +1991,7 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 				end
 			end
 			if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-				if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SearchBags"]) then
+				if (AAP_ActiveStuff and AAP_ActiveStuff["SearchBags"]) then
 					AAP_UPDQListV = AAP_UPDQListV2
 				end
 			end
@@ -2164,7 +2003,7 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 	end
 	if (event=="HEARTHSTONE_BOUND" and AAP_DisableAddon == 0) then
 		if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-			if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SetHS"]) then
+			if (AAP_ActiveStuff and AAP_ActiveStuff["SetHS"]) then
 				AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 				AAP_Reset = 0
 				AAP_Plus()
@@ -2174,7 +2013,7 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 	end
 	if (event=="CHAT_MSG_MONSTER_SAY" and AAP_DisableAddon == 0) then
 		local arg1, arg2, arg3, arg4, arg5 = ...;
-		if (AAP_Quests and arg5 and arg5 == UnitName("player") and AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SayTriggerStartH"]) then
+		if (arg5 and arg5 == UnitName("player") and AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff and AAP_ActiveStuff["SayTriggerStartH"]) then
 			QNumberLocal = 0
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 			AAP_Reset = 0
@@ -2185,15 +2024,15 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 			local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
 			if (npc_id and tonumber(npc_id) == 126490) then
 				if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-					if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
-						if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETASpecial"]) then
+					if (AAP_ActiveStuff) then
+						if (AAP_ActiveStuff["ETASpecial"]) then
 							if (AAP_AfkTable and AAP_AfkTable[AAP_ActiveZone] and AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
 							else
 								if (not AAP_AfkTable[AAP_ActiveZone]) then
 									AAP_AfkTable[AAP_ActiveZone] = {}
 								end
 								AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] = 1
-								AAP_AFK_Timer2(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETASpecial"])
+								AAP_AFK_Timer2(AAP_ActiveStuff["ETASpecial"])
 							end
 						end
 					end
@@ -2201,15 +2040,15 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 			end
 		end
 		if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-			if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AFKTimer"]) then
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AFKTimer"]["Trigger"] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AFKTimer"]["Time"] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AFKTimer"]["Trigger"] == "CHAT_MSG_MONSTER_SAY") then
+			if (AAP_ActiveStuff and AAP_ActiveStuff["AFKTimer"]) then
+				if (AAP_ActiveStuff["AFKTimer"]["Trigger"] and AAP_ActiveStuff["AFKTimer"]["Time"] and AAP_ActiveStuff["AFKTimer"]["Trigger"] == "CHAT_MSG_MONSTER_SAY") then
 					if (AAP_AfkTable and AAP_AfkTable[AAP_ActiveZone] and AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
 					else
 						if (not AAP_AfkTable[AAP_ActiveZone]) then
 							AAP_AfkTable[AAP_ActiveZone] = {}
 						end
 						AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] = 1
-						AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AFKTimer"]["Time"])
+						AAP_AFK_Timer(AAP_ActiveStuff["AFKTimer"]["Time"])
 					end
 				end
 			end
@@ -2228,18 +2067,18 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 --	end
 
 		if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and not InCombatLockdown() and not IsControlKeyDown()) then
-			if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseFlightPath"]) then
-				if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"]) then
+			if (AAP_ActiveStuff and AAP_ActiveStuff["UseFlightPath"]) then
+				if (AAP_ActiveStuff["ETA"]) then
 					if (AAP_AfkTable and AAP_AfkTable[AAP_ActiveZone] and AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]) then
 					else
 						if (not AAP_AfkTable[AAP_ActiveZone]) then
 							AAP_AfkTable[AAP_ActiveZone] = {}
 						end
 						AAP_AfkTable[AAP_ActiveZone][AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] = 1
-						AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ETA"])
+						AAP_AFK_Timer(AAP_ActiveStuff["ETA"])
 					end
 				end
-				local Nodetotake = AAP_TaxiSearchFunc(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PosX"], AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PosY"])
+				local Nodetotake = AAP_TaxiSearchFunc(AAP_ActiveStuff["PosX"], AAP_ActiveStuff["PosY"])
 				TakeTaxiNode(Nodetotake)
 				AAP_TaxiVar = 0
 				AAP_TaxiTimer:Play()
@@ -2252,17 +2091,17 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 --print("Spell: "..arg3)
 			if (arg3 and AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
 				if (arg3 == 248808 or arg3 == 249108 or arg3 == 249110) then
-					AAP_AFK_Timer(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["GossipETA"])
+					AAP_AFK_Timer(AAP_ActiveStuff["GossipETA"])
 				end
-				if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ButtonSpellId"]) then
-					for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ButtonSpellId"]) do
+				if (AAP_ActiveStuff and AAP_ActiveStuff["ButtonSpellId"]) then
+					for AAP_index,AAP_value in pairs(AAP_ActiveStuff["ButtonSpellId"]) do
 						if (arg3 == AAP_index) then
 							local start, duration = GetSpellCooldown(AAP_index)
-							AAP.QuestList2["BF"..AAP_NamedBookedFS[AAP_value]]["AAP_ButtonCD"]:SetCooldown(GetTime(), AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ButtonCooldown"][AAP_index])
+							AAP.QuestList2["BF"..AAP_NamedBookedFS[AAP_value]]["AAP_ButtonCD"]:SetCooldown(GetTime(), AAP_ActiveStuff["ButtonCooldown"][AAP_index])
 							if (not AAP_ButtonCDCounter[99]) then
 								AAP_ButtonCDCounter[99] = {}
 							end
-							AAP_ButtonCDCounter[99][AAP_NamedBookedFS[AAP_value]] = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ButtonCooldown"][AAP_index]
+							AAP_ButtonCDCounter[99][AAP_NamedBookedFS[AAP_value]] = AAP_ActiveStuff["ButtonCooldown"][AAP_index]
 						end
 					end
 				end
@@ -2273,9 +2112,9 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 		end
 		if ((arg1 == "player") and (arg3 == 8690)) then
 			if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-				if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseHS"]) then
-					if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["HSSteps"]) then
-						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["HSSteps"]
+				if (AAP_ActiveStuff and AAP_ActiveStuff["UseHS"]) then
+					if (AAP_ActiveStuff["HSSteps"]) then
+						AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + AAP_ActiveStuff["HSSteps"]
 						AAP_Reset = 0
 						AAP_Plus()
 						AAP_UPDQListV = AAP_UPDQListV2
@@ -2290,7 +2129,7 @@ AAP_ParserEventFrame:SetScript("OnEvent", function(self, event, ...)
 		end
 		if ((arg1 == "player") and ((arg3 == 89157) or (arg3 == 89158))) then
 			if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-				if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseDalaHS"]) then
+				if (AAP_ActiveStuff and AAP_ActiveStuff["UseDalaHS"]) then
 					AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 					AAP_Reset = 0
 					AAP_Plus()

@@ -829,7 +829,9 @@ function WMT:Initialize()
 			local removeTracking = DGV.ArrowMenu:CreateMenuItem(menu, L["Remove tracking"])
 			removeTracking:SetFunction(function () 
                 DugisGuideUser.excludedTrackingPoints[pointKey] = true
-                DGV:RemoveIconFromMinimap(self.minimapPoint)
+                if self.minimapPoint then
+                    DGV:RemoveIconFromMinimap(self.minimapPoint)
+                end
                 DGV:RemoveWorldMapIcon(self)    
                 WMT:UpdateTrackingMap()
             end)
@@ -1148,7 +1150,7 @@ function WMT:Initialize()
 		map = DGV:GetMapIDFromName(nsMapName or mapName)
 		level = tonumber(level)
 		if 
-			currentContinent~=DGV:GetCZByMapId(map) and 
+			currentContinent~=GetMapContinent_dugi(map) and 
 			mapName~=DGV:GetDisplayedMapNameOld() and
 			not allContinents
 		then
@@ -1298,7 +1300,8 @@ function WMT:Initialize()
 			characterData = DugisFlightmasterDataTable
 		end
 		local map = DGV:GetCurrentMapID() 
-		local continent = GetCurrentMapContinent_dugi()
+		if map == 876 or map == 875 then return end		
+		local continent = GetCurrentMapContinent_dugi()		
 		if fullData and fullData[continent] then
 			for npc,data in pairs(fullData[continent]) do
 				local requirements = data and data.requirements
@@ -1928,27 +1931,25 @@ function DugisGuideViewer:ExportPets(optimized)
     local zoneKey_Level2PetInfos = {}
 
     LuaUtils:foreach(speciesData, function(pets, zoneId)
-        LuaUtils:foreach(pets, function(pet, petId)
-            LuaUtils:foreach(pet, function(points, floor_)
-                for xText, yText in gmatch(points, '(%w%w)(%w%w)') do 
-                    local x, y = tonumber(xText, 36) / 10, tonumber(yText, 36) / 10
-                    
-                    local dugiKey = ""..zoneId..":"..floor_
-                    
-                    if not  zoneKey_Level2PetInfos[dugiKey] then
-                        zoneKey_Level2PetInfos[dugiKey] = {}
-                    end
-                    
-                    local petInfos =  zoneKey_Level2PetInfos[dugiKey]
-                   
-                    local speciesName, speciesIcon, petType, companionID, tooltipSource, tooltipDescription, isWild, canBattle, isTradeable, isUnique, obtainable, creatureDisplayID 
-                    = C_PetJournal.GetPetInfoBySpeciesID(petId)
-                   
-                    petType = _G['BATTLE_PET_NAME_' .. petType]
-                   
-                    petInfos[#petInfos + 1] = {x = x, y = y, xText =xText, yText = yText,   petId = petId, category = "", petName = speciesName, petType = petType}
+        LuaUtils:foreach(pets, function(points, petId)
+            for xText, yText in gmatch(points, '(%w%w)(%w%w)') do 
+                local x, y = tonumber(xText, 36) / 10, tonumber(yText, 36) / 10
+                
+                local dugiKey = tostring(zoneId)
+                
+                if not  zoneKey_Level2PetInfos[dugiKey] then
+                    zoneKey_Level2PetInfos[dugiKey] = {}
                 end
-            end)
+                
+                local petInfos =  zoneKey_Level2PetInfos[dugiKey]
+               
+                local speciesName, speciesIcon, petType, companionID, tooltipSource, tooltipDescription, isWild, canBattle, isTradeable, isUnique, obtainable, creatureDisplayID 
+                = C_PetJournal.GetPetInfoBySpeciesID(petId)
+               
+                petType = _G['BATTLE_PET_NAME_' .. petType]
+               
+                petInfos[#petInfos + 1] = {x = x, y = y, xText =xText, yText = yText,   petId = petId, category = "", petName = speciesName, petType = petType}
+            end
         end)
     end)
     
@@ -1958,10 +1959,17 @@ function DugisGuideViewer:ExportPets(optimized)
     
         local zoneIdLevel = LuaUtils:split(zoneId_Level, ":")
         local zoneId = zoneIdLevel[1]
-        local zoneName = DugisGuideViewer:GetMapNameFromID(zoneId)
+        local mapInfo = C_Map.GetMapInfo(zoneId) or {}
+        local zoneName_or_Id = DugisGuideViewer:GetMapNameOld(tonumber(zoneId)) or zoneId
+        local key = ""
         
+        if tonumber(zoneName_or_Id) then
+            key = zoneName_or_Id 
+        else
+            key = zoneName_or_Id..":0" 
+        end
     
-        local result = "\n--"..zoneName.."\nsafeTappend(\""..zoneId_Level.."\", {"
+        local result = "\n--"..(mapInfo.name or zoneId).."\nsafeTappend(\""..key.."\", {"
         
         local lastPetId = -1
         for i = 1, #petInfos do

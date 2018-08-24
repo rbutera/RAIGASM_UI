@@ -186,5 +186,16 @@
 	<Script file="DugisGuide_Legion_En\98_110_Valsharah.lua"/>
 	<Script file="DugisGuide_Legion_En\102_110_Suramar.lua"/>	
 	<Script file="DugisGuide_Legion_En\110_Silithus_The_Wound.lua"/>	
-				
+
+	<Script file="DugisGuide_BFA_En\110_Battle_for_Lordaeron_A.lua"/>	
+	<Script file="DugisGuide_BFA_En\110_120_Tiragarde_Sound_A.lua"/>	
+	<Script file="DugisGuide_BFA_En\110_120_Stormsong_Valley_A.lua"/>	
+	<Script file="DugisGuide_BFA_En\110_120_Drustvar_A.lua"/>		
+	<Script file="DugisGuide_BFA_En\110_120_War_Campaign_A.lua"/>		
+	<Script file="DugisGuide_BFA_En\110_Battle_for_Lordaeron_H.lua"/>	
+	<Script file="DugisGuide_BFA_En\110_120_Zunladar_H.lua"/>		
+	<Script file="DugisGuide_BFA_En\110_120_Nazmir_H.lua"/>	
+	<Script file="DugisGuide_BFA_En\110_120_VolDun_H.lua"/>	
+	<Script file="DugisGuide_BFA_En\110_120_War_Campaign_H.lua"/>		
+			
 </Ui>

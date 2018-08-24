@@ -95,4 +95,14 @@
 	<Script file="..\DugisGuide_Dungeon_Legion_En\110_Court_of_Stars.lua"/>				
 	<Script file="..\DugisGuide_Dungeon_Legion_En\110_Whispers_of_Frightened.lua"/>		
 	
+	<Script file="..\DugisGuide_Dungeons_BFA\110_120_AtalDazar.lua"/>
+	<Script file="..\DugisGuide_Dungeons_BFA\110_120_Temple_Sethraliss.lua"/>	
+	<Script file="..\DugisGuide_Dungeons_BFA\110_120_The_Underrot.lua"/>
+	<Script file="..\DugisGuide_Dungeons_BFA\115_120_The_MOTHERLODE.lua"/>
+	<Script file="..\DugisGuide_Dungeons_BFA\120_Freehold.lua"/>
+	<Script file="..\DugisGuide_Dungeons_BFA\120_Kings_Rest.lua"/>
+	<Script file="..\DugisGuide_Dungeons_BFA\120_Shrine_The_Storm.lua"/>
+	<Script file="..\DugisGuide_Dungeons_BFA\120_Siege_Boralus.lua"/>
+	<Script file="..\DugisGuide_Dungeons_BFA\120_TolDagor.lua"/>
+	<Script file="..\DugisGuide_Dungeons_BFA\120_Waycrest_Manor.lua"/>
 </Ui>

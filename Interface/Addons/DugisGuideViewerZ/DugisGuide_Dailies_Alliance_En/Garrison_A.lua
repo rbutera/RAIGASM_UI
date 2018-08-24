@@ -3,21 +3,21 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r", "Garrison Mission (Daily)", nil, "Alliance", nil, "D", "|SG|UnitLevel([[player]])>=100|", function()
 return [[
 
-N Accept Daily Quest |N|Accept the random PVE non-group quest from War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |MD| |E|
-A Assault on Darktide Roost |QID|36679| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on Socrethar's Rise |QID|36680| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on the Iron Siegeworks |QID|36674| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on Lost Veil Anzu |QID|36681| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on Pillars of Fate |QID|36682| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on Shattrath Harbor |QID|36649| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on Skettis |QID|36683| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on Stonefury Cliffs |QID|36648| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on Magnarok |QID|36675| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on the Broken Precipice |QID|36677| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on Mok'gol Watchpost |QID|36678| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on the Everbloom Wilds |QID|36676| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on the Heart of Shattrath |QID|36685| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
-A Assault on the Pit |QID|36686| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|579| |D| |O|
+N Accept Daily Quest |N|Accept the random PVE non-group quest from War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |MD| |E|
+A Assault on Darktide Roost |QID|36679| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on Socrethar's Rise |QID|36680| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on the Iron Siegeworks |QID|36674| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on Lost Veil Anzu |QID|36681| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on Pillars of Fate |QID|36682| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on Shattrath Harbor |QID|36649| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on Skettis |QID|36683| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on Stonefury Cliffs |QID|36648| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on Magnarok |QID|36675| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on the Broken Precipice |QID|36677| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on Mok'gol Watchpost |QID|36678| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on the Everbloom Wilds |QID|36676| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on the Heart of Shattrath |QID|36685| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
+A Assault on the Pit |QID|36686| |N|War Planning Map in {Lunarfall} (31.0, 31.4) (31.5, 31.0)| |Z|582| |D| |O|
 
 R Darktide Roost |QID|36679| |N|Travel to {Darktide Roost} (59.1, 86.0)| |Z|539| |O| |D|
 C Assault on Darktide Roost |QID|36679| |N|Kill (npc:78148) for (item:116978) which can power up (npc:86085) for a DPS boost.<br/><br/>Also loot (item:115020) from (npc:78999) so you can jump up to the top of the mountain and loot Giant Rylak Egg for a ~7% gain. Eggs are a good source of quest progression if you feel undergeared to kill mobs. (59.1, 86.0)| |Z|539| |NPC|78148, 86085, 78999| |D| |O|
@@ -26,7 +26,7 @@ R Socrethar's Rise |QID|36680| |N|Travel to {Socrethar's Rise} (46.9, 75.1)| |Z|
 C Assault on Socrethar's Rise |QID|36680| |N|Kll different types of mobs for progression based on their health/difficulty. Minibosses give the most progress at 25% each.<br/><br/>There are several objects that provide buffs in the area, such as (spell:170145), (spell:170776), (spell:170140).(46.9, 75.1)| |Z|539| |D| |O|
 
 R Iron Siegeworks |QID|36674| |N|Travel to {Iron Siegeworks} (88.0,50.8)| |Z|525| |D| |O|
-C Assault on the Iron Siegeworks |QID|36674| |N|Kill Sargerei mobs in {Iron Siegeworks}<br/><br/>The Keg of Impaler Ale and Secret Warplans found at the top of the tower provide bonus rate of completion (31.5, 31.0)| |Z|579| |D| |O|
+C Assault on the Iron Siegeworks |QID|36674| |N|Kill Sargerei mobs in {Iron Siegeworks}<br/><br/>The Keg of Impaler Ale and Secret Warplans found at the top of the tower provide bonus rate of completion (31.5, 31.0)| |Z|582| |D| |O|
 
 R Lost Veil Anzu |QID|36681| |N|Travel to {Lost Veil Anzu} (73.3,45.4)| |Z|542| |O| |D|
 C Assault on Lost Veil Anzu |QID|36681| |N|After killing the hostile creatures at {Lost Veil Anzu}. You will need to click on them and consume them until you reach 200% buff (73.3,45.4)| |Z|542| |D| |O|
@@ -61,20 +61,20 @@ C Assault on the Heart of Shattrath |QID|36685| |N|Assault the Sargerei force in
 R The Pit |QID|36686| |N|Travel to {The Pit} (46.8, 26.8)| |Z|543| |O| |D|
 C Assault on the Pit |QID|36686| |N|Assault the Blackrock forces at {The Pit} in {Gorgrond}. (46.8, 26.8) Pick up the ammunition in boxes and barrels and go to the (npc:86091) (costs 30 ammo) or the (npc:85579) (costs 20 ammo) and shoot the Orcs. Do not go to the (npc:85211) as it will shoot you.<br/><br/>Destroying Training Manual or freeing prisoners in Iron Prisoner Cage also awards credit. The quest mobs hit pretty hard as they are intended for a 5-player group to defeat.| |Z|543| |O| |D| |NPC|86091, 85579, 85211|
 
-T Assault on Darktide Roost |QID|36679| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on Socrethar's Rise |QID|36680| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on the Iron Siegeworks |QID|36674| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on Lost Veil Anzu |QID|36681| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on Pillars of Fate |QID|36682| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on Shattrath Harbor |QID|36649| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on Skettis |QID|36683| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on Stonefury Cliffs |QID|36648| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on Magnarok |QID|36675| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on the Broken Precipice |QID|36677| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on Mok'gol Watchpost |QID|36678| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on the Everbloom Wilds |QID|36676| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on the Heart of Shattrath |QID|36685| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
-T Assault on the Pit |QID|36686| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|579| |NPC|81152| |D| |O|
+T Assault on Darktide Roost |QID|36679| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on Socrethar's Rise |QID|36680| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on the Iron Siegeworks |QID|36674| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on Lost Veil Anzu |QID|36681| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on Pillars of Fate |QID|36682| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on Shattrath Harbor |QID|36649| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on Skettis |QID|36683| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on Stonefury Cliffs |QID|36648| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on Magnarok |QID|36675| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on the Broken Precipice |QID|36677| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on Mok'gol Watchpost |QID|36678| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on the Everbloom Wilds |QID|36676| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on the Heart of Shattrath |QID|36685| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
+T Assault on the Pit |QID|36686| |N|(npc:81152) in {Lunarfall} (31.0, 31.4)| |Z|582| |NPC|81152| |D| |O|
 
 N Guide Complete
 

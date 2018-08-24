@@ -4,11 +4,11 @@ function Guide:Initialize()
 return [[
 
 N (aid:9546) |N|You need tier 3 Garrison to receive the quest. Upgrade your Garrison to tier 3.| |AID|9546|
-A Garrison Campaign: War Council |QID|38567| |N|Auto quest in {Frostwall} after reaching tier 3 Garrison (39.27, 53.14)| |Z|585| |NPC|92400|
-T Garrison Campaign: War Council |QID|38567| |N|(npc:92400) {Frostwall} (39.27, 53.14)| |Z|585| |NPC|92400|
-A We Need a Shipwright |QID|38568| |N|(npc:92400) in {Frostwall} (39.27, 53.14)| |Z|585| |NPC|92400|
+A Garrison Campaign: War Council |QID|38567| |N|Auto quest in {Frostwall} after reaching tier 3 Garrison (39.27, 53.14)| |Z|590| |NPC|92400|
+T Garrison Campaign: War Council |QID|38567| |N|(npc:92400) {Frostwall} (39.27, 53.14)| |Z|590| |NPC|92400|
+A We Need a Shipwright |QID|38568| |N|(npc:92400) in {Frostwall} (39.27, 53.14)| |Z|590| |NPC|92400|
 
-F Iron Docks |TID|38568| |N|Speak to (npc:79407) and request a flight to {Iron Docks} (45.75, 50.63)| |Z|585| |NPC|79407| |V|
+F Iron Docks |TID|38568| |N|Speak to (npc:79407) and request a flight to {Iron Docks} (45.75, 50.63)| |Z|590| |NPC|79407| |V|
 T We Need a Shipwright |QID|38568| |N|(npc:89937) in {Iron Docks} (56.13, 6.65)| |Z|543| |NPC|89937|
 A Derailment |QID|38570| |N|(npc:89937) in {Iron Docks} (56.13, 6.65)| |Z|543| |NPC|89937|
 N (item:122516) |QID|38570.2| |N|Collect (item:122516) from the ground in {Iron Docks} (56.57, 11.62)| |Z|543|
@@ -27,9 +27,9 @@ N (item:123867) |QID|38572.2| |N|Kill (npc:92191) and collect (item:123867) in {
 T Hook, Line, and... Sink Him! |QID|38572| |N|(npc:91242) in {Iron Docks} (50.61, 16.71)| |Z|543| |NPC|91242|
 A Nothing Remains |QID|38573| |N|(npc:91242) in {Iron Docks} (50.61, 16.71)| |Z|543| |NPC|91242|
 
-R Frostwall |TID|38573| |N|Travel to {Frostwall} (39.22, 54.73)| |Z|585| |NPC|92400|
-T Nothing Remains |QID|38573| |N|(npc:92400) in {Frostwall} (39.22, 54.73)| |Z|585| |NPC|92400|
-A All Hands on Deck |QID|38574| |N|(npc:92400) in {Frostwall} (39.22, 54.73)| |Z|585| |NPC|92400|
+R Frostwall |TID|38573| |N|Travel to {Frostwall} (39.22, 54.73)| |Z|590| |NPC|92400|
+T Nothing Remains |QID|38573| |N|(npc:92400) in {Frostwall} (39.22, 54.73)| |Z|590| |NPC|92400|
+A All Hands on Deck |QID|38574| |N|(npc:92400) in {Frostwall} (39.22, 54.73)| |Z|590| |NPC|92400|
 T All Hands on Deck |QID|38574| |N|(npc:91242) in {Frostwall Shipyard} (41.47, 69.89)| |Z|525| |NPC|91242|
 A Let's Get To Work |QID|39236| |N|(npc:94789) in {Frostwall Shipyard} (41.55, 72.33)| |Z|525| |NPC|94789|
 T Let's Get To Work |QID|39236| |N|(npc:94429) in {Frostwall Shipyard} (40.72, 70.26)| |Z|525| |NPC|94429|

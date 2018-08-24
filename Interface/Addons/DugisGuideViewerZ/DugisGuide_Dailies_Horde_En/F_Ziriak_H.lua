@@ -3,11 +3,11 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Followers|r ", "Follower Ziri'Ak", nil, "Horde", nil, "D", nil, function()
 return [[
 
-R Frostwall |QID|34653| |N|Travel to {Frostwall} (45.78, 42.73)| |Z|585|
-T News from Spires of Arak |QID|35537| |N|(npc:78487) in {Frostwall} (45.78, 42.73)| |Z|585| |NPC|78487| |O|
-A Arakkoa Exodus |QID|34653| |N|(npc:78487) in {Frostwall} (45.78, 42.73)| |Z|585| |NPC|78487|
+R Frostwall |QID|34653| |N|Travel to {Frostwall} (45.78, 42.73)| |Z|590|
+T News from Spires of Arak |QID|35537| |N|(npc:78487) in {Frostwall} (45.78, 42.73)| |Z|590| |NPC|78487| |O|
+A Arakkoa Exodus |QID|34653| |N|(npc:78487) in {Frostwall} (45.78, 42.73)| |Z|590| |NPC|78487|
 
-F Spires of Arak |QID|34655| |N|Speak to (npc:79407) and fly to {Spires of Arak} (45.8, 50.6)| |Z|585| |NPC|79539|
+F Spires of Arak |QID|34655| |N|Speak to (npc:79407) and fly to {Spires of Arak} (45.8, 50.6)| |Z|590| |NPC|79539|
 T Arakkoa Exodus |QID|34653| |N|(npc:79539) in {Terokkar Pass} (37.86, 18.02)| |NPC|79539| |Z|535|
 A The Shadows of Skettis |QID|34655| |N|(npc:79539) in {Terokkar Pass} (37.88, 18.06)| |NPC|79539| |Z|535|
 

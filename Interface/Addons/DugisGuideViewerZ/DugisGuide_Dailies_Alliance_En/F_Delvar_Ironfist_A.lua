@@ -3,10 +3,10 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Followers|r ", "Follower Delvar Ironfist", nil, "Alliance", nil, "D", nil, function()
 return [[
 
-R Lunarfall |QID|36624| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|579| 
-A Ashran Appearance |QID|36624| |N|(npc:79953) in {Town Hall} (31.29, 32.65)| |Z|579| |NPC|79953|
+R Lunarfall |QID|36624| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|582| 
+A Ashran Appearance |QID|36624| |N|(npc:79953) in {Town Hall} (31.29, 32.65)| |Z|582| |NPC|79953|
 
-F Stormshield |QID|36626| |N|Speak to (npc:81103) and fly to {Stormshield} in {Ashran} (48.04, 49.79)| |Z|579| |NPC|81103| |V|
+F Stormshield |QID|36626| |N|Speak to (npc:81103) and fly to {Stormshield} in {Ashran} (48.04, 49.79)| |Z|582| |NPC|81103| |V|
 T Ashran Appearance |QID|36624| |N|(npc:86065) in {Stormshield} (32.01, 49.90)| |Z|622| |NPC|86065|
 A Host Howell |QID|36626| |N|(npc:86065) in {Stormshield} (32.01, 49.90)| |Z|622| |NPC|86065|
 T Host Howell |QID|36626| |N|(npc:86069) in {Hero's Rest Inn} (35.52, 75.74)| |Z|622| |NPC|86069|

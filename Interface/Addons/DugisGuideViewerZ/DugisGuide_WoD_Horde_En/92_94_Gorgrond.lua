@@ -3,8 +3,8 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r ", "543(92-100)#543(92-100)#543(92-100)", "525(94-100)#525(94-100)#525(94-100)", "Horde", nil, "L", nil, function()
 return [[
 
-A Ashran Appearance |QID|36706| |N|(npc:78466) in {Frostwall} (52.49, 53.35)| |Z|585| |NPC|78466|
-F Warspear |QID|36707| |N|Speak to (npc:79407) and fly to {Warspear} in {Ashran} (45.86, 50.73)| |Z|585| |V|
+A Ashran Appearance |QID|36706| |N|(npc:78466) in {Frostwall} (52.49, 53.35)| |Z|590| |NPC|78466|
+F Warspear |QID|36707| |N|Speak to (npc:79407) and fly to {Warspear} in {Ashran} (45.86, 50.73)| |Z|590| |V|
 T Ashran Appearance |QID|36706| |N|(npc:86315) in {Warspear} (45.50, 34.56)| |Z|624| |NPC|86315| |PRE|36706|
 A Warspear Welcome |QID|36707| |N|(npc:86315) in {Warspear} (45.50, 34.56)| |Z|624| |NPC|86315| |PRE|36706|
 T Warspear Welcome |QID|36707| |N|(npc:86312) in {Warspear} (44.16, 45.49)| |Z|624| |NPC|86312| |PRE|36706|

@@ -15,20 +15,7 @@ FishingBuddy_Info = {
 			[152549] = 3,
 		},
 	},
-	["FishSchools"] = {
-		[862] = {
-			{
-				["y"] = 0.348581438776647,
-				["x"] = 0.626960856118135,
-				["sidx"] = 862000,
-				["kind"] = 0,
-				["fish"] = {
-					[152549] = 1,
-				},
-				["count"] = 1,
-			}, -- [1]
-		},
-	},
+	["FishInfo2"] = 0,
 	["Version"] = 19500,
 	["KnownZones"] = {
 		[862] = "The Slough",
@@ -41,9 +28,22 @@ FishingBuddy_Info = {
 	["Fishies"] = {
 		[152549] = {
 			["enUS"] = "Redtail Loach",
-			["quality"] = 1,
 			["texture"] = 2057314,
+			["quality"] = 1,
 		},
 	},
-	["FishInfo2"] = 0,
+	["FishSchools"] = {
+		[862] = {
+			{
+				["y"] = 0.348581438776647,
+				["x"] = 0.626960856118135,
+				["sidx"] = 862000,
+				["kind"] = 0,
+				["count"] = 1,
+				["fish"] = {
+					[152549] = 1,
+				},
+			}, -- [1]
+		},
+	},
 }

@@ -287,7 +287,8 @@ function SF:OnInitialize()
 		"<iLvl>",
 		("%-"):rep(30),
 		"<小队物品等级:.+>",
-		"^<EH>"
+		"^<EH>",
+		"^%[World Quest Tracker%]"
 	}
 	SF[1]={}
 	db:RegisterDefaults(defaults)

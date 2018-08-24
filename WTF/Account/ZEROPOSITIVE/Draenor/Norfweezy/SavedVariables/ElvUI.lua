@@ -3,974 +3,28 @@ ElvCharacterDB = {
 	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {
-		"/p i cant hearthstone ", -- [1]
-		"/g yeah sure but do you think i can as 104?", -- [2]
-		"/g only one way to find out", -- [3]
-		"/g ye", -- [4]
-		"/invite Ookii ", -- [5]
-		"/g haha limstella as a tank that is guilty of doing that im so sorry, i'm learning, and i find it hilarious", -- [6]
-		"/g gotyourbacks im down to come as dps", -- [7]
-		"/g if you have space", -- [8]
-		"/g oh wait its random hc queue right? i only have 290 ilvl and i think 6you need 300 to queue dps", -- [9]
-		"/g ye another char", -- [10]
-		"/g llimstella as a tank i also think OH SHIT USE EVERYTHING", -- [11]
-		"/g but usually that means pulling another group HAHAH", -- [12]
-		"/p i think so or the boss", -- [13]
-		"/cw Gotyourbacks-Draenor yeah its too low dw i'll sort my ilvl out later today and join you tomorrow", -- [14]
-		"/p 232 xp XD", -- [15]
-		"/p ooooh that sounds nice", -- [16]
-		"/p thanks for that, was fun taking a break from grinding quests", -- [17]
-		"/g novahkin as a shammy who has betrayed his class to roll monk in BFA I miss ghost wolf, water walking, and insta self-heal more than i'd like to admit", -- [18]
-		"/g (tis I, ryugasm)", -- [19]
-		"/g brb relogging on main", -- [20]
+		"/invite Ookii ", -- [1]
+		"/g haha limstella as a tank that is guilty of doing that im so sorry, i'm learning, and i find it hilarious", -- [2]
+		"/g gotyourbacks im down to come as dps", -- [3]
+		"/g if you have space", -- [4]
+		"/g oh wait its random hc queue right? i only have 290 ilvl and i think 6you need 300 to queue dps", -- [5]
+		"/g ye another char", -- [6]
+		"/g llimstella as a tank i also think OH SHIT USE EVERYTHING", -- [7]
+		"/g but usually that means pulling another group HAHAH", -- [8]
+		"/p i think so or the boss", -- [9]
+		"/cw Gotyourbacks-Draenor yeah its too low dw i'll sort my ilvl out later today and join you tomorrow", -- [10]
+		"/p 232 xp XD", -- [11]
+		"/p ooooh that sounds nice", -- [12]
+		"/p thanks for that, was fun taking a break from grinding quests", -- [13]
+		"/g novahkin as a shammy who has betrayed his class to roll monk in BFA I miss ghost wolf, water walking, and insta self-heal more than i'd like to admit", -- [14]
+		"/g (tis I, ryugasm)", -- [15]
+		"/g brb relogging on main", -- [16]
+		"/2 anyone got a 2seater flying mount and wanna do invasion? ", -- [17]
+		"/g anyone got a 2seater flying mount and wanna do invasion? ", -- [18]
+		"/g hah ok ty", -- [19]
+		"/elvui", -- [20]
 	},
 	["ChatHistoryLog"] = {
-		{
-			"and tank spec", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Norfweezy", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			700, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017034,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [1]
-		{
-			"fun too", -- [1]
-			"Kiliual-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kiliual", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			701, -- [11]
-			"Player-1403-071243E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Kiliual|r",
-			[51] = 1535017035,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [2]
-		{
-			"I might change ideas", -- [1]
-			"Kiliual-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kiliual", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			703, -- [11]
-			"Player-1403-071243E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Kiliual|r",
-			[51] = 1535017045,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [3]
-		{
-			"can do one before I go to the store", -- [1]
-			"Bloodworm-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			704, -- [11]
-			"Player-1403-06F8B749", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Bloodworm|r",
-			[51] = 1535017052,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [4]
-		{
-			"ok, getting a coffe then I'll start the invites", -- [1]
-			"Gotyourbacks-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			708, -- [11]
-			"Player-1403-06C50254", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGotyourbacks|r",
-			[51] = 1535017108,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [5]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:12480:Player-1403-06DB15EF:1:8:23:18:4294967295:4294967295:4294967295:4294967295|h[A Bargain of Blood]|h|r!", -- [1]
-			"Babbetta-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Babbetta", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			709, -- [11]
-			"Player-1403-06DB15EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Babbetta|r",
-			[51] = 1535017111,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [6]
-		{
-			"%s has earned the achievement |cffffff00|Hachievement:238:Player-1403-071243E5:1:8:23:18:4294967295:4294967295:4294967295:4294967295|h[An Honorable Kill]|h|r!", -- [1]
-			"Kiliual-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kiliual", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			716, -- [11]
-			"Player-1403-071243E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Kiliual|r",
-			[51] = 1535017118,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
-		}, -- [7]
-		{
-			"that is it then i guess", -- [1]
-			"Kiliual-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kiliual", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			728, -- [11]
-			"Player-1403-071243E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Kiliual|r",
-			[51] = 1535017129,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [8]
-		{
-			"gz", -- [1]
-			"Babbetta-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			729, -- [11]
-			"Player-1403-06DB15EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Babbetta|r",
-			[51] = 1535017130,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [9]
-		{
-			"i think so ytea", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Norfweezy", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			730, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017134,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [10]
-		{
-			"cool", -- [1]
-			"Kiliual-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kiliual", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			732, -- [11]
-			"Player-1403-071243E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Kiliual|r",
-			[51] = 1535017142,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [11]
-		{
-			"thanks again", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Norfweezy", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			733, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017146,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [12]
-		{
-			"i'm gonna do withere jim now", -- [1]
-			"Kiliual-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kiliual", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			735, -- [11]
-			"Player-1403-071243E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Kiliual|r",
-			[51] = 1535017156,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [13]
-		{
-			"on druid for achie", -- [1]
-			"Kiliual-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kiliual", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			736, -- [11]
-			"Player-1403-071243E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Kiliual|r",
-			[51] = 1535017160,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [14]
-		{
-			"im down ", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Norfweezy", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			737, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017160,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [15]
-		{
-			"relogging", -- [1]
-			"Kiliual-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Kiliual", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			738, -- [11]
-			"Player-1403-071243E5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Kiliual|r",
-			[51] = 1535017165,
-			[50] = "CHAT_MSG_PARTY",
-		}, -- [16]
-		{
-			"i cant hearthstone ", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"Norfweezy", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			739, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017166,
-			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [17]
-		{
-			"if u wanna do it i'll come for u", -- [1]
-			"Ookii-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			742, -- [11]
-			"Player-1403-0620F309", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535017197,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [18]
-		{
-			"yeah sure but do you think i can as 104?", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			744, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017211,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [19]
-		{
-			"hmm, i dont know", -- [1]
-			"Ookii-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			749, -- [11]
-			"Player-1403-0620F309", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535017218,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [20]
-		{
-			"i can take u and see if it's possible", -- [1]
-			"Ookii-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			750, -- [11]
-			"Player-1403-0620F309", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535017226,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [21]
-		{
-			"only one way to find out", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			751, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017227,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [22]
-		{
-			"ye", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			752, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017228,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [23]
-		{
-			"inv", -- [1]
-			"Ookii-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			753, -- [11]
-			"Player-1403-0620F309", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535017233,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [24]
-		{
-			"anyone know where i can find baine|cffff2020|Hquest:47258:-1:110:120:5|h[Prepare for a Siege]|h|r?", -- [1]
-			"Babbetta-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			759, -- [11]
-			"Player-1403-06DB15EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Babbetta|r",
-			[51] = 1535017310,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [25]
-		{
-			"its not showing on my map", -- [1]
-			"Babbetta-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			760, -- [11]
-			"Player-1403-06DB15EF", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Babbetta|r",
-			[51] = 1535017316,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [26]
-		{
-			"I don't know, sorry", -- [1]
-			"Ookii-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			763, -- [11]
-			"Player-1403-0620F309", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535017328,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [27]
-		{
-			"You know what I really really hate as a healer? Why do tanks insist to try and skip a trash group that will clearly still be pulled somehow? 80% of my deaths this expansion has been to some ass skipping a group, it getting pulled anyway, and pandemonium.", -- [1]
-			"Limstella-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			765, -- [11]
-			"Player-1403-070404E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535017330,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [28]
-		{
-			"baine should be in the great seel", -- [1]
-			"Yimm-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			766, -- [11]
-			"Player-1403-0709066B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddYimm|r",
-			[51] = 1535017348,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [29]
-		{
-			"hehe yeahh  that sucks", -- [1]
-			"Gotyourbacks-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			767, -- [11]
-			"Player-1403-06C50254", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGotyourbacks|r",
-			[51] = 1535017354,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [30]
-		{
-			"seal*", -- [1]
-			"Yimm-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			768, -- [11]
-			"Player-1403-0709066B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddYimm|r",
-			[51] = 1535017354,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [31]
-		{
-			"use a good grp, guild :P", -- [1]
-			"Ookii-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			769, -- [11]
-			"Player-1403-0620F309", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535017355,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [32]
-		{
-			"ok, who else wants to come hc?", -- [1]
-			"Gotyourbacks-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			770, -- [11]
-			"Player-1403-06C50254", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGotyourbacks|r",
-			[51] = 1535017371,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [33]
-		{
-			"have to kill a dude first", -- [1]
-			"Ookii-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			776, -- [11]
-			"Player-1403-0620F309", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535017382,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [34]
-		{
-			"haha limstella as a tank that is guilty of doing that im so sorry, i'm learning, and i find it hilarious", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			777, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017384,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [35]
-		{
-			"gotyourbacks im down to come as dps", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			780, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017402,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [36]
-		{
-			"if you have space", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			782, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017404,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [37]
-		{
-			"you need to be max level for hc right? Or on another char?", -- [1]
-			"Gotyourbacks-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			783, -- [11]
-			"Player-1403-06C50254", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGotyourbacks|r",
-			[51] = 1535017425,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [38]
-		{
-			"oh wait its random hc queue right? i only have 290 ilvl and i think 6you need 300 to queue dps", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			784, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017426,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [39]
-		{
-			"The only tank I hate is one that refuses to acknowledge my need to snack", -- [1]
-			"Novahkin-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			786, -- [11]
-			"Player-1403-06EE95E2", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddNovahkin|r",
-			[51] = 1535017441,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [40]
-		{
-			"ye another char", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			787, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017442,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [41]
-		{
-			"Well as the healer I'm the one that has to be like \"Oh shit, use EVERYTHING\" and people still die..I'm not a miracle worker :p", -- [1]
-			"Limstella-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			788, -- [11]
-			"Player-1403-070404E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535017458,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [42]
-		{
-			"llimstella as a tank i also think OH SHIT USE EVERYTHING", -- [1]
-			"Norfweezy-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			790, -- [11]
-			"Player-1403-06E3261D", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffa330c9Norfweezy|r",
-			[51] = 1535017472,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [43]
 		{
 			"but usually that means pulling another group HAHAH", -- [1]
 			"Norfweezy-Draenor", -- [2]
@@ -992,7 +46,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Norfweezy|r",
 			[51] = 1535017478,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [44]
+		}, -- [1]
 		{
 			"-drops all totems and splashes mana everywhere-", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -1014,7 +68,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017487,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [45]
+		}, -- [2]
 		{
 			"I healed most of legion that I played, there you had tanks trying to pull the whole instance and don't stop", -- [1]
 			"Gotyourbacks-Draenor", -- [2]
@@ -1036,7 +90,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGotyourbacks|r",
 			[51] = 1535017491,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [46]
+		}, -- [3]
 		{
 			"and then always some dps would aggro mobs and start a shitstorm", -- [1]
 			"Gotyourbacks-Draenor", -- [2]
@@ -1058,7 +112,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGotyourbacks|r",
 			[51] = 1535017507,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [47]
+		}, -- [4]
 		{
 			"I mean it's FINE if you overgear it at that point", -- [1]
 			"Limstella-Draenor", -- [2]
@@ -1080,7 +134,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffLimstella|r",
 			[51] = 1535017507,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [48]
+		}, -- [5]
 		{
 			"did alliance kill u?", -- [1]
 			"Ookii-Draenor", -- [2]
@@ -1102,7 +156,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017525,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [49]
+		}, -- [6]
 		{
 			"i think so or the boss", -- [1]
 			"Norfweezy-Draenor", -- [2]
@@ -1124,7 +178,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Norfweezy|r",
 			[51] = 1535017531,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [50]
+		}, -- [7]
 		{
 			"he is not attacking", -- [1]
 			"Ookii-Draenor", -- [2]
@@ -1146,7 +200,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017538,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [51]
+		}, -- [8]
 		{
 			"maybe pet", -- [1]
 			"Ookii-Draenor", -- [2]
@@ -1168,7 +222,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017540,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [52]
+		}, -- [9]
 		{
 			"what's your item level, you need 305 I think for hc", -- [1]
 			"Gotyourbacks-Draenor", -- [2]
@@ -1190,7 +244,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGotyourbacks|r",
 			[51] = 1535017544,
 			[50] = "CHAT_MSG_WHISPER",
-		}, -- [53]
+		}, -- [10]
 		{
 			"Dont get started on lazy dps not interrupting avoidable group dmg T_T", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -1212,7 +266,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017544,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [54]
+		}, -- [11]
 		{
 			"yeah its too low dw i'll sort my ilvl out later today and join you tomorrow", -- [1]
 			"Gotyourbacks-Draenor", -- [2]
@@ -1234,7 +288,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGotyourbacks|r",
 			[51] = 1535017566,
 			[50] = "CHAT_MSG_WHISPER_INFORM",
-		}, -- [55]
+		}, -- [12]
 		{
 			"The worst is when people have no idea what to do on a boss to be fair. And then be like \"HEALS!\" like \"lol, you got one shot...wait, let me bargain with jesus for a second\"", -- [1]
 			"Limstella-Draenor", -- [2]
@@ -1256,7 +310,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffLimstella|r",
 			[51] = 1535017567,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [56]
+		}, -- [13]
 		{
 			"Help me to help you", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -1278,7 +332,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017568,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [57]
+		}, -- [14]
 		{
 			"interrupts are SO important in instances this expansion", -- [1]
 			"Yimm-Draenor", -- [2]
@@ -1300,7 +354,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddYimm|r",
 			[51] = 1535017570,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [58]
+		}, -- [15]
 		{
 			"ok, anyone for random hc? Only need 2 dps", -- [1]
 			"Gotyourbacks-Draenor", -- [2]
@@ -1322,7 +376,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGotyourbacks|r",
 			[51] = 1535017590,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [59]
+		}, -- [16]
 		{
 			"moral of the story. Avoid pugs if you can.", -- [1]
 			"Steersandque-Draenor", -- [2]
@@ -1344,7 +398,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddSteersandque|r",
 			[51] = 1535017593,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [60]
+		}, -- [17]
 		{
 			"tbf, as a priest you should have that power anyway xD", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -1366,7 +420,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017596,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [61]
+		}, -- [18]
 		{
 			"Bob has the right idea", -- [1]
 			"Yimm-Draenor", -- [2]
@@ -1388,7 +442,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddYimm|r",
 			[51] = 1535017615,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [62]
+		}, -- [19]
 		{
 			"I'm an atheist priest though", -- [1]
 			"Limstella-Draenor", -- [2]
@@ -1410,7 +464,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffLimstella|r",
 			[51] = 1535017619,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [63]
+		}, -- [20]
 		{
 			"dang", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -1432,7 +486,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017626,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [64]
+		}, -- [21]
 		{
 			"232 xp XD", -- [1]
 			"Norfweezy-Draenor", -- [2]
@@ -1454,7 +508,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Norfweezy|r",
 			[51] = 1535017628,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [65]
+		}, -- [22]
 		{
 			"and yeah, lorewise if anyone has a battle res it should be priests no?", -- [1]
 			"Yimm-Draenor", -- [2]
@@ -1476,7 +530,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddYimm|r",
 			[51] = 1535017631,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [66]
+		}, -- [23]
 		{
 			"nice", -- [1]
 			"Ookii-Draenor", -- [2]
@@ -1498,7 +552,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017633,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [67]
+		}, -- [24]
 		{
 			"maybe pallys", -- [1]
 			"Yimm-Draenor", -- [2]
@@ -1520,7 +574,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddYimm|r",
 			[51] = 1535017645,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [68]
+		}, -- [25]
 		{
 			"-hides reincarnation-", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -1542,7 +596,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017649,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [69]
+		}, -- [26]
 		{
 			"sssh", -- [1]
 			"Yimm", -- [2]
@@ -1564,7 +618,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddYimm|r",
 			[51] = 1535017657,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [70]
+		}, -- [27]
 		{
 			"i want the blue version of the tank form", -- [1]
 			"Ookii", -- [2]
@@ -1586,7 +640,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017657,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [71]
+		}, -- [28]
 		{
 			"don't tell them our secrets", -- [1]
 			"Yimm-Draenor", -- [2]
@@ -1608,7 +662,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddYimm|r",
 			[51] = 1535017661,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [72]
+		}, -- [29]
 		{
 			"Mythic dungeon boosting for gold, 340+ gear gaurantee, cheapest service on market", -- [1]
 			"Wakefulness-Draenor", -- [2]
@@ -1630,7 +684,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Wakefulness|r",
 			[51] = 1535017667,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [73]
+		}, -- [30]
 		{
 			"ooooh that sounds nice", -- [1]
 			"Norfweezy-Draenor", -- [2]
@@ -1652,7 +706,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Norfweezy|r",
 			[51] = 1535017670,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [74]
+		}, -- [31]
 		{
 			"hahahahaha.....what secret? /flee", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -1674,7 +728,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017672,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [75]
+		}, -- [32]
 		{
 			"WTB ALL BFA herbs@45g, |cffffffff|Hitem:152576::::::::91:267::::::|h[Tidespray Linen]|h|r@6g, |cffffffff|Hitem:152579::::::::91:267::::::|h[Storm Silver Ore]|h|r@55g, |cffffffff|Hitem:152512::::::::91:267::::::|h[Monelite Ore]|h|r@40g,  COD ANY AMOUNT! Buying all you've got! Thank You ♥♥♥", -- [1]
 			"Martinssempa-Draenor", -- [2]
@@ -1696,7 +750,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edMartinssempa|r",
 			[51] = 1535017675,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [76]
+		}, -- [33]
 		{
 			"thanks for that, was fun taking a break from grinding quests", -- [1]
 			"Norfweezy-Draenor", -- [2]
@@ -1718,7 +772,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Norfweezy|r",
 			[51] = 1535017678,
 			[50] = "CHAT_MSG_PARTY_LEADER",
-		}, -- [77]
+		}, -- [34]
 		{
 			"yeah", -- [1]
 			"Ookii-Draenor", -- [2]
@@ -1740,7 +794,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017681,
 			[50] = "CHAT_MSG_PARTY",
-		}, -- [78]
+		}, -- [35]
 		{
 			"WTS |cffffffff|Hitem:152579::::::::114:259::::::|h[Storm Silver Ore]|h|r And |cffffffff|Hitem:152512::::::::114:259::::::|h[Monelite Ore]|h|r", -- [1]
 			"Langgwelria-Draenor", -- [2]
@@ -1762,7 +816,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Langgwelria|r",
 			[51] = 1535017683,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [79]
+		}, -- [36]
 		{
 			"WTB |cff1eff00|Hitem:152510::::::::1:262::::::|h[Anchor Weed]|h|r 325g ea BFA herbs 45g ea |cff1eff00|Hitem:162515::::::::1:262::::::|h[Midnight Salmon]|h|r225g ea COD any amount!", -- [1]
 			"Jumbostyle-Draenor", -- [2]
@@ -1784,7 +838,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddJumbostyle|r",
 			[51] = 1535017685,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [80]
+		}, -- [37]
 		{
 			"WTS 20,8k herbs - 60g each", -- [1]
 			"Hansara-Draenor", -- [2]
@@ -1806,7 +860,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Hansara|r",
 			[51] = 1535017687,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [81]
+		}, -- [38]
 		{
 			"Well it made sense. Thrall is basically the jesus of wow, so shamans had to have it and water walking.", -- [1]
 			"Limstella-Draenor", -- [2]
@@ -1828,7 +882,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffLimstella|r",
 			[51] = 1535017693,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [82]
+		}, -- [39]
 		{
 			"so, anyone looking for a hc grp?", -- [1]
 			"Ookii-Draenor", -- [2]
@@ -1850,7 +904,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017698,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [83]
+		}, -- [40]
 		{
 			"wtb  |cff1eff00|Hitem:152510::::::::120:70::::::|h[Anchor Weed]|h|r 300g/each and |cffffffff|Hitem:152511::::::::120:70::::::|h[Sea Stalk]|h|r |cffffffff|Hitem:152506::::::::120:70::::::|h[Star Moss]|h|r or other Herbs 35g/each  - COD plx", -- [1]
 			"Cryandie-Draenor", -- [2]
@@ -1872,7 +926,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCryandie|r",
 			[51] = 1535017702,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [84]
+		}, -- [41]
 		{
 			"WTB ALL BFA HERBS, 70 G/EACH, ANCHOR WEED 450G/EACH!!! C.O.D ONLY. THIS IS A MACRO. I CHECK C.O.D EVERY 20 MINUTES", -- [1]
 			"Buemester-Draenor", -- [2]
@@ -1894,7 +948,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Buemester|r",
 			[51] = 1535017704,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [85]
+		}, -- [42]
 		{
 			"we have room for 2 dps", -- [1]
 			"Gotyourbacks-Draenor", -- [2]
@@ -1916,7 +970,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGotyourbacks|r",
 			[51] = 1535017707,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [86]
+		}, -- [43]
 		{
 			"WTB |cff1eff00|Hitem:152510::::::::1:71::::::|h[Anchor Weed]|h|r 360g each || COD PLEASE", -- [1]
 			"Bonkert-Draenor", -- [2]
@@ -1938,7 +992,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dBonkert|r",
 			[51] = 1535017710,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [87]
+		}, -- [44]
 		{
 			"WTB ALL BFA herbs@45g, |cffffffff|Hitem:152576::::::::91:267::::::|h[Tidespray Linen]|h|r@6g, |cffffffff|Hitem:152579::::::::91:267::::::|h[Storm Silver Ore]|h|r@55g, |cffffffff|Hitem:152512::::::::91:267::::::|h[Monelite Ore]|h|r@40g,  COD ANY AMOUNT! Buying all you've got! Thank You ♥♥♥", -- [1]
 			"Martinssempa-Draenor", -- [2]
@@ -1960,7 +1014,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edMartinssempa|r",
 			[51] = 1535017715,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [88]
+		}, -- [45]
 		{
 			"waterwalking was a bigger selling point than I'd like to admit", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -1982,7 +1036,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017721,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [89]
+		}, -- [46]
 		{
 			"i could dps I guess, not sure how good it is", -- [1]
 			"Ookii-Draenor", -- [2]
@@ -2004,7 +1058,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017724,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [90]
+		}, -- [47]
 		{
 			"WTS 20,8k herbs - 60g each", -- [1]
 			"Hansara-Draenor", -- [2]
@@ -2026,7 +1080,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Hansara|r",
 			[51] = 1535017726,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [91]
+		}, -- [48]
 		{
 			"i can tank, if current tank has better dps", -- [1]
 			"Ookii-Draenor", -- [2]
@@ -2048,7 +1102,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017737,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [92]
+		}, -- [49]
 		{
 			"Ghost Wolf was the deal breaker for me", -- [1]
 			"Yimm-Draenor", -- [2]
@@ -2070,7 +1124,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddYimm|r",
 			[51] = 1535017739,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [93]
+		}, -- [50]
 		{
 			"Mythic dungeon boosting for gold, 340+ gear gaurantee, cheapest service on market", -- [1]
 			"Wakefulness-Draenor", -- [2]
@@ -2092,7 +1146,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Wakefulness|r",
 			[51] = 1535017748,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [94]
+		}, -- [51]
 		{
 			"for those dungeons where you can't mount up", -- [1]
 			"Yimm-Draenor", -- [2]
@@ -2114,7 +1168,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddYimm|r",
 			[51] = 1535017749,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [95]
+		}, -- [52]
 		{
 			"and they made it faster lol", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -2136,7 +1190,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017752,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [96]
+		}, -- [53]
 		{
 			"WTB ALL BFA herbs@45g, |cffffffff|Hitem:152576::::::::91:267::::::|h[Tidespray Linen]|h|r@6g, |cffffffff|Hitem:152579::::::::91:267::::::|h[Storm Silver Ore]|h|r@55g, |cffffffff|Hitem:152512::::::::91:267::::::|h[Monelite Ore]|h|r@40g,  COD ANY AMOUNT! Buying all you've got! Thank You ♥♥♥", -- [1]
 			"Martinssempa-Draenor", -- [2]
@@ -2158,7 +1212,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edMartinssempa|r",
 			[51] = 1535017755,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [97]
+		}, -- [54]
 		{
 			"WTS |cffffffff|Hitem:152579::::::::114:259::::::|h[Storm Silver Ore]|h|r And |cffffffff|Hitem:152512::::::::114:259::::::|h[Monelite Ore]|h|r", -- [1]
 			"Langgwelria-Draenor", -- [2]
@@ -2180,7 +1234,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Langgwelria|r",
 			[51] = 1535017756,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [98]
+		}, -- [55]
 		{
 			"wtb  |cff1eff00|Hitem:152510::::::::120:70::::::|h[Anchor Weed]|h|r 300g/each and |cffffffff|Hitem:152511::::::::120:70::::::|h[Sea Stalk]|h|r |cffffffff|Hitem:152506::::::::120:70::::::|h[Star Moss]|h|r or other Herbs 35g/each  - COD plx", -- [1]
 			"Cryandie-Draenor", -- [2]
@@ -2202,7 +1256,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCryandie|r",
 			[51] = 1535017757,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [99]
+		}, -- [56]
 		{
 			"novahkin as a shammy who has betrayed his class to roll monk in BFA I miss ghost wolf, water walking, and insta self-heal more than i'd like to admit", -- [1]
 			"Norfweezy-Draenor", -- [2]
@@ -2224,7 +1278,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Norfweezy|r",
 			[51] = 1535017759,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [100]
+		}, -- [57]
 		{
 			"Deal maker you mean :p", -- [1]
 			"Limstella-Draenor", -- [2]
@@ -2246,7 +1300,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffLimstella|r",
 			[51] = 1535017763,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [101]
+		}, -- [58]
 		{
 			"WTS follower equipment |cff1eff00|Hitem:162110::::::::120:265::13:1:3524:::|h[Disenchanting Rod]|h|r ", -- [1]
 			"Fuelweaver-Draenor", -- [2]
@@ -2268,7 +1322,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edFuelweaver|r",
 			[51] = 1535017764,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [102]
+		}, -- [59]
 		{
 			"WTB |cff1eff00|Hitem:152510::::::::1:262::::::|h[Anchor Weed]|h|r 325g ea BFA herbs 45g ea |cff1eff00|Hitem:162515::::::::1:262::::::|h[Midnight Salmon]|h|r225g ea COD any amount!", -- [1]
 			"Jumbostyle-Draenor", -- [2]
@@ -2290,7 +1344,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddJumbostyle|r",
 			[51] = 1535017765,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [103]
+		}, -- [60]
 		{
 			"no clue, haven't tried either. But all my gear is for tank so it's proably not the best", -- [1]
 			"Gotyourbacks-Draenor", -- [2]
@@ -2312,7 +1366,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGotyourbacks|r",
 			[51] = 1535017767,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [104]
+		}, -- [61]
 		{
 			"(for dps)", -- [1]
 			"Gotyourbacks-Draenor", -- [2]
@@ -2334,7 +1388,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGotyourbacks|r",
 			[51] = 1535017775,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [105]
+		}, -- [62]
 		{
 			"WTS follower equipment |cff1eff00|Hitem:162110::::::::120:265::13:1:3524:::|h[Disenchanting Rod]|h|r ", -- [1]
 			"Fuelweaver-Draenor", -- [2]
@@ -2356,7 +1410,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edFuelweaver|r",
 			[51] = 1535017776,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [106]
+		}, -- [63]
 		{
 			"i'll take the challenge", -- [1]
 			"Ookii-Draenor", -- [2]
@@ -2378,7 +1432,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017777,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [107]
+		}, -- [64]
 		{
 			"WTB |cff1eff00|Hitem:152510::::::::120:256::::::|h[Anchor Weed]|h|r 350 G each ! /w me for trade or just C.O.D them", -- [1]
 			"Starfail-Draenor", -- [2]
@@ -2400,7 +1454,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffStarfail|r",
 			[51] = 1535017779,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [108]
+		}, -- [65]
 		{
 			"WTS 20,8k herbs - 60g each", -- [1]
 			"Hansara-Draenor", -- [2]
@@ -2422,7 +1476,7 @@ ElvCharacterDB = {
 			[52] = "|cff00ff96Hansara|r",
 			[51] = 1535017780,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [109]
+		}, -- [66]
 		{
 			"oh ding 2 more to go", -- [1]
 			"Babbetta-Draenor", -- [2]
@@ -2444,7 +1498,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Babbetta|r",
 			[51] = 1535017784,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [110]
+		}, -- [67]
 		{
 			"ugh semantics", -- [1]
 			"Yimm-Draenor", -- [2]
@@ -2466,7 +1520,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddYimm|r",
 			[51] = 1535017785,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [111]
+		}, -- [68]
 		{
 			"WTS |cffa335ee|Hitem:163959::::::::120:250::54:2:1477:4783:::|h[Self-Rotating Dagger of Xing]|h|r 500k", -- [1]
 			"Ganvar-Draenor", -- [2]
@@ -2488,7 +1542,7 @@ ElvCharacterDB = {
 			[52] = "|cffc41e3aGanvar|r",
 			[51] = 1535017787,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [112]
+		}, -- [69]
 		{
 			"i shaman not wordman", -- [1]
 			"Yimm-Draenor", -- [2]
@@ -2510,7 +1564,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddYimm|r",
 			[51] = 1535017791,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [113]
+		}, -- [70]
 		{
 			"Hiss at them Ookii, that's how you cat dps", -- [1]
 			"Limstella-Draenor", -- [2]
@@ -2532,7 +1586,7 @@ ElvCharacterDB = {
 			[52] = "|cffffffffLimstella|r",
 			[51] = 1535017794,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [114]
+		}, -- [71]
 		{
 			"WTB ALL BFA herbs@45g, |cffffffff|Hitem:152576::::::::91:267::::::|h[Tidespray Linen]|h|r@6g, |cffffffff|Hitem:152579::::::::91:267::::::|h[Storm Silver Ore]|h|r@55g, |cffffffff|Hitem:152512::::::::91:267::::::|h[Monelite Ore]|h|r@40g,  COD ANY AMOUNT! Buying all you've got! Thank You ♥♥♥", -- [1]
 			"Martinssempa-Draenor", -- [2]
@@ -2554,7 +1608,7 @@ ElvCharacterDB = {
 			[52] = "|cff8787edMartinssempa|r",
 			[51] = 1535017795,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [115]
+		}, -- [72]
 		{
 			"Norfweezy the betrayer... ", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -2576,7 +1630,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017798,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [116]
+		}, -- [73]
 		{
 			"WTB |cff1eff00|Hitem:152510::::::::1:71::::::|h[Anchor Weed]|h|r 360g each || COD PLEASE", -- [1]
 			"Bonkert-Draenor", -- [2]
@@ -2598,7 +1652,7 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dBonkert|r",
 			[51] = 1535017800,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [117]
+		}, -- [74]
 		{
 			"WTB ALL BFA HERBS, 70 G/EACH, ANCHOR WEED 450G/EACH!!! C.O.D ONLY. THIS IS A MACRO. I CHECK C.O.D EVERY 20 MINUTES", -- [1]
 			"Buemester-Draenor", -- [2]
@@ -2620,7 +1674,7 @@ ElvCharacterDB = {
 			[52] = "|cffaad372Buemester|r",
 			[51] = 1535017805,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [118]
+		}, -- [75]
 		{
 			"cat dps will be buffed, until then balance works better", -- [1]
 			"Gotyourbacks-Draenor", -- [2]
@@ -2642,7 +1696,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aGotyourbacks|r",
 			[51] = 1535017810,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [119]
+		}, -- [76]
 		{
 			"-glare-", -- [1]
 			"Novahkin-Draenor", -- [2]
@@ -2664,7 +1718,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddNovahkin|r",
 			[51] = 1535017811,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [120]
+		}, -- [77]
 		{
 			"wtb  |cff1eff00|Hitem:152510::::::::120:70::::::|h[Anchor Weed]|h|r 300g/each and |cffffffff|Hitem:152511::::::::120:70::::::|h[Sea Stalk]|h|r |cffffffff|Hitem:152506::::::::120:70::::::|h[Star Moss]|h|r or other Herbs 35g/each  - COD plx", -- [1]
 			"Cryandie-Draenor", -- [2]
@@ -2686,7 +1740,7 @@ ElvCharacterDB = {
 			[52] = "|cfff48cbaCryandie|r",
 			[51] = 1535017811,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [121]
+		}, -- [78]
 		{
 			" WTS  HERBS 65G EACH WHHISPER ME ", -- [1]
 			"Hliso-Draenor", -- [2]
@@ -2708,7 +1762,7 @@ ElvCharacterDB = {
 			[52] = "|cff0070ddHliso|r",
 			[51] = 1535017812,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [122]
+		}, -- [79]
 		{
 			":D", -- [1]
 			"Ookii-Draenor", -- [2]
@@ -2730,7 +1784,7 @@ ElvCharacterDB = {
 			[52] = "|cffff7c0aOokii|r",
 			[51] = 1535017813,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [123]
+		}, -- [80]
 		{
 			"(tis I, ryugasm)", -- [1]
 			"Norfweezy-Draenor", -- [2]
@@ -2752,7 +1806,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Norfweezy|r",
 			[51] = 1535017816,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [124]
+		}, -- [81]
 		{
 			"brb relogging on main", -- [1]
 			"Norfweezy-Draenor", -- [2]
@@ -2774,7 +1828,7 @@ ElvCharacterDB = {
 			[52] = "|cffa330c9Norfweezy|r",
 			[51] = 1535017821,
 			[50] = "CHAT_MSG_GUILD",
-		}, -- [125]
+		}, -- [82]
 		{
 			"WTS |cffffffff|Hitem:152579::::::::114:259::::::|h[Storm Silver Ore]|h|r And |cffffffff|Hitem:152512::::::::114:259::::::|h[Monelite Ore]|h|r", -- [1]
 			"Langgwelria-Draenor", -- [2]
@@ -2796,7 +1850,7 @@ ElvCharacterDB = {
 			[52] = "|cfffff468Langgwelria|r",
 			[51] = 1535017822,
 			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [126]
+		}, -- [83]
 		{
 			"WTB |cff1eff00|Hitem:152510::::::::1:71::::::|h[Anchor Weed]|h|r 360g each || COD PLEASE", -- [1]
 			"Bonkert-Draenor", -- [2]
@@ -2818,6 +1872,952 @@ ElvCharacterDB = {
 			[52] = "|cffc69b6dBonkert|r",
 			[51] = 1535017823,
 			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [84]
+		{
+			"anyone got a 2seater flying mount and wanna do invasion? ", -- [1]
+			"Norfweezy-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Norfweezy", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			472, -- [11]
+			"Player-1403-06E3261D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa330c9Norfweezy|r",
+			[51] = 1535065475,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [85]
+		{
+			"anyone got a 2seater flying mount and wanna do invasion? ", -- [1]
+			"Norfweezy-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			477, -- [11]
+			"Player-1403-06E3261D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Norfweezy|r",
+			[51] = 1535065485,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [86]
+		{
+			"anyone got a 2seater flying mount and wanna do invasion? ", -- [1]
+			"Norfweezy-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Norfweezy", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			511, -- [11]
+			"Player-1403-06E3261D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffa330c9Norfweezy|r",
+			[51] = 1535065564,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [87]
+		{
+			"WTS |cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r", -- [1]
+			"Jharule-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jharule", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			516, -- [11]
+			"Player-1403-070E6F8D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc6eaJharule|r",
+			[51] = 1535065570,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [88]
+		{
+			"WTS |cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r", -- [1]
+			"Jharule-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jharule", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			517, -- [11]
+			"Player-1403-070E6F8D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc6eaJharule|r",
+			[51] = 1535065571,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [89]
+		{
+			"WTB |cff1eff00|Hitem:152510::::::::120:256::::::|h[Anchor Weed]|h|r @ 350 ea", -- [1]
+			"Scârecröw-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Scârecröw", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			518, -- [11]
+			"Player-1403-06DC74CF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffffffffScârecröw|r",
+			[51] = 1535065573,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [90]
+		{
+			" WTS  HERBS 60G EACH WHHISPER ME have a lot", -- [1]
+			"Hliso-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hliso", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			519, -- [11]
+			"Player-1403-07167D6E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff0070ddHliso|r",
+			[51] = 1535065574,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [91]
+		{
+			"WTS BFA Herbs @60g all you want. Time is money, lets make a fast deal", -- [1]
+			"Orwis-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Orwis", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			522, -- [11]
+			"Player-1403-06E4F3BF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Orwis|r",
+			[51] = 1535065590,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [92]
+		{
+			"WTS |cffa335ee|Hitem:159888::::::::113:260::13:2:1713:4928:::|h[Honorable Combatant's Leather Armguards of the Harmonious]|h|r 8k", -- [1]
+			"Scocha-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Scocha", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			523, -- [11]
+			"Player-1403-05C53516", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffff468Scocha|r",
+			[51] = 1535065590,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [93]
+		{
+			"WTS HERBS !", -- [1]
+			"Rockinwar-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Rockinwar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			525, -- [11]
+			"Player-1403-068A2A40", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dRockinwar|r",
+			[51] = 1535065594,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [94]
+		{
+			"WTB |cff1eff00|Hitem:152510::::::::120:256::::::|h[Anchor Weed]|h|r @ 350 ea", -- [1]
+			"Scârecröw-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Scârecröw", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			527, -- [11]
+			"Player-1403-06DC74CF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffffffffScârecröw|r",
+			[51] = 1535065597,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [95]
+		{
+			"WTB all |cff0070dd|Hitem:160053::::::::10:269::::::|h[Battle-Scarred Augment Rune]|h|r 300g each C.O.D Please <3", -- [1]
+			"Ignify-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ignify", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			528, -- [11]
+			"Player-1403-062C550C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc6eaIgnify|r",
+			[51] = 1535065599,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [96]
+		{
+			"WTB an unlimited amount of |cff1eff00|Hitem:152510::::::::120:72::::::|h[Anchor Weed]|h|r 350G |cff0070dd|Hitem:160053::::::::120:72::::::|h[Battle-Scarred Augment Rune]|h|r 275G each, monelite ore 25G each platinum ore 30g each. COD only.", -- [1]
+			"Hourry-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hourry", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			535, -- [11]
+			"Player-1403-053EC274", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dHourry|r",
+			[51] = 1535065606,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [97]
+		{
+			"WTB all |cff0070dd|Hitem:160053::::::::10:269::::::|h[Battle-Scarred Augment Rune]|h|r 300g each C.O.D Please <3", -- [1]
+			"Ignify-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Ignify", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			536, -- [11]
+			"Player-1403-062C550C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc6eaIgnify|r",
+			[51] = 1535065607,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [98]
+		{
+			" WTS  HERBS 60G EACH WHHISPER ME have a lot", -- [1]
+			"Hliso-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hliso", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			542, -- [11]
+			"Player-1403-07167D6E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff0070ddHliso|r",
+			[51] = 1535065614,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [99]
+		{
+			"WTS HERBS !", -- [1]
+			"Rockinwar-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Rockinwar", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			548, -- [11]
+			"Player-1403-068A2A40", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dRockinwar|r",
+			[51] = 1535065625,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [100]
+		{
+			"sorry heading to bed now (been playing with the cat and now Nova will be annoyed that I'm not ready for bed haha)", -- [1]
+			"Aureus-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			552, -- [11]
+			"Player-1403-06FAC54A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edAureus|r",
+			[51] = 1535065628,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [101]
+		{
+			"WTS |cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r", -- [1]
+			"Jharule-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jharule", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			560, -- [11]
+			"Player-1403-070E6F8D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc6eaJharule|r",
+			[51] = 1535065641,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [102]
+		{
+			"WTS |cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r", -- [1]
+			"Jharule-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jharule", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			561, -- [11]
+			"Player-1403-070E6F8D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc6eaJharule|r",
+			[51] = 1535065641,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [103]
+		{
+			"gimme a poke tomorrow if you're doing it then :) I should be available most of the day", -- [1]
+			"Aureus-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			563, -- [11]
+			"Player-1403-06FAC54A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edAureus|r",
+			[51] = 1535065643,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [104]
+		{
+			"WTB an unlimited amount of |cff1eff00|Hitem:152510::::::::120:72::::::|h[Anchor Weed]|h|r 350G |cff0070dd|Hitem:160053::::::::120:72::::::|h[Battle-Scarred Augment Rune]|h|r 275G each, monelite ore 25G each platinum ore 30g each. COD only.", -- [1]
+			"Hourry-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hourry", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			566, -- [11]
+			"Player-1403-053EC274", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dHourry|r",
+			[51] = 1535065651,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [105]
+		{
+			"glhf! ^^", -- [1]
+			"Aureus-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			567, -- [11]
+			"Player-1403-06FAC54A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edAureus|r",
+			[51] = 1535065654,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [106]
+		{
+			"hah ok ty", -- [1]
+			"Norfweezy-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			568, -- [11]
+			"Player-1403-06E3261D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cffa330c9Norfweezy|r",
+			[51] = 1535065655,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [107]
+		{
+			"WTB all your |cff0070dd|Hitem:160053::::::::120:261::::::|h[Battle-Scarred Augment Rune]|h|r. 280 gold each. /w me for info or C.O.D directly to me.", -- [1]
+			"Sinnzrogue-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Sinnzrogue", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			569, -- [11]
+			"Player-1403-06E7EBF5", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffff468Sinnzrogue|r",
+			[51] = 1535065656,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [108]
+		{
+			"WTB all your |cffffffff|Hitem:152549::::::::120:261::::::|h[Redtail Loach]|h|r |cffffffff|Hitem:152545::::::::120:261::::::|h[Frenzied Fangtooth]|h|r 25g each! CoD them", -- [1]
+			"Aadmon-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Aadmon", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			574, -- [11]
+			"Player-1403-06A203D4", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffff468Aadmon|r",
+			[51] = 1535065660,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [109]
+		{
+			"and gn all :D", -- [1]
+			"Aureus-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			575, -- [11]
+			"Player-1403-06FAC54A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edAureus|r",
+			[51] = 1535065662,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [110]
+		{
+			"<Serridirr> is a gaming community run by ex-mythic raiders looking for more lads and ladettes for various big dick activities. We raid Monday-Wednesday, 19-22. Questions? Whisper me.", -- [1]
+			"Phaseblight-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Phaseblight", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			581, -- [11]
+			"Player-1403-06FD5D1E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc41e3aPhaseblight|r",
+			[51] = 1535065671,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [111]
+		{
+			" WTS  HERBS 60G EACH WHHISPER ME have a lot", -- [1]
+			"Hliso-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hliso", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			582, -- [11]
+			"Player-1403-07167D6E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff0070ddHliso|r",
+			[51] = 1535065673,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [112]
+		{
+			"WTS |cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r", -- [1]
+			"Jharule-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jharule", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			583, -- [11]
+			"Player-1403-070E6F8D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc6eaJharule|r",
+			[51] = 1535065673,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [113]
+		{
+			"Mythic dungeon boosting for gold, 340+ gear gaurantee, cheapest service on market", -- [1]
+			"Wakefulness-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Wakefulness", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			585, -- [11]
+			"Player-1403-071632BD", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffff468Wakefulness|r",
+			[51] = 1535065675,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [114]
+		{
+			"WTS |cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cffffffff|Hitem:152579::::::::120:64::::::|h[Storm Silver Ore]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r|cff1eff00|Hitem:152577::::::::120:64::::::|h[Deep Sea Satin]|h|r", -- [1]
+			"Jharule-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Jharule", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			587, -- [11]
+			"Player-1403-070E6F8D", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff3fc6eaJharule|r",
+			[51] = 1535065676,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [115]
+		{
+			"WTS |cffa335ee|Hitem:163947::::::::120:268::54:2:1477:4783:::|h[Robust Legwraps of D'nusa]|h|r|cffa335ee|Hitem:163949::::::::120:268::54:2:1477:4783:::|h[Celedhring's Unrelenting Stride]|h|r AND x3800 Herbs!", -- [1]
+			"Firemonki-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Firemonki", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			632, -- [11]
+			"Player-1403-0712D480", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Firemonki|r",
+			[51] = 1535065875,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [116]
+		{
+			"WTS |cffa335ee|Hitem:163947::::::::120:268::54:2:1477:4783:::|h[Robust Legwraps of D'nusa]|h|r|cffa335ee|Hitem:163949::::::::120:268::54:2:1477:4783:::|h[Celedhring's Unrelenting Stride]|h|r AND x3800 Herbs!", -- [1]
+			"Firemonki-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Firemonki", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			635, -- [11]
+			"Player-1403-0712D480", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Firemonki|r",
+			[51] = 1535065876,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [117]
+		{
+			"WTS |cffa335ee|Hitem:159888::::::::113:260::13:2:1714:4928:::|h[Honorable Combatant's Leather Armguards of the Harmonious]|h|r", -- [1]
+			"Scocha-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Scocha", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			638, -- [11]
+			"Player-1403-05C53516", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffff468Scocha|r",
+			[51] = 1535065877,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [118]
+		{
+			"wts [Monelite Ore][Storm Silver Ore][Platinum Ore] each 70g", -- [1]
+			"Traylath-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Traylath", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			640, -- [11]
+			"Player-1403-06A84F49", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff48cbaTraylath|r",
+			[51] = 1535065877,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [119]
+		{
+			"WTS|cffa335ee|Hitem:163954::::::::120:268::54:2:1472:4786:::|h[Oswain's Impassive Guard]|h|r/W ME", -- [1]
+			"Bumbiers-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Bumbiers", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			644, -- [11]
+			"Player-1403-06788EE1", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Bumbiers|r",
+			[51] = 1535065885,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [120]
+		{
+			"wts [Monelite Ore][Storm Silver Ore][Platinum Ore] each 70g", -- [1]
+			"Traylath-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Traylath", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			645, -- [11]
+			"Player-1403-06A84F49", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff48cbaTraylath|r",
+			[51] = 1535065886,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [121]
+		{
+			"<Serridirr> is a gaming community run by ex-mythic raiders looking for more lads and ladettes for various big dick activities. We raid Monday-Wednesday, 19-22. Questions? Whisper me.", -- [1]
+			"Phaseblight-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Phaseblight", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			657, -- [11]
+			"Player-1403-06FD5D1E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc41e3aPhaseblight|r",
+			[51] = 1535065905,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [122]
+		{
+			"WTS |cffa335ee|Hitem:163947::::::::120:268::54:2:1477:4783:::|h[Robust Legwraps of D'nusa]|h|r|cffa335ee|Hitem:163949::::::::120:268::54:2:1477:4783:::|h[Celedhring's Unrelenting Stride]|h|r AND x3800 Herbs!", -- [1]
+			"Firemonki-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Firemonki", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			659, -- [11]
+			"Player-1403-0712D480", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Firemonki|r",
+			[51] = 1535065905,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [123]
+		{
+			"WTS |cffa335ee|Hitem:163947::::::::120:268::54:2:1477:4783:::|h[Robust Legwraps of D'nusa]|h|r|cffa335ee|Hitem:163949::::::::120:268::54:2:1477:4783:::|h[Celedhring's Unrelenting Stride]|h|r AND x3800 Herbs!", -- [1]
+			"Firemonki-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Firemonki", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			660, -- [11]
+			"Player-1403-0712D480", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Firemonki|r",
+			[51] = 1535065906,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [124]
+		{
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r30g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			665, -- [11]
+			"Player-1403-0653787C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535065915,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [125]
+		{
+			"=)", -- [1]
+			"Fistelkvist-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3893, -- [11]
+			"Player-1403-068F912E", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cfff48cbaFistelkvist|r",
+			[51] = 1535133413,
+			[50] = "CHAT_MSG_GUILD",
+		}, -- [126]
+		{
+			"haha gz xD", -- [1]
+			"Aureus-Draenor", -- [2]
+			"", -- [3]
+			"", -- [4]
+			"", -- [5]
+			"", -- [6]
+			0, -- [7]
+			0, -- [8]
+			"", -- [9]
+			0, -- [10]
+			3903, -- [11]
+			"Player-1403-06FAC54A", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			false, -- [17]
+			[52] = "|cff8787edAureus|r",
+			[51] = 1535133426,
+			[50] = "CHAT_MSG_GUILD",
 		}, -- [127]
 	},
 }

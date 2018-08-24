@@ -225,29 +225,9 @@ function LookingForGroup_Options.ExecuteSearchPattern(filter_options)
 end
 
 LookingForGroup_Options.RegisterSearchPattern("find",function(profile,a,category)
-	local activity = a.activity
---	local name
-	C_LFGList.ClearSearchTextFields()
-	if activity then
-		C_LFGList.SetSearchToActivity(activity)
---		name = C_LFGList.GetActivityInfo(activity)
+	if LFGListFrame.SearchPanel.SearchBox:GetText():len() == 0 and a.activity then
+		C_LFGList.SetSearchToActivity(a.activity)
 	end
---[[	if not name then
-		local group = a.group
-		if group then
-			name = C_LFGList.GetActivityGroupInfo(group)
-		end
-	end
-	local activity_keywords = {name}
-	local activities = a.activities
-	if activities then
-		for i=1,#activities do
-			if activities[i] ~= name then
-				activity_keywords[#activity_keywords+1]=activities[i]
-			end
-		end
-	end]]
---	return activity_keywords
 end)
 
 

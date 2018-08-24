@@ -1,7 +1,7 @@
 local LookingForGroup = LibStub("AceAddon-3.0"):NewAddon("LookingForGroup","AceEvent-3.0","AceConsole-3.0")
 
 function LookingForGroup:OnInitialize()
-	self.db = LibStub("AceDB-3.0"):New("LookingForGroupDB",{profile = ((GetCurrentRegion()==5 and {spam_filter_maxlength=20,spam_filter_digits=2,spam_filter_hyperlinks=2}) or {hardware = true})},true)
+	self.db = LibStub("AceDB-3.0"):New("LookingForGroupDB",{profile = ((GetCurrentRegion()==5 and {spam_filter_maxlength=20,spam_filter_digits=2,spam_filter_hyperlinks=2}) or {spam_filter_maxlength=80,hardware = true})},true)
 	self:RegisterChatCommand("LookingForGroup", "ChatCommand")
 	self:RegisterChatCommand("LFG", "ChatCommand")
 	self:RegisterChatCommand(LFG_TITLE:gsub(" ",""), "ChatCommand")
@@ -91,4 +91,12 @@ function LookingForGroup.accepted(...)
 	local loaded, reason = LoadAddOn("LookingForGroup_Auto")
 	if not loaded then error(reason) end
 	return LookingForGroup.accepted(...)
+end
+
+function LookingForGroup.length(s)
+	local length = s:len()
+	if 3 < length then
+		return length-3-s:find("|k")
+	end
+	return 0
 end

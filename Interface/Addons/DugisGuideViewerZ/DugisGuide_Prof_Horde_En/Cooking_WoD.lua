@@ -17,7 +17,7 @@ N 650-675 (item:111450) |CO| |N|Created with; <br/><b>5 (item:109132) <br/><b>5 
 N Guide Complete |N|Switch to (guide:"Legion Cooking Questing (1-800)") for 675-800 leveling|
 
 ]]
-end, {description = [[This guide covers how to level up the Cooking profession from 1-700]]})	
+end, {description = [[This guide covers how to level up the Cooking profession from 1-100]]})	
 	end
 	function Guide:Unload()
 	end

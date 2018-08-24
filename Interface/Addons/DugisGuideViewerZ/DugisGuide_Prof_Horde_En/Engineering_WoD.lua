@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Prof_Horde_En_Engineering_WoD")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Engineering 1-700", nil, "Horde", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Engineering]], nil, 700) and UnitLevel([[player]])>=90|", function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Engineering 1-100", nil, "Horde", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Engineering]], nil, 700) and UnitLevel([[player]])>=90|", function()
 return [[
 
 N Read First |N|This guide covers the the required quests and items need to level. <br/><br/>You must have a character level 90+ and Warlords of Draenor is required. <br/><br/>Leveling is available in Draenor from 1-700. <br/><br/>Tick this step.| |QID|36627|
@@ -9,15 +9,15 @@ N Garrison |N|An Engineering Works is required to level Engineering. Tick this s
 
 N (item:116438) |ENG| |QID|36589| |N|Quest reward or drop from NPC's in WoD| |L|116438| |Z|525|
 A Heavy Arms |QID|36589| |N|Use (item:116438) to start quest.| |U|116438| |Z|525|
-T Heavy Arms |QID|36589| |N|(npc:85882) (60.1,38.7)| |NPC|85882| |Z|585|
-A "Spare" Parts |QID|36594| |N|(npc:85882) (60.1,38.7)| |NPC|85882| |Z|585|
+T Heavy Arms |QID|36589| |N|(npc:85882) (60.1,38.7)| |NPC|85882| |Z|590|
+A "Spare" Parts |QID|36594| |N|(npc:85882) (60.1,38.7)| |NPC|85882| |Z|590|
 N As you go... |QID|36594| |N|Collect 20 (item:116434) from boxes on the ground or from (npc:86106). Tick this step.| |NPC|86106| |Z|525|
 N 50 (item:116430) |QID|36594.2| |N|Use (item:116645) to destroy Cannons for (item:116430) (56,72)| |U|116645| |L|116430 50| |Z|525|
 N 20 (item:116434) |QID|36594.1| |N|Kill (npc:86106) and collect 20 (item:116434) (56,72) |L|116434 20| |Z|525|
-T "Spare" Parts |QID|36594| |N|(npc:85882) (60.1,38.7)| |NPC|85882| |Z|585|
-A Big Frostfire Gun |QID|36627| |N|(npc:85882) (60.1,38.7)| |NPC|85882| |Z|585|
+T "Spare" Parts |QID|36594| |N|(npc:85882) (60.1,38.7)| |NPC|85882| |Z|590|
+A Big Frostfire Gun |QID|36627| |N|(npc:85882) (60.1,38.7)| |NPC|85882| |Z|590|
 C Big Frostfire Gun |QID|36627| |N|Use (item:116759) to subdue (npc:86000) (52,72)| |NPC|86000| |U|116759| |Z|525|
-T Big Frostfire Gun |QID|36627| |N|(npc:85882) (60.1,38.7)| |NPC|85882| |Z|585|
+T Big Frostfire Gun |QID|36627| |N|(npc:85882) (60.1,38.7)| |NPC|85882| |Z|590|
 
 U (item:113452) |O| |ENG| |N|Combine with: <br/><b>4 (item:109118)| |P|Engineering 600| --Trampled Survey Bot, Blackrock Ore
 U (item:113465) |O| |ENG| |N|Combine with: <br/><b>5 (item:109118) <br/><b>5 (item:109119)| |P|Engineering 600| --Broken Hunting Scope, Blackrock Ore, True Iron Ore
@@ -49,7 +49,7 @@ N 625-700 (item:118008) |ENG| |N|Craft with; <br/><b>20 (item:111366)| |P|Engine
 N Guide Complete
 
 ]]
-end, {description = [[This guide covers how to level up the Engineering profession from 1-700]]})	
+end, {description = [[This guide covers how to level up the Engineering profession from 1-100]]})	
 	end
 	function Guide:Unload()
 	end

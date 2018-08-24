@@ -5,10 +5,10 @@ AltoholicDB = {
 		["Yasuka - Outland"] = "Yasuka - Outland",
 		["Raimondo - Draenor"] = "Raimondo - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Ryugasm - Outland"] = "Ryugasm - Outland",
 		["Raigasm - Outland"] = "Raigasm - Outland",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-		["Ryugasm - Outland"] = "Ryugasm - Outland",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 	},
 	["global"] = {
 		["options"] = {

@@ -22,7 +22,7 @@ local DGV = DugisGuideViewer
 if not DGV then return end
 
 local GPS = DGV:RegisterModule("GPSArrowModule")
-local HBDMigrate = LibStub("HereBeDragons-Migrate")
+local HBDMigrate = LibStub("HereBeDragons-Migrate-Dugis")
 
 if GPS then
 	GPS.visualMapOverlays = {}

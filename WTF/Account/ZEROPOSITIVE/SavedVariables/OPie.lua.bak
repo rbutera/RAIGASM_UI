@@ -12,8 +12,8 @@ OneRing_Config = {
 				["General"] = "=",
 				["SpecMenu"] = "SHIFT-=",
 				["CommonTrades"] = false,
-				["OPieTracking"] = false,
 				["OPieAutoQuest"] = "CTRL-=",
+				["OPieTracking"] = false,
 			},
 			["ShowCooldowns"] = true,
 		},
@@ -100,8 +100,8 @@ OneRing_Config = {
 					["sliceToken"] = "ABues=taBAe",
 				}, -- [17]
 				{
-					["id"] = 126892,
 					["sliceToken"] = "ABue3=N7nYe",
+					["id"] = 126892,
 				}, -- [18]
 				{
 					"ring", -- [1]

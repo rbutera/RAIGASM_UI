@@ -4,11 +4,11 @@ function Guide:Initialize()
 return [[
 
 A Taking the Fight to Nagrand |QID|34674| |O|
-R Lunarfall |QID|37184| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|579| 
-T News from Nagrand |QID|36601| |N|(npc:81492) in {Lunarfall} (38.03, 36.78)| |Z|579| |NPC|81492| |O|
-A Taking the Fight to Nagrand |QID|37184| |N|(npc:81492) in {Lunarfall} (38.09, 36.50)| |Z|579| |NPC|81492| |OID|34674|
+R Lunarfall |QID|37184| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|582| 
+T News from Nagrand |QID|36601| |N|(npc:81492) in {Lunarfall} (38.03, 36.78)| |Z|582| |NPC|81492| |O|
+A Taking the Fight to Nagrand |QID|37184| |N|(npc:81492) in {Lunarfall} (38.09, 36.50)| |Z|582| |NPC|81492| |OID|34674|
 
-F Nagrand |QID|34675| |N|Speak to (npc:81103) and take a flight to {Nagrand} (48.04, 49.79)| |NPC|81103| |Z|579| |V|
+F Nagrand |QID|34675| |N|Speak to (npc:81103) and take a flight to {Nagrand} (48.04, 49.79)| |NPC|81103| |Z|582| |V|
 N Please Read |QID|34682| |N|Collect any (item:113578) you find from beasts in {Nagrand}. You can turn 25 of them in to (npc:82727) found in {The Ring of Trials} (78.37, 52.48) for bonus XP from the repeatable quest (qid:35928)<br/><br/>Tick this step.| |NPC|82727|
 T Taking the Fight to Nagrand |QID|37184| |N|(npc:79263) at the {Wrecked Caravan} (86.40, 66.23)| |NPC|79263| |O|
 T Taking the Fight to Nagrand |QID|34674| |N|(npc:79263) at the {Wrecked Caravan} (86.40, 66.23)| |NPC|79263| |O|

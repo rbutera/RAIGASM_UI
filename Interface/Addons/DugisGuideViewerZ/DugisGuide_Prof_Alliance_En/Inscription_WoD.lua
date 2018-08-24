@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Prof_Alliance_En_Inscription_WoD")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Inscription 1-700", nil, "Alliance", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Inscription]], nil, 700) and UnitLevel([[player]])>=90|", function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Inscription 1-100", nil, "Alliance", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Inscription]], nil, 700) and UnitLevel([[player]])>=90|", function()
 return [[
 N Read First |N|This guide covers the the required quests and items need to level. <br/><br/>You must have a character level 90+ and Warlords of Draenor is required. <br/><br/>Leveling is available in Draenor from 1-700. <br/><br/>Tick this step.| |QID|36241|
 N Level 1-600 |N|NPC's drop items that can be combined with certain mats for a +5 boost to professions up to 600, so keep an eye out for these. Tick this step.| |P|Inscription 600|
@@ -46,7 +46,7 @@ N 600-700 (item:113270) |IN| |N|Craft with; <br/><b>50 (item:112377) <br/><b>10 
 N Guide Complete
 
 ]]
-end, {description = [[This guide covers how to level up the Inscription profession from 1-700]]})
+end, {description = [[This guide covers how to level up the Inscription profession from 1-100]]})
 	end
 	
 	function Guide:Unload()

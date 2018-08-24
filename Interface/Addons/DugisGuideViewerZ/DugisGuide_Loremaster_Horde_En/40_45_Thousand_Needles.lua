@@ -15,7 +15,7 @@ N Westreach Summit |QID|25356| |N|Talk to (npc:8020) to borrow a wind rider to g
 R Mudsprocket |N|Travel to {Mudsprocket} (41.86, 73.88)| |QID|25478| |O| |Z|70| |MAP|141, 607, 321, 11| |OID|25487|
 T Warchief's Command: Thousand Needles! |QID|28504| |N|(npc:40344) (41.86, 73.88) in {Mudsprocket}| |O| |Z|70| |NPC|40344| |OID|25487|
 A To the Summit |QID|25478| |N|(npc:40344) (41.86, 73.88) in {Mudsprocket}| |O| |Z|70| |NPC|40344| |MAP|141| |OID|25487|
-N Westreach Summit |QID|25478| |N|Talk to Dyslix for a flight to {Westreach Summit} in {Thousand Needles} (42.88, 72.37) in {Mudsprocket}| |O| |Z|70| |NPC|23612| |V| |MAP|141| |OID|25487|
+N Westreach Summit |QID|25478| |N|Talk to (npc:40358) for a flight to {Westreach Summit} in {Thousand Needles} (42.88, 72.37) in {Mudsprocket}| |O| |Z|70| |NPC|40358| |V| |MAP|141| |OID|25487|
 
 R Westreach Summit |QID|25487| |N|Travel to {Westreach Summit} (11.09, 11.31)| |CHKMAP|
 f Westreach Summit |QID|25487| |N|Grab {Westreach Summit} flight path (11.20, 11.58)| |NPC|44399|

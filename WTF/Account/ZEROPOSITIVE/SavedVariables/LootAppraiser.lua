@@ -3,9 +3,9 @@ LootAppraiserDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Default",
 		["Yasuka - Outland"] = "Default",
-		["Norfweezy - Draenor"] = "Default",
-		["Ryugasm - Draenor"] = "Default",
 		["Ryugasm - Outland"] = "Default",
+		["Ryugasm - Draenor"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
 		["Raigasm - Outland"] = "Default",
 		["Badmanting - Draenor"] = "Default",
 		["Raimondo - Draenor"] = "Default",
@@ -66,6 +66,34 @@ LootAppraiserDB = {
 				["totalItemsLooted"] = 115,
 				["start"] = 1534693360,
 			}, -- [3]
+			{
+				["noteworthyItems"] = {
+				},
+				["mapID"] = 1165,
+				["settings"] = {
+					["priceSource"] = "DBGlobalMarketAvg",
+					["qualityFilter"] = 2,
+					["gat"] = 100,
+				},
+				["start"] = 1535063989,
+				["liv"] = 0,
+				["livGroup"] = 0,
+				["player"] = "Ryugasm-Draenor",
+			}, -- [4]
+			{
+				["noteworthyItems"] = {
+				},
+				["mapID"] = 1165,
+				["settings"] = {
+					["priceSource"] = "DBGlobalMarketAvg",
+					["qualityFilter"] = 2,
+					["gat"] = 100,
+				},
+				["start"] = 1535129457,
+				["liv"] = 0,
+				["player"] = "Ryugasm-Draenor",
+				["livGroup"] = 0,
+			}, -- [5]
 		},
 		["drops"] = {
 			[160183] = {

@@ -150,10 +150,10 @@ function NOP:PLAYER_LOGIN() -- player entering game
   RegisterStateDriver(self.frameHiderQ, "visibility", "[petbattle] [vehicleui] hide; show")
   self:ButtonLoad() -- create button
   self:QBAnchor() -- create quest bar
-  self:TimerFire('LOOT_SPEC', TIMER_RECHECK / 5) -- this should prevent bug when tooltips are shifted by one line and wrong patterns are detected
+  self:TimerFire('LOOT_SPEC', TIMER_IDLE)
   local key = GetBindingKey("CLICK " .. BUTTON_FRAME .. ":LeftButton")
   if self.BF.hotkey then self.BF.hotkey:SetText(self:ButtonHotKey(key)) end
-  self:TimerFire("ZONE_CHANGED",TIMER_RECHECK / 2)
+  self:TimerFire("ZONE_CHANGED", TIMER_IDLE * 2)
   self:ScheduleRepeatingTimer("ItemTimer", TIMER_RECHECK) -- slow backing timer for complete rescan, sometime GetItemSpell get hang or new item is added post events are triggered
   if not self.tooltipHooked then
     self.tooltipHooked = true

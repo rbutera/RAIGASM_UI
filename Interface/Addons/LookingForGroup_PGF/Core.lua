@@ -29,21 +29,6 @@ LookingForGroup_Options.option_table.args.find.args.f.args.pgf =
 
 local numbers = {}
 
-local function String_ExtractNumbers(str)
-    for number in string.gmatch(str, "%d+") do
-        numbers[#numbers+1]=tonumber(number)
-    end
-end
-
-local function findnumber(n,x)
-	for i=1,#numbers do
-		local e = numbers[i]
-		if (not n or n <= e) and (not x or e <= x) then
-			return true
-		end
-	end
-end
-
 local env = {}
 setmetatable(env, {__index = _G})
 
@@ -62,17 +47,17 @@ LookingForGroup_Options.RegisterSimpleFilterExpensive("find",function(resultID,p
 	env.lfg_opt_profile = profile
 	env.lfgid = resultID
 	env.activity = activity
-	env.name = name:lower()
+	env.name = name
 	env.activityname = avName:lower()
 	env.isdelisted = isDelisted
 	env.autoaccept = autoaccept
 	env.questid = questID
 
-	env.comment = comment:lower()
+	env.comment = comment
 	env.leader = leaderName:lower()
 	env.age = age
 	env.age_minutes = age/60
-	env.voice = voiceChat:lower()
+	env.voice = voiceChat
 	env.voicechat = env.voice
 	env.ilvl = iLvl
 	env.hlvl = honorLevel
@@ -127,7 +112,8 @@ LookingForGroup_Options.RegisterSimpleFilterExpensive("find",function(resultID,p
 	env.tov  = avGroupID == 126  -- Trial of Valor
 	env.tos  = avGroupID == 131  -- Tomb of Sargeras
 	env.atbt = avGroupID == 132  -- Antorus, the Burning Throne
-
+	env.uldir= avGroupID == 135  -- Uldir
+	
 	-- dungeons
 	env.eoa  = avGroupID == 112  -- Eye of Azshara
 	env.dht  = avGroupID == 113  -- Darkheart Thicket
@@ -145,12 +131,16 @@ LookingForGroup_Options.RegisterSimpleFilterExpensive("find",function(resultID,p
 	env.coen = avGroupID == 129  -- Cathedral of Eternal Night
 	env.sott = avGroupID == 133  -- Seat of the Triumvirate
 
-	wipe(numbers)
-	String_ExtractNumbers(name)
-	String_ExtractNumbers(voiceChat)
-	String_ExtractNumbers(comment)
-	String_ExtractNumbers(leaderName)
-	env.findnumber = findnumber
+	env.ad   = avGroupID == 137  -- Atal'Dazar
+	env.tur  = avGroupID == 138  -- The Underrot
+	env.tosl = avGroupID == 139  -- Temple of Sethraliss
+	env.tml  = avGroupID == 140 -- The MOTHERLODE
+	env.kr   = avGroupID == 141  -- Kings' Rest
+	env.fh   = avGroupID == 142  -- Freehold
+	env.sots = avGroupID == 143  -- Shrine of the Storm
+	env.td   = avGroupID == 144  -- Tol Dagor
+	env.wm   = avGroupID == 145  -- Waycrest Manor
+	env.sob  = avGroupID == 146  -- Siege of Boralus
 	local err,ok = pcall(setfenv(pgffunc,env))
 	if not err then
 		LookingForGroup_Options.Paste(ok,nop)

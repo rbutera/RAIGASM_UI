@@ -18,6 +18,7 @@ function Guides:Initialize()
     guidesMainScroll.scrollBar:SetHeight(322)
     
     --Preparing data for macros
+	--[[
     macrosDataDefaults = LuaUtils:clone(macrosData)
 
     if not DugisGuideUser.macrosData then 
@@ -43,7 +44,7 @@ function Guides:Initialize()
                 end)
             end
         end)
-    end
+    end]]
     
 
 	DGU = DugisGuideUser
@@ -560,7 +561,7 @@ function Guides:Initialize()
             guideategorieswrapper:LoadExpansionState(lastClickedTab, isInThread)
             guidesMainScroll.scrollBar:SetValue(0)
         end
-        
+        --[===[ Disable macro guide
         if self.text == "Macros" then
             DugisGuideViewer.DeselectTopTabs()
             
@@ -1094,7 +1095,7 @@ function Guides:Initialize()
 		else
             DugisMain.MacrosWrapper:Hide()
             
-        end
+        end]===]
         
         function UpdateWhatsNewText()
             local text = NPCJournalFrame:ReplaceSpecialTags(whatsNewText, nil, nil, nil, true)
@@ -2226,13 +2227,16 @@ function Guides:Initialize()
 				DeathKnight = "124(55-60 Death Knight)",
 				Pandaren = "378(1-12 Pandaren)",
 				DemonHunter = "672(98-100)",
+				Level110 = "War Campaign (110-120)",
 --				VoidElf = "",
 --				LightforgedDraenei = "",
 --				Nightborne = "",
 --				HighmountainTauren = "",
 		}
 		
-		if (engPlayerClass == "DEATHKNIGHT") then
+		if playerLevel >= 110 and playerLevel < 120 then 
+			guideName = startguides["Level110"]
+		elseif(engPlayerClass == "DEATHKNIGHT") then
 			guideName = startguides["DeathKnight"]
 		elseif (engPlayerClass == "DEMONHUNTER") then
 			guideName = startguides["DemonHunter"]
@@ -3421,7 +3425,8 @@ function Guides:Initialize()
 			CurrentTitle = nil 
 			
 		else--if title ~= CurrentTitle then
-					
+            local newGuideSelected = CurrentTitle ~= title
+     
 			CurrentTitle = title
 			self.CurrentTitle = title
             
@@ -3455,7 +3460,6 @@ function Guides:Initialize()
 			DGV:SetQuestsState()
 			
 			if not (self.preLoadMode or skip) then
-				DGV:UpdateProfessions()
 				DGV:UpdatePlayerLevels()
 				DGV:ShowViewTab()
 				DGV.DelayandMoveToNextQuest(1, true)
@@ -3470,6 +3474,11 @@ function Guides:Initialize()
 				visualRows[DGU.CurrentQuestIndex]:SetNormalTexture("Interface\\AddOns\\DugisGuideViewerZ\\Artwork\\highlight.tga")
 				DGV:AutoScroll(CurrentQuestIndex)
 			end
+            
+            if newGuideSelected and DGV.TriggerProfessionsUpdate then
+               DGV:TriggerProfessionsUpdate()
+            end
+            
 		end
 		DGV:UpdateAllSIDs()
         

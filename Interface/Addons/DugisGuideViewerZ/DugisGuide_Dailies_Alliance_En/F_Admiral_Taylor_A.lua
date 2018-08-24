@@ -3,10 +3,10 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Followers|r ", "Follower Admiral Taylor", nil, "Alliance", nil, "D", nil, function()
 return [[
 
-R Lunarfall |QID|34653| |N|Travel to {Lunarfall} (38.18, 36.75)| |Z|579|
-A Arakkoa Exodus |QID|34653| |N|(npc:81492) in {Lunarfall} (38.18, 36.75)| |Z|579| |NPC|81492|
+R Lunarfall |QID|34653| |N|Travel to {Lunarfall} (38.18, 36.75)| |Z|582|
+A Arakkoa Exodus |QID|34653| |N|(npc:81492) in {Lunarfall} (38.18, 36.75)| |Z|582| |NPC|81492|
 
-F Spires of Arak |QID|34655| |N|Speak to (npc:81103) and fly to {Spires of Arak } (47.93, 49.70)| |Z|579| |V|
+F Spires of Arak |QID|34655| |N|Speak to (npc:81103) and fly to {Spires of Arak } (47.93, 49.70)| |Z|582| |V|
 T Arakkoa Exodus |QID|34653| |N|(npc:79539) in {Terokkar Pass} (37.88, 18.06)| |NPC|79539| |Z|542|
 A The Shadows of Skettis |QID|34655| |N|(npc:79539) in {Terokkar Pass} (37.88, 18.06)| |NPC|79539| |Z|542|
 

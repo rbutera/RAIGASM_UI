@@ -3,11 +3,11 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r ", "535(94-100)#535(94-100)#535(94-100)", "542(96-100)#542(96-100)#542(96-100)", "Alliance", nil, "L", nil, function()
 return [[
 
-R Lunarfall |QID|34676| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|579|
+R Lunarfall |QID|34676| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|582|
 
-T News from Talador |QID|36495| |N|(npc:81492) in {Lunarfall} (38, 37.6)| |Z|579| |O|
-A The Critical Path |QID|37183| |N|(npc:81492) in {Lunarfall} (38, 37.6)| |Z|579| |PRE|36495|
-F Fort Wrynn |QID|34558| |N|Speak to (npc:81103) and fly to {Fort Wrynn} {Talador} (48.04, 49.79)| |Z|579| |NPC|81103| |V|
+T News from Talador |QID|36495| |N|(npc:81492) in {Lunarfall} (38, 37.6)| |Z|582| |O|
+A The Critical Path |QID|37183| |N|(npc:81492) in {Lunarfall} (38, 37.6)| |Z|582| |PRE|36495|
+F Fort Wrynn |QID|34558| |N|Speak to (npc:81103) and fly to {Fort Wrynn} {Talador} (48.04, 49.79)| |Z|582| |NPC|81103| |V|
 T The Critical Path |QID|34676| |N|(npc:79133) in {Fort Wrynn} (69.87, 20.87)| |NPC|79133| |O|
 T The Critical Path |QID|37183| |N|(npc:79133) in {Fort Wrynn} (69.87, 20.87)| |NPC|79133| |PRE|36495|
 A At Your Command |QID|34558| |N|(npc:79133) in {Fort Wrynn} (69.87, 20.87)| |NPC|79133|
@@ -458,7 +458,7 @@ A And the Elekk Too?! |QID|33944| |N|(item:108747) in {Sher'khaan's Den} (30.93,
 T And the Elekk Too?! |QID|33944| |N|(npc:76826) (36.15, 65.09) in {Talador}| |Z|535| |NPC|76826|
 T Sher'KHAAAAAAANNNN! |QID|33884| |N|(npc:76826) (36.15, 65.09) in {Talador}| |Z|535| |NPC|76826|
 
---T News from Spires of Arak |QID|35554| |N|(npc:81492) in {Lunarfall} (38.18, 36.75)| |Z|579| |NPC|81492|
+--T News from Spires of Arak |QID|35554| |N|(npc:81492) in {Lunarfall} (38.18, 36.75)| |Z|582| |NPC|81492|
 
 N Guide Complete |N|Continue to (guide:"542(96-100)#542(96-100)#542(96-100)")|
 

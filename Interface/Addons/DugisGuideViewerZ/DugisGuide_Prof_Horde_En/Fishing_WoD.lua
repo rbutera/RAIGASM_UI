@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Prof_Horde_En_Fishing_WoD")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Fishing 1-700", nil, "Horde", nil, "P", nil, function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Fishing 1-100", nil, "Horde", nil, "P", nil, function()
 return [[
 
 N Read First |N|You must have a character level 90+ and Warlords of Draenor is required. <br/><br/>Leveling is available in Draenor from 1-700. <br/><br/>Tick this step.|
@@ -19,7 +19,7 @@ N (item:111666), (item:111665) |N|(item:111665) fished along the coast. (50.1,58
 N Guide Complete
 
 ]]
-end, {description = [[This guide covers how to level up the Fishing profession from 1-700]]})	
+end, {description = [[This guide covers how to level up the Fishing profession from 1-100]]})	
 	end
 	function Guide:Unload()
 	end

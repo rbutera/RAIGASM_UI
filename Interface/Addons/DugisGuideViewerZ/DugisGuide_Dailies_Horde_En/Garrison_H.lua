@@ -3,21 +3,21 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r", "Garrison Mission (Daily)", nil, "Horde", nil, "D", "|SG|UnitLevel([[player]])>=100|", function()
 return [[
 
-N Accept Daily Quest |N|Accept the random PVE non-group quest from War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |MD| |E|
-A Assault on Darktide Roost |QID|36692| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on Socrethar's Rise |QID|36691| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on the Iron Siegeworks |QID|36696| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on Lost Veil Anzu |QID|36690| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on Pillars of Fate |QID|36689| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on Shattrath Harbor |QID|36667| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on Skettis |QID|36688| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on Stonefury Cliffs |QID|36669| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on Magnarok |QID|36697| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on the Broken Precipice |QID|36694| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on Mok'gol Watchpost |QID|36693| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on the Everbloom Wilds |QID|36695| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on the Heart of Shattrath |QID|36699| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
-A Assault on the Pit |QID|36701| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|585| |D| |O|
+N Accept Daily Quest |N|Accept the random PVE non-group quest from War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |MD| |E|
+A Assault on Darktide Roost |QID|36692| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on Socrethar's Rise |QID|36691| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on the Iron Siegeworks |QID|36696| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on Lost Veil Anzu |QID|36690| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on Pillars of Fate |QID|36689| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on Shattrath Harbor |QID|36667| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on Skettis |QID|36688| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on Stonefury Cliffs |QID|36669| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on Magnarok |QID|36697| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on the Broken Precipice |QID|36694| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on Mok'gol Watchpost |QID|36693| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on the Everbloom Wilds |QID|36695| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on the Heart of Shattrath |QID|36699| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
+A Assault on the Pit |QID|36701| |N|War Planning Map in {Frostwall} (40.94, 50.96)| |Z|590| |D| |O|
 
 R Darktide Roost |QID|36692| |N|Travel to {Darktide Roost} (59.1, 86.0)| |Z|539| |O| |D|
 C Assault on Darktide Roost |QID|36692| |N|Kill (npc:78148) for (item:116978) which can power up (npc:86085) for a DPS boost.<br/><br/>Also loot (item:115020) from (npc:78999) so you can jump up to the top of the mountain and loot Giant Rylak Egg for a ~7% gain. Eggs are a good source of quest progression if you feel undergeared to kill mobs. (59.1, 86.0)| |Z|539| |NPC|78148, 86085, 78999| |D| |O|
@@ -26,7 +26,7 @@ R Socrethar's Rise |QID|36691| |N|Travel to {Socrethar's Rise} (46.9, 75.1)| |Z|
 C Assault on Socrethar's Rise |QID|36691| |N|Kll different types of mobs for progression based on their health/difficulty. Minibosses give the most progress at 25% each.<br/><br/>There are several objects that provide buffs in the area, such as (spell:170145), (spell:170776), (spell:170140).(46.9, 75.1)| |Z|539| |D| |O|
 
 R Iron Siegeworks |QID|36696| |N|Travel to {Iron Siegeworks} (88.0,50.8)| |Z|525| |D| |O|
-C Assault on the Iron Siegeworks |QID|36696| |N|Kill Sargerei mobs in {Iron Siegeworks}<br/><br/>The Keg of Impaler Ale and Secret Warplans found at the top of the tower provide bonus rate of completion| |Z|585| |D| |O|
+C Assault on the Iron Siegeworks |QID|36696| |N|Kill Sargerei mobs in {Iron Siegeworks}<br/><br/>The Keg of Impaler Ale and Secret Warplans found at the top of the tower provide bonus rate of completion| |Z|590| |D| |O|
 
 R Lost Veil Anzu |QID|36690| |N|Travel to {Lost Veil Anzu} (73.3,45.4)| |Z|542| |O| |D|
 C Assault on Lost Veil Anzu |QID|36690| |N|After killing the hostile creatures at {Lost Veil Anzu}. You will need to click on them and consume them until you reach 200% buff (73.3,45.4)| |Z|542| |D| |O|
@@ -61,21 +61,21 @@ C Assault on the Heart of Shattrath |QID|36699| |N|Assault the Sargerei force in
 R The Pit |QID|36701| |N|Travel to {The Pit} (46.8, 26.8)| |Z|543| |O| |D|
 C Assault on the Pit |QID|36701| |N|Assault the Blackrock forces at {The Pit} in {Gorgrond}. (46.8, 26.8) Pick up the ammunition in boxes and barrels and go to the (npc:86091) (costs 30 ammo) or the (npc:85579) (costs 20 ammo) and shoot the Orcs. Do not go to the (npc:85211) as it will shoot you.<br/><br/>Destroying Training Manual or freeing prisoners in Iron Prisoner Cage also awards credit. The quest mobs hit pretty hard as they are intended for a 5-player group to defeat.| |Z|543| |O| |D| |NPC|86091, 85579, 85211|
 
-R Frostwall |N|Travel to {Frostwall} (40.94, 50.96)| |Z|585|
-T Assault on Darktide Roost |QID|36692| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on Socrethar's Rise |QID|36691| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on the Iron Siegeworks |QID|36696| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on Lost Veil Anzu |QID|36690| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on Pillars of Fate |QID|36689| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on Shattrath Harbor |QID|36667| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on Skettis |QID|36688| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on Stonefury Cliffs |QID|36669| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on Magnarok |QID|36697| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on the Broken Precipice |QID|36694| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on Mok'gol Watchpost |QID|36693| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on the Everbloom Wilds |QID|36695| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on the Heart of Shattrath |QID|36699| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
-T Assault on the Pit |QID|36701| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|585| |NPC|78495| |D| |O|
+R Frostwall |N|Travel to {Frostwall} (40.94, 50.96)| |Z|590|
+T Assault on Darktide Roost |QID|36692| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on Socrethar's Rise |QID|36691| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on the Iron Siegeworks |QID|36696| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on Lost Veil Anzu |QID|36690| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on Pillars of Fate |QID|36689| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on Shattrath Harbor |QID|36667| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on Skettis |QID|36688| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on Stonefury Cliffs |QID|36669| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on Magnarok |QID|36697| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on the Broken Precipice |QID|36694| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on Mok'gol Watchpost |QID|36693| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on the Everbloom Wilds |QID|36695| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on the Heart of Shattrath |QID|36699| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
+T Assault on the Pit |QID|36701| |N|(npc:78495) in {Frostwall} (40.94, 50.96)| |Z|590| |NPC|78495| |D| |O|
 
 N Guide Complete
 

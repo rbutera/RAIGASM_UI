@@ -126,7 +126,7 @@ Details_3DModelsPaths: disabled
 Details_Streamer: disabled
 DailyGlobalCheck: disabled
 DontCast: disabled
-DugisGuideViewerZ: disabled
+DugisGuideViewerZ: enabled
 DynamicCam: disabled
 GarrisonMissionManager: disabled
 GatherMate2: disabled
@@ -293,7 +293,7 @@ ElvUI_CliqueDatatext: disabled
 ElvUI_SmartQuestTracker: disabled
 REFlex: enabled
 REPorter: enabled
-ElvUI_Config: disabled
+ElvUI_Config: enabled
 ElvUI: enabled
 ElvUI_BetterTalentFrame: disabled
 StayUnsheathed: disabled

@@ -3,6 +3,10 @@ local DGV = DugisGuideViewer
 --"Class","Item ID","Spec "
 DGV.GearAdvisorItemsFiltering =
 [[
+]]
+
+--Legion artifact no longer needed 
+--[[
 
 "DEATHKNIGHT",128402,1
 "DEATHKNIGHT","128292,128293",2
@@ -51,5 +55,4 @@ DGV.GearAdvisorItemsFiltering =
 "WARRIOR",128910,1
 "WARRIOR","128908, 134553",2
 "WARRIOR","128289, 128288",3
-]]
-
+]] 

@@ -431,18 +431,18 @@ N (item:79250) |N|Collected from Trees around Mistfall Village (36.60,73.50)| |Z
 N (item:80433) |N|Sold by Vasarin Redmorn in Isle of Thunder (33.40,32.40), 400 (cur:396)| |NPC|67672| |Z|504| -- Blood Spirit
 
 --WoD
-N (item:108996) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Alchemical Catalyst
-N (item:110611) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Burnished Leather
-N (item:111366) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Gearspring Parts
-N (item:111556) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Hexweave Cloth
-N (item:115524) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Taladite Crystal
-N (item:108257) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Truesteel Ingot
-N (item:112377) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --War Paints
-N (item:113264) |N|Purchased with 25 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Sorcerous Air
-N (item:113263) |N|Purchased with 25 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Sorcerous Earth
-N (item:113261) |N|Purchased with 25 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Sorcerous Fire
-N (item:113262) |N|Purchased with 25 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Sorcerous Water
-N (item:118472) |N|Purchased with 50 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|585| --Savage Blood
+N (item:108996) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Alchemical Catalyst
+N (item:110611) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Burnished Leather
+N (item:111366) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Gearspring Parts
+N (item:111556) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Hexweave Cloth
+N (item:115524) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Taladite Crystal
+N (item:108257) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Truesteel Ingot
+N (item:112377) |N|Purchased with 10 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --War Paints
+N (item:113264) |N|Purchased with 25 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Sorcerous Air
+N (item:113263) |N|Purchased with 25 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Sorcerous Earth
+N (item:113261) |N|Purchased with 25 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Sorcerous Fire
+N (item:113262) |N|Purchased with 25 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Sorcerous Water
+N (item:118472) |N|Purchased with 50 (item:120945) from (npc:84967) in Garrison| |NPC|84967| |Z|590| --Savage Blood
 N (item:120945) |N|Can be found in Profession Building work orders| |NPC|86727| |Z|550| --Primal Spirit
 N (item:111245) |ENC| |N|Chance of drop from disenchanting ilevel 505 or higher uncommon (blue) items| --Luminous Shard
 N (item:115504) |ENC| |N|Chance to drop from disenchanting from ilevel 630 or higher epic (purple) quality items| --Fractured Temporal Crystal

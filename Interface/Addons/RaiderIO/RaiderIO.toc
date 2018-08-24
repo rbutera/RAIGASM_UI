@@ -3,7 +3,7 @@
 ## Title: Raider.IO Mythic Plus
 ## Notes: Shows Raider.IO Mythic+ Scores in-game. Make sure to load one or more region DB.
 ## Author: Vladinator (Voidzone-Ravencrest) and Aspyr (Aspyrael-Skullcrusher)
-## Version: 8.0.1 (v201808210600)
+## Version: 8.0.1 (v201808240600)
 ## SavedVariables: RaiderIO_Config
 ## X-Website: https://raider.io
 

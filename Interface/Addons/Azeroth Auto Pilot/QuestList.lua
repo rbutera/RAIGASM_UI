@@ -421,7 +421,7 @@ function AAP_MakeQuestList()
 	AAP.QuestList.Greetings2FS1:SetWidth(300)
 	AAP.QuestList.Greetings2FS1:SetHeight(38)
 	AAP.QuestList.Greetings2FS1:SetJustifyH("CENTER")
-	AAP.QuestList.Greetings2FS1:SetFontObject("GameFontNormalLarge")
+	AAP.QuestList.Greetings2FS1:SetFontObject("GameFontNormal")
 	AAP.QuestList.Greetings2FS1:SetText("Welcome to Azeroth Auto Pilot")
 	AAP.QuestList.Greetings2FS1:SetTextColor(1, 1, 0)
 
@@ -431,7 +431,7 @@ function AAP_MakeQuestList()
 	AAP.QuestList.Greetings2FS221:SetWidth(290)
 	AAP.QuestList.Greetings2FS221:SetHeight(72)
 	AAP.QuestList.Greetings2FS221:SetJustifyH("LEFT")
-	AAP.QuestList.Greetings2FS221:SetFontObject("GameFontNormalLarge")
+	AAP.QuestList.Greetings2FS221:SetFontObject("GameFontNormal")
 	AAP.QuestList.Greetings2FS221:SetText("Horde require 40+ Goblin Glider kits.")
 	AAP.QuestList.Greetings2FS221:SetTextColor(1, 1, 0)
 
@@ -441,7 +441,7 @@ function AAP_MakeQuestList()
 	AAP.QuestList.Greetings2FS2:SetWidth(290)
 	AAP.QuestList.Greetings2FS2:SetHeight(72)
 	AAP.QuestList.Greetings2FS2:SetJustifyH("LEFT")
-	AAP.QuestList.Greetings2FS2:SetFontObject("GameFontNormalLarge")
+	AAP.QuestList.Greetings2FS2:SetFontObject("GameFontNormal")
 	AAP.QuestList.Greetings2FS2:SetText("Special thanks to BrutallStatic for helping with the addon, catch him at:")
 	AAP.QuestList.Greetings2FS2:SetTextColor(1, 1, 0)
 
@@ -475,10 +475,10 @@ function AAP_MakeQuestList()
 	AAP.QuestList.GreetingsHideBptex:SetAllPoints()
 	AAP.QuestList.GreetingsHideB:SetPushedTexture(AAP.QuestList.GreetingsHideBptex)
 	AAP.QuestList.GreetingsHideB:SetScript("OnClick", function(self, arg1)
-		AAP1[AAP_Realm][AAP_Name]["Settings"]["Greetings2"] = 1
+		AAP1[AAP_Realm][AAP_Name]["Settings"]["Greetings3"] = 1
 		AAP.QuestList.Greetings:Hide()
 	end)
-	if (AAP1[AAP_Realm][AAP_Name]["Settings"]["Greetings2"] == 1) then
+	if (AAP1[AAP_Realm][AAP_Name]["Settings"]["Greetings3"] == 1) then
 		AAP.QuestList.Greetings:Hide()
 	end
 
@@ -720,7 +720,7 @@ function AAP_MakeQuestList()
 	AAP.QuestList.WarcampB1:SetPushedTexture(AAP.QuestList.WarcampB1ptex)
 	AAP.QuestList.WarcampB1:SetScript("OnClick", function(self, arg1)
 		AAP1[AAP_Realm][AAP_Name]["AAP_DoWarCampaign"] = 1
-		AAP_ZoneChangeTest()
+		AAP_ChangeZone()
 		AAP_Plus()
 		AAP_UpdateQuestList()
 		AAP.QuestList.Warcamp2:Hide()

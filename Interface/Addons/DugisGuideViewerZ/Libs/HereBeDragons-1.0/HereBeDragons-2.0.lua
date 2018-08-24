@@ -5,7 +5,7 @@ if select(4, GetBuildInfo()) < 80000 then
     return
 end
 
-local MAJOR, MINOR = "HereBeDragons-2.0", 6
+local MAJOR, MINOR = "HereBeDragons-2.0-Dugis", 6
 assert(LibStub, MAJOR .. " requires LibStub")
 
 local HereBeDragons, oldversion = LibStub:NewLibrary(MAJOR, MINOR)
@@ -211,7 +211,8 @@ local StartUpdateTimer
 local function UpdateCurrentPosition()
     -- retrieve current zone
     local uiMapID = C_Map.GetBestMapForUnit("player")
-
+	--Stop Boralus City 1161 to switch 895 whenever character is indoors when character is really still in 1161
+	--if uiMapID == 895 and IsIndoors() then uiMapID = 1161 end
     if uiMapID ~= currentPlayerUIMapID then
         -- update upvalues and signal callback
         currentPlayerUIMapID, currentPlayerUIMapType = uiMapID, mapData[uiMapID] and mapData[uiMapID].mapType or 0
@@ -499,7 +500,8 @@ function HereBeDragons:GetPlayerZonePosition(allowOutOfBounds, useMapIdFromWorld
 	if useMapIdFromWorldMapFrame then
 		currentPlayerUIMapID_ = WorldMapFrame:GetMapID()
 	end
-
+	--Stop Boralus City 1161 to switch 895 whenever character is indoors when character is really still in 1161	(doesn't exist in original HBD) 
+	--if currentPlayerUIMapID_ == 895 and IsIndoors() then currentPlayerUIMapID_ = 1161 end
     if not currentPlayerUIMapID_ then return nil, nil, nil, nil end
     local x, y, instanceID = self:GetPlayerWorldPosition()
 	

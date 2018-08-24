@@ -33,7 +33,7 @@ function AQA:Initialize()
 			then
 			if DGV:IsModuleLoaded("Guides") and DugisGuideViewer:UserSetting(DGV_AUTOQUESTACCEPTALL) and questId then
 				local index = DGV:GetGuideIndexByQID(questId, "T") or DGV:GetGuideIndexByQID(questId, "A")
-				if questId and index and DGV:GetQuestState(index) == "U" then
+				if questId and index then
 					return true
 				else 
 					return false
@@ -57,7 +57,7 @@ function AQA:Initialize()
 
 	local function QUEST_PROGRESS ()
 		DebugPrint("###QUEST_PROGRESS")
-		if not self:canAutomate() then return end
+		--if not self:canAutomate() then return end
 		if not DugisGuideViewer:UserSetting(DGV_AUTOQUESTTURNIN) then return end
 		if IsQuestCompletable() then
 			CompleteQuest()
@@ -66,8 +66,8 @@ function AQA:Initialize()
 
 	local function QUEST_LOG_UPDATE ()
 		DebugPrint("###QUEST_LOG_UPDATE")
-		if not self:canAutomate() then return end
-		--if not DugisGuideViewer:UserSetting(DGV_AUTOQUESTTURNIN) then return end
+		--if not self:canAutomate() then return end
+		if not DugisGuideViewer:UserSetting(DGV_AUTOQUESTTURNIN) then return end
 		local start_entry = GetQuestLogSelection()
 		local num_entries = GetNumQuestLogEntries()
 		local title
@@ -98,13 +98,16 @@ function AQA:Initialize()
 	local function GOSSIP_SHOW()
 		DebugPrint("###GOSSIP_SHOW")
 		if DGV.Modules.MapPreview:IsAnimating() then HideUIPanel(WorldMapFrame) end
-		if not self:canAutomate() then return end
+		--this stops multiple quest accept from working 
+		--if not self:canAutomate() then return end
 		
 		local button
 		local text
 		local i
 		
-		for i = 1, GetNumGossipAvailableQuests() do
+		local availableQuests = GetNumGossipActiveQuests() + GetNumGossipAvailableQuests()	
+		
+		for i = 1, availableQuests do
 		button = _G['GossipTitleButton' .. i]
 			if button:IsVisible() then
 			  text = self:strip_text(button:GetText())
@@ -147,13 +150,17 @@ function AQA:Initialize()
 	local function QUEST_GREETING ()
 		DebugPrint("###QUEST_GREETING")
 		if DGV.Modules.MapPreview:IsAnimating() then HideUIPanel(WorldMapFrame) end
-		if not self:canAutomate() then return end
+		--if not self:canAutomate() then return end
 		
 		local button
 		local text
 		local i
 		
-		for i = 1, GetNumAvailableQuests() do
+		local firstAvailable = GetNumActiveQuests() + 1
+		local availableQuests = GetNumActiveQuests() + GetNumAvailableQuests()
+		if firstAvailable > availableQuests then firstAvailable = 1 end
+		
+		for i = firstAvailable, availableQuests do
 			button = _G['QuestTitleButton' .. i]
 			if button:IsVisible() then
 				text = self:strip_text(button:GetText())

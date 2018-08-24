@@ -3,316 +3,162 @@ ElvCharacterDB = {
 	["CliqueDatatext"] = {
 	},
 	["ChatEditHistory"] = {
-		"/g 'dear sir and/or madam' XDDD", -- [1]
-		"/g huh?", -- [2]
-		"/g if tortollans come as an allied race im so race changing this monk ", -- [3]
-		"/g so i can be a ninja turtle", -- [4]
-		"/g and if vulpera come they better be able to be hunters cause i want a vulpera hunter", -- [5]
-		"/g no its ok the caps show ytour enthusiasm and i agree", -- [6]
-		"/g i think its smart limstella", -- [7]
-		"/g rather than lazy", -- [8]
-		"/g cause the previous barrier to enw races is the fact that theres like 10,000 pieces of gear or something", -- [9]
-		"/g *new", -- [10]
-		"/g and so if we dont reuse skeletons they take so much work", -- [11]
-		"/g as long as they're not ALL reused im good", -- [12]
-		"/g tortollans, if they come, wont be reused", -- [13]
-		"/g server bugged i guess", -- [14]
-		"/g i think we just witnessed blizzard upgrading server", -- [15]
-		"/g so cool how they can do it seamless", -- [16]
-		"/g hehe i noticed the auction house was really fast yesterda6y", -- [17]
-		"/g so i think they're just adding a lot of nodes to our cluster", -- [18]
-		"/g yeah no dc but a bunch of people went offline at once and then online instantly", -- [19]
-		"/g so i think we witnessed a new node getting added to the cluster", -- [20]
+		"/g REALLY?", -- [1]
+		"/g im not on fb group", -- [2]
+		"/g can you paste in disco?", -- [3]
+		"/g or on here?", -- [4]
+		"/g can you accept me on fb", -- [5]
+		"/g group", -- [6]
+		"/g in bfa or ever?", -- [7]
+		"/g and can someone please post warbringer video url or accept fb group request ", -- [8]
+		"/g ty", -- [9]
+		"/2 WARBRINGERS AZSHARA IS 10/10 BEST CINEMATIC EVER IN ANY VIDEO GAME. WOW.", -- [10]
+		"/ginvite Scal", -- [11]
+		"/g warbringers azshara", -- [12]
+		"/g was worth the wait", -- [13]
+		"/g wow.", -- [14]
+		"/g blizzard really nailing it these days", -- [15]
+		"/g LF someone to fly around invasions with. fast xp for our alts. <3 <3 <3 (wish I had legion flying!!!)", -- [16]
+		"/2 LF someone to fly around invasions with. fast xp for our alts. <3 <3 <3 (wish I had legion flying!!!)", -- [17]
+		"/g me plz", -- [18]
+		"/g thanks val", -- [19]
+		"/g its literally at the top of my shopping list XD", -- [20]
 	},
 	["ChatHistoryLog"] = {
 		{
-			"so you aint the best then ?", -- [1]
-			"Powerspirit-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2470, -- [11]
-			"Player-1403-0601480B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffPowerspirit|r",
-			[51] = 1534950897,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [1]
-		{
-			"Nah sry Aureus, I am just chilling with some expeditions", -- [1]
-			"Warhyzra-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2472, -- [11]
-			"Player-1403-06C7D602", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dWarhyzra|r",
-			[51] = 1534950898,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [2]
-		{
-			"if we had a tank we'd walk in with you <3", -- [1]
-			"Aureus-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			2474, -- [11]
-			"Player-1403-06FAC54A", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff8787edAureus|r",
-			[51] = 1534950899,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [3]
-		{
-			"WTS BFA HERBS 60G EACH HAVE A LOT", -- [1]
-			"Hliso-Draenor", -- [2]
+			"WTB all your |cff0070dd|Hitem:160053::::::::120:71::::::|h[Battle-Scarred Augment Rune]|h|r. 350 gold each. /w me for info or C.O.D directly to me.", -- [1]
+			"Sinnzwarr-Draenor", -- [2]
 			"", -- [3]
 			"2. Trade - City", -- [4]
-			"Hliso", -- [5]
+			"Sinnzwarr", -- [5]
 			"", -- [6]
 			2, -- [7]
 			2, -- [8]
 			"Trade - City", -- [9]
 			0, -- [10]
-			2478, -- [11]
-			"Player-1403-07167D6E", -- [12]
+			3690, -- [11]
+			"Player-1403-06E74E48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cff0070ddHliso|r",
-			[51] = 1534950910,
+			[52] = "|cffc69b6dSinnzwarr|r",
+			[51] = 1535132790,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [1]
+		{
+			"WTS |cffa335ee|Hitem:159126::::::::120:71::13::::|h[Darkmoon Deck: Squalls]|h|r|cffa335ee|Hitem:159127::::::::120:71::13::::|h[Darkmoon Deck: Tides]|h|r!", -- [1]
+			"Chlorophorm-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Chlorophorm", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3691, -- [11]
+			"Player-1403-06BAFD14", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffc69b6dChlorophorm|r",
+			[51] = 1535132791,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [2]
+		{
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3693, -- [11]
+			"Player-1403-0653787C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132792,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [3]
+		{
+			" WTB ALL BfA Herbs   45g COD ONLY", -- [1]
+			"Worbank-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Worbank", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3695, -- [11]
+			"Player-1403-0650D689", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffff468Worbank|r",
+			[51] = 1535132798,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [4]
 		{
-			"WTS |cffffffff|Hitem:152576::::::::110:71::::::|h[Tidespray Linen]|h|r|cffffffff|Hitem:152579::::::::110:71::::::|h[Storm Silver Ore]|h|r !", -- [1]
-			"Rockinwar-Draenor", -- [2]
+			"<This Statement Is False> is a newly founded raiding guild created by a group of cutting edge raiders looking to create a fun and relaxed raid environment. /w for more info or visit https://goo.gl/forms/CPYr8VxdMYLiv1Vw1", -- [1]
+			"Stéamy-Draenor", -- [2]
 			"", -- [3]
 			"2. Trade - City", -- [4]
-			"Rockinwar", -- [5]
+			"Stéamy", -- [5]
 			"", -- [6]
 			2, -- [7]
 			2, -- [8]
 			"Trade - City", -- [9]
 			0, -- [10]
-			2479, -- [11]
-			"Player-1403-068A2A40", -- [12]
+			3696, -- [11]
+			"Player-1403-07123A87", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffc69b6dRockinwar|r",
-			[51] = 1534950910,
+			[52] = "|cffc41e3aStéamy|r",
+			[51] = 1535132799,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [5]
 		{
-			"WTS |cffa335ee|Hitem:118874::::::::110:104:512:29:1:3980:110:::|h[Blackrock Bulwark]|h|r /w", -- [1]
-			"Vrajitorul-Draenor", -- [2]
+			"WTS|cffa335ee|Hitem:163962::::::::120:270::54:3:4802:1472:4786:::|h[Decapitator of Alireza]|h|r/W ME", -- [1]
+			"Bumbiers-Draenor", -- [2]
 			"", -- [3]
 			"2. Trade - City", -- [4]
-			"Vrajitorul", -- [5]
+			"Bumbiers", -- [5]
 			"", -- [6]
 			2, -- [7]
 			2, -- [8]
 			"Trade - City", -- [9]
 			0, -- [10]
-			2480, -- [11]
-			"Player-1403-06F5715D", -- [12]
+			3698, -- [11]
+			"Player-1403-06788EE1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			true, -- [17]
-			[52] = "|cffff7c0aVrajitorul|r",
-			[51] = 1534950912,
+			[52] = "|cff00ff96Bumbiers|r",
+			[51] = 1535132803,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [6]
 		{
-			"WTB |cff1eff00|Hitem:152510::::::::1:262::::::|h[Anchor Weed]|h|r 350g ea COD any amounts!", -- [1]
-			"Jumbostyle-Draenor", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Jumbostyle", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2481, -- [11]
-			"Player-1403-06EC63D5", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cff0070ddJumbostyle|r",
-			[51] = 1534950913,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [7]
-		{
-			"WTS 1600 Herbs 70g each / BFA Greens 200g each (COD) /w me", -- [1]
-			"Gabrielish-Draenor", -- [2]
-			"", -- [3]
-			"2. Trade - City", -- [4]
-			"Gabrielish", -- [5]
-			"", -- [6]
-			2, -- [7]
-			2, -- [8]
-			"Trade - City", -- [9]
-			0, -- [10]
-			2482, -- [11]
-			"Player-1403-06E960D8", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			true, -- [17]
-			[52] = "|cffa330c9Gabrielish|r",
-			[51] = 1534950914,
-			[50] = "CHAT_MSG_CHANNEL",
-		}, -- [8]
-		{
-			"scrapping is one of the only ways to get Expulsom", -- [1]
-			"Yimm-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			6, -- [11]
-			"Player-1403-0709066B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddYimm|r",
-			[51] = 1535014732,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [9]
-		{
-			"is it needed for alchemy though?", -- [1]
-			"Ookii-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			9, -- [11]
-			"Player-1403-0620F309", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535014748,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [10]
-		{
-			"which you need for most high level crafting", -- [1]
-			"Yimm-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			10, -- [11]
-			"Player-1403-0709066B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddYimm|r",
-			[51] = 1535014750,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [11]
-		{
-			"and loads of other  mats as well. Scrapping a blue can give upto 8 hardened tempest hides", -- [1]
-			"Gotyourbacks-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			13, -- [11]
-			"Player-1403-06C50254", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aGotyourbacks|r",
-			[51] = 1535014758,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [12]
-		{
-			"only |cffffffff|Hitem:162519::::::::120:264::13:1:3524:::|h[Mystical Cauldron]|h|r", -- [1]
-			"Yimm-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			17, -- [11]
-			"Player-1403-0709066B", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddYimm|r",
-			[51] = 1535014765,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [13]
-		{
-			"wtb  |cff1eff00|Hitem:152510::::::::120:70::::::|h[Anchor Weed]|h|r 300g/each and |cffffffff|Hitem:152511::::::::120:70::::::|h[Sea Stalk]|h|r |cffffffff|Hitem:152506::::::::120:70::::::|h[Star Moss]|h|r or other Herbs 35g/each  - COD plx", -- [1]
+			"wtb  |cff1eff00|Hitem:152510::::::::120:70::::::|h[Anchor Weed]|h|r 355g/each and |cffffffff|Hitem:152505::::::::120:70::::::|h[Riverbud]|h|r  |cffffffff|Hitem:152507::::::::120:70::::::|h[Akunda's Bite]|h|r or other Herbs 30g/each  - COD plx", -- [1]
 			"Cryandie-Draenor", -- [2]
 			"", -- [3]
 			"2. Trade - City", -- [4]
@@ -322,7 +168,7 @@ ElvCharacterDB = {
 			2, -- [8]
 			"Trade - City", -- [9]
 			0, -- [10]
-			35, -- [11]
+			3700, -- [11]
 			"Player-1403-0712F6BE", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -330,430 +176,584 @@ ElvCharacterDB = {
 			false, -- [16]
 			true, -- [17]
 			[52] = "|cfff48cbaCryandie|r",
-			[51] = 1535014816,
+			[51] = 1535132806,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [7]
+		{
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3701, -- [11]
+			"Player-1403-0653787C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132812,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [8]
+		{
+			"WTS |cff1eff00|Hitem:1604::::::::112:262:512::1:3655:60:::|h[Chromatic Sword]|h|r ", -- [1]
+			"Beerquu-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Beerquu", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3702, -- [11]
+			"Player-1403-07111603", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff0070ddBeerquu|r",
+			[51] = 1535132812,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [9]
+		{
+			"WTS |cffa335ee|Hitem:163959::::::::120:253::54:2:1472:4786:::|h[Self-Rotating Dagger of Xing]|h|r ", -- [1]
+			"Hêeco-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Hêeco", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3707, -- [11]
+			"Player-1403-071341EB", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffaad372Hêeco|r",
+			[51] = 1535132822,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [10]
+		{
+			"WTB all your |cffffffff|Hitem:152579::::::::120:66::::::|h[Storm Silver Ore]|h|r 40g/ore C.O.D please :)", -- [1]
+			"Idonttank-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Idonttank", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3708, -- [11]
+			"Player-1403-065198F0", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfff48cbaIdonttank|r",
+			[51] = 1535132822,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [11]
+		{
+			" WTB ALL BfA Herbs   45g COD ONLY", -- [1]
+			"Worbank-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Worbank", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3709, -- [11]
+			"Player-1403-0650D689", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cfffff468Worbank|r",
+			[51] = 1535132823,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [12]
+		{
+			"WTS |cff1eff00|Hitem:152510::::::::120:256::::::|h[Anchor Weed]|h|r @ 500g ea [ have 66 ]", -- [1]
+			"Scârecröw-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Scârecröw", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3710, -- [11]
+			"Player-1403-06DC74CF", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cffffffffScârecröw|r",
+			[51] = 1535132824,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [13]
+		{
+			"WTS |cff1eff00|Hitem:1604::::::::112:262:512::1:3655:60:::|h[Chromatic Sword]|h|r ", -- [1]
+			"Beerquu-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Beerquu", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3711, -- [11]
+			"Player-1403-07111603", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff0070ddBeerquu|r",
+			[51] = 1535132825,
 			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [14]
 		{
-			"oh, and the trinkets we can make", -- [1]
-			"Yimm-Draenor", -- [2]
+			"WTT Darkmoon cards", -- [1]
+			"Vindicatar-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Vindicatar", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			41, -- [11]
-			"Player-1403-0709066B", -- [12]
+			3713, -- [11]
+			"Player-1403-064D8257", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddYimm|r",
-			[51] = 1535014836,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfff48cbaVindicatar|r",
+			[51] = 1535132827,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [15]
 		{
-			"but those are kinda useless tbh", -- [1]
-			"Yimm-Draenor", -- [2]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			44, -- [11]
-			"Player-1403-0709066B", -- [12]
+			3714, -- [11]
+			"Player-1403-0653787C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddYimm|r",
-			[51] = 1535014843,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132832,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [16]
 		{
-			"thx", -- [1]
-			"Ookii-Draenor", -- [2]
+			" WTS  SEA STALK 60G EACH WHHISPER ME have a lot", -- [1]
+			"Hliso-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Hliso", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			54, -- [11]
-			"Player-1403-0620F309", -- [12]
+			3717, -- [11]
+			"Player-1403-07167D6E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535014907,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddHliso|r",
+			[51] = 1535132834,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [17]
 		{
-			"anyone here got legion flying, a 2 person mount, and willing to help me level my dh for 15 mins using the invasion?", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB all your |cff0070dd|Hitem:160053::::::::120:71::::::|h[Battle-Scarred Augment Rune]|h|r. 350 gold each. /w me for info or C.O.D directly to me.", -- [1]
+			"Sinnzwarr-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Sinnzwarr", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			64, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3718, -- [11]
+			"Player-1403-06E74E48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535015110,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dSinnzwarr|r",
+			[51] = 1535132835,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [18]
 		{
-			"give me a sec", -- [1]
-			"Ookii-Draenor", -- [2]
+			"WTB |cff1eff00|Hitem:152510::::::::120:262::::::|h[Anchor Weed]|h|r 375G TRADE OR COD", -- [1]
+			"Biggerthen-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Biggerthen", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			66, -- [11]
-			"Player-1403-0620F309", -- [12]
+			3719, -- [11]
+			"Player-1403-070A5246", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535015142,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddBiggerthen|r",
+			[51] = 1535132835,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [19]
 		{
-			"<3", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS bfa herbs 60g discount at 1k+", -- [1]
+			"Orcharger-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Orcharger", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			67, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3720, -- [11]
+			"Player-1403-0704D896", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535015147,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dOrcharger|r",
+			[51] = 1535132835,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [20]
 		{
-			"i'll take you", -- [1]
-			"Ookii-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159126::::::::120:71::13::::|h[Darkmoon Deck: Squalls]|h|r|cffa335ee|Hitem:159127::::::::120:71::13::::|h[Darkmoon Deck: Tides]|h|r!", -- [1]
+			"Chlorophorm-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Chlorophorm", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			68, -- [11]
-			"Player-1403-0620F309", -- [12]
+			3721, -- [11]
+			"Player-1403-06BAFD14", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535015174,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dChlorophorm|r",
+			[51] = 1535132836,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [21]
 		{
-			"ok sweet! i'll switch characters to Norfweezy now, dont worry im not in a rush, got about an hour before i have to leave for work", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cff1eff00|Hitem:1604::::::::112:262:512::1:3655:60:::|h[Chromatic Sword]|h|r ", -- [1]
+			"Beerquu-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Beerquu", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			69, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3726, -- [11]
+			"Player-1403-07111603", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535015220,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddBeerquu|r",
+			[51] = 1535132843,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [22]
 		{
-			"that reminds me I have a DH too which I started before BFA xD", -- [1]
-			"Ookii-Draenor", -- [2]
+			" WTB ALL BfA Herbs   45g COD ONLY", -- [1]
+			"Worbank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Worbank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			71, -- [11]
-			"Player-1403-0620F309", -- [12]
+			3727, -- [11]
+			"Player-1403-0650D689", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535015325,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Worbank|r",
+			[51] = 1535132848,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [23]
 		{
-			"i'm ready now if u want", -- [1]
-			"Ookii-Draenor", -- [2]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			72, -- [11]
-			"Player-1403-0620F309", -- [12]
+			3728, -- [11]
+			"Player-1403-0653787C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535015332,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132852,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [24]
 		{
-			"yeah im just copying my interface settings 1sec", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cff1eff00|Hitem:1604::::::::112:262:512::1:3655:60:::|h[Chromatic Sword]|h|r ", -- [1]
+			"Beerquu-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Beerquu", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			73, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3731, -- [11]
+			"Player-1403-07111603", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535015357,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddBeerquu|r",
+			[51] = 1535132862,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [25]
 		{
-			"k", -- [1]
-			"Ookii-Draenor", -- [2]
+			"WTS bfa herbs 60g discount at 1k+", -- [1]
+			"Orcharger-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Orcharger", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			74, -- [11]
-			"Player-1403-0620F309", -- [12]
+			3733, -- [11]
+			"Player-1403-0704D896", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535015361,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dOrcharger|r",
+			[51] = 1535132864,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [26]
 		{
-			"you other hunters also have trouble with explosive shot just dissapearing?", -- [1]
-			"Xorrow-Draenor", -- [2]
+			"WTB |cff1eff00|Hitem:152510::::::::1:262::::::|h[Anchor Weed]|h|r 350g ea BFA herbs 35g ea. |cff1eff00|Hitem:162515::::::::1:262::::::|h[Midnight Salmon]|h|r 300g ea. COD OR trade any amount!", -- [1]
+			"Jumbostyle-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Jumbostyle", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			75, -- [11]
-			"Player-1403-06923D2D", -- [12]
+			3734, -- [11]
+			"Player-1403-06EC63D5", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Xorrow|r",
-			[51] = 1535015420,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddJumbostyle|r",
+			[51] = 1535132864,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [27]
 		{
-			"have novah and aureus gotten any further with BTS?", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cff1eff00|Hitem:10386::::::::120:258:::1:1691:::|h[Hyperion Gauntlets of the Fireflash]|h|r w with offer", -- [1]
+			"Lilfc-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Lilfc", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			910, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3735, -- [11]
+			"Player-1403-07134B96", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535017871,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffffffffLilfc|r",
+			[51] = 1535132866,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [28]
 		{
-			"Ryugasm the betrayer...", -- [1]
-			"Novahkin-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159126::::::::120:71::13::::|h[Darkmoon Deck: Squalls]|h|r|cffa335ee|Hitem:159127::::::::120:71::13::::|h[Darkmoon Deck: Tides]|h|r", -- [1]
+			"Chlorophorm-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Chlorophorm", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			911, -- [11]
-			"Player-1403-06EE95E2", -- [12]
+			3739, -- [11]
+			"Player-1403-06BAFD14", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddNovahkin|r",
-			[51] = 1535017883,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dChlorophorm|r",
+			[51] = 1535132870,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [29]
 		{
-			"im waiting for you guys to get to like chapter 18 before i start listening again", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS|cffa335ee|Hitem:163962::::::::120:270::54:3:4802:1472:4786:::|h[Decapitator of Alireza]|h|r/W ME", -- [1]
+			"Bumbiers-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Bumbiers", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			912, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3740, -- [11]
+			"Player-1403-06788EE1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535017885,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Bumbiers|r",
+			[51] = 1535132871,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [30]
 		{
-			"A little bit", -- [1]
-			"Novahkin-Draenor", -- [2]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			913, -- [11]
-			"Player-1403-06EE95E2", -- [12]
+			3741, -- [11]
+			"Player-1403-0653787C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddNovahkin|r",
-			[51] = 1535017889,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132872,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [31]
 		{
-			"it'll take a while tbh, we only listen in the car", -- [1]
-			"Novahkin-Draenor", -- [2]
+			" WTB ALL BfA Herbs   45g COD ONLY", -- [1]
+			"Worbank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Worbank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			914, -- [11]
-			"Player-1403-06EE95E2", -- [12]
+			3742, -- [11]
+			"Player-1403-0650D689", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddNovahkin|r",
-			[51] = 1535017909,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Worbank|r",
+			[51] = 1535132873,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [32]
 		{
-			"yeah i only listen on way to work ", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"wts bfa green boe's 180 each", -- [1]
+			"Cabyr-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Cabyr", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			915, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3743, -- [11]
+			"Player-1403-071952CE", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535017919,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff8787edCabyr|r",
+			[51] = 1535132873,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [33]
 		{
-			"Im very bias towards the horde", -- [1]
-			"Novahkin-Draenor", -- [2]
+			"|cffffffff|Hitem:154882::::::::120:266::13:1:3524:::|h[Honey-Glazed Haunches]|h|r|cffffffff|Hitem:154888::::::::120:266::13:1:3524:::|h[Sailor's Pie]|h|r|cffffffff|Hitem:154886::::::::120:266::13:1:3524:::|h[Spiced Snapper]|h|r|cffffffff|Hitem:154884::::::::120:266::13:1:3524:::|h[Swamp Fish 'n Chips]|h|r", -- [1]
+			"Aureus-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -762,151 +762,173 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			917, -- [11]
-			"Player-1403-06EE95E2", -- [12]
+			3744, -- [11]
+			"Player-1403-06FAC54A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddNovahkin|r",
-			[51] = 1535017942,
+			[52] = "|cff8787edAureus|r",
+			[51] = 1535132875,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [34]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:12824:Player-1403-06923D2D:1:8:23:18:4294967295:4294967295:4294967295:4294967295|h[Atal'Dazar]|h|r!", -- [1]
-			"Xorrow-Draenor", -- [2]
+			"WTB ALL YOUR |cffffffff|Hitem:152505::::::::120:260::::::|h[Riverbud]|h|r|cffffffff|Hitem:152509::::::::120:260::::::|h[Siren's Pollen]|h|r 45g Each -- |cff0070dd|Hitem:160053::::::::120:260::::::|h[Battle-Scarred Augment Rune]|h|r350g Each, CoD or Trade!", -- [1]
+			"Colixy-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Xorrow", -- [5]
+			"2. Trade - City", -- [4]
+			"Colixy", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			918, -- [11]
-			"Player-1403-06923D2D", -- [12]
+			3747, -- [11]
+			"Player-1403-06BA2CCA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Xorrow|r",
-			[51] = 1535017954,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			true, -- [17]
+			[52] = "|cfffff468Colixy|r",
+			[51] = 1535132879,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [35]
 		{
-			"i was until sylvanas became warchief i really dont think she suits the role ", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			" WTS  SEA STALK 60G EACH WHHISPER ME have a lot", -- [1]
+			"Hliso-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Hliso", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			919, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3748, -- [11]
+			"Player-1403-07167D6E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535017962,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddHliso|r",
+			[51] = 1535132880,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [36]
 		{
-			"I am biased towards Jaina.", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTB all your |cffffffff|Hitem:152579::::::::120:66::::::|h[Storm Silver Ore]|h|r 40g/ore C.O.D please :)", -- [1]
+			"Idonttank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Idonttank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			920, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3749, -- [11]
+			"Player-1403-065198F0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535017981,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfff48cbaIdonttank|r",
+			[51] = 1535132882,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [37]
 		{
-			"i mained horde classic->WOTLK, was a huge horde fanboy, then i got my ex gf into wow, and she wanted to be alliance so i betrayed the horde.... then when cata dropped we both quit the game", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS bfa herbs 60g discount at 1k+", -- [1]
+			"Orcharger-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Orcharger", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			921, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3750, -- [11]
+			"Player-1403-0704D896", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018009,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dOrcharger|r",
+			[51] = 1535132884,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [38]
 		{
-			"fast forward to legion and i was alliance, secretly wishing to move back to horde", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cff1eff00|Hitem:1604::::::::112:262:512::1:3655:60:::|h[Chromatic Sword]|h|r ", -- [1]
+			"Beerquu-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Beerquu", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			922, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3751, -- [11]
+			"Player-1403-07111603", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018020,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddBeerquu|r",
+			[51] = 1535132884,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [39]
 		{
-			"then bfa was anounced so i renewed my subscription, and one of my stream viewers told me that he was on Draenor, horde", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159125::::::::110:263::13::::|h[Darkmoon Deck: Fathoms]|h|r 160k", -- [1]
+			"Elementoné-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Elementoné", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			923, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3753, -- [11]
+			"Player-1403-0539BB58", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018049,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddElementoné|r",
+			[51] = 1535132887,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [40]
 		{
-			"so i spent like 150 quid moving everything over to this realm etc, then HE QUITS THE FUCKING GAME 2 days after i did it", -- [1]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
+			"", -- [3]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
+			"", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
+			0, -- [10]
+			3756, -- [11]
+			"Player-1403-0653787C", -- [12]
+			0, -- [13]
+			false, -- [14]
+			false, -- [15]
+			false, -- [16]
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132892,
+			[50] = "CHAT_MSG_CHANNEL",
+		}, -- [41]
+		{
+			"LF someone to fly around invasions with. fast xp for our alts. <3 <3 <3 (wish I had legion flying!!!)", -- [1]
 			"Ryugasm-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -916,7 +938,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			924, -- [11]
+			3757, -- [11]
 			"Player-1403-070CAB04", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -924,34 +946,12 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018066,
-			[50] = "CHAT_MSG_GUILD",
-		}, -- [41]
-		{
-			"Lag Capital", -- [1]
-			"Limstella-Draenor", -- [2]
-			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
-			0, -- [10]
-			925, -- [11]
-			"Player-1403-070404E7", -- [12]
-			0, -- [13]
-			false, -- [14]
-			false, -- [15]
-			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018070,
+			[51] = 1535132893,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [42]
 		{
-			"so now im stuck on the horde with a shitty warchief", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"|cffffffff|Hitem:154883::::::::120:266::13:1:3524:::|h[Ravenberry Tarts]|h|r - Crap ones", -- [1]
+			"Aureus-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -960,1054 +960,1054 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			926, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3758, -- [11]
+			"Player-1403-06FAC54A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018072,
+			[52] = "|cff8787edAureus|r",
+			[51] = 1535132895,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [43]
 		{
-			"and wishing i was on alliance because their BFA zones look AMAZING", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			" WTB ALL BfA Herbs   45g COD ONLY", -- [1]
+			"Worbank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Worbank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			927, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3761, -- [11]
+			"Player-1403-0650D689", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018084,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Worbank|r",
+			[51] = 1535132898,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [44]
 		{
-			"Not to mention the alliance story seems soooo much cooler than Talanji screwing around", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTS|cffa335ee|Hitem:163962::::::::120:270::54:3:4802:1472:4786:::|h[Decapitator of Alireza]|h|r/W ME", -- [1]
+			"Bumbiers-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Bumbiers", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			929, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3762, -- [11]
+			"Player-1403-06788EE1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018145,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Bumbiers|r",
+			[51] = 1535132902,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [45]
 		{
-			"^--", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"Furries Unchained<FU> Few raiding spots left Healer(MW monk pref) and any exceptional players. we are focused on Mythic Raiding with Mythic+, no exp required, only dedication. Raid times are 21:00 - 00:00 Tuesdays, Thursday and Sundays./w for info.", -- [1]
+			"Prabs-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Prabs", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			930, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3763, -- [11]
+			"Player-1403-065789D4", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018152,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffff7c0aPrabs|r",
+			[51] = 1535132902,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [46]
 		{
-			"exactly", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:163947::::::::1:102::54:3:4802:1477:4783:::|h[Robust Legwraps of D'nusa]|h|r 150k. 355 Mail legs with socket.", -- [1]
+			"Fingalolsson-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Fingalolsson", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			931, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3767, -- [11]
+			"Player-1403-071811E0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018161,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffff7c0aFingalolsson|r",
+			[51] = 1535132904,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [47]
 		{
-			"i <3 jaina", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:163947::::::::1:102::54:3:4802:1477:4783:::|h[Robust Legwraps of D'nusa]|h|r 150k. 355 Mail legs with socket.", -- [1]
+			"Fingalolsson-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Fingalolsson", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			932, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3768, -- [11]
+			"Player-1403-071811E0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018165,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffff7c0aFingalolsson|r",
+			[51] = 1535132905,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [48]
 		{
-			"I don't know. We're killing minions of an old god and alliance are with jaina on her feel trip", -- [1]
-			"Steersandque-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159126::::::::120:71::13::::|h[Darkmoon Deck: Squalls]|h|r|cffa335ee|Hitem:159127::::::::120:71::13::::|h[Darkmoon Deck: Tides]|h|r", -- [1]
+			"Chlorophorm-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Chlorophorm", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			934, -- [11]
-			"Player-1403-0697C432", -- [12]
+			3769, -- [11]
+			"Player-1403-06BAFD14", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddSteersandque|r",
-			[51] = 1535018182,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dChlorophorm|r",
+			[51] = 1535132907,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [49]
 		{
-			"and that fat kul tiran woman looks like shes gonna cause lots of mischief etc i wanna see what happens to her", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS x780  |cff1eff00|Hitem:152577::::::::120:263::::::|h[Deep Sea Satin]|h|r  55 gold per ", -- [1]
+			"Valiantly-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Valiantly", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			936, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3771, -- [11]
+			"Player-1403-053ABE29", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018196,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddValiantly|r",
+			[51] = 1535132908,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [50]
 		{
-			"We basically released said old god", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTS x780  |cff1eff00|Hitem:152577::::::::120:263::::::|h[Deep Sea Satin]|h|r  55 gold per ", -- [1]
+			"Valiantly-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Valiantly", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			937, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3772, -- [11]
+			"Player-1403-053ABE29", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018196,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddValiantly|r",
+			[51] = 1535132909,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [51]
 		{
-			"no, zul did", -- [1]
-			"Steersandque-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:163956::::::::120:577::54:2:1472:4786:::|h[Treiya's Shining Pillar]|h|r", -- [1]
+			"Zuferia-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Zuferia", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			938, -- [11]
-			"Player-1403-0697C432", -- [12]
+			3773, -- [11]
+			"Player-1403-06D913E0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddSteersandque|r",
-			[51] = 1535018203,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffa330c9Zuferia|r",
+			[51] = 1535132910,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [52]
 		{
-			"And who freed Zul?", -- [1]
-			"Limstella-Draenor", -- [2]
+			"<<SELLING Dungeon boost, Leveling 110-120, Item level boost and much more! Safe, cheap and fast. Guarantee! Lots of happy reviews.     <<<www.Foxstore.pro>>>", -- [1]
+			"Lihiluhbil-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
-			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			"2. Trade - City", -- [4]
+			"Lihiluhbil", -- [5]
+			"DND", -- [6]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			939, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3775, -- [11]
+			"Player-1403-071A032F", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018209,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff3fc6eaLihiluhbil|r",
+			[51] = 1535132910,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [53]
 		{
-			"plz no spoilers", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			940, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3776, -- [11]
+			"Player-1403-0653787C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018211,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132912,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [54]
 		{
-			"i havent ", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS bfa herbs 60g discount at 1k+", -- [1]
+			"Orcharger-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Orcharger", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			941, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3778, -- [11]
+			"Player-1403-0704D896", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018214,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dOrcharger|r",
+			[51] = 1535132914,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [55]
 		{
-			"finished zuldazar", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159125::::::::110:64::13::::|h[Darkmoon Deck: Fathoms]|h|r 155k! |cffa335ee|Hitem:159128::::::::110:64::13::::|h[Darkmoon Deck: Blockades]|h|r 30k!", -- [1]
+			"Mackvi-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Mackvi", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			942, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3780, -- [11]
+			"Player-1403-071786E9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018218,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff3fc6eaMackvi|r",
+			[51] = 1535132917,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [56]
 		{
-			"sry", -- [1]
-			"Steersandque-Draenor", -- [2]
+			"WTB |cffa335ee|Hitem:95416::::::::110:581::::::|h[Sky Golem]|h|r|cffa335ee|Hitem:95416::::::::110:581::::::|h[Sky Golem]|h|r|cffa335ee|Hitem:95416::::::::110:581::::::|h[Sky Golem]|h|r|cffa335ee|Hitem:95416::::::::110:581::::::|h[Sky Golem]|h|r|cffa335ee|Hitem:95416::::::::110:581::::::|h[Sky Golem]|h|r", -- [1]
+			"Frozenquéen-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Frozenquéen", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			943, -- [11]
-			"Player-1403-0697C432", -- [12]
+			3783, -- [11]
+			"Player-1403-070C1B55", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddSteersandque|r",
-			[51] = 1535018221,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff3fc6eaFrozenquéen|r",
+			[51] = 1535132918,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [57]
 		{
-			"np", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159125::::::::110:64::13::::|h[Darkmoon Deck: Fathoms]|h|r 155k! |cffa335ee|Hitem:159128::::::::110:64::13::::|h[Darkmoon Deck: Blockades]|h|r 30k!", -- [1]
+			"Mackvi-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Mackvi", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			944, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3784, -- [11]
+			"Player-1403-071786E9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018228,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff3fc6eaMackvi|r",
+			[51] = 1535132918,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [58]
 		{
-			"damn now i wanna finish the zone", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB |cffffffff|Hitem:153251::::::::120:253::::::|h[Fresh Talbuk Meat]|h|r 7k", -- [1]
+			"Gorekid-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Gorekid", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			948, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3785, -- [11]
+			"Player-1403-059EE31A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018332,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffaad372Gorekid|r",
+			[51] = 1535132919,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [59]
 		{
-			"I'll say this though. Love Bwonsamdi, such disney villaniy vibes", -- [1]
-			"Limstella-Draenor", -- [2]
+			"<This Statement Is False> is a newly founded raiding guild created by a group of cutting edge raiders looking to create a fun and relaxed raid environment. /w for more info or visit https://goo.gl/forms/CPYr8VxdMYLiv1Vw1", -- [1]
+			"Stéamy-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Stéamy", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			949, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3786, -- [11]
+			"Player-1403-07123A87", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018356,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc41e3aStéamy|r",
+			[51] = 1535132919,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [60]
 		{
-			"<3 bwon too", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			" WTB ALL BfA Herbs   45g COD ONLY", -- [1]
+			"Worbank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Worbank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			954, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3791, -- [11]
+			"Player-1403-0650D689", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018402,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Worbank|r",
+			[51] = 1535132923,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [61]
 		{
-			"idk bwom has this vibe like.... you know if a friend of yours or a family member passes away, so you meet up with their gf or old school friend ", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB |cffffffff|Hitem:153251::::::::120:253::::::|h[Fresh Talbuk Meat]|h|r 7k", -- [1]
+			"Gorekid-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Gorekid", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			956, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3794, -- [11]
+			"Player-1403-059EE31A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018439,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffaad372Gorekid|r",
+			[51] = 1535132927,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [62]
 		{
-			"has that same feeling ", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB Unlimited Augment Runes 350g each! [Sirren Pollen] and [Riverbud] 45g Each! Trade or CoD!", -- [1]
+			"Colixy-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Colixy", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			957, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3796, -- [11]
+			"Player-1403-06BA2CCA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018442,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Colixy|r",
+			[51] = 1535132930,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [63]
 		{
-			"miss vol'jin", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTT my |cffa335ee|Hitem:159127::::::::120:262::13::::|h[Darkmoon Deck: Tides]|h|r for Fathoms: 4 and 6", -- [1]
+			"Aristor-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Aristor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			958, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3798, -- [11]
+			"Player-1403-07001F58", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018445,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddAristor|r",
+			[51] = 1535132930,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [64]
 		{
-			"bwom keeps me happy", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTT my |cffa335ee|Hitem:159127::::::::120:262::13::::|h[Darkmoon Deck: Tides]|h|r for Fathoms: 4 and 6", -- [1]
+			"Aristor-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Aristor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			960, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3800, -- [11]
+			"Player-1403-07001F58", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018452,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddAristor|r",
+			[51] = 1535132931,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [65]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:12509:Player-1403-0697C432:1:8:23:18:4294967295:4294967295:4294967295:4294967295|h[Ready for War]|h|r!", -- [1]
-			"Steersandque-Draenor", -- [2]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Steersandque", -- [5]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			961, -- [11]
-			"Player-1403-0697C432", -- [12]
+			3801, -- [11]
+			"Player-1403-0653787C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddSteersandque|r",
-			[51] = 1535018467,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132932,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [66]
 		{
-			"gz!", -- [1]
-			"Yimm-Draenor", -- [2]
+			"WTB ALL YOUR |cffffffff|Hitem:152505::::::::120:260::::::|h[Riverbud]|h|r|cffffffff|Hitem:152509::::::::120:260::::::|h[Siren's Pollen]|h|r 45g Each -- |cff0070dd|Hitem:160053::::::::120:260::::::|h[Battle-Scarred Augment Rune]|h|r350g Each, CoD or Trade!", -- [1]
+			"Colixy-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Colixy", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			962, -- [11]
-			"Player-1403-0709066B", -- [12]
+			3802, -- [11]
+			"Player-1403-06BA2CCA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddYimm|r",
-			[51] = 1535018475,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Colixy|r",
+			[51] = 1535132932,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [67]
 		{
-			"No love for poor Rokhan", -- [1]
-			"Limstella-Draenor", -- [2]
+			"LF someone to fly around invasions with. fast xp for our alts. <3 <3 <3 (wish I had legion flying!!!)", -- [1]
+			"Ryugasm-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Ryugasm", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			964, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3804, -- [11]
+			"Player-1403-070CAB04", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018485,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Ryugasm|r",
+			[51] = 1535132932,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [68]
 		{
-			"ty", -- [1]
-			"Steersandque-Draenor", -- [2]
+			" WTS  SEA STALK 60G EACH WHHISPER ME have a lot", -- [1]
+			"Hliso-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Hliso", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			966, -- [11]
-			"Player-1403-0697C432", -- [12]
+			3805, -- [11]
+			"Player-1403-07167D6E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddSteersandque|r",
-			[51] = 1535018499,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddHliso|r",
+			[51] = 1535132932,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [69]
 		{
-			"rokhan ?", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:163947::::::::1:102::54:3:4802:1477:4783:::|h[Robust Legwraps of D'nusa]|h|r 150k. 355 Mail legs with socket.", -- [1]
+			"Fingalolsson-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Fingalolsson", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			967, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3809, -- [11]
+			"Player-1403-071811E0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018502,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffff7c0aFingalolsson|r",
+			[51] = 1535132940,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [70]
 		{
-			"The troll that basically is what people see as the leader of the horde trolls after Vol'jin. Guy that you've been running around these islands with :p", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159126::::::::120:71::13::::|h[Darkmoon Deck: Squalls]|h|r|cffa335ee|Hitem:159127::::::::120:71::13::::|h[Darkmoon Deck: Tides]|h|r", -- [1]
+			"Chlorophorm-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Chlorophorm", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			969, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3810, -- [11]
+			"Player-1403-06BAFD14", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018545,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dChlorophorm|r",
+			[51] = 1535132940,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [71]
 		{
-			"lol we've been running around with rokhan?", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:163947::::::::1:102::54:3:4802:1477:4783:::|h[Robust Legwraps of D'nusa]|h|r 150k. 355 Mail legs with socket.", -- [1]
+			"Fingalolsson-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Fingalolsson", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			971, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3812, -- [11]
+			"Player-1403-071811E0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018559,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffff7c0aFingalolsson|r",
+			[51] = 1535132940,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [72]
 		{
-			"oO", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTB all your |cffffffff|Hitem:152579::::::::120:66::::::|h[Storm Silver Ore]|h|r 40g/ore C.O.D please :)", -- [1]
+			"Idonttank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Idonttank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			972, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3813, -- [11]
+			"Player-1403-065198F0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018565,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfff48cbaIdonttank|r",
+			[51] = 1535132942,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [73]
 		{
-			"iu havent seen him, i think i remember him from the stormwind scenario but havent seen him since", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:12484:Player-1403-0714A8E8:1:8:24:18:4294967295:4294967295:4294967295:4294967295|h[Heroic: Waycrest Manor]|h|r!", -- [1]
+			"Rondruid-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Rondruid", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			973, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3815, -- [11]
+			"Player-1403-0714A8E8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018572,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffff7c0aRondruid|r",
+			[51] = 1535132945,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [74]
 		{
-			"He was in Nazmir too", -- [1]
-			"Novahkin-Draenor", -- [2]
+			"%s has earned the achievement |cffffff00|Hachievement:4476:Player-1403-0714A8E8:1:8:24:18:4294967295:4294967295:4294967295:4294967295|h[Looking For More]|h|r!", -- [1]
+			"Rondruid-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
-			"", -- [5]
+			"Rondruid", -- [5]
 			"", -- [6]
 			0, -- [7]
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			975, -- [11]
-			"Player-1403-06EE95E2", -- [12]
+			3816, -- [11]
+			"Player-1403-0714A8E8", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff0070ddNovahkin|r",
-			[51] = 1535018595,
-			[50] = "CHAT_MSG_GUILD",
+			[52] = "|cffff7c0aRondruid|r",
+			[51] = 1535132945,
+			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
 		}, -- [75]
 		{
-			"Poor poor Rokhan, he needs his own Warbringer or something", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTS |cff1eff00|Hitem:1604::::::::112:262:512::1:3655:60:::|h[Chromatic Sword]|h|r ", -- [1]
+			"Beerquu-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Beerquu", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			976, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3817, -- [11]
+			"Player-1403-07111603", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018603,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddBeerquu|r",
+			[51] = 1535132945,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [76]
 		{
-			"Still waiting on Azshara", -- [1]
-			"Novahkin-Draenor", -- [2]
+			"WTS x780  |cff1eff00|Hitem:152577::::::::120:263::::::|h[Deep Sea Satin]|h|r  55 gold per ", -- [1]
+			"Valiantly-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Valiantly", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			978, -- [11]
-			"Player-1403-06EE95E2", -- [12]
+			3818, -- [11]
+			"Player-1403-053ABE29", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddNovahkin|r",
-			[51] = 1535018616,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddValiantly|r",
+			[51] = 1535132946,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [77]
 		{
-			"hmmmm i only diid 6/8 chapters in nazmir so maybe i'll see him when i go back to finish it off", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS|cffa335ee|Hitem:163962::::::::120:270::54:3:4802:1472:4786:::|h[Decapitator of Alireza]|h|r/W ME", -- [1]
+			"Bumbiers-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Bumbiers", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			979, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3819, -- [11]
+			"Player-1403-06788EE1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018625,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Bumbiers|r",
+			[51] = 1535132947,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [78]
 		{
-			"To be fair it's not like he's ever been in the spotlight much but he is a pretty big figure for the horde trolls now.", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTS x780  |cff1eff00|Hitem:152577::::::::120:263::::::|h[Deep Sea Satin]|h|r  55 gold per ", -- [1]
+			"Valiantly-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Valiantly", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			980, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3820, -- [11]
+			"Player-1403-053ABE29", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018665,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddValiantly|r",
+			[51] = 1535132948,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [79]
 		{
-			"He was there quite early ", -- [1]
-			"Novahkin-Draenor", -- [2]
+			" WTB ALL BfA Herbs   45g COD ONLY", -- [1]
+			"Worbank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Worbank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			981, -- [11]
-			"Player-1403-06EE95E2", -- [12]
+			3821, -- [11]
+			"Player-1403-0650D689", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddNovahkin|r",
-			[51] = 1535018666,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Worbank|r",
+			[51] = 1535132948,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [80]
 		{
-			"my favourite character(s) this expansion has got to be the tortollan tho ", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB |cffa335ee|Hitem:95416::::::::110:581::::::|h[Sky Golem]|h|r|cffa335ee|Hitem:95416::::::::110:581::::::|h[Sky Golem]|h|r|cffa335ee|Hitem:95416::::::::110:581::::::|h[Sky Golem]|h|r|cffa335ee|Hitem:95416::::::::110:581::::::|h[Sky Golem]|h|r|cffa335ee|Hitem:95416::::::::110:581::::::|h[Sky Golem]|h|r", -- [1]
+			"Frozenquéen-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Frozenquéen", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			982, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3822, -- [11]
+			"Player-1403-070C1B55", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018681,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff3fc6eaFrozenquéen|r",
+			[51] = 1535132949,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [81]
 		{
-			"or the kul tiran humans", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			983, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3824, -- [11]
+			"Player-1403-0653787C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018685,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132952,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [82]
 		{
-			"Dolly and Dot are my best friends....", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTS |cff1eff00|Hitem:1604::::::::112:262:512::1:3655:60:::|h[Chromatic Sword]|h|r ", -- [1]
+			"Beerquu-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Beerquu", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			986, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3826, -- [11]
+			"Player-1403-07111603", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018702,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddBeerquu|r",
+			[51] = 1535132953,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [83]
 		{
-			"I mean", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTS bfa herbs 60g discount at 1k+", -- [1]
+			"Orcharger-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Orcharger", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			987, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3827, -- [11]
+			"Player-1403-0704D896", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018704,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dOrcharger|r",
+			[51] = 1535132954,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [84]
 		{
-			"Vulpera funness.", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTB |cff1eff00|Hitem:152510::::::::1:262::::::|h[Anchor Weed]|h|r 350g ea BFA herbs 35g ea. |cff1eff00|Hitem:162515::::::::1:262::::::|h[Midnight Salmon]|h|r 300g ea. COD OR trade any amount!", -- [1]
+			"Jumbostyle-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Jumbostyle", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			988, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3828, -- [11]
+			"Player-1403-06EC63D5", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018710,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddJumbostyle|r",
+			[51] = 1535132955,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [85]
 		{
-			"i havent done any alliance quests but one of the kul tiran war campaign zones has kul tiran NPCs and i love them", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159125::::::::110:64::13::::|h[Darkmoon Deck: Fathoms]|h|r 155k! |cffa335ee|Hitem:159128::::::::110:64::13::::|h[Darkmoon Deck: Blockades]|h|r 30k!", -- [1]
+			"Mackvi-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Mackvi", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			990, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3829, -- [11]
+			"Player-1403-071786E9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018717,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff3fc6eaMackvi|r",
+			[51] = 1535132955,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [86]
 		{
-			"YES DOLLY AND DOT", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159125::::::::110:64::13::::|h[Darkmoon Deck: Fathoms]|h|r 155k! |cffa335ee|Hitem:159128::::::::110:64::13::::|h[Darkmoon Deck: Blockades]|h|r 30k!", -- [1]
+			"Mackvi-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Mackvi", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			991, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3832, -- [11]
+			"Player-1403-071786E9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018727,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff3fc6eaMackvi|r",
+			[51] = 1535132956,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [87]
 		{
-			"ALPACA <3", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB |cffa335ee|Hitem:159126::::::::120:102::13::::|h[Darkmoon Deck: Squalls]|h|r 10k", -- [1]
+			"Zandalárí-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Zandalárí", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			992, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3833, -- [11]
+			"Player-1403-06E3BB0C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018729,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffff7c0aZandalárí|r",
+			[51] = 1535132957,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [88]
 		{
-			"hehe", -- [1]
-			"Holyniss-Draenor", -- [2]
+			"WTS bfa herbs 60g discount at 1k+", -- [1]
+			"Orcharger-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Orcharger", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			993, -- [11]
-			"Player-1403-06DAE606", -- [12]
+			3834, -- [11]
+			"Player-1403-0704D896", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cfff48cbaHolyniss|r",
-			[51] = 1535018747,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dOrcharger|r",
+			[51] = 1535132958,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [89]
 		{
-			"but yeah the kul tiran npcs have the best accents and voice lines XD saame with tortollans", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB all your |cff0070dd|Hitem:160053::::::::120:71::::::|h[Battle-Scarred Augment Rune]|h|r. 350 gold each. /w me for info or C.O.D directly to me.", -- [1]
+			"Sinnzwarr-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Sinnzwarr", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			994, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3836, -- [11]
+			"Player-1403-06E74E48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018751,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dSinnzwarr|r",
+			[51] = 1535132966,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [90]
 		{
-			"'dear sir and/or madam' XDDD", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"anyone want |cffffffff|Hitem:153668::::::::120:105::::::|h[Contract: Champions of Azeroth]|h|r", -- [1]
+			"Valkyrjår-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -2016,42 +2016,42 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			996, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3837, -- [11]
+			"Player-1403-053D0D6D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018775,
+			[52] = "|cffff7c0aValkyrjår|r",
+			[51] = 1535132966,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [91]
 		{
-			"haha", -- [1]
-			"Novahkin-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159126::::::::120:71::13::::|h[Darkmoon Deck: Squalls]|h|r|cffa335ee|Hitem:159127::::::::120:71::13::::|h[Darkmoon Deck: Tides]|h|r", -- [1]
+			"Chlorophorm-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Chlorophorm", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			997, -- [11]
-			"Player-1403-06EE95E2", -- [12]
+			3838, -- [11]
+			"Player-1403-06BAFD14", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff0070ddNovahkin|r",
-			[51] = 1535018780,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dChlorophorm|r",
+			[51] = 1535132969,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [92]
 		{
-			"I'd like them more if I didn't have to hear \"ANOTHER TURTLE MADE IT TO THE WATER\"", -- [1]
-			"Limstella-Draenor", -- [2]
+			"me plz", -- [1]
+			"Ryugasm-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -2060,42 +2060,42 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			998, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3840, -- [11]
+			"Player-1403-070CAB04", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018797,
+			[52] = "|cff00ff96Ryugasm|r",
+			[51] = 1535132970,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [93]
 		{
-			"huh?", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			999, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3841, -- [11]
+			"Player-1403-0653787C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018806,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132971,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [94]
 		{
-			"Beachead wqs :p", -- [1]
-			"Limstella-Draenor", -- [2]
+			"got 2", -- [1]
+			"Valkyrjår-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -2104,41 +2104,41 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1001, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3842, -- [11]
+			"Player-1403-053D0D6D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018822,
+			[52] = "|cffff7c0aValkyrjår|r",
+			[51] = 1535132972,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [95]
 		{
-			"if tortollans come as an allied race im so race changing this monk ", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			" WTB ALL BfA Herbs   45g COD ONLY", -- [1]
+			"Worbank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Worbank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1003, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3844, -- [11]
+			"Player-1403-0650D689", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018837,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Worbank|r",
+			[51] = 1535132973,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [96]
 		{
-			"so i can be a ninja turtle", -- [1]
+			"thanks val", -- [1]
 			"Ryugasm-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
@@ -2148,7 +2148,7 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1004, -- [11]
+			3845, -- [11]
 			"Player-1403-070CAB04", -- [12]
 			0, -- [13]
 			false, -- [14]
@@ -2156,100 +2156,100 @@ ElvCharacterDB = {
 			false, -- [16]
 			false, -- [17]
 			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018842,
+			[51] = 1535132973,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [97]
 		{
-			"the hissing is working", -- [1]
-			"Ookii-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:163947::::::::1:102::54:3:4802:1477:4783:::|h[Robust Legwraps of D'nusa]|h|r 150k. 355 Mail legs with socket.", -- [1]
+			"Fingalolsson-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Fingalolsson", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1005, -- [11]
-			"Player-1403-0620F309", -- [12]
+			3846, -- [11]
+			"Player-1403-071811E0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535018847,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffff7c0aFingalolsson|r",
+			[51] = 1535132979,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [98]
 		{
-			"lol", -- [1]
-			"Nherz-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:163947::::::::1:102::54:3:4802:1477:4783:::|h[Robust Legwraps of D'nusa]|h|r 150k. 355 Mail legs with socket.", -- [1]
+			"Fingalolsson-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Fingalolsson", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1006, -- [11]
-			"Player-1403-0626596E", -- [12]
+			3847, -- [11]
+			"Player-1403-071811E0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dNherz|r",
-			[51] = 1535018849,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffff7c0aFingalolsson|r",
+			[51] = 1535132979,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [99]
 		{
-			"%s has earned the achievement |cffffff00|Hachievement:12733:Player-1403-06CF16D2:1:8:23:18:4294967295:4294967295:4294967295:4294967295|h[Professional Zandalari Master]|h|r!", -- [1]
-			"Zyota-Draenor", -- [2]
+			" WTS  SEA STALK 60G EACH WHHISPER ME have a lot", -- [1]
+			"Hliso-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"Zyota", -- [5]
+			"2. Trade - City", -- [4]
+			"Hliso", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1007, -- [11]
-			"Player-1403-06CF16D2", -- [12]
+			3848, -- [11]
+			"Player-1403-07167D6E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffZyota|r",
-			[51] = 1535018861,
-			[50] = "CHAT_MSG_GUILD_ACHIEVEMENT",
+			true, -- [17]
+			[52] = "|cff0070ddHliso|r",
+			[51] = 1535132980,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [100]
 		{
-			"Hiss harder", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTB |cff1eff00|Hitem:152510::::::::120:262::::::|h[Anchor Weed]|h|r 375G TRADE OR COD", -- [1]
+			"Biggerthen-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Biggerthen", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1008, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3849, -- [11]
+			"Player-1403-070A5246", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018862,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddBiggerthen|r",
+			[51] = 1535132981,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [101]
 		{
-			"Channel your inner grumpy cat", -- [1]
-			"Limstella-Draenor", -- [2]
+			"its literally at the top of my shopping list XD", -- [1]
+			"Ryugasm-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -2258,130 +2258,130 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1009, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3851, -- [11]
+			"Player-1403-070CAB04", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018874,
+			[52] = "|cff00ff96Ryugasm|r",
+			[51] = 1535132989,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [102]
 		{
-			"and if vulpera come they better be able to be hunters cause i want a vulpera hunter", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:163959::::::::120:253::54:2:1472:4786:::|h[Self-Rotating Dagger of Xing]|h|r ", -- [1]
+			"Hêeco-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Hêeco", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1010, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3852, -- [11]
+			"Player-1403-071341EB", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018890,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffaad372Hêeco|r",
+			[51] = 1535132991,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [103]
 		{
-			"VULPERA LOOK AWESOME", -- [1]
-			"Babbetta-Draenor", -- [2]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1013, -- [11]
-			"Player-1403-06DB15EF", -- [12]
+			3853, -- [11]
+			"Player-1403-0653787C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Babbetta|r",
-			[51] = 1535018936,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535132992,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [104]
 		{
-			"oops sorry for caps", -- [1]
-			"Babbetta-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:163956::::::::120:577::54:2:1472:4786:::|h[Treiya's Shining Pillar]|h|r", -- [1]
+			"Zuferia-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Zuferia", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1015, -- [11]
-			"Player-1403-06DB15EF", -- [12]
+			3857, -- [11]
+			"Player-1403-06D913E0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffaad372Babbetta|r",
-			[51] = 1535018949,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffa330c9Zuferia|r",
+			[51] = 1535132996,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [105]
 		{
-			"no its ok the caps show ytour enthusiasm and i agree", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			" WTB ALL BfA Herbs   45g COD ONLY", -- [1]
+			"Worbank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Worbank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1017, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3859, -- [11]
+			"Player-1403-0650D689", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535018960,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Worbank|r",
+			[51] = 1535132998,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [106]
 		{
-			"YEAHHHH", -- [1]
-			"Ookii-Draenor", -- [2]
+			"WTB all your |cffffffff|Hitem:152579::::::::120:66::::::|h[Storm Silver Ore]|h|r 40g/ore C.O.D please :)", -- [1]
+			"Idonttank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Idonttank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1018, -- [11]
-			"Player-1403-0620F309", -- [12]
+			3861, -- [11]
+			"Player-1403-065198F0", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffff7c0aOokii|r",
-			[51] = 1535018960,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfff48cbaIdonttank|r",
+			[51] = 1535133002,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [107]
 		{
-			"I just wish wasn't lazy with allied races. Giving them previous race skeletons. I mean, Vulpera are basically cute goblins", -- [1]
-			"Limstella-Draenor", -- [2]
+			"no worries :)", -- [1]
+			"Valkyrjår-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -2390,130 +2390,130 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1021, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3862, -- [11]
+			"Player-1403-053D0D6D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535018991,
+			[52] = "|cffff7c0aValkyrjår|r",
+			[51] = 1535133002,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [108]
 		{
-			"i think its smart limstella", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB ALL YOUR |cffffffff|Hitem:152505::::::::120:260::::::|h[Riverbud]|h|r|cffffffff|Hitem:152509::::::::120:260::::::|h[Siren's Pollen]|h|r 45g Each -- |cff0070dd|Hitem:160053::::::::120:260::::::|h[Battle-Scarred Augment Rune]|h|r350g Each, CoD or Trade!", -- [1]
+			"Colixy-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Colixy", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1022, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3863, -- [11]
+			"Player-1403-06BA2CCA", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019004,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Colixy|r",
+			[51] = 1535133004,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [109]
 		{
-			"rather than lazy", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTT my |cffa335ee|Hitem:159127::::::::120:262::13::::|h[Darkmoon Deck: Tides]|h|r for Fathoms: 4 and 6", -- [1]
+			"Aristor-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Aristor", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1023, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3864, -- [11]
+			"Player-1403-07001F58", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019007,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddAristor|r",
+			[51] = 1535133004,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [110]
 		{
-			"Sure it's cheap and easy. But I appreciate them less :p", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1024, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3867, -- [11]
+			"Player-1403-0653787C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535019025,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535133012,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [111]
 		{
-			"cause the previous barrier to enw races is the fact that theres like 10,000 pieces of gear or something", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159126::::::::120:71::13::::|h[Darkmoon Deck: Squalls]|h|r|cffa335ee|Hitem:159127::::::::120:71::13::::|h[Darkmoon Deck: Tides]|h|r", -- [1]
+			"Chlorophorm-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Chlorophorm", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1025, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3868, -- [11]
+			"Player-1403-06BAFD14", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019041,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dChlorophorm|r",
+			[51] = 1535133013,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [112]
 		{
-			"*new", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"<Bloodscars> A  fresh and relaxing  guild aiming for full hc clear in the future!  is in need of  Ranged dps and Healers  raid days are: Mon/Wed and Thurs 20:30 till 23:00 /w me for me for more info Socials welcome!", -- [1]
+			"Pindawhirl-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Pindawhirl", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1026, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3869, -- [11]
+			"Player-1403-06D7E9FC", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019047,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Pindawhirl|r",
+			[51] = 1535133014,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [113]
 		{
-			"and so if we dont reuse skeletons they take so much work", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"anyone else?", -- [1]
+			"Valkyrjår-Draenor", -- [2]
 			"", -- [3]
 			"", -- [4]
 			"", -- [5]
@@ -2522,302 +2522,302 @@ ElvCharacterDB = {
 			0, -- [8]
 			"", -- [9]
 			0, -- [10]
-			1027, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3870, -- [11]
+			"Player-1403-053D0D6D", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
 			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019056,
+			[52] = "|cffff7c0aValkyrjår|r",
+			[51] = 1535133017,
 			[50] = "CHAT_MSG_GUILD",
 		}, -- [114]
 		{
-			"as long as they're not ALL reused im good", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS bfa herbs 60g discount at 1k+", -- [1]
+			"Orcharger-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Orcharger", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1028, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3871, -- [11]
+			"Player-1403-0704D896", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019089,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dOrcharger|r",
+			[51] = 1535133018,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [115]
 		{
-			"tortollans, if they come, wont be reused", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB |cff1eff00|Hitem:152510::::::::120:262::::::|h[Anchor Weed]|h|r 375G TRADE OR COD", -- [1]
+			"Biggerthen-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Biggerthen", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1029, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3872, -- [11]
+			"Player-1403-070A5246", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019107,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddBiggerthen|r",
+			[51] = 1535133020,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [116]
 		{
-			"server bugged i guess", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS|cffa335ee|Hitem:163962::::::::120:270::54:3:4802:1472:4786:::|h[Decapitator of Alireza]|h|r/W ME", -- [1]
+			"Bumbiers-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Bumbiers", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1047, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3873, -- [11]
+			"Player-1403-06788EE1", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019240,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Bumbiers|r",
+			[51] = 1535133021,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [117]
 		{
-			"seems like it", -- [1]
-			"Nherz-Draenor", -- [2]
+			"WTT |cff0070dd|Hitem:153625::::::::120:70::::::|h[Six of Fathoms]|h|r or |cff0070dd|Hitem:153621::::::::120:70::::::|h[Two of Fathoms]|h|r for 7 or 8 of fathoms! /w me", -- [1]
+			"Choppanomnom-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Choppanomnom", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1048, -- [11]
-			"Player-1403-0626596E", -- [12]
+			3875, -- [11]
+			"Player-1403-06DEE6A7", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dNherz|r",
-			[51] = 1535019252,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfff48cbaChoppanomnom|r",
+			[51] = 1535133022,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [118]
 		{
-			"i think we just witnessed blizzard upgrading server", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			" WTB ALL BfA Herbs   45g COD ONLY", -- [1]
+			"Worbank-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Worbank", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1050, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3876, -- [11]
+			"Player-1403-0650D689", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019261,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cfffff468Worbank|r",
+			[51] = 1535133023,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [119]
 		{
-			"so cool how they can do it seamless", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159125::::::::110:64::13::::|h[Darkmoon Deck: Fathoms]|h|r 155k! |cffa335ee|Hitem:159128::::::::110:64::13::::|h[Darkmoon Deck: Blockades]|h|r 30k!", -- [1]
+			"Mackvi-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Mackvi", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1051, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3881, -- [11]
+			"Player-1403-071786E9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019268,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff3fc6eaMackvi|r",
+			[51] = 1535133025,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [120]
 		{
-			"yeah... wonder what they broke this time", -- [1]
-			"Nherz-Draenor", -- [2]
+			"WTS |cffa335ee|Hitem:159125::::::::110:64::13::::|h[Darkmoon Deck: Fathoms]|h|r 155k! |cffa335ee|Hitem:159128::::::::110:64::13::::|h[Darkmoon Deck: Blockades]|h|r 30k!", -- [1]
+			"Mackvi-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Mackvi", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1054, -- [11]
-			"Player-1403-0626596E", -- [12]
+			3882, -- [11]
+			"Player-1403-071786E9", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffc69b6dNherz|r",
-			[51] = 1535019291,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff3fc6eaMackvi|r",
+			[51] = 1535133025,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [121]
 		{
-			"hehe i noticed the auction house was really fast yesterda6y", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB all your |cff0070dd|Hitem:160053::::::::120:71::::::|h[Battle-Scarred Augment Rune]|h|r. 350 gold each. /w me for info or C.O.D directly to me.", -- [1]
+			"Sinnzwarr-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Sinnzwarr", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1055, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3883, -- [11]
+			"Player-1403-06E74E48", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019305,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffc69b6dSinnzwarr|r",
+			[51] = 1535133029,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [122]
 		{
-			"so i think they're just adding a lot of nodes to our cluster", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTS |cff1eff00|Hitem:1604::::::::112:262:512::1:3655:60:::|h[Chromatic Sword]|h|r ", -- [1]
+			"Beerquu-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Beerquu", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1056, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3884, -- [11]
+			"Player-1403-07111603", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019314,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddBeerquu|r",
+			[51] = 1535133030,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [123]
 		{
-			"Oh, I didnb't get dc'ed or anything. Went to warm food. Maybe now Ookii can hiss better already!", -- [1]
-			"Limstella-Draenor", -- [2]
+			"WTB |cffa335ee|Hitem:159126::::::::120:102::13::::|h[Darkmoon Deck: Squalls]|h|r 10k", -- [1]
+			"Zandalárí-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Zandalárí", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1059, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3885, -- [11]
+			"Player-1403-06E3BB0C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535019373,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffff7c0aZandalárí|r",
+			[51] = 1535133030,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [124]
 		{
-			"yeah no dc but a bunch of people went offline at once and then online instantly", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB ALL|cffffffff|Hitem:152512::::::::1:269::::::|h[Monelite Ore]|h|r25g || |cff1eff00|Hitem:152510::::::::1:269::::::|h[Anchor Weed]|h|r 350g COD ONLY", -- [1]
+			"Flaskss-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Flaskss", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1060, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3886, -- [11]
+			"Player-1403-0653787C", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019412,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff00ff96Flaskss|r",
+			[51] = 1535133032,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [125]
 		{
-			"so i think we witnessed a new node getting added to the cluster", -- [1]
-			"Ryugasm-Draenor", -- [2]
+			"WTB |cffffffff|Hitem:153251::::::::120:253::::::|h[Fresh Talbuk Meat]|h|r 8k", -- [1]
+			"Gorekid-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Gorekid", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1063, -- [11]
-			"Player-1403-070CAB04", -- [12]
+			3887, -- [11]
+			"Player-1403-059EE31A", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cff00ff96Ryugasm|r",
-			[51] = 1535019429,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cffaad372Gorekid|r",
+			[51] = 1535133032,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [126]
 		{
-			"If it fixes the vendor/ah lag i'm all for it", -- [1]
-			"Limstella-Draenor", -- [2]
+			" WTS  SEA STALK 60G EACH WHHISPER ME have a lot", -- [1]
+			"Hliso-Draenor", -- [2]
 			"", -- [3]
-			"", -- [4]
-			"", -- [5]
+			"2. Trade - City", -- [4]
+			"Hliso", -- [5]
 			"", -- [6]
-			0, -- [7]
-			0, -- [8]
-			"", -- [9]
+			2, -- [7]
+			2, -- [8]
+			"Trade - City", -- [9]
 			0, -- [10]
-			1066, -- [11]
-			"Player-1403-070404E7", -- [12]
+			3888, -- [11]
+			"Player-1403-07167D6E", -- [12]
 			0, -- [13]
 			false, -- [14]
 			false, -- [15]
 			false, -- [16]
-			false, -- [17]
-			[52] = "|cffffffffLimstella|r",
-			[51] = 1535019515,
-			[50] = "CHAT_MSG_GUILD",
+			true, -- [17]
+			[52] = "|cff0070ddHliso|r",
+			[51] = 1535133033,
+			[50] = "CHAT_MSG_CHANNEL",
 		}, -- [127]
 	},
 }

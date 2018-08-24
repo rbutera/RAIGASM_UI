@@ -49,10 +49,7 @@ local function cofunc(quest_id,secure,gp)
 		end
 		categoryID = 6
 	end
-	if not C_LFGList.CanCreateQuestGroup(quest_id) then
-		return
-	end
-	local confirm_keyword = nil --not C_LFGList.CanCreateQuestGroup(quest_id) and tostring(quest_id) or nil
+	local confirm_keyword = not C_LFGList.CanCreateQuestGroup(quest_id) and "<LFG>Q"..quest_id or nil
 	local function create()
 		local ilvl = GetAverageItemLevel() - 60
 		if ilvl < 0 then
@@ -77,7 +74,7 @@ local function cofunc(quest_id,secure,gp)
 			StaticPopup_Hide("LookingForGroup_HardwareAPIDialog")
 		end
 	end)
-	local raid --= C_LFGList.CanCreateQuestGroup(quest_id)--select(5,GetQuestTagInfo(quest_id))
+	local raid = select(5,GetQuestTagInfo(quest_id))
 	if gp == nil and IsInGroup() then
 		if secure and UnitIsGroupLeader("player", LE_PARTY_CATEGORY_HOME) then
 			gp = true

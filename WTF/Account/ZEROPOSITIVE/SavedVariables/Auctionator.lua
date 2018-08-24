@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
-	["_200000"] = 1000,
-	["_10000"] = 200,
-	["_1000000"] = 2500,
 	["_5000000"] = 4999,
-	["STARTING_DISCOUNT"] = 30,
+	["_200000"] = 1000,
+	["_1000000"] = 2500,
+	["_10000"] = 200,
 	["_500"] = 5,
 	["LOG_DE_DATA_X"] = true,
+	["STARTING_DISCOUNT"] = 30,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Flask of the Seventh Demon"] = {
@@ -1446,10 +1446,10 @@ AUCTIONATOR_TOONS = {
 		["firstSeen"] = 1471336515,
 		["firstVersion"] = "4.0.9",
 	},
-	["Yasuka"] = {
-		["firstSeen"] = 1521585032,
-		["guid"] = "Player-1301-0193F1DF",
+	["Raimondo"] = {
+		["firstSeen"] = 1522268468,
 		["firstVersion"] = "4.0.19",
+		["guid"] = "Player-1403-06E091A7",
 	},
 	["Sweetcleft"] = {
 		["firstSeen"] = 1473689766,
@@ -1467,10 +1467,10 @@ AUCTIONATOR_TOONS = {
 		["firstSeen"] = 1471337715,
 		["firstVersion"] = "4.0.9",
 	},
-	["Ryugasm"] = {
-		["firstSeen"] = 1521592148,
-		["guid"] = "Player-1403-070CAB04",
-		["firstVersion"] = "4.0.19",
+	["Imacleft"] = {
+		["firstSeen"] = 1473678322,
+		["guid"] = "Player-3687-078D7CD6",
+		["firstVersion"] = "4.0.11",
 	},
 	["Dlory"] = {
 		["firstSeen"] = 1513012877,
@@ -1480,10 +1480,10 @@ AUCTIONATOR_TOONS = {
 		["firstSeen"] = 1471337048,
 		["firstVersion"] = "4.0.9",
 	},
-	["Raimondo"] = {
-		["firstSeen"] = 1522268468,
+	["Yasuka"] = {
+		["firstSeen"] = 1521585032,
+		["guid"] = "Player-1301-0193F1DF",
 		["firstVersion"] = "4.0.19",
-		["guid"] = "Player-1403-06E091A7",
 	},
 	["Badmanting"] = {
 		["firstSeen"] = 1523136526,
@@ -1510,10 +1510,10 @@ AUCTIONATOR_TOONS = {
 		["firstSeen"] = 1471337621,
 		["firstVersion"] = "4.0.9",
 	},
-	["Imacleft"] = {
-		["firstSeen"] = 1473678322,
-		["guid"] = "Player-3687-078D7CD6",
-		["firstVersion"] = "4.0.11",
+	["Ryugasm"] = {
+		["firstSeen"] = 1521592148,
+		["guid"] = "Player-1403-070CAB04",
+		["firstVersion"] = "4.0.19",
 	},
 	["Bertybots"] = {
 		["firstSeen"] = 1473680711,

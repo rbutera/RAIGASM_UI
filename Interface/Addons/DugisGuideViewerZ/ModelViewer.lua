@@ -643,7 +643,7 @@ function MV:Initialize()
 			
 			lineEnd = 0
 			lineStart = 0
-			while (lineStart and safetyCount < 8000) do
+			while (lineStart and safetyCount < 7500) do
 				lineStart, lineEnd, objID, objPath = strfind( objFunc(), "(%d*)\t(.-)\n", lineEnd + 1 )
 				if objID and objPath then
 					self.objDB[objID] = objPath
@@ -659,7 +659,7 @@ function MV:Initialize()
 			
 			lineEnd = 0
 			lineStart = 0
-			while (lineStart and safetyCount < 48000) do
+			while (lineStart and safetyCount < 25000) do
 				lineStart, lineEnd, npcID, displayID = strfind( npcFunc(), "(%d*)\t(.-)\n", lineEnd + 1 )
 				if npcID and displayID then
 					self.npcDB[npcID] = displayID

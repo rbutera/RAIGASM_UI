@@ -5,19 +5,19 @@ return [[
 
 N Level 100 Required |N|You need to be at least level 100 before the quests will appear in your garrison| |PL|100| |AID|9491|
 N Accept Garrison Campaign Quest |N|Garrison Campaign quests appears weekly and there are 11 quest chains in total for you to complete to earn the achievement (aid:9492).<br/><br/>The order that you receive the quests is random each week and they are given by different NPCs or Objects in your Garrison.| |AID|9491|
-A Garrison Campaign: The Search for Shadow Hunter Bwu'ja |QID|34309| |N|(npc:78985) (51.0,41.6) in {Frostwall}| |NPC|78985| |Z|585| |O|
-A Garrison Campaign: Farseer's Rock |QID|32979| |N|(npc:74808) (51.0,37.4) in {Frostwall}| |NPC|74808| |Z|585| |O|
-A Garrison Campaign: The Broken Precipice |QID|36117| |N|(npc:88892) (55.0,16.0) in {Frostwall}| |NPC|88892| |Z|585| |O|
-A Garrison Campaign: Darktide Roost |QID|35876| |N|(npc:78487) (45.6,43.6) (51.6,51.6) {Frostwall}| |NPC|78487| |Z|585| |O|
-A Garrison Campaign: The Fall of Shattrath |QID|35680| |N|(npc:83858) (43.8,47.4) (53.6,52.0) (58.4,35.8) (51.8,31.0) in {Frostwall} He paths around your Garrison| |NPC|83858| |Z|585| |O|
-A Garrison Campaign: Crows In The Field |QID|34335| |N|(npc:78192) (42.2,45.8) in {Frostwall}| |NPC|78192| |Z|585| |O|
-A Garrison Campaign: Grinding Gears |QID|34034| |N|(npc:78487) (51.6,51.6) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|585| |O|
-A Garrison Campaign: Seismic Matters |QID|34026| |N|(npc:77209) (32.0,31.4)| |NPC|77209| |Z|579| |O|
-A Garrison Campaign: Deep Recon |QID|35843| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|585| |O|
-A Garrison Campaign: Awakening |QID|36136| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|585| |O|
-A Garrison Campaign: The Ring of Blood |QID|36280| |N|Accept quest from Overly Gaudy Note found in {Frostwall} (43.2,50.2)| |OBJ|234243| |Z|585| |O|
-A Garrison Campaign: The Sargerei |QID|35186| |N|(npc:83858) (43.8,47.4) (53.6,52.0) (58.4,35.8) (51.8,31.0) in {Frostwall} He paths around your Garrison| |NPC|83858| |Z|585| |O|
-A Garrison Campaign: Missing Grunt |QID|36261| |N|(npc:79740) (40.0,54.4) in {Frostwall}| |NPC|79740| |Z|585| |O|
+A Garrison Campaign: The Search for Shadow Hunter Bwu'ja |QID|34309| |N|(npc:78985) (51.0,41.6) in {Frostwall}| |NPC|78985| |Z|590| |O|
+A Garrison Campaign: Farseer's Rock |QID|32979| |N|(npc:74808) (51.0,37.4) in {Frostwall}| |NPC|74808| |Z|590| |O|
+A Garrison Campaign: The Broken Precipice |QID|36117| |N|(npc:88892) (55.0,16.0) in {Frostwall}| |NPC|88892| |Z|590| |O|
+A Garrison Campaign: Darktide Roost |QID|35876| |N|(npc:78487) (45.6,43.6) (51.6,51.6) {Frostwall}| |NPC|78487| |Z|590| |O|
+A Garrison Campaign: The Fall of Shattrath |QID|35680| |N|(npc:83858) (43.8,47.4) (53.6,52.0) (58.4,35.8) (51.8,31.0) in {Frostwall} He paths around your Garrison| |NPC|83858| |Z|590| |O|
+A Garrison Campaign: Crows In The Field |QID|34335| |N|(npc:78192) (42.2,45.8) in {Frostwall}| |NPC|78192| |Z|590| |O|
+A Garrison Campaign: Grinding Gears |QID|34034| |N|(npc:78487) (51.6,51.6) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|590| |O|
+A Garrison Campaign: Seismic Matters |QID|34026| |N|(npc:77209) (32.0,31.4)| |NPC|77209| |Z|582| |O|
+A Garrison Campaign: Deep Recon |QID|35843| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|590| |O|
+A Garrison Campaign: Awakening |QID|36136| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|590| |O|
+A Garrison Campaign: The Ring of Blood |QID|36280| |N|Accept quest from Overly Gaudy Note found in {Frostwall} (43.2,50.2)| |OBJ|234243| |Z|590| |O|
+A Garrison Campaign: The Sargerei |QID|35186| |N|(npc:83858) (43.8,47.4) (53.6,52.0) (58.4,35.8) (51.8,31.0) in {Frostwall} He paths around your Garrison| |NPC|83858| |Z|590| |O|
+A Garrison Campaign: Missing Grunt |QID|36261| |N|(npc:79740) (40.0,54.4) in {Frostwall}| |NPC|79740| |Z|590| |O|
 
 --Garrison Campaign: The Search for Shadow Hunter Bwu'ja
 R Stonefury Cliffs |QID|34309| |N|Travel to {Stonefury Cliffs} (51.8,16.8)| |Z|525| |O|
@@ -68,7 +68,7 @@ A Fury of Frostfire |QID|32985| |N|(npc:74253) (70.0,38.2)| |NPC|74253| |Z|525| 
 K (npc:72631) |QID|32985| |N|Kill (npc:72631) (70.2,38.6)| |NPC|72631| |Z|525| |PRE|32979|
 T Fury of Frostfire |QID|32985| |N|(npc:74253) (70.0,38.2)| |NPC|74253| |Z|525| |PRE|32979|
 A Ours is the Fury |QID|33427| |N|(npc:76622) (70.0,38.2)| |NPC|76622| |Z|525| |PRE|32979|
-T Ours is the Fury |QID|33427| |N|(npc:79740) (53.8,54.2) in {Frostwall}| |NPC|79740| |Z|585| |PRE|32979|
+T Ours is the Fury |QID|33427| |N|(npc:79740) (53.8,54.2) in {Frostwall}| |NPC|79740| |Z|590| |PRE|32979|
 
 --Garrison Campaign: The Broken Precipice
 T Garrison Campaign: The Broken Precipice |QID|36117| |N|(npc:83686) (39.6,24.6)| |NPC|83686| |Z|550| |O|
@@ -89,8 +89,8 @@ A Brokyo Beatdown |QID|35973| |N|(npc:76508) (40.6, 13.0)| |NPC|76508| |Z|550| |
 K (npc:83655) |QID|35973| |N|Kill (npc:83655) (41.8,14.4) and loot (item:114121)| |NPC|83655| |Z|550| |PRE|36117|
 T Brokyo Beatdown |QID|35973| |N|(npc:76508) (40.6, 13.0)| |NPC|76508| |Z|550| |PRE|36117|
 A News for Nixxie |QID|37516| |N|(npc:76508) (40.6, 13.0)| |NPC|76508| |Z|550| |PRE|36117|
-R Frostwall |QID|37516| |N|Travel to {Frostwall} (54.8,14.8)| |Z|585| |PRE|36117|
-T News for Nixxie |QID|37516| |N|(npc:88892) in {Frostwall} (54.8,14.8)| |NPC|88892| |Z|585| |PRE|36117|
+R Frostwall |QID|37516| |N|Travel to {Frostwall} (54.8,14.8)| |Z|590| |PRE|36117|
+T News for Nixxie |QID|37516| |N|(npc:88892) in {Frostwall} (54.8,14.8)| |NPC|88892| |Z|590| |PRE|36117|
 
 --Garrison Campaign: Darktide Roost
 R Darktide Roost |QID|35876| |N|Travel to {Darktide Roost} (59.2,82.2)| |Z|539| |O|
@@ -153,8 +153,8 @@ T The Descent |QID|34338| |N|(npc:78187) (54.2,56.0)| |NPC|78187| |Z|543| |PRE|3
 T Heating Up |QID|34340| |N|(npc:74125) (54.2,56.0)| |NPC|74125| |Z|543| |PRE|34335|
 T Goren's Feast |QID|34339| |N|(npc:89179) (54.2,56.0)| |NPC|89179| |Z|543| |PRE|34335|
 A The Beating Heart |QID|34341| |N|(npc:78187) (54.2,56.0)| |NPC|78187| |Z|543| |PRE|34335|
-R Frostwall |QID|34341| |N|Travel to {Frostwall}(40.8,53.8)| |Z|585| |PRE|34335|
-T The Beating Heart |QID|34341| |N|(npc:79740) (40.8,53.8) in {Frostwall}| |NPC|79740| |Z|585| |PRE|34335|
+R Frostwall |QID|34341| |N|Travel to {Frostwall}(40.8,53.8)| |Z|590| |PRE|34335|
+T The Beating Heart |QID|34341| |N|(npc:79740) (40.8,53.8) in {Frostwall}| |NPC|79740| |Z|590| |PRE|34335|
 
 --Garrison Campaign: Grinding Gears
 T Garrison Campaign: Grinding Gears |QID|34034| |N|Bring (item:109747) to (npc:77928) (80.0,56.2)| |NPC|77928| |Z|525| |O|
@@ -180,14 +180,14 @@ K (npc:77175) |QID|34039| |N|Kill (npc:77175) (86.6,45.8)| |NPC|77175| |Z|525| |
 T Wanted: Overlord Blackhammer |QID|34039| |N|(npc:78323) (88.4,49.4)| |NPC|78323| |Z|525| |PRE|34034|
 A Payment Due for Services Rendered |QID|34078| |N|(npc:78323) (88.4,49.4)| |NPC|78323| |Z|525| |PRE|34034|
 C Payment Due for Services Rendered |QID|34078| |N|Click on chicken and ride back to {Frostwall}(85.8,45.8)| |NPC|78323| |Z|525| |PRE|34034|
-T Payment Due for Services Rendered |QID|34078| |N|(npc:78466) (48.8,65.0) in {Frostwall}| |NPC|78466| |Z|585| |PRE|34034|
+T Payment Due for Services Rendered |QID|34078| |N|(npc:78466) (48.8,65.0) in {Frostwall}| |NPC|78466| |Z|590| |PRE|34034|
 
 --Garrison Campaign: Seismic Matters
-T Garrison Campaign: Seismic Matters |QID|34026| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|579| |O|
-A Groundbreaking Data |QID|34027| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|579| |PRE|34026|
-C Groundbreaking Data |QID|34027| |N|Use the (npc:77225) in your garrison (64.8,69.8)| |NPC|77225| |Z|579| |PRE|34026|
-T Groundbreaking Data |QID|34027| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|579| |PRE|34026|
-A These Look Familiar... |QID|34028| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|579| |PRE|34026|
+T Garrison Campaign: Seismic Matters |QID|34026| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|582| |O|
+A Groundbreaking Data |QID|34027| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|582| |PRE|34026|
+C Groundbreaking Data |QID|34027| |N|Use the (npc:77225) in your garrison (64.8,69.8)| |NPC|77225| |Z|582| |PRE|34026|
+T Groundbreaking Data |QID|34027| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|582| |PRE|34026|
+A These Look Familiar... |QID|34028| |N|(npc:77217) (64.8,69.8)| |NPC|77217| |Z|582| |PRE|34026|
 
 R Gorgrond |QID|34028| |N|Travel to {Gorgrond} (69.6,26.0)| |Z|543| |PRE|34026|
 C These Look Familiar... |QID|34028| |N|Find Thaelin's Workshop in Gorgrond (69.6,26.0)| |Z|543| |PRE|34026|
@@ -211,7 +211,7 @@ A And The Mole You Rode In On |QID|34033| |N|(npc:77161)| |NPC|77161| |Z|525| |P
 C And The Mole You Rode In On |QID|34033| |N|Bring (npc:77167) to (npc:77217) (86.4,48.8) and click on the Mole Machine| |NPC|77167,77217| |Z|525| |PRE|34026|
 
 R Frostwall |TID|34033| |N|Use the Mole Machine to return to {Frostwall} (86.4,48.8)| |Z|525| |PRE|34026|
-T And The Mole You Rode In On |QID|34033| |N|(npc:77167) (64.8,68.0)| |NPC|77167| |Z|579| |PRE|34026|
+T And The Mole You Rode In On |QID|34033| |N|(npc:77167) (64.8,68.0)| |NPC|77167| |Z|582| |PRE|34026|
 
 --Garrison Campaign: Deep Recon
 T Garrison Campaign: Deep Recon |QID|35843| |N|(npc:83052) (49.8,37.0)| |NPC|83052| |Z|550| |O|
@@ -225,9 +225,9 @@ N Find (npc:83534) |QID|35845.1| |N|Find (npc:83534) (43.2,34.2)| |NPC|83534| |Z
 N Find (npc:83563) |QID|35845.3| |N|Find (npc:83563) (45.8,36.6)| |NPC|83563| |Z|550| |PRE|35843|
 K (npc:83049) |QID|35842| |N|Kill (npc:83049) (45.2,36.4)| |NPC|83049| |Z|550| |PRE|35843|
 C Intercepting the Orders |QID|35846| |N|Collect (item:113492), (item:113494), and (item:113493) randomly dropped from Mok'gol NPCs (43.4,35.2) (47.0,33.4) (42.6,41.4)| |Z|550| |PRE|35843|
-T Plans of War |QID|35845| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|585| |PRE|35843|
-T Intercepting the Orders |QID|35846| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|585| |PRE|35843|
-T Putting Down the Packleader |QID|35842| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|585| |PRE|35843|
+T Plans of War |QID|35845| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|590| |PRE|35843|
+T Intercepting the Orders |QID|35846| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|590| |PRE|35843|
+T Putting Down the Packleader |QID|35842| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|590| |PRE|35843|
 
 --Garrison Campaign: Awakening
 R Gorgrond |QID|36136| |N|Travel to {Gorgrond} (41.0,43.0)| |Z|543| |O|
@@ -242,7 +242,7 @@ K (npc:85042) |QID|36342.2| |N|Kill (npc:85042) (69.0,03.4)| |NPC|85042| |Z|535|
 K (npc:85046) |QID|36342.3| |N|Kill (npc:85046) (69.6,05.8)| |NPC|85046| |Z|535| |PRE|36136|
 N Speak with (npc:78192) |QID|36342.4| |N|Meet with (npc:78192) (66.8,09.2)| |NPC|78192| |Z|535| |PRE|36136|
 N Follow (npc:78192) |QID|36342.5| |N|Follow (npc:78192) to Witness Grommash Hellscream's challenge (40.0,54.4)| |NPC|78192| |Z|535| |PRE|36136|
-T Primal Fury |QID|36342| |N|(npc:79740) (40.0,54.4) in {Frostwall}| |NPC|79740| |Z|585| |PRE|36136|
+T Primal Fury |QID|36342| |N|(npc:79740) (40.0,54.4) in {Frostwall}| |NPC|79740| |Z|590| |PRE|36136|
 
 --Garrison Campaign: The Ring of Blood
 T Garrison Campaign: The Ring of Blood |QID|36280| |N|(npc:84637) (63.0,36.0)| |NPC|84637| |Z|550| |O|
@@ -258,7 +258,7 @@ N Speak with (npc:84637) |QID|36222.1| |N|Speak with (npc:84637) (56.8,13.0) to 
 C The Champion of Blood |QID|36222| |N|Kill (npc:84791) and (npc:84800) for the Blood Championship (56.15, 13.74)| |NPC|84791,84800| |Z|550| |PRE|36280|
 T The Champion of Blood |QID|36222| |N|(npc:84784) (56.8,13.0)| |NPC|84784| |Z|550| |PRE|36280|
 A Out of the Shadows |QID|36290| |N|(npc:84784) (56.8,13.0)| |NPC|84784| |Z|550| |PRE|36280|
-T Out of the Shadows |QID|36290| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|585| |PRE|36280|s
+T Out of the Shadows |QID|36290| |N|(npc:78487) (45.6,43.6) in {Frostwall}| |NPC|78487| |Z|590| |PRE|36280|s
 
 --Garrison Campaign: The Sargerei
 R Shadowmoon Valley |QID|35186| |N|Travel to {Shadowmoon Valley} (43.6,77.2)| |Z|539| |O|
@@ -295,19 +295,19 @@ C Socrethar's Fury |QID|35195| |N|Confront (npc:82662), listen to the dialogue, 
 T Socrethar's Fury |QID|35195| |N|(npc:81530) (50.6,82.2)| |NPC|81530| |Z|539| |PRE|35186|
 A Forging Ahead |QID|35197| |N|(npc:81530) (50.6,82.2)| |NPC|81530| |Z|539| |PRE|35186|
 
-R Frostwall |QID|35197| |N|Travel to your Garrison in {Frostwall} (43.8,47.4)| |Z|585| |PRE|35186|
-T Forging Ahead |QID|35197| |N|(npc:83858) (43.8,47.4) (53.6,52.0) (58.4,35.8) (51.8,31.0) in {Frostwall} He paths around your Garrison| |NPC|83858| |Z|585| |PRE|35186|
+R Frostwall |QID|35197| |N|Travel to your Garrison in {Frostwall} (43.8,47.4)| |Z|590| |PRE|35186|
+T Forging Ahead |QID|35197| |N|(npc:83858) (43.8,47.4) (53.6,52.0) (58.4,35.8) (51.8,31.0) in {Frostwall} He paths around your Garrison| |NPC|83858| |Z|590| |PRE|35186|
 
 --Garrison Campaign: Missing Grunt
-T Garrison Campaign: Missing Grunt |QID|36261| |N|Auto Complete| |NPC|79740| |Z|585| |O|
-A Where There Is Smoke... |QID|36242| |N|Auto quest| |Z|585| |PRE|36261|
-K (npc:84738) |QID|36242.1| |N|Kill (npc:84738) (55.0,17.0)| |NPC|84738| |Z|585| |PRE|36261|
-K (npc:84741) |QID|36242.2| |N|Kill (npc:84741) (71.8,48.0)| |NPC|84741| |Z|585| |PRE|36261|
-K (npc:84742) |QID|36242.3| |N|Kill (npc:84742) (46.6,83.8)| |NPC|84742| |Z|585| |PRE|36261|
-T Where There Is Smoke... |QID|36242| |N|(npc:79740) (40.0,54.4) in {Frostwall}| |NPC|79740| |Z|585| |PRE|36261|
-A A Stolen Heart |QID|36248| |N|(npc:79740) (40.0,54.4) in {Frostwall}| |NPC|79740| |Z|585| |PRE|36261|
-K (npc:84757) |QID|36248| |N|Kill (npc:84757) (53.8,54.2) in {Frostwall}| |NPC|84757| |Z|585| |PRE|36261|
-T A Stolen Heart |QID|36248| |N|(npc:79740) (40.0,54.4) in {Frostwall}| |NPC|79740| |Z|585| |PRE|36261|
+T Garrison Campaign: Missing Grunt |QID|36261| |N|Auto Complete| |NPC|79740| |Z|590| |O|
+A Where There Is Smoke... |QID|36242| |N|Auto quest| |Z|590| |PRE|36261|
+K (npc:84738) |QID|36242.1| |N|Kill (npc:84738) (55.0,17.0)| |NPC|84738| |Z|590| |PRE|36261|
+K (npc:84741) |QID|36242.2| |N|Kill (npc:84741) (71.8,48.0)| |NPC|84741| |Z|590| |PRE|36261|
+K (npc:84742) |QID|36242.3| |N|Kill (npc:84742) (46.6,83.8)| |NPC|84742| |Z|590| |PRE|36261|
+T Where There Is Smoke... |QID|36242| |N|(npc:79740) (40.0,54.4) in {Frostwall}| |NPC|79740| |Z|590| |PRE|36261|
+A A Stolen Heart |QID|36248| |N|(npc:79740) (40.0,54.4) in {Frostwall}| |NPC|79740| |Z|590| |PRE|36261|
+K (npc:84757) |QID|36248| |N|Kill (npc:84757) (53.8,54.2) in {Frostwall}| |NPC|84757| |Z|590| |PRE|36261|
+T A Stolen Heart |QID|36248| |N|(npc:79740) (40.0,54.4) in {Frostwall}| |NPC|79740| |Z|590| |PRE|36261|
 
 N Guide Complete
 

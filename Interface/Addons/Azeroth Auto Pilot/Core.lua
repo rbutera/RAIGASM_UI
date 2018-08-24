@@ -50,6 +50,7 @@ AAP_AfkTable = {}
 AAP_CompletedQs = GetQuestsCompleted()
 AAP_img = "Interface\\AddOns\\Azeroth Auto Pilot\\img\\"
 AAP_zones = "Interface\\AddOns\\Azeroth Auto Pilot\\Zones\\"
+AAP_ActiveStuff = {}
 
 BINDING_HEADER_AzerothAutoPilot = "Azeroth Auto Pilot"
 BINDING_NAME_AAP_MACRO = "Quest Item 1"
@@ -198,11 +199,11 @@ function AAP_MacroUpdater(macroSlot,itemName,aapextra)
 		elseif (aapextra == 65274) then
 			EditMacro(macroSlot, "AAP_MACRO","INV_MISC_QUESTIONMARK","#showtooltip\n/script AAP_SaveOldSlot()\n/use "..itemName,nil,nil)
 		else
-			if (AAP_DubbleMacro and AAP_DubbleMacro[1] and AAP_DubbleMacro[2] and AAP_ActiveZone and AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialDubbleMacro"]) then
+			if (AAP_DubbleMacro and AAP_DubbleMacro[1] and AAP_DubbleMacro[2] and AAP_ActiveZone and AAP_ActiveStuff and AAP_ActiveStuff["SpecialDubbleMacro"]) then
 				EditMacro(macroSlot, "AAP_MACRO","INV_MISC_QUESTIONMARK","#showtooltip\n/use "..AAP_DubbleMacro[1].."\n/use "..AAP_DubbleMacro[2],nil,nil)
-			elseif (AAP_ActiveZone and AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialMacro"]) then
+			elseif (AAP_ActiveZone and AAP_ActiveStuff and AAP_ActiveStuff["SpecialMacro"]) then
 				EditMacro(macroSlot, "AAP_MACRO","INV_MISC_QUESTIONMARK","#showtooltip\n/target Serrik\n/use "..itemName,nil,nil)
-			elseif (AAP_ActiveZone and AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialMacro2"]) then
+			elseif (AAP_ActiveZone and AAP_ActiveStuff and AAP_ActiveStuff["SpecialMacro2"]) then
 				EditMacro(macroSlot, "AAP_MACRO","INV_MISC_QUESTIONMARK","#showtooltip\n/target Hrillik's\n/use "..itemName,nil,nil)
 			else
 				EditMacro(macroSlot, "AAP_MACRO","INV_MISC_QUESTIONMARK","#showtooltip\n/use "..itemName,nil,nil)
@@ -286,7 +287,6 @@ AAP_Name = UnitName("player")
 AAP_Realm = string.gsub(GetRealmName(), " ", "")
 AAP_ActiveQuests = {}
 AAP_ActiveZone = 0
-AAP_Quests = {}
 AAP_EventLoop = {}
 AAP_BonusObj = {
 	[50009] = 1,
@@ -567,7 +567,7 @@ function AAP_SlashCmd(AAP_index)
 end
 
 function AAP_ShowRideBuff()
---	if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["RideBuff"]) then
+--	if (AAP_Quests and AAP_ActiveStuff and AAP_ActiveStuff["RideBuff"]) then
 		local i = 1
 		local buff = UnitBuff("vehicle", i);
 		while buff do
@@ -634,29 +634,29 @@ function AAP_AFK_Timer2(AAP_AFkTimeh)
 	AAP_ArrowEventAFkTimer2:Play()
 end
 function AAP_CheckDistance()
-	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CRange"]) then
+	if (AAP_QuestList and AAP_QuestList[AAP_ActiveZone] and AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["CRange"]) then
 			AAP_ArrowFrame.Button:Show()
 			local plusnr = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]
 			local Distancenr = 0
 			local testad = true
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["NoExtraRange"]) then
+			if (AAP_ActiveStuff["NoExtraRange"]) then
 				testad = false
 			end
 			while testad do
-				local oldx = AAP_Quests[plusnr]["TT"]["x"]
-				local oldy = AAP_Quests[plusnr]["TT"]["y"]
+				local oldx = AAP_QuestList[AAP_ActiveZone][plusnr]["TT"]["x"]
+				local oldy = AAP_QuestList[AAP_ActiveZone][plusnr]["TT"]["y"]
 				plusnr = plusnr + 1
-				if (AAP_Quests[plusnr] and AAP_Quests[plusnr]["CRange"]) then
-					local newx = AAP_Quests[plusnr]["TT"]["x"]
-					local newy = AAP_Quests[plusnr]["TT"]["y"]
+				if (AAP_QuestList[AAP_ActiveZone][plusnr] and AAP_QuestList[AAP_ActiveZone][plusnr]["CRange"]) then
+					local newx = AAP_QuestList[AAP_ActiveZone][plusnr]["TT"]["x"]
+					local newy = AAP_QuestList[AAP_ActiveZone][plusnr]["TT"]["y"]
 					local deltaX, deltaY = oldx - newx, newy - oldy
 					local distance = (deltaX * deltaX + deltaY * deltaY)^0.5
 					Distancenr = Distancenr + distance
 				else
-					if (AAP_Quests[plusnr] and AAP_Quests[plusnr]["TT"]) then
-						local newx = AAP_Quests[plusnr]["TT"]["x"]
-						local newy = AAP_Quests[plusnr]["TT"]["y"]
+					if (AAP_QuestList[AAP_ActiveZone][plusnr] and AAP_QuestList[AAP_ActiveZone][plusnr]["TT"]) then
+						local newx = AAP_QuestList[AAP_ActiveZone][plusnr]["TT"]["x"]
+						local newy = AAP_QuestList[AAP_ActiveZone][plusnr]["TT"]["y"]
 						local deltaX, deltaY = oldx - newx, newy - oldy
 						local distance = (deltaX * deltaX + deltaY * deltaY)^0.5
 						Distancenr = Distancenr + distance
@@ -690,17 +690,17 @@ function AAP_InstanceTest()
 	end
 end
 function AAP_PosTest()
-	if (AAP1[AAP_Realm][AAP_Name]["Settings"]["ShowArrow"] == 0) then
+	if (AAP1 and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name]["Settings"] and AAP1[AAP_Realm][AAP_Name]["Settings"]["ShowArrow"] == 0) then
 		AAP_ArrowActive = 0
 		AAP_ArrowFrame:Hide()
 	else
-	if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AreaTriggerZ"]) then
+	if (AAP_ActiveStuff and AAP_ActiveStuff["AreaTriggerZ"]) then
 		local d_y, d_x = UnitPosition("player")
-		x = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AreaTriggerZ"]["x"]
-		y = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AreaTriggerZ"]["y"]
+		x = AAP_ActiveStuff["AreaTriggerZ"]["x"]
+		y = AAP_ActiveStuff["AreaTriggerZ"]["y"]
 		local deltaX, deltaY = d_x - x, y - d_y
 		local distance = (deltaX * deltaX + deltaY * deltaY)^0.5
-		if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["AreaTriggerZ"]["R"] > distance) then
+		if (AAP_ActiveStuff["AreaTriggerZ"]["R"] > distance) then
 			AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 			QNumberLocal = 0
 			AAP_Reset = 0
@@ -741,14 +741,14 @@ function AAP_PosTest()
 			AAP_ArrowFrame.distance:SetText(floor(distance + AAP_CheckDistance()) .. " "..AAP_Locals["Yards"])
 			AAP_ArrowActive_Distance = 0
 			if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-				if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Trigger"]) then
+				if (AAP_ActiveStuff and AAP_ActiveStuff["Trigger"]) then
 					local d_y, d_x = UnitPosition("player")
-					AAP_ArrowActive_Trigger_X = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Trigger"]["x"]
-					AAP_ArrowActive_Trigger_Y = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Trigger"]["y"]
+					AAP_ArrowActive_Trigger_X = AAP_ActiveStuff["Trigger"]["x"]
+					AAP_ArrowActive_Trigger_Y = AAP_ActiveStuff["Trigger"]["y"]
 					local deltaX, deltaY = d_x - AAP_ArrowActive_Trigger_X, AAP_ArrowActive_Trigger_Y - d_y
 					AAP_ArrowActive_Distance = (deltaX * deltaX + deltaY * deltaY)^0.5
-					AAP_ArrowActive_TrigDistance = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Range"]
-					if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["HIDEME"]) then
+					AAP_ArrowActive_TrigDistance = AAP_ActiveStuff["Range"]
+					if (AAP_ActiveStuff["HIDEME"]) then
 						AAP_ArrowActive = 0
 					end
 				end
@@ -758,7 +758,7 @@ function AAP_PosTest()
 			elseif (AAP_ArrowActive_Distance and AAP_ArrowActive_TrigDistance and AAP_ArrowActive_Distance < AAP_ArrowActive_TrigDistance) then
 				AAP_ArrowActive_X = 0
 				if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-					if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CRange"]) then
+					if (AAP_ActiveStuff and AAP_ActiveStuff["CRange"]) then
 						AAP_ArrowActive_TrigDistance = 0
 						AAP_CRange("Trigged")
 					end
@@ -806,7 +806,7 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 		AAP_UpdateILVLGear()
 	elseif (event=="UPDATE_MOUSEOVER_UNIT" and AAP_DisableAddon == 0) then
 		if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-			if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DroppableQuest"]) then
+			if (AAP_ActiveStuff and AAP_ActiveStuff["DroppableQuest"]) then
 				if (UnitGUID("mouseover") and UnitName("mouseover")) then
 					local guid, name = UnitGUID("mouseover"), UnitName("mouseover")
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid);
@@ -908,6 +908,9 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			end
 			if (not AAP1[AAP_Realm][AAP_Name]["Settings"]["Greetings"]) then
 				AAP1[AAP_Realm][AAP_Name]["Settings"]["Greetings"] = 0
+			end
+			if (not AAP1[AAP_Realm][AAP_Name]["Settings"]["Greetings3"]) then
+				AAP1[AAP_Realm][AAP_Name]["Settings"]["Greetings3"] = 0
 			end
 			if (not AAP1[AAP_Realm][AAP_Name]["Settings"]["AutoVendor"]) then
 				AAP1[AAP_Realm][AAP_Name]["Settings"]["AutoVendor"] = 0
@@ -1143,7 +1146,7 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			AAP_QuestDelayUpdTimer.anim:SetDuration(6)
 			AAP_QuestDelayUpdTimer:SetLooping("REPEAT")
 			AAP_QuestDelayUpdTimer:SetScript("OnLoop", function(self, event, ...)
-				AAP_ZoneChangeTest()
+				AAP_ChangeZone()
 				AAP_UPDQListV = AAP_UPDQListV2
 				AAP_QuestDelayUpdTimer:Stop()
 			end)
@@ -1166,7 +1169,7 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 						end
 					end
 				end
-				if (not AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["BuyMerchant"]) then
+				if (not AAP_ActiveStuff["BuyMerchant"]) then
 					AAP_QuestBuyUpdTimer:Stop()
 				end
 			end)
@@ -1231,7 +1234,11 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 			AAP_QuestAcceptTimer.anim:SetDuration(0.01)
 			AAP_QuestAcceptTimer:SetLooping("REPEAT")
 			AAP_QuestAcceptTimer:SetScript("OnLoop", function(self, event, ...)
-				AcceptQuest()
+				if (QuestFrameAcceptButton and QuestFrameAcceptButton:IsShown()) then
+					QuestFrameAcceptButton:Click()
+				else
+					AcceptQuest()
+				end
 				AAP_QuestAcceptTimer:Stop()
 			end)
 			AAP_QuestAcceptTimer2 = AAP_CoreEventFrame:CreateAnimationGroup()
@@ -1315,7 +1322,7 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 					end
 					AAP_AfkFrame.Fontstring:SetText("AFK: " .. aap_printtext)
 					if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-						if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialETAHide"]) then
+						if (AAP_ActiveStuff and AAP_ActiveStuff["SpecialETAHide"]) then
 							AAP_AfkFrame:Hide()
 						else
 							AAP_AfkFrame:Show()
@@ -1371,14 +1378,14 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 				AAP_CreateMacro()
 				AAP_UpdateILVLGear()
 				AAP_ArrowEventLoadinT:Stop()
-				AAP_ZoneChangeTest()
+				AAP_ChangeZone()
 			end)
 			AAP_ArrowEventLoadinT:Play()
 
 			AAP_UpdateILVLGear()
 			AAP_MakeGroupList()
 			AAP_UPDQListV = AAP_UPDQListV2
-			AAP_ZoneChangeTest()
+			AAP_ChangeZone()
 			AAP_Reset = 0
 			AAP_QuestDelayUpdTimer:Play()
 			LoadOptionsFrame()
@@ -1410,7 +1417,6 @@ AAP_CoreEventFrame:SetScript("OnEvent", function(self, event, ...)
 		if lastActiveQuest > numActiveQuests then
 			lastActiveQuest = 1;
 		end
-if (AAP_Test_Var ~= 1) then
 		if (AAP1[AAP_Realm][AAP_Name]["Settings"]["AutoHandIn"] == 1 and not IsControlKeyDown()) then
 			local CLi
 			for CLi = 1, numActiveQuests do
@@ -1421,7 +1427,6 @@ if (AAP_Test_Var ~= 1) then
 				end
 			end
 		end
-end
 	elseif (event=="GOSSIP_SHOW" and AAP_DisableAddon == 0) then
 		local arg1, arg2, arg3, arg4 = ...;
 		local ActiveQuests = {GetGossipActiveQuests()}
@@ -1429,7 +1434,6 @@ end
 		local CLi
 		local NumAvailableQuests = GetNumGossipAvailableQuests()
 		local AvailableQuests = {GetGossipAvailableQuests()}
-if (AAP_Test_Var ~= 1) then
 		if (ActiveQuests and AAP1[AAP_Realm][AAP_Name]["Settings"]["AutoHandIn"] == 1 and not IsControlKeyDown()) then
 			for CLi = 1, ActiveQNr do
 				if (ActiveQuests[(((CLi-1) * 6)+4)] == true) then
@@ -1437,9 +1441,8 @@ if (AAP_Test_Var ~= 1) then
 				end
 			end
 		end
-end
 		if (NumAvailableQuests > 0 and AAP1[AAP_Realm][AAP_Name]["Settings"]["AutoAccept"] == 1 and not IsControlKeyDown()) then
-			if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SpecialPickupOrder"]) then
+			if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] and AAP_ActiveStuff and AAP_ActiveStuff["SpecialPickupOrder"]) then
 				SelectGossipAvailableQuest(2)
 			else
 				SelectGossipAvailableQuest(1)
@@ -1453,9 +1456,7 @@ end
 	end
 	if (event=="QUEST_PROGRESS" and AAP_DisableAddon == 0) then
 		if (AAP1[AAP_Realm][AAP_Name]["Settings"]["AutoHandIn"] == 1 and not IsControlKeyDown()) then
-if (AAP_Test_Var ~= 1) then
 			AAP_QuestAcceptTimer4:Play()
-end
 		end
 	end
 	if (event=="MERCHANT_SHOW" and AAP_DisableAddon == 0) then

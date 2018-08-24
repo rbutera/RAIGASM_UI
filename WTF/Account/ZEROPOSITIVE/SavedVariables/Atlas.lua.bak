@@ -3,12 +3,12 @@ AtlasDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Default",
 		["Yasuka - Outland"] = "Default",
-		["Raimondo - Draenor"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
 		["Ryugasm - Draenor"] = "Default",
 		["Ryugasm - Outland"] = "Default",
 		["Raigasm - Outland"] = "Default",
 		["Badmanting - Draenor"] = "Default",
-		["Norfweezy - Draenor"] = "Default",
+		["Raimondo - Draenor"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -22,7 +22,7 @@ AtlasDB = {
 				},
 			},
 			["minimap"] = {
-				["minimapPos"] = 43.8085534225836,
+				["minimapPos"] = 23.977721271212,
 			},
 		},
 	},

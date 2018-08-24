@@ -1,6 +1,6 @@
 local Guide = DugisGuideViewer:RegisterModule("DugisGuide_Prof_Alliance_En_Mining_WoD")
 function Guide:Initialize()
-	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Mining 1-700", nil, "Alliance", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Mining]], nil, 700) and UnitLevel([[player]])>=90|", function()
+	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Warlords Leveling|r", "Warlords Mining 1-100", nil, "Alliance", nil, "P", "|SG|DugisGuideViewer.SuggestProfessionGuidePredicate([[Mining]], nil, 700) and UnitLevel([[player]])>=90|", function()
 return [[
 
 N Read First |N|You must have a character level 90+ and Warlords of Draenor is required. <br/><br/>Leveling is available in Draenor from 1-700. <br/><br/>Tick this step.|
@@ -16,7 +16,7 @@ N 1-700 (map:535) |MI| |LOOP|  |N|(item:109119), (item:109118) (31.2,58.8)(39.3,
 N Guide Complete
 
 ]]
-end, {description = [[This guide covers how to level up the Mining profession from 1-700]]})	
+end, {description = [[This guide covers how to level up the Mining profession from 1-100]]})	
 	end
 	function Guide:Unload()
 	end

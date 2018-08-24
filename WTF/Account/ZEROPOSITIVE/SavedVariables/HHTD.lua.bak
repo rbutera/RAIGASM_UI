@@ -17,13 +17,9 @@ HHTD_SavedVariables = {
 			["settingsMigrated"] = false,
 		},
 	},
-	["namespaces"] = {
-		["Announcer"] = {
-		},
-		["CM"] = {
-		},
-		["NPH"] = {
-		},
+	["global"] = {
+		["settingsMigrated"] = false,
+		["oldNameEnableState"] = 0,
 	},
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Raigasm - Draenor",
@@ -32,8 +28,12 @@ HHTD_SavedVariables = {
 		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
 	},
-	["global"] = {
-		["settingsMigrated"] = false,
-		["oldNameEnableState"] = 0,
+	["namespaces"] = {
+		["Announcer"] = {
+		},
+		["CM"] = {
+		},
+		["NPH"] = {
+		},
 	},
 }

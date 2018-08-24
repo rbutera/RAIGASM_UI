@@ -134,7 +134,17 @@ function NOP:ItemLoad() -- load template item tooltips
               local i = pattern + nCB
               local tooltipText = TOOLTIP_ITEM .. "TextLeft" .. i
               local text = _G[tooltipText].GetText and _G[tooltipText]:GetText() or "none"
-              if text and (text ~= "none") and (text ~= "") then T_RECIPES_FIND[itemID] = {c,text,zone,map,faction} else print("ItemLoad:T_RECIPES_FIND pattern empty string!",itemID) end
+              if text and (text ~= "none") and (text ~= "") and not string.find(text,'100') then -- bandaid for incomplete tooltip
+                T_RECIPES_FIND[itemID] = {c,text,zone,map,faction}
+              else
+                if VALIDATE then
+                  local retry = tItemRetry[itemID] or 0
+                  retry = retry + 1
+                  tItemRetry[itemID] = retry
+                  if retry > 1 then print("ItemLoad:SetItemByID()",itemID,"Line:",i,"Contains:",text,retry) end
+                end
+                itemRetry = itemID
+              end
             else
               if VALIDATE then
                 local retry = tItemRetry[itemID] or 0

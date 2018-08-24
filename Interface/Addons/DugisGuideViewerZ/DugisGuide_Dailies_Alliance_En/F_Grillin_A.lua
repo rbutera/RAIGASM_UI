@@ -3,8 +3,8 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Followers|r ", "Follower Glirin", nil, "Alliance", nil, "D", nil, function()
 return [[
 
-R Lunarfall |QID|35556| |N|Travel to {Lunarfall} (42.36, 44.96)| |Z|579|
-A The Secrets of Gorgrond |QID|35556| |N|Command Board in {Lunarfall} (42.36, 44.96)| |Z|579|
+R Lunarfall |QID|35556| |N|Travel to {Lunarfall} (42.36, 44.96)| |Z|582|
+A The Secrets of Gorgrond |QID|35556| |N|Command Board in {Lunarfall} (42.36, 44.96)| |Z|582|
 
 R Wildwood Wash |TID|35556| |N|Speak to (npc:81103) and fly to {Wildwood Wash}, {Gorgrond} (64.00, 57.21)| |NPC|81103| |V| |Z|543|
 T The Secrets of Gorgrond |QID|35556| |N|(npc:80978) in {Wildwood Wash} (64.00, 57.21)| |NPC|80978| |Z|543|

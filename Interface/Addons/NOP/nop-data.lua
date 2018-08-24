@@ -52,11 +52,12 @@ NOP.T_SPELL_BY_NAME = { -- [itemID] = {{count_to_use,priority},{"sub-Zone",...},
   [114171] = {{1,PRI_OPEN},nil,nil}, -- Crate Restored Artifact, common for all
   [113271] = {{1,PRI_OPEN},nil,nil}, -- Convert to garrison resources, Giant Kaliri Egg, Gain xxx Garrison Resources, common for all
   [128316] = {{1,PRI_OPEN},nil,nil}, -- Convert to Oil, Bulging Barrel of Oil,
-  [140401] = {{1,PRI_OPEN},nil,nil}, -- 75 Ancient Mana, Blue Or'ligai Egg
-  [140236] = {{1,PRI_OPEN},nil,nil}, -- 100 Ancient Mana, 
   [143733] = {{1,PRI_OPEN},nil,nil}, -- Ancient Mana Shards
   [143734] = {{1,PRI_OPEN},nil,nil}, -- Ancient Mana Crystal Cluster
   [141655] = {{1,PRI_OPEN},nil,nil}, -- Shimmering Ancient Mana Cluster
+  [137010] = {{1,PRI_OPEN},nil,nil}, --  50 Ancient Mana
+  [140401] = {{1,PRI_OPEN},nil,nil}, --  75 Ancient Mana
+  [140236] = {{1,PRI_OPEN},nil,nil}, -- 100 Ancient Mana 
   [140240] = {{1,PRI_OPEN},nil,nil}, -- 150 Ancient Mana
   [140242] = {{1,PRI_OPEN},nil,nil}, -- 200 Ancient Mana
   [140239] = {{1,PRI_OPEN},nil,nil}, -- 300 Ancient Mana

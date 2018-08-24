@@ -25,6 +25,31 @@ AtlasMajorCities_Comment = {};
 AtlasMajorCities_Adds = nil;
 AtlasMajorCities_Input = nil;
 
+-- uiMapID to MapName table
+local AMC_uiMapID_to_MapName = {
+	[622] = "AshranAllianceFactionHub",
+	[624] = "AshranHordeFactionHub",
+	[125] = "Dalaran1_",
+	[126] = "Dalaran2_",
+	[627] = "Dalaran7010_",
+	[628] = "Dalaran7011_",
+	[629] = "Dalaran7010_",
+	[89] = "Darnassus",
+	[87] = "Ironforge",
+	[85] = "Orgrimmar1_",
+	[86] = "Orgrimmar2_",
+	[111] = "ShattrathCity",
+	[393] = "ShrineofSevenStars3_",
+	[394] = "ShrineofSevenStars4_",
+	[391] = "ShrineofTwoMoons1_",
+	[392] = "ShrineofTwoMoons2_",
+	[110] = "SilvermoonCity",
+	[84] = "StormwindCity",
+	[103] = "TheExodar",
+	[83] = "ThunderBluff",
+	[998] = "Undercity",
+}
+
 -- assign internal city names to image keys (there a empty image with this name is needed in subfolder images)
 local AMC_myDataKeys = {
 	["TheExodar"]                = "EX",
@@ -150,7 +175,7 @@ local AMC_AtlasFrameDropDownType_Initialize_Orig = nil;
 local AMC_AtlasFrameDropDownType_OnClick_Orig = nil;
 
 -- Atlas main menu index of AMC
-local AMC_AtlasMainMenuIndex = 1;
+local AMC_AtlasMainMenuIndex = 0;
 
 -- texture of the player arrow
 local AMC_PlayerArrow_Frame;
@@ -252,9 +277,13 @@ end
 
 -- get the actual map name
 local function FAMC_GetActualMapName()
-	local oMapID = GetCurrentMapAreaID();
-	SetMapToCurrentZone();
+--	local oMapID = GetCurrentMapAreaID();
+--	SetMapToCurrentZone();
+--	local oMapID = WorldMapFrame:GetMapID(); -- user might have other map opened
+	local uiMapID = C_Map.GetBestMapForUnit("player");
+--	if (uiMapID) then WorldMapFrame:SetMapID(uiMapID); end
 
+--[[
 	local MapName, _, _, isMicro, MicroMap = GetMapInfo();
 	if ( isMicro ) then MapName = MicroMap; end
 	dungeonLevel = GetCurrentMapDungeonLevel();
@@ -264,13 +293,15 @@ local function FAMC_GetActualMapName()
 		if ( MapName == "Dalaran" ) then MapName = "Dalaran1_"; end
 		if ( MapName == "Orgrimmar" ) then MapName = "Orgrimmar1_"; end
 	end
-
+]]
+	local MapName = AMC_uiMapID_to_MapName[uiMapID]
 	-- check if the city is included in the AMC city list
 	if ( AMC_Pcity and not AMC_Pcity[MapName] and not AMC_DBcity[MapName] ) then MapName = nil;
 	elseif ( not AMC_Pcity and not AMC_DBcity[MapName] ) then MapName = nil; end
 
 	-- arith: fixed the issue that worldmap was always forced to current-map when Atlas is opened.
-	if (oMapID) then SetMapByID(oMapID); end
+	--if (oMapID) then SetMapByID(oMapID); end
+--	if (oMapID) then WorldMapFrame:SetMapID(oMapID); end
 	
 	return MapName;
 end
@@ -324,12 +355,12 @@ end
 
 -- create the player arrow frame
 local function FAMC_InitPlayerArrow()
-	AMC_PlayerArrow_Frame = CreateFrame("FRAME", "AMC_PlayerArrow_Frame",      AtlasFrame);
+	AMC_PlayerArrow_Frame = CreateFrame("FRAME", "AMC_PlayerArrow_Frame", AtlasFrame);
 	AMC_PlayerArrow_Tex = AMC_PlayerArrow_Frame:CreateTexture("AMC_PlayerArrow_Tex", "ARTWORK");
 	AMC_PlayerArrow_Tex:SetWidth(42);
 	AMC_PlayerArrow_Tex:SetHeight(42);
 	AMC_PlayerArrow_Tex:SetPoint("CENTER", AMC_PlayerArrow_Frame, "CENTER", 0, 0);
-	AMC_PlayerArrow_Tex:SetTexture("Interface\\Minimap\\MinimapArrow");
+	AMC_PlayerArrow_Tex:SetTexture("Interface\\MINIMAP\\MinimapArrow");
 	AMC_PlayerArrow_Frame:SetWidth(42);
 	AMC_PlayerArrow_Frame:SetHeight(42);
 	AMC_PlayerArrow_Frame:ClearAllPoints();
@@ -343,7 +374,7 @@ local function FAMC_InitPlayerArrow()
 	AMC_PlayerArrow_TexSmall:SetWidth(42);
 	AMC_PlayerArrow_TexSmall:SetHeight(42);
 	AMC_PlayerArrow_TexSmall:SetPoint("CENTER", AMC_PlayerArrow_FrameSmall, "CENTER", 0, 0);
-	AMC_PlayerArrow_TexSmall:SetTexture("Interface\\Minimap\\MinimapArrow");
+	AMC_PlayerArrow_TexSmall:SetTexture("Interface\\MINIMAP\\MinimapArrow");
 	AMC_PlayerArrow_FrameSmall:SetWidth(42);
 	AMC_PlayerArrow_FrameSmall:SetHeight(42);
 	AMC_PlayerArrow_FrameSmall:ClearAllPoints();
@@ -472,7 +503,7 @@ end
 
 -- set the player arrow on the Atlas map
 local function FAMC_SetPlayerArrow(small)
-	if ( AMC_AtlasMainMenuIndex == 1 ) then return; end
+	if ( AMC_AtlasMainMenuIndex == 0 ) then return; end
 	if ( not AtlasFrame:IsShown() and not AtlasFrameSmall:IsShown() ) then return; end
 
 	local Pshow = true;
@@ -483,7 +514,17 @@ local function FAMC_SetPlayerArrow(small)
 
 	if ( Pshow ) then
 		-- set player arrow to its map position
-		local posX, posY = GetPlayerMapPosition("player");
+		local uiMapID = C_Map.GetBestMapForUnit("player");
+		local posXY, posX, posY;
+		if (uiMapID) then 
+			posXY = C_Map.GetPlayerMapPosition(uiMapID, "player") or nil;
+		end
+		if (posXY) then
+			posX, posY = posXY:GetXY();
+		else
+			posX, posY = 0, 0;
+		end
+
 		AMC_PlayerArrow_Frame:ClearAllPoints();
 		AMC_PlayerArrow_FrameSmall:ClearAllPoints();
 		if ( small ) then

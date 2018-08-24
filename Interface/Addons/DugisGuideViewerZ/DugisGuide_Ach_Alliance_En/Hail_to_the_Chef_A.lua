@@ -7,7 +7,7 @@ N Please Read! |N|This guide assumes you are at least level 75. <br/><br/>This i
 
 N Fishing |N|Grand Master Fishing is not required to complete this Achievement, however it is highly recommended that you have it to do the Daily fishing quest in {Shattrath} and {Dalaran} for (item:34834).|
 
-N Grand Master Cooking |N|You must have Grand Master Cooking first and foremost. Switch to the (guide:"Warlords Cooking 1-700") profession guide and obtain Grand Master in cooking.| |AID|1563| |AC|1|
+N Grand Master Cooking |N|You must have Grand Master Cooking first and foremost. Switch to the (guide:"Warlords Cooking 1-100") profession guide and obtain Grand Master in cooking.| |AID|1563| |AC|1|
 
 N Cooking Dailies |N|Start doing the Daily cooking quests in both {Dalaran} and {Shattrath}. For the Shattrath dailies you are looking for 4 recipes. Take the Crate of Meat until you get (item:33875) and (item:33875). Then switch to the Barrel of fish for (item:33870) and (item:33869). <br/>(item:33871) and (item:33925) have a chance to drop from all cooking dailies, so continue dailies in Shattrath until you have both of these. Tick this step.|
 

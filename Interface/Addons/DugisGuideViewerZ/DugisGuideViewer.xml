@@ -735,7 +735,7 @@
         </Scripts>
     </Frame>
     
-	<Button name="DugisOnOffButton" parent = "UIParent"  movable="true" enableMouse='true' frameStrata="HIGH"  frameLevel = "1" >
+	<Button name="DugisOnOffButton" parent = "UIParent"  movable="true" enableMouse='true' frameStrata="MEDIUM"  frameLevel = "3" >
 		<Size x="32" y="32"/>
 		<NormalTexture file ="Interface\AddOns\DugisGuideViewerZ\Artwork\iconbutton.tga"/>
 		<HighlightTexture alphaMode ="ADD" file ="Interface\Minimap\UI-Minimap-ZoomButton-Highlight"/>
@@ -1651,128 +1651,6 @@
 					</Layer>
 				</Layers>
 				<Frames>
-                    <Frame  parentKey="MacrosWrapper"  setAllPoints="true" visible="true">
-                        <Frames>
-                            <Frame  parentKey="MacroInfo"  setAllPoints="true" visible="true">
-                                <Layers>
-                                    <Layer level="BACKGROUND" visible="true">
-                                        <!--  <Texture parentKey="Background" setAllPoints="true" >
-                                          <Color a="0.0" r="1" g="1" b="0" />
-                                        </Texture>-->
-
-                                        <Texture  parentKey="CategoryIcon"  file ="Interface/Icons/INV_Misc_Orb_05" >
-                                            <Size x="32" y="32" />
-                                            <Anchors>
-                                                <Anchor point="TOPLEFT" x="12" y="-49"/>
-                                            </Anchors>
-                                            <TexCoords left="0" right="1" top="0" bottom="1"/>
-                                        </Texture>
-                                        <FontString parentKey="CategoryName"  inherits="QuestFont_Super_Huge" justifyH="LEFT"  visible="true" text="Macros">
-                                            <Size x="289"/>
-                                            <Anchors>
-                                                <Anchor relativeKey="$parent.CategoryIcon" point="TOPLEFT" x="40" y="-5"/>
-                                            </Anchors>
-                                        </FontString>
-                                    </Layer>
-                                </Layers>
-                             </Frame>
-                            <Button parentKey="BackToCategoriesButton" frameLevel="1000" hidden="true">
-                                <Size x="32" y="32"/>
-                                <Anchors>
-                                    <Anchor relativeKey="$parent.MacroInfo.CategoryIcon" point="TOPLEFT" x="-40" y="-2"/>
-                                </Anchors>
-                                <Scripts>
-                                    <OnClick>
-                                        self:Hide()
-                                        DugisGuideViewer.Modules.Guides.macrolist.frame:Hide()
-                                        macrocategorieswrapper:Show()
-
-                                        local MacroInfo = self:GetParent().MacroInfo
-
-                                        MacroInfo.CategoryIcon:SetTexture("Interface/Icons/INV_Misc_Orb_05")
-                                        MacroInfo.CategoryIcon:ClearAllPoints()
-                                        MacroInfo.CategoryIcon:SetPoint("TOPLEFT", 12, -49)
-                                        MacroInfo.CategoryName:SetText("Macros")
-
-                                        DugisGuideViewer.Modules.Guides.macrolist.scrollBar:Hide()
-
-                                        self:GetParent().MacroEditor:Hide()
-
-                                        DugisGuideViewer.Modules.Guides.textEditor.frame:Hide()
-
-                                        --MacroEditor.MacroInfo.:GetParent()
-                                    </OnClick>
-                                </Scripts>
-                                <NormalTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Up"/>
-                                <PushedTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Down"/>
-                                <DisabledTexture file="Interface\Buttons\UI-SpellbookIcon-PrevPage-Disabled"/>
-                                <HighlightTexture file="Interface\Buttons\UI-Common-MouseHilight" alphaMode="ADD"/>
-                            </Button>
-                            <Frame  parentKey="MacroEditor"  setAllPoints="true" visible="true">
-                                <Layers>
-                                    <Layer level="BACKGROUND" visible="true">
-                                        <!--  <Texture parentKey="Background" setAllPoints="true" >
-                                          <Color a="0.0" r="1" g="1" b="0" />
-                                        </Texture>-->
-                                        <FontString parentKey="MacroName"  maxLines="1"  wordwrap="true" wraponspaces="true"  inherits="GameFontNormal" justifyH="LEFT"  visible="true" text="Macro name">
-                                            <Size x="289"/>
-                                            <Anchors>
-                                                <Anchor point="TOPLEFT" x="384" y="-51"/>
-                                            </Anchors>
-                                        </FontString>
-
-                                        <FontString parentKey="MacroDescription" maxLines="2"  wordwrap="true" wraponspaces="true"  inherits="GameFontNormal" justifyH="LEFT"  visible="true" text="Macro description">
-                                            <Size x="289"/>
-                                            <Anchors>
-                                                <Anchor point="TOPLEFT" x="384" y="-71"/>
-                                            </Anchors>
-                                            <Color r="1" g="1" b="1"/>
-                                        </FontString>
-
-                                        <FontString wordwrap="true" wraponspaces="true"  inherits="GameFontNormal" justifyH="LEFT"  visible="true" text="Macro code:">
-                                            <Size x="289"/>
-                                            <Anchors>
-                                                <Anchor point="TOPLEFT" x="384" y="-111"/>
-                                            </Anchors>
-                                        </FontString>
-                                        <FontString name="MacroCode" maxLines="13" parentKey="MacroCode"  wordwrap="true" wraponspaces="true"  inherits="GameFontNormal" justifyH="LEFT"  visible="true" text="Macro code /run...; end">
-                                            <Size x="289"/>
-                                            <Anchors>
-                                                <Anchor point="TOPLEFT" x="384" y="-131"/>
-                                            </Anchors>
-                                            <Color r="1" g="1" b="1"/>
-                                        </FontString>
-                                    </Layer>
-                                </Layers>
-                                <Frames>
-                                    <Button parentKey = "AddToSlotButton" inherits="UIPanelButtonTemplate" text = "Add this macro to slot" hidden="false">
-                                         <Size>
-                                            <AbsDimension x="155" y="23"/>
-                                        </Size>
-                                        <Anchors>
-                                            <Anchor point="BOTTOMLEFT" relativeTo="MacroCode">
-                                                <Offset>
-                                                    <AbsDimension x="0" y="-40"/>
-                                                </Offset>
-                                            </Anchor>
-                                        </Anchors>
-                                    </Button>
-                                    <Button parentKey = "ResetToDefault" inherits="UIPanelButtonTemplate" text = "Reset to default" hidden="false">
-                                         <Size>
-                                            <AbsDimension x="155" y="23"/>
-                                        </Size>
-                                        <Anchors>
-                                            <Anchor point="BOTTOMLEFT" relativeTo="MacroCode">
-                                                <Offset>
-                                                    <AbsDimension x="160" y="-40"/>
-                                                </Offset>
-                                            </Anchor>
-                                        </Anchors>
-                                    </Button>
-                                </Frames>
-                            </Frame>
-                        </Frames>
-                    </Frame>
 					<Frame name="DGVHomeFrame" >
 						<Size x="350" y="356"/>
 						<Frames>
@@ -2296,11 +2174,10 @@
 			<OnDragStop> self:StopMovingOrSizing(); </OnDragStop>
 		</Scripts>
 	</Frame>
-	
 	<Frame name = "DGVCurrentGuideFrame">
 		<Size x="400" y="10000"/>
 	</Frame>
-
+	
 	<Button name="DugisSecureQuestButtonTemplate" inherits="SecureActionButtonTemplate" virtual='true'>
 		<Size x="26" y="26"/>
         <Layers>
@@ -2361,7 +2238,7 @@
         <HighlightTexture file="Interface\Buttons\ButtonHilight-Square" alphaMode="ADD"/>
 	</Button>
 
-    <Button name="DugisTargetButtonTemplate" inherits="SecureActionButtonTemplate" virtual='true' frameStrata="HIGH"  frameLevel = "2" >
+    <Button name="DugisTargetButtonTemplate" inherits="SecureActionButtonTemplate" virtual='true' frameStrata="MEDIUM"  frameLevel = "3" >
         <Layers>
             <Layer level="ARTWORK">
                 <FontString parentKey="HotKey" inherits="NumberFontNormalSmallGray" justifyH="LEFT" text="">
@@ -2374,7 +2251,7 @@
         </Layers>
 	</Button>
 
-	<Button name="DugisSecureQuestButton" inherits="DugisSecureQuestButtonTemplate" parent="UIParent"  frameStrata="HIGH"  frameLevel = "3">
+	<Button name="DugisSecureQuestButton" inherits="DugisSecureQuestButtonTemplate" parent="UIParent"  frameStrata="MEDIUM"  frameLevel = "3">
 	</Button>
 
     <Script file="TutorialFrameDugis.lua"/>

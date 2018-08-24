@@ -1,7 +1,7 @@
 ## Interface: 80000
 ## Author: cqwrteur
 ## Title: LookingForGroup Premade Groups Filter
-## Version: r22
+## Version: r26
 ## Dependencies: LookingForGroup_Options
 ## X-LFG-OPT: 1
 ## LoadOnDemand: 1

@@ -31,10 +31,10 @@ function AAP_GliderFunc()
 end
 function AAP_CheckQPFiller(AAP_T_questID, AAP_T_Step)
 	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Fillers"]) then
-			for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Fillers"]) do
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Fillers"]) then
+			for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Fillers"]) do
 				if (tonumber(AAP_T_questID) == tonumber(AAP_index)) then
-					for AAP_index2,AAP_value2 in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Fillers"][AAP_index]) do
+					for AAP_index2,AAP_value2 in pairs(AAP_ActiveStuff["Fillers"][AAP_index]) do
 						if (tonumber(AAP_T_Step) == tonumber(AAP_value2)) then
 							return 1
 						end
@@ -76,7 +76,7 @@ end
 function AAP_ReturnDoneNr(AAP_t_dnr)
 	local aap_t1 = 0
 	local aap_t2 = 0
-	for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Done"]) do
+	for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Done"]) do
 		aap_t1 = aap_t1 + 1
 		if (AAP_CompletedQs[AAP_value] == true) then
 			aap_t2 = aap_t2 + 1
@@ -90,30 +90,30 @@ function AAP_CheckCRangeText()
 	local i = 1
 	while i  <= 15 do
 		derp = derp + 1
-		if (AAP_Quests[derp] and AAP_Quests[derp]["FlightPath"]) then
+		if (AAP_QuestList[AAP_ActiveZone][derp] and AAP_QuestList[AAP_ActiveZone][derp]["FlightPath"]) then
 			local Derp2 = AAP_Locals["Get Flight Point"]
 			return Derp2
-		elseif (AAP_Quests[derp] and AAP_Quests[derp]["UseFlightPath"]) then
-			if (AAP_Quests[derp] and AAP_Quests[derp]["Boat"]) then
+		elseif (AAP_QuestList[AAP_ActiveZone][derp] and AAP_QuestList[AAP_ActiveZone][derp]["UseFlightPath"]) then
+			if (AAP_QuestList[AAP_ActiveZone][derp] and AAP_QuestList[AAP_ActiveZone][derp]["Boat"]) then
 				local Derp2 = AAP_Locals["Boat to"]
 				return Derp2
 			else
 				local Derp2 = AAP_Locals["Fly to"]
 				return Derp2
 			end
-		elseif (AAP_Quests[derp] and AAP_Quests[derp]["PickUp"]) then
+		elseif (AAP_QuestList[AAP_ActiveZone][derp] and AAP_QuestList[AAP_ActiveZone][derp]["PickUp"]) then
 			local Derp2 = AAP_Locals["Accept Quest"]
 			return Derp2
-		elseif (AAP_Quests[derp] and AAP_Quests[derp]["Done"]) then
+		elseif (AAP_QuestList[AAP_ActiveZone][derp] and AAP_QuestList[AAP_ActiveZone][derp]["Done"]) then
 			local Derp2 = AAP_Locals["Turn in Quest"]
 			return Derp2
-		elseif (AAP_Quests[derp] and AAP_Quests[derp]["Qpart"]) then
+		elseif (AAP_QuestList[AAP_ActiveZone][derp] and AAP_QuestList[AAP_ActiveZone][derp]["Qpart"]) then
 			local Derp2 = AAP_Locals["Complete Quest"]
 			return Derp2
-		elseif (AAP_Quests[derp] and AAP_Quests[derp]["SetHS"]) then
+		elseif (AAP_QuestList[AAP_ActiveZone][derp] and AAP_QuestList[AAP_ActiveZone][derp]["SetHS"]) then
 			local Derp2 = AAP_Locals["Set Hearthstone"]
 			return Derp2
-		elseif (AAP_Quests[derp] and AAP_Quests[derp]["QpartPart"]) then
+		elseif (AAP_QuestList[AAP_ActiveZone][derp] and AAP_QuestList[AAP_ActiveZone][derp]["QpartPart"]) then
 			local Derp2 = AAP_Locals["Complete Quest"]
 			return Derp2
 		end
@@ -125,10 +125,10 @@ function AAP_CheckCRangeText()
 end
 function AAP_CheckQP(AAP_T_questID, AAP_T_Step)
 	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"]) then
-			for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"]) do
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Qpart"]) then
+			for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Qpart"]) do
 				if (tonumber(AAP_T_questID) == tonumber(AAP_index)) then
-					for AAP_index2,AAP_value2 in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"][AAP_index]) do
+					for AAP_index2,AAP_value2 in pairs(AAP_ActiveStuff["Qpart"][AAP_index]) do
 						if (tonumber(AAP_T_Step) == tonumber(AAP_index2)) then
 							return 1
 						end
@@ -136,10 +136,10 @@ function AAP_CheckQP(AAP_T_questID, AAP_T_Step)
 				end
 			end
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QpartPart"]) then
-			for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QpartPart"]) do
+		if (AAP_ActiveStuff and AAP_ActiveStuff["QpartPart"]) then
+			for AAP_index,AAP_value in pairs(AAP_ActiveStuff["QpartPart"]) do
 				if (tonumber(AAP_T_questID) == tonumber(AAP_index)) then
-					for AAP_index2,AAP_value2 in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["QpartPart"][AAP_index]) do
+					for AAP_index2,AAP_value2 in pairs(AAP_ActiveStuff["QpartPart"][AAP_index]) do
 						if (tonumber(AAP_T_Step) == tonumber(AAP_index2)) then
 							return 1
 						end
@@ -211,7 +211,7 @@ function AAP_PrintFillers(AAP_T_ars)
 	end
 end
 function AAP_Check_Droppable()
-	local QidZ = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DroppableQuest"]["Qid"]
+	local QidZ = AAP_ActiveStuff["DroppableQuest"]["Qid"]
 	if (AAP_CompletedQs[QidZ] or AAP_ActiveQuests[QidZ]) then
 		return 0
 	end
@@ -221,7 +221,7 @@ function AAP_CheckMobid(AAP_t_MobID)
 	if (AAP_NPCList and AAP_NPCList[AAP_t_MobID]) then
 		return AAP_NPCList[AAP_t_MobID]
 	else
-		return AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DroppableQuest"]["Text"]
+		return AAP_ActiveStuff["DroppableQuest"]["Text"]
 	end
 end
 
@@ -295,14 +295,14 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.Warcamp:Hide()
 		end
 
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SearchBags"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["SearchBags"]) then
 
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ClearZP"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["ClearZP"]) then
 			AAP_ActiveZonePick = 0
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"]) then
-			local AAPExtralk = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"]
+		if (AAP_ActiveStuff and AAP_ActiveStuff["ExtraLine"]) then
+			local AAPExtralk = AAP_ActiveStuff["ExtraLine"]
 			local AAP_NRFS = AAP_QH_GetFS(AAPExtralk.."1220841-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -403,8 +403,8 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"] == 4) then
-			local AAPExtralk = AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"]
+		if (AAP_ActiveStuff and AAP_ActiveStuff["ExtraLine"] and AAP_ActiveStuff["ExtraLine"] == 4) then
+			local AAPExtralk = AAP_ActiveStuff["ExtraLine"]
 			local AAP_NRFS = AAP_QH_GetFS(AAPExtralk.."12220841-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -419,8 +419,8 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Bloodlust"]) then
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Immuneatstart"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Bloodlust"]) then
+			if (AAP_ActiveStuff["Immuneatstart"]) then
 				local AAP_NRFS = AAP_QH_GetFS("123230841-1")
 				ars = ars + 1
 				AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -448,7 +448,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Waitforportal"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Waitforportal"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1232841-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -463,7 +463,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["WaitforsetHS"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["WaitforsetHS"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1234841-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -478,7 +478,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["BeneathHandin"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["BeneathHandin"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1232541-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -493,7 +493,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Totemdmg"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Totemdmg"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1232242-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -508,7 +508,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["WarModeChk"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["WarModeChk"]) then
 			local AAP_NRFS = AAP_QH_GetFS("12932242-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -523,7 +523,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["LoaInfo"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["LoaInfo"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1312242-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -538,7 +538,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["LoaInfo"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["LoaInfo"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1312552-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -553,7 +553,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseDalaHS"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["UseDalaHS"]) then
 			local AAP_NRFS = AAP_QH_GetFS("12112552-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -578,7 +578,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DalaranToOgri"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["DalaranToOgri"]) then
 			local AAP_NRFS = AAP_QH_GetFS("15112512-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -593,7 +593,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PortZuldazar"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["PortZuldazar"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1522512-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -608,7 +608,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Scenario1"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Scenario1"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1267141-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -623,7 +623,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Scenario2"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Scenario2"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1267141-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -638,7 +638,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Scenario3"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Scenario3"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1267141-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -653,7 +653,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Scenario4"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Scenario4"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1267141-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -668,7 +668,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Scenario5"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Scenario5"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1267141-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -683,7 +683,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DontGlider"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["DontGlider"]) then
 			local AAP_NRFS = AAP_QH_GetFS("123452341-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -698,7 +698,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseGlider"]) then
+		if (AAP_ActiveStuff and AAP_ActiveStuff["UseGlider"]) then
 			local AAP_NRFS = AAP_QH_GetFS("123412341-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -713,12 +713,12 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickUp"]) then
-			local AAP_NRFS = AAP_QH_GetFS(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickUp"][1] .."-1")
+		if (AAP_ActiveStuff and AAP_ActiveStuff["PickUp"]) then
+			local AAP_NRFS = AAP_QH_GetFS(AAP_ActiveStuff["PickUp"][1] .."-1")
 			ars = ars + 1
 			local aap_t1 = 0
 			local aap_t2 = 0
-			for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["PickUp"]) do
+			for AAP_index,AAP_value in pairs(AAP_ActiveStuff["PickUp"]) do
 				aap_t1 = aap_t1 + 1
 				if (AAP_ActiveQuests[AAP_value]) then
 					aap_t2 = aap_t2 + 1
@@ -738,13 +738,13 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetAlpha(1)
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
-		elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Done"]) then
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Special"]) then
+		elseif (AAP_ActiveStuff and AAP_ActiveStuff["Done"]) then
+			if (AAP_ActiveStuff["Special"]) then
 			else
-				local AAP_NRFS = AAP_QH_GetFS(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Done"][1] .."-1")
+				local AAP_NRFS = AAP_QH_GetFS(AAP_ActiveStuff["Done"][1] .."-1")
 				ars = ars + 1
 				AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
-				AAP.QuestList.QuestFrames["FS"..AAP_NRFS]:SetText(AAP_Locals["Turn in Quest"] ..": " .. AAP_ReturnDoneNr(getn(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Done"])))
+				AAP.QuestList.QuestFrames["FS"..AAP_NRFS]:SetText(AAP_Locals["Turn in Quest"] ..": " .. AAP_ReturnDoneNr(getn(AAP_ActiveStuff["Done"])))
 			local aapwidth = AAP.QuestList.QuestFrames["FS"..AAP_NRFS]:GetStringWidth()
 			if (aapwidth and aapwidth > 400) then
 				AAP.QuestList.QuestFrames[AAP_NRFS]:SetWidth(aapwidth+10)
@@ -755,8 +755,8 @@ function AAP_UpdateQuestList()
 				AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			end
 			AAP_SetQPTT()
-		elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CRange"]) then
-			local AAP_NRFS = AAP_QH_GetFS(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["CRange"] .."-21")
+		elseif (AAP_ActiveStuff and AAP_ActiveStuff["CRange"]) then
+			local AAP_NRFS = AAP_QH_GetFS(AAP_ActiveStuff["CRange"] .."-21")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
 			AAP.QuestList.QuestFrames["FS"..AAP_NRFS]:SetText(AAP_CheckCRangeText())
@@ -769,7 +769,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetAlpha(1)
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
-		elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ZonePick"]) then
+		elseif (AAP_ActiveStuff and AAP_ActiveStuff["ZonePick"]) then
 			local AAP_NRFS = AAP_QH_GetFS("1234567-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -783,7 +783,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetAlpha(1)
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
-		elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["SetHS"]) then
+		elseif (AAP_ActiveStuff and AAP_ActiveStuff["SetHS"]) then
 			local AAP_NRFS = AAP_QH_GetFS("12345678-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -797,8 +797,8 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetAlpha(1)
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
-		elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseFlightPath"]) then
-			local AAP_NRFS = AAP_QH_GetFS(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseFlightPath"].."-1")
+		elseif (AAP_ActiveStuff and AAP_ActiveStuff["UseFlightPath"]) then
+			local AAP_NRFS = AAP_QH_GetFS(AAP_ActiveStuff["UseFlightPath"].."-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
 			local factionz = UnitFactionGroup("player")
@@ -811,7 +811,7 @@ function AAP_UpdateQuestList()
 				AAP_Cont = "X2"
 			end
 			local Flytoez = ""
-			if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Boat"]) then
+			if (AAP_ActiveStuff["Boat"]) then
 				Flytoez = AAP_Locals["Boat to"]
 			else
 				Flytoez = AAP_Locals["Fly to"]
@@ -826,7 +826,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetAlpha(1)
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
-		elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseHS"]) then
+		elseif (AAP_ActiveStuff and AAP_ActiveStuff["UseHS"]) then
 			local AAP_NRFS = AAP_QH_GetFS("22345678-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -840,7 +840,7 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetAlpha(1)
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_SetQPTT()
-		elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ZoneDone"]) then
+		elseif (AAP_ActiveStuff and AAP_ActiveStuff["ZoneDone"]) then
 			local AAP_NRFS = AAP_QH_GetFS("222345678-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -854,8 +854,8 @@ function AAP_UpdateQuestList()
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetAlpha(1)
 			AAP.QuestList.QuestFrames[AAP_NRFS]:Show()
 			AAP_ArrowActive = 0
-		elseif (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["FlightPath"]) then
-			local AAP_NRFS = AAP_QH_GetFS(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["FlightPath"] .."-1")
+		elseif (AAP_ActiveStuff and AAP_ActiveStuff["FlightPath"]) then
+			local AAP_NRFS = AAP_QH_GetFS(AAP_ActiveStuff["FlightPath"] .."-1")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
 			AAP.QuestList.QuestFrames["FS"..AAP_NRFS]:SetText(AAP_Locals["Get Flight Point"])
@@ -882,7 +882,7 @@ function AAP_UpdateQuestList()
 		if (questID > 0 and AAP_InstanceTest() == 0 and AAP_SettingsOpen == 0) then
 			AAP_BonusCrap[questID] = 1
 			if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-				if (not isHeader and AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Special"] and questID == AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Done"][1]) then
+				if (not isHeader and AAP_ActiveStuff and AAP_ActiveStuff["Special"] and questID == AAP_ActiveStuff["Done"][1]) then
 					local AAP_NRFS = AAP_QH_GetFS(questID .."-1")
 					ars = ars + 1
 					AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -932,8 +932,8 @@ function AAP_UpdateQuestList()
 						AAP_Mathstuff = floor((AAP_Mathstuff + 0.5))
 						text = "["..AAP_Mathstuff.."%] " .. text
 						if (AAP_Mathstuff > 58 and AAP_Mathstuff < 75) then
-							if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"]) then
-								if (AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["ExtraLine"] == 15) then
+							if (AAP_ActiveStuff and AAP_ActiveStuff["ExtraLine"]) then
+								if (AAP_ActiveStuff["ExtraLine"] == 15) then
 									AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] = AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone] + 1
 									AAP_Reset = 0
 									AAP_Plus()
@@ -986,25 +986,25 @@ function AAP_UpdateQuestList()
 		i = i + 1
 	end
 	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseHS"]) then
-			for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Button"]) do
+		if (AAP_ActiveStuff and AAP_ActiveStuff["UseHS"]) then
+			for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Button"]) do
 				AAP_SetButton(AAP_index, ars)
 			end
 		end
 	end
 	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["UseDalaHS"]) then
-			for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Button"]) do
+		if (AAP_ActiveStuff and AAP_ActiveStuff["UseDalaHS"]) then
+			for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Button"]) do
 				AAP_SetButton(AAP_index, ars)
 			end
 		end
 	end
 	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DroppableQuest"] and AAP_Check_Droppable() == 1) then
-			local AAP_NRFS = AAP_QH_GetFS(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DroppableQuest"]["Qid"] .."-11")
+		if (AAP_ActiveStuff and AAP_ActiveStuff["DroppableQuest"] and AAP_Check_Droppable() == 1) then
+			local AAP_NRFS = AAP_QH_GetFS(AAP_ActiveStuff["DroppableQuest"]["Qid"] .."-11")
 			ars = ars + 1
 			AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
-			AAP.QuestList.QuestFrames["FS"..AAP_NRFS]:SetText("[".. ars+1 .."] "..AAP_CheckMobid(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DroppableQuest"]["MobId"]).."s drops quest")
+			AAP.QuestList.QuestFrames["FS"..AAP_NRFS]:SetText("[".. ars+1 .."] "..AAP_CheckMobid(AAP_ActiveStuff["DroppableQuest"]["MobId"]).."s drops quest")
 			local aapwidth = AAP.QuestList.QuestFrames["FS"..AAP_NRFS]:GetStringWidth()
 			if (aapwidth and aapwidth > 400) then
 				AAP.QuestList.QuestFrames[AAP_NRFS]:SetWidth(aapwidth+10)
@@ -1020,8 +1020,8 @@ function AAP_UpdateQuestList()
 
 
 	if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"]) then
-			for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Qpart"]) do
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Qpart"]) then
+			for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Qpart"]) do
 				if (AAP_BonusObj[AAP_index] and not AAP_BonusCrap[AAP_index]) then
 					if ((not AAP1[AAP_Realm][AAP_Name]["SkippedBonusObj"][AAP_index]) and (not AAP_CompletedQs[AAP_index])) then
 						local AAP_NRFS = AAP_QH_GetFS(AAP_index .."-"..1)
@@ -1044,7 +1044,7 @@ function AAP_UpdateQuestList()
 							AAP.QuestList.QuestFrames["FS"..AAP_NRFS]["Button"]:Hide()
 						end
 					end
-				elseif (not AAP_BonusCrap[AAP_index] and (AAP_index < 100000) and (not AAP_CompletedQs[AAP_index]) and (not AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["DroppableQuest"])) then
+				elseif (not AAP_BonusCrap[AAP_index] and (AAP_index < 100000) and (not AAP_CompletedQs[AAP_index]) and (not AAP_ActiveStuff["DroppableQuest"])) then
 						local AAP_NRFS = AAP_QH_GetFS(AAP_index .."-"..1)
 						ars = ars + 1
 						AAP.QuestList.QuestFrames[AAP_NRFS]:SetPoint("BOTTOMLEFT", AAP.QuestList.ListFrame, "BOTTOMLEFT",0,-((ars * 38)+ars))
@@ -1068,8 +1068,8 @@ function AAP_UpdateQuestList()
 				end
 			end
 		end
-		if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Fillers"]) then
-			for AAP_index,AAP_value in pairs(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["Fillers"]) do
+		if (AAP_ActiveStuff and AAP_ActiveStuff["Fillers"]) then
+			for AAP_index,AAP_value in pairs(AAP_ActiveStuff["Fillers"]) do
 				if (AAP_BonusObj[AAP_index] and not AAP_BonusCrap[AAP_index]) then
 					if ((not AAP1[AAP_Realm][AAP_Name]["SkippedBonusObj"][AAP_index]) and (not AAP_CompletedQs[AAP_index])) then
 						local AAP_NRFS = AAP_QH_GetFS(AAP_index .."-"..1)
@@ -1182,11 +1182,11 @@ AAP_QH_EventFrame:SetScript("OnEvent", function(self, event, ...)
 	end
 	if (event=="UPDATE_MOUSEOVER_UNIT" and AAP_DisableAddon == 0) then
 		if (AAP1 and AAP1[AAP_Realm] and AAP1[AAP_Realm][AAP_Name] and AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]) then
-			if (AAP_Quests and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]] and AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["RaidIcon"]) then
+			if (AAP_ActiveStuff and AAP_ActiveStuff["RaidIcon"]) then
 				local guid = UnitGUID("mouseover")
 				if (guid) then
 					local type, zero, server_id, instance_id, zone_uid, npc_id, spawn_uid = strsplit("-",guid)
-					if (npc_id and tonumber(AAP_Quests[AAP1[AAP_Realm][AAP_Name][AAP_ActiveZone]]["RaidIcon"]) == tonumber(npc_id)) then
+					if (npc_id and tonumber(AAP_ActiveStuff["RaidIcon"]) == tonumber(npc_id)) then
 						if (not GetRaidTargetIndex("mouseover")) then
 							SetRaidTarget("mouseover",8)
 						end

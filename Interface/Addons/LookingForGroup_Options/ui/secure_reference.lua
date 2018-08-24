@@ -1,5 +1,8 @@
 local EntryCreation = LFGListFrame.EntryCreation
 local name,description,voicechat,voicechat_checkbutton = EntryCreation.Name,EntryCreation.Description,EntryCreation.VoiceChat.EditBox,EntryCreation.VoiceChat.CheckButton
+local searchpanel = LFGListFrame.SearchPanel
+local searchbox = searchpanel.SearchBox
+local LookingForGroup_Options = LibStub("AceAddon-3.0"):GetAddon("LookingForGroup_Options")
 
 local methods = {
 	["OnAcquire"] = function(self)
@@ -8,7 +11,43 @@ local methods = {
 		self:SetDisabled(false)
 		self:SetLabel()
 		local editbox = self.editbox
-		if description ~= editbox then
+		if editbox == searchbox then
+			editbox:SetScript("OnEnterPressed",function(self)
+				local AutoCompleteFrame = searchpanel.AutoCompleteFrame
+				if ( AutoCompleteFrame:IsShown() and AutoCompleteFrame.selected ) then
+					self:SetText( (C_LFGList.GetActivityInfo(AutoCompleteFrame.selected)) );
+				end
+				LookingForGroup_Options.find_search()
+				self:ClearFocus();
+			end)
+			editbox:SetScript("OnArrowPressed",function(self)
+				if ( key == "UP" ) then
+					LFGListSearchPanel_AutoCompleteAdvance(searchpanel, -1);
+				elseif ( key == "DOWN" ) then
+					LFGListSearchPanel_AutoCompleteAdvance(searchpanel, 1);
+				end
+			end)
+			editbox:SetScript("OnTabPressed",function(self)
+				if ( IsShiftKeyDown() ) then
+					LFGListSearchPanel_AutoCompleteAdvance(searchpanel, -1);
+				else
+					LFGListSearchPanel_AutoCompleteAdvance(searchpanel, 1);
+				end
+			end)
+			editbox:SetScript("OnTextChanged",function(self)
+				SearchBoxTemplate_OnTextChanged(self);
+				LFGListSearchPanel_UpdateAutoComplete(searchpanel);
+			end)
+			editbox:SetScript("OnEditFocusGained",function(self)
+				LFGListSearchPanel_UpdateAutoComplete(searchpanel)
+				SearchBoxTemplate_OnEditFocusGained(self);
+			end)
+			editbox:SetScript("OnEditFocusLost",function(self)
+				LFGListSearchPanel_UpdateAutoComplete(searchpanel);
+				SearchBoxTemplate_OnEditFocusLost(self);
+			end)
+			editbox.clearButton:SetScript("OnClick",C_LFGList.ClearSearchTextFields)
+		elseif description ~= editbox then
 			editbox:SetScript("OnTextChanged",InputBoxInstructions_OnTextChanged)
 			editbox:SetScript("OnEnterPressed",EditBox_ClearFocus)
 			if editbox == voicechat then
@@ -98,3 +137,4 @@ end)
 factory("LFG_SECURE_NAME_EDITBOX_REFERENCE",name)
 factory("LFG_SECURE_DESCRIPTION_EDITBOX_REFERENCE",description)
 factory("LFG_SECURE_VOICE_CHAT_EDITBOX_REFERENCE",voicechat)
+factory("LFG_SECURE_SEARCH_BOX_REFERENCE",searchbox)

@@ -38,10 +38,6 @@ ParrotDB = {
 						},
 					},
 					["dbver"] = 5,
-					["sthrottles"] = {
-						[""] = {
-						},
-					},
 					["Notification"] = {
 						["Enemy debuff gains"] = {
 							["disabled"] = true,
@@ -73,10 +69,10 @@ ParrotDB = {
 						["Pet buff fades"] = {
 							["disabled"] = true,
 						},
-						["Loot money"] = {
-							["disabled"] = false,
+						["Pet buff gains"] = {
+							["disabled"] = true,
 						},
-						["Target buff stack gains"] = {
+						["Target buff gains"] = {
 							["disabled"] = true,
 						},
 						["Enemy buff gains"] = {
@@ -85,23 +81,23 @@ ParrotDB = {
 						["Loot items"] = {
 							["disabled"] = false,
 						},
-						["Skill cooldown finish"] = {
-							["tag"] = "[ready!]",
-						},
-						["Buff fades"] = {
-							["disabled"] = true,
-						},
-						["Target buff gains"] = {
+						["Target buff stack gains"] = {
 							["disabled"] = true,
 						},
 						["Debuff gains"] = {
 							["disabled"] = true,
 						},
-						["Pet buff gains"] = {
+						["Loot money"] = {
+							["disabled"] = false,
+						},
+						["Buff fades"] = {
 							["disabled"] = true,
 						},
 						["Enemy debuff fades"] = {
 							["disabled"] = true,
+						},
+						["Skill cooldown finish"] = {
+							["tag"] = "[ready!]",
 						},
 						["Buff stack gains"] = {
 							["disabled"] = true,
@@ -111,6 +107,10 @@ ParrotDB = {
 						},
 						["Debuff stack gains"] = {
 							["disabled"] = true,
+						},
+					},
+					["sthrottles"] = {
+						[""] = {
 						},
 					},
 					["filters"] = {

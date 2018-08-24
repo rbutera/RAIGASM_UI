@@ -3,9 +3,9 @@ function Guide:Initialize()
 	function Guide:Load()DugisGuideViewer:RegisterGuide("|cffffd200Draenor|r ", "525(94-100)#525(94-100)#525(94-100)", "535(94-100)#535(94-100)#535(94-100)", "Horde", nil, "L", nil, function()
 return [[
 
-R Frostwall |QID|34209| |N|Travel to {Frostwall} (45.62, 43.03)| |Z|585|
-T News from Talador |QID|36494| |N|(npc:78487) in {Frostwall} (45.62, 43.03)| |Z|585| |O| |NPC|78487|
-A Vouchsafe Our Arrival |QID|34209| |N|(npc:79252) in {Frostwall} (49.25, 36.82)| |Z|585| |NPC|79252|
+R Frostwall |QID|34209| |N|Travel to {Frostwall} (45.62, 43.03)| |Z|590|
+T News from Talador |QID|36494| |N|(npc:78487) in {Frostwall} (45.62, 43.03)| |Z|590| |O| |NPC|78487|
+A Vouchsafe Our Arrival |QID|34209| |N|(npc:79252) in {Frostwall} (49.25, 36.82)| |Z|590| |NPC|79252|
 
 R Frostwind Crag |QID|34216| |N|Travel to {Frostwind Crag} (31.46, 16.21)|
 T Vouchsafe Our Arrival |QID|34209| |N|(npc:72814) in {Frostwind Crag} (31.46, 16.21)| |NPC|72814|

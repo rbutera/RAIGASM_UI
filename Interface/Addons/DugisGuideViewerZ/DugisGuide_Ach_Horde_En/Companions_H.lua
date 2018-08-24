@@ -322,7 +322,7 @@ N (species:855) |COM| |N|Taught by (npc:66491). Reward for completing (aid:7501)
 N (item:89367) |COM| |N|Taught by (npc:66105). Crafted item using the Inscription profession| |NPC|66105| --Yu'lon Kite
 
 --WoD
-N (species:1385) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|77021| |Z|585|	--Albino Chimaeraling
+N (species:1385) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|77021| |Z|590|	--Albino Chimaeraling
 N (species:1571) |COM| |N|Purchase from (npc:87394) (50.4,41.4) Requires Revered with (fac:1711). <br/><br/>1000<g> 2000 (cur:823)| |NPC|85281,88482| |Z|550|	--Albino River Calf
 N (species:1363) |COM| |N|Blizzard In-Game Store. Summoned by (item:106240)| |NPC|74402|	--Alterac Brew-Pup
 N (species:1465) |COM| |N|Wild Battle Pet (59.0,71.6) (51.0,72.0)| |NPC|85257| |Z|543|	--Amberbarb Wasp
@@ -363,7 +363,7 @@ N (species:1530) |COM| |N|Taught by (item:117380) from Archaeology Profession| |
 N (species:1542) |COM| |N|Purchase from (npc:86036)(53.6,62.0) Requires Revered with (fac:1445). <br/><br/>1000<g> 2000 (cur:823)| |NPC|87111| |Z|624|	--Frostwolf Pup
 N (species:1471) |COM| |N|Found inside Wriggling Egg (64.5,65.8)| |OBJ|224623| |NPC|85387|	--Fruit Hunter
 N (species:753) |COM| |N|Wild Battle Pet (53.6,45.2)| |NPC|65215| |Z|371|	--Garden Moth
-N (species:1442) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|83817| |Z|585|	--Ghastly Kid
+N (species:1442) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|83817| |Z|590|	--Ghastly Kid
 N (species:430) |COM| |N|Wild Battle Pet (38.4,79.8)(43.0,64.8)(44.2,50.0)| |NPC|61438| |Z|543|	--Gold Beetle
 N (species:1573) |COM| |N|Wild Battle Pet (42.6,57.6) (35.4,24.2)| |NPC|85798| |Z|542|	--Golden Dawnfeather
 N (species:834) |COM| |N|Dropped from (npc:50347)(71.8,37.6)| |NPC|64634,50347| |Z|422|	--Grinder
@@ -402,7 +402,7 @@ N (species:1432) |COM| |N|Has a chance to drop from Disturbed Podling (npc:85408
 N (species:1495) |COM| |N|Has a chance to drop from Goren Protector (npc:85294) when using Mining skill on Draenor mining nodes, or from mines in garrison (mining skill not required)| |NPC|85667| |Z|543|	--Ore Eater
 N (species:1615) |COM| |N|Wild Battle Pet (41.2,37.6)| |NPC|89194| |Z|543|	--Parched Lizard
 N (species:1204) |COM| |N|This is taught by (item:100910) which has a chance to drop from mobs above level 88| |NPC|70082|	--Pierre
-N (species:1568) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|88300| |Z|585|	--Puddle Terror
+N (species:1568) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|88300| |Z|590|	--Puddle Terror
 N (species:1543) |COM| |N|This requires Garrison Barn level 3. The item :120309 is on 2nd story of barn which can be tricky to get to, but teaches how to summon this pet.| |NPC|87257| |Z|539|	--Pygmy Cow
 N (species:452) |COM| |N|Wild Battle Pet (56.4,36.4)(36.0,67.0)(40.0,84.2)| |NPC|61757| |Z|535|	--Red-Tailed Chipmunk
 N (species:1587) |COM| |N|Wild Battle Pet (42.2,57.4) (39.2,39.4)| |NPC|88417| |Z|539|	--Royal Moth
@@ -420,8 +420,8 @@ N (species:1569) |COM| |N|Blacksmithing Profession<br/>Purchase (item:119329) fr
 N (species:1515) |COM| |N|Taught by (item:116402). Found in Ketya's Stash (54.0,27.6) in (map:535)| |OBJ|228570| |QID|34290| |NPC|85231| |Z|535|	--Stonegrinder
 N (species:1546) |COM| |N|Reward from (aid:9643)| |NPC|87705|	--Stormwing
 N (species:1518) |COM| |N|World event Brewfest<br/><br/>200 (item:37829)| |NPC|85994|	--Stout Alemental
-N (species:1434) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|83588| |Z|585|	--Sun Sproutling
-N (species:1570) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|88367| |Z|585|	--Sunfire Kaliri
+N (species:1434) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|83588| |Z|590|	--Sun Sproutling
+N (species:1570) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|88367| |Z|590|	--Sunfire Kaliri
 N (species:1590) |COM| |N|Wild Battle Pet (33.0,42.0) (73.0,51.2)| |NPC|88359| |Z|542|	--Swamplighter Firefly
 N (species:1478) |COM| |N|Found in (item:116062)<br/>Reward for (qid:36471), started from (npc:85519)(47.4,62.2)| |NPC|85527| |Z|407|	--Syd the Squid
 N (species:1416) |COM| |N|Taught by (item:112699). Found in Teroclaw Nest (39.3,77.3)(54.1,56.3)(77.0,52.2)(72.8,35.6) in (map:535)| |NPC|81431| |Z|535|	--Teroclaw Hatchling
@@ -435,7 +435,7 @@ N (species:1596) |COM| |N|Purchase from (npc:87123)(46.2,45.4). <br/><br/>1000<g
 N (species:1593) |COM| |N|Wild Battle Pet (37.4,52.8)(46.4,50.2)(55.8,70.0)| |NPC|88355| |Z|539|	--Waterfly
 N (species:1593) |COM| |N|Wild Battle Pet (73.6,44.2)| |NPC|88355| |Z|542|	--Waterfly
 N (species:1593) |COM| |N|Wild Battle Pet (64.4,34.6)(71.8,50.2)(77.4,60.0)| |NPC|88355| |Z|535|	--Waterfly
-N (species:1394) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|78421| |Z|585|	--Weebomination
+N (species:1394) |COM| |N|Level 3 Menagerie Required. Found in (item:118697), which is a reward for (qid:37645)| |NPC|78421| |Z|590|	--Weebomination
 N (species:1523) |COM| |N|World Event: Hallow's End. Purchased from (npc:53757)(67.4,06.8) in (map:90)| |NPC|86067,53757| |Z|90|	--Widget the Departed
 N (species:1463) |COM| |N|Wild Battle Pet (48.6,78.8) (52.0,79.4)| |NPC|85254| |Z|539|	--Wood Wasp
 N (species:1582) |COM| |N|Wild Battle Pet (41.2,16.0) (57.2,21.4)| |NPC|88466| |Z|539|	--Zangar Crawler

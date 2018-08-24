@@ -20,7 +20,7 @@ Grid: disabled
 GridIndicatorCornerIcons: disabled
 GridManaBars: disabled
 WIM: enabled
-TradeSkillMaster: enabled
+TradeSkillMaster: disabled
 TradeSkillMaster_Accounting: disabled
 TradeSkillMaster_AuctionDB: disabled
 TradeSkillMaster_Auctioning: disabled
@@ -153,7 +153,7 @@ AtlasLoot: enabled
 AtlasMajorCitiesEnhanced: enabled
 AtlasQuest: disabled
 Auctionator: enabled
-Azeroth Auto Pilot: enabled
+Azeroth Auto Pilot: disabled
 BadBoy: disabled
 BigWigs_BlackhandAssist: disabled
 BigDickClub: disabled

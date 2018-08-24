@@ -57,7 +57,7 @@ T So You Want to Be a Blacksmith... |QID|32683| |N|(npc:64085), {Shrine of Seven
 
 N Train Journeyman Blacksmithing |N|(npc:64058) (90.61, 67.54)| |Z|390| |PM|Blacksmithing|600| |NPC|64058|
  
-N Guide Complete |N|Switch to (guide:"Warlords Blacksmithing 1-700") guide to continue leveling Blacksmithing.|
+N Guide Complete |N|Switch to (guide:"Warlords Blacksmithing 1-100") guide to continue leveling Blacksmithing.|
 
 ]]
 end, {description = [[This guide covers how to level the Blacksmithing profession from 1-500 in Pandaria.]]})

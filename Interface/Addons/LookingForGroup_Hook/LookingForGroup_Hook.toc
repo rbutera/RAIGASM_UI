@@ -1,7 +1,7 @@
 ## Interface: 80000
 ## Author: cqwrteur
 ## Title: LookingForGroup Hook
-## Version: r1374
+## Version: r1392
 ## Dependencies: LookingForGroup
 
 #@no-lib-strip@

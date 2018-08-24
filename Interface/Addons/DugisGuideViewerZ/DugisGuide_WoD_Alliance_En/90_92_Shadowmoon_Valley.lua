@@ -21,44 +21,44 @@ A Quakefist |QID|34585| |N|(npc:79567) (28.93, 16.39) in {Lunarfall}| |NPC|79567
 C Quakefist |QID|34585| |N|Kill (npc:81360) (30.13, 21.65) in {Lunarfall}| |NPC|81360|
 T Quakefist |QID|34585| |N|(npc:79567) (28.91, 16.40) in {Lunarfall}| |NPC|79567|
 A Establish Your Garrison |QID|34586| |N|(npc:79243) (29.04, 16.24) in {Lunarfall}| |NPC|79243|
-C Establish Your Garrison |QID|34586| |N|Speak with (npc:79243) to build your garrison in {Lunarfall} (32.41, 33.99)| |Z|579| |NPC|79243|
-T Establish Your Garrison |QID|34586| |N|(npc:77209) (41.49, 49.31) in {Lunarfall}| |Z|579| |NPC|77209|
-A Keeping it Together |QID|35176| |N|(npc:77209) (41.49, 49.31) in {Lunarfall}| |Z|579| |NPC|77209|
-A Ship Salvage |QID|35166| |N|(npc:77209) (41.49, 49.31) in {Lunarfall}| |Z|579| |NPC|77209|
-A Pale Moonlight |QID|35174| |N|(npc:79457) (44.05, 53.17) in {Lunarfall}| |Z|579| |NPC|79457|
-N Speak with Assistant Brightstone |QID|35176.1| |N|Speak with (npc:84455) in {Lunarfall} about her work ethic (44.83, 53.28)| |Z|579| |NPC|84455|
-f Lunarfall |QID|35176| |N|Grab the flight path for {Lunarfall} from (npc:81103) (48.00, 49.77)| |Z|579| |NPC|81103|
-N Gather Shelly's Report |QID|35176.2| |N|Speak to (npc:81441) in {Lunarfall} to gather (item:112730) (32.51, 34.60)| |Z|579| |NPC|81441|
-N Check the Garrison Cache |QID|35176.3| |N|Click on the chest to check the Garrison Cache (48.98, 43.57) in {Lunarfall}| |Z|579|
-T Keeping it Together |QID|35176| |N|(npc:77209) (41.38, 49.13) in {Lunarfall}| |Z|579| |NPC|77209|
+C Establish Your Garrison |QID|34586| |N|Speak with (npc:79243) to build your garrison in {Lunarfall} (32.41, 33.99)| |Z|582| |NPC|79243|
+T Establish Your Garrison |QID|34586| |N|(npc:77209) (41.49, 49.31) in {Lunarfall}| |Z|582| |NPC|77209|
+A Keeping it Together |QID|35176| |N|(npc:77209) (41.49, 49.31) in {Lunarfall}| |Z|582| |NPC|77209|
+A Ship Salvage |QID|35166| |N|(npc:77209) (41.49, 49.31) in {Lunarfall}| |Z|582| |NPC|77209|
+A Pale Moonlight |QID|35174| |N|(npc:79457) (44.05, 53.17) in {Lunarfall}| |Z|582| |NPC|79457|
+N Speak with Assistant Brightstone |QID|35176.1| |N|Speak with (npc:84455) in {Lunarfall} about her work ethic (44.83, 53.28)| |Z|582| |NPC|84455|
+f Lunarfall |QID|35176| |N|Grab the flight path for {Lunarfall} from (npc:81103) (48.00, 49.77)| |Z|582| |NPC|81103|
+N Gather Shelly's Report |QID|35176.2| |N|Speak to (npc:81441) in {Lunarfall} to gather (item:112730) (32.51, 34.60)| |Z|582| |NPC|81441|
+N Check the Garrison Cache |QID|35176.3| |N|Click on the chest to check the Garrison Cache (48.98, 43.57) in {Lunarfall}| |Z|582|
+T Keeping it Together |QID|35176| |N|(npc:77209) (41.38, 49.13) in {Lunarfall}| |Z|582| |NPC|77209|
 
 R Eventide Landing |QID|35174| |N|Travel to {Eventide Landing} (25.52, 5.79)|
 K Gnaw Bloodseeker |QID|35174.1| |N|Kill (npc:81670) in {Eventide Landing} (25.52, 5.79)| |NPC|81670|
 C Ship Salvage |QID|35166| |N|Collect 15 (item:112696) from the barrels or from (npc:79205) in {Eventide Landing} (26.82, 6.77)| |NPC|79205|
 K Pale Devourer |QID|35174.2| |N|Kill 8 (npc:79205) in {Eventide Landing} (27.69, 5.81)| |NPC|79205|
 
-R Lunarfall |QID|34587| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|579|
-T Pale Moonlight |QID|35174| |N|(npc:79457) (44.03, 53.15) in {Lunarfall}| |Z|579| |NPC|79457|
-T Ship Salvage |QID|35166| |N|(npc:77209) (41.28, 49.46) in {Lunarfall}| |Z|579| |NPC|77209|
-A Build Your Barracks |QID|34587| |N|(npc:77209) (41.37, 49.54) in {Lunarfall}| |Z|579| |NPC|77209|
-N Find Blueprints |QID|34587.1| |N|Find Blueprints on the table in {Lunarfall} (45.22, 40.98)| |Z|579|
-N Learn Blueprints |QID|34587.2| |N|Use (item:111956) to Learn Blueprints (44.90, 45.06) in {Lunarfall}| |Z|579| |U|111956|
-N Use the Architect Table |QID|34587.3| |N|Click on the Architect Table in {Lunarfall} and drag the Barracks to the highlighted spot (41.43, 49.08)| |Z|579|
-N Finalize your Plot |QID|34587.4| |N|Click on the script to finalize your Barracks (44.47, 43.93) in {Lunarfall}| |Z|579|
-T Build Your Barracks |QID|34587| |N|(npc:79457) (44.12, 52.99) in {Lunarfall}| |Z|579| |NPC|79457|
-A Qiana Moonshadow |QID|34646| |N|(npc:79457) (44.59, 53.21) in {Lunarfall}| |Z|579| |NPC|79457|
+R Lunarfall |QID|34587| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|582|
+T Pale Moonlight |QID|35174| |N|(npc:79457) (44.03, 53.15) in {Lunarfall}| |Z|582| |NPC|79457|
+T Ship Salvage |QID|35166| |N|(npc:77209) (41.28, 49.46) in {Lunarfall}| |Z|582| |NPC|77209|
+A Build Your Barracks |QID|34587| |N|(npc:77209) (41.37, 49.54) in {Lunarfall}| |Z|582| |NPC|77209|
+N Find Blueprints |QID|34587.1| |N|Find Blueprints on the table in {Lunarfall} (45.22, 40.98)| |Z|582|
+N Learn Blueprints |QID|34587.2| |N|Use (item:111956) to Learn Blueprints (44.90, 45.06) in {Lunarfall}| |Z|582| |U|111956|
+N Use the Architect Table |QID|34587.3| |N|Click on the Architect Table in {Lunarfall} and drag the Barracks to the highlighted spot (41.43, 49.08)| |Z|582|
+N Finalize your Plot |QID|34587.4| |N|Click on the script to finalize your Barracks (44.47, 43.93) in {Lunarfall}| |Z|582|
+T Build Your Barracks |QID|34587| |N|(npc:79457) (44.12, 52.99) in {Lunarfall}| |Z|582| |NPC|79457|
+A Qiana Moonshadow |QID|34646| |N|(npc:79457) (44.59, 53.21) in {Lunarfall}| |Z|582| |NPC|79457|
 
 R Moonflower Valley |QID|34646| |N|Travel to {Moonflower Valley} (29.96, 29.19)| |NPC|81776|
 C Qiana Moonshadow |QID|34646| |N|Speak with (npc:81776) in {Moonflower Valley} (29.96, 29.19)| |NPC|81776|
 
-R Lunarfall |QID|34778| |N|Travel to {Lunarfall} (50.5, 67.4) (40.55, 53.94)| |Z|579|
-T Qiana Moonshadow |QID|34646| |N|(npc:81948) (40.55, 53.94) in {Lunarfall}| |Z|579| |NPC|81948|
-A Delegating on Draenor |QID|34692| |N|(npc:79953) (40.43, 53.45) in {Lunarfall}| |Z|579| |NPC|79953|
-C Delegating on Draenor |QID|34692| |N|Use the Command Table in {Lunarfall} to send (npc:81776) on a mission.<br/><br/>Follow the instructions from the command table.(40.57, 53.44)| |Z|579|
-T Delegating on Draenor |QID|34692| |N|(npc:79953) (40.57, 53.44) in {Lunarfall}| |Z|579| |NPC|79953|
-A Migrant Workers |QID|34778| |N|(npc:79457) (43.98, 53.32) in {Lunarfall}| |Z|579| |NPC|79457|
-A A Hero's Welcome |QID|33075| |N|(npc:80568) (46.98, 50.92) in {Lunarfall}| |Z|579| |NPC|80568|
-C Migrant Workers |QID|34778| |N|Speak with (npc:81912) in {Lunarfall}, then meet with the laborers outside of {Elodor} (44.27, 51.17)| |Z|579| |NPC|81912|
+R Lunarfall |QID|34778| |N|Travel to {Lunarfall} (50.5, 67.4) (40.55, 53.94)| |Z|582|
+T Qiana Moonshadow |QID|34646| |N|(npc:81948) (40.55, 53.94) in {Lunarfall}| |Z|582| |NPC|81948|
+A Delegating on Draenor |QID|34692| |N|(npc:79953) (40.43, 53.45) in {Lunarfall}| |Z|582| |NPC|79953|
+C Delegating on Draenor |QID|34692| |N|Use the Command Table in {Lunarfall} to send (npc:81776) on a mission.<br/><br/>Follow the instructions from the command table.(40.57, 53.44)| |Z|582|
+T Delegating on Draenor |QID|34692| |N|(npc:79953) (40.57, 53.44) in {Lunarfall}| |Z|582| |NPC|79953|
+A Migrant Workers |QID|34778| |N|(npc:79457) (43.98, 53.32) in {Lunarfall}| |Z|582| |NPC|79457|
+A A Hero's Welcome |QID|33075| |N|(npc:80568) (46.98, 50.92) in {Lunarfall}| |Z|582| |NPC|80568|
+C Migrant Workers |QID|34778| |N|Speak with (npc:81912) in {Lunarfall}, then meet with the laborers outside of {Elodor} (44.27, 51.17)| |Z|582| |NPC|81912|
 
 A Wanted: Kuu'rat's Tusks |QID|33833| |N|Wanted Poster in {Moonflower Valley} (33.24, 30.68)|
 C Wanted: Kuu'rat's Tusks |QID|33833| |N|Kill (npc:75484) and collect (item:108481) in {Drybone Hollow} (34.83, 26.56). This is a group quest and can be tough to solo. You can safely skip this step.| |NPC|75484|
@@ -295,21 +295,21 @@ T The Fate of Karabor |QID|33059| |N|(npc:79043) in the {Twilight Glade} (40.53,
 A Chasing Shadows |QID|33586| |N|(npc:79043) in the {Twilight Glade} (40.53, 54.92)| |NPC|79043|
 A Fast Expansion |QID|33814| |N|(npc:81152) in the {Twilight Glade} (40.61, 54.80)| |NPC|81152|
 
-R Lunarfall |QID|37289| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|579|
-T Fast Expansion |QID|33814| |N|(npc:77209) (41.38, 49.29) in {Lunarfall}| |Z|579| |NPC|77209|
-T Supply Drop |QID|35905| |N|(npc:77209) (41.38, 49.29) in {Lunarfall}| |Z|579| |NPC|77209|
-A Bigger is Better |QID|36592| |N|(npc:77209) (41.38, 49.29) in {Lunarfall}| |Z|579| |NPC|77209|
-C Bigger is Better |QID|36592| |N|Use the Architect Table in {Lunarfall} to select your Town Hall and upgrade your garrison to Tier 2 (41.46, 48.98)| |Z|579|
-A Gloomshade Game Hunter |QID|33461| |N|List of Ingredients in {Lunarfall} (44.34, 53.90)| |Z|579|
-A Shadowmoon Invasion! |QID|37289| |N|(npc:88223) in {Lunarfall} (37.70, 36.19)| |Z|579| |NPC|88223|
-T Bigger is Better |QID|36592| |N|(npc:77209) in {Town Hall} (31.77, 31.40)| |Z|579| |NPC|77209|
-N Speak with Sergeant Crowler |QID|37289.1| |N|Speak with (npc:88223) in {Lunarfall} (37.64, 35.91)| |Z|579|
-N Repel the Invasion |QID|37289.2| |N|Follow the scenario instructions and repel the invasion (49.75, 64.31)| |Z|579|
-T Shadowmoon Invasion! |QID|37289| |N|(npc:88223) in {Lunarfall} (37.69, 35.98)| |Z|579| |NPC|88223|
-A Lost Lumberjacks |QID|34820| |N|(npc:80163) in {Lunarfall}. Sometimes he's outside the garrison (43.79, 53.73) (38.2, 64.6)| |Z|579| |NPC|80163|
-A Ashran Appearance |QID|36624| |N|(npc:79953) in {Town Hall} (31.29, 32.65)| |Z|579| |NPC|79953|
+R Lunarfall |QID|37289| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|582|
+T Fast Expansion |QID|33814| |N|(npc:77209) (41.38, 49.29) in {Lunarfall}| |Z|582| |NPC|77209|
+T Supply Drop |QID|35905| |N|(npc:77209) (41.38, 49.29) in {Lunarfall}| |Z|582| |NPC|77209|
+A Bigger is Better |QID|36592| |N|(npc:77209) (41.38, 49.29) in {Lunarfall}| |Z|582| |NPC|77209|
+C Bigger is Better |QID|36592| |N|Use the Architect Table in {Lunarfall} to select your Town Hall and upgrade your garrison to Tier 2 (41.46, 48.98)| |Z|582|
+A Gloomshade Game Hunter |QID|33461| |N|List of Ingredients in {Lunarfall} (44.34, 53.90)| |Z|582|
+A Shadowmoon Invasion! |QID|37289| |N|(npc:88223) in {Lunarfall} (37.70, 36.19)| |Z|582| |NPC|88223|
+T Bigger is Better |QID|36592| |N|(npc:77209) in {Town Hall} (31.77, 31.40)| |Z|582| |NPC|77209|
+N Speak with Sergeant Crowler |QID|37289.1| |N|Speak with (npc:88223) in {Lunarfall} (37.64, 35.91)| |Z|582|
+N Repel the Invasion |QID|37289.2| |N|Follow the scenario instructions and repel the invasion (49.75, 64.31)| |Z|582|
+T Shadowmoon Invasion! |QID|37289| |N|(npc:88223) in {Lunarfall} (37.69, 35.98)| |Z|582| |NPC|88223|
+A Lost Lumberjacks |QID|34820| |N|(npc:80163) in {Lunarfall}. Sometimes he's outside the garrison (43.79, 53.73) (38.2, 64.6)| |Z|582| |NPC|80163|
+A Ashran Appearance |QID|36624| |N|(npc:79953) in {Town Hall} (31.29, 32.65)| |Z|582| |NPC|79953|
 
-F Stormshield |QID|36626| |N|Speak to (npc:81103) and fly to {Stormshield} in {Ashran} (48.04, 49.79)| |Z|579| |NPC|81103| |V|
+F Stormshield |QID|36626| |N|Speak to (npc:81103) and fly to {Stormshield} in {Ashran} (48.04, 49.79)| |Z|582| |NPC|81103| |V|
 T Ashran Appearance |QID|36624| |N|(npc:86065) in {Stormshield} (32.01, 49.90)| |Z|622| |NPC|86065|
 A Host Howell |QID|36626| |N|(npc:86065) in {Stormshield} (32.01, 49.90)| |Z|622| |NPC|86065|
 T Host Howell |QID|36626| |N|(npc:86069) in {Hero's Rest Inn} (35.52, 75.74)| |Z|622| |NPC|86069|
@@ -359,8 +359,8 @@ T Game of Thorns |QID|33271| |N|(npc:76748) in {Gloomshade Grove} (36.39, 19.21)
 
 A Shelly Hamby |QID|35625| |N|(npc:76748) will now become a follower (36.39, 19.21)| |NPC|76748| |E|
 
-R Lunarfall |TID|33461| |N|Travel to {Lunarfall} (36.84, 63.28)| |Z|579|
-T Gloomshade Game Hunter |QID|33461| |N|(npc:80159) in {Lunarfall} (36.84, 63.28)| |Z|579| |NPC|80159|
+R Lunarfall |TID|33461| |N|Travel to {Lunarfall} (36.84, 63.28)| |Z|582|
+T Gloomshade Game Hunter |QID|33461| |N|(npc:80159) in {Lunarfall} (36.84, 63.28)| |Z|582| |NPC|80159|
 
 R Exile's Rise |QID|33082| |N|Travel to {Exile's Rise} (45.69, 26.29)| |NPC|75884|
 T Chasing Shadows |QID|33586| |N|(npc:75884) in {Exile's Rise} (45.69, 26.29)| |NPC|75884|
@@ -448,10 +448,12 @@ A The Prophet's Final Message |QID|37322| |N|Use (item:119208) to start (qid:373
 R {The Coliseum of Light} |TID|37322| |N|Travel to {The Coliseum of Light} (72.48, 57.62)|
 T The Prophet's Final Message |QID|37322| |N|Prophet Velen's Memorial in {The Coliseum of Light} (72.48, 57.62) (74.26, 56.58) (73.74, 55.80)|
 
-R Lunarfall |QID|36615| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|579|
-A My Very Own Castle |QID|36615| |N|(npc:77209) in {Town Hall} (29.49, 33.33)| |Z|579| |NPC|77209|
-C My Very Own Castle |QID|36615| |N|Use the Architect Table in {Town Hall} to select your Town Hall and upgrade your garrison to Tier 3 (41.46, 48.98)| |Z|579|
-T My Very Own Castle |QID|36615| |N|(npc:77209) in {Town Hall} (29.49, 33.33)| |Z|579| |NPC|77209|
+N Level 100 Required |N|You need to be at least level 100 to continue| |PL|100|
+
+R Lunarfall |QID|36615| |N|Travel to {Lunarfall} (40.55, 53.94)| |Z|582|
+A My Very Own Castle |QID|36615| |N|(npc:77209) in {Town Hall} (29.49, 33.33)| |Z|582| |NPC|77209|
+C My Very Own Castle |QID|36615| |N|Use the Architect Table in {Town Hall} to select your Town Hall and upgrade your garrison to Tier 3 (41.46, 48.98)| |Z|582|
+T My Very Own Castle |QID|36615| |N|(npc:77209) in {Town Hall} (29.49, 33.33)| |Z|582| |NPC|77209|
 
 N Guide Complete |N|Tick to continue to (guide:"543(92-100)#543(92-100)#543(92-100)")|
 

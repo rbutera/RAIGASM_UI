@@ -4203,6 +4203,14 @@ function DugisGuideViewer:SettingFrameChkOnClick(box, skip)
 		DugisGuideViewer:UpdateSmallFrame()
 	end	
     
+	if boxindex == DGV_FISHINGPOLE or boxindex == DGV_COOKINGITEM or boxindex == DGV_DAILYITEM or boxindex == DGV_SUGGESTTRINKET  then
+        DugisGuideViewer.GetCurrentBestInSlot_cache = {}
+        DugisGuideViewer.GetSpecDataTable_cache = {}
+        DugisGuideViewer.GetCurrentRating_cache = {}
+        DugisGuideViewer.CalculateScore_cache = {}
+        DugisCharacterCache.CalculateScore_cache_v11 = {}
+	end	
+    
 	if  LuaUtils:isInTable(boxindex, {
         DGV_INCLUDE_DUNG_NORMAL,
         DGV_INCLUDE_DUNG_HEROIC,
@@ -5293,7 +5301,6 @@ function DugisGuideViewer:Dugi_QUEST_LOG_UPDATE()
 end
 
 function DugisGuideViewer:TRADE_SKILL_UPDATE()
-	DugisGuideViewer:UpdateProfessions()
 end
 
 function DugisGuideViewer:ACHIEVEMENT_EARNED()
@@ -5311,21 +5318,6 @@ hooksecurefunc("ShowUIPanel", function(arg)
         end
     end
 end)
-
-local OnSkillEvent_lastTime
-local function OnSkillEvent()
-    if OnSkillEvent_lastTime ~= GetTime() then
-        if DugisGuideViewer.OnSkillChanged then  
-            DugisGuideViewer:OnSkillChanged()
-        end
-    end
-    OnSkillEvent_lastTime = GetTime()
-end
-
-function DugisGuideViewer:SKILL_LINES_CHANGED()              OnSkillEvent() end
-function DugisGuideViewer:CHAT_MSG_SKILL()                   OnSkillEvent() end        
-function DugisGuideViewer:TRADE_SKILL_DATA_SOURCE_CHANGED()  OnSkillEvent() end
-function DugisGuideViewer:TRADE_SKILL_LIST_UPDATE()          OnSkillEvent() end
 
 function DugisGuideViewer:ADDON_LOADED(event, addon)
 	if addon == "DugisGuideViewerZ" then

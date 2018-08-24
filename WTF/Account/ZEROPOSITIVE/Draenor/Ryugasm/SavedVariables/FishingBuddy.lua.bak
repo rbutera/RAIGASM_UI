@@ -6,10 +6,13 @@ FishingBuddy_Player = {
 	},
 	["Settings"] = {
 		["TotalTimeFishing"] = 30.4609999999811,
-		["SpecialBobbers"] = -1,
 		["OutfitManager"] = "None",
+		["SpecialBobbers"] = -1,
 	},
 	["WasWearing"] = {
+	},
+	["Version"] = 19500,
+	["Outfit"] = {
 	},
 	["WatcherLocation"] = {
 		["y"] = -3.05175781250e-005,
@@ -17,7 +20,4 @@ FishingBuddy_Player = {
 		["point"] = "CENTER",
 		["scale"] = 1,
 	},
-	["Outfit"] = {
-	},
-	["Version"] = 19500,
 }

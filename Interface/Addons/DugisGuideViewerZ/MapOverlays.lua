@@ -4,7 +4,7 @@ local MapOverlays = MOD:RegisterModule("MapOverlays")
 MapOverlays.essential = true
 local harvestingDataMode = false
 
-local HBDMigrate = LibStub("HereBeDragons-Migrate")
+local HBDMigrate = LibStub("HereBeDragons-Migrate-Dugis")
 
 function MapOverlays:Initialize()
 	local defaults = {

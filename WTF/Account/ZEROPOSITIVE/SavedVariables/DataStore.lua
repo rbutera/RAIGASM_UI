@@ -5,10 +5,10 @@ DataStoreDB = {
 		["Yasuka - Outland"] = "Yasuka - Outland",
 		["Raimondo - Draenor"] = "Raimondo - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Ryugasm - Outland"] = "Ryugasm - Outland",
 		["Raigasm - Outland"] = "Raigasm - Outland",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-		["Ryugasm - Outland"] = "Ryugasm - Outland",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 	},
 	["global"] = {
 		["Guilds"] = {
@@ -27,16 +27,16 @@ DataStoreDB = {
 		},
 		["Version"] = 1,
 		["Characters"] = {
-			["Default.Draenor.Raigasm"] = {
-				["faction"] = "Horde",
-			},
-			["Default.Outland.Raigasm"] = {
-				["faction"] = "Alliance",
-				["guildName"] = "BITCOIN",
-			},
 			["Default.Outland.Yasuka"] = {
 				["faction"] = "Horde",
 				["guildName"] = "Eight",
+			},
+			["Default.Draenor.Ryugasm"] = {
+				["faction"] = "Horde",
+				["guildName"] = "Lost Rowsdowers",
+			},
+			["Default.Draenor.Raigasm"] = {
+				["faction"] = "Horde",
 			},
 			["Default.Draenor.Norfweezy"] = {
 				["faction"] = "Horde",
@@ -53,9 +53,9 @@ DataStoreDB = {
 				["guildName"] = "Lost Rowsdowers",
 				["faction"] = "Horde",
 			},
-			["Default.Draenor.Ryugasm"] = {
-				["faction"] = "Horde",
-				["guildName"] = "Lost Rowsdowers",
+			["Default.Outland.Raigasm"] = {
+				["faction"] = "Alliance",
+				["guildName"] = "BITCOIN",
 			},
 		},
 		["ShortToLongRealmNames"] = {

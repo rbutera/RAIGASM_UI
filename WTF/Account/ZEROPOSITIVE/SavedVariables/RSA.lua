@@ -18,19 +18,19 @@ RSADB = {
 	["profiles"] = {
 		["Raimondo - Draenor"] = {
 			["General"] = {
-				["Race"] = "BloodElf",
 				["Class"] = "PALADIN",
+				["Race"] = "BloodElf",
 			},
 			["Fixed"] = true,
 		},
 		["Ryugasm - Draenor"] = {
+			["General"] = {
+				["Class"] = "MONK",
+			},
 			["Modules"] = {
 				["Monk"] = true,
 			},
 			["Fixed"] = true,
-			["General"] = {
-				["Class"] = "MONK",
-			},
 		},
 		["Norfweezy - Draenor"] = {
 			["Modules"] = {

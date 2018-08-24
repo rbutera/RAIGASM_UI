@@ -393,7 +393,7 @@ if UnitClassBase( 'player' ) == 'ROGUE' then
             startsCombat = false,
             texture = 132350,
             
-            usable = function () return buff.blade_flurry.remains < gcd end,
+            usable = function () return buff.blade_flurry.remains < gcd.execute end,
             handler = function ()
                 if talent.dancing_steel.enabled then 
                     applyBuff ( 'blade_flurry', 15 )
@@ -608,11 +608,13 @@ if UnitClassBase( 'player' ) == 'ROGUE' then
             cooldown = 15,
             gcd = "spell",
             
-            toggle = 'interrupt', 
+            toggle = 'interrupts', 
+            interrupt = true,
 
             startsCombat = true,
             texture = 132219,
             
+            usable = function () return target.casting end,
             handler = function ()
                 interrupt()
             end,

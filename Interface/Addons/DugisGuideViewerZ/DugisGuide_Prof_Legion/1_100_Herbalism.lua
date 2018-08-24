@@ -4,7 +4,7 @@ function Guide:Initialize()
 return [[
 
 N Level 100 Required |QID|38499| |N|You need to be at least level 100 to use this profession guide| |PL|100|
-N Train Herbalist |N|(npc:92464) in {Magus Commerce Exchange} (42.94, 33.44)| |Z|627|  |NPC|92464| |P|1043 1|
+N Train Herbalist |N|(npc:92464) in {Magus Commerce Exchange} (42.94, 33.44)| |Z|627|  |NPC|92464| |P|1044 1|
 N (item:124101) |HE| |N|Gather until you find (item:129117) to receive a new quest (46.38,44.51) (48.87,42.45) (48.48,36.05) (50.26,30.59) (50.27,25.03) (50.75,19.79) (54.63,16.44) (57.59,18.25) (60.55,20.91) (64.63,25.89) (63.39,31.12) (65.56,36.66) (66.49,42.33) (66.48,46.99) (62.65,51.41) (58.62,51.42) (53.66,54.29) (48.86,54.98) (46.19,46.77) | |Z|630| |LOOP| |OID|40013| |L|129117|
 A Aethril Sample |QID|40013| |N|Auto quest while gathering (item:124101)<br/><br/>Use (item:129117) to accept the quest| |U|129117|
 

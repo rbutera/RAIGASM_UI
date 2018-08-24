@@ -6,11 +6,11 @@ return [[
 R Veil Terokk |QID|34794| |N|Travel to {Veil Terokk} (46.57, 46.54)| |Z|542|
 A News from Nagrand |QID|36602| |N|(npc:80153) in {Veil Terokk} (46.57, 46.54)| |Z|542| |NPC|80153|
 
-R Frostwall |QID|34794| |N|Travel to {Frostwall} (45.84, 43.18)| |Z|585| |NPC|78487|
-T News from Nagrand |QID|36602| |N|(npc:78487) in {Frostwall} (45.84, 43.18)| |Z|585| |NPC|78487| |OID|36952|
-A Taking the Fight to Nagrand |QID|34794| |N|(npc:78487) in {Frostwall} (45.84, 43.18)| |Z|585| |NPC|78487| |OID|36952|
+R Frostwall |QID|34794| |N|Travel to {Frostwall} (45.84, 43.18)| |Z|590| |NPC|78487|
+T News from Nagrand |QID|36602| |N|(npc:78487) in {Frostwall} (45.84, 43.18)| |Z|590| |NPC|78487| |OID|36952|
+A Taking the Fight to Nagrand |QID|34794| |N|(npc:78487) in {Frostwall} (45.84, 43.18)| |Z|590| |NPC|78487| |OID|36952|
 
-F Nagrand |QID|34795| |N|Speak to (npc:79407) and take a flight to the border of {Nagrand} (45.84, 50.70)| |Z|585|
+F Nagrand |QID|34795| |N|Speak to (npc:79407) and take a flight to the border of {Nagrand} (45.84, 50.70)| |Z|590|
 R Wrecked Caravan |QID|34795| |N|Travel to {Wrecked Caravan} (86.42, 66.21)|
 T Taking the Fight to Nagrand |QID|34794| |N|(npc:80001) in {Wrecked Caravan} (86.42, 66.21)| |NPC|80001| |O|
 T Taking the Fight to Nagrand |QID|36952| |N|(npc:80001) in {Wrecked Caravan} (86.42, 66.21)| |NPC|80001| |O|

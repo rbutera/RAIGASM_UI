@@ -86,6 +86,16 @@ function LuaUtils:matchString(input, pattern)
     return val
 end
 
+function LuaUtils:isTableEmpty(t)
+    if t == nil then
+        return true
+    end
+    for v in pairs (t) do
+        return false
+    end 
+    return true
+end
+
 --Breaks in case func returns "break" string
 function LuaUtils:foreach(items, func)
     local index = 1
