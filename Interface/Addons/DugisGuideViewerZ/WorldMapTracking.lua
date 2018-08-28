@@ -106,6 +106,7 @@ function WMT:Initialize()
 		["2550"]	= "Cooking",
 		["3273"]	= "First Aid",
 		["131474"]	= "Fishing",
+		["158762"]	= "Archaeology",
 	},
 	{__index=function(t,k) rawset(t, k, k); return k; end})
 
@@ -1136,21 +1137,29 @@ function WMT:Initialize()
 		if not pointData then return end
 		local DugisArrow = DGV.Modules.DugisArrow
 		local currentContinent = GetCurrentMapContinent_dugi()
-		local mapName,level = strsplit(":",mapName)
-		local nsMapName = UnspecifyMapName(mapName)
-		if nsMapName then
-			if not DugisGuideUser.CurrentMapVersions or DugisGuideUser.CurrentMapVersions[nsMapName]~=mapName then return end
-		end
-		
-		--Case made for "Dalaran70" mapName
-		if not nsMapName and not tonumber(mapName) then
-			mapName = mapName:gsub('[0-9]*', "") 
-		end
-		
-		map = DGV:GetMapIDFromName(nsMapName or mapName)
-		level = tonumber(level)
+        
+        local mapID = mapName
+        local level
+        
+        --Old convention (map name)
+        if not tonumber(mapID) then
+            local mapName,level = strsplit(":",mapName)
+            local nsMapName = UnspecifyMapName(mapName)
+            if nsMapName then
+                if not DugisGuideUser.CurrentMapVersions or DugisGuideUser.CurrentMapVersions[nsMapName]~=mapName then return end
+            end
+            
+            --Case made for "Dalaran70" mapName
+            if not nsMapName and not tonumber(mapName) then
+                mapName = mapName:gsub('[0-9]*', "") 
+            end
+            
+            mapID = DGV:GetMapIDFromName(nsMapName or mapName)
+            level = tonumber(level)
+        end
+        
 		if 
-			currentContinent~=GetMapContinent_dugi(map) and 
+			currentContinent~=GetMapContinent_dugi(mapID) and 
 			mapName~=DGV:GetDisplayedMapNameOld() and
 			not allContinents
 		then
@@ -1167,7 +1176,7 @@ function WMT:Initialize()
 					return zonePointIterator()
 				end
 			end
-			local point = {map, level, strsplit(":", pointData[index])}
+			local point = {mapID, level, strsplit(":", pointData[index])}
 			point[3] = tonumber(point[3]) or point[3]
 			point[4] = tonumber(point[4]) or point[4]
 --DGV:DebugFormat("IterateZonePoints", "mapName", mapName, "ShouldShow", (DataProviders:ShouldShow(nil, point[3], point[4], unpack(point, 5))), "GetDistance", (GetDistance(point)))

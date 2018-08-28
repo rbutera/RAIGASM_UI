@@ -1,7 +1,5 @@
 local L = LibStub("AceLocale-3.0"):NewLocale("RSA", "enUS", true)
 if not L then return end
-L = L or {}
-
 ---- Base Localisation
 L["Corpse of "] = true -- Tooltip mouseover of a released corpse.
 L["Couldn't find target for Soulstone."] = true -- Invalid Target warning for Soulstone
@@ -29,10 +27,12 @@ L["General"] = true
 L["Module Settings"] = true
 L["Enable Buff Reminder Module"] = true
 L["Smart Channel Options"] = true
+L["Smart Emote"] = true
+L["Only announce in /emote while you are in a group."] = true
 L["Smart Say"] = true
-L["Only announce in /yell while you are in a manually formed group."] = true
+L["Only announce in /say while you are in a group."] = true
 L["Smart Yell"] = true
-L["Only announce in /say while you are in a manually formed group."] = true
+L["Only announce in /yell while you are in a group."] = true
 L["Smart Custom Channel"] = true
 L["Announce to custom channels only while you are in a manually formed group."] = true
 
@@ -144,6 +144,7 @@ L["In Game"] = true
 L["I have a Battle.net community for my addons. If you have any issues, now you can easily report them to me in game. Just copy the invite link below and throw me a message."] = true
 L["Invite Link"] = true
 
+L["Pet Dispels"] = true
 
 
 

@@ -1,7 +1,7 @@
 ## Interface: 80000
 ## Author: cqwrteur
 ## Title: LookingForGroup Options
-## Version: r1392
+## Version: r1400
 ## SavedVariables: LookingForGroup_OptionsDB
 ## LoadOnDemand: 1
 ## X-LFG-MESSAGE: LFG_ChatCommand,LFG_ICON_LEFT_CLICK,LFG_UPDATE_EDITING

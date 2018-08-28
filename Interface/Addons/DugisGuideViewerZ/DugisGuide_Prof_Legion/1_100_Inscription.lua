@@ -174,9 +174,9 @@ N (item:136917) |QID|39951| |IN| |N|Use your (spell:51005) ability on (item:1241
 
 N (item:141447) |N|Collect (item:141447) from the counter in {The Scribe's Sacellum} and learn the recipe<br/><br/>Tick this step if you have already learned (41.24,35.69)| |Z|627| |L|141447| |P|450 40|
 
-N 1 - 40 (spell:227043) |IN| |N|Craft (item:141446), This recipe will be yellow between 20-40, so you might have to make more. <br/><b>44 (item:39354) available for purchase from (npc:93544)<br/>Each craft requires:<br/><b>1 (item:129034) milled from (item:124106)<br/><b>10 (item:129032) milled from (item:124104), (item:124105) or (item:128304) (41.08,36.40)| |Z|627| |NPC|93544| |P|450 40|
+N 1-40 (spell:227043) |IN| |N|Craft (item:141446), This recipe will be yellow between 20-40, so you might have to make more. <br/><b>44 (item:39354) available for purchase from (npc:93544)<br/>Each craft requires:<br/><b>1 (item:129034) milled from (item:124106)<br/><b>10 (item:129032) milled from (item:124104), (item:124105) or (item:128304) (41.08,36.40)| |Z|627| |NPC|93544| |P|450 40|
 B (item:137790) |N|Buy (item:137790) from (npc:14847) in {Darkmoon Island}<br/><br/>You will need to earn 50 (cur:515) by doing the Darkmoon activities during the event that comes once a month for a week (51.9,60.9)| |Z|407| |NPC|14847| |P|450 100|
-N 40 - 100 Rank 1-3 Vantus Rune |IN| |N|Rank 1 and Rank 2 Vantus Runes gain from killing a raid boss twice.  standing. You can find him in {Azsuna} in {Isle of Watcher}<br/><br/>Rank 3 also sold by (npc:107376) requires (fac:1900) revered standing, found at {Court of Farondis}  {Azsuna}| |P|450 100|
+N 40-100 Rank 1-3 Vantus Rune |IN| |N|Rank 1 and Rank 2 Vantus Runes gain from killing a raid boss twice.  standing. You can find him in {Azsuna} in {Isle of Watcher}<br/><br/>Rank 3 also sold by (npc:107376) requires (fac:1900) revered standing, found at {Court of Farondis}  {Azsuna}| |P|450 100|
 
 N Guide Complete
 

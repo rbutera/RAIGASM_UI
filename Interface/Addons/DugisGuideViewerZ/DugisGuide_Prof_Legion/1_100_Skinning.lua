@@ -172,7 +172,7 @@ A Ske'rit's Leather Handbook |QID|40140| |N|(npc:98720) in {Suramar} (30.64,33.3
 R Dalaran |TID|40140| |N|Travel to {Dalaran} (36.04,27.96)| |Z|627| 
 T Ske'rit's Leather Handbook |QID|40140| |N|(npc:93541) in {Legendary Leathers} (36.04,27.96)| |Z|627| |NPC|93541|
 
-N 1 - 100 Skinning |N|To use this guide, open the large frame and use the search feature or scroll down towards the bottom of the guide and then Shift-Left Click on that step for a waypoint for good skinning spot in different zones| |NT|
+N 1-100 Skinning |N|To use this guide, open the large frame and use the search feature or scroll down towards the bottom of the guide and then Shift-Left Click on that step for a waypoint for good skinning spot in different zones| |NT|
 --Stonehide
 N (item:124113) |SK| |N|Skin (npc:107503) or (npc:96146) in {Highmountain} (36.0, 37.7)| |Z|650| |NPC|107503, 96146| |W|
 N (item:124113) |SK| |N|Skin (npc:93095) in {Stormheim} (70.5, 52.4)| |Z|634| |NPC|93095| |W|

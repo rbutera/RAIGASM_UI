@@ -232,7 +232,7 @@ N Switch Guide |N|Switch to (guide:"703(98-110)") to complete (qid:38974) quest|
 
 T The Right Question |QID|38974| |N|(npc:93977) in {The Runewood} (65.59,56.30)| |Z|634| 
 
-N 1 - 30 (spell:202853) |N|Speak to (npc:93529) and train (spell:202853)<br/><br/>Create 55 (spell:202853) with 55 (item:124437) (36.17, 37.42)| |Z|627| |NPC|93529| |P|430 30|
+N 1-30 (spell:202853) |N|Speak to (npc:93529) and train (spell:202853)<br/><br/>Create 55 (spell:202853) with 55 (item:124437) (36.17, 37.42)| |Z|627| |NPC|93529| |P|430 30|
 
 R Val'sharah |N|Travel to {Val'sharah} (68.45,48.55)| |Z|641| |P|430 100|
 B (item:127022) |N|Buy (item:127022) from (npc:93974) in {Val'sharah} (68.45,48.55)| |Z|641| |NPC|93974| |L|127022| |P|430 100|
@@ -242,14 +242,14 @@ N (npc:97359) |N|Speak to (npc:97359) and tell him "I want to hire a personal bo
 N (cur:1149) |N|Kill enemies around this are collect 750 (cur:1149)<br/><br/>Look for the named NPC on your map (68.95,58.41)| |Z|628| |CUR|1149 750| |P|430 100|
 B (item:137954) |N|Buy (item:137954) from (npc:107760) in {The Underbelly} (66.42,81.48)| |Z|628| |NPC|107760| |L|137954| |P|430 100|
 B (item:137962) |N|Buy (item:137962) from (npc:107760) in {The Underbelly} (66.42,81.48)| |Z|628| |NPC|107760| |L|137962| |P|430 100|
-N 30 - 54 (spell:1859430) |N|Create 24 (spell:185943) rank 3<br/><b>288 (item:124437)| |P|430 54|
-N 54 - 60 (spell:185962)  |N|Create 6 (spell:185962)<br/><b>60 (item:124437)<br/><b>18 (item:124440)<br/><br/>Keep all of these for later| |P|430 60|
-N 60 - 90 (spell:202854) |N|Speak to (npc:93529) and train (spell:202854)<br/><br/>Create 55 (spell:202854)<br/><b>275 (item:124437)<br/><b>55 (item:123918) (36.17, 37.42)| |Z|627| |NPC|93529
+N 30-54 (spell:1859430) |N|Create 24 (spell:185943) rank 3<br/><b>288 (item:124437)| |P|430 54|
+N 54-60 (spell:185962)  |N|Create 6 (spell:185962)<br/><b>60 (item:124437)<br/><b>18 (item:124440)<br/><br/>Keep all of these for later| |P|430 60|
+N 60-90 (spell:202854) |N|Speak to (npc:93529) and train (spell:202854)<br/><br/>Create 55 (spell:202854)<br/><b>275 (item:124437)<br/><b>55 (item:123918) (36.17, 37.42)| |Z|627| |NPC|93529
 N (item:124124) |N|Collect 20 (item:124124)<br/><br/>You can get these as rewards for certain world quests or killing dungeon bosses.<br/><br/>Use the "World Quests" guide and dungeon guides to accomplish this.| |L|124124 20| |P|430 100|
 N (cur:1149) |N|Kill enemies around this are collect 750 (cur:1149)<br/><br/>Look for the named NPC on your map (68.95,58.41)| |Z|628| |CUR|1149 750| |P|430 100|
 B (item:137966) |N|Buy (item:137966) from (npc:107760) in {The Underbelly} (66.42,81.48)| |Z|628| |NPC|107760| |L|137966| |P|430 100|
 B (item:137974) |N|Buy (item:137974) from (npc:107760) in {The Underbelly} (66.42,81.48)| |Z|628| |NPC|107760| |L|137974| |P|430 100|
-N 90 - 100 (spell:185955) |TA| |N|Craft 10 (spell:185955)<br/><b>275 (item:127004)<br/><b>20 (item:124124) | |P|430 100|
+N 90-100 (spell:185955) |TA| |N|Craft 10 (spell:185955)<br/><b>275 (item:127004)<br/><b>20 (item:124124) | |P|430 100|
 
 N Guide Complete
 

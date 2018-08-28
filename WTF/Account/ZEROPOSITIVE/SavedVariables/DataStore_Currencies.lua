@@ -3,15 +3,29 @@ DataStore_CurrenciesDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Raigasm - Draenor",
 		["Yasuka - Outland"] = "Yasuka - Outland",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
-		["Ryugasm - Outland"] = "Ryugasm - Outland",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 		["Raigasm - Outland"] = "Raigasm - Outland",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Ryugasm - Outland"] = "Ryugasm - Outland",
 	},
 	["global"] = {
 		["Characters"] = {
+			["Default.Draenor.Raigasm"] = {
+				["lastUpdate"] = 1524071612,
+				["CurrencyInfo"] = {
+					[395] = "0-0-0-0",
+					[1220] = "0-0-0-0",
+					[824] = "0-0-0-0",
+					[1273] = "0-0-0-0",
+					[1191] = "0-0-0-0",
+					[823] = "0-0-0-0",
+					[1226] = "0-0-0-0",
+					[994] = "0-0-0-0",
+					[1342] = "0-0-0-0",
+				},
+			},
 			["Default.Outland.Raigasm"] = {
 				["Currencies"] = {
 					3, -- [1]
@@ -64,48 +78,6 @@ DataStore_CurrenciesDB = {
 					[1226] = "20-0-0-0",
 					[994] = "0-0-0-0",
 					[1342] = "50-0-0-1000",
-				},
-			},
-			["Default.Draenor.Ryugasm"] = {
-				["Currencies"] = {
-					3, -- [1]
-					32004, -- [2]
-					27, -- [3]
-					38430, -- [4]
-				},
-				["Archeology"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					0, -- [4]
-					0, -- [5]
-					0, -- [6]
-					0, -- [7]
-					0, -- [8]
-					0, -- [9]
-					0, -- [10]
-					0, -- [11]
-					0, -- [12]
-					0, -- [13]
-					0, -- [14]
-					0, -- [15]
-					0, -- [16]
-					0, -- [17]
-					0, -- [18]
-					0, -- [19]
-					0, -- [20]
-				},
-				["lastUpdate"] = 1534105923,
-				["CurrencyInfo"] = {
-					[395] = "0-0-0-0",
-					[1220] = "0-0-0-0",
-					[824] = "300-0-0-10000",
-					[1273] = "0-0-0-0",
-					[1191] = "0-0-0-0",
-					[823] = "0-0-0-0",
-					[1226] = "0-0-0-0",
-					[994] = "0-0-0-0",
-					[1342] = "0-0-0-0",
 				},
 			},
 			["Default.Outland.Yasuka"] = {
@@ -293,7 +265,7 @@ DataStore_CurrenciesDB = {
 					0, -- [17]
 					0, -- [18]
 				},
-				["lastUpdate"] = 1533390723,
+				["lastUpdate"] = 1535485834,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[1220] = "430-0-0-0",
@@ -306,12 +278,43 @@ DataStore_CurrenciesDB = {
 					[1342] = "0-0-0-0",
 				},
 			},
-			["Default.Draenor.Raigasm"] = {
-				["lastUpdate"] = 1524071612,
+			["Default.Draenor.Ryugasm"] = {
+				["Currencies"] = {
+					43, -- [1]
+					558, -- [2]
+					21548, -- [3]
+					3, -- [4]
+					32004, -- [5]
+					27, -- [6]
+					38430, -- [7]
+				},
+				["Archeology"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					0, -- [4]
+					0, -- [5]
+					0, -- [6]
+					0, -- [7]
+					0, -- [8]
+					0, -- [9]
+					0, -- [10]
+					0, -- [11]
+					0, -- [12]
+					0, -- [13]
+					0, -- [14]
+					0, -- [15]
+					0, -- [16]
+					0, -- [17]
+					0, -- [18]
+					0, -- [19]
+					0, -- [20]
+				},
+				["lastUpdate"] = 1535485600,
 				["CurrencyInfo"] = {
 					[395] = "0-0-0-0",
 					[1220] = "0-0-0-0",
-					[824] = "0-0-0-0",
+					[824] = "300-0-0-10000",
 					[1273] = "0-0-0-0",
 					[1191] = "0-0-0-0",
 					[823] = "0-0-0-0",
@@ -343,6 +346,9 @@ DataStore_CurrenciesDB = {
 				"Legionfall War Supplies|803763", -- [18]
 				"Wakening Essence|236521", -- [19]
 				"Veiled Argunite|1064188", -- [20]
+				"Battle for Azeroth|", -- [21]
+				"War Resources|2032600", -- [22]
+				"Seafarer's Dubloon|1604167", -- [23]
 			},
 			["CurrencyTextRev"] = {
 				["Ancient Mana"] = 2,
@@ -353,17 +359,20 @@ DataStore_CurrenciesDB = {
 				["Order Resources"] = 5,
 				["Veiled Argunite"] = 20,
 				["Timewarped Badge"] = 9,
+				["Seafarer's Dubloon"] = 23,
+				["Battle for Azeroth"] = 21,
 				["Wakening Essence"] = 19,
+				["Warlords of Draenor"] = 13,
 				["Timeworn Artifact"] = 17,
 				["Sightless Eye"] = 7,
 				["Miscellaneous"] = 11,
-				["Seal of Broken Fate"] = 6,
+				["Legion"] = 1,
 				["Apexis Crystal"] = 14,
 				["Darkmoon Prize Ticket"] = 12,
-				["Curious Coin"] = 3,
 				["Garrison Resources"] = 15,
-				["Legion"] = 1,
-				["Warlords of Draenor"] = 13,
+				["Curious Coin"] = 3,
+				["Seal of Broken Fate"] = 6,
+				["War Resources"] = 22,
 				["Legionfall War Supplies"] = 18,
 			},
 		},

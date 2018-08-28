@@ -247,7 +247,7 @@ N (item:130880) |LW| |N|Create 5 (item:130880) (26.53,71.61)| |QID|40214| |L|130
 N (item:130130) |LW| |N|Create 1 (item:130130) (26.53,71.61)| |QID|40214| |L|130937| 
 T Fel Tanning |QID|40214| |N|(npc:98969) in  {Den of the Demented} (26.53,71.61)| |Z|680| |NPC|98969|
 
-N 1 - 60 (spell:194712) |LW| |N|Craft 60 (spell:194712), you will need approximately 1440 (item:124113)<br/><br/>The recipe is dropped by Dropped by (npc:96028) in the Eye of Azshara dungeon| |P|460 60|
+N 1-60 (spell:194712) |LW| |N|Craft 60 (spell:194712), you will need approximately 1440 (item:124113)<br/><br/>The recipe is dropped by Dropped by (npc:96028) in the Eye of Azshara dungeon| |P|460 60|
 N 20 (item:124113) |N|Collect 20 (item:124113), you can either collect this with skinning or purchase them from the Auction house| |L|124113 20| |P|460 100|
 N 20 (item:124115) |N|Collect 20 (item:124115), you can either collect this with skinning or purchase them from the Auction house| |L|124115 20| |P|460 100|
 
@@ -260,7 +260,7 @@ B (item:137921) |N|Purchase (item:137921) from (npc:93521) in {Dalaran} (34.46,2
 U (item:137921) |N|use (item:137921) to learn it, tick this step if you already learned it| |U|137921|  |P|460 100|
 
 N Switch Guide |N|Switch to (guide:"761(110 Heroic)") to collect (item:137929) from (npc:104218)| |L|137929| |P|460 782|
-N 60 - 100 |N|Craft any Rank 2-3 Dreadleather or Gravenscale armor. Crafting the wrist items are the cheapest option. <br/><b>(item:137924) is a world drop at Broken Isle, so you can get this by randomly by doing quests and killing mobs.<br/><b>(item:137892) can be found in the Small Treasure Chest at the end of Withered Army Training scenario.| |P|460 100|
+N 60-100 |N|Craft any Rank 2-3 Dreadleather or Gravenscale armor. Crafting the wrist items are the cheapest option. <br/><b>(item:137924) is a world drop at Broken Isle, so you can get this by randomly by doing quests and killing mobs.<br/><b>(item:137892) can be found in the Small Treasure Chest at the end of Withered Army Training scenario.| |P|460 100|
 
 N Guide Complete
 

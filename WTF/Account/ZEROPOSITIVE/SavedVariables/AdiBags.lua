@@ -22,36 +22,6 @@ AdiBagsDB = {
 		},
 		["Junk"] = {
 		},
-		["Battle Pet Items"] = {
-		},
-		["WoD"] = {
-		},
-		["BfA"] = {
-		},
-		["MoneyFrame"] = {
-		},
-		["ItemCategory"] = {
-		},
-		["TSMAuction"] = {
-		},
-		["Cata"] = {
-		},
-		["NewItem"] = {
-		},
-		["MoP"] = {
-		},
-		["AdiBags_TooltipInfo"] = {
-		},
-		["Legion"] = {
-		},
-		["Wrath"] = {
-		},
-		["Equipment"] = {
-		},
-		["ItemLevel"] = {
-		},
-		["DataSource"] = {
-		},
 		["CurrencyFrame"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -65,18 +35,18 @@ AdiBagsDB = {
 						["Tol Barad Commendation"] = false,
 						["Timewarped Badge"] = false,
 						["Seal of Inevitable Fate"] = false,
-						["Lingering Soul Fragment"] = false,
-						["Elder Charm of Good Fortune"] = false,
+						["Champion's Seal"] = false,
+						["Oil"] = false,
 						["Timeworn Artifact"] = false,
 						["Sightless Eye"] = false,
 						["Timeless Coin"] = false,
-						["Seal of Tempered Fate"] = false,
+						["Mogu Rune of Fate"] = false,
 						["Apexis Crystal"] = false,
 						["Darkmoon Prize Ticket"] = false,
 						["Garrison Resources"] = false,
-						["Mogu Rune of Fate"] = false,
-						["Oil"] = false,
-						["Champion's Seal"] = false,
+						["Seal of Tempered Fate"] = false,
+						["Elder Charm of Good Fortune"] = false,
+						["Lingering Soul Fragment"] = false,
 						["Legionfall War Supplies"] = false,
 					},
 					["text"] = {
@@ -84,6 +54,36 @@ AdiBagsDB = {
 					},
 				},
 			},
+		},
+		["DataSource"] = {
+		},
+		["BfA"] = {
+		},
+		["MoneyFrame"] = {
+		},
+		["ItemLevel"] = {
+		},
+		["TSMAuction"] = {
+		},
+		["AdiBags_TooltipInfo"] = {
+		},
+		["NewItem"] = {
+		},
+		["MoP"] = {
+		},
+		["Equipment"] = {
+		},
+		["Legion"] = {
+		},
+		["Wrath"] = {
+		},
+		["Cata"] = {
+		},
+		["ItemCategory"] = {
+		},
+		["WoD"] = {
+		},
+		["Battle Pet Items"] = {
 		},
 		["Hearthstones"] = {
 		},
@@ -102,7 +102,7 @@ AdiBagsDB = {
 			["bags"] = {
 				["Bank"] = false,
 			},
-			["maxHeight"] = 0.45,
+			["maxHeight"] = 0.87,
 			["bagFont"] = {
 				["name"] = "Arial Narrow",
 				["size"] = 11,
@@ -112,13 +112,14 @@ AdiBagsDB = {
 					["xOffset"] = -5.9998779296875,
 					["yOffset"] = 230.000015258789,
 				},
+				["Backpack"] = {
+					["xOffset"] = -331.792358398438,
+					["point"] = "TOPRIGHT",
+					["yOffset"] = -390.548278808594,
+				},
 				["Bank"] = {
 					["xOffset"] = 20.0000095367432,
 					["yOffset"] = -3.99951171875,
-				},
-				["Backpack"] = {
-					["xOffset"] = -162.126586914063,
-					["yOffset"] = 248.452102661133,
 				},
 			},
 			["compactLayout"] = true,

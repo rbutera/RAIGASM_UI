@@ -16,7 +16,7 @@ function RSA:OnInitialize() -- Do all this when the addon loads.
 	
 	-- project-revision
 	self.db.global.version = 4.0
-	self.db.global.revision = GetAddOnMetadata("RSA","Version")
+	self.db.global.revision = string.match(GetAddOnMetadata("RSA","Version"),"%d+")
 
 	local LibDualSpec = LibStub('LibDualSpec-1.0')
 	LibDualSpec:EnhanceDatabase(self.db, "RSA")
@@ -273,6 +273,19 @@ function RSA.Print_Say(message) -- Send a message to Say.
 			end
 		elseif RSA.db.profile.General.GlobalAnnouncements.SmartSay == false then
 			SendChatMessage(format(message), "SAY", nil)
+		end
+	end
+end
+
+function RSA.Print_Emote(message) -- Send a message to Say.
+	if message == "" or message == " " then return end
+	if RSA.AnnouncementCheck() == true then
+		if RSA.db.profile.General.GlobalAnnouncements.SmartEmote == true then
+			if GetNumGroupMembers() > 0 or GetNumSubgroupMembers() > 0 then
+				SendChatMessage(format(message), "EMOTE", nil)
+			end
+		elseif RSA.db.profile.General.GlobalAnnouncements.SmartEmote == false then
+			SendChatMessage(format(message), "EMOTE", nil)
 		end
 	end
 end

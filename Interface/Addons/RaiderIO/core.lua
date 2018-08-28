@@ -1012,21 +1012,23 @@ do
 					end
 
 					-- if the keyword "debug" is present in the command we show the query dialog
-					if text:find("[Dd][Ee][Bb][Uu][Gg]") then
+					local debugQuery = text:match("[Dd][Ee][Bb][Uu][Gg]%s*(.-)$")
+					if debugQuery then
 						if not ns.DEBUG_UI and ns.DEBUG_INIT then
-							if ns.DEBUG_INIT_WARNED then
-								ns.DEBUG_INIT()
-							else
-								ns.DEBUG_INIT_WARNED = 1
-								DEFAULT_CHAT_FRAME:AddMessage("This is an experimental feature. Once you are done using this tool, please |cffFFFFFF/reload|r your interface, or relog, in order to restore AutoCompletion functionality elsewhere in the interface. Type the command again to confirm and load the tool.", 1, 1, 0)
-							end
+							ns.DEBUG_INIT()
 						end
 						if ns.DEBUG_UI then
-							ns.DEBUG_UI:SetShown(not ns.DEBUG_UI:IsShown())
+							if strlenutf8(debugQuery) > 0 then
+								ns.DEBUG_UI:Show()
+								ns.DEBUG_UI:Search(debugQuery)
+							else
+								ns.DEBUG_UI:SetShown(not ns.DEBUG_UI:IsShown())
+							end
 						end
 						-- we do not wish to show the config dialog at this time
 						return
 					end
+
 				end
 
 				-- resume regular routine
@@ -1230,6 +1232,7 @@ do
 
 		-- BFA
 		cache.legionScore = RoundNumber(cache.allScore, 10)
+		cache.legionMainScore = RoundNumber(cache.mainScore, 10)
 		cache.allScore = 0
 		cache.isPrevAllScore = false
 		cache.mainScore = 0
@@ -1398,6 +1401,7 @@ local GetFormattedRunCount
 local AppendGameTooltip
 local UpdateAppendedGameTooltip
 local AppendAveragePlayerScore
+local AddLegionScore
 do
 	local function sortRoleScores(a, b)
 		return a[2] > b[2]
@@ -1417,6 +1421,14 @@ do
 			return '250+'
 		else
 			return count
+		end
+	end
+
+	function AddLegionScore(tooltip, profile)
+		if profile.legionScore and profile.legionScore > 0 and (not profile.legionMainScore or profile.legionMainScore <= profile.legionScore) then
+			tooltip:AddDoubleLine(L.LEGION_SCORE, GetFormattedScore(profile.legionScore), 1, 1, 1, 1, 1, 1)
+		elseif profile.legionMainScore and (not profile.legionScore or profile.legionMainScore > profile.legionScore) then
+			tooltip:AddDoubleLine(L.LEGION_MAIN_SCORE, GetFormattedScore(profile.legionMainScore), 1, 1, 1, 1, 1, 1)
 		end
 	end
 
@@ -1461,9 +1473,7 @@ do
 				tooltip:AddDoubleLine(L.RAIDERIO_MP_SCORE, L.UNKNOWN_SCORE, 1, 0.85, 0, 1, 1, 1)
 			end
 
-			if profile.legionScore > 0 then
-				tooltip:AddDoubleLine(L.LEGION_SCORE, GetFormattedScore(profile.legionScore), 1, 1, 1, 1, 1, 1)
-			end
+			AddLegionScore(tooltip, profile)
 
 			-- choose the best highlight to show:
 			-- if user has a recorded run at higher level than their highest
@@ -1742,9 +1752,7 @@ do
 
 		profileTooltip:AddDoubleLine(profile.name, GetFormattedScore(profile.allScore, profile.isPrevAllScore), 1, 1, 1, GetScoreColor(profile.allScore))
 
-		if profile.legionScore and profile.legionScore > 0 then
-			profileTooltip:AddDoubleLine(L.LEGION_SCORE, GetFormattedScore(profile.legionScore), 1, 1, 1, 1, 1, 1)
-		end
+		AddLegionScore(profileTooltip, profile)
 
 		if profile.mainScore > profile.allScore then
 			profileTooltip:AddDoubleLine(L.MAINS_SCORE, profile.mainScore, 1, 1, 1, GetScoreColor(profile.mainScore))

@@ -74,7 +74,7 @@ function LookingForGroup.accepted(name,search,create,secure,raid,quest_id,messag
 		coroutine.resume(current)
 	end
 	local function create_resume()
-		if lfg_ec_n:GetText():len() ~= 1 then return true end
+		if lfg_ec_n and lfg_ec_n:GetText():len() ~= 1 then return true end
 		create()
 		coroutine.resume(current,true)
 	end
@@ -148,7 +148,7 @@ function LookingForGroup.accepted(name,search,create,secure,raid,quest_id,messag
 			if auto_start_a_group == false or create == nil then
 				return true
 			end
-			if hardware or lfg_ec_n:GetText():len()~=1 then
+			if hardware or lfg_ec_n:GetText():len()==1 then
 				wipe(dialog)
 				dialog.button1=START_A_GROUP
 				dialog.button2=CANCEL
@@ -162,7 +162,8 @@ function LookingForGroup.accepted(name,search,create,secure,raid,quest_id,messag
 				create()
 			end
 			return
-		end	
+		end
+		
 		UIParent:UnregisterEvent("PARTY_INVITE_REQUEST")
 		LookingForGroup:RegisterEvent("PARTY_INVITE_REQUEST",function()
 			coroutine.resume(current,true)		
@@ -433,11 +434,11 @@ function LookingForGroup.autoloop(name,search,create,secure,raid,quest_id,keywor
 	end
 	if raid then
 		LookingForGroup:RegisterEvent("LFG_LIST_ACTIVE_ENTRY_UPDATE",event_func)
-		LookingForGroup:RegisterEvent("LFG_LIST_APPLICANT_LIST_UPDATED",event_func)
 	end
 	if keyword then
-		LookingForGroup:RegisterEvent("LFG_LIST_APPLICANT_LIST_UPDATED",event_func)
 		LookingForGroup:RegisterEvent("CHAT_MSG_WHISPER",event_func)
+	else
+		LookingForGroup:RegisterEvent("LFG_LIST_APPLICANT_LIST_UPDATED",event_func)
 	end
 	while true do
 		local k,gpl,arg3,arg4,arg5,arg6 = coroutine.yield()

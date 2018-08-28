@@ -3,6 +3,6 @@
 ## Title: LookingForGroup Cross Realm
 ## LoadOnDemand: 1
 ## X-LFG-MESSAGE: LFG_ICON_RIGHT_CLICK
-## Version: r1392
+## Version: r1400
 
 Core.lua

@@ -1,5 +1,19 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
 
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Alchemy_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Blacksmithing_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Cooking_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Enchanting_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Engineering_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Fishing_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Herbalism_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Inscription_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Jewelcrafting_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Leatherworking_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Mining_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Skinning_A.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Tailoring_A.lua"/>
+
 	<Script file="..\DugisGuide_Prof_Legion\1_100_Alchemy.lua"/>
 	<Script file="..\DugisGuide_Prof_Legion\Argus_Alchemy.lua"/>
 	<Script file="..\DugisGuide_Prof_Legion\1_100_BlackSmithing.lua"/>
@@ -29,6 +43,13 @@
 	<Script file="..\DugisGuide_Prof_Legion\Mining_Farm_Legion.lua"/>
 	<Script file="..\DugisGuide_Prof_Legion\Mining_Seam.lua"/>
 
+	<Script file="Fish_Farm_A.lua"/>
+	<Script file="Herb_Farm_A.lua"/>
+	<Script file="Mine_Farm_A.lua"/>
+	<Script file="Tradeskill_Farming_A.lua"/>
+</Ui>
+
+<!--
 	<Script file="Alchemy_WoD.lua"/>
 	<Script file="Blacksmithing_WoD.lua"/>
 	<Script file="Enchanting_WoD.lua"/>
@@ -70,9 +91,4 @@
 	<Script file="Inscription_Farm_A.lua"/>
 	<Script file="Leatherworking_Farm_A.lua"/>
 	<Script file="Tailoring_Farm_A.lua"/>
-
-	<Script file="Fish_Farm_A.lua"/>
-	<Script file="Herb_Farm_A.lua"/>
-	<Script file="Mine_Farm_A.lua"/>
-	<Script file="Tradeskill_Farming_A.lua"/>
-</Ui>
+	-->

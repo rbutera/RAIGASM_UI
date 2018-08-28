@@ -312,8 +312,6 @@ A The Final Foothold |QID|52443| |N|(npc:135612) on the {Wind's Redemption} (69.
 C The Final Foothold |QID|52443| |N|Use the Zandalar Campaign Map on the {Wind's Redemption} to review the final foothold (69.24, 26.72)| |Z|1161| |O|
 T The Final Foothold |QID|52443| |N|(npc:135612) on the {Wind's Redemption} (69.24, 26.72)| |Z|1161| |NPC|135612| |O|
 
-A Uniting Kul Tiras |QID|51918| |N|(npc:135612) on the {Wind's Redemption} (69.59, 27.01)| |Z|1161| |NPC|135612|
-T Uniting Kul Tiras |QID|51918| |N|(npc:135612) on the {Wind's Redemption} (69.59, 27.01)| |Z|1161| |NPC|135612|
 A Alliance War Effort |QID|50605| |N|Auto Accept| |Z|1161|
 A Overseas Assassination |QID|52026| |N|(npc:135612) on the {Wind's Redemption} (69.59, 27.01)| |Z|1161| |NPC|135612|
 A To the Front |QID|53194| |N|(npc:142721) in {Boralus Harbor} (66.09, 26.03)| |Z|1161| |NPC|142721|
@@ -366,6 +364,10 @@ T Back to Boralus |QID|53198| |N|(npc:142721), in {Boralus Harbor} (66.15, 25.87
 A Warfront: The Battle for Stromgarde |QID|53414| |N|(npc:142721), in {Boralus Harbor} (66.15, 25.87)| |Z|1161| |NPC|142721|
 C Warfront: The Battle for Stromgarde |QID|53414| |N|View the War Table in {Boralus Harbor} and join the queue to Defeat the Horde at the Battle for Stromgarde (66.15, 25.93)| |Z|1161|
 T Warfront: The Battle for Stromgarde |QID|53414| |N|(npc:142721), in {Boralus Harbor} (66.15, 25.87)| |Z|1161| |NPC|142721|
+
+A Uniting Kul Tiras |QID|51918| |N|(npc:135612) on the {Wind's Redemption} (69.59, 27.01)| |Z|1161| |NPC|135612|
+C Uniting Kul Tiras |QID|51918| |N|Complete the leveling guides until you receive friendly status with each faction<br/><b>(guide:"895(110-120)#895(110-120)#895(110-120)")<br/><b>(guide:"896(110-120)#896(110-120)#896(110-120)")<br/><b>(guide:"942(110-120)#942(110-120)#942(110-120)")| |Z|1161| |NPC|135612|
+T Uniting Kul Tiras |QID|51918| |N|(npc:135612) on the {Wind's Redemption} (69.59, 27.01)| |Z|1161| |NPC|135612|
 
 N Guide Complete |N|More guide update to follow| 
 

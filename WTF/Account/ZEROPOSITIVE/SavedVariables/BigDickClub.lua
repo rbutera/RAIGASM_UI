@@ -856,29 +856,29 @@ BigDickClubDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Raigasm - Draenor",
 		["Yasuka - Outland"] = "Yasuka - Outland",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
-		["Ryugasm - Outland"] = "Ryugasm - Outland",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 		["Raigasm - Outland"] = "Raigasm - Outland",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Ryugasm - Outland"] = "Ryugasm - Outland",
 	},
 	["profiles"] = {
 		["Raigasm - Draenor"] = {
 		},
 		["Yasuka - Outland"] = {
 		},
-		["Norfweezy - Draenor"] = {
+		["Raimondo - Draenor"] = {
 		},
 		["Ryugasm - Draenor"] = {
 		},
-		["Ryugasm - Outland"] = {
+		["Norfweezy - Draenor"] = {
 		},
 		["Raigasm - Outland"] = {
 		},
 		["Badmanting - Draenor"] = {
 		},
-		["Raimondo - Draenor"] = {
+		["Ryugasm - Outland"] = {
 		},
 	},
 }

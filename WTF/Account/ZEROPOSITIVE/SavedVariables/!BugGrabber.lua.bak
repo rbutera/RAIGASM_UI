@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 152,
 	["lastSanitation"] = 3,
-	["session"] = 121,
 	["errors"] = {
 		{
 			["message"] = "...aster_TotalsBroker\\TradeSkillMaster_TotalsBroker-r1.lua:72: attempt to index field 'calculatedTotals' (a nil value)",
@@ -297,21 +297,13 @@ BugGrabberDB = {
 			["counter"] = 1,
 		}, -- [38]
 		{
-			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Hekili' tried to call the protected function 'ExtraActionButton1:Show()'.",
-			["time"] = "2018/08/15 13:55:15",
-			["locals"] = "InCombatSkipped",
-			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\ActionButton.lua:364: in function `ActionButton_Update'\nInterface\\FrameXML\\ActionButton.lua:813: in function `ActionButton_OnEvent'\nInterface\\FrameXML\\ActionButton.lua:253: in function <Interface\\FrameXML\\ActionButton.lua:245>",
-			["session"] = 62,
-			["counter"] = 1,
-		}, -- [39]
-		{
 			["message"] = "...rface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:708: attempt to perform arithmetic on local 'cur' (a nil value)",
 			["time"] = "2018/08/14 22:28:27",
 			["locals"] = "self = <table> {\n __EVENTS = <table> {\n }\n UNIT_ABSORB_AMOUNT_CHANGED = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:761\n callbacks = <table> {\n }\n UNIT_MAXPOWER = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:755\n Initialise = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:818\n Initialised = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:790\n PowerEvent = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:727\n StaggerUpdate = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:703\n Paladin_WatchFiresOfJustice = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:740\n UNIT_MAXHEALTH = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:764\n UNIT_AURA = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:752\n UNIT_POWER_FREQUENT = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:758\n enabled = true\n Enable = <function> defined @Interface\\AddOns\\Kui_Nameplates\\messages.lua:474\n UPDATE_SHAPESHIFT_FORM = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:737\n __CALLBACKS = <table> {\n }\n PLAYER_ENTERING_WORLD = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:564\n priority = 0\n OnDisable = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:784\n element = true\n RuneUpdate = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:668\n OnEnable = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:768\n PowerInit = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:570\n name = \"ClassPowers\"\n __MESSAGES = <table> {\n }\n TargetUpdate = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:560\n UpdateConfig = <function> defined @Interface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:483\n Disable = <function> defined @Interface\\AddOns\\Kui_Nameplates\\messages.lua:483\n}\nmax = 70360\ncur = nil\n(*temporary) = \"player\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to perform arithmetic on local 'cur' (a nil value)\"\ncpf = <unnamed> {\n 0 = <userdata>\n icons = <table> {\n }\n bar = <unnamed> {\n }\n}\nSTAGGER_RED = <table> {\n 1 = 1\n 2 = 0.42\n 3 = 0.42\n}\nSTAGGER_YELLOW = <table> {\n 1 = 1\n 2 = 0.98\n 3 = 0.72\n}\nSTAGGER_GREEN = <table> {\n 1 = 0.52\n 2 = 1\n 3 = 0.52\n}\n",
 			["stack"] = "...rface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:708: in function `StaggerUpdate'\n...rface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:765: in function `?'\n...rface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:808: in function <...rface\\AddOns\\Kui_Nameplates\\elements/classpowers.lua:807>",
 			["session"] = 62,
 			["counter"] = 3,
-		}, -- [40]
+		}, -- [39]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Grail' tried to call the protected function 'CompactRaidFrame1:Show()'.",
 			["time"] = "2018/08/16 09:09:38",
@@ -319,21 +311,21 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\CompactUnitFrame.lua:350: in function `CompactUnitFrame_UpdateVisible'\nInterface\\FrameXML\\CompactUnitFrame.lua:283: in function `CompactUnitFrame_UpdateAll'\nInterface\\FrameXML\\CompactUnitFrame.lua:56: in function <Interface\\FrameXML\\CompactUnitFrame.lua:53>",
 			["session"] = 65,
 			["counter"] = 1,
-		}, -- [41]
+		}, -- [40]
 		{
 			["message"] = "[string \"--[[ Error in ' Fallen Avatar - Dark Mark S...\"]:4: attempt to call global 'RegisterAddonMessagePrefix' (a nil value)",
 			["time"] = "2018/08/14 14:05:23",
 			["stack"] = "[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.7.2.lua:447: in function `ActivateAuraEnvironment'\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Text.lua:169: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.7.2.lua:3844: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3838>",
 			["session"] = 67,
 			["counter"] = 2,
-		}, -- [42]
+		}, -- [41]
 		{
 			["message"] = "[string \"--[[ Error in ' CBT Healing' ]]return funct...\"]:5: Usage: UnitBuff(\"unit\", [index][, \"filter\"])",
 			["time"] = "2018/08/14 14:05:23",
 			["stack"] = "[string \"--[[ Error in ' CBT Healing' ]]return funct...\"]:5: in function <[string \"--[[ Error in ' CBT Healing' ]]return funct...\"]:1>\n[C]: in function `xpcall'\nInterface\\AddOns\\WeakAuras\\RegionTypes\\Icon.lua:409: in function `UpdateCustomText'\nInterface\\AddOns\\WeakAuras\\WeakAuras-2.7.2.lua:3844: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:3838>",
 			["session"] = 67,
 			["counter"] = 56,
-		}, -- [43]
+		}, -- [42]
 		{
 			["message"] = "Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:270: integer overflow attempting to store 2548965858",
 			["time"] = "2018/08/16 18:48:16",
@@ -341,27 +333,27 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:270: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:239>\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:909: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:902>",
 			["session"] = 74,
 			["counter"] = 2,
-		}, -- [44]
+		}, -- [43]
 		{
 			["message"] = "Interface\\AddOns\\Prat-3.0-r1174      \\modules\\AltNames.lua:1282: Cannot find a library instance of \"LibAlts-1.0\".",
 			["time"] = "2018/08/14 01:48:42",
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\Ace3\\LibStub\\LibStub.lua:23: in function `LibStub'\nInterface\\AddOns\\Prat-3.0-r1174      \\modules\\AltNames.lua:1282: in function `init'\nInterface\\AddOns\\Prat-3.0-r1174      \\addon\\modules.lua:150: in function <Interface\\AddOns\\Prat-3.0\\addon\\modules.lua:143>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\nInterface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0-12.lua:529: in function `InitializeAddon'\nInterface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0-12.lua:644: in function <Interface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:636>",
 			["session"] = 78,
 			["counter"] = 4,
-		}, -- [45]
+		}, -- [44]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\Prat-3.0-r1174      \\",
-			["time"] = "2018/08/14 01:48:46",
 			["session"] = 78,
+			["time"] = "2018/08/14 01:48:46",
 			["counter"] = 11,
-		}, -- [46]
+		}, -- [45]
 		{
 			["message"] = "Interface\\AddOns\\Prat-3.0-r1174      \\modules\\AltNames.lua:1646: attempt to index upvalue 'altregistry' (a nil value)",
 			["time"] = "2018/08/14 01:48:49",
 			["stack"] = "Interface\\AddOns\\Prat-3.0-r1174      \\modules\\AltNames.lua:1646: in function `OnModuleEnable'\nInterface\\AddOns\\Prat-3.0-r1174      \\addon\\modules.lua:183: in function <Interface\\AddOns\\Prat-3.0\\addon\\modules.lua:174>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\nInterface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0-12.lua:558: in function `EnableAddon'\nInterface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0-12.lua:571: in function `EnableAddon'\nInterface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0-12.lua:651: in function <Interface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:636>\n[C]: ?\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:445: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:564: in function `TimeManager_LoadUI'\nInterface\\FrameXML\\UIParent.lua:1191: in function <Interface\\FrameXML\\UIParent.lua:1089>",
 			["session"] = 78,
 			["counter"] = 4,
-		}, -- [47]
+		}, -- [46]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'DontCast' tried to call the protected function 'CompactRaidFrame1:Show()'.",
 			["time"] = "2018/08/14 02:56:28",
@@ -369,7 +361,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\CompactUnitFrame.lua:350: in function `CompactUnitFrame_UpdateVisible'\nInterface\\FrameXML\\CompactUnitFrame.lua:283: in function `CompactUnitFrame_UpdateAll'\nInterface\\FrameXML\\CompactUnitFrame.lua:117: in function <Interface\\FrameXML\\CompactUnitFrame.lua:53>",
 			["session"] = 83,
 			["counter"] = 14,
-		}, -- [48]
+		}, -- [47]
 		{
 			["message"] = "Interface\\AddOns\\DontCast\\DontCast-1.4.4a.lua:529: CreateFrame(): Couldn't find inherited node \"Lib_UIDropDownMenuTemplate\"",
 			["time"] = "2018/08/18 21:06:11",
@@ -377,7 +369,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `CreateFrame'\nInterface\\AddOns\\DontCast\\DontCast-1.4.4a.lua:529: in function <Interface\\AddOns\\DontCast\\DontCast.lua:528>\nInterface\\AddOns\\DontCast\\DontCast-1.4.4a.lua:568: in function <Interface\\AddOns\\DontCast\\DontCast.lua:565>\nInterface\\AddOns\\DontCast\\DontCast-1.4.4a.lua:734: in function <Interface\\AddOns\\DontCast\\DontCast.lua:718>\nInterface\\AddOns\\DontCast\\DontCast-1.4.4a.lua:776: in function <Interface\\AddOns\\DontCast\\DontCast.lua:761>",
 			["session"] = 85,
 			["counter"] = 1,
-		}, -- [49]
+		}, -- [48]
 		{
 			["message"] = "...dOns\\TradeSkillMaster\\Core\\Service\\Crafting\\Core.lua:132: attempt to index field 'Operations' (a nil value)",
 			["time"] = "2018/08/18 21:06:17",
@@ -385,19 +377,19 @@ BugGrabberDB = {
 			["stack"] = "...dOns\\TradeSkillMaster\\Core\\Service\\Crafting\\Core.lua:132: in function `OnEnable'\nInterface\\AddOns\\TradeSkillMaster\\Core\\Lib\\Addon.lua:50: in function `callback'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:37: in function `ProcessEvent'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:53: in function <...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:45>\n[C]: ?\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:445: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:564: in function `TimeManager_LoadUI'\nInterface\\FrameXML\\UIParent.lua:1191: in function <Interface\\FrameXML\\UIParent.lua:1089>",
 			["session"] = 85,
 			["counter"] = 1,
-		}, -- [50]
+		}, -- [49]
 		{
 			["message"] = "Error loading Interface\\AddOns\\AddOnSkins\\Skins\\Notes.lua",
-			["time"] = "2018/08/18 21:06:20",
 			["session"] = 85,
+			["time"] = "2018/08/18 21:06:20",
 			["counter"] = 4,
-		}, -- [51]
+		}, -- [50]
 		{
 			["message"] = "Error loading Interface\\AddOns\\DontCast\\Libs\\LibStub\\LibStub.lua",
-			["time"] = "2018/08/18 21:06:20",
 			["session"] = 85,
+			["time"] = "2018/08/18 21:06:20",
 			["counter"] = 2,
-		}, -- [52]
+		}, -- [51]
 		{
 			["message"] = "...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:49: assertion failed!",
 			["time"] = "2018/08/18 21:06:20",
@@ -405,7 +397,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `assert'\n...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:49: in function <...nterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Event.lua:45>",
 			["session"] = 85,
 			["counter"] = 10,
-		}, -- [53]
+		}, -- [52]
 		{
 			["message"] = "Interface\\AddOns\\TradeSkillMaster\\Core\\Util\\Util.lua:404: Could not acquire temp table",
 			["time"] = "2018/08/18 21:06:21",
@@ -413,7 +405,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `assert'\nInterface\\AddOns\\TradeSkillMaster\\Core\\Util\\Util.lua:404: in function `AcquireTempTable'\n...erface\\AddOns\\TradeSkillMaster\\Core\\Lib\\ItemInfo.lua:658: in function `pendingCallback'\nInterface\\AddOns\\TradeSkillMaster\\Core\\Lib\\Delay.lua:160: in function <Interface\\AddOns\\TradeSkillMaster\\Core\\Lib\\Delay.lua:127>",
 			["session"] = 85,
 			["counter"] = 638,
-		}, -- [54]
+		}, -- [53]
 		{
 			["message"] = "Interface\\AddOns\\DynamicCam\\Core.lua:1517: attempt to index upvalue 'Options' (a nil value)",
 			["time"] = "2018/08/18 21:46:24",
@@ -421,13 +413,13 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\DynamicCam\\Core.lua:1517: in function `OnAccept'\nInterface\\FrameXML\\StaticPopup.lua:4964: in function `StaticPopup_OnClick'\n[string \"*:OnClick\"]:1: in function <[string \"*:OnClick\"]:1>",
 			["session"] = 89,
 			["counter"] = 2,
-		}, -- [55]
+		}, -- [54]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\ElvUI_ProgressionInTooltip\\",
-			["session"] = 90,
 			["time"] = "2018/08/12 22:28:08",
+			["session"] = 90,
 			["counter"] = 296,
-		}, -- [56]
+		}, -- [55]
 		{
 			["message"] = "Interface\\AddOns\\DugisGuideViewerZ\\ItemButton.lua:54: attempt to index field 'Frame' (a nil value)",
 			["time"] = "2018/08/18 22:22:21",
@@ -435,14 +427,14 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\DugisGuideViewerZ\\ItemButton.lua:54: in function <Interface\\AddOns\\DugisGuideViewerZ\\ItemButton.lua:51>",
 			["session"] = 91,
 			["counter"] = 8,
-		}, -- [57]
+		}, -- [56]
 		{
 			["message"] = "Interface\\AddOns\\CollectMe\\src\\LdbDisplay.lua:64: Usage: local info = C_Map.GetMapInfo(uiMapID)",
 			["time"] = "2018/08/14 15:58:27",
 			["stack"] = "[C]: in function `GetMapInfo'\nInterface\\AddOns\\CollectMe\\src\\LdbDisplay.lua:64: in function `?'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:145: in function <...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[1]\"]:4: in function <[string \"safecall Dispatcher[1]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:13: in function `?'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:90: in function `Fire'\nInterface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <Interface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 92,
 			["counter"] = 10,
-		}, -- [58]
+		}, -- [57]
 		{
 			["message"] = "Interface\\AddOns\\TipTac\\ttCore.lua:880: TipTac: FadeOut flag not cleared",
 			["time"] = "2018/08/16 16:49:34",
@@ -450,14 +442,14 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `assert'\nInterface\\AddOns\\TipTac\\ttCore.lua:880: in function <Interface\\AddOns\\TipTac\\ttCore.lua:844>\n[C]: ?\n[C]: ?\n[C]: in function `SetUnit'\nInterface\\FrameXML\\UnitFrame.lua:474: in function `UnitFrame_UpdateTooltip'\nInterface\\FrameXML\\UnitFrame.lua:460: in function <Interface\\FrameXML\\UnitFrame.lua:447>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:266: in function <Interface\\FrameXML\\SecureHandlers.lua:263>\n[C]: ?\nInterface\\FrameXML\\SecureHandlers.lua:322: in function <Interface\\FrameXML\\SecureHandlers.lua:306>\n(tail call): ?",
 			["session"] = 92,
 			["counter"] = 2,
-		}, -- [59]
+		}, -- [58]
 		{
 			["message"] = "...rface\\AddOns\\ElvUI\\Modules\\unitframes\\unitframes.lua:703: script ran too long",
 			["time"] = "2018/08/18 23:55:52",
 			["stack"] = "...rface\\AddOns\\ElvUI\\Modules\\unitframes\\unitframes.lua:703: in function `Update'\n...rface\\AddOns\\ElvUI\\Modules\\unitframes\\unitframes.lua:661: in function `Update'\n...rface\\AddOns\\ElvUI\\Modules\\unitframes\\unitframes.lua:832: in function `CreateAndUpdateHeaderGroup'\n...rface\\AddOns\\ElvUI\\Modules\\unitframes\\unitframes.lua:989: in function `UpdateAllHeaders'\n...rface\\AddOns\\ElvUI\\Modules\\unitframes\\unitframes.lua:1142: in function `?'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:145: in function <...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[3]\"]:4: in function <[string \"safecall Dispatcher[3]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[3]\"]:13: in function `?'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:90: in function `Fire'\nInterface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <Interface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 92,
 			["counter"] = 1,
-		}, -- [60]
+		}, -- [59]
 		{
 			["message"] = "[string \"safecall Dispatcher[3]\"]:14: script ran too long",
 			["time"] = "2018/08/18 23:55:52",
@@ -465,7 +457,7 @@ BugGrabberDB = {
 			["stack"] = "[string \"safecall Dispatcher[3]\"]:14: in function `?'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:90: in function `Fire'\nInterface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <Interface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
 			["session"] = 92,
 			["counter"] = 1,
-		}, -- [61]
+		}, -- [60]
 		{
 			["message"] = "Interface\\AddOns\\Hekili\\Options-Options.lua:5992: script ran too long",
 			["time"] = "2018/08/18 23:55:53",
@@ -473,28 +465,28 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\Hekili\\Options-Options.lua:5992: in function `RefreshOptions'\nInterface\\AddOns\\Hekili\\Classes.lua:2392: in function `SpecializationChanged'\nInterface\\AddOns\\Hekili\\Events.lua:220: in function `handler'\nInterface\\AddOns\\Hekili\\Events.lua:48: in function <Interface\\AddOns\\Hekili\\Events.lua:42>",
 			["session"] = 92,
 			["counter"] = 1,
-		}, -- [62]
+		}, -- [61]
 		{
 			["message"] = "Interface\\FrameXML\\LFGList.lua:562: bad argument #1 to 'SetSearchToQuestID' (outside of expected range -2147483648 to 2147483647 - Usage: C_LFGList.SetSearchToQuestID(questID))",
 			["time"] = "2018/08/19 01:41:48",
 			["stack"] = "[C]: in function `SetSearchToQuestID'\nInterface\\FrameXML\\LFGList.lua:562: in function `LFGListCategorySelection_StartFindGroup'\n...Ons\\HandyNotes_BattleForAzerothTreasures\\handler.lua:398: in function <...Ons\\HandyNotes_BattleForAzerothTreasures\\handler.lua:383>\n[C]: ?\nInterface\\AddOns\\HandyNotes\\HandyNotes-v1.5.3.lua:59: in function <Interface\\AddOns\\HandyNotes\\HandyNotes.lua:54>\nInterface\\AddOns\\HandyNotes\\HandyNotes-v1.5.3.lua:175: in function `OnClick'\nInterface\\AddOns\\HandyNotes\\HandyNotes-v1.5.3.lua:390: in function <Interface\\AddOns\\HandyNotes\\HandyNotes.lua:389>",
 			["session"] = 93,
 			["counter"] = 1,
-		}, -- [63]
+		}, -- [62]
 		{
 			["message"] = "Interface\\AddOns\\Prat-3.0-r1176      \\modules\\AltNames.lua:1282: Cannot find a library instance of \"LibAlts-1.0\".",
 			["time"] = "2018/08/19 09:39:27",
 			["stack"] = "[C]: in function `error'\nInterface\\AddOns\\Ace3\\LibStub\\LibStub.lua:23: in function `LibStub'\nInterface\\AddOns\\Prat-3.0-r1176      \\modules\\AltNames.lua:1282: in function `init'\nInterface\\AddOns\\Prat-3.0-r1176      \\addon\\modules.lua:150: in function <Interface\\AddOns\\Prat-3.0\\addon\\modules.lua:143>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\nInterface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0-12.lua:529: in function `InitializeAddon'\nInterface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0-12.lua:644: in function <Interface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:636>",
 			["session"] = 95,
 			["counter"] = 1,
-		}, -- [64]
+		}, -- [63]
 		{
 			["message"] = "Interface\\AddOns\\Prat-3.0-r1176      \\modules\\AltNames.lua:1646: attempt to index upvalue 'altregistry' (a nil value)",
 			["time"] = "2018/08/19 09:39:34",
 			["stack"] = "Interface\\AddOns\\Prat-3.0-r1176      \\modules\\AltNames.lua:1646: in function `OnModuleEnable'\nInterface\\AddOns\\Prat-3.0-r1176      \\addon\\modules.lua:183: in function <Interface\\AddOns\\Prat-3.0\\addon\\modules.lua:174>\n(tail call): ?\n[C]: ?\n[string \"safecall Dispatcher[1]\"]:9: in function <[string \"safecall Dispatcher[1]\"]:5>\n(tail call): ?\nInterface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0-12.lua:558: in function `EnableAddon'\nInterface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0-12.lua:571: in function `EnableAddon'\nInterface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0-12.lua:651: in function <Interface\\AddOns\\Ace3\\AceAddon-3.0\\AceAddon-3.0.lua:636>\n[C]: ?\n[C]: in function `LoadAddOn'\nInterface\\FrameXML\\UIParent.lua:445: in function `UIParentLoadAddOn'\nInterface\\FrameXML\\UIParent.lua:564: in function `TimeManager_LoadUI'\nInterface\\FrameXML\\UIParent.lua:1191: in function <Interface\\FrameXML\\UIParent.lua:1089>",
 			["session"] = 95,
 			["counter"] = 1,
-		}, -- [65]
+		}, -- [64]
 		{
 			["message"] = "Interface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: Attempt to register unknown event \"ENCOUNTER_STOP\"",
 			["time"] = "2018/08/16 17:50:09",
@@ -502,7 +494,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `RegisterEvent'\nInterface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua:33: in function `OnUsed'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:168: in function `RegisterEvent'\nInterface\\AddOns\\DynamicCam\\Core.lua:1446: in function `RegisterSituationEvents'\nInterface\\AddOns\\DynamicCam\\Core.lua:1436: in function `?'\nInterface\\AddOns\\Ace3\\AceTimer-3.0\\AceTimer-3.0-17.lua:55: in function <Interface\\AddOns\\Ace3\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
 			["session"] = 95,
 			["counter"] = 8,
-		}, -- [66]
+		}, -- [65]
 		{
 			["message"] = "[string \"for k,v in pairs(this.buffs) do ...\"]:2: Usage: UnitBuff(\"unit\", [index][, \"filter\"])",
 			["time"] = "2018/08/16 17:50:09",
@@ -510,34 +502,26 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `UnitBuff'\n[string \"for k,v in pairs(this.buffs) do ...\"]:2: in main chunk\n(tail call): ?\nInterface\\AddOns\\DynamicCam\\Core.lua:775: in function `?'\nInterface\\AddOns\\Ace3\\AceTimer-3.0\\AceTimer-3.0-17.lua:55: in function <Interface\\AddOns\\Ace3\\AceTimer-3.0\\AceTimer-3.0.lua:50>",
 			["session"] = 95,
 			["counter"] = 3847,
-		}, -- [67]
+		}, -- [66]
 		{
 			["message"] = "Interface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua:37: Attempt to unregister unknown event \"ENCOUNTER_STOP\"",
 			["time"] = "2018/08/16 18:36:24",
 			["stack"] = "[C]: in function `UnregisterEvent'\nInterface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua:37: in function `OnUnused'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:223: in function `UnregisterAllEvents'\nInterface\\AddOns\\DynamicCam\\Core.lua:733: in function `?'\n...edia-3.0\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:119: in function <...edia-3.0\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:119>\n[C]: ?\n...edia-3.0\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:29: in function <...edia-3.0\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:25>\n...edia-3.0\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:64: in function `Fire'\nInterface\\AddOns\\Ace3\\AceDB-3.0\\AceDB-3.0-26.lua:362: in function <Interface\\AddOns\\Ace3\\AceDB-3.0\\AceDB-3.0.lua:359>",
 			["session"] = 95,
 			["counter"] = 8,
-		}, -- [68]
+		}, -- [67]
 		{
 			["message"] = "Error loading Interface\\AddOns\\LittleWigs\\BfA\\KingsRest\\Mchimba.lua",
-			["time"] = "2018/08/19 17:02:17",
 			["session"] = 97,
+			["time"] = "2018/08/19 17:02:17",
 			["counter"] = 5,
-		}, -- [69]
+		}, -- [68]
 		{
 			["message"] = "Error loading Interface\\AddOns\\LittleWigs\\BfA\\KingsRest\\Council.lua",
+			["session"] = 97,
 			["time"] = "2018/08/19 17:02:17",
-			["session"] = 97,
 			["counter"] = 5,
-		}, -- [70]
-		{
-			["message"] = "Interface\\AddOns\\TipTac\\ttIcons.lua:17: Usage: GetRaidTargetIndex(unit)",
-			["time"] = "2018/08/14 16:32:26",
-			["locals"] = "(*temporary) = nil\n",
-			["stack"] = "[C]: in function `GetRaidTargetIndex'\nInterface\\AddOns\\TipTac\\ttIcons.lua:17: in function `SetIcon'\nInterface\\AddOns\\TipTac\\ttIcons.lua:67: in function `?'\nInterface\\AddOns\\TipTac\\ttCore.lua:307: in function `SendElementEvent'\nInterface\\AddOns\\TipTac\\ttCore.lua:705: in function `ApplyUnitAppearance'\nInterface\\AddOns\\TipTac\\ttCore.lua:882: in function <Interface\\AddOns\\TipTac\\ttCore.lua:844>\n[C]: ?\n[C]: ?\n[C]: in function `SetUnit'\nInterface\\AddOns\\ElvUI\\Modules\\tooltip\\tooltip.lua:626: in function `?'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:145: in function <...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[3]\"]:4: in function <[string \"safecall Dispatcher[3]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[3]\"]:13: in function `?'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:90: in function `Fire'\nInterface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <Interface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
-			["session"] = 97,
-			["counter"] = 11,
-		}, -- [71]
+		}, -- [69]
 		{
 			["message"] = "Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:270: Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2075: Usage: GetQuestItemLink(\"type\", index)",
 			["time"] = "2018/08/14 03:16:40",
@@ -545,7 +529,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:270: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:239>\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:909: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:902>",
 			["session"] = 100,
 			["counter"] = 51,
-		}, -- [72]
+		}, -- [70]
 		{
 			["message"] = "Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2075: Usage: GetQuestItemLink(\"type\", index)",
 			["time"] = "2018/08/21 12:08:09",
@@ -553,13 +537,13 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2075: in function `(for generator)'\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:3848: in function `EvaluateRewards'\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:174: in function <Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:173>\n[C]: in function `Show'\nInterface\\AddOns\\Immersion\\Logic\\Logic.lua:35: in function `AddQuestInfo'\nInterface\\AddOns\\Immersion\\Logic\\Events.lua:60: in function `?'\nInterface\\AddOns\\Immersion\\Logic\\Logic.lua:11: in function <Interface\\AddOns\\Immersion\\Logic\\Logic.lua:8>",
 			["session"] = 100,
 			["counter"] = 5,
-		}, -- [73]
+		}, -- [71]
 		{
 			["message"] = "Error loading Interface\\AddOns\\LittleWigs\\BfA\\SiegeOfBoralus\\Viqgoth.lua",
-			["session"] = 100,
 			["time"] = "2018/08/21 13:05:47",
+			["session"] = 100,
 			["counter"] = 5,
-		}, -- [74]
+		}, -- [72]
 		{
 			["message"] = "Usage: local spellID = C_SpecializationInfo.GetSpellsDisplay(specializationID)",
 			["time"] = "2018/08/14 09:50:23",
@@ -567,7 +551,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: in function `GetSpellsDisplay'\n...rface\\AddOns\\Blizzard_TalentUI\\Blizzard_TalentUI.lua:1247: in function `PlayerTalentFrame_UpdateSpecFrame'\n...lvUI_BetterTalentFrame\\modules/TalentFrameRework.lua:83: in function `UpdateActivateButton'\n...lvUI_BetterTalentFrame\\modules/TalentFrameRework.lua:181: in function <...lvUI_BetterTalentFrame\\modules/TalentFrameRework.lua:180>\n(tail call): ?\n[C]: in function `PlayerTalentFrame_Update'\n...rface\\AddOns\\Blizzard_TalentUI\\Blizzard_TalentUI.lua:429: in function `PlayerTalentFrame_Refresh'\n...rface\\AddOns\\Blizzard_TalentUI\\Blizzard_TalentUI.lua:306: in function <...rface\\AddOns\\Blizzard_TalentUI\\Blizzard_TalentUI.lua:299>",
 			["session"] = 100,
 			["counter"] = 8,
-		}, -- [75]
+		}, -- [73]
 		{
 			["message"] = "Invalid quest item in SetQuestLogItem(\"type\", index [, questID])",
 			["time"] = "2018/08/22 07:04:05",
@@ -575,15 +559,7 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\n[C]: ?\n...face\\AddOns\\TradeSkillMaster\\Core\\Lib\\TooltipLib.lua:95: in function <...face\\AddOns\\TradeSkillMaster\\Core\\Lib\\TooltipLib.lua:93>\nInterface\\AddOns\\Altoholic\\Tooltip.lua:702: in function <Interface\\AddOns\\Altoholic\\Tooltip.lua:700>\n[C]: ?\n[C]: in function `SetQuestLogItem'\nInterface\\FrameXML\\QuestInfo.lua:957: in function `UpdateTooltip'\nInterface\\FrameXML\\GameTooltip.lua:498: in function <Interface\\FrameXML\\GameTooltip.lua:477>\n[C]: ?\n[C]: ?",
 			["session"] = 102,
 			["counter"] = 4,
-		}, -- [76]
-		{
-			["message"] = "Interface\\AddOns\\WIM\\Modules\\Sounds.lua:102: attempt to index field '?' (a nil value)",
-			["time"] = "2018/08/14 13:04:34",
-			["locals"] = "self = <table> {\n enabled = true\n dPrint = <function> defined @Interface\\AddOns\\WIM\\WIM.lua:239\n RegisterWidget = <function> defined @Interface\\AddOns\\WIM\\WIM.lua:241\n PostEvent_Whisper = <function> defined @Interface\\AddOns\\WIM\\Modules\\Sounds.lua:99\n canDisable = false\n VARIABLES_LOADED = <function> defined @Interface\\AddOns\\WIM\\Modules\\Sounds.lua:94\n RegisterEvent = <function> defined @Interface\\AddOns\\WIM\\WIM.lua:236\n PostEvent_WhisperInform = <function> defined @Interface\\AddOns\\WIM\\Modules\\Sounds.lua:114\n db_defaults = <table> {\n }\n enableByDefault = true\n title = \"Sounds\"\n Enable = <function> defined @Interface\\AddOns\\WIM\\WIM.lua:237\n db = <table> {\n }\n resources = <table> {\n }\n hasWidget = false\n Disable = <function> defined @Interface\\AddOns\\WIM\\WIM.lua:238\n}\nmsg = \"got another 120 that can join\"\nuser = \"Djkhalid-TarrenMill\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nplaySound = <function> defined @Interface\\AddOns\\WIM\\Modules\\Sounds.lua:83\n",
-			["stack"] = "Interface\\AddOns\\WIM\\Modules\\Sounds.lua:102: in function `fun'\nInterface\\AddOns\\WIM\\WIM-3.7.18.lua:293: in function `CallModuleFunction'\nInterface\\AddOns\\WIM\\Modules\\WhisperEngine.lua:322: in function `handler'\n...s\\WIM\\Libs\\LibChatHandler-1.0\\LibChatHandler-1.0-18.lua:267: in function <...s\\WIM\\Libs\\LibChatHandler-1.0\\LibChatHandler-1.0.lua:252>\n...s\\WIM\\Libs\\LibChatHandler-1.0\\LibChatHandler-1.0-18.lua:311: in function <...s\\WIM\\Libs\\LibChatHandler-1.0\\LibChatHandler-1.0.lua:299>",
-			["session"] = 102,
-			["counter"] = 4,
-		}, -- [77]
+		}, -- [74]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'FishingBuddy' tried to call the protected function 'FishingActionButton:Hide()'.",
 			["time"] = "2018/08/23 10:22:25",
@@ -591,7 +567,7 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Hide'\n[string \"*:OnFinished\"]:2: in function <[string \"*:OnFinished\"]:1>",
 			["session"] = 111,
 			["counter"] = 1,
-		}, -- [78]
+		}, -- [75]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Auctionator' tried to call the protected function 'CompactRaidFrame1:Show()'.",
 			["time"] = "2018/08/19 01:35:06",
@@ -599,95 +575,25 @@ BugGrabberDB = {
 			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\CompactUnitFrame.lua:350: in function `CompactUnitFrame_UpdateVisible'\nInterface\\FrameXML\\CompactUnitFrame.lua:283: in function `CompactUnitFrame_UpdateAll'\nInterface\\FrameXML\\CompactUnitFrame.lua:117: in function <Interface\\FrameXML\\CompactUnitFrame.lua:53>",
 			["session"] = 112,
 			["counter"] = 7,
-		}, -- [79]
-		{
-			["message"] = "Error loading Interface\\AddOns\\AtlasLoot\\Button\\Token_type.lua",
-			["time"] = "2018/08/18 22:02:53",
-			["session"] = 115,
-			["counter"] = 16,
-		}, -- [80]
-		{
-			["message"] = "Error loading Interface\\AddOns\\AtlasLoot\\GUI\\ItemWithSetFrame.lua",
-			["time"] = "2018/08/18 22:02:53",
-			["session"] = 115,
-			["counter"] = 16,
-		}, -- [81]
+		}, -- [76]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasMajorCitiesEnhanced\\-- Localisation --",
-			["session"] = 119,
 			["time"] = "2018/08/23 10:10:56",
+			["session"] = 119,
 			["counter"] = 12,
-		}, -- [82]
+		}, -- [77]
 		{
 			["message"] = "Couldn't open Interface\\AddOns\\AtlasMajorCitiesEnhanced\\-- Main Code --",
-			["session"] = 119,
 			["time"] = "2018/08/23 10:10:56",
+			["session"] = 119,
 			["counter"] = 12,
-		}, -- [83]
+		}, -- [78]
 		{
 			["message"] = "Interface\\AddOns\\AtlasMajorCitiesEnhanced\\Bindings.xml(32): error: no element found",
-			["session"] = 119,
 			["time"] = "2018/08/23 10:10:56",
+			["session"] = 119,
 			["counter"] = 8,
-		}, -- [84]
-		{
-			["message"] = "Interface\\AddOns\\AtlasLoot\\Locales\\IngameLocales.lua:6: attempt to call global 'CalendarGetMonthNames' (a nil value)",
-			["time"] = "2018/08/18 22:02:40",
-			["locals"] = "AtlasLoot = <table> {\n Locale = <table> {\n }\n GetLocales = <function> defined @Interface\\AddOns\\AtlasLoot\\Locales\\Locales.lua:11\n Locales = <table> {\n }\n Init = <table> {\n }\n __addonrevision = 4772\n AtlasLootDBDefaults = <table> {\n }\n Data = <table> {\n }\n IMAGE_PATH = \"Interface\\AddOns\\AtlasLoot\\Images\\\"\n}\nrawget = <function> defined =[C]:-1\n_ = nil\ntmp1 = nil\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'CalendarGetMonthNames' (a nil value)\"\n",
-			["stack"] = "Interface\\AddOns\\AtlasLoot\\Locales\\IngameLocales.lua:6: in main chunk",
-			["session"] = 121,
-			["counter"] = 27,
-		}, -- [85]
-		{
-			["message"] = "Interface\\AddOns\\AtlasLoot_MistsofPandaria\\data.lua:1604: attempt to index local 'ALIL' (a nil value)",
-			["time"] = "2018/08/22 14:50:27",
-			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n StoreMicroButtonAlertGlowBottom = StoreMicroButtonAlertGlowBottom {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 398\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this community.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n TutorialFrameLeft19 = TutorialFrameLeft19 {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n BOOKTYPE_PROFESSION = \"professions\"\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:787\n PaperDollTitlesPaneButton10BgTop = PaperDollTitlesPaneButton10BgTop {\n }\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2372\n TutorialFrameRight19 = TutorialFrameRight19 {\n }\n ChatFrame6EditBoxFocusMid = ChatFrame6EditBoxFocusMid {\n }\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 947\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LFGTeleport = <function> defined =[C]:-1\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n ToggleEncounterJournal = <function> defined @Interface\\FrameXML\\UIParent.lua:909\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n TalentMicroButtonAlertShadowTopLeft = TalentMicroButtonAlertShadowTopLeft {\n }\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee attack that spends Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n LFGListSearchPanelScrollFrameButton10BottomRight = LFGListSearchPanelScrollFrameButton10BottomRight {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n RaidUtility_CloseButton = RaidUtility_CloseButton {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1148\n SLASH_STOPATTACK1 = \"/stopattack\"\n M",
-			["stack"] = "Interface\\AddOns\\AtlasLoot_MistsofPandaria\\data.lua:1604: in main chunk\n[C]: in function `LoadAddOn'\nInterface\\AddOns\\AtlasLoot\\Loader.lua:227: in function `LoadModule'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:573: in function `ButtonOnClick'\nInterface\\AddOns\\AtlasLoot\\GUI\\Template_DropDown.lua:164: in function `SetSelected'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:123: in function `PreLoadModules'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:745: in function `func'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:36: in function <Interface\\AddOns\\AtlasLoot\\AtlasLoot.lua:28>",
-			["session"] = 121,
-			["counter"] = 14,
-		}, -- [86]
-		{
-			["message"] = "Interface\\AddOns\\AtlasLoot_Cataclysm\\data.lua:1548: attempt to index local 'ALIL' (a nil value)",
-			["time"] = "2018/08/22 14:50:27",
-			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n StoreMicroButtonAlertGlowBottom = StoreMicroButtonAlertGlowBottom {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 398\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this community.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n TutorialFrameLeft19 = TutorialFrameLeft19 {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n BOOKTYPE_PROFESSION = \"professions\"\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:787\n PaperDollTitlesPaneButton10BgTop = PaperDollTitlesPaneButton10BgTop {\n }\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2372\n TutorialFrameRight19 = TutorialFrameRight19 {\n }\n ChatFrame6EditBoxFocusMid = ChatFrame6EditBoxFocusMid {\n }\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 947\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LFGTeleport = <function> defined =[C]:-1\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n ToggleEncounterJournal = <function> defined @Interface\\FrameXML\\UIParent.lua:909\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n TalentMicroButtonAlertShadowTopLeft = TalentMicroButtonAlertShadowTopLeft {\n }\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee attack that spends Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n LFGListSearchPanelScrollFrameButton10BottomRight = LFGListSearchPanelScrollFrameButton10BottomRight {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n RaidUtility_CloseButton = RaidUtility_CloseButton {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1148\n SLASH_STOPATTACK1 = \"/stopattack\"\n M",
-			["stack"] = "Interface\\AddOns\\AtlasLoot_Cataclysm\\data.lua:1548: in main chunk\n[C]: in function `LoadAddOn'\nInterface\\AddOns\\AtlasLoot\\Loader.lua:227: in function `LoadModule'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:573: in function `ButtonOnClick'\nInterface\\AddOns\\AtlasLoot\\GUI\\Template_DropDown.lua:164: in function `SetSelected'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:123: in function `PreLoadModules'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:745: in function `func'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:36: in function <Interface\\AddOns\\AtlasLoot\\AtlasLoot.lua:28>",
-			["session"] = 121,
-			["counter"] = 14,
-		}, -- [87]
-		{
-			["message"] = "...terface\\AddOns\\AtlasLoot_WrathoftheLichKing\\data.lua:4997: attempt to index local 'ALIL' (a nil value)",
-			["time"] = "2018/08/22 14:50:27",
-			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n StoreMicroButtonAlertGlowBottom = StoreMicroButtonAlertGlowBottom {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 398\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this community.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n TutorialFrameLeft19 = TutorialFrameLeft19 {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n BOOKTYPE_PROFESSION = \"professions\"\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:787\n PaperDollTitlesPaneButton10BgTop = PaperDollTitlesPaneButton10BgTop {\n }\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2372\n TutorialFrameRight19 = TutorialFrameRight19 {\n }\n ChatFrame6EditBoxFocusMid = ChatFrame6EditBoxFocusMid {\n }\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 947\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LFGTeleport = <function> defined =[C]:-1\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n ToggleEncounterJournal = <function> defined @Interface\\FrameXML\\UIParent.lua:909\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n TalentMicroButtonAlertShadowTopLeft = TalentMicroButtonAlertShadowTopLeft {\n }\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee attack that spends Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n LFGListSearchPanelScrollFrameButton10BottomRight = LFGListSearchPanelScrollFrameButton10BottomRight {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n RaidUtility_CloseButton = RaidUtility_CloseButton {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1148\n SLASH_STOPATTACK1 = \"/stopattack\"\n M",
-			["stack"] = "...terface\\AddOns\\AtlasLoot_WrathoftheLichKing\\data.lua:4997: in main chunk\n[C]: in function `LoadAddOn'\nInterface\\AddOns\\AtlasLoot\\Loader.lua:227: in function `LoadModule'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:573: in function `ButtonOnClick'\nInterface\\AddOns\\AtlasLoot\\GUI\\Template_DropDown.lua:164: in function `SetSelected'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:123: in function `PreLoadModules'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:745: in function `func'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:36: in function <Interface\\AddOns\\AtlasLoot\\AtlasLoot.lua:28>",
-			["session"] = 121,
-			["counter"] = 14,
-		}, -- [88]
-		{
-			["message"] = "Interface\\AddOns\\AtlasLoot_Classic\\data.lua:2477: attempt to index local 'ALIL' (a nil value)",
-			["time"] = "2018/08/22 14:50:27",
-			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n StoreMicroButtonAlertGlowBottom = StoreMicroButtonAlertGlowBottom {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 398\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this community.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n TutorialFrameLeft19 = TutorialFrameLeft19 {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n BOOKTYPE_PROFESSION = \"professions\"\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:787\n PaperDollTitlesPaneButton10BgTop = PaperDollTitlesPaneButton10BgTop {\n }\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2372\n TutorialFrameRight19 = TutorialFrameRight19 {\n }\n ChatFrame6EditBoxFocusMid = ChatFrame6EditBoxFocusMid {\n }\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 947\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LFGTeleport = <function> defined =[C]:-1\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n ToggleEncounterJournal = <function> defined @Interface\\FrameXML\\UIParent.lua:909\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n TalentMicroButtonAlertShadowTopLeft = TalentMicroButtonAlertShadowTopLeft {\n }\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee attack that spends Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n LFGListSearchPanelScrollFrameButton10BottomRight = LFGListSearchPanelScrollFrameButton10BottomRight {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n RaidUtility_CloseButton = RaidUtility_CloseButton {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1148\n SLASH_STOPATTACK1 = \"/stopattack\"\n M",
-			["stack"] = "Interface\\AddOns\\AtlasLoot_Classic\\data.lua:2477: in main chunk\n[C]: in function `LoadAddOn'\nInterface\\AddOns\\AtlasLoot\\Loader.lua:227: in function `LoadModule'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:573: in function `ButtonOnClick'\nInterface\\AddOns\\AtlasLoot\\GUI\\Template_DropDown.lua:164: in function `SetSelected'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:123: in function `PreLoadModules'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:745: in function `func'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:36: in function <Interface\\AddOns\\AtlasLoot\\AtlasLoot.lua:28>",
-			["session"] = 121,
-			["counter"] = 14,
-		}, -- [89]
-		{
-			["message"] = "(null)",
-			["time"] = "2018/08/18 22:02:53",
-			["session"] = 121,
-			["counter"] = 70,
-		}, -- [90]
-		{
-			["message"] = "AtlasLootToggleFromWorldMap1: Couldn't find relative frame: WorldMapScrollFrame",
-			["time"] = "2018/08/18 22:02:53",
-			["session"] = 121,
-			["counter"] = 69,
-		}, -- [91]
-		{
-			["message"] = "Error loading Interface\\AddOns\\AtlasLoot\\Data\\NPC.lua",
-			["time"] = "2018/08/18 22:02:53",
-			["session"] = 121,
-			["counter"] = 31,
-		}, -- [92]
+		}, -- [79]
 		{
 			["message"] = "Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2093: Usage: GetQuestItemLink(\"type\", index)",
 			["time"] = "2018/08/24 17:49:27",
@@ -695,6 +601,175 @@ BugGrabberDB = {
 			["stack"] = "[C]: ?\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2093: in function `(for generator)'\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:3845: in function `EvaluateRewards'\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:191: in function <Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:189>\n[C]: in function `Show'\nInterface\\AddOns\\Immersion\\Logic\\Logic.lua:35: in function `AddQuestInfo'\nInterface\\AddOns\\Immersion\\Logic\\Events.lua:44: in function `?'\nInterface\\AddOns\\Immersion\\Logic\\Logic.lua:11: in function <Interface\\AddOns\\Immersion\\Logic\\Logic.lua:8>",
 			["session"] = 121,
 			["counter"] = 1,
+		}, -- [80]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'DugisGuideViewerZ' tried to call the protected function 'DugisSmallFrameContainer:Hide()'.",
+			["time"] = "2018/08/25 17:44:25",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Hide'\nInterface\\AddOns\\DugisGuideViewerZ\\SmallFrame.lua:1222: in function `OnWatchFrameUpdate'\nInterface\\AddOns\\DugisGuideViewerZ\\WatchFrame.lua:476: in function `DelayUpdate'\nInterface\\AddOns\\DugisGuideViewerZ\\WatchFrame.lua:495: in function `action'\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:610: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:573>\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:809: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:784>\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:831: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:830>\n[C]: in function `ObjectiveTracker_Update'\n...zzard_ObjectiveTracker\\Blizzard_ObjectiveTracker.lua:671: in function <...zzard_ObjectiveTracker\\Blizzard_ObjectiveTracker.lua:669>",
+			["session"] = 130,
+			["counter"] = 1,
+		}, -- [81]
+		{
+			["message"] = "Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:270: Interface\\AddOns\\DugisGuideViewerZ\\Taxi.lua:2452: attempt to perform arithmetic on local 'x' (a nil value)",
+			["time"] = "2018/08/25 17:44:48",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"Interface\\AddOns\\DugisGuideViewerZ\\Taxi.lua:2452: attempt to perform arithmetic on local 'x' (a nil value)\"\n",
+			["stack"] = "[C]: ?\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:270: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:239>\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:909: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:902>",
+			["session"] = 130,
+			["counter"] = 1,
+		}, -- [82]
+		{
+			["message"] = "Interface\\AddOns\\WIM\\Modules\\Sounds.lua:102: attempt to index field '?' (a nil value)",
+			["time"] = "2018/08/14 13:04:34",
+			["locals"] = "self = <table> {\n enabled = true\n dPrint = <function> defined @Interface\\AddOns\\WIM\\WIM.lua:239\n RegisterWidget = <function> defined @Interface\\AddOns\\WIM\\WIM.lua:241\n PostEvent_Whisper = <function> defined @Interface\\AddOns\\WIM\\Modules\\Sounds.lua:99\n canDisable = false\n VARIABLES_LOADED = <function> defined @Interface\\AddOns\\WIM\\Modules\\Sounds.lua:94\n RegisterEvent = <function> defined @Interface\\AddOns\\WIM\\WIM.lua:236\n PostEvent_WhisperInform = <function> defined @Interface\\AddOns\\WIM\\Modules\\Sounds.lua:114\n db_defaults = <table> {\n }\n enableByDefault = true\n title = \"Sounds\"\n Enable = <function> defined @Interface\\AddOns\\WIM\\WIM.lua:237\n db = <table> {\n }\n resources = <table> {\n }\n hasWidget = false\n Disable = <function> defined @Interface\\AddOns\\WIM\\WIM.lua:238\n}\nmsg = \"got another 120 that can join\"\nuser = \"Djkhalid-TarrenMill\"\n(*temporary) = nil\n(*temporary) = nil\n(*temporary) = \"attempt to index field '?' (a nil value)\"\nplaySound = <function> defined @Interface\\AddOns\\WIM\\Modules\\Sounds.lua:83\n",
+			["stack"] = "Interface\\AddOns\\WIM\\Modules\\Sounds.lua:102: in function `fun'\nInterface\\AddOns\\WIM\\WIM-3.7.18.lua:293: in function `CallModuleFunction'\nInterface\\AddOns\\WIM\\Modules\\WhisperEngine.lua:322: in function `handler'\n...s\\WIM\\Libs\\LibChatHandler-1.0\\LibChatHandler-1.0-18.lua:267: in function <...s\\WIM\\Libs\\LibChatHandler-1.0\\LibChatHandler-1.0.lua:252>\n...s\\WIM\\Libs\\LibChatHandler-1.0\\LibChatHandler-1.0-18.lua:311: in function <...s\\WIM\\Libs\\LibChatHandler-1.0\\LibChatHandler-1.0.lua:299>",
+			["session"] = 139,
+			["counter"] = 5,
+		}, -- [83]
+		{
+			["message"] = "Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:270: Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2093: Usage: GetQuestItemLink(\"type\", index)",
+			["time"] = "2018/08/25 01:56:15",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2093: Usage: GetQuestItemLink(\"type\", index)\"\n",
+			["stack"] = "[C]: ?\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:270: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:239>\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:909: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:902>",
+			["session"] = 140,
+			["counter"] = 166,
+		}, -- [84]
+		{
+			["message"] = "Interface\\AddOns\\TipTac\\ttIcons.lua:17: Usage: GetRaidTargetIndex(unit)",
+			["time"] = "2018/08/14 16:32:26",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[C]: in function `GetRaidTargetIndex'\nInterface\\AddOns\\TipTac\\ttIcons.lua:17: in function `SetIcon'\nInterface\\AddOns\\TipTac\\ttIcons.lua:67: in function `?'\nInterface\\AddOns\\TipTac\\ttCore.lua:307: in function `SendElementEvent'\nInterface\\AddOns\\TipTac\\ttCore.lua:705: in function `ApplyUnitAppearance'\nInterface\\AddOns\\TipTac\\ttCore.lua:882: in function <Interface\\AddOns\\TipTac\\ttCore.lua:844>\n[C]: ?\n[C]: ?\n[C]: in function `SetUnit'\nInterface\\AddOns\\ElvUI\\Modules\\tooltip\\tooltip.lua:626: in function `?'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:145: in function <...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0.lua:145>\n[string \"safecall Dispatcher[3]\"]:4: in function <[string \"safecall Dispatcher[3]\"]:4>\n[C]: ?\n[string \"safecall Dispatcher[3]\"]:13: in function `?'\n...Ons\\Ace3\\CallbackHandler-1.0\\CallbackHandler-1.0-7.lua:90: in function `Fire'\nInterface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0-4.lua:120: in function <Interface\\AddOns\\Ace3\\AceEvent-3.0\\AceEvent-3.0.lua:119>",
+			["session"] = 141,
+			["counter"] = 14,
+		}, -- [85]
+		{
+			["message"] = "Interface\\AddOns\\WorldQuestParty\\WorldQuestParty-BFA-1.7.lua:307: attempt to index global 'WQPOptionsPane' (a nil value)",
+			["time"] = "2018/08/27 12:58:37",
+			["locals"] = "self = WorldQuestPartyFrame {\n 0 = <userdata>\n EnterWQ = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:514\n SetAsParty = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:471\n JoinFrame = WQPJoinFrame {\n }\n HeaderFrame = WQPHeaderFrame {\n }\n ExitWQ = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:549\n DebugPrint = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:38\n SetAsIndividual = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:491\n CreateSubFrames = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty_Frames.lua:162\n HookEvents = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:343\n}\nself = \"PLAYER_ENTERING_WORLD\"\nisInitialLogin = false\nisReloadingUi = true\n(*temporary) = nil\n(*temporary) = WorldQuestPartyFrame {\n 0 = <userdata>\n EnterWQ = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:514\n SetAsParty = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:471\n JoinFrame = WQPJoinFrame {\n }\n HeaderFrame = WQPHeaderFrame {\n }\n ExitWQ = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:549\n DebugPrint = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:38\n SetAsIndividual = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:491\n CreateSubFrames = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty_Frames.lua:162\n HookEvents = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:343\n}\n(*temporary) = \"CHANNEL_UI_UPDATE\"\n(*temporary) = \"attempt to index global 'WQPOptionsPane' (a nil value)\"\nRemoveAllWQPChannels = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:291\nRegEvents = <table> {\n CHAT_MSG_CHANNEL_JOIN = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:164\n CHAT_MSG_ADDON = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:108\n isInitialLogin = false\n PLAYER_LOGIN = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:52\n QUEST_TURNED_IN = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:205\n GROUP_ROSTER_UPDATE = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:170\n CHANNEL_UI_UPDATE = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:311\n PLAYER_ENTERING_WORLD = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:301\n CHAT_MSG_WHISPER = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:156\n PARTY_INVITE_REQUEST = <function> defined @Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:248\n}\n",
+			["stack"] = "Interface\\AddOns\\WorldQuestParty\\WorldQuestParty-BFA-1.7.lua:307: in function <Interface\\AddOns\\WorldQuestParty\\WorldQuestParty.lua:301>\n(tail call): ?",
+			["session"] = 144,
+			["counter"] = 1,
+		}, -- [86]
+		{
+			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster\\Core\\Util\\Core.lua",
+			["time"] = "2018/08/27 12:58:38",
+			["session"] = 144,
+			["counter"] = 2,
+		}, -- [87]
+		{
+			["message"] = "Error loading Interface\\AddOns\\TradeSkillMaster\\Core\\Service\\Groups\\Sync.lua",
+			["time"] = "2018/08/27 12:58:38",
+			["session"] = 144,
+			["counter"] = 2,
+		}, -- [88]
+		{
+			["message"] = "Error loading Interface\\AddOns\\AtlasLoot\\Button\\Token_type.lua",
+			["session"] = 146,
+			["time"] = "2018/08/18 22:02:53",
+			["counter"] = 20,
+		}, -- [89]
+		{
+			["message"] = "Error loading Interface\\AddOns\\AtlasLoot\\GUI\\ItemWithSetFrame.lua",
+			["session"] = 146,
+			["time"] = "2018/08/18 22:02:53",
+			["counter"] = 20,
+		}, -- [90]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'WorldQuestsList' tried to call the protected function 'Search()'.",
+			["time"] = "2018/08/26 15:10:54",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Search'\nInterface\\FrameXML\\LFGList.lua:1734: in function `LFGListSearchPanel_DoSearch'\nInterface\\FrameXML\\LFGList.lua:1895: in function <Interface\\FrameXML\\LFGList.lua:1889>\n[C]: ?\nInterface\\AddOns\\WorldQuestsList\\WorldQuestsList-78.lua:6586: in function <Interface\\AddOns\\WorldQuestsList\\WorldQuestsList.lua:6582>\n[C]: in function `Click'\nInterface\\AddOns\\WorldQuestsList\\WorldQuestsList-78.lua:6679: in function `LFG_Search'\nInterface\\AddOns\\WorldQuestsList\\WorldQuestsList-78.lua:7073: in function <Interface\\AddOns\\WorldQuestsList\\WorldQuestsList.lua:7047>",
+			["session"] = 146,
+			["counter"] = 2,
+		}, -- [91]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'DugisGuideViewerZ' tried to call the protected function 'DugisGuideViewer_TargetFrame:Show()'.",
+			["time"] = "2018/08/26 11:08:45",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\n...erface\\AddOns\\DugisGuideViewerZ\\WorldMapTracking.lua:781: in function <...erface\\AddOns\\DugisGuideViewerZ\\WorldMapTracking.lua:774>\n...erface\\AddOns\\DugisGuideViewerZ\\WorldMapTracking.lua:852: in function <...erface\\AddOns\\DugisGuideViewerZ\\WorldMapTracking.lua:812>",
+			["session"] = 146,
+			["counter"] = 2,
+		}, -- [92]
+		{
+			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'Hekili' tried to call the protected function 'ExtraActionButton1:Show()'.",
+			["time"] = "2018/08/15 13:55:15",
+			["locals"] = "InCombatSkipped",
+			["stack"] = "Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[C]: in function `Show'\nInterface\\FrameXML\\ActionButton.lua:364: in function `ActionButton_Update'\nInterface\\FrameXML\\ActionButton.lua:813: in function `ActionButton_OnEvent'\nInterface\\FrameXML\\ActionButton.lua:253: in function <Interface\\FrameXML\\ActionButton.lua:245>",
+			["session"] = 146,
+			["counter"] = 3,
 		}, -- [93]
+		{
+			["message"] = "Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2095: Usage: GetQuestItemLink(\"type\", index)",
+			["time"] = "2018/08/28 10:34:36",
+			["locals"] = "(*temporary) = nil\n(*temporary) = 0\n",
+			["stack"] = "[C]: ?\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2095: in function `(for generator)'\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:3847: in function `EvaluateRewards'\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:193: in function <Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:191>\n[C]: in function `Show'\nInterface\\AddOns\\Immersion\\Logic\\Logic.lua:35: in function `AddQuestInfo'\nInterface\\AddOns\\Immersion\\Logic\\Events.lua:60: in function `?'\nInterface\\AddOns\\Immersion\\Logic\\Logic.lua:11: in function <Interface\\AddOns\\Immersion\\Logic\\Logic.lua:8>",
+			["session"] = 149,
+			["counter"] = 1,
+		}, -- [94]
+		{
+			["message"] = "Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:270: Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2095: Usage: GetQuestItemLink(\"type\", index)\n\n[C]: ?\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2095: in function `(for generator)'\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2990: in function `Predicate'\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2197: in function <Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2196>\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:3114: in function <Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:3105>\n",
+			["time"] = "2018/08/27 15:49:08",
+			["locals"] = "(*temporary) = false\n(*temporary) = \"Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2095: Usage: GetQuestItemLink(\"type\", index)\n\n[C]: ?\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2095: in function `(for generator)'\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2990: in function `Predicate'\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2197: in function <Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:2196>\nInterface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:3114: in function <Interface\\AddOns\\DugisGuideViewerZ\\GearAdvisor.lua:3105>\n\"\n",
+			["stack"] = "[C]: ?\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:270: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:239>\nInterface\\AddOns\\DugisGuideViewerZ\\Util.lua:909: in function <Interface\\AddOns\\DugisGuideViewerZ\\Util.lua:902>",
+			["session"] = 149,
+			["counter"] = 56,
+		}, -- [95]
+		{
+			["message"] = "Interface\\AddOns\\AtlasLoot\\Locales\\IngameLocales.lua:6: attempt to call global 'CalendarGetMonthNames' (a nil value)",
+			["time"] = "2018/08/18 22:02:40",
+			["locals"] = "AtlasLoot = <table> {\n Locale = <table> {\n }\n GetLocales = <function> defined @Interface\\AddOns\\AtlasLoot\\Locales\\Locales.lua:11\n Locales = <table> {\n }\n Init = <table> {\n }\n __addonrevision = 4772\n AtlasLootDBDefaults = <table> {\n }\n Data = <table> {\n }\n IMAGE_PATH = \"Interface\\AddOns\\AtlasLoot\\Images\\\"\n}\nrawget = <function> defined =[C]:-1\n_ = nil\ntmp1 = nil\n(*temporary) = <table> {\n}\n(*temporary) = nil\n(*temporary) = \"attempt to call global 'CalendarGetMonthNames' (a nil value)\"\n",
+			["stack"] = "Interface\\AddOns\\AtlasLoot\\Locales\\IngameLocales.lua:6: in main chunk",
+			["session"] = 152,
+			["counter"] = 50,
+		}, -- [96]
+		{
+			["message"] = "Interface\\AddOns\\AtlasLoot_MistsofPandaria\\data.lua:1604: attempt to index local 'ALIL' (a nil value)",
+			["time"] = "2018/08/22 14:50:27",
+			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n StoreMicroButtonAlertGlowBottom = StoreMicroButtonAlertGlowBottom {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 398\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this community.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n TutorialFrameLeft19 = TutorialFrameLeft19 {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n BOOKTYPE_PROFESSION = \"professions\"\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:787\n PaperDollTitlesPaneButton10BgTop = PaperDollTitlesPaneButton10BgTop {\n }\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2372\n TutorialFrameRight19 = TutorialFrameRight19 {\n }\n ChatFrame6EditBoxFocusMid = ChatFrame6EditBoxFocusMid {\n }\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 947\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LFGTeleport = <function> defined =[C]:-1\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n ToggleEncounterJournal = <function> defined @Interface\\FrameXML\\UIParent.lua:909\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n TalentMicroButtonAlertShadowTopLeft = TalentMicroButtonAlertShadowTopLeft {\n }\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee attack that spends Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n LFGListSearchPanelScrollFrameButton10BottomRight = LFGListSearchPanelScrollFrameButton10BottomRight {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n RaidUtility_CloseButton = RaidUtility_CloseButton {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1148\n SLASH_STOPATTACK1 = \"/stopattack\"\n M",
+			["stack"] = "Interface\\AddOns\\AtlasLoot_MistsofPandaria\\data.lua:1604: in main chunk\n[C]: in function `LoadAddOn'\nInterface\\AddOns\\AtlasLoot\\Loader.lua:227: in function `LoadModule'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:573: in function `ButtonOnClick'\nInterface\\AddOns\\AtlasLoot\\GUI\\Template_DropDown.lua:164: in function `SetSelected'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:123: in function `PreLoadModules'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:745: in function `func'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:36: in function <Interface\\AddOns\\AtlasLoot\\AtlasLoot.lua:28>",
+			["session"] = 152,
+			["counter"] = 37,
+		}, -- [97]
+		{
+			["message"] = "Interface\\AddOns\\AtlasLoot_Cataclysm\\data.lua:1548: attempt to index local 'ALIL' (a nil value)",
+			["time"] = "2018/08/22 14:50:27",
+			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n StoreMicroButtonAlertGlowBottom = StoreMicroButtonAlertGlowBottom {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 398\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this community.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n TutorialFrameLeft19 = TutorialFrameLeft19 {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n BOOKTYPE_PROFESSION = \"professions\"\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:787\n PaperDollTitlesPaneButton10BgTop = PaperDollTitlesPaneButton10BgTop {\n }\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2372\n TutorialFrameRight19 = TutorialFrameRight19 {\n }\n ChatFrame6EditBoxFocusMid = ChatFrame6EditBoxFocusMid {\n }\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 947\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LFGTeleport = <function> defined =[C]:-1\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n ToggleEncounterJournal = <function> defined @Interface\\FrameXML\\UIParent.lua:909\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n TalentMicroButtonAlertShadowTopLeft = TalentMicroButtonAlertShadowTopLeft {\n }\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee attack that spends Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n LFGListSearchPanelScrollFrameButton10BottomRight = LFGListSearchPanelScrollFrameButton10BottomRight {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n RaidUtility_CloseButton = RaidUtility_CloseButton {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1148\n SLASH_STOPATTACK1 = \"/stopattack\"\n M",
+			["stack"] = "Interface\\AddOns\\AtlasLoot_Cataclysm\\data.lua:1548: in main chunk\n[C]: in function `LoadAddOn'\nInterface\\AddOns\\AtlasLoot\\Loader.lua:227: in function `LoadModule'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:573: in function `ButtonOnClick'\nInterface\\AddOns\\AtlasLoot\\GUI\\Template_DropDown.lua:164: in function `SetSelected'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:123: in function `PreLoadModules'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:745: in function `func'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:36: in function <Interface\\AddOns\\AtlasLoot\\AtlasLoot.lua:28>",
+			["session"] = 152,
+			["counter"] = 37,
+		}, -- [98]
+		{
+			["message"] = "...terface\\AddOns\\AtlasLoot_WrathoftheLichKing\\data.lua:4997: attempt to index local 'ALIL' (a nil value)",
+			["time"] = "2018/08/22 14:50:27",
+			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n StoreMicroButtonAlertGlowBottom = StoreMicroButtonAlertGlowBottom {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 398\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this community.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n TutorialFrameLeft19 = TutorialFrameLeft19 {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n BOOKTYPE_PROFESSION = \"professions\"\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:787\n PaperDollTitlesPaneButton10BgTop = PaperDollTitlesPaneButton10BgTop {\n }\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2372\n TutorialFrameRight19 = TutorialFrameRight19 {\n }\n ChatFrame6EditBoxFocusMid = ChatFrame6EditBoxFocusMid {\n }\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 947\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LFGTeleport = <function> defined =[C]:-1\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n ToggleEncounterJournal = <function> defined @Interface\\FrameXML\\UIParent.lua:909\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n TalentMicroButtonAlertShadowTopLeft = TalentMicroButtonAlertShadowTopLeft {\n }\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee attack that spends Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n LFGListSearchPanelScrollFrameButton10BottomRight = LFGListSearchPanelScrollFrameButton10BottomRight {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n RaidUtility_CloseButton = RaidUtility_CloseButton {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1148\n SLASH_STOPATTACK1 = \"/stopattack\"\n M",
+			["stack"] = "...terface\\AddOns\\AtlasLoot_WrathoftheLichKing\\data.lua:4997: in main chunk\n[C]: in function `LoadAddOn'\nInterface\\AddOns\\AtlasLoot\\Loader.lua:227: in function `LoadModule'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:573: in function `ButtonOnClick'\nInterface\\AddOns\\AtlasLoot\\GUI\\Template_DropDown.lua:164: in function `SetSelected'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:123: in function `PreLoadModules'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:745: in function `func'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:36: in function <Interface\\AddOns\\AtlasLoot\\AtlasLoot.lua:28>",
+			["session"] = 152,
+			["counter"] = 37,
+		}, -- [99]
+		{
+			["message"] = "Interface\\AddOns\\AtlasLoot_Classic\\data.lua:2477: attempt to index local 'ALIL' (a nil value)",
+			["time"] = "2018/08/22 14:50:27",
+			["locals"] = "_G = <table> {\n UpdateOnBarHighlightMarksBySpell = <function> defined @Interface\\FrameXML\\ActionButton.lua:70\n ERR_OUT_OF_CHI = \"Not enough chi\"\n DH_HAVOC_CORE_ABILITY_2 = \"Strong melee attack that consumes Fury. If it critical strikes, some Fury is refunded.\"\n MultiCastActionButton6Cooldown = MultiCastActionButton6Cooldown {\n }\n MerchantItem9ItemButtonStock = MerchantItem9ItemButtonStock {\n }\n GetTrainerServiceTypeFilter = <function> defined =[C]:-1\n UNIT_NAMES_COMBATLOG_TOOLTIP = \"Color unit names.\"\n SetTrainerServiceTypeFilter = <function> defined =[C]:-1\n StoreMicroButtonAlertGlowBottom = StoreMicroButtonAlertGlowBottom {\n }\n SPELL_FAILED_CUSTOM_ERROR_71 = \"This partygoer wants to dance with you.\"\n LE_GAME_ERR_PET_SPELL_TARGETS_DEAD = 398\n ERROR_CLUB_TICKET_COUNT_AT_MAX_COMMUNITY = \"Can't create any more invite links for this community.\"\n RecruitAFriendFrame = RecruitAFriendFrame {\n }\n CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture = CompactUnitFrameProfilesGeneralOptionsFrameHealthTextDropdownButtonNormalTexture {\n }\n TutorialFrameLeft19 = TutorialFrameLeft19 {\n }\n MultiCastActionButton2Cooldown = MultiCastActionButton2Cooldown {\n }\n ERR_TRADE_EQUIPPED_BAG = \"You can't trade equipped bags.\"\n PVP_RANK_6_1 = \"Corporal\"\n BOOKTYPE_PROFESSION = \"professions\"\n InterfaceOptionsNamesPanelUnitNameplatesShowAll = InterfaceOptionsNamesPanelUnitNameplatesShowAll {\n }\n VideoOptionsFrameDefaults = VideoOptionsFrameDefaults {\n }\n MerchantItem1AltCurrencyFrameItem1Text = MerchantItem1AltCurrencyFrameItem1Text {\n }\n OPTION_TOOLTIP_ACTION_BUTTON_USE_KEY_DOWN = \"Action button keybinds will respond on key down, rather than on key up.\"\n BINDING_NAME_NAMEPLATES = \"Show Enemy Name Plates\"\n INSTANCE_UNAVAILABLE_OTHER_TEMPORARILY_DISABLED = \"%s cannot enter. This instance is temporarily disabled.\"\n MultiBarBottomRightButton8Shine5 = MultiBarBottomRightButton8Shine5 {\n }\n IsReferAFriendLinked = <function> defined =[C]:-1\n MAIL_LETTER_TOOLTIP = \"Click to make a permanent\ncopy of this letter.\"\n UnitFrameManaBar_UnregisterDefaultEvents = <function> defined @Interface\\FrameXML\\UnitFrame.lua:787\n PaperDollTitlesPaneButton10BgTop = PaperDollTitlesPaneButton10BgTop {\n }\n DUNGEON_FLOOR_UPPERBLACKROCKSPIRE3 = \"Hall of Blackhand\"\n CHAT_CONFIG_OTHER_COMBAT = <table> {\n }\n FCFDockOverflowButton_OnClick = <function> defined @Interface\\FrameXML\\FloatingChatFrame.lua:2372\n TutorialFrameRight19 = TutorialFrameRight19 {\n }\n ChatFrame6EditBoxFocusMid = ChatFrame6EditBoxFocusMid {\n }\n BN_UNABLE_TO_RESOLVE_NAME = \"Unable to whisper '%s'. Blizzard services may be unavailable.\"\n LE_GAME_ERR_RECRUIT_A_FRIEND_FAILED = 947\n CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight = CompactRaidFrameManagerDisplayFrameHiddenModeToggleTopRight {\n }\n LFGTeleport = <function> defined =[C]:-1\n LE_GAME_ERR_ONLY_ONE_QUIVER = 32\n SpellButton6Cooldown = SpellButton6Cooldown {\n }\n ToggleEncounterJournal = <function> defined @Interface\\FrameXML\\UIParent.lua:909\n AdiBagsItemButton4IconQuestTexture = AdiBagsItemButton4IconQuestTexture {\n }\n LOSS_OF_CONTROL_DISPLAY_FEAR = \"Feared\"\n Graphics_QualityText = Graphics_QualityText {\n }\n TalentMicroButtonAlertShadowTopLeft = TalentMicroButtonAlertShadowTopLeft {\n }\n OverrideActionBarButton6Shine11 = OverrideActionBarButton6Shine11 {\n }\n ROGUE_COMBAT_CORE_ABILITY_4 = \"Melee attack that spends Combo Points.\"\n JoinSkirmish = <function> defined =[C]:-1\n Advanced_GraphicsAPIDropDownButtonHighlightTexture = Advanced_GraphicsAPIDropDownButtonHighlightTexture {\n }\n MultiBarRightButton7Shine9 = MultiBarRightButton7Shine9 {\n }\n BankFrameItem17SearchOverlay = BankFrameItem17SearchOverlay {\n }\n LFGListSearchPanelScrollFrameButton10BottomRight = LFGListSearchPanelScrollFrameButton10BottomRight {\n }\n DMG_LCD = \"DMG\"\n RaidGraphics_EnvironmentalDetailSlider = RaidGraphics_EnvironmentalDetailSlider {\n }\n RaidUtility_CloseButton = RaidUtility_CloseButton {\n }\n Is64BitClient = <function> defined =[C]:-1\n SecureCmdItemParse = <function> defined @Interface\\FrameXML\\ChatFrame.lua:1148\n SLASH_STOPATTACK1 = \"/stopattack\"\n M",
+			["stack"] = "Interface\\AddOns\\AtlasLoot_Classic\\data.lua:2477: in main chunk\n[C]: in function `LoadAddOn'\nInterface\\AddOns\\AtlasLoot\\Loader.lua:227: in function `LoadModule'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:573: in function `ButtonOnClick'\nInterface\\AddOns\\AtlasLoot\\GUI\\Template_DropDown.lua:164: in function `SetSelected'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:123: in function `PreLoadModules'\nInterface\\AddOns\\AtlasLoot\\GUI\\GUI.lua:745: in function `func'\nInterface\\AddOns\\AtlasLoot\\AtlasLoot-v8.07.13.lua:36: in function <Interface\\AddOns\\AtlasLoot\\AtlasLoot.lua:28>",
+			["session"] = 152,
+			["counter"] = 37,
+		}, -- [100]
+		{
+			["message"] = "(null)",
+			["session"] = 152,
+			["time"] = "2018/08/18 22:02:53",
+			["counter"] = 118,
+		}, -- [101]
+		{
+			["message"] = "AtlasLootToggleFromWorldMap1: Couldn't find relative frame: WorldMapScrollFrame",
+			["session"] = 152,
+			["time"] = "2018/08/18 22:02:53",
+			["counter"] = 117,
+		}, -- [102]
+		{
+			["message"] = "Error loading Interface\\AddOns\\AtlasLoot\\Data\\NPC.lua",
+			["session"] = 152,
+			["time"] = "2018/08/18 22:02:53",
+			["counter"] = 57,
+		}, -- [103]
 	},
 }

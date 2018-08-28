@@ -1,11 +1,8 @@
 
 NewOpenablesProfile = {
 	["char"] = {
-		["Ryugasm - Draenor"] = {
-			["itemID"] = 162992,
-		},
-		["Badmanting - Draenor"] = {
-			["itemID"] = 163003,
+		["Préach - Tarren Mill"] = {
+			["itemID"] = 139670,
 		},
 		["Preech - Tarren Mill"] = {
 			["itemID"] = 143849,
@@ -13,23 +10,23 @@ NewOpenablesProfile = {
 		["Xpreach - Tarren Mill"] = {
 			["itemID"] = 143852,
 		},
-		["Chuggernuts - Tarren Mill"] = {
+		["Preacho - Tarren Mill"] = {
 			["itemID"] = 147721,
 		},
 		["Toutsweet - Tarren Mill"] = {
 			["itemID"] = 147721,
 		},
-		["Sulivan - Tarren Mill"] = {
-			["itemID"] = 147721,
+		["Badmanting - Draenor"] = {
+			["itemID"] = 163003,
 		},
-		["Preacho - Tarren Mill"] = {
-			["itemID"] = 147721,
+		["Raigasm - Outland"] = {
+			["itemID"] = 142006,
 		},
 		["Swobuswagins - Tarren Mill"] = {
 			["itemID"] = 147721,
 		},
 		["Raimondo - Draenor"] = {
-			["itemID"] = 127834,
+			["itemID"] = 132892,
 		},
 		["Ryugasm - Outland"] = {
 			["itemID"] = 137207,
@@ -40,14 +37,14 @@ NewOpenablesProfile = {
 		["Norfweezy - Draenor"] = {
 			["itemID"] = 89112,
 		},
-		["Raigasm - Outland"] = {
-			["itemID"] = 142006,
+		["Chuggernuts - Tarren Mill"] = {
+			["itemID"] = 147721,
 		},
 		["Preachez - Tarren Mill"] = {
 			["itemID"] = 147721,
 		},
-		["Préach - Tarren Mill"] = {
-			["itemID"] = 139670,
+		["Sulivan - Tarren Mill"] = {
+			["itemID"] = 147721,
 		},
 	},
 	["profileKeys"] = {
@@ -62,18 +59,21 @@ NewOpenablesProfile = {
 		["Badmanting - Draenor"] = "Default",
 		["Preech - Tarren Mill"] = "Default",
 		["Ryugasm - Draenor"] = "Default",
-		["Chuggernuts - Tarren Mill"] = "Default",
-		["Raigasm - Outland"] = "Default",
+		["Norfweezy - Draenor"] = "Default",
+		["Preacherino - Tarren Mill"] = "Default",
 		["Sulivan - Tarren Mill"] = "Default",
-		["Ryugasm - Outland"] = "Default",
+		["Dlorange - Tarren Mill"] = "Default",
 		["Swobuswagins - Tarren Mill"] = "Default",
 		["Raimondo - Draenor"] = "Default",
-		["Preachx - Tarren Mill"] = "Default",
 		["Meticulous - Tarren Mill"] = "Default",
-		["Dlorange - Tarren Mill"] = "Default",
-		["Preacherino - Tarren Mill"] = "Default",
-		["Norfweezy - Draenor"] = "Default",
+		["Preachx - Tarren Mill"] = "Default",
+		["Ryugasm - Outland"] = "Default",
+		["Raigasm - Outland"] = "Default",
+		["Chuggernuts - Tarren Mill"] = "Default",
 		["Preách - Tarren Mill"] = "Default",
+	},
+	["global"] = {
+		["version"] = "|cFFFFFFFF09.14 24.08.2018 use |cFFFF00FF/nop|cFFFFFFFF",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -81,8 +81,8 @@ NewOpenablesProfile = {
 				"BOTTOMRIGHT", -- [1]
 				"UIParent", -- [2]
 				"BOTTOMRIGHT", -- [3]
-				-439.498870849609, -- [4]
-				22.4998931884766, -- [5]
+				-439.498901367188, -- [4]
+				22.4998950958252, -- [5]
 			},
 			["T_BLACKLIST"] = {
 				[0] = true,
@@ -91,10 +91,10 @@ NewOpenablesProfile = {
 				[140749] = true,
 				[139418] = true,
 				[139420] = true,
-				[152734] = true,
+				[139428] = true,
 				[147348] = true,
 				[147349] = true,
-				[139428] = true,
+				[152734] = true,
 			},
 			["version"] = "|cFFFFFFFF09.08 07.08.2018 use |cFFFF00FF/nop|cFFFFFFFF",
 			["qb"] = {

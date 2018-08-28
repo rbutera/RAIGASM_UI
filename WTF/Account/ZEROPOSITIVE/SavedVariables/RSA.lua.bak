@@ -13,24 +13,24 @@ RSADB = {
 	},
 	["global"] = {
 		["version"] = 4,
-		["revision"] = "477",
+		["revision"] = "489",
 	},
 	["profiles"] = {
 		["Raimondo - Draenor"] = {
 			["General"] = {
-				["Race"] = "BloodElf",
 				["Class"] = "PALADIN",
+				["Race"] = "BloodElf",
 			},
 			["Fixed"] = true,
 		},
 		["Ryugasm - Draenor"] = {
+			["General"] = {
+				["Class"] = "MONK",
+			},
 			["Modules"] = {
 				["Monk"] = true,
 			},
 			["Fixed"] = true,
-			["General"] = {
-				["Class"] = "MONK",
-			},
 		},
 		["Norfweezy - Draenor"] = {
 			["Modules"] = {

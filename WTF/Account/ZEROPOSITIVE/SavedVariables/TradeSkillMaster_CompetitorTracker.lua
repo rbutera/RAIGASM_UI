@@ -23,8 +23,8 @@ TradeSkillMaster_CompetitorTrackerDB = {
 	},
 	["factionrealm"] = {
 		["Horde - Draenor"] = {
-			["loginTime"] = 1535127434,
-			["logoutTime"] = 1535129176,
+			["loginTime"] = 1535485825,
+			["logoutTime"] = 1535488160,
 		},
 		["Alliance - Outland"] = {
 			["logoutTime"] = 1522514412,

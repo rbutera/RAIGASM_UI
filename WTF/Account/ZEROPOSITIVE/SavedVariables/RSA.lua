@@ -6,7 +6,7 @@ RSADB = {
 	},
 	["global"] = {
 		["version"] = 4,
-		["revision"] = "477",
+		["revision"] = "489",
 	},
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "SHAMAN",
@@ -18,19 +18,19 @@ RSADB = {
 	["profiles"] = {
 		["Raimondo - Draenor"] = {
 			["General"] = {
-				["Class"] = "PALADIN",
 				["Race"] = "BloodElf",
+				["Class"] = "PALADIN",
 			},
 			["Fixed"] = true,
 		},
 		["Ryugasm - Draenor"] = {
-			["General"] = {
-				["Class"] = "MONK",
-			},
 			["Modules"] = {
 				["Monk"] = true,
 			},
 			["Fixed"] = true,
+			["General"] = {
+				["Class"] = "MONK",
+			},
 		},
 		["Norfweezy - Draenor"] = {
 			["Modules"] = {

@@ -70,6 +70,118 @@ LootAppraiserDB = {
 				["player"] = "Ryugasm-Draenor",
 				["livGroup"] = 0,
 			}, -- [4]
+			{
+				["noteworthyItems"] = {
+				},
+				["mapID"] = 1165,
+				["settings"] = {
+					["priceSource"] = "DBGlobalMarketAvg",
+					["qualityFilter"] = 2,
+					["gat"] = 100,
+				},
+				["start"] = 1535129457,
+				["liv"] = 0,
+				["livGroup"] = 0,
+				["player"] = "Ryugasm-Draenor",
+			}, -- [5]
+			{
+				["noteworthyItems"] = {
+				},
+				["mapID"] = 1165,
+				["settings"] = {
+					["priceSource"] = "DBGlobalMarketAvg",
+					["qualityFilter"] = 2,
+					["gat"] = 100,
+				},
+				["start"] = 1535215851,
+				["liv"] = 0,
+				["livGroup"] = 0,
+				["player"] = "Ryugasm-Draenor",
+			}, -- [6]
+			{
+				["noteworthyItems"] = {
+				},
+				["mapID"] = 1165,
+				["settings"] = {
+					["priceSource"] = "DBGlobalMarketAvg",
+					["qualityFilter"] = 2,
+					["gat"] = 100,
+				},
+				["start"] = 1535276061,
+				["liv"] = 0,
+				["player"] = "Ryugasm-Draenor",
+				["livGroup"] = 0,
+			}, -- [7]
+			{
+				["noteworthyItems"] = {
+				},
+				["mapID"] = 863,
+				["settings"] = {
+					["priceSource"] = "DBGlobalMarketAvg",
+					["qualityFilter"] = 2,
+					["gat"] = 100,
+				},
+				["start"] = 1535286114,
+				["liv"] = 0,
+				["livGroup"] = 0,
+				["player"] = "Ryugasm-Draenor",
+			}, -- [8]
+			{
+				["noteworthyItems"] = {
+				},
+				["mapID"] = 1163,
+				["settings"] = {
+					["priceSource"] = "DBGlobalMarketAvg",
+					["qualityFilter"] = 2,
+					["gat"] = 100,
+				},
+				["start"] = 1535320168,
+				["liv"] = 0,
+				["livGroup"] = 0,
+				["player"] = "Ryugasm-Draenor",
+			}, -- [9]
+			{
+				["noteworthyItems"] = {
+				},
+				["mapID"] = 863,
+				["settings"] = {
+					["priceSource"] = "DBGlobalMarketAvg",
+					["qualityFilter"] = 2,
+					["gat"] = 100,
+				},
+				["start"] = 1535371080,
+				["liv"] = 0,
+				["livGroup"] = 0,
+				["player"] = "Ryugasm-Draenor",
+			}, -- [10]
+			{
+				["noteworthyItems"] = {
+				},
+				["mapID"] = 863,
+				["settings"] = {
+					["priceSource"] = "DBGlobalMarketAvg",
+					["qualityFilter"] = 2,
+					["gat"] = 100,
+				},
+				["start"] = 1535375077,
+				["liv"] = 0,
+				["livGroup"] = 0,
+				["player"] = "Ryugasm-Draenor",
+			}, -- [11]
+			{
+				["noteworthyItems"] = {
+				},
+				["mapID"] = 1038,
+				["settings"] = {
+					["priceSource"] = "DBGlobalMarketAvg",
+					["qualityFilter"] = 2,
+					["gat"] = 100,
+				},
+				["start"] = 1535376125,
+				["liv"] = 0,
+				["player"] = "Ryugasm-Draenor",
+				["livGroup"] = 0,
+			}, -- [12]
 		},
 		["drops"] = {
 			[160183] = {
@@ -115,8 +227,8 @@ LootAppraiserDB = {
 			},
 			["startSessionPromptUI"] = {
 				["height"] = 114.999984741211,
-				["top"] = 676.666687011719,
-				["left"] = 1362.50012207031,
+				["top"] = 683.333435058594,
+				["left"] = 481.666748046875,
 				["width"] = 249.999969482422,
 			},
 		},

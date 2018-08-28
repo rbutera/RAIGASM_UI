@@ -3,18 +3,31 @@ DataStore_AuctionsDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Raigasm - Draenor",
 		["Yasuka - Outland"] = "Yasuka - Outland",
-		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
 		["Ryugasm - Outland"] = "Ryugasm - Outland",
 		["Raigasm - Outland"] = "Raigasm - Outland",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
 	},
 	["global"] = {
 		["Characters"] = {
 			["Default.Draenor.Raimondo"] = {
-				["lastUpdate"] = 1526751650,
-				["lastVisitDate"] = "2018/05/19 18:40",
+				["lastUpdate"] = 1535485561,
+				["Auctions"] = {
+					"0|160177|1||13349374|13349374|3", -- [1]
+					"0|154833|1||17802679|17802679|3", -- [2]
+					"0|160158|1||21961433|21961433|3", -- [3]
+					"0|160150|1||20227058|20227058|3", -- [4]
+					"0|160183|1||2999991|2999991|3", -- [5]
+					"0|154808|1||21018521|21018521|3", -- [6]
+					"0|160151|1||8695611|8695611|3", -- [7]
+					"0|128304|1||23999|23999|3", -- [8]
+					"0|128304|1||23999|23999|3", -- [9]
+					"0|128304|1||23999|23999|3", -- [10]
+					"0|128304|1||23999|23999|3", -- [11]
+				},
+				["lastVisitDate"] = "2018/08/28 20:46",
 			},
 			["Default.Draenor.Badmanting"] = {
 				["lastUpdate"] = 1524274420,

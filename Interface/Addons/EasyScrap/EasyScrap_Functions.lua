@@ -170,7 +170,11 @@ function EasyScrap:sortItems()
         --local searchMatchB = self.scrappableItems[b].searchMatch
         
         if qualityA == qualityB then
-            return self.scrappableItems[a].itemLevel > self.scrappableItems[b].itemLevel
+            if self.scrappableItems[a].itemLevel == self.scrappableItems[b].itemLevel then
+                return self.scrappableItems[a].itemName < self.scrappableItems[b].itemName
+            else
+                return self.scrappableItems[a].itemLevel > self.scrappableItems[b].itemLevel
+            end
         else
             return qualityA > qualityB 
         end

@@ -110,5 +110,6 @@ L.SHOW_CLIENT_GUILD_BEST_DESC = "Enabling this will display your guild's Top 5 r
 L.CHECKBOX_DISPLAY_WEEKLY = "Display Weekly"
 L.NO_GUILD_RECORD = "No Guild Records"
 L.LEGION_SCORE = "Legion Score"
+L.LEGION_MAIN_SCORE = "Legion Main's Score"
 
 ns.L = L

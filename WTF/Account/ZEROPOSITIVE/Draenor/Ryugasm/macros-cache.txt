@@ -4,11 +4,27 @@ VER 3 0100000000000003 "BK" "INV_MISC_QUESTIONMARK"
 /stopcasting [channeling:Crackling Jade Lightning]
 /cast Blackout Kick
 END
+VER 3 0100000000000009 "Brew" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:ctrl] Fortifying Brew
+/cast [modifier:shift] Ironskin Brew
+/cast [nomodifier] Purifying Brew
+END
 VER 3 0100000000000004 "CB" "INV_MISC_QUESTIONMARK"
 #showtooltip Chi Burst
 /stopmacro [channeling:Fists of Fury]
 /stopcasting [channeling:Crackling Jade Lightning]
 /cast Chi Burst
+END
+VER 3 0100000000000008 "Detox" "INV_MISC_QUESTIONMARK"
+#showtooltip Detox
+/cast [@mouseover,help,nodead] Detox;Detox
+END
+VER 3 010000000000000A "Elixir" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:ctrl] Healing Elixir
+/cast [modifier:shift]Chi Wave
+/cast [nomodifier] Expel Harm
 END
 VER 3 0100000000000005 "RSK" "INV_MISC_QUESTIONMARK"
 #showtooltip Rising Sun Kick
@@ -24,8 +40,8 @@ VER 3 0100000000000006 "SCK" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000007 "T" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [nomodifier] Transcendence: Transfer
-/cast [modifier:shift] Transcendence
+/cast [modifier:shift] Transcendence: Transfer
+/cast [nomodifier] Transcendence
 END
 VER 3 0100000000000001 "taunt" "INV_MISC_QUESTIONMARK"
 #showtooltip Provoke

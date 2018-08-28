@@ -1,0 +1,3 @@
+
+EasyScrap_IgnoreList = {
+}

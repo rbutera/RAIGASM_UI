@@ -306,7 +306,7 @@ function Taxi:Initialize()
     
 		if not contData or not x1 then return end
         
-        local key = ""..(m1 or 0)..(f1 or 0).. (x1 or 0)..(y1 or 0)..(mTrans or 0)..(fTrans or 0)..(m2 or 0)..(f2 or 0)..(x2 or 0)..(y2 or 0)
+        local key = ""..tostring(m1)..tostring(f1).. tostring(x1)..tostring(y1)..tostring(mTrans)..tostring(fTrans)..tostring(m2)..tostring(f2)..tostring(x2)..tostring(y2)
             
         BacktrackCharacterPath_buff[key] = (BacktrackCharacterPath_buff[key] or 0) + 1
       
@@ -961,15 +961,15 @@ function Taxi:Initialize()
 							end
 							
 							local directMatch = data.direct and
-									(strmatch(data.direct, format(":%d",endId)) or 
-									strmatch(data.direct, format("%d:",endId)) or
+									(strmatch(data.direct, format(":%s",endId)) or 
+									strmatch(data.direct, format("%s:",endId)) or
 									tonumber(data.direct)==endId)
 							local hopTable
 							if directMatch then
 								hopTable = GetCreateTable(endId)
 							else
 								for _, hops in ipairs(data) do
-									local hopMatch = strmatch(hops, format(":%d$",endId))
+									local hopMatch = strmatch(hops, format(":%s$",endId))
 if startId==96813 and endId==95688 then
 DGV:DebugFormat("FlightMasterRouteBuildSelector", "hopMatch", hopMatch)
 end
@@ -1273,12 +1273,19 @@ end
 		local maps = DugisWorldMapTrackingPoints[UnitFactionGroup("player")]
 		for mapKey, mapValue in pairs(maps) do --iterate inkeepers
 			local m,f = strsplit(":",mapKey)
+            local numericId = tonumber(mapKey)
+            
 			for index=1,#(mapValue) do
 				local tt,loc,id,sub = strsplit(":", mapValue[index])
 				if tonumber(tt)==7 then
 					if sub==BR[bindLocation] then
 						local x,y = DGV:UnpackXY(loc)
-						m, f = tonumber(DGV:GetMapIDFromName(m)), tonumber(f)
+                        if numericId then
+                            m, f = numericId, tonumber(f)
+                        else
+                            m, f = tonumber(DGV:GetMapIDFromName(m)), tonumber(f)
+                        end
+						
 						cachedBindLocation.m = m
 						cachedBindLocation.f = f
 						cachedBindLocation.x = x

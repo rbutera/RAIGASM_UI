@@ -192,7 +192,18 @@ N {Spires of Arak} |FIS| |LOOP| |N|<b>(item:111589)<br/><b>(item:111595)<br/><b>
 N {Spires of Arak} |FIS| |LOOP| |N|<b>(item:111658)<br/><b>(item:111665)<br/><b>(item:111672)<br/>Fished from coastal waters (74.6,50.6)(71.1,53.9)(67.0,59.0)(65.2,65.4)(63.6,72.0)(62.1,81.3)(61.9,90.8)(52.7,87.5)(45.5,71.0)(37.9,63.3)(33.0,48.9)| |Z|542| --Small Sea Scorpion,Sea Scorpion,Enormous Sea Scorpion
 N {Talador} |FIS| |LOOP| |N|<b>(item:111662)<br/><b>(item:111663)<br/><b>(item:111670)<br/>Fished from pools (52.8,45.6)(58.4,41.7)(63.2,56.1)(65.8,63.6)(69.9,62.1)(79.2,57.8)(73.4,53.9)(68.0,47.7)(76.9,38.8)(73.5,25.8)(63.4,35.3)| |Z|535| --Blackwater Whiptail,Enormous Blackwater Whiptail,Small Blackwater Whiptail
 N {Talador} |FIS| |LOOP| |N|<b>(item:111589)<br/><b>(item:111595)<br/><b>(item:111601)<br/>These are fished from open water (52.8,45.6)(58.4,41.7)(63.2,56.1)(65.8,63.6)(69.9,62.1)(79.2,57.8)(73.4,53.9)(68.0,47.7)(76.9,38.8)(73.5,25.8)(63.4,35.3)| |Z|535| --Crescent Saberfish,Enormous Crescent Saberfish,Small Crescent Saberfish
-
+N (map:650) |FIS| |N|(item:124109) Fish in the Rapid-Moving river {Highmountain}<br/><br/>The (item:124109) is rare catch, requires fishing (41.84,51.65)| |Z|650|
+N (map:680) |FIS| |N|(item:124109) Fish in Black Barracuda schools {Suramar}<br/><br/> Follow the beach east from this spot (74.20,49.90)| |Z|680|
+N (map:863) |FIS| |N|(item:152549) Fish in Redtail Loach Schools, water walking is recommended in order to farm from some of the pools (39.12,84.85) (44.45,87.52) (47.92,82.26) (52.34,80.48) (55.99,77.68) (57.93,76.83) (57.99,75.50) (60.40,71.18) (64.07,68.70) (65.11,63.06)   (67.41,57.61) (65.46,55.63)| |Z|863| |LOOP|
+N (map:863) |FIS| |N|(item:152549) Fish in Redtail Loach Schools, water walking is recommended in order to farm from some of the pools (65.46,55.63)  (65.93,60.32) (65.11,63.06) (60.81,70.35)  (58.95,74.33) (57.99,75.50) (55.27,75.45) (55.22,81.01) (52.34,80.48) (46.38,86.58)  (40.75,87.50) (39.12,84.85)| |Z|863| |LOOP|
+N (map:863) |FIS| |N|(item:152543) Fish in the open water, you will occassionally catch (item:152543) as well as (item:152544) (40.78,81.97)| |Z|863|
+N (map:863) |FIS| |N|(item:152544) Fish in the open water, you will occassionally catch (item:152544) as well as (item:152543) (40.78,81.97)| |Z|863|
+N (map:942) |FIS| |N|(item:152545) Fish in the open water, you will occassionally catch (item:152545) as well as (item:152546) (52.51,25.97)| |Z|942|
+N (map:942) |FIS| |N|(item:152546) Fish in the open water, you will occassionally catch (item:152546) as well as (item:152545) (52.51,25.97)| |Z|942|
+N (map:863) |FIS| |N|(item:152547) Fish in Great Sea Catfish Schools, water walking is recommended in order to farm from some of the pools (39.12,84.85) (44.45,87.52) (47.92,82.26) (52.34,80.48) (55.99,77.68) (57.93,76.83) (57.99,75.50) (60.40,71.18) (64.07,68.70) (65.11,63.06)   (67.41,57.61) (65.46,55.63)| |Z|863| |LOOP|
+N (map:863) |FIS| |N|(item:152547) Fish in Great Sea Catfish Schools, water walking is recommended in order to farm from some of the pools (65.46,55.63) (65.93,60.32) (65.11,63.06) (60.81,70.35)  (58.95,74.33) (57.99,75.50) (55.27,75.45) (55.22,81.01) (52.34,80.48) (46.38,86.58)  (40.75,87.50) (39.12,84.85)| |Z|863| |LOOP|
+N (map:895) |FIS| |N|(item:152548) Fish in the small pond, you will occassionally catch (item:152547) as well as (item:152548) (77.67,67.30)| |Z|895|
+N (map:942) |FIS| |N|(item:162515) Fish in pool found in Stormsong, Midnight Salmon are rare, so it will take a while to collect them.  (56.42,19.69) (61.38,15.17) (64.28,16.06) (66.47,18.99) (69.56,36.85) (66.68,48.49) (68.08,50.14) (72.69,48.96) (73.82,53.81) (72.18,57.68) (75.43,60.95) (78.25,61.57) (79.24,61.77)| |Z|942| |LOOP|
 ]]
 end, {description = [[This is a step-by-step Profession guide with farming steps for Fishing.]]})	
 	end

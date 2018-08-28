@@ -147,15 +147,11 @@ local function barrels(quest_id)
 		end
 	end)
 	local marker = 1
-	while true do
-		if coroutine.yield() == 1 then
-			SetRaidTarget("mouseover",marker)
-			marker = marker + 1
-			if marker == 9 then
-				marker = 1
-			end
-		else
-			break
+	while coroutine.yield() == 1 do
+		SetRaidTarget("mouseover",marker)
+		marker = marker + 1
+		if marker == 9 then
+			marker = 1
 		end
 	end
 	LookingForGroup_Q:UnregisterEvent("UPDATE_MOUSEOVER_UNIT")

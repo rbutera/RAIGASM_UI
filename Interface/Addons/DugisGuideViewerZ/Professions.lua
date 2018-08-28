@@ -51,7 +51,7 @@ function Professions:Initialize()
 		local profID, proflvl, optionalprofID, optionalproflvl
         
 		--achieve/prof guide
-		if self.gtype[CurrentTitle] == "P" or "E" then 
+		if self.gtype[CurrentTitle] == "P" or self.gtype[CurrentTitle] == "E" then 
 			profID, proflvl = self:ReturnTag("P", guideindx)
 			optionalprofID, optionalproflvl = self:ReturnTag("OP", guideindx)
 			if (profID and DGV:HasProfession(profID) and self:GetProfessionLevel(profID) >= proflvl) or

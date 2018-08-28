@@ -1,4 +1,26 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/">
+
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Alchemy_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Blacksmithing_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Cooking_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Enchanting_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Engineering_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Fishing_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Herbalism_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Inscription_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Jewelcrafting_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Leatherworking_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Mining_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Skinning_H.lua"/>
+	<Script file="..\DugisGuide_Prof_BFA\1_150_Tailoring_H.lua"/>
+	
+	<Script file="Fish_Farm_H.lua"/>
+	<Script file="Herb_Farm_H.lua"/>
+	<Script file="Mine_Farm_H.lua"/>
+	<Script file="Tradeskill_Farming_H.lua"/>
+</Ui>
+
+<!--
 	<Script file="Alchemy_WoD.lua"/>
 	<Script file="Blacksmithing_WoD.lua"/>
 	<Script file="Enchanting_WoD.lua"/>
@@ -40,9 +62,4 @@
 	<Script file="Inscription_Farm_H.lua"/>
 	<Script file="Leatherworking_Farm_H.lua"/>
 	<Script file="Tailoring_Farm_H.lua"/>
-	
-	<Script file="Fish_Farm_H.lua"/>
-	<Script file="Herb_Farm_H.lua"/>
-	<Script file="Mine_Farm_H.lua"/>
-	<Script file="Tradeskill_Farming_H.lua"/>
-</Ui>
+-->

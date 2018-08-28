@@ -186,7 +186,7 @@ R Nal'ryssa's Encampment |TID|38533| |N|Travel to {Nal'ryssa's Encampment} (30, 
 T Tribal Knowledge |QID|38533| |N|(npc:92264) in {Nal'ryssa's Encampment} (30, 53.4)| |Z|680| |NPC|92264|
 
 N Materials List 35-100 |N|<b>342 (item:123918)| |P|Blacksmithing 100| |L|123918 342|
-N 1 - 75 (spell:184442) |BL| |N|Create 108 (spell:184442)<br/><b>216 (item:123919)<br/><b>108 (item:123918)<br/><br/>Make one (spell:182945) before you reach 60 and it still gives skill point. But you only have to make one to get the rank 2 recipe for later use.<br/><br/>Save all the items to break them down into (item:136342) later| |P|426 75|
+N 1-75 (spell:184442) |BL| |N|Create 108 (spell:184442)<br/><b>216 (item:123919)<br/><b>108 (item:123918)<br/><br/>Make one (spell:182945) before you reach 60 and it still gives skill point. But you only have to make one to get the rank 2 recipe for later use.<br/><br/>Save all the items to break them down into (item:136342) later| |P|426 75|
 
 C Uniting the Isles |QID|43341| |N|Complete each leveling zone including Suramar until you earn at least Friendly reputation with the factions of the Broken Isles to unlock the World Quests| 
 N World Quests |N|Open your world map and check every zone for blacksmithing world quests. They are marked with the little anvil blacksmithing icon. The world quests you get are randomly generated, so you might not get one right away and have to wait even a few days until one appears.<br/><br/>Look for:<br/><b>(spell:182971)<br/><b>(spell:182972)<br/><br/>Tick this step to continue|
@@ -209,7 +209,7 @@ A Demonsteel Pauldrons |QID|38537| |N|(npc:92243) in {Ironhorn Enclave} (54.6, 8
 T Demonsteel Pauldrons |QID|38537| |N|(npc:92243) in {Ironhorn Enclave} (54.6, 84.0)| |Z|650| |NPC|92243| |O|
 A Demonsteel Waistguard |QID|38536| |N|(npc:92243) in {Ironhorn Enclave} (54.6, 84.0)| |Z|650| |NPC|92243| |O|
 T Demonsteel Waistguard |QID|38536| |N|(npc:92243) in {Ironhorn Enclave} (54.6, 84.0)| |Z|650| |NPC|92243| |O|
-N 75 - 100 |BL| |N|Craft any rank 3 Demonsteel armor<br/><b>(item:123949) is sold by (npc:107760) for 500 (cur:1149) at the Dalaran Sewers which is quite easy to earn<br/><b>(item:123948) is sold by (npc:106902) at Thunder Totem in Highmountain. Requires exalted (fac:1828) reputation, you will need to complete world quests to gain reputations| |P|Blacksmithing 800|
+N 75-100 |BL| |N|Craft any rank 3 Demonsteel armor<br/><b>(item:123949) is sold by (npc:107760) for 500 (cur:1149) at the Dalaran Sewers which is quite easy to earn<br/><b>(item:123948) is sold by (npc:106902) at Thunder Totem in Highmountain. Requires exalted (fac:1828) reputation, you will need to complete world quests to gain reputations| |P|Blacksmithing 800|
 
 N Guide Complete
 

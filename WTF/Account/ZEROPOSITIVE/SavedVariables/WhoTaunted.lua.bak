@@ -3,12 +3,12 @@ WhoTauntedDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "profile",
 		["Yasuka - Outland"] = "profile",
-		["Raimondo - Draenor"] = "profile",
+		["Norfweezy - Draenor"] = "profile",
 		["Ryugasm - Draenor"] = "profile",
 		["Ryugasm - Outland"] = "profile",
 		["Raigasm - Outland"] = "profile",
 		["Badmanting - Draenor"] = "profile",
-		["Norfweezy - Draenor"] = "profile",
+		["Raimondo - Draenor"] = "profile",
 	},
 	["profiles"] = {
 		["profile"] = {

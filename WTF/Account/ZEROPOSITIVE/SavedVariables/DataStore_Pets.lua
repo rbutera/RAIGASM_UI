@@ -3,12 +3,12 @@ DataStore_PetsDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Raigasm - Draenor",
 		["Yasuka - Outland"] = "Yasuka - Outland",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
-		["Ryugasm - Outland"] = "Ryugasm - Outland",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 		["Raigasm - Outland"] = "Raigasm - Outland",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Ryugasm - Outland"] = "Ryugasm - Outland",
 	},
 	["global"] = {
 		["Reference"] = {
@@ -16,32 +16,37 @@ DataStore_PetsDB = {
 				[195368] = 99394,
 				[193388] = 97207,
 				[210694] = 106152,
+				[226682] = 113827,
+				[273195] = 139073,
 				[221684] = 111202,
-				[135263] = 68661,
+				[62746] = 33239,
 				[135264] = 68662,
 				[223339] = 112132,
-				[89039] = 47944,
+				[215560] = 108568,
 				[210699] = 106278,
-				[193514] = 97205,
+				[135265] = 68663,
 				[184481] = 93142,
 				[223359] = 112144,
-				[170269] = 86081,
-				[135265] = 68663,
+				[259758] = 131644,
+				[193514] = 97205,
 				[225200] = 113136,
 				[45174] = 25146,
 				[210669] = 97128,
 				[254197] = 128119,
 				[61855] = 32841,
-				[210673] = 97179,
-				[221907] = 111423,
 				[221908] = 111421,
-				[215560] = 108568,
+				[221907] = 111423,
+				[210673] = 97179,
+				[170269] = 86081,
 				[230444] = 115919,
-				[62746] = 33239,
-				[226682] = 113827,
+				[89039] = 47944,
+				[135263] = 68661,
 			},
 		},
 		["Characters"] = {
+			["Default.Draenor.Raigasm"] = {
+				["lastUpdate"] = 1524071689,
+			},
 			["Default.Outland.Raigasm"] = {
 				["lastUpdate"] = 1522514096,
 				["CRITTER"] = {
@@ -66,9 +71,6 @@ DataStore_PetsDB = {
 					221907, -- [19]
 					226682, -- [20]
 				},
-			},
-			["Default.Draenor.Ryugasm"] = {
-				["lastUpdate"] = 1534105924,
 			},
 			["Default.Outland.Yasuka"] = {
 				["lastUpdate"] = 1521585084,
@@ -114,10 +116,14 @@ DataStore_PetsDB = {
 				},
 			},
 			["Default.Draenor.Raimondo"] = {
-				["lastUpdate"] = 1533390724,
+				["lastUpdate"] = 1535485835,
 			},
-			["Default.Draenor.Raigasm"] = {
-				["lastUpdate"] = 1524071689,
+			["Default.Draenor.Ryugasm"] = {
+				["lastUpdate"] = 1535485601,
+				["CRITTER"] = {
+					259758, -- [1]
+					273195, -- [2]
+				},
 			},
 		},
 	},

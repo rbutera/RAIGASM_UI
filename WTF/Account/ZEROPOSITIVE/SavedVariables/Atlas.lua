@@ -3,12 +3,12 @@ AtlasDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Default",
 		["Yasuka - Outland"] = "Default",
-		["Raimondo - Draenor"] = "Default",
-		["Ryugasm - Draenor"] = "Default",
 		["Norfweezy - Draenor"] = "Default",
+		["Ryugasm - Draenor"] = "Default",
+		["Ryugasm - Outland"] = "Default",
 		["Raigasm - Outland"] = "Default",
 		["Badmanting - Draenor"] = "Default",
-		["Ryugasm - Outland"] = "Default",
+		["Raimondo - Draenor"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

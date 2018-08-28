@@ -8,7 +8,7 @@ N Trainers |N|The trainers listed are the ones in {Orgrimmar}. Obviously you can
 
 R Orgrimmar |N|Travel to {Orgrimmar} (76.4, 34.6)| |Z|85| |PM|Engineering|75| 
 N Train Apprentice Engineering |N|(npc:11017) (56.9, 56.5)| |Z|85| |PM|Engineering|75| |NPC|11017|
-B (item:5956) [ENG] |N|(npc:3413) {Engineering Supplies} (56.9, 56.5)| |Z|85| |L|5956| |P|Engineering 31| |NPC|3413|
+B (item:5956) |ENG| |N|(npc:3413) {Engineering Supplies} (56.9, 56.5)| |Z|85| |L|5956| |P|Engineering 31| |NPC|3413|
 
 N Materials List 1-75 |N|<b>20 (item:2835)<br/><b>90 (item:2840)<br/><b>20 (item:2589)<br/><b>2 (item:4399)| |P|Engineering 75|
 N 1-20 (item:4357) |ENG| |N|<b>20 (item:2835). Keep these.| |P|Engineering 20|

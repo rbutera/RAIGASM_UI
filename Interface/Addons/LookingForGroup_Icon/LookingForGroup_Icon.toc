@@ -1,7 +1,7 @@
 ## Interface: 80000
 ## Author: cqwrteur
 ## Title: LookingForGroup Icon
-## Version: r1392
+## Version: r1400
 ## SavedVariablesPerCharacter: LookingForGroup_IconCharacterDB
 ## Dependencies: LookingForGroup_Broker
 

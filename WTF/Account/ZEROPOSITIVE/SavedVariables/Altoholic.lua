@@ -13,7 +13,7 @@ AltoholicDB = {
 	["global"] = {
 		["options"] = {
 			["UI.Tabs.Summary.CurrentMode"] = 4,
-			["UI.Mail.LastExpiryWarning"] = 1534104281,
+			["UI.Mail.LastExpiryWarning"] = 1535478868,
 		},
 	},
 }

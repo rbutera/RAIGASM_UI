@@ -14,7 +14,7 @@ A Drowned Mana |QID|42911| |N|(npc:108825) in {Margoss's Retreat} (44.68, 61.97)
 C Drowned Mana |QID|42911| |N|Fish a (item:138777) in {Margoss's Retreat} (44.68, 61.97)| |Z|619| 
 T Drowned Mana |QID|42911| |N|(npc:108825) in {Margoss's Retreat} (44.68, 61.97)| |Z|619| |NPC|108825|
 
-N 1 - 100 |FIS| |N|Fish a (item:138777) in {Margoss's Retreat} until you reach level 100. This is the only spot to fish it.<br/><br/>Save your (item:138777) to gain reputation with (fac:1975) (44.68, 61.97)| |Z|619| |P|1112 100|
+N 1-100 |FIS| |N|Fish a (item:138777) in {Margoss's Retreat} until you reach level 100. This is the only spot to fish it.<br/><br/>Save your (item:138777) to gain reputation with (fac:1975) (44.68, 61.97)| |Z|619| |P|1112 100|
 
 N Guide Complete
 

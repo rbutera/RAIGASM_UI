@@ -175,7 +175,7 @@ _detalhes_database = {
 			["point"] = "TOPLEFT",
 			["enabled"] = false,
 			["arrow_size"] = 10,
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -183,7 +183,12 @@ _detalhes_database = {
 				0, -- [3]
 				0.2, -- [4]
 			},
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.1, -- [1]
+				0.1, -- [2]
+				0.1, -- [3]
+				0.4, -- [4]
+			},
 			["arrow_texture"] = "Interface\\CHATFRAME\\ChatFrameExpandArrow",
 			["font_size"] = 10,
 			["use_spark"] = true,
@@ -201,16 +206,16 @@ _detalhes_database = {
 				["attribute_type"] = 1,
 			},
 			["y"] = -74.9996948242188,
-			["row_color"] = {
-				0.1, -- [1]
-				0.1, -- [2]
-				0.1, -- [3]
-				0.4, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["main_frame_locked"] = true,
 			["arrow_anchor_y"] = 0,
 		},
 	},
+	["benchmark_db"] = {
+		["frame"] = {
+		},
+	},
+	["last_encounter"] = "Gul'dan",
 	["nick_tag_cache"] = {
 		["last_version"] = 10,
 		["Kungfuubuut"] = {
@@ -259,6 +264,7 @@ _detalhes_database = {
 			}, -- [6]
 			2, -- [7]
 		},
+		["nextreset"] = 1535984187,
 		["Steersandque"] = {
 			"Steersandque", -- [1]
 			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
@@ -305,7 +311,6 @@ _detalhes_database = {
 			}, -- [6]
 			3, -- [7]
 		},
-		["nextreset"] = 1535984187,
 		["Yimm"] = {
 			"Yimm", -- [1]
 			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
@@ -329,12 +334,30 @@ _detalhes_database = {
 			}, -- [6]
 			4, -- [7]
 		},
-	},
-	["benchmark_db"] = {
-		["frame"] = {
+		["Xizoz"] = {
+			"Xizoz", -- [1]
+			"Interface\\EncounterJournal\\UI-EJ-BOSS-Default", -- [2]
+			{
+				0, -- [1]
+				1, -- [2]
+				0, -- [3]
+				1, -- [4]
+			}, -- [3]
+			"Interface\\PetBattles\\Weather-ArcaneStorm", -- [4]
+			{
+				0.129609375, -- [1]
+				1, -- [2]
+				1, -- [3]
+				0, -- [4]
+			}, -- [5]
+			{
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+			}, -- [6]
+			2, -- [7]
 		},
 	},
-	["last_encounter"] = "Gul'dan",
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "",
 		["started"] = false,
@@ -346,7 +369,7 @@ _detalhes_database = {
 		["dungeon_zone_id"] = 0,
 		["previous_boss_killed_at"] = 0,
 	},
-	["combat_counter"] = 173,
+	["combat_counter"] = 189,
 	["combat_id"] = 77,
 	["savedStyles"] = {
 	},
@@ -478,9 +501,9 @@ _detalhes_database = {
 		["Mode"] = 1,
 	},
 	["character_data"] = {
-		["logons"] = 45,
+		["logons"] = 53,
 	},
-	["last_day"] = "24",
+	["last_day"] = "28",
 	["announce_cooldowns"] = {
 		["enabled"] = false,
 		["ignored_cooldowns"] = {

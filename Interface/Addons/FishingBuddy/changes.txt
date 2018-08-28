@@ -1,4 +1,7 @@
-﻿Version 1.9.13
+﻿Version 1.9.14
+- Add knowledge of fishing skills for Zandalar. For the Horde!
+
+Version 1.9.13
 - Use Friend instead of Raid when displaying the 'Fisherfriend" line in the watcher.
 - Try not to loot anything "non-fishing" except Legion Fish barrels (which aren't fishing loot, sigh)
 

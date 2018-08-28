@@ -23,5 +23,5 @@ LegionInvasionTimerDB = {
 		},
 	},
 }
-LegionInvasionTime = 1535131833
+LegionInvasionTime = 1535464833
 legionTimerDB = nil

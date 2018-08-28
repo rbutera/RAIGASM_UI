@@ -10,6 +10,10 @@ VER 3 0100000000000004 "CB" "INV_MISC_QUESTIONMARK"
 /stopcasting [channeling:Crackling Jade Lightning]
 /cast Chi Burst
 END
+VER 3 0100000000000008 "Detox" "INV_MISC_QUESTIONMARK"
+#showtooltip Detox
+/cast [@mouseover,help,nodead] Detox;Detox
+END
 VER 3 0100000000000005 "RSK" "INV_MISC_QUESTIONMARK"
 #showtooltip Rising Sun Kick
 /stopmacro [channeling:Fists of Fury]
@@ -24,8 +28,8 @@ VER 3 0100000000000006 "SCK" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0100000000000007 "T" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [nomodifier] Transcendence: Transfer
-/cast [modifier:shift] Transcendence
+/cast [modifier:shift] Transcendence: Transfer
+/cast [nomodifier] Transcendence
 END
 VER 3 0100000000000001 "taunt" "INV_MISC_QUESTIONMARK"
 #showtooltip Provoke

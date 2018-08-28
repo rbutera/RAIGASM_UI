@@ -276,7 +276,7 @@ Wholly: disabled
 WIM: disabled
 WIM_ElvUI_Skin: disabled
 WorldQuestTracker: disabled
-WorldQuestsList: disabled
+WorldQuestsList: enabled
 TradeSkillMaster: disabled
 GearHelper: disabled
 TradeSkillMaster_AppHelper: disabled

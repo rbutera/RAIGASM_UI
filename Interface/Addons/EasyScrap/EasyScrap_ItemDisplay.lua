@@ -97,9 +97,11 @@ local function createItemButton(i)
     frame:SetScript('OnClick', itemButtonOnClick)
     frame:SetScript('OnEnter', function(self)
         if self.itemRef > 0 then 
-            GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
-            GameTooltip:SetHyperlink(EasyScrap.scrappableItems[self.itemRef].itemLink)
+            GameTooltip:SetOwner(self, "ANCHOR_NONE")
+            --GameTooltip:SetHyperlink(EasyScrap.scrappableItems[self.itemRef].itemLink)
+            GameTooltip:SetBagItem(EasyScrap.scrappableItems[self.itemRef].bag, EasyScrap.scrappableItems[self.itemRef].slot)
             if EasyScrap.scrappableItems[self.itemRef].filterReason then GameTooltip:AddLine('|cFFFF0000'..EasyScrap.scrappableItems[self.itemRef].filterReason..'|r') end
+            GameTooltip:SetPoint("BOTTOMLEFT", frame, "TOPRIGHT");
             GameTooltip:Show()
             if ( (IsModifiedClick("COMPAREITEMS") or GetCVarBool("alwaysCompareItems")) ) then
                 GameTooltip_ShowCompareItem(GameTooltip);

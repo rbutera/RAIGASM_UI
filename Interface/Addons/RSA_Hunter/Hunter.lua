@@ -12,13 +12,30 @@ function RSA_Hunter:OnInitialize()
 	end
 end -- End OnInitialize
 function RSA_Hunter:OnEnable()
+	RSA.db.profile.Modules.Hunter = true -- Set state to loaded, to know if we should announce when a spell is refreshed.
+	local pName = UnitName("player")
 	local Config_FreezingTrap = {
 		profile = 'FreezingTrap',
 		replacements = { TARGET = 1 },
 		section = 'Placed'
 	}
+	local Config_Tranq = { -- Enrage Dispels
+		profile = 'Tranq',
+		section = "Cast",
+		replacements = { TARGET = 1, extraSpellName = "[AURA]", extraSpellLink = "[AURALINK]" }
+	}
 	local MonitorConfig_Hunter = {
 		player_profile = RSA.db.profile.Hunter,
+		SPELL_DISPEL = {
+			[264263] = Config_Tranq, -- Bat Sonic Blast
+			[264264] = Config_Tranq, -- Nether Ray Nether Shock
+			[264028] = Config_Tranq, -- Crane Chi-Ji's Tranquility
+			[264266] = Config_Tranq, -- Stag Nature's Grace 
+			[264265] = Config_Tranq, -- Spirit Beast Spirit Shock
+			[264055] = Config_Tranq, -- Moth Serenity Dust
+			[264056] = Config_Tranq, -- Sporebat Spore Cloud
+			[264262] = Config_Tranq, -- Water Strider Soothing Water
+		},
 		SPELL_AURA_APPLIED = {
 			[3355] = { -- FREEZING TRAP
 				profile = 'FreezingTrap',
@@ -131,9 +148,7 @@ function RSA_Hunter:OnEnable()
 	}
 	RSA.MonitorConfig(MonitorConfig_Hunter, UnitGUID("player"))
 	local MonitorAndAnnounce = RSA.MonitorAndAnnounce
-	RSA.db.profile.Modules.Hunter = true -- Set state to loaded, to know if we should announce when a spell is refreshed.
 	local spellinfo,spelllinkinfo,extraspellinfo,extraspellinfolink,missinfo
-	local pName = UnitName("player")
 	local RSA_Misdirection_Damage = 0.0
 	local RSA_MDPTimer = CreateFrame("Frame", "RSA:MDPTimer")
 	local MDPTimeElapsed = 0.0
@@ -222,7 +237,7 @@ function RSA_Hunter:OnEnable()
 							RSA.Print_SmartGroup(string.gsub(message, ".%a+.", RSA.String_Replace))
 						end
 						if RSA.db.profile.Hunter.Spells.Misdirection.Party == true then
-							if RSA.db.profile.Hunter.Spells.Misdirection.SmartGroup == true and GetNumGroupMembers() == 0 and InstanceType ~= "arena" then return end
+							if RSA.db.profile.Hunter.Spells.Misdirection.SmartGroup == true and GetNumGroupMembers() == 0 then return end
 								RSA.Print_Party(string.gsub(message, ".%a+.", RSA.String_Replace))
 						end
 						if RSA.db.profile.Hunter.Spells.Misdirection.Raid == true then
@@ -234,7 +249,7 @@ function RSA_Hunter:OnEnable()
 					RSA_Misdirection_Damage = 0.0
 				end -- MISDIRECTION
 			end -- IF EVENT IS SPELL_AURA_REMOVED
-			MonitorAndAnnounce(self, _, timestamp, event, hideCaster, sourceGUID, source, sourceFlags, sourceRaidFlag, destGUID, dest, destFlags, destRaidFlags, spellID, spellName, spellSchool, missType, ex2, ex3, ex4)
+			MonitorAndAnnounce(self, timestamp, event, hideCaster, sourceGUID, source, sourceFlags, sourceRaidFlag, destGUID, dest, destFlags, destRaidFlags, spellID, spellName, spellSchool, missType, overheal, ex3, ex4)
 		end -- IF SOURCE IS PLAYER
 	end -- END ENTIRELY
 	RSA.CombatLogMonitor:SetScript("OnEvent", Hunter_Spells)

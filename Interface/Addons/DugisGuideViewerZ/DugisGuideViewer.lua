@@ -4586,7 +4586,7 @@ SlashCmdList["DG"] = function(msg)
 		print("|cff11ff11/dugi on - |rEnable Dugi Addon.")
 		print("|cff11ff11/dugi off - |rDisable Dugi Addon.")
 		print("|cff11ff11/dugi config - |rDisplay settings menu.")
-		print("|cff11ff11/dugi automount - |rToogle Auto Mount on/off.")
+		print("|cff11ff11/dugi automount - |rToggle Auto Mount on/off.")
 	elseif msg  == "on" then
 		DugisGuideViewer:TurnOn()
 		DugisGuideViewer:UpdateIconStatus()

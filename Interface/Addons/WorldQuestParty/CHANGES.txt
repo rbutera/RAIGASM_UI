@@ -1,10 +1,10 @@
-lightweight tag 609451c47dac66ed9b153f74676f68fcbaeb51e7 BFA-1.8.1
+lightweight tag 082667729b08927ff78bff2ac8f573a03c85ac28 BFA-1.9.2a
 Author:	TheBackstabi <thebackstabi@gmail.com>
-Date:	Tue Aug 21 20:22:24 2018 -0400
+Date:	Sun Aug 26 09:27:09 2018 -0400
 
-commit 609451c47dac66ed9b153f74676f68fcbaeb51e7
+commit 082667729b08927ff78bff2ac8f573a03c85ac28
 Author: TheBackstabi <thebackstabi@gmail.com>
-Date:   Tue Aug 21 20:22:24 2018 -0400
+Date:   Sun Aug 26 09:27:09 2018 -0400
 
-    Re-add Tortollan filter
+    Ok no really the LUA error for Config Menu is fixed.
 

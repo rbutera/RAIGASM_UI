@@ -2,13 +2,13 @@
 AUCTIONATOR_SAVEDVARS = {
 	["_50000"] = 500,
 	["_2000"] = 100,
-	["_500"] = 5,
 	["STARTING_DISCOUNT"] = 30,
-	["_1000000"] = 2500,
-	["_10000"] = 200,
 	["LOG_DE_DATA_X"] = true,
-	["_200000"] = 1000,
+	["_1000000"] = 2500,
 	["_5000000"] = 4999,
+	["_500"] = 5,
+	["_10000"] = 200,
+	["_200000"] = 1000,
 }
 AUCTIONATOR_PRICING_HISTORY = {
 	["Enchant Ring - Word of Haste"] = {
@@ -25,56 +25,56 @@ AUCTIONATOR_PRICING_HISTORY = {
 AUCTIONATOR_SHOPPING_LISTS = {
 	{
 		["items"] = {
-			"Goblin Glider", -- [1]
-			"Flask of the Seventh Demon", -- [2]
-			"Enchant Ring - Word of Haste", -- [3]
-			"Enchant Neck - Mark of the Hidden Satyr", -- [4]
-			"Enchant Cloak - Word of Agility", -- [5]
-			"Tome of the Tranquil Mind", -- [6]
-			"Potion of Prolonged Power", -- [7]
-			"Deviate", -- [8]
-			"Deviate Delight", -- [9]
-			"Gem chip", -- [10]
-			"Black Barracuda", -- [11]
-			"Gem chips", -- [12]
-			"Savory deviate delight", -- [13]
-			"nightborne delicacy platter", -- [14]
-			"Flask", -- [15]
-			"Masterful Argulite", -- [16]
-			"healing potion", -- [17]
-			"healiung potion", -- [18]
-			"Drums of fury", -- [19]
-			"Fatty Bearsteak", -- [20]
-			"countless armies", -- [21]
-			"Flask of COUNTLESS armies", -- [22]
-			"Flask of COUNTLESS", -- [23]
-			"Seventh ", -- [24]
-			"Foxflower", -- [25]
-			"Dreamleaf", -- [26]
-			"Aethril", -- [27]
-			"Fjarnskaggl", -- [28]
-			"Silver Mackerel", -- [29]
-			"Yseralline Seed", -- [30]
-			"highmountain salmon", -- [31]
-			"Azshari Salad", -- [32]
-			"Flask of the Whispered Pact", -- [33]
-			"Flask of the countless armies", -- [34]
-			"Bear tartare", -- [35]
-			"Versatile Maelstrom Sapphire", -- [36]
-			"Drums", -- [37]
-			"Big Gamy Ribs", -- [38]
-			"Flask of the ", -- [39]
-			"Darkmoon", -- [40]
-			"old war", -- [41]
-			"obliterum", -- [42]
-			"yser", -- [43]
-			"chaotic spinel", -- [44]
-			"Stormray", -- [45]
-			"nethershard", -- [46]
-			"Silver", -- [47]
-			"Silver mackeral", -- [48]
-			"koi", -- [49]
-			"Lean Shank", -- [50]
+			"Sky Golem", -- [1]
+			"Goblin Glider", -- [2]
+			"Flask of the Seventh Demon", -- [3]
+			"Enchant Ring - Word of Haste", -- [4]
+			"Enchant Neck - Mark of the Hidden Satyr", -- [5]
+			"Enchant Cloak - Word of Agility", -- [6]
+			"Tome of the Tranquil Mind", -- [7]
+			"Potion of Prolonged Power", -- [8]
+			"Deviate", -- [9]
+			"Deviate Delight", -- [10]
+			"Gem chip", -- [11]
+			"Black Barracuda", -- [12]
+			"Gem chips", -- [13]
+			"Savory deviate delight", -- [14]
+			"nightborne delicacy platter", -- [15]
+			"Flask", -- [16]
+			"Masterful Argulite", -- [17]
+			"healing potion", -- [18]
+			"healiung potion", -- [19]
+			"Drums of fury", -- [20]
+			"Fatty Bearsteak", -- [21]
+			"countless armies", -- [22]
+			"Flask of COUNTLESS armies", -- [23]
+			"Flask of COUNTLESS", -- [24]
+			"Seventh ", -- [25]
+			"Foxflower", -- [26]
+			"Dreamleaf", -- [27]
+			"Aethril", -- [28]
+			"Fjarnskaggl", -- [29]
+			"Silver Mackerel", -- [30]
+			"Yseralline Seed", -- [31]
+			"highmountain salmon", -- [32]
+			"Azshari Salad", -- [33]
+			"Flask of the Whispered Pact", -- [34]
+			"Flask of the countless armies", -- [35]
+			"Bear tartare", -- [36]
+			"Versatile Maelstrom Sapphire", -- [37]
+			"Drums", -- [38]
+			"Big Gamy Ribs", -- [39]
+			"Flask of the ", -- [40]
+			"Darkmoon", -- [41]
+			"old war", -- [42]
+			"obliterum", -- [43]
+			"yser", -- [44]
+			"chaotic spinel", -- [45]
+			"Stormray", -- [46]
+			"nethershard", -- [47]
+			"Silver", -- [48]
+			"Silver mackeral", -- [49]
+			"koi", -- [50]
 		},
 		["isRecents"] = 1,
 		["name"] = "Recent Searches",
@@ -1347,6 +1347,13 @@ AUCTIONATOR_PRICE_DATABASE = {
 			["sc"] = 3,
 			["id"] = "128546:0:0:0:0",
 			["cc"] = 8,
+		},
+		["Sky Golem"] = {
+			["mr"] = 1479889999,
+			["sc"] = 5,
+			["id"] = "95416:0:0:0:0",
+			["cc"] = 15,
+			["H2843"] = 1479889999,
 		},
 		["Potion of Prolonged Power"] = {
 			["mr"] = 89400,

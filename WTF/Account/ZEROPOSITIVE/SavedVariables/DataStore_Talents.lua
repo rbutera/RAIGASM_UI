@@ -3,42 +3,42 @@ DataStore_TalentsDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Raigasm - Draenor",
 		["Yasuka - Outland"] = "Yasuka - Outland",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
-		["Ryugasm - Outland"] = "Ryugasm - Outland",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 		["Raigasm - Outland"] = "Raigasm - Outland",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Ryugasm - Outland"] = "Ryugasm - Outland",
 	},
 	["global"] = {
 		["Characters"] = {
 			["Default.Outland.Raigasm"] = {
 				["EquippedArtifact"] = "Doomhammer",
-				["ArtifactKnowledgeMultiplier"] = 6300001,
+				["Artifacts"] = {
+					["Doomhammer"] = {
+						["pointsRemaining"] = 5358877276,
+						["rank"] = 60,
+						["tier"] = 2,
+					},
+					["The Fist of Ra-den"] = {
+						["pointsRemaining"] = 600,
+						["rank"] = 1,
+						["tier"] = 2,
+					},
+					["Sharas'dal, Scepter of Tides"] = {
+						["pointsRemaining"] = 940289780,
+						["rank"] = 54,
+						["tier"] = 2,
+					},
+				},
+				["Class"] = "SHAMAN",
+				["lastUpdate"] = 1522514096,
 				["Specializations"] = {
 					[2] = 5531,
 					[3] = 15831,
 				},
-				["lastUpdate"] = 1522514096,
-				["Class"] = "SHAMAN",
 				["ArtifactKnowledge"] = 55,
-				["Artifacts"] = {
-					["Doomhammer"] = {
-						["tier"] = 2,
-						["rank"] = 60,
-						["pointsRemaining"] = 5358877276,
-					},
-					["The Fist of Ra-den"] = {
-						["tier"] = 2,
-						["rank"] = 1,
-						["pointsRemaining"] = 600,
-					},
-					["Sharas'dal, Scepter of Tides"] = {
-						["tier"] = 2,
-						["rank"] = 54,
-						["pointsRemaining"] = 940289780,
-					},
-				},
+				["ArtifactKnowledgeMultiplier"] = 6300001,
 			},
 			["Default.Draenor.Raigasm"] = {
 				["lastUpdate"] = 1522267930,
@@ -49,101 +49,101 @@ DataStore_TalentsDB = {
 			},
 			["Default.Draenor.Norfweezy"] = {
 				["EquippedArtifact"] = "The Aldrachi Warblades",
-				["Artifacts"] = {
-					["The Aldrachi Warblades"] = {
-						["pointsRemaining"] = 120,
-						["tier"] = 1,
-					},
-				},
-				["Class"] = "DEMONHUNTER",
-				["lastUpdate"] = 1534107492,
+				["ArtifactKnowledgeMultiplier"] = 1,
 				["Specializations"] = {
 					27, -- [1]
 					54, -- [2]
 				},
+				["lastUpdate"] = 1534107492,
+				["Class"] = "DEMONHUNTER",
 				["ArtifactKnowledge"] = 0,
-				["ArtifactKnowledgeMultiplier"] = 1,
+				["Artifacts"] = {
+					["The Aldrachi Warblades"] = {
+						["tier"] = 1,
+						["pointsRemaining"] = 120,
+					},
+				},
 			},
 			["Default.Draenor.Raimondo"] = {
 				["EquippedArtifact"] = "Ashbringer",
-				["Artifacts"] = {
-					["Ashbringer"] = {
-						["pointsRemaining"] = 3758087750,
-						["rank"] = 59,
-						["tier"] = 2,
-					},
-				},
-				["Class"] = "PALADIN",
-				["lastUpdate"] = 1533390723,
+				["ArtifactKnowledgeMultiplier"] = 6300001,
 				["Specializations"] = {
 					[3] = 0,
 				},
+				["lastUpdate"] = 1535485834,
+				["Class"] = "PALADIN",
 				["ArtifactKnowledge"] = 55,
-				["ArtifactKnowledgeMultiplier"] = 6300001,
+				["Artifacts"] = {
+					["Ashbringer"] = {
+						["tier"] = 2,
+						["rank"] = 59,
+						["pointsRemaining"] = 3758087750,
+					},
+				},
 			},
 			["Default.Draenor.Badmanting"] = {
 				["EquippedArtifact"] = "Doomhammer",
-				["Artifacts"] = {
-					["Doomhammer"] = {
-						["pointsRemaining"] = 110702458376,
-						["rank"] = 128,
-						["tier"] = 2,
-					},
-					["The Fist of Ra-den"] = {
-						["pointsRemaining"] = 17173745070,
-						["rank"] = 128,
-						["tier"] = 2,
-					},
-					["Sharas'dal, Scepter of Tides"] = {
-						["pointsRemaining"] = 52758307830,
-						["rank"] = 128,
-						["tier"] = 2,
-					},
-				},
+				["ArtifactKnowledgeMultiplier"] = 6300001,
+				["Class"] = "SHAMAN",
+				["lastUpdate"] = 1534104667,
 				["Specializations"] = {
 					11735, -- [1]
 					7515, -- [2]
 					15831, -- [3]
 				},
-				["lastUpdate"] = 1534104667,
-				["Class"] = "SHAMAN",
+				["ArtifactKnowledge"] = 55,
+				["Artifacts"] = {
+					["Doomhammer"] = {
+						["tier"] = 2,
+						["rank"] = 128,
+						["pointsRemaining"] = 110702458376,
+					},
+					["The Fist of Ra-den"] = {
+						["tier"] = 2,
+						["rank"] = 128,
+						["pointsRemaining"] = 17173745070,
+					},
+					["Sharas'dal, Scepter of Tides"] = {
+						["tier"] = 2,
+						["rank"] = 128,
+						["pointsRemaining"] = 52758307830,
+					},
+				},
+			},
+			["Default.Outland.Ryugasm"] = {
+				["EquippedArtifact"] = "Fists of the Heavens",
+				["Artifacts"] = {
+					["Fists of the Heavens"] = {
+						["pointsRemaining"] = 315,
+						["rank"] = 20,
+						["tier"] = 1,
+					},
+					["Fu Zan, the Wanderer's Companion"] = {
+						["pointsRemaining"] = 4270,
+						["rank"] = 14,
+						["tier"] = 1,
+					},
+					["Sheilun, Staff of the Mists"] = {
+						["pointsRemaining"] = 6510,
+						["rank"] = 13,
+						["tier"] = 1,
+					},
+				},
+				["Class"] = "MONK",
+				["lastUpdate"] = 1522106637,
+				["Specializations"] = {
+					[3] = 15866,
+				},
 				["ArtifactKnowledge"] = 55,
 				["ArtifactKnowledgeMultiplier"] = 6300001,
 			},
 			["Default.Draenor.Ryugasm"] = {
-				["lastUpdate"] = 1534105926,
+				["lastUpdate"] = 1535485600,
 				["Specializations"] = {
-					5787, -- [1]
-					[3] = 7577,
+					6810, -- [1]
+					[3] = 7643,
 				},
 				["Class"] = "MONK",
-			},
-			["Default.Outland.Ryugasm"] = {
-				["EquippedArtifact"] = "Fists of the Heavens",
-				["ArtifactKnowledgeMultiplier"] = 6300001,
-				["Specializations"] = {
-					[3] = 15866,
-				},
-				["lastUpdate"] = 1522106637,
-				["Class"] = "MONK",
-				["ArtifactKnowledge"] = 55,
-				["Artifacts"] = {
-					["Fists of the Heavens"] = {
-						["tier"] = 1,
-						["rank"] = 20,
-						["pointsRemaining"] = 315,
-					},
-					["Fu Zan, the Wanderer's Companion"] = {
-						["tier"] = 1,
-						["rank"] = 14,
-						["pointsRemaining"] = 4270,
-					},
-					["Sheilun, Staff of the Mists"] = {
-						["tier"] = 1,
-						["rank"] = 13,
-						["pointsRemaining"] = 6510,
-					},
-				},
 			},
 		},
 	},
@@ -152,12 +152,12 @@ DataStore_TalentsRefDB = {
 	["profileKeys"] = {
 		["Raigasm - Draenor"] = "Raigasm - Draenor",
 		["Yasuka - Outland"] = "Yasuka - Outland",
-		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
+		["Raimondo - Draenor"] = "Raimondo - Draenor",
 		["Ryugasm - Draenor"] = "Ryugasm - Draenor",
-		["Ryugasm - Outland"] = "Ryugasm - Outland",
+		["Norfweezy - Draenor"] = "Norfweezy - Draenor",
 		["Raigasm - Outland"] = "Raigasm - Outland",
 		["Badmanting - Draenor"] = "Badmanting - Draenor",
-		["Raimondo - Draenor"] = "Raimondo - Draenor",
+		["Ryugasm - Outland"] = "Ryugasm - Outland",
 	},
 	["global"] = {
 		["SHAMAN"] = {
@@ -244,39 +244,14 @@ DataStore_TalentsRefDB = {
 			},
 			["Version"] = 27326,
 		},
-		["DEMONHUNTER"] = {
+		["ROGUE"] = {
 			["Locale"] = "enUS",
 			["Specializations"] = {
 				{
-					["id"] = 577,
-					["talents"] = {
-						21854, -- [1]
-						22493, -- [2]
-						22416, -- [3]
-						21857, -- [4]
-						22765, -- [5]
-						22799, -- [6]
-						22909, -- [7]
-						22494, -- [8]
-						21862, -- [9]
-					},
+					["id"] = 259,
 				}, -- [1]
-				{
-					["id"] = 581,
-					["talents"] = {
-						22502, -- [1]
-						22503, -- [2]
-						22504, -- [3]
-						22505, -- [4]
-						22766, -- [5]
-						22507, -- [6]
-						22324, -- [7]
-						22541, -- [8]
-						22540, -- [9]
-					},
-				}, -- [2]
 			},
-			["Version"] = 27326,
+			["Version"] = 26124,
 		},
 		["PALADIN"] = {
 			["Locale"] = "enUS",
@@ -308,7 +283,7 @@ DataStore_TalentsRefDB = {
 					},
 				},
 			},
-			["Version"] = 27219,
+			["Version"] = 27404,
 		},
 		["MONK"] = {
 			["Locale"] = "enUS",
@@ -366,16 +341,41 @@ DataStore_TalentsRefDB = {
 					},
 				},
 			},
-			["Version"] = 27326,
+			["Version"] = 27404,
 		},
-		["ROGUE"] = {
+		["DEMONHUNTER"] = {
 			["Locale"] = "enUS",
 			["Specializations"] = {
 				{
-					["id"] = 259,
+					["id"] = 577,
+					["talents"] = {
+						21854, -- [1]
+						22493, -- [2]
+						22416, -- [3]
+						21857, -- [4]
+						22765, -- [5]
+						22799, -- [6]
+						22909, -- [7]
+						22494, -- [8]
+						21862, -- [9]
+					},
 				}, -- [1]
+				{
+					["id"] = 581,
+					["talents"] = {
+						22502, -- [1]
+						22503, -- [2]
+						22504, -- [3]
+						22505, -- [4]
+						22766, -- [5]
+						22507, -- [6]
+						22324, -- [7]
+						22541, -- [8]
+						22540, -- [9]
+					},
+				}, -- [2]
 			},
-			["Version"] = 26124,
+			["Version"] = 27326,
 		},
 	},
 }

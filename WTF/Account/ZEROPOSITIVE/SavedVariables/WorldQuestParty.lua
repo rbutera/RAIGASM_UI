@@ -1,7 +1,16 @@
 
-FrameLoc = {
-	["y"] = 274.999145507813,
-	["x"] = 274.16650390625,
-	["point"] = "BOTTOMLEFT",
-	["relativePoint"] = "BOTTOMLEFT",
+WQPartyVars = {
+	["sendPartyMessage"] = true,
+	["leavePartyPrompt"] = true,
+	["channel"] = 1,
+	["FrameLoc"] = {
+		["y"] = 150,
+		["relativeTo"] = "WQPFrame",
+		["point"] = "BOTTOMLEFT",
+		["relativePoint"] = "BOTTOMLEFT",
+		["x"] = 150,
+	},
+	["automaticLFM"] = false,
+	["customPartyMessage"] = "",
+	["LFMchannel"] = 1,
 }

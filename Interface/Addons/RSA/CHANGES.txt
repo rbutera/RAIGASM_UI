@@ -1,14 +1,22 @@
-------------------------------------------------------------------------
-r477 | raeli87 | 2018-08-13 21:34:28 +0000 (Mon, 13 Aug 2018) | 1 line
-Changed paths:
-   M /trunk/RSA_Options/Options.lua
+lightweight tag cc6d521334ee0f3306dadbd4aca026e590c56cfc r489-Release
+Author:	Caedilla <42666479+Caedilla@users.noreply.github.com>
+Date:	Sun Aug 26 13:58:03 2018 +0200
 
-Whisper option is now available for Innervate again.
-------------------------------------------------------------------------
-r476 | raeli87 | 2018-08-13 07:58:15 +0000 (Mon, 13 Aug 2018) | 1 line
-Changed paths:
-   M /trunk/RSA/Localisation/Locale-zhTW.lua
+commit cc6d521334ee0f3306dadbd4aca026e590c56cfc
+Author: Caedilla <42666479+Caedilla@users.noreply.github.com>
+Date:   Sun Aug 26 13:58:03 2018 +0200
 
-Update zhTW localisation.
-------------------------------------------------------------------------
+    Remove unnecesary whisper code from silence and pwb
+
+commit 2c16e95a513d2714e8082290914b9c2dfa127826
+Author: Raeli <42666479+Caedilla@users.noreply.github.com>
+Date:   Sun Aug 26 06:26:38 2018 +0200
+
+    Update .pkgmeta
+
+commit 6eb0a9bc267d3a54898b42c8126567ebd17a1cfa
+Author: Raeli <42666479+Caedilla@users.noreply.github.com>
+Date:   Sun Aug 26 06:25:41 2018 +0200
+
+    Create README.md
 

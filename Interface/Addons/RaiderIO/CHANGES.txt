@@ -1,10 +1,34 @@
-lightweight tag 658d03a596355b8b910cd4ee22266b212abfa98c v201808240600
+lightweight tag abd9b2b1db69e37fe27a6131e6fba07428e3384f v201808260600
 Author:	Jah Raphael <jahraphael@yahoo.com>
-Date:	Fri Aug 24 07:29:25 2018 +0000
+Date:	Sun Aug 26 07:38:08 2018 +0000
 
-commit 658d03a596355b8b910cd4ee22266b212abfa98c
+commit abd9b2b1db69e37fe27a6131e6fba07428e3384f
 Author: Jah Raphael <jahraphael@yahoo.com>
-Date:   Fri Aug 24 07:29:25 2018 +0000
+Date:   Sun Aug 26 07:38:08 2018 +0000
 
     [Raider.IO] Database Refresh
+
+commit fcf56afe961c21b6299e2ee3d7f3c236bd67eaa1
+Author: François "Isak" Wroblewski <wroblewski.francois@gmail.com>
+Date:   Sun Aug 26 00:44:10 2018 +0200
+
+    Display legion's main score (#63)
+    
+    * Display legion's main score
+    
+    If the legion's main score is above the the legion score of the character, we display the legion's main score instead
+    
+    * Display legion main score even though player doesn't have a score
+
+commit 2e737e31975ebb37b540ff589f3e50b8a7173576
+Author: Vlad <vladix@gmail.com>
+Date:   Sat Aug 25 23:38:47 2018 +0200
+
+    Updated the debug module to not taint anything and instead modify the specific edit box we use and borrow the autocomplete system. Expanded the debug command to also support search name and realm: "/raiderio debug [name[-realm]]"
+
+commit 2e737e31975ebb37b540ff589f3e50b8a7173576
+Author: Vlad <vladix@gmail.com>
+Date:   Sat Aug 25 23:38:47 2018 +0200
+
+    Updated the debug module to not taint anything and instead modify the specific edit box we use and borrow the autocomplete system. Expanded the debug command to also support search name and realm: "/raiderio debug [name[-realm]]"
 

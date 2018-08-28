@@ -5,14 +5,14 @@ FishingBuddy_Player = {
 		["hide"] = false,
 	},
 	["Settings"] = {
-		["TotalTimeFishing"] = 1,
 		["SpecialBobbers"] = -1,
+		["TotalTimeFishing"] = 1,
 	},
 	["WasWearing"] = {
 	},
-	["WatcherLocation"] = {
-	},
+	["Version"] = 19500,
 	["Outfit"] = {
 	},
-	["Version"] = 19500,
+	["WatcherLocation"] = {
+	},
 }

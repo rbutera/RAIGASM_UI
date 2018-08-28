@@ -1,7 +1,7 @@
 ## Interface: 80000
 ## Author: cqwrteur
 ## Title: LookingForGroup
-## Version: r1392
+## Version: r1400
 ## SavedVariables: LookingForGroupDB
 
 #@no-lib-strip@

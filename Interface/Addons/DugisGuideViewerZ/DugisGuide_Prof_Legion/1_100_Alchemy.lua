@@ -208,12 +208,12 @@ C Rage Fire |QID|39351| |N|Kill (npc:103160) in the Emerald Nightmare Raid and c
 T Rage Fire |QID|39351| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|627| |NPC|92457| 
 A In With the New |QID|42081| |N|(npc:92457) in {Dalaran} (44.17,28.71)| |Z|627| |NPC|92457| 
 T In With the New |QID|42081| |N|(npc:92458) in {The Agronomical Apothecary} (41.6, 32.8)| |Z|627| |NPC|92458| 
-N 4 - 9  (spell:188301) |AL| |N|Create rank 1 (spell:188301) requires approximately:<br/><b>20 (item:128304)<br/><b>5 (item:3371)<br/><br/>Make sure you learned rank 2 already, keep all potions for later use (41.6, 32.8)| |Z|627| |P|433 9|
-N 9 - 15 (spell:188297) |AL| |N|Create rank 2(spell:188297) requires approximately:<br/><b>24 (item:128304)<br/><b>6 (item:3371)<br/><br/>Keep all potions for later use (41.6, 32.8)| |Z|627| |P|433 15|
-N 15 - 20 (spell:188304) |AL| |N|Create (spell:188304) requires approximately:<br/><b>5 (item:127834)<br/><b>5 (item:127835)| |P|433 20|
-N 20 - 50 (spell:188300) |AL| |N|Create rank 3 (spell:188300) requires approximately:<br/><b>140 (item:128304)<br/><b>35 (item:3371)<br/><br/>Rank 3 is obtained randomly while crafting (item:127834) you should have it by now| |P|433 50|
-N 50 - 70 Any Rank 2 Flasks |AL| |N|Create any rank 2 flasks. You should get 3 from the Alchemy dungeon quests and (item:127931) is dropped by (npc:95888) in Heroic Vault of the Wardens| |P|433 70|
-N 70 - 100 Any Rank 3 Flasks |AL| |N|Create any rank 3 flasks. You will discover rank 3 by creating the rank 2 version of the flask, so wait until you discover a rank 3 flash to level to 100| |P|433 100|
+N 4-9  (spell:188301) |AL| |N|Create rank 1 (spell:188301) requires approximately:<br/><b>20 (item:128304)<br/><b>5 (item:3371)<br/><br/>Make sure you learned rank 2 already, keep all potions for later use (41.6, 32.8)| |Z|627| |P|433 9|
+N 9-15 (spell:188297) |AL| |N|Create rank 2(spell:188297) requires approximately:<br/><b>24 (item:128304)<br/><b>6 (item:3371)<br/><br/>Keep all potions for later use (41.6, 32.8)| |Z|627| |P|433 15|
+N 15-20 (spell:188304) |AL| |N|Create (spell:188304) requires approximately:<br/><b>5 (item:127834)<br/><b>5 (item:127835)| |P|433 20|
+N 20-50 (spell:188300) |AL| |N|Create rank 3 (spell:188300) requires approximately:<br/><b>140 (item:128304)<br/><b>35 (item:3371)<br/><br/>Rank 3 is obtained randomly while crafting (item:127834) you should have it by now| |P|433 50|
+N 50-70 Any Rank 2 Flasks |AL| |N|Create any rank 2 flasks. You should get 3 from the Alchemy dungeon quests and (item:127931) is dropped by (npc:95888) in Heroic Vault of the Wardens| |P|433 70|
+N 70-100 Any Rank 3 Flasks |AL| |N|Create any rank 3 flasks. You will discover rank 3 by creating the rank 2 version of the flask, so wait until you discover a rank 3 flash to level to 100| |P|433 100|
 
 N Guide Complete
 

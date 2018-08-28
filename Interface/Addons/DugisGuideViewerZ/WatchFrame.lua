@@ -187,12 +187,14 @@ WF.OnFrameUpdate = function()
 				marginTop = -VehicleSeatIndicator:GetHeight() + 5
 			end
 			
-			SmallFrame.Frame:ClearAllPoints()
-			if DugisGuideViewer:UserSetting(DGV_WATCHFRAMEBORDER) then
-				SmallFrame.Frame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", GetScreenWidth() - SmallFrame.Frame:GetWidth() - marginRight - 5, -top + marginTop + 15)
-			else
-				SmallFrame.Frame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", GetScreenWidth() - SmallFrame.Frame:GetWidth() - marginRight - 1, -top + marginTop + 15)	
-			end				
+			if DugisGuideViewer:IsModuleRegistered("SmallFrame") then 
+				SmallFrame.Frame:ClearAllPoints()
+				if DugisGuideViewer:UserSetting(DGV_WATCHFRAMEBORDER) then
+					SmallFrame.Frame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", GetScreenWidth() - SmallFrame.Frame:GetWidth() - marginRight - 5, -top + marginTop + 15)
+				else
+					SmallFrame.Frame:SetPoint("TOPLEFT", UIParent, "TOPLEFT", GetScreenWidth() - SmallFrame.Frame:GetWidth() - marginRight - 1, -top + marginTop + 15)	
+				end				
+			end
 		end
 	end
 	

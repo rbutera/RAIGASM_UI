@@ -86,11 +86,25 @@ local Options = {
 					inline = true,
 					order = 100.2,
 					args = {
+						Smart_Emote = {
+							name = "|cffCF374D"..L["Smart Emote"].."|r",
+							type = "toggle",
+							order = 0,
+							desc = L["Only announce in /emote while you are in a group."],
+							descStyle = "inline",
+							width = "double",
+							get = function(info)
+								return RSA.db.profile.General.GlobalAnnouncements.SmartEmote
+							end,
+							set = function (info, value)
+								RSA.db.profile.General.GlobalAnnouncements.SmartEmote = value
+							end,
+						},
 						Smart_Say = {
 							name = "|cffCF374D"..L["Smart Say"].."|r",
 							type = "toggle",
 							order = 0,
-							desc = L["Only announce in /yell while you are in a manually formed group."],
+							desc = L["Only announce in /say while you are in a group."],
 							descStyle = "inline",
 							width = "double",
 							get = function(info)
@@ -104,7 +118,7 @@ local Options = {
 							name = "|cffCF374D"..L["Smart Yell"].."|r",
 							type = "toggle",
 							order = 0,
-							desc = L["Only announce in /say while you are in a manually formed group."],
+							desc = L["Only announce in /yell while you are in a group."],
 							descStyle = "inline",
 							width = "double",
 							get = function(info)
@@ -901,6 +915,23 @@ local function Druid_Options()
 			Message_Channels_Disabled = {["Whisper"] = true},
 			Valid_Tags = {"[SPELL]", "[LINK]"},
 		},
+		[24] = {
+			Profile = "Soothe",
+			Name = GetSpellInfo(2908),
+			Desc = GetSpellDescription(2908),
+			Message_Amount = 1,
+			Message_Areas = {"Cast"},
+			Valid_Tags = {"[SPELL]", "[LINK]", "[TARGET]", "[AURA]", "[AURALINK]"},
+		},
+		[25] = {
+			Profile = "MassEntanglement",
+			Name = GetSpellInfo(102359),
+			Desc = GetSpellDescription(102359),
+			Message_Amount = 2,
+			Message_Areas = {"Start", "End"},
+			Message_Channels_Disabled = {["Whisper"] = true},
+			Valid_Tags = {"[SPELL]", "[LINK]"},
+		},
 	}
 	return Spells
 end
@@ -996,6 +1027,14 @@ local function Hunter_Options()
 			Message_Channels_Disabled = {["Whisper"] = true},
 			Valid_Tags = {"[SPELL]", "[LINK]"},
 		},
+		[11] = {
+			Profile = "Tranq",
+			Name = L["Pet Dispels"],
+			Desc = GetSpellDescription(264263),
+			Message_Amount = 1,
+			Message_Areas = {"Cast"},
+			Valid_Tags = {"[SPELL]", "[LINK]", "[TARGET]", "[AURA]", "[AURALINK]"},
+		},
 	}
 	return Spells
 end
@@ -1053,7 +1092,7 @@ local function Mage_Options()
 			Desc = GetSpellDescription(3563),
 			Message_Amount = 1,
 			Message_Areas = {"Start"},
-			Message_Channels_Disabled = {["Whisper"] = true, ["Custom"] = true, ["Raid"] = true, ["Party"] = true, ["SmartGroup"] = true, ["Say"] = true, ["Yell"] = true},
+			Message_Channels_Disabled = {["Whisper"] = true, ["Custom"] = true, ["Raid"] = true, ["Party"] = true, ["SmartGroup"] = true, ["Emote"] = true, ["Say"] = true, ["Yell"] = true},
 			Valid_Tags = {"[SPELL]", "[LINK]"},
 		},
 		[7] = {
@@ -1692,6 +1731,15 @@ local function Priest_Options()
 			Profile = "SymbolOfHope",
 			Name = GetSpellInfo(64901),
 			Desc = GetSpellDescription(64901),
+			Message_Amount = 2,
+			Message_Areas = {"Start", "End"},
+			Message_Channels_Disabled = {["Whisper"] = true},
+			Valid_Tags = {"[SPELL]", "[LINK]"},
+		},
+		[22] = {
+			Profile = "PsychicHorror",
+			Name = GetSpellInfo(64044),
+			Desc = GetSpellDescription(64044),
 			Message_Amount = 2,
 			Message_Areas = {"Start", "End"},
 			Message_Channels_Disabled = {["Whisper"] = true},
@@ -2539,6 +2587,18 @@ local function Spell_Options(NonClass)
 						type = "header",
 						order = 0.1,
 					},
+					Emote = {
+						name = "|cffCF374D"..L["Emote"].."|r",
+						type = "toggle",
+						order = 0.11,
+						hidden = function() if Spells[i].Message_Channels_Disabled then if Spells[i].Message_Channels_Disabled["Emote"] then return true end end end,
+						get = function(info)
+							return RSA.db.profile[ProfileName].Spells[Spells[i].Profile].Emote
+						end,
+						set = function (info, value)
+							RSA.db.profile[ProfileName].Spells[Spells[i].Profile].Emote = value
+						end,
+					},
 					Say = {
 						name = "|cffCF374D"..L["Say"].."|r",
 						type = "toggle",
@@ -2561,19 +2621,6 @@ local function Spell_Options(NonClass)
 						end,
 						set = function (info, value)
 							RSA.db.profile[ProfileName].Spells[Spells[i].Profile].Yell = value
-						end,
-					},
-					Emote = {
-						name = "|cffCF374D"..L["Emote"].."|r",
-						type = "toggle",
-						hidden = true,
-						order = 0.11,
-						--hidden = function() if Spells[i].Message_Channels_Disabled then if Spells[i].Message_Channels_Disabled["Emote"] then return true end end end,
-						get = function(info)
-							return RSA.db.profile[ProfileName].Spells[Spells[i].Profile].Emote
-						end,
-						set = function (info, value)
-							RSA.db.profile[ProfileName].Spells[Spells[i].Profile].Emote = value
 						end,
 					},
 					Custom_Channel_Toggle = {

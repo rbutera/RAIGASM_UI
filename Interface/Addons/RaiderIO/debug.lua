@@ -1,9 +1,5 @@
 local addonName, ns = ...
 
--- autocomplete custom include flags
-local AUTOCOMPLETE_REALM = 0x00010000
-local AUTOCOMPLETE_NAME = 0x00020000
-
 -- widget references
 local WR, WN, TT, UI
 
@@ -14,10 +10,12 @@ end
 
 -- searches for realms
 local function GetRealms(text, maxResults, cursorPosition)
+	text = text:lower()
 	local temp = {}
 	local count = 0
 	local unique = {}
 	local data
+	local kl
 	for i = 1, 2 do
 		if count >= maxResults then
 			break
@@ -28,8 +26,9 @@ local function GetRealms(text, maxResults, cursorPosition)
 				if count >= maxResults then
 					break
 				end
-				if not unique[k] and k:find(text, nil, true) == 1 then
-					unique[k] = true
+				kl = k:lower()
+				if not unique[kl] and kl:find(text, nil, true) == 1 then
+					unique[kl] = true
 					count = count + 1
 					temp[count] = {
 						name = k,
@@ -46,6 +45,7 @@ end
 
 -- searches for character names
 local function GetNames(text, maxResults, cursorPosition)
+	text = text:lower()
 	local realm = WR:GetText()
 	if not realm or strlenutf8(realm) < 1 then return end
 	local temp = {}
@@ -53,6 +53,7 @@ local function GetNames(text, maxResults, cursorPosition)
 	local data
 	local count
 	local name
+	local namel
 	for i = 1, 2 do
 		if rcount >= maxResults then
 			break
@@ -67,7 +68,8 @@ local function GetNames(text, maxResults, cursorPosition)
 						break
 					end
 					name = data[j]
-					if name:find(text, nil, true) == 1 then
+					namel = name:lower()
+					if namel:find(text, nil, true) == 1 then
 						rcount = rcount + 1
 						temp[rcount] = {
 							name = name,
@@ -82,77 +84,9 @@ local function GetNames(text, maxResults, cursorPosition)
 	return temp
 end
 
--- override certain _G references
-local override = {
-	-- enforce full name and realm
-	Ambiguate = function(fullName, context)
-		return fullName
-	end,
-	-- search within our own database
-	GetAutoCompleteResults = function(text, include, exclude, maxResults, cursorPosition)
-		cursorPosition = cursorPosition or (type(text) == "string" and text:len() or 0)
-		if include == AUTOCOMPLETE_REALM then
-			return GetRealms(text, maxResults, cursorPosition)
-		elseif include == AUTOCOMPLETE_NAME then
-			return GetNames(text, maxResults, cursorPosition)
-		end
-	end,
-	-- retrieve realms within our own database
-	GetAutoCompleteRealms = function(tableRef)
-		tableRef = type(tableRef) == "table" and tableRef or {}
-		return tableRef
-	end,
-}
-
--- the custom environment used by the functions called from the template
-local env = setmetatable(override, { __index = _G })
-
--- append the global AutoComplete functions to the override table
-for _, v in pairs({
-	"AutoComplete_OnLoad",
-	"AutoComplete_Update",
-	"AutoComplete_HideIfAttachedTo",
-	"AutoComplete_SetSelectedIndex",
-	"AutoComplete_GetSelectedIndex",
-	"AutoComplete_GetNumResults",
-	"AutoComplete_UpdateResults",
-	"AutoComplete_IncrementSelection",
-	"AutoCompleteEditBox_OnTabPressed",
-	"AutoCompleteEditBox_OnArrowPressed",
-	"AutoCompleteEditBox_OnEnterPressed",
-	"AutoCompleteEditBox_OnTextChanged",
-	"AutoCompleteEditBox_AddHighlightedText",
-	"AutoCompleteEditBox_OnChar",
-	"AutoCompleteEditBox_OnEditFocusLost",
-	"AutoCompleteEditBox_OnEscapePressed",
-	"AutoCompleteButton_OnClick",
-}) do
-	override[v] = function(...)
-		local f = _G[v]
-		setfenv(f, env)
-		return f(...)
-	end
-end
-
--- the functions we must wrap on the template
-local wrap = {
-	OnTabPressed    = AutoCompleteEditBox_OnTabPressed,
-	OnEnterPressed  = AutoCompleteEditBox_OnEnterPressed,
-	OnTextChanged   = AutoCompleteEditBox_OnTextChanged,
-	OnChar          = AutoCompleteEditBox_OnChar,
-	OnEditFocusLost = AutoCompleteEditBox_OnEditFocusLost,
-	OnEscapePressed = AutoCompleteEditBox_OnEscapePressed,
-	OnArrowPressed  = AutoCompleteEditBox_OnArrowPressed,
-}
-
 -- create own edit box and apply the function wraps
 local function CreateEditBox()
 	local f = CreateFrame("EditBox", nil, UIParent, "AutoCompleteEditBoxTemplate")
-	-- change the function env
-	for k, v in pairs(wrap) do
-		setfenv(v, env)
-		f:SetScript(k, v)
-	end
 	-- autocomplete
 	f.autoComplete = AutoCompleteBox
 	f.autoCompleteParams = { include = AUTOCOMPLETE_FLAG_ALL, exclude = AUTOCOMPLETE_FLAG_NONE }
@@ -215,14 +149,32 @@ local function UpdateTooltip(realm, name)
 	end
 end
 
+-- search for a character
+local function Search(self, query)
+	local arg1, arg2 = query:match("^([^%-%s]+)[%-%s+]?(.*)$")
+	arg1, arg2 = (arg1 or ""):trim(), (arg2 or ""):trim()
+	arg2 = arg2 ~= "" and arg2 or GetNormalizedRealmName()
+	local arg2q = GetRealms(arg2, 1)
+	if arg2q and arg2q[1] and arg2q[1].name then
+		arg2 = arg2q[1].name
+	end
+	WR:SetText(arg2)
+	local arg1q = GetNames(arg1, 1)
+	if arg1q and arg1q[1] and arg1q[1].name then
+		arg1 = arg1q[1].name
+	end
+	WN:SetText(arg1)
+	UpdateTooltip(arg2, arg1)
+end
+
 -- creates the debug widget
 local function Init()
 	local r = CreateEditBox()
 	local n = CreateEditBox()
 	local t = CreateTooltip()
 
-	r.autoCompleteParams.include = AUTOCOMPLETE_REALM
-	n.autoCompleteParams.include = AUTOCOMPLETE_NAME
+	r.autoCompleteFunction = GetRealms
+	n.autoCompleteFunction = GetNames
 
 	UI = CreateFrame("Frame", nil, UIParent)
 	do
@@ -254,6 +206,8 @@ local function Init()
 
 		UI:SetScript("OnShow", function() UpdateTooltip(r:GetText(), n:GetText()) end)
 		UI:SetScript("OnHide", function() UpdateTooltip() end)
+
+		UI.Search = Search
 	end
 
 	r:SetParent(UI)
@@ -296,6 +250,15 @@ local function Init()
 		self:ClearFocus()
 	end
 
+	local function OnTextChanged(self, userInput)
+		if not userInput then return end
+		local text = self:GetText()
+		if text:len() > 0 then
+			AutoCompleteEditBox_SetAutoCompleteSource(self, self.autoCompleteFunction)
+			AutoComplete_Update(self, text, #text)
+		end
+	end
+
 	r:HookScript("OnTabPressed", OnTabPressed)
 	n:HookScript("OnTabPressed", OnTabPressed)
 
@@ -308,6 +271,10 @@ local function Init()
 	r:HookScript("OnEscapePressed", OnEscapePressed)
 	n:HookScript("OnEscapePressed", OnEscapePressed)
 
+	r:HookScript("OnTextChanged", OnTextChanged)
+	n:HookScript("OnTextChanged", OnTextChanged)
+
+	-- references
 	WR, WN, TT = r, n, t
 
 	-- this is required for "/raiderio debug" to be able to toggle the dialog

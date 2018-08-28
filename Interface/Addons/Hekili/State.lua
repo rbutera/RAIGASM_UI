@@ -108,12 +108,12 @@ state.spec = {}
 state.stance = {}
 state.stat = {}
 state.swings = {
-    mh_actual = GetTime(),
+    mh_actual = 0,
     mh_speed = UnitAttackSpeed( 'player' ) > 0 and UnitAttackSpeed( 'player' ) or 2.6,
-    mh_projected = GetTime() + 2.6,
-    oh_actual = GetTime() + 1.3,
+    mh_projected = 2.6,
+    oh_actual = 0,
     oh_speed = select( 2, UnitAttackSpeed( 'player' ) ) or 2.6,
-    oh_projected = GetTime() + 3.9
+    oh_projected = 3.9
 }
 state.system = {}
 state.table = table
@@ -403,6 +403,7 @@ state.FindUnitDebuffByID = ns.FindUnitDebuffByID
 state.GetItemCount = GetItemCount
 state.GetShapeshiftForm = GetShapeshiftForm
 state.GetShapeshiftFormInfo = GetShapeshiftFormInfo
+state.GetSpellCount = GetSpellCount
 state.GetStablePetInfo = GetStablePetInfo
 state.GetTime = GetTime
 state.GetTotemInfo = GetTotemInfo
@@ -1342,12 +1343,7 @@ local mt_state = {
             return ability and ability.cost or 0
             
         elseif k == 'cast_regen' then
-            local res = ability.spendType or class.primaryResource
-            local regen = 0
-
-            if res and ability.spend then regen = regen - spend end
-
-            return regen + ( max( state.gcd.execute, ability.cast or 0 ) * state[ ability.spendType or class.primaryResource ].regen )
+            return ( max( state.gcd.execute, ability.cast or 0 ) * state[ ability.spendType or class.primaryResource ].regen ) - ( ability and ability.spend or 0 )
             
         elseif k == 'prowling' then
             return t.buff.prowl.up or ( t.buff.cat_form.up and t.buff.shadowform.up )
@@ -1359,7 +1355,7 @@ local mt_state = {
         local aura_name = ability and ability.aura or t.this_action
         local aura = class.auras[ aura_name ]
         
-        local app = t.buff[ aura_name ].up and t.buff[ aura_name ] or t.debuff[ aura_name ].up and t.debuff[ aura_name ]
+        local app = aura and ( t.buff[ aura_name ].up and t.buff[ aura_name ] or t.debuff[ aura_name ].up and t.debuff[ aura_name ] ) or nil
 
         if k == 'duration' then            
             return aura and aura.duration or 30
@@ -2002,14 +1998,12 @@ local mt_default_cooldown = {
             return t.remains > 0 and 0 or 1
             
         elseif k == 'recharge_time' then
-            if class.abilities[ t.key ].charges then
-                if t.next_charge > ( state.query_time ) then
-                    return ( t.next_charge - ( state.query_time ) )
-                else
-                    return 0
-                end
+            if t.charges <= 1 then return t.remains
+            elseif class.abilities[ t.key ].charges and t.next_charge > ( state.query_time ) then
+                return ( t.next_charge - ( state.query_time ) )
             end
-            return t.remains
+
+            return 0
             
         elseif k == 'up' or k == 'ready' then            
             return ( t.remains == 0 )
@@ -2457,7 +2451,7 @@ local mt_default_buff = {
 
         elseif k == 'name' or k == 'count' or k == 'duration' or k == 'expires' or k == 'applied' or k == 'caster' or k == 'id' or k == 'timeMod' or k == 'v1' or k == 'v2' or k == 'v3' or k == 'unit' then            
             if aura and aura.generate then
-                aura.generate()
+                aura.generate( t, "buff" )
                 --[[ for attr, a_val in pairs( default_buff_values ) do
                     t[ attr ] = rawget( t, attr ) or a_val
                 end ]]
@@ -2592,7 +2586,7 @@ local mt_buffs = {
         end
 
         if aura.generate then
-            aura.generate()
+            aura.generate( t[ k ], "buff" )
             return t[ k ]
         end
         
@@ -2950,7 +2944,7 @@ local mt_default_debuff = {
 
         elseif k == 'name' or k == 'count' or k == 'expires' or k == 'applied' or k == 'duration' or k == 'caster' or k == 'timeMod' or k == 'v1' or k == 'v2' or k == 'v3' or k == 'unit' then            
             if class_aura and class_aura.generate then
-                class_aura.generate()                
+                class_aura.generate( t, "debuff" )
             else
             
                 local real = auras.target.debuff[ t.key ] or auras.player.debuff[ t.key ]
@@ -3078,7 +3072,7 @@ local mt_debuffs = {
             end
             
             if aura.generate then
-                aura.generate()
+                aura.generate( t[k], "debuff" )
                 return t[ k ]
             end
         
@@ -3203,7 +3197,7 @@ local mt_default_action = {
             return 0
             
         elseif k == 'cast_regen' then
-            return floor( max( state.gcd.execute, t.cast_time ) * state[ class.primaryResource ].regen )
+            return floor( max( state.gcd.execute, t.cast_time ) * state[ class.primaryResource ].regen ) - ( ability and ability.spend or 0 )
 
         elseif k == 'cost' then
             local a = class.abilities[ t.action ].spend
@@ -3727,12 +3721,19 @@ function state.reset( dispName )
     state.health.max = UnitHealthMax( 'player' ) or 10000
     state.health.regen = 0
 
+    state.swings.mh_speed, state.swings.oh_speed = UnitAttackSpeed( 'player' )
+    state.swings.mh_speed = state.swings.mh_speed or 0
+    state.swings.oh_speed = state.swings.oh_speed or 0
+
     state.mainhand_speed = state.swings.mh_speed
     state.offhand_speed = state.swings.oh_speed
     
-    state.nextMH = state.swings.mh_projected
-    state.nextOH = state.swings.oh_projected
-    
+    state.nextMH = ( state.combat > 0 and state.swings.mh_actual > state.combat and state.swings.mh_actual + state.mainhand_speed ) or 0
+    state.nextOH = ( state.combat > 0 and state.swings.oh_actual > state.combat and state.swings.oh_actual + state.offhand_speed ) or 0
+
+    state.swings.mh_pseudo = nil    
+    state.swings.oh_pseudo = nil
+
     -- Special case spells that suck.
     if class.abilities[ 'ascendance' ] and state.buff.ascendance.up then
         setCooldown( 'ascendance', state.buff.ascendance.remains + 165 )

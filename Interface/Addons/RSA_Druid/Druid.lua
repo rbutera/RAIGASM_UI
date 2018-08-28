@@ -31,6 +31,7 @@ function RSA_Druid:OnEnable()
 	}
 	local Config_RemoveCorruption = { -- REMOVE CORRUPTION
 		profile = 'RemoveCorruption',
+		section = "Cast",
 		replacements = { TARGET = 1, extraSpellName = "[AURA]", extraSpellLink = "[AURALINK]" }
 	}
 	local MonitorConfig_Druid = {
@@ -50,6 +51,11 @@ function RSA_Druid:OnEnable()
 		SPELL_DISPEL = {
 			[2782] = Config_RemoveCorruption, -- REMOVE CORRUPTION
 			[88423] = Config_RemoveCorruption, -- NATURE'S CURE
+			[2908] = { -- SOOTHE
+				profile = 'Soothe',
+				section = "Cast",
+				replacements = { TARGET = 1, extraSpellName = "[AURA]", extraSpellLink = "[AURALINK]" }
+			},
 		},
 		SPELL_AURA_APPLIED = {
 			[106898] = Config_StampedingRoar,
@@ -101,6 +107,10 @@ function RSA_Druid:OnEnable()
 			},
 			[201664] = { -- Demoralizing Roar
 				profile = 'DemoralizingRoar',
+				tracker = 2
+			},
+			[102359] = { -- Mass Entanglement
+				profile = 'MassEntanglement',
 				tracker = 2
 			},
 		},
@@ -201,7 +211,12 @@ function RSA_Druid:OnEnable()
 			[201664] = { -- Demoralizing Roar
 				profile = 'DemoralizingRoar',
 				section = "End",
-				tracker = 2
+				tracker = 1
+			},
+			[102359] = { -- Mass Entanglement
+				profile = 'MassEntanglement',
+				section = "End",
+				tracker = 1
 			},
 		},
 		SPELL_INTERRUPT = {
@@ -253,7 +268,7 @@ function RSA_Druid:OnEnable()
 					end
 				end
 			end -- BUFF REMINDER
-			MonitorAndAnnounce(self, _, timestamp, event, hideCaster, sourceGUID, source, sourceFlags, sourceRaidFlag, destGUID, dest, destFlags, destRaidFlags, spellID, spellName, spellSchool, missType, ex2, ex3, ex4)
+			MonitorAndAnnounce(self, timestamp, event, hideCaster, sourceGUID, source, sourceFlags, sourceRaidFlag, destGUID, dest, destFlags, destRaidFlags, spellID, spellName, spellSchool, missType, overheal, ex3, ex4)
 		end -- IF SOURCE IS PLAYER
 	end -- END ENTIRELY
 	RSA.CombatLogMonitor:SetScript("OnEvent", Druid_Spells)
@@ -313,7 +328,7 @@ function RSA_Druid:OnEnable()
 							RSA.Print_SmartGroup(string.gsub(message, ".%a+.", RSA.String_Replace))
 						end
 						if RSA.db.profile.Druid.Spells.Revive.Party == true then
-							if RSA.db.profile.Druid.Spells.Revive.SmartGroup == true and GetNumGroupMembers() == 0 and InstanceType ~= "arena" then return end
+							if RSA.db.profile.Druid.Spells.Revive.SmartGroup == true and GetNumGroupMembers() == 0 then return end
 								RSA.Print_Party(string.gsub(message, ".%a+.", RSA.String_Replace))
 						end
 						if RSA.db.profile.Druid.Spells.Revive.Raid == true then
@@ -372,7 +387,7 @@ function RSA_Druid:OnEnable()
 							RSA.Print_SmartGroup(string.gsub(message, ".%a+.", RSA.String_Replace))
 						end
 						if RSA.db.profile.Druid.Spells.Rebirth.Party == true then
-							if RSA.db.profile.Druid.Spells.Rebirth.SmartGroup == true and GetNumGroupMembers() == 0 and InstanceType ~= "arena" then return end
+							if RSA.db.profile.Druid.Spells.Rebirth.SmartGroup == true and GetNumGroupMembers() == 0 then return end
 								RSA.Print_Party(string.gsub(message, ".%a+.", RSA.String_Replace))
 						end
 						if RSA.db.profile.Druid.Spells.Rebirth.Raid == true then

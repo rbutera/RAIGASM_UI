@@ -10,7 +10,7 @@ Licensed under a Creative Commons "Attribution Non-Commercial Share Alike" Licen
 local _
 
 local MAJOR_VERSION = "LibFishing-1.0"
-local MINOR_VERSION = 91005
+local MINOR_VERSION = 91006
 
 if not LibStub then error(MAJOR_VERSION .. " requires LibStub") end
 
@@ -95,6 +95,7 @@ FishLib.continent_fishing = {
     { ["max"] = 100, ["skillid"] = 2587, ["cat"] = 1110, ["rank"] = 0 },	-- Draenor Fishing
     { ["max"] = 100, ["skillid"] = 2586, ["cat"] = 1112, ["rank"] = 0 },	-- Legion Fishing
     { ["max"] = 150, ["skillid"] = 2585, ["cat"] = 1114, ["rank"] = 0 },	-- Kul Tiras Fishing
+    { ["max"] = 150, ["skillid"] = 2585, ["cat"] = 1114, ["rank"] = 0 },	-- Zandalar Fishing
 }
 
 local itsready = C_TradeSkillUI.IsTradeSkillReady
@@ -1360,6 +1361,7 @@ local continent_map = {
     [572] = 7,		-- Draenor
     [619] = 8,		-- Broken Isles
     [876] = 9,		-- Kul Tiras
+    [875] = 10,     -- Zandalar
     [407] = 5,		-- Darkmoon Island
 }
 

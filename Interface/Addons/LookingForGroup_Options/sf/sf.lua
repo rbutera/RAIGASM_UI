@@ -282,7 +282,7 @@ LookingForGroup_Options:push("sf",{
 						if tb == nil then
 							tb = {}
 						end
-						tb[#tb+1] = val:lower()
+						tb[#tb+1] = val
 						table.sort(tb)
 						LookingForGroup.db.profile.addon_filters = tb
 					end,

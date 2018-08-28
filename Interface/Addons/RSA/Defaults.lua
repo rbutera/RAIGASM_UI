@@ -10,6 +10,7 @@ local DefaultOptions = {
 			GlobalAnnouncements = {				
 				SmartSay = true,
 				SmartYell = true,
+				SmartEmote = true,
 				SmartCustomChannel = true,
 				Arena = true,
 				Battlegrounds = false,
@@ -683,6 +684,23 @@ local function Druid()
 					Channel = "",
 				},
 			},
+			Soothe = {
+				Messages = {
+					Cast = {"Removed [TARGET]'s [AURALINK]!"},
+				},
+				CustomChannel = {
+					Channel = "",
+				},
+			},
+			MassEntanglement = {
+				Messages = {
+					Start = {"[LINK] activated!"},
+					End = {"[LINK] faded!"},
+				},
+				CustomChannel = {
+					Channel = "",
+				},
+			},
 		}
 	}
 	return Druid
@@ -787,6 +805,14 @@ local function Hunter()
 					Placed = {"[LINK] placed!"},
 					Start = {"[LINK] triggered!"},
 					End = {"[LINK] ended!"},
+				},
+				CustomChannel = {
+					Channel = "",
+				},
+			},
+			Tranq = {
+				Messages = {
+					Cast = {"Removed [TARGET]'s [AURALINK]!"},
 				},
 				CustomChannel = {
 					Channel = "",
@@ -1499,6 +1525,15 @@ local function Priest()
 					Channel = "",
 				},
 			},
+			PsychicHorror = {
+				Messages = {
+					Start = {"[LINK] activated!"},
+					End = {"[LINK] faded!"},
+				},
+				CustomChannel = {
+					Channel = "",
+				},
+			},
 			MindBomb = {
 				Messages = {
 					Start = {"[LINK] cast on [TARGET]!"},
@@ -2022,7 +2057,7 @@ local function Warlock()
 					Channel = "",
 				},
 			},
-		}, Spells
+		},
 	}
 	return Warlock
 end

@@ -60,8 +60,8 @@ N Materials Required |QID|40864| |N|<b>80 (item:123919)<br/><b>20 (item:124121)<
 N Materials Required |QID|40864| |N|<b>80 (item:123919)<br/><b>20 (item:124121)<br/><b>20 (item:124119)<br/><b>20 (item:124109)<br/><b>20 (item:124112)<br/><br/>Use the trade skill farming guide to collect the materials or purchase from the Auction| |L|124121 20|
 N Materials Required |QID|40864| |N|<b>80 (item:123919)<br/><b>20 (item:124121)<br/><b>20 (item:124119)<br/><b>20 (item:124109)<br/><b>20 (item:124112)<br/><br/>Use the trade skill farming guide to collect the materials or purchase from the Auction| |L|124119 20|
 
-N (spell:198988) |EN| |QID|40864.1| |N|Open your Engineering crafting panel and craft (item:132529)|
-N (item:132523) |EN| |QID|40864.2| |N|Use the (item:132523) to summon Reaves and apply the module|
+N (spell:198988) |ENG| |QID|40864.1| |N|Open your Engineering crafting panel and craft (item:132529)|
+N (item:132523) |ENG| |QID|40864.2| |N|Use the (item:132523) to summon Reaves and apply the module|
 T Modular Modifications |QID|40864| |N|(npc:93520) in {Like Clockwork} (38.83,24.70)| |Z|627| |NPC|93520|
 
 N Level 104 Required |N|You need to be at least level 104 to continue the guide| |PL|104|
@@ -128,7 +128,7 @@ B (item:137710) |QID|40878| |N|Buy (item:137710) from (npc:93539) in {Like Clock
 U (item:137710) |QID|40878| |N|Learn the (item:137710) recipe, tick this step if you already learned it| |U|137710|
 B (item:136632) |QID|40878| |N|Buy 6 (item:136632) from (npc:93539) in {Like Clockwork} (38.35,24.53)| |Z|627| |NPC|93539|  |L|136632 6|
 N (item:123919| |QID|40878| |N|Collect 16 (item:123919)<br/><br/>You can either mine it yourself if you have mining or purchase from the Auction| |L|123919 16|
-N (item:132515) |QID|40878.1| |EN| |N|Open your Engineering crafting panel and craft 2 (item:132515)|
+N (item:132515) |QID|40878.1| |ENG| |N|Open your Engineering crafting panel and craft 2 (item:132515)|
 
 N Switch Guide |N|Switch to (guide:"732(105-110)") to complete the quest (qid;40878)| |QID|40878|
 N Switch Guide |N|Switch to (guide:"703(98-110)") to complete the quest (qid;40877)| |QID|40877|
@@ -175,7 +175,7 @@ N (item:137720) |N|Learn (item:137720), tick to continue if you have already lea
 
 N (item:123918) |N|Collect 140 (item:123918), you can mine this or purchase from the auction| |L|123918 75| |P|Engineering 779|
 B (item:136637) |N|Buy 2800 (item:136637) from (npc:93539) in {Like Clockwork} (38.35,24.53)| |Z|627| |NPC|93539| |L|136637 1500| |P|Engineering 779|
-N 1 - 100 (spell:199014) |EN| |N|Craft 140 (spell:199014), requires:<br/><b>2800 (item:136637)<br/><b>140 (item:123918)<br/><br/> NOTE: Make sure to get the rank 3 version first| |P|Engineering 779|
+N 1-100 (spell:199014) |ENG| |N|Craft 140 (spell:199014), requires:<br/><b>2800 (item:136637)<br/><b>140 (item:123918)<br/><br/> NOTE: Make sure to get the rank 3 version first| |P|Engineering 779|
 
 N Guide Complete
 

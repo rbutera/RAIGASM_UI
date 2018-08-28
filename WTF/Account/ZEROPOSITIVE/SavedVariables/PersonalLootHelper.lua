@@ -13,6 +13,7 @@ PLH_PREFS = {
 	["PLH_CURRENT_SPEC_ONLY"] = false,
 	["PLH_SHOW_TRADEABLE_ALERT"] = true,
 	["PLH_ONLY_OFFER_IF_UPGRADE"] = false,
+	["PLH_ANNOUNCE_TRADES"] = false,
 	["PLH_ILVL_THRESHOLD"] = 0,
 	["PLH_INCLUDE_XMOG"] = true,
 	["PLH_SKIP_CONFIRMATION"] = false,
